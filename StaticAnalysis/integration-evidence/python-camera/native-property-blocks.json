@@ -1,0 +1,530 @@
+[
+  {
+    "target": "CameraController.ControlledCamera",
+    "pointer_rva": "0x55ef870",
+    "block_rva": "0x55ef850",
+    "bytes": "f0 27 f4 44 01 00 00 00 07 00 00 00 db 34 8b 53 a8 12 ea 44 01 00 00 00 10 00 00 00 70 25 bd 46 10 65 5f 45 01 00 00 00 21 00 00 00 03 ad e0 3a 00 02 04 00 00 00 a0 00 12 01 00 00 00 00 00 00 70 75 d8 41 01 00 00 00 30 66 d8 41 01 00 00 00 70 77 d8 41 01 00 00 00 a0 77 d8 41 01 00 00 00 80 79 d8 41 01 00 00 00 50 4a d8 41 01 00 00 00 e0 a9 93 40 01 00 00 00 b0 67 d8 41 01 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x55ef850",
+        "value": "0x144f427f0",
+        "string": "ICamera"
+      },
+      {
+        "rva": "0x55ef858",
+        "value": "0x538b34db00000007",
+        "string": null
+      },
+      {
+        "rva": "0x55ef860",
+        "value": "0x144ea12a8",
+        "string": "ControlledCamera"
+      },
+      {
+        "rva": "0x55ef868",
+        "value": "0x46bd257000000010",
+        "string": null
+      },
+      {
+        "rva": "0x55ef870",
+        "value": "0x1455f6510",
+        "string": "CameraController.ControlledCamera"
+      },
+      {
+        "rva": "0x55ef878",
+        "value": "0x3ae0ad0300000021",
+        "string": null
+      },
+      {
+        "rva": "0x55ef880",
+        "value": "0xa0000000040200",
+        "string": null
+      },
+      {
+        "rva": "0x55ef888",
+        "value": "0x112",
+        "string": null
+      },
+      {
+        "rva": "0x55ef890",
+        "value": "0x141d87570",
+        "string": null
+      },
+      {
+        "rva": "0x55ef898",
+        "value": "0x141d86630",
+        "string": null
+      },
+      {
+        "rva": "0x55ef8a0",
+        "value": "0x141d87770",
+        "string": null
+      },
+      {
+        "rva": "0x55ef8a8",
+        "value": "0x141d877a0",
+        "string": null
+      },
+      {
+        "rva": "0x55ef8b0",
+        "value": "0x141d87980",
+        "string": null
+      },
+      {
+        "rva": "0x55ef8b8",
+        "value": "0x141d84a50",
+        "string": null
+      },
+      {
+        "rva": "0x55ef8c0",
+        "value": "0x14093a9e0",
+        "string": null
+      },
+      {
+        "rva": "0x55ef8c8",
+        "value": "0x141d867b0",
+        "string": null
+      }
+    ]
+  },
+  {
+    "target": "CameraController.AffiliatedCamera",
+    "pointer_rva": "0x55ef980",
+    "block_rva": "0x55ef960",
+    "bytes": "f0 27 f4 44 01 00 00 00 07 00 00 00 db 34 8b 53 d8 e7 e9 44 01 00 00 00 10 00 00 00 ba 91 bf 41 18 ae 5f 45 01 00 00 00 21 00 00 00 e8 58 64 50 00 02 04 00 00 00 a1 00 12 01 00 00 00 00 00 00 90 7a d8 41 01 00 00 00 30 66 d8 41 01 00 00 00 60 7c d8 41 01 00 00 00 90 7c d8 41 01 00 00 00 10 7a d8 41 01 00 00 00 50 4a d8 41 01 00 00 00 e0 a9 93 40 01 00 00 00 b0 67 d8 41 01 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x55ef960",
+        "value": "0x144f427f0",
+        "string": "ICamera"
+      },
+      {
+        "rva": "0x55ef968",
+        "value": "0x538b34db00000007",
+        "string": null
+      },
+      {
+        "rva": "0x55ef970",
+        "value": "0x144e9e7d8",
+        "string": "AffiliatedCamera"
+      },
+      {
+        "rva": "0x55ef978",
+        "value": "0x41bf91ba00000010",
+        "string": null
+      },
+      {
+        "rva": "0x55ef980",
+        "value": "0x1455fae18",
+        "string": "CameraController.AffiliatedCamera"
+      },
+      {
+        "rva": "0x55ef988",
+        "value": "0x506458e800000021",
+        "string": null
+      },
+      {
+        "rva": "0x55ef990",
+        "value": "0xa1000000040200",
+        "string": null
+      },
+      {
+        "rva": "0x55ef998",
+        "value": "0x112",
+        "string": null
+      },
+      {
+        "rva": "0x55ef9a0",
+        "value": "0x141d87a90",
+        "string": null
+      },
+      {
+        "rva": "0x55ef9a8",
+        "value": "0x141d86630",
+        "string": null
+      },
+      {
+        "rva": "0x55ef9b0",
+        "value": "0x141d87c60",
+        "string": null
+      },
+      {
+        "rva": "0x55ef9b8",
+        "value": "0x141d87c90",
+        "string": null
+      },
+      {
+        "rva": "0x55ef9c0",
+        "value": "0x141d87a10",
+        "string": null
+      },
+      {
+        "rva": "0x55ef9c8",
+        "value": "0x141d84a50",
+        "string": null
+      },
+      {
+        "rva": "0x55ef9d0",
+        "value": "0x14093a9e0",
+        "string": null
+      },
+      {
+        "rva": "0x55ef9d8",
+        "value": "0x141d867b0",
+        "string": null
+      }
+    ]
+  },
+  {
+    "target": "CameraController.VirtualCtrlCamera",
+    "pointer_rva": "0x55efa90",
+    "block_rva": "0x55efa70",
+    "bytes": "e8 02 e9 44 01 00 00 00 0d 00 00 00 53 66 65 5c 10 03 e9 44 01 00 00 00 11 00 00 00 d0 c5 02 f9 d8 c9 5f 45 01 00 00 00 22 00 00 00 cc a2 8a 50 00 02 04 00 00 00 a2 00 12 01 00 00 00 00 00 00 c0 80 d8 41 01 00 00 00 30 66 d8 41 01 00 00 00 90 81 d8 41 01 00 00 00 c0 81 d8 41 01 00 00 00 f0 7b d8 41 01 00 00 00 50 4a d8 41 01 00 00 00 50 fe 93 40 01 00 00 00 b0 67 d8 41 01 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x55efa70",
+        "value": "0x144e902e8",
+        "string": "VirtualCamera"
+      },
+      {
+        "rva": "0x55efa78",
+        "value": "0x5c6566530000000d",
+        "string": null
+      },
+      {
+        "rva": "0x55efa80",
+        "value": "0x144e90310",
+        "string": "VirtualCtrlCamera"
+      },
+      {
+        "rva": "0x55efa88",
+        "value": "0xf902c5d000000011",
+        "string": null
+      },
+      {
+        "rva": "0x55efa90",
+        "value": "0x1455fc9d8",
+        "string": "CameraController.VirtualCtrlCamera"
+      },
+      {
+        "rva": "0x55efa98",
+        "value": "0x508aa2cc00000022",
+        "string": null
+      },
+      {
+        "rva": "0x55efaa0",
+        "value": "0xa2000000040200",
+        "string": null
+      },
+      {
+        "rva": "0x55efaa8",
+        "value": "0x112",
+        "string": null
+      },
+      {
+        "rva": "0x55efab0",
+        "value": "0x141d880c0",
+        "string": null
+      },
+      {
+        "rva": "0x55efab8",
+        "value": "0x141d86630",
+        "string": null
+      },
+      {
+        "rva": "0x55efac0",
+        "value": "0x141d88190",
+        "string": null
+      },
+      {
+        "rva": "0x55efac8",
+        "value": "0x141d881c0",
+        "string": null
+      },
+      {
+        "rva": "0x55efad0",
+        "value": "0x141d87bf0",
+        "string": null
+      },
+      {
+        "rva": "0x55efad8",
+        "value": "0x141d84a50",
+        "string": null
+      },
+      {
+        "rva": "0x55efae0",
+        "value": "0x14093fe50",
+        "string": null
+      },
+      {
+        "rva": "0x55efae8",
+        "value": "0x141d867b0",
+        "string": null
+      }
+    ]
+  },
+  {
+    "target": "AimPlacer.Target",
+    "pointer_rva": "0x55f9460",
+    "block_rva": "0x55f9440",
+    "bytes": "98 5b ea 44 01 00 00 00 07 00 00 00 ee c6 23 8a 6c d9 e9 44 01 00 00 00 06 00 00 00 1d 34 06 66 60 eb 5e 45 01 00 00 00 10 00 00 00 e7 86 a6 41 00 02 04 00 00 00 1d 00 12 01 00 00 00 00 00 00 70 4e d8 41 01 00 00 00 30 66 d8 41 01 00 00 00 d0 4e 95 40 01 00 00 00 50 50 d8 41 01 00 00 00 90 49 95 40 01 00 00 00 60 4e d8 41 01 00 00 00 20 95 93 40 01 00 00 00 b0 67 d8 41 01 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x55f9440",
+        "value": "0x144ea5b98",
+        "string": "IEntity"
+      },
+      {
+        "rva": "0x55f9448",
+        "value": "0x8a23c6ee00000007",
+        "string": null
+      },
+      {
+        "rva": "0x55f9450",
+        "value": "0x144e9d96c",
+        "string": "Target"
+      },
+      {
+        "rva": "0x55f9458",
+        "value": "0x6606341d00000006",
+        "string": null
+      },
+      {
+        "rva": "0x55f9460",
+        "value": "0x1455eeb60",
+        "string": "AimPlacer.Target"
+      },
+      {
+        "rva": "0x55f9468",
+        "value": "0x41a686e700000010",
+        "string": null
+      },
+      {
+        "rva": "0x55f9470",
+        "value": "0x1d000000040200",
+        "string": null
+      },
+      {
+        "rva": "0x55f9478",
+        "value": "0x112",
+        "string": null
+      },
+      {
+        "rva": "0x55f9480",
+        "value": "0x141d84e70",
+        "string": null
+      },
+      {
+        "rva": "0x55f9488",
+        "value": "0x141d86630",
+        "string": null
+      },
+      {
+        "rva": "0x55f9490",
+        "value": "0x140954ed0",
+        "string": null
+      },
+      {
+        "rva": "0x55f9498",
+        "value": "0x141d85050",
+        "string": null
+      },
+      {
+        "rva": "0x55f94a0",
+        "value": "0x140954990",
+        "string": null
+      },
+      {
+        "rva": "0x55f94a8",
+        "value": "0x141d84e60",
+        "string": null
+      },
+      {
+        "rva": "0x55f94b0",
+        "value": "0x140939520",
+        "string": null
+      },
+      {
+        "rva": "0x55f94b8",
+        "value": "0x141d867b0",
+        "string": null
+      }
+    ]
+  },
+  {
+    "target": "AimPlacer.TargetTransform",
+    "pointer_rva": "0x55f9570",
+    "block_rva": "0x55f9550",
+    "bytes": "c0 79 e4 44 01 00 00 00 09 00 00 00 74 73 5c 80 d0 03 e7 44 01 00 00 00 0f 00 00 00 e7 60 ca ee 48 15 5f 45 01 00 00 00 19 00 00 00 e1 bb b8 b8 00 00 03 00 30 00 1e 00 02 02 00 00 00 00 00 00 70 14 95 40 01 00 00 00 70 14 95 40 01 00 00 00 90 66 d8 41 01 00 00 00 b0 66 d8 41 01 00 00 00 d0 66 d8 41 01 00 00 00 60 4e d8 41 01 00 00 00 00 9c 93 40 01 00 00 00 b0 67 d8 41 01 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x55f9550",
+        "value": "0x144e479c0",
+        "string": "Matrix4x3"
+      },
+      {
+        "rva": "0x55f9558",
+        "value": "0x805c737400000009",
+        "string": null
+      },
+      {
+        "rva": "0x55f9560",
+        "value": "0x144e703d0",
+        "string": "TargetTransform"
+      },
+      {
+        "rva": "0x55f9568",
+        "value": "0xeeca60e70000000f",
+        "string": null
+      },
+      {
+        "rva": "0x55f9570",
+        "value": "0x1455f1548",
+        "string": "AimPlacer.TargetTransform"
+      },
+      {
+        "rva": "0x55f9578",
+        "value": "0xb8b8bbe100000019",
+        "string": null
+      },
+      {
+        "rva": "0x55f9580",
+        "value": "0x1e003000030000",
+        "string": null
+      },
+      {
+        "rva": "0x55f9588",
+        "value": "0x202",
+        "string": null
+      },
+      {
+        "rva": "0x55f9590",
+        "value": "0x140951470",
+        "string": null
+      },
+      {
+        "rva": "0x55f9598",
+        "value": "0x140951470",
+        "string": null
+      },
+      {
+        "rva": "0x55f95a0",
+        "value": "0x141d86690",
+        "string": null
+      },
+      {
+        "rva": "0x55f95a8",
+        "value": "0x141d866b0",
+        "string": null
+      },
+      {
+        "rva": "0x55f95b0",
+        "value": "0x141d866d0",
+        "string": null
+      },
+      {
+        "rva": "0x55f95b8",
+        "value": "0x141d84e60",
+        "string": null
+      },
+      {
+        "rva": "0x55f95c0",
+        "value": "0x140939c00",
+        "string": null
+      },
+      {
+        "rva": "0x55f95c8",
+        "value": "0x141d867b0",
+        "string": null
+      }
+    ]
+  },
+  {
+    "target": "AimPlacer.Fov",
+    "pointer_rva": "0x55f8250",
+    "block_rva": "0x55f8230",
+    "bytes": "58 aa e4 44 01 00 00 00 05 00 00 00 e8 9f fb 95 b0 47 ea 44 01 00 00 00 03 00 00 00 23 e1 61 c0 e0 01 60 45 01 00 00 00 0d 00 00 00 39 81 07 14 00 00 03 00 04 00 0c 00 02 02 00 00 00 00 00 00 00 28 c9 40 01 00 00 00 00 28 c9 40 01 00 00 00 90 66 d8 41 01 00 00 00 b0 66 d8 41 01 00 00 00 d0 66 d8 41 01 00 00 00 60 4e d8 41 01 00 00 00 f0 f6 58 40 01 00 00 00 b0 67 d8 41 01 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x55f8230",
+        "value": "0x144e4aa58",
+        "string": "float"
+      },
+      {
+        "rva": "0x55f8238",
+        "value": "0x95fb9fe800000005",
+        "string": null
+      },
+      {
+        "rva": "0x55f8240",
+        "value": "0x144ea47b0",
+        "string": "Fov"
+      },
+      {
+        "rva": "0x55f8248",
+        "value": "0xc061e12300000003",
+        "string": null
+      },
+      {
+        "rva": "0x55f8250",
+        "value": "0x1456001e0",
+        "string": "AimPlacer.Fov"
+      },
+      {
+        "rva": "0x55f8258",
+        "value": "0x140781390000000d",
+        "string": null
+      },
+      {
+        "rva": "0x55f8260",
+        "value": "0xc000400030000",
+        "string": null
+      },
+      {
+        "rva": "0x55f8268",
+        "value": "0x202",
+        "string": null
+      },
+      {
+        "rva": "0x55f8270",
+        "value": "0x140c92800",
+        "string": null
+      },
+      {
+        "rva": "0x55f8278",
+        "value": "0x140c92800",
+        "string": null
+      },
+      {
+        "rva": "0x55f8280",
+        "value": "0x141d86690",
+        "string": null
+      },
+      {
+        "rva": "0x55f8288",
+        "value": "0x141d866b0",
+        "string": null
+      },
+      {
+        "rva": "0x55f8290",
+        "value": "0x141d866d0",
+        "string": null
+      },
+      {
+        "rva": "0x55f8298",
+        "value": "0x141d84e60",
+        "string": null
+      },
+      {
+        "rva": "0x55f82a0",
+        "value": "0x14058f6f0",
+        "string": null
+      },
+      {
+        "rva": "0x55f82a8",
+        "value": "0x141d867b0",
+        "string": null
+      }
+    ]
+  }
+]

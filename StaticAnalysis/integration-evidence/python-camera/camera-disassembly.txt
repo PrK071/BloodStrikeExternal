@@ -1,0 +1,1123 @@
+
+INDEX 50901 EnginePlacer.__init__ marshal=369 firstline=18 locals=['self', 'master', '__class__']
+    0 COPY_FREE_VARS                     1 {}
+    2 RESUME                             0 {}
+    4 LOAD_GLOBAL                        0 {"symbol": "super", "name_flags": 0}
+   14 LOAD_GLOBAL                        2 {"symbol": "EnginePlacer", "name_flags": 0}
+   24 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+   26 LOAD_SUPER_ATTR                   11 {"symbol": "__init__", "name_flags": 3}
+   30 LOAD_FAST_BORROW                   1 {"symbol": "master"}
+   32 CALL                               1 {}
+   40 POP_TOP                            0 {}
+   42 LOAD_CONST                         0 {"constant": null}
+   44 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+   46 STORE_ATTR                         3 {"symbol": "placer"}
+   56 LOAD_CONST                         1 {"constant": false}
+   58 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+   60 STORE_ATTR                         4 {"symbol": "is_actived"}
+   70 LOAD_GLOBAL                       11 {"symbol": "set", "name_flags": 1}
+   80 CALL                               0 {}
+   88 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+   90 STORE_ATTR                         6 {"symbol": "expose_cache"}
+  100 LOAD_GLOBAL                       11 {"symbol": "set", "name_flags": 1}
+  110 CALL                               0 {}
+  118 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  120 STORE_ATTR                         7 {"symbol": "expose_properties"}
+  130 LOAD_CONST                         1 {"constant": false}
+  132 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  134 STORE_ATTR                         8 {"symbol": "need_blender"}
+  144 LOAD_SMALL_INT                     0 {}
+  146 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  148 STORE_ATTR                         9 {"symbol": "blend_type"}
+  158 LOAD_CONST                         2 {"constant": 0.5}
+  160 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  162 STORE_ATTR                        10 {"symbol": "blend_time"}
+  172 LOAD_CONST                         1 {"constant": false}
+  174 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  176 STORE_ATTR                        11 {"symbol": "direct_transit"}
+  186 LOAD_CONST                         0 {"constant": null}
+  188 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  190 STORE_ATTR                        12 {"symbol": "blender"}
+  200 LOAD_CONST                         0 {"constant": null}
+  202 RETURN_VALUE                       0 {}
+
+INDEX 50901 EnginePlacer.StartExposeProperties marshal=910 firstline=34 locals=['self']
+    0 RESUME                             0 {}
+    2 LOAD_GLOBAL                        1 {"symbol": "set", "name_flags": 1}
+   12 CALL                               0 {}
+   20 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+   22 STORE_ATTR                         1 {"symbol": "expose_properties"}
+   32 LOAD_GLOBAL                        1 {"symbol": "set", "name_flags": 1}
+   42 LOAD_GLOBAL                        5 {"symbol": "list", "name_flags": 1}
+   52 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+   54 LOAD_ATTR                          6 {"symbol": "__dict__", "name_flags": 0}
+   74 LOAD_ATTR                          9 {"symbol": "keys", "name_flags": 1}
+   94 CALL                               0 {}
+  102 CALL                               1 {}
+  110 CALL                               1 {}
+  118 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  120 STORE_ATTR                         5 {"symbol": "expose_cache"}
+  130 LOAD_CONST                         0 {"constant": null}
+  132 RETURN_VALUE                       0 {}
+
+INDEX 50901 EnginePlacer.FinishExposeProperties marshal=1223 firstline=38 locals=['self']
+    0 RESUME                             0 {}
+    2 LOAD_GLOBAL                        1 {"symbol": "set", "name_flags": 1}
+   12 LOAD_GLOBAL                        3 {"symbol": "list", "name_flags": 1}
+   22 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+   24 LOAD_ATTR                          4 {"symbol": "__dict__", "name_flags": 0}
+   44 LOAD_ATTR                          7 {"symbol": "keys", "name_flags": 1}
+   64 CALL                               0 {}
+   72 CALL                               1 {}
+   80 CALL                               1 {}
+   88 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+   90 LOAD_ATTR                          8 {"symbol": "expose_cache", "name_flags": 0}
+  110 BINARY_OP                         10 {}
+  122 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  124 STORE_ATTR                         5 {"symbol": "expose_properties"}
+  134 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  136 LOAD_ATTR                         10 {"symbol": "expose_properties", "name_flags": 0}
+  156 RETURN_VALUE                       0 {}
+
+INDEX 50901 EnginePlacer.IsValid marshal=1559 firstline=42 locals=['self', 'placer']
+    0 RESUME                             0 {}
+    2 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+    4 LOAD_ATTR                          0 {"symbol": "placer", "name_flags": 0}
+   24 STORE_FAST                         1 {"symbol": "placer"}
+   26 LOAD_FAST                          1 {"symbol": "placer"}
+   28 COPY                               1 {}
+   30 TO_BOOL                            0 {}
+   38 POP_JUMP_IF_FALSE                 17 {"target": 76}
+   42 NOT_TAKEN                          0 {}
+   44 POP_TOP                            0 {}
+   46 LOAD_FAST_BORROW                   1 {"symbol": "placer"}
+   48 LOAD_ATTR                          3 {"symbol": "IsValid", "name_flags": 1}
+   68 CALL                               0 {}
+   76 RETURN_VALUE                       0 {}
+
+INDEX 50901 EnginePlacer.OnActive marshal=1763 firstline=46 locals=['self', 'info']
+    0 RESUME                             0 {}
+    2 LOAD_FAST_BORROW                   1 {"symbol": "info"}
+    4 TO_BOOL                            0 {}
+   12 POP_JUMP_IF_FALSE                 93 {"target": 202}
+   16 NOT_TAKEN                          0 {}
+   18 LOAD_FAST_BORROW                   1 {"symbol": "info"}
+   20 LOAD_ATTR                          1 {"symbol": "get", "name_flags": 1}
+   40 LOAD_CONST                         0 {"constant": "need_blender"}
+   42 LOAD_CONST                         1 {"constant": false}
+   44 CALL                               2 {}
+   52 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+   54 STORE_ATTR                         1 {"symbol": "need_blender"}
+   64 LOAD_FAST_BORROW                   1 {"symbol": "info"}
+   66 LOAD_ATTR                          1 {"symbol": "get", "name_flags": 1}
+   86 LOAD_CONST                         2 {"constant": "blend_type"}
+   88 LOAD_SMALL_INT                     0 {}
+   90 CALL                               2 {}
+   98 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  100 STORE_ATTR                         2 {"symbol": "blend_type"}
+  110 LOAD_FAST_BORROW                   1 {"symbol": "info"}
+  112 LOAD_ATTR                          1 {"symbol": "get", "name_flags": 1}
+  132 LOAD_CONST                         3 {"constant": "blend_time"}
+  134 LOAD_CONST                         4 {"constant": 0.5}
+  136 CALL                               2 {}
+  144 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  146 STORE_ATTR                         3 {"symbol": "blend_time"}
+  156 LOAD_FAST_BORROW                   1 {"symbol": "info"}
+  158 LOAD_ATTR                          1 {"symbol": "get", "name_flags": 1}
+  178 LOAD_CONST                         5 {"constant": "direct_transit"}
+  180 LOAD_CONST                         1 {"constant": false}
+  182 CALL                               2 {}
+  190 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  192 STORE_ATTR                         4 {"symbol": "direct_transit"}
+  202 LOAD_CONST                         6 {"constant": true}
+  204 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  206 STORE_ATTR                         5 {"symbol": "is_actived"}
+  216 LOAD_CONST                         7 {"constant": null}
+  218 RETURN_VALUE                       0 {}
+
+INDEX 50901 EnginePlacer.OnDeactive marshal=2175 firstline=54 locals=['self']
+    0 RESUME                             0 {}
+    2 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+    4 LOAD_ATTR                          0 {"symbol": "blender", "name_flags": 0}
+   24 TO_BOOL                            0 {}
+   32 POP_JUMP_IF_FALSE                110 {"target": 256}
+   36 NOT_TAKEN                          0 {}
+   38 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+   40 LOAD_ATTR                          0 {"symbol": "blender", "name_flags": 0}
+   60 LOAD_ATTR                          3 {"symbol": "IsValid", "name_flags": 1}
+   80 CALL                               0 {}
+   88 COPY                               1 {}
+   90 TO_BOOL                            0 {}
+   98 POP_JUMP_IF_FALSE                 29 {"target": 160}
+  102 NOT_TAKEN                          0 {}
+  104 POP_TOP                            0 {}
+  106 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  108 LOAD_ATTR                          0 {"symbol": "blender", "name_flags": 0}
+  128 LOAD_ATTR                          5 {"symbol": "BindEvent", "name_flags": 1}
+  148 LOAD_CONST                         0 {"constant": "RemovedFromTree"}
+  150 LOAD_CONST                         1 {"constant": null}
+  152 CALL                               2 {}
+  160 POP_TOP                            0 {}
+  162 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  164 LOAD_ATTR                          6 {"symbol": "master", "name_flags": 0}
+  184 LOAD_ATTR                          8 {"symbol": "controller", "name_flags": 0}
+  204 LOAD_ATTR                         11 {"symbol": "Release", "name_flags": 1}
+  224 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  226 LOAD_ATTR                          0 {"symbol": "blender", "name_flags": 0}
+  246 CALL                               1 {}
+  254 POP_TOP                            0 {}
+  256 LOAD_CONST                         1 {"constant": null}
+  258 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  260 STORE_ATTR                         0 {"symbol": "blender"}
+  270 LOAD_CONST                         2 {"constant": false}
+  272 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  274 STORE_ATTR                         6 {"symbol": "is_actived"}
+  284 LOAD_CONST                         1 {"constant": null}
+  286 RETURN_VALUE                       0 {}
+
+INDEX 50901 EnginePlacer.SetFocusTarget marshal=2674 firstline=62 locals=['self', 'target']
+    0 RESUME                             0 {}
+    2 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+    4 LOAD_ATTR                          0 {"symbol": "placer", "name_flags": 0}
+   24 TO_BOOL                            0 {}
+   32 POP_JUMP_IF_FALSE                 79 {"target": 194}
+   36 NOT_TAKEN                          0 {}
+   38 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+   40 LOAD_ATTR                          0 {"symbol": "placer", "name_flags": 0}
+   60 LOAD_ATTR                          3 {"symbol": "IsValid", "name_flags": 1}
+   80 CALL                               0 {}
+   88 TO_BOOL                            0 {}
+   96 POP_JUMP_IF_FALSE                 47 {"target": 194}
+  100 NOT_TAKEN                          0 {}
+  102 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  104 LOAD_ATTR                          4 {"symbol": "master", "name_flags": 0}
+  124 TO_BOOL                            0 {}
+  132 POP_JUMP_IF_FALSE                 29 {"target": 194}
+  136 NOT_TAKEN                          0 {}
+  138 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  140 LOAD_ATTR                          4 {"symbol": "master", "name_flags": 0}
+  160 LOAD_ATTR                          6 {"symbol": "collider", "name_flags": 0}
+  180 TO_BOOL                            0 {}
+  188 POP_JUMP_IF_TRUE                   3 {"target": 198}
+  192 NOT_TAKEN                          0 {}
+  194 LOAD_CONST                         0 {"constant": null}
+  196 RETURN_VALUE                       0 {}
+  198 LOAD_FAST_BORROW                   1 {"symbol": "target"}
+  200 TO_BOOL                            0 {}
+  208 POP_JUMP_IF_FALSE                 13 {"target": 238}
+  212 NOT_TAKEN                          0 {}
+  214 LOAD_FAST_BORROW                   1 {"symbol": "target"}
+  216 LOAD_ATTR                          8 {"symbol": "model", "name_flags": 0}
+  236 JUMP_FORWARD                       1 {"target": 240}
+  238 LOAD_CONST                         0 {"constant": null}
+  240 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  242 LOAD_ATTR                          0 {"symbol": "placer", "name_flags": 0}
+  262 STORE_ATTR                         5 {"symbol": "Target"}
+  272 LOAD_FAST_BORROW                   1 {"symbol": "target"}
+  274 TO_BOOL                            0 {}
+  282 POP_JUMP_IF_FALSE                 13 {"target": 312}
+  286 NOT_TAKEN                          0 {}
+  288 LOAD_FAST_BORROW                   1 {"symbol": "target"}
+  290 LOAD_ATTR                          8 {"symbol": "model", "name_flags": 0}
+  310 JUMP_FORWARD                       1 {"target": 314}
+  312 LOAD_CONST                         0 {"constant": null}
+  314 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  316 LOAD_ATTR                          4 {"symbol": "master", "name_flags": 0}
+  336 LOAD_ATTR                          6 {"symbol": "collider", "name_flags": 0}
+  356 STORE_ATTR                         5 {"symbol": "Target"}
+  366 LOAD_CONST                         0 {"constant": null}
+  368 RETURN_VALUE                       0 {}
+
+INDEX 50901 EnginePlacer.RefreshConfig marshal=3255 firstline=68 locals=['self', 'config', 'key', 'value']
+    0 RESUME                             0 {}
+    2 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+    4 LOAD_ATTR                          0 {"symbol": "placer", "name_flags": 0}
+   24 TO_BOOL                            0 {}
+   32 POP_JUMP_IF_TRUE                   3 {"target": 42}
+   36 NOT_TAKEN                          0 {}
+   38 LOAD_CONST                         0 {"constant": null}
+   40 RETURN_VALUE                       0 {}
+   42 LOAD_FAST_BORROW                   1 {"symbol": "config"}
+   44 TO_BOOL                            0 {}
+   52 POP_JUMP_IF_TRUE                  45 {"target": 146}
+   56 NOT_TAKEN                          0 {}
+   58 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+   60 LOAD_ATTR                          2 {"symbol": "expose_properties", "name_flags": 0}
+   80 GET_ITER                           0 {}
+   82 LOAD_FAST_AND_CLEAR                2 {"symbol": "key"}
+   84 SWAP                               2 {}
+   86 BUILD_MAP                          0 {}
+   88 SWAP                               2 {}
+   90 FOR_ITER                          22 {"target": 138}
+   94 STORE_FAST_LOAD_FAST              34 {"symbols": ["key", "key"]}
+   96 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+   98 LOAD_ATTR                          4 {"symbol": "__dict__", "name_flags": 0}
+  118 LOAD_FAST_BORROW                   2 {"symbol": "key"}
+  120 BINARY_OP                         26 {}
+  132 MAP_ADD                            2 {}
+  134 JUMP_BACKWARD                     24 {"target": 90}
+  138 END_FOR                            0 {}
+  140 POP_ITER                           0 {}
+  142 STORE_FAST                         1 {"symbol": "config"}
+  144 STORE_FAST                         2 {"symbol": "key"}
+  146 LOAD_FAST_BORROW                   1 {"symbol": "config"}
+  148 LOAD_ATTR                          7 {"symbol": "items", "name_flags": 1}
+  168 CALL                               0 {}
+  176 GET_ITER                           0 {}
+  178 FOR_ITER                          27 {"target": 236}
+  182 UNPACK_SEQUENCE                    2 {}
+  186 STORE_FAST_STORE_FAST             35 {"symbols": ["key", "value"]}
+  188 LOAD_GLOBAL                        9 {"symbol": "setattr", "name_flags": 1}
+  198 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  200 LOAD_ATTR                          0 {"symbol": "placer", "name_flags": 0}
+  220 LOAD_FAST_BORROW_LOAD_FAST_BORROW    35 {"symbols": ["key", "value"]}
+  222 CALL                               3 {}
+  230 POP_TOP                            0 {}
+  232 JUMP_BACKWARD                     29 {"target": 178}
+  236 END_FOR                            0 {}
+  238 POP_ITER                           0 {}
+  240 LOAD_CONST                         0 {"constant": null}
+  242 RETURN_VALUE                       0 {}
+  244 SWAP                               2 {}
+  246 POP_TOP                            0 {}
+  248 SWAP                               2 {}
+  250 STORE_FAST                         2 {"symbol": "key"}
+  252 RERAISE                            0 {}
+
+INDEX 50901 EnginePlacer.UseBonePosition marshal=3717 firstline=78 locals=['self', 'is_use', 'bone_name', 'placer']
+    0 RESUME                             0 {}
+    2 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+    4 LOAD_ATTR                          0 {"symbol": "placer", "name_flags": 0}
+   24 TO_BOOL                            0 {}
+   32 POP_JUMP_IF_TRUE                   3 {"target": 42}
+   36 NOT_TAKEN                          0 {}
+   38 LOAD_CONST                         0 {"constant": null}
+   40 RETURN_VALUE                       0 {}
+   42 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+   44 LOAD_ATTR                          0 {"symbol": "placer", "name_flags": 0}
+   64 STORE_FAST                         3 {"symbol": "placer"}
+   66 LOAD_GLOBAL                        3 {"symbol": "hasattr", "name_flags": 1}
+   76 LOAD_FAST_BORROW                   3 {"symbol": "placer"}
+   78 LOAD_CONST                         1 {"constant": "UseBonePosition"}
+   80 CALL                               2 {}
+   88 TO_BOOL                            0 {}
+   96 POP_JUMP_IF_TRUE                   3 {"target": 106}
+  100 NOT_TAKEN                          0 {}
+  102 LOAD_CONST                         0 {"constant": null}
+  104 RETURN_VALUE                       0 {}
+  106 LOAD_FAST_BORROW                   1 {"symbol": "is_use"}
+  108 TO_BOOL                            0 {}
+  116 POP_JUMP_IF_FALSE                 15 {"target": 150}
+  120 NOT_TAKEN                          0 {}
+  122 LOAD_FAST_BORROW_LOAD_FAST_BORROW    35 {"symbols": ["bone_name", "placer"]}
+  124 STORE_ATTR                         2 {"symbol": "BoneName"}
+  134 LOAD_FAST_BORROW_LOAD_FAST_BORROW    19 {"symbols": ["is_use", "placer"]}
+  136 STORE_ATTR                         3 {"symbol": "UseBonePosition"}
+  146 LOAD_CONST                         0 {"constant": null}
+  148 RETURN_VALUE                       0 {}
+  150 LOAD_CONST                         2 {"constant": "Scene Root"}
+  152 LOAD_FAST_BORROW                   3 {"symbol": "placer"}
+  154 STORE_ATTR                         2 {"symbol": "BoneName"}
+  164 LOAD_GLOBAL                        8 {"symbol": "Timer", "name_flags": 0}
+  174 LOAD_ATTR                         10 {"symbol": "addTimer", "name_flags": 0}
+  194 PUSH_NULL                          0 {}
+  196 LOAD_CONST                         3 {"constant": 0.1}
+  198 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  200 LOAD_ATTR                         12 {"symbol": "DelayRestoreUseBonePosition", "name_flags": 0}
+  220 CALL                               2 {}
+  228 POP_TOP                            0 {}
+  230 LOAD_CONST                         0 {"constant": null}
+  232 RETURN_VALUE                       0 {}
+
+INDEX 50901 EnginePlacer.DelayRestoreUseBonePosition marshal=4233 firstline=92 locals=['self']
+    0 RESUME                             0 {}
+    2 LOAD_CONST                         0 {"constant": false}
+    4 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+    6 LOAD_ATTR                          0 {"symbol": "placer", "name_flags": 0}
+   26 STORE_ATTR                         1 {"symbol": "UseBonePosition"}
+   36 LOAD_CONST                         1 {"constant": null}
+   38 RETURN_VALUE                       0 {}
+
+INDEX 50901 EnginePlacer.TurnView marshal=4402 firstline=96 locals=['self', 'diffx', 'diffy', 'shoot_adsorb']
+    0 RESUME                             0 {}
+    2 LOAD_CONST                         0 {"constant": null}
+    4 RETURN_VALUE                       0 {}
+
+INDEX 50901 EnginePlacer.TurnViewBegin marshal=4541 firstline=99 locals=['self']
+    0 RESUME                             0 {}
+    2 LOAD_CONST                         0 {"constant": null}
+    4 RETURN_VALUE                       0 {}
+
+INDEX 50901 EnginePlacer.TurnViewEnd marshal=4656 firstline=102 locals=['self']
+    0 RESUME                             0 {}
+    2 LOAD_CONST                         0 {"constant": null}
+    4 RETURN_VALUE                       0 {}
+
+INDEX 50901 EnginePlacer.CreateBlender marshal=4767 firstline=105 locals=['self', 'blendTime', 'blend_type', 'direct_transit']
+    0 RESUME                             0 {}
+    2 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+    4 LOAD_ATTR                          0 {"symbol": "blender", "name_flags": 0}
+   24 TO_BOOL                            0 {}
+   32 POP_JUMP_IF_FALSE                 48 {"target": 132}
+   36 NOT_TAKEN                          0 {}
+   38 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+   40 LOAD_ATTR                          2 {"symbol": "master", "name_flags": 0}
+   60 LOAD_ATTR                          4 {"symbol": "controller", "name_flags": 0}
+   80 LOAD_ATTR                          7 {"symbol": "Release", "name_flags": 1}
+  100 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  102 LOAD_ATTR                          0 {"symbol": "blender", "name_flags": 0}
+  122 CALL                               1 {}
+  130 POP_TOP                            0 {}
+  132 LOAD_GLOBAL                        8 {"symbol": "MObject", "name_flags": 0}
+  142 LOAD_ATTR                         10 {"symbol": "CreateObject", "name_flags": 0}
+  162 PUSH_NULL                          0 {}
+  164 LOAD_CONST                         0 {"constant": "LerpBlender"}
+  166 CALL                               1 {}
+  174 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  176 STORE_ATTR                         0 {"symbol": "blender"}
+  186 LOAD_FAST_BORROW                   1 {"symbol": "blendTime"}
+  188 TO_BOOL                            0 {}
+  196 POP_JUMP_IF_FALSE                  3 {"target": 206}
+  200 NOT_TAKEN                          0 {}
+  202 LOAD_FAST                          1 {"symbol": "blendTime"}
+  204 JUMP_FORWARD                      11 {"target": 228}
+  206 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  208 LOAD_ATTR                         12 {"symbol": "blend_time", "name_flags": 0}
+  228 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  230 LOAD_ATTR                          0 {"symbol": "blender", "name_flags": 0}
+  250 STORE_ATTR                         7 {"symbol": "BlendTime"}
+  260 LOAD_FAST_BORROW                   2 {"symbol": "blend_type"}
+  262 TO_BOOL                            0 {}
+  270 POP_JUMP_IF_FALSE                  3 {"target": 280}
+  274 NOT_TAKEN                          0 {}
+  276 LOAD_FAST                          2 {"symbol": "blend_type"}
+  278 JUMP_FORWARD                      11 {"target": 302}
+  280 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  282 LOAD_ATTR                         16 {"symbol": "blend_type", "name_flags": 0}
+  302 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  304 LOAD_ATTR                          0 {"symbol": "blender", "name_flags": 0}
+  324 STORE_ATTR                         9 {"symbol": "BlendType"}
+  334 LOAD_FAST_BORROW_LOAD_FAST_BORROW    48 {"symbols": ["direct_transit", "self"]}
+  336 LOAD_ATTR                          0 {"symbol": "blender", "name_flags": 0}
+  356 STORE_ATTR                        10 {"symbol": "DirectTransit"}
+  366 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  368 LOAD_ATTR                          0 {"symbol": "blender", "name_flags": 0}
+  388 LOAD_ATTR                         23 {"symbol": "BindEvent", "name_flags": 1}
+  408 LOAD_CONST                         1 {"constant": "RemovedFromTree"}
+  410 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  412 LOAD_ATTR                         24 {"symbol": "BlenderInFinished", "name_flags": 0}
+  432 CALL                               2 {}
+  440 POP_TOP                            0 {}
+  442 LOAD_CONST                         2 {"constant": null}
+  444 RETURN_VALUE                       0 {}
+
+INDEX 50901 EnginePlacer.BlenderInFinished marshal=5537 firstline=115 locals=['self']
+    0 RESUME                             0 {}
+    2 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+    4 LOAD_ATTR                          0 {"symbol": "blender", "name_flags": 0}
+   24 COPY                               1 {}
+   26 TO_BOOL                            0 {}
+   34 POP_JUMP_IF_FALSE                 48 {"target": 134}
+   38 NOT_TAKEN                          0 {}
+   40 POP_TOP                            0 {}
+   42 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+   44 LOAD_ATTR                          2 {"symbol": "master", "name_flags": 0}
+   64 LOAD_ATTR                          4 {"symbol": "controller", "name_flags": 0}
+   84 LOAD_ATTR                          7 {"symbol": "Release", "name_flags": 1}
+  104 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  106 LOAD_ATTR                          0 {"symbol": "blender", "name_flags": 0}
+  126 CALL                               1 {}
+  134 POP_TOP                            0 {}
+  136 LOAD_CONST                         0 {"constant": null}
+  138 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  140 STORE_ATTR                         0 {"symbol": "blender"}
+  150 LOAD_CONST                         0 {"constant": null}
+  152 RETURN_VALUE                       0 {}
+
+INDEX 50901 EnginePlacer marshal=173 firstline=15 locals=['__class__', '__classdict__']
+    0 MAKE_CELL                          0 {"symbol": "__class__"}
+    2 MAKE_CELL                          1 {"symbol": "__classdict__"}
+    4 RESUME                             0 {}
+    6 LOAD_NAME                          0 {"symbol": "__name__"}
+    8 STORE_NAME                         1 {"symbol": "__module__"}
+   10 LOAD_CONST                         0 {"constant": "EnginePlacer"}
+   12 STORE_NAME                         2 {"symbol": "__qualname__"}
+   14 LOAD_SMALL_INT                    15 {}
+   16 STORE_NAME                         3 {"symbol": "__firstlineno__"}
+   18 LOAD_LOCALS                        0 {}
+   20 STORE_DEREF                        1 {"symbol": "__classdict__"}
+   22 LOAD_FAST_BORROW                   0 {"symbol": "__class__"}
+   24 BUILD_TUPLE                        1 {}
+   26 LOAD_CONST                         1 {"constant": {"code_ref_offset": 369, "name": "__init__"}}
+   28 MAKE_FUNCTION                      0 {}
+   30 SET_FUNCTION_ATTRIBUTE             8 {}
+   32 STORE_NAME                         4 {"symbol": "__init__"}
+   34 LOAD_CONST                         2 {"constant": {"code_ref_offset": 910, "name": "StartExposeProperties"}}
+   36 MAKE_FUNCTION                      0 {}
+   38 STORE_NAME                         5 {"symbol": "StartExposeProperties"}
+   40 LOAD_CONST                         3 {"constant": {"code_ref_offset": 1223, "name": "FinishExposeProperties"}}
+   42 MAKE_FUNCTION                      0 {}
+   44 STORE_NAME                         6 {"symbol": "FinishExposeProperties"}
+   46 LOAD_CONST                         4 {"constant": {"code_ref_offset": 1559, "name": "IsValid"}}
+   48 MAKE_FUNCTION                      0 {}
+   50 STORE_NAME                         7 {"symbol": "IsValid"}
+   52 LOAD_CONST                        17 {"constant": [null]}
+   54 LOAD_CONST                         5 {"constant": {"code_ref_offset": 1763, "name": "OnActive"}}
+   56 MAKE_FUNCTION                      0 {}
+   58 SET_FUNCTION_ATTRIBUTE             1 {}
+   60 STORE_NAME                         8 {"symbol": "OnActive"}
+   62 LOAD_CONST                         6 {"constant": {"code_ref_offset": 2175, "name": "OnDeactive"}}
+   64 MAKE_FUNCTION                      0 {}
+   66 STORE_NAME                         9 {"symbol": "OnDeactive"}
+   68 LOAD_CONST                         7 {"constant": {"code_ref_offset": 2674, "name": "SetFocusTarget"}}
+   70 MAKE_FUNCTION                      0 {}
+   72 STORE_NAME                        10 {"symbol": "SetFocusTarget"}
+   74 LOAD_CONST                        17 {"constant": [null]}
+   76 LOAD_CONST                         8 {"constant": {"code_ref_offset": 3255, "name": "RefreshConfig"}}
+   78 MAKE_FUNCTION                      0 {}
+   80 SET_FUNCTION_ATTRIBUTE             1 {}
+   82 STORE_NAME                        11 {"symbol": "RefreshConfig"}
+   84 LOAD_CONST                        18 {"constant": ["Scene Root"]}
+   86 LOAD_CONST                         9 {"constant": {"code_ref_offset": 3717, "name": "UseBonePosition"}}
+   88 MAKE_FUNCTION                      0 {}
+   90 SET_FUNCTION_ATTRIBUTE             1 {}
+   92 STORE_NAME                        12 {"symbol": "UseBonePosition"}
+   94 LOAD_CONST                        10 {"constant": {"code_ref_offset": 4233, "name": "DelayRestoreUseBonePosition"}}
+   96 MAKE_FUNCTION                      0 {}
+   98 STORE_NAME                        13 {"symbol": "DelayRestoreUseBonePosition"}
+  100 LOAD_CONST                        19 {"constant": [false]}
+  102 LOAD_CONST                        11 {"constant": {"code_ref_offset": 4402, "name": "TurnView"}}
+  104 MAKE_FUNCTION                      0 {}
+  106 SET_FUNCTION_ATTRIBUTE             1 {}
+  108 STORE_NAME                        14 {"symbol": "TurnView"}
+  110 LOAD_CONST                        12 {"constant": {"code_ref_offset": 4541, "name": "TurnViewBegin"}}
+  112 MAKE_FUNCTION                      0 {}
+  114 STORE_NAME                        15 {"symbol": "TurnViewBegin"}
+  116 LOAD_CONST                        13 {"constant": {"code_ref_offset": 4656, "name": "TurnViewEnd"}}
+  118 MAKE_FUNCTION                      0 {}
+  120 STORE_NAME                        16 {"symbol": "TurnViewEnd"}
+  122 LOAD_CONST                        20 {"constant": [null, 0, true]}
+  124 LOAD_CONST                        14 {"constant": {"code_ref_offset": 4767, "name": "CreateBlender"}}
+  126 MAKE_FUNCTION                      0 {}
+  128 SET_FUNCTION_ATTRIBUTE             1 {}
+  130 STORE_NAME                        17 {"symbol": "CreateBlender"}
+  132 LOAD_CONST                        15 {"constant": {"code_ref_offset": 5537, "name": "BlenderInFinished"}}
+  134 MAKE_FUNCTION                      0 {}
+  136 STORE_NAME                        18 {"symbol": "BlenderInFinished"}
+  138 LOAD_CONST                        16 {"constant": ["blend_time", "blend_type", "blender", "direct_transit", "expose_cache", "expose_properties", "is_actived", "need_blender", "placer"]}
+  140 STORE_NAME                        19 {"symbol": "__static_attributes__"}
+  142 LOAD_FAST_BORROW                   1 {"symbol": "__classdict__"}
+  144 STORE_NAME                        20 {"symbol": "__classdictcell__"}
+  146 LOAD_FAST_BORROW                   0 {"symbol": "__class__"}
+  148 COPY                               1 {}
+  150 STORE_NAME                        21 {"symbol": "__classcell__"}
+  152 RETURN_VALUE                       0 {}
+
+INDEX 50901 <module> marshal=8 firstline=1 locals=[]
+    0 RESUME                             0 {}
+    2 LOAD_SMALL_INT                     0 {}
+    4 LOAD_CONST                         1 {"constant": null}
+    6 IMPORT_NAME                        0 {"symbol": "six2"}
+    8 STORE_NAME                         0 {"symbol": "six2"}
+   10 LOAD_SMALL_INT                     0 {}
+   12 LOAD_CONST                         1 {"constant": null}
+   14 IMPORT_NAME                        1 {"symbol": "MObject"}
+   16 STORE_NAME                         1 {"symbol": "MObject"}
+   18 LOAD_SMALL_INT                     0 {}
+   20 LOAD_CONST                         1 {"constant": null}
+   22 IMPORT_NAME                        2 {"symbol": "MEngine"}
+   24 STORE_NAME                         2 {"symbol": "MEngine"}
+   26 LOAD_SMALL_INT                     0 {}
+   28 LOAD_CONST                         1 {"constant": null}
+   30 IMPORT_NAME                        3 {"symbol": "Timer"}
+   32 STORE_NAME                         3 {"symbol": "Timer"}
+   34 LOAD_SMALL_INT                     1 {}
+   36 LOAD_CONST                         2 {"constant": ["BasePlacer"]}
+   38 IMPORT_NAME                        4 {"symbol": "base_placer"}
+   40 IMPORT_FROM                        5 {"symbol": "BasePlacer"}
+   42 STORE_NAME                         5 {"symbol": "BasePlacer"}
+   44 POP_TOP                            0 {}
+   46 LOAD_SMALL_INT                     0 {}
+   48 LOAD_CONST                         3 {"constant": ["cconst"]}
+   50 IMPORT_NAME                        6 {"symbol": "gclient"}
+   52 IMPORT_FROM                        7 {"symbol": "cconst"}
+   54 STORE_NAME                         7 {"symbol": "cconst"}
+   56 POP_TOP                            0 {}
+   58 LOAD_SMALL_INT                     0 {}
+   60 LOAD_CONST                         4 {"constant": ["MHelper"]}
+   62 IMPORT_NAME                        8 {"symbol": "gclient.framework.util"}
+   64 IMPORT_FROM                        9 {"symbol": "MHelper"}
+   66 STORE_NAME                         9 {"symbol": "MHelper"}
+   68 POP_TOP                            0 {}
+   70 LOAD_BUILD_CLASS                   0 {}
+   72 PUSH_NULL                          0 {}
+   74 LOAD_CONST                         5 {"constant": {"code_ref_offset": 173, "name": "EnginePlacer"}}
+   76 MAKE_FUNCTION                      0 {}
+   78 LOAD_CONST                         6 {"constant": "EnginePlacer"}
+   80 LOAD_NAME                          5 {"symbol": "BasePlacer"}
+   82 CALL                               3 {}
+   90 STORE_NAME                        10 {"symbol": "EnginePlacer"}
+   92 LOAD_CONST                         1 {"constant": null}
+   94 RETURN_VALUE                       0 {}
+
+INDEX 75597 BasePlacer.__init__ marshal=312 firstline=9 locals=['self', 'master']
+    0 RESUME                             0 {}
+    2 LOAD_FAST_BORROW_LOAD_FAST_BORROW    16 {"symbols": ["master", "self"]}
+    4 STORE_ATTR                         0 {"symbol": "master"}
+   14 LOAD_CONST                         0 {"constant": null}
+   16 RETURN_VALUE                       0 {}
+
+INDEX 75597 BasePlacer.target marshal=479 firstline=12 locals=['self']
+    0 RESUME                             0 {}
+    2 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+    4 LOAD_ATTR                          0 {"symbol": "master", "name_flags": 0}
+   24 LOAD_ATTR                          2 {"symbol": "target", "name_flags": 0}
+   44 RETURN_VALUE                       0 {}
+
+INDEX 75597 BasePlacer.debug_enabled marshal=635 firstline=16 locals=['self']
+    0 RESUME                             0 {}
+    2 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+    4 LOAD_ATTR                          0 {"symbol": "master", "name_flags": 0}
+   24 LOAD_ATTR                          2 {"symbol": "debug", "name_flags": 0}
+   44 RETURN_VALUE                       0 {}
+
+INDEX 75597 BasePlacer.GetPlacerType marshal=797 firstline=20 locals=['name']
+    0 RESUME                             0 {}
+    2 LOAD_GLOBAL                        0 {"symbol": "BasePlacer", "name_flags": 0}
+   12 LOAD_ATTR                          3 {"symbol": "GetAllPlacerTypes", "name_flags": 1}
+   32 CALL                               0 {}
+   40 LOAD_ATTR                          5 {"symbol": "get", "name_flags": 1}
+   60 LOAD_FAST_BORROW                   0 {"symbol": "name"}
+   62 LOAD_CONST                         0 {"constant": null}
+   64 CALL                               2 {}
+   72 RETURN_VALUE                       0 {}
+
+INDEX 75597 BasePlacer.GetAllPlacerTypes marshal=1019 firstline=24 locals=['placers', 'stack', 'cls']
+    0 RESUME                             0 {}
+    2 LOAD_GLOBAL                        0 {"symbol": "BasePlacer", "name_flags": 0}
+   12 LOAD_ATTR                          2 {"symbol": "Placers", "name_flags": 0}
+   32 STORE_FAST                         0 {"symbol": "placers"}
+   34 LOAD_FAST_BORROW                   0 {"symbol": "placers"}
+   36 TO_BOOL                            0 {}
+   44 POP_JUMP_IF_TRUE                  80 {"target": 208}
+   48 NOT_TAKEN                          0 {}
+   50 LOAD_GLOBAL                        0 {"symbol": "BasePlacer", "name_flags": 0}
+   60 BUILD_LIST                         1 {}
+   62 STORE_FAST                         1 {"symbol": "stack"}
+   64 LOAD_FAST_BORROW                   1 {"symbol": "stack"}
+   66 TO_BOOL                            0 {}
+   74 POP_JUMP_IF_FALSE                 65 {"target": 208}
+   78 NOT_TAKEN                          0 {}
+   80 LOAD_FAST_BORROW                   1 {"symbol": "stack"}
+   82 LOAD_ATTR                          5 {"symbol": "pop", "name_flags": 1}
+  102 LOAD_SMALL_INT                     0 {}
+  104 CALL                               1 {}
+  112 STORE_FAST                         2 {"symbol": "cls"}
+  114 LOAD_FAST_BORROW_LOAD_FAST_BORROW    32 {"symbols": ["cls", "placers"]}
+  116 LOAD_FAST_BORROW                   2 {"symbol": "cls"}
+  118 LOAD_ATTR                          6 {"symbol": "__name__", "name_flags": 0}
+  138 STORE_SUBSCR                       0 {}
+  142 LOAD_FAST_BORROW                   1 {"symbol": "stack"}
+  144 LOAD_ATTR                          9 {"symbol": "extend", "name_flags": 1}
+  164 LOAD_FAST_BORROW                   2 {"symbol": "cls"}
+  166 LOAD_ATTR                         11 {"symbol": "__subclasses__", "name_flags": 1}
+  186 CALL                               0 {}
+  194 CALL                               1 {}
+  202 POP_TOP                            0 {}
+  204 JUMP_BACKWARD                     72 {"target": 64}
+  208 LOAD_FAST_BORROW                   0 {"symbol": "placers"}
+  210 RETURN_VALUE                       0 {}
+
+INDEX 75597 BasePlacer.IsValid marshal=1438 firstline=36 locals=['self']
+    0 RESUME                             0 {}
+    2 LOAD_CONST                         0 {"constant": true}
+    4 RETURN_VALUE                       0 {}
+
+INDEX 75597 BasePlacer.OnActive marshal=1539 firstline=39 locals=['self', 'info']
+    0 RESUME                             0 {}
+    2 LOAD_GLOBAL                        0 {"symbol": "NotImplementedError", "name_flags": 0}
+   12 RAISE_VARARGS                      1 {}
+
+INDEX 75597 BasePlacer.OnDeactive marshal=1681 firstline=42 locals=['self']
+    0 RESUME                             0 {}
+    2 LOAD_CONST                         0 {"constant": null}
+    4 RETURN_VALUE                       0 {}
+
+INDEX 75597 BasePlacer.OnStoryTick marshal=1788 firstline=45 locals=['self', 'dtime']
+    0 RESUME                             0 {}
+    2 LOAD_CONST                         0 {"constant": null}
+    4 RETURN_VALUE                       0 {}
+
+INDEX 75597 BasePlacer.EnableStoryTick marshal=1907 firstline=48 locals=['self']
+    0 RESUME                             0 {}
+    2 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+    4 LOAD_ATTR                          1 {"symbol": "DisableStoryTick", "name_flags": 1}
+   24 CALL                               0 {}
+   32 POP_TOP                            0 {}
+   34 LOAD_GLOBAL                        3 {"symbol": "StoryTick", "name_flags": 1}
+   44 CALL                               0 {}
+   52 LOAD_ATTR                          5 {"symbol": "Add", "name_flags": 1}
+   72 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+   74 LOAD_ATTR                          6 {"symbol": "OnStoryTick", "name_flags": 0}
+   94 CALL                               1 {}
+  102 POP_TOP                            0 {}
+  104 LOAD_CONST                         0 {"constant": null}
+  106 RETURN_VALUE                       0 {}
+
+INDEX 75597 BasePlacer.DisableStoryTick marshal=2172 firstline=52 locals=['self']
+    0 RESUME                             0 {}
+    2 LOAD_GLOBAL                        1 {"symbol": "StoryTick", "name_flags": 1}
+   12 CALL                               0 {}
+   20 LOAD_ATTR                          3 {"symbol": "Remove", "name_flags": 1}
+   40 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+   42 LOAD_ATTR                          4 {"symbol": "OnStoryTick", "name_flags": 0}
+   62 CALL                               1 {}
+   70 POP_TOP                            0 {}
+   72 LOAD_CONST                         0 {"constant": null}
+   74 RETURN_VALUE                       0 {}
+
+INDEX 75597 BasePlacer.RefreshConfig marshal=2375 firstline=55 locals=['self', 'config']
+    0 RESUME                             0 {}
+    2 LOAD_CONST                         0 {"constant": null}
+    4 RETURN_VALUE                       0 {}
+
+INDEX 75597 BasePlacer.SetFocusTarget marshal=2499 firstline=58 locals=['self', 'target']
+    0 RESUME                             0 {}
+    2 LOAD_CONST                         0 {"constant": null}
+    4 RETURN_VALUE                       0 {}
+
+INDEX 75597 BasePlacer.SyncDirectionToTarget marshal=2622 firstline=61 locals=['self']
+    0 RESUME                             0 {}
+    2 LOAD_CONST                         0 {"constant": null}
+    4 RETURN_VALUE                       0 {}
+
+INDEX 75597 BasePlacer marshal=94 firstline=6 locals=['__classdict__']
+    0 MAKE_CELL                          0 {"symbol": "__classdict__"}
+    2 RESUME                             0 {}
+    4 LOAD_NAME                          0 {"symbol": "__name__"}
+    6 STORE_NAME                         1 {"symbol": "__module__"}
+    8 LOAD_CONST                         0 {"constant": "BasePlacer"}
+   10 STORE_NAME                         2 {"symbol": "__qualname__"}
+   12 LOAD_SMALL_INT                     6 {}
+   14 STORE_NAME                         3 {"symbol": "__firstlineno__"}
+   16 LOAD_LOCALS                        0 {}
+   18 STORE_DEREF                        0 {"symbol": "__classdict__"}
+   20 LOAD_NAME                          4 {"symbol": "dict"}
+   22 PUSH_NULL                          0 {}
+   24 CALL                               0 {}
+   32 STORE_NAME                         5 {"symbol": "Placers"}
+   34 LOAD_CONST                         1 {"constant": {"code_ref_offset": 312, "name": "__init__"}}
+   36 MAKE_FUNCTION                      0 {}
+   38 STORE_NAME                         6 {"symbol": "__init__"}
+   40 LOAD_NAME                          7 {"symbol": "property"}
+   42 LOAD_CONST                         2 {"constant": {"code_ref_offset": 479, "name": "target"}}
+   44 MAKE_FUNCTION                      0 {}
+   46 CALL                               0 {}
+   54 STORE_NAME                         8 {"symbol": "target"}
+   56 LOAD_NAME                          7 {"symbol": "property"}
+   58 LOAD_CONST                         3 {"constant": {"code_ref_offset": 635, "name": "debug_enabled"}}
+   60 MAKE_FUNCTION                      0 {}
+   62 CALL                               0 {}
+   70 STORE_NAME                         9 {"symbol": "debug_enabled"}
+   72 LOAD_NAME                         10 {"symbol": "staticmethod"}
+   74 LOAD_CONST                         4 {"constant": {"code_ref_offset": 797, "name": "GetPlacerType"}}
+   76 MAKE_FUNCTION                      0 {}
+   78 CALL                               0 {}
+   86 STORE_NAME                        11 {"symbol": "GetPlacerType"}
+   88 LOAD_NAME                         10 {"symbol": "staticmethod"}
+   90 LOAD_CONST                         5 {"constant": {"code_ref_offset": 1019, "name": "GetAllPlacerTypes"}}
+   92 MAKE_FUNCTION                      0 {}
+   94 CALL                               0 {}
+  102 STORE_NAME                        12 {"symbol": "GetAllPlacerTypes"}
+  104 LOAD_CONST                         6 {"constant": {"code_ref_offset": 1438, "name": "IsValid"}}
+  106 MAKE_FUNCTION                      0 {}
+  108 STORE_NAME                        13 {"symbol": "IsValid"}
+  110 LOAD_CONST                        17 {"constant": [null]}
+  112 LOAD_CONST                         8 {"constant": {"code_ref_offset": 1539, "name": "OnActive"}}
+  114 MAKE_FUNCTION                      0 {}
+  116 SET_FUNCTION_ATTRIBUTE             1 {}
+  118 STORE_NAME                        14 {"symbol": "OnActive"}
+  120 LOAD_CONST                         9 {"constant": {"code_ref_offset": 1681, "name": "OnDeactive"}}
+  122 MAKE_FUNCTION                      0 {}
+  124 STORE_NAME                        15 {"symbol": "OnDeactive"}
+  126 LOAD_CONST                        10 {"constant": {"code_ref_offset": 1788, "name": "OnStoryTick"}}
+  128 MAKE_FUNCTION                      0 {}
+  130 STORE_NAME                        16 {"symbol": "OnStoryTick"}
+  132 LOAD_CONST                        11 {"constant": {"code_ref_offset": 1907, "name": "EnableStoryTick"}}
+  134 MAKE_FUNCTION                      0 {}
+  136 STORE_NAME                        17 {"symbol": "EnableStoryTick"}
+  138 LOAD_CONST                        12 {"constant": {"code_ref_offset": 2172, "name": "DisableStoryTick"}}
+  140 MAKE_FUNCTION                      0 {}
+  142 STORE_NAME                        18 {"symbol": "DisableStoryTick"}
+  144 LOAD_CONST                        17 {"constant": [null]}
+  146 LOAD_CONST                        13 {"constant": {"code_ref_offset": 2375, "name": "RefreshConfig"}}
+  148 MAKE_FUNCTION                      0 {}
+  150 SET_FUNCTION_ATTRIBUTE             1 {}
+  152 STORE_NAME                        19 {"symbol": "RefreshConfig"}
+  154 LOAD_CONST                        14 {"constant": {"code_ref_offset": 2499, "name": "SetFocusTarget"}}
+  156 MAKE_FUNCTION                      0 {}
+  158 STORE_NAME                        20 {"symbol": "SetFocusTarget"}
+  160 LOAD_CONST                        15 {"constant": {"code_ref_offset": 2622, "name": "SyncDirectionToTarget"}}
+  162 MAKE_FUNCTION                      0 {}
+  164 STORE_NAME                        21 {"symbol": "SyncDirectionToTarget"}
+  166 LOAD_CONST                        16 {"constant": ["master"]}
+  168 STORE_NAME                        22 {"symbol": "__static_attributes__"}
+  170 LOAD_FAST_BORROW                   0 {"symbol": "__classdict__"}
+  172 STORE_NAME                        23 {"symbol": "__classdictcell__"}
+  174 LOAD_CONST                         7 {"constant": null}
+  176 RETURN_VALUE                       0 {}
+
+INDEX 75597 <module> marshal=8 firstline=1 locals=[]
+    0 RESUME                             0 {}
+    2 LOAD_SMALL_INT                     0 {}
+    4 LOAD_CONST                         1 {"constant": ["StoryTick"]}
+    6 IMPORT_NAME                        0 {"symbol": "gclient.framework.util.story_tick"}
+    8 IMPORT_FROM                        1 {"symbol": "StoryTick"}
+   10 STORE_NAME                         1 {"symbol": "StoryTick"}
+   12 POP_TOP                            0 {}
+   14 LOAD_BUILD_CLASS                   0 {}
+   16 PUSH_NULL                          0 {}
+   18 LOAD_CONST                         2 {"constant": {"code_ref_offset": 94, "name": "BasePlacer"}}
+   20 MAKE_FUNCTION                      0 {}
+   22 LOAD_CONST                         3 {"constant": "BasePlacer"}
+   24 LOAD_NAME                          2 {"symbol": "object"}
+   26 CALL                               3 {}
+   34 STORE_NAME                         3 {"symbol": "BasePlacer"}
+   36 LOAD_CONST                         4 {"constant": null}
+   38 RETURN_VALUE                       0 {}
+
+INDEX 78462 AimPlacer.__init__ marshal=272 firstline=13 locals=['self', 'master', '__class__']
+    0 COPY_FREE_VARS                     1 {}
+    2 RESUME                             0 {}
+    4 LOAD_GLOBAL                        0 {"symbol": "super", "name_flags": 0}
+   14 LOAD_GLOBAL                        2 {"symbol": "AimPlacer", "name_flags": 0}
+   24 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+   26 LOAD_SUPER_ATTR                   11 {"symbol": "__init__", "name_flags": 3}
+   30 LOAD_FAST_BORROW                   1 {"symbol": "master"}
+   32 CALL                               1 {}
+   40 POP_TOP                            0 {}
+   42 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+   44 LOAD_ATTR                          7 {"symbol": "StartExposeProperties", "name_flags": 1}
+   64 CALL                               0 {}
+   72 POP_TOP                            0 {}
+   74 LOAD_GLOBAL                        8 {"symbol": "MType", "name_flags": 0}
+   84 LOAD_ATTR                         10 {"symbol": "Vector3", "name_flags": 0}
+  104 PUSH_NULL                          0 {}
+  106 LOAD_SMALL_INT                     0 {}
+  108 LOAD_CONST                         1 {"constant": 1.5}
+  110 LOAD_SMALL_INT                     2 {}
+  112 CALL                               3 {}
+  120 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  122 STORE_ATTR                         6 {"symbol": "TargetPosOffset"}
+  132 LOAD_CONST                         2 {"constant": false}
+  134 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  136 STORE_ATTR                         7 {"symbol": "EnableInertia"}
+  146 LOAD_SMALL_INT                     2 {}
+  148 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  150 STORE_ATTR                         8 {"symbol": "InertiaType"}
+  160 LOAD_CONST                         3 {"constant": 3.5}
+  162 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  164 STORE_ATTR                         9 {"symbol": "InertiaCoeff"}
+  174 LOAD_GLOBAL                        8 {"symbol": "MType", "name_flags": 0}
+  184 LOAD_ATTR                         10 {"symbol": "Vector3", "name_flags": 0}
+  204 PUSH_NULL                          0 {}
+  206 LOAD_SMALL_INT                     0 {}
+  208 LOAD_CONST                         9 {"constant": -1}
+  210 LOAD_CONST                         4 {"constant": 6.5}
+  212 CALL                               3 {}
+  220 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  222 STORE_ATTR                        10 {"symbol": "AimDirection"}
+  232 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  234 LOAD_ATTR                         20 {"symbol": "AimDirection", "name_flags": 0}
+  254 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  256 STORE_ATTR                        11 {"symbol": "Direction"}
+  266 LOAD_SMALL_INT                    60 {}
+  268 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  270 STORE_ATTR                        12 {"symbol": "Fov"}
+  280 LOAD_CONST                         5 {"constant": 0.657}
+  282 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  284 STORE_ATTR                        13 {"symbol": "ZoomMin"}
+  294 LOAD_CONST                         6 {"constant": 65.7}
+  296 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  298 STORE_ATTR                        14 {"symbol": "ZoomMax"}
+  308 LOAD_CONST                        10 {"constant": -0.2}
+  310 LOAD_GLOBAL                       30 {"symbol": "math", "name_flags": 0}
+  320 LOAD_ATTR                         32 {"symbol": "pi", "name_flags": 0}
+  340 BINARY_OP                          5 {}
+  352 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  354 STORE_ATTR                        17 {"symbol": "PitchMin"}
+  364 LOAD_CONST                         7 {"constant": 0.4}
+  366 LOAD_GLOBAL                       30 {"symbol": "math", "name_flags": 0}
+  376 LOAD_ATTR                         32 {"symbol": "pi", "name_flags": 0}
+  396 BINARY_OP                          5 {}
+  408 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  410 STORE_ATTR                        18 {"symbol": "PitchMax"}
+  420 LOAD_CONST                         8 {"constant": null}
+  422 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  424 STORE_ATTR                        19 {"symbol": "blender"}
+  434 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  436 LOAD_ATTR                         41 {"symbol": "FinishExposeProperties", "name_flags": 1}
+  456 CALL                               0 {}
+  464 POP_TOP                            0 {}
+  466 LOAD_CONST                         8 {"constant": null}
+  468 RETURN_VALUE                       0 {}
+
+INDEX 78462 AimPlacer.OnActive marshal=1263 firstline=34 locals=['self', 'info', 'target_pos_offset', 'length', 'need_blender', '__class__']
+    0 COPY_FREE_VARS                     1 {}
+    2 RESUME                             0 {}
+    4 LOAD_GLOBAL                        0 {"symbol": "super", "name_flags": 0}
+   14 LOAD_GLOBAL                        2 {"symbol": "AimPlacer", "name_flags": 0}
+   24 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+   26 LOAD_SUPER_ATTR                   11 {"symbol": "OnActive", "name_flags": 3}
+   30 LOAD_FAST_BORROW                   1 {"symbol": "info"}
+   32 CALL                               1 {}
+   40 POP_TOP                            0 {}
+   42 LOAD_FAST_BORROW                   1 {"symbol": "info"}
+   44 TO_BOOL                            0 {}
+   52 POP_JUMP_IF_FALSE                145 {"target": 346}
+   56 NOT_TAKEN                          0 {}
+   58 LOAD_GLOBAL                        6 {"symbol": "MType", "name_flags": 0}
+   68 LOAD_ATTR                          8 {"symbol": "Vector3", "name_flags": 0}
+   88 PUSH_NULL                          0 {}
+   90 LOAD_FAST_BORROW                   1 {"symbol": "info"}
+   92 LOAD_ATTR                         11 {"symbol": "get", "name_flags": 1}
+  112 LOAD_CONST                         0 {"constant": "right_offset"}
+  114 LOAD_SMALL_INT                     0 {}
+  116 CALL                               2 {}
+  124 LOAD_FAST_BORROW                   1 {"symbol": "info"}
+  126 LOAD_ATTR                         11 {"symbol": "get", "name_flags": 1}
+  146 LOAD_CONST                         1 {"constant": "upper_offset"}
+  148 LOAD_SMALL_INT                     0 {}
+  150 CALL                               2 {}
+  158 LOAD_FAST_BORROW                   1 {"symbol": "info"}
+  160 LOAD_ATTR                         11 {"symbol": "get", "name_flags": 1}
+  180 LOAD_CONST                         2 {"constant": "back_offset"}
+  182 LOAD_SMALL_INT                     0 {}
+  184 CALL                               2 {}
+  192 CALL                               3 {}
+  200 STORE_FAST                         2 {"symbol": "target_pos_offset"}
+  202 LOAD_FAST_BORROW                   2 {"symbol": "target_pos_offset"}
+  204 TO_BOOL                            0 {}
+  212 POP_JUMP_IF_FALSE                  7 {"target": 230}
+  216 NOT_TAKEN                          0 {}
+  218 LOAD_FAST_BORROW_LOAD_FAST_BORROW    32 {"symbols": ["target_pos_offset", "self"]}
+  220 STORE_ATTR                         6 {"symbol": "TargetPosOffset"}
+  230 LOAD_FAST_BORROW                   1 {"symbol": "info"}
+  232 LOAD_ATTR                         11 {"symbol": "get", "name_flags": 1}
+  252 LOAD_CONST                         3 {"constant": "target_distance"}
+  254 CALL                               1 {}
+  262 STORE_FAST                         3 {"symbol": "length"}
+  264 LOAD_FAST_BORROW                   3 {"symbol": "length"}
+  266 TO_BOOL                            0 {}
+  274 POP_JUMP_IF_FALSE                 34 {"target": 346}
+  278 NOT_TAKEN                          0 {}
+  280 LOAD_FAST_BORROW_LOAD_FAST_BORROW    48 {"symbols": ["length", "self"]}
+  282 LOAD_ATTR                         14 {"symbol": "AimDirection", "name_flags": 0}
+  302 STORE_ATTR                         8 {"symbol": "length"}
+  312 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  314 LOAD_ATTR                         14 {"symbol": "AimDirection", "name_flags": 0}
+  334 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  336 STORE_ATTR                         9 {"symbol": "Direction"}
+  346 LOAD_GLOBAL                       20 {"symbol": "MObject", "name_flags": 0}
+  356 LOAD_ATTR                         22 {"symbol": "CreateObject", "name_flags": 0}
+  376 PUSH_NULL                          0 {}
+  378 LOAD_CONST                         4 {"constant": "AimPlacer"}
+  380 CALL                               1 {}
+  388 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  390 STORE_ATTR                        12 {"symbol": "placer"}
+  400 LOAD_CONST                         5 {"constant": true}
+  402 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  404 LOAD_ATTR                         24 {"symbol": "placer", "name_flags": 0}
+  424 STORE_ATTR                        13 {"symbol": "ManualAdjust"}
+  434 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  436 LOAD_ATTR                         29 {"symbol": "RefreshConfig", "name_flags": 1}
+  456 CALL                               0 {}
+  464 POP_TOP                            0 {}
+  466 LOAD_FAST                          1 {"symbol": "info"}
+  468 COPY                               1 {}
+  470 TO_BOOL                            0 {}
+  478 POP_JUMP_IF_FALSE                 18 {"target": 518}
+  482 NOT_TAKEN                          0 {}
+  484 POP_TOP                            0 {}
+  486 LOAD_FAST_BORROW                   1 {"symbol": "info"}
+  488 LOAD_ATTR                         11 {"symbol": "get", "name_flags": 1}
+  508 LOAD_CONST                         6 {"constant": "need_blender"}
+  510 CALL                               1 {}
+  518 STORE_FAST                         4 {"symbol": "need_blender"}
+  520 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  522 LOAD_ATTR                         31 {"symbol": "BlenderInFinished", "name_flags": 1}
+  542 CALL                               0 {}
+  550 POP_TOP                            0 {}
+  552 LOAD_FAST                          4 {"symbol": "need_blender"}
+  554 COPY                               1 {}
+  556 TO_BOOL                            0 {}
+  564 POP_JUMP_IF_FALSE                 29 {"target": 626}
+  568 NOT_TAKEN                          0 {}
+  570 POP_TOP                            0 {}
+  572 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  574 LOAD_ATTR                         33 {"symbol": "CreateBlender", "name_flags": 1}
+  594 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  596 LOAD_ATTR                         34 {"symbol": "blend_type", "name_flags": 0}
+  616 LOAD_CONST                         7 {"constant": ["blend_type"]}
+  618 CALL_KW                            1 {}
+  626 POP_TOP                            0 {}
+  628 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  630 LOAD_ATTR                         36 {"symbol": "master", "name_flags": 0}
+  650 LOAD_ATTR                         38 {"symbol": "controller", "name_flags": 0}
+  670 LOAD_ATTR                         41 {"symbol": "BlendInPlacer", "name_flags": 1}
+  690 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  692 LOAD_ATTR                         24 {"symbol": "placer", "name_flags": 0}
+  712 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  714 LOAD_ATTR                         42 {"symbol": "blender", "name_flags": 0}
+  734 CALL                               2 {}
+  742 POP_TOP                            0 {}
+  744 LOAD_CONST                         5 {"constant": true}
+  746 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  748 LOAD_ATTR                         36 {"symbol": "master", "name_flags": 0}
+  768 STORE_ATTR                        22 {"symbol": "enableCollider"}
+  778 LOAD_CONST                         8 {"constant": null}
+  780 RETURN_VALUE                       0 {}
+
+INDEX 78462 AimPlacer.SetFocusTarget marshal=2594 firstline=53 locals=['self', 'target', 'direction', '__class__']
+    0 COPY_FREE_VARS                     1 {}
+    2 RESUME                             0 {}
+    4 LOAD_GLOBAL                        0 {"symbol": "super", "name_flags": 0}
+   14 LOAD_GLOBAL                        2 {"symbol": "AimPlacer", "name_flags": 0}
+   24 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+   26 LOAD_SUPER_ATTR                   11 {"symbol": "SetFocusTarget", "name_flags": 3}
+   30 LOAD_FAST_BORROW                   1 {"symbol": "target"}
+   32 CALL                               1 {}
+   40 POP_TOP                            0 {}
+   42 LOAD_FAST_BORROW                   1 {"symbol": "target"}
+   44 TO_BOOL                            0 {}
+   52 POP_JUMP_IF_FALSE                119 {"target": 294}
+   56 NOT_TAKEN                          0 {}
+   58 LOAD_GLOBAL                        6 {"symbol": "MType", "name_flags": 0}
+   68 LOAD_ATTR                          8 {"symbol": "Vector3", "name_flags": 0}
+   88 PUSH_NULL                          0 {}
+   90 LOAD_GLOBAL                       10 {"symbol": "formula", "name_flags": 0}
+  100 LOAD_ATTR                         12 {"symbol": "YawToVector", "name_flags": 0}
+  120 PUSH_NULL                          0 {}
+  122 LOAD_FAST_BORROW                   1 {"symbol": "target"}
+  124 LOAD_ATTR                         14 {"symbol": "yaw", "name_flags": 0}
+  144 CALL                               1 {}
+  152 PUSH_NULL                          0 {}
+  154 CALL_FUNCTION_EX                   0 {}
+  156 STORE_FAST                         2 {"symbol": "direction"}
+  158 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  160 LOAD_ATTR                         16 {"symbol": "AimDirection", "name_flags": 0}
+  180 LOAD_ATTR                         18 {"symbol": "length", "name_flags": 0}
+  200 LOAD_FAST_BORROW                   2 {"symbol": "direction"}
+  202 STORE_ATTR                         9 {"symbol": "length"}
+  212 LOAD_FAST_BORROW_LOAD_FAST_BORROW    32 {"symbols": ["direction", "self"]}
+  214 STORE_ATTR                         8 {"symbol": "AimDirection"}
+  224 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  226 LOAD_ATTR                         16 {"symbol": "AimDirection", "name_flags": 0}
+  246 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  248 STORE_ATTR                        10 {"symbol": "Direction"}
+  258 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+  260 LOAD_ATTR                         23 {"symbol": "RefreshConfig", "name_flags": 1}
+  280 CALL                               0 {}
+  288 POP_TOP                            0 {}
+  290 LOAD_CONST                         0 {"constant": null}
+  292 RETURN_VALUE                       0 {}
+  294 LOAD_CONST                         0 {"constant": null}
+  296 RETURN_VALUE                       0 {}
+
+INDEX 78462 AimPlacer.TurnView marshal=3141 firstline=62 locals=['self', 'diffx', 'diffy', 'shoot_adsorb']
+    0 RESUME                             0 {}
+    2 LOAD_CONST                         0 {"constant": true}
+    4 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+    6 LOAD_ATTR                          0 {"symbol": "placer", "name_flags": 0}
+   26 STORE_ATTR                         1 {"symbol": "ManualAdjust"}
+   36 LOAD_FAST_BORROW                   0 {"symbol": "self"}
+   38 LOAD_ATTR                          0 {"symbol": "placer", "name_flags": 0}
+   58 LOAD_ATTR                          5 {"symbol": "Rotate", "name_flags": 1}
+   78 LOAD_FAST_BORROW_LOAD_FAST_BORROW    18 {"symbols": ["diffx", "diffy"]}
+   80 CALL                               2 {}
+   88 POP_TOP                            0 {}
+   90 LOAD_CONST                         1 {"constant": null}
+   92 RETURN_VALUE                       0 {}
+
+INDEX 78462 AimPlacer marshal=145 firstline=12 locals=['__class__', '__classdict__']
+    0 MAKE_CELL                          0 {"symbol": "__class__"}
+    2 MAKE_CELL                          1 {"symbol": "__classdict__"}
+    4 RESUME                             0 {}
+    6 LOAD_NAME                          0 {"symbol": "__name__"}
+    8 STORE_NAME                         1 {"symbol": "__module__"}
+   10 LOAD_CONST                         0 {"constant": "AimPlacer"}
+   12 STORE_NAME                         2 {"symbol": "__qualname__"}
+   14 LOAD_SMALL_INT                    12 {}
+   16 STORE_NAME                         3 {"symbol": "__firstlineno__"}
+   18 LOAD_LOCALS                        0 {}
+   20 STORE_DEREF                        1 {"symbol": "__classdict__"}
+   22 LOAD_FAST_BORROW                   0 {"symbol": "__class__"}
+   24 BUILD_TUPLE                        1 {}
+   26 LOAD_CONST                         1 {"constant": {"code_ref_offset": 272, "name": "__init__"}}
+   28 MAKE_FUNCTION                      0 {}
+   30 SET_FUNCTION_ATTRIBUTE             8 {}
+   32 STORE_NAME                         4 {"symbol": "__init__"}
+   34 LOAD_CONST                         6 {"constant": [null]}
+   36 LOAD_FAST_BORROW                   0 {"symbol": "__class__"}
+   38 BUILD_TUPLE                        1 {}
+   40 LOAD_CONST                         2 {"constant": {"code_ref_offset": 1263, "name": "OnActive"}}
+   42 MAKE_FUNCTION                      0 {}
+   44 SET_FUNCTION_ATTRIBUTE             8 {}
+   46 SET_FUNCTION_ATTRIBUTE             1 {}
+   48 STORE_NAME                         5 {"symbol": "OnActive"}
+   50 LOAD_FAST_BORROW                   0 {"symbol": "__class__"}
+   52 BUILD_TUPLE                        1 {}
+   54 LOAD_CONST                         3 {"constant": {"code_ref_offset": 2594, "name": "SetFocusTarget"}}
+   56 MAKE_FUNCTION                      0 {}
+   58 SET_FUNCTION_ATTRIBUTE             8 {}
+   60 STORE_NAME                         6 {"symbol": "SetFocusTarget"}
+   62 LOAD_CONST                         7 {"constant": [false]}
+   64 LOAD_CONST                         4 {"constant": {"code_ref_offset": 3141, "name": "TurnView"}}
+   66 MAKE_FUNCTION                      0 {}
+   68 SET_FUNCTION_ATTRIBUTE             1 {}
+   70 STORE_NAME                         7 {"symbol": "TurnView"}
+   72 LOAD_CONST                         5 {"constant": ["AimDirection", "Direction", "EnableInertia", "Fov", "InertiaCoeff", "InertiaType", "PitchMax", "PitchMin", "TargetPosOffset", "ZoomMax", "ZoomMin", "blender", "placer"]}
+   74 STORE_NAME                         8 {"symbol": "__static_attributes__"}
+   76 LOAD_FAST_BORROW                   1 {"symbol": "__classdict__"}
+   78 STORE_NAME                         9 {"symbol": "__classdictcell__"}
+   80 LOAD_FAST_BORROW                   0 {"symbol": "__class__"}
+   82 COPY                               1 {}
+   84 STORE_NAME                        10 {"symbol": "__classcell__"}
+   86 RETURN_VALUE                       0 {}
+
+INDEX 78462 <module> marshal=8 firstline=1 locals=[]
+    0 RESUME                             0 {}
+    2 LOAD_SMALL_INT                     0 {}
+    4 LOAD_CONST                         1 {"constant": null}
+    6 IMPORT_NAME                        0 {"symbol": "math"}
+    8 STORE_NAME                         0 {"symbol": "math"}
+   10 LOAD_SMALL_INT                     0 {}
+   12 LOAD_CONST                         1 {"constant": null}
+   14 IMPORT_NAME                        1 {"symbol": "MObject"}
+   16 STORE_NAME                         1 {"symbol": "MObject"}
+   18 LOAD_SMALL_INT                     0 {}
+   20 LOAD_CONST                         1 {"constant": null}
+   22 IMPORT_NAME                        2 {"symbol": "MType"}
+   24 STORE_NAME                         2 {"symbol": "MType"}
+   26 LOAD_SMALL_INT                     1 {}
+   28 LOAD_CONST                         2 {"constant": ["EnginePlacer"]}
+   30 IMPORT_NAME                        3 {"symbol": "engine_placer"}
+   32 IMPORT_FROM                        4 {"symbol": "EnginePlacer"}
+   34 STORE_NAME                         4 {"symbol": "EnginePlacer"}
+   36 POP_TOP                            0 {}
+   38 LOAD_SMALL_INT                     0 {}
+   40 LOAD_CONST                         3 {"constant": ["formula"]}
+   42 IMPORT_NAME                        5 {"symbol": "gshare"}
+   44 IMPORT_FROM                        6 {"symbol": "formula"}
+   46 STORE_NAME                         6 {"symbol": "formula"}
+   48 POP_TOP                            0 {}
+   50 LOAD_BUILD_CLASS                   0 {}
+   52 PUSH_NULL                          0 {}
+   54 LOAD_CONST                         4 {"constant": {"code_ref_offset": 145, "name": "AimPlacer"}}
+   56 MAKE_FUNCTION                      0 {}
+   58 LOAD_CONST                         5 {"constant": "AimPlacer"}
+   60 LOAD_NAME                          4 {"symbol": "EnginePlacer"}
+   62 CALL                               3 {}
+   70 STORE_NAME                         7 {"symbol": "AimPlacer"}
+   72 LOAD_CONST                         1 {"constant": null}
+   74 RETURN_VALUE                       0 {}

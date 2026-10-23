@@ -1,0 +1,200 @@
+[
+  {
+    "id": "A01",
+    "v2_status": "CONFIRMADA",
+    "v2_claim": "Os registros antigos de instrucoes, RVAs, xrefs e vftables sao estruturalmente consistentes.",
+    "v3_related": [
+      "V3-R01"
+    ]
+  },
+  {
+    "id": "A02",
+    "v2_status": "PARCIAL",
+    "v2_claim": "Reconstrucao do mapa de tipos e layouts a partir dos inventarios RTTI.",
+    "v3_related": []
+  },
+  {
+    "id": "A03",
+    "v2_status": "DESCARTADA",
+    "v2_claim": "Uma entrada RUNTIME_FUNCTION ou truncated=false garante a funcao fonte completa.",
+    "v3_related": [
+      "V3-R01"
+    ]
+  },
+  {
+    "id": "A04",
+    "v2_status": "DESCARTADA",
+    "v2_claim": "Todos os enderecos do bloco asm do relatorio anterior estavam escritos como RVAs.",
+    "v3_related": []
+  },
+  {
+    "id": "A05",
+    "v2_status": "PARCIAL",
+    "v2_claim": "Recuperacao das vftables, sua extensao e identidade dos metodos.",
+    "v3_related": []
+  },
+  {
+    "id": "G01",
+    "v2_status": "CONFIRMADA",
+    "v2_claim": "GetAllActors e registrado com callback no RVA 0x3259770.",
+    "v3_related": []
+  },
+  {
+    "id": "G02",
+    "v2_status": "CONFIRMADA",
+    "v2_claim": "O registro integra a inicializacao do modulo de scripts MCharacter.",
+    "v3_related": []
+  },
+  {
+    "id": "G03",
+    "v2_status": "CONFIRMADA",
+    "v2_claim": "A chamada de scripts nao aceita argumentos Python; o dispatcher fornece self e NULL conforme METH_NOARGS.",
+    "v3_related": []
+  },
+  {
+    "id": "G04",
+    "v2_status": "CONFIRMADA",
+    "v2_claim": "O callback constroi uma lista Python nova e retorna a lista ou NULL nos caminhos observados.",
+    "v3_related": []
+  },
+  {
+    "id": "G05",
+    "v2_status": "CONFIRMADA",
+    "v2_claim": "O codigo demonstra a alocacao e inicializacao da raiz cujo ponteiro e armazenado em 0x8b7cd90.",
+    "v3_related": [
+      "V3-L01",
+      "V3-L05"
+    ]
+  },
+  {
+    "id": "G06",
+    "v2_status": "CONFIRMADA",
+    "v2_claim": "Existe um caminho que associa um valor de 32 bits de Character::Actor a ActorComponent nesse registro.",
+    "v3_related": [
+      "V3-L01",
+      "V3-L02"
+    ]
+  },
+  {
+    "id": "G07",
+    "v2_status": "PARCIAL",
+    "v2_claim": "Caracterizacao dos elementos retornados como ActorComponent.",
+    "v3_related": [
+      "V3-L01",
+      "V3-L03",
+      "V3-L04",
+      "V3-L05",
+      "V3-B01",
+      "V3-B02",
+      "V3-B03",
+      "V3-B04",
+      "V3-B05"
+    ]
+  },
+  {
+    "id": "G08",
+    "v2_status": "HIP\u00d3TESE",
+    "v2_claim": "GetAllActors enumera exclusivamente jogadores ou inimigos.",
+    "v3_related": [
+      "V3-L03",
+      "V3-R02"
+    ]
+  },
+  {
+    "id": "G09",
+    "v2_status": "HIP\u00d3TESE",
+    "v2_claim": "O container tem exatamente a identidade fonte std::unordered_map<uint32_t, ActorComponent*>.",
+    "v3_related": [
+      "V3-L02",
+      "V3-L04"
+    ]
+  },
+  {
+    "id": "G10",
+    "v2_status": "CONFIRMADA",
+    "v2_claim": "O callback filtra por ponteiro nao nulo e mascara 0x10 em um objeto relacionado antes da conversao.",
+    "v3_related": [
+      "V3-F01",
+      "V3-F02",
+      "V3-F03",
+      "V3-R02"
+    ]
+  },
+  {
+    "id": "C01",
+    "v2_status": "CONFIRMADA",
+    "v2_claim": "Character::Actor deriva de AnimationCore::Skeleton e instala sua vftable apos a inicializacao da base.",
+    "v3_related": []
+  },
+  {
+    "id": "C02",
+    "v2_status": "CONFIRMADA",
+    "v2_claim": "ActorComponent e SkeletonComponent possuem vptr principal +0 e subobjeto ITickable +0x68.",
+    "v3_related": [
+      "V3-F02"
+    ]
+  },
+  {
+    "id": "C03",
+    "v2_status": "CONFIRMADA",
+    "v2_claim": "ICamera deriva de IEntity e instala sua tabela principal em +0.",
+    "v3_related": []
+  },
+  {
+    "id": "C04",
+    "v2_status": "DESCARTADA",
+    "v2_claim": "O offset +0x68 pode ser generalizado como vptr secundario das quatro classes.",
+    "v3_related": []
+  },
+  {
+    "id": "C05",
+    "v2_status": "HIP\u00d3TESE",
+    "v2_claim": "ICamera +0x454 e necessariamente o FOV.",
+    "v3_related": []
+  },
+  {
+    "id": "M01",
+    "v2_status": "CONFIRMADA",
+    "v2_claim": "Ha procedencia embutida Python-3.14.0 nos helpers de listas usados pelo callback.",
+    "v3_related": []
+  },
+  {
+    "id": "M02",
+    "v2_status": "PARCIAL",
+    "v2_claim": "Identificacao do runtime incorporado com a base CPython 3.14.0.",
+    "v3_related": [
+      "V3-B05"
+    ]
+  },
+  {
+    "id": "M03",
+    "v2_status": "CONFIRMADA",
+    "v2_claim": "Existem tipos C++ Asyncore::pybase_object_impl e Messiah::PythonAsyncoreModule.",
+    "v3_related": [
+      "V3-B01",
+      "V3-B02",
+      "V3-B03",
+      "V3-B05"
+    ]
+  },
+  {
+    "id": "M04",
+    "v2_status": "HIP\u00d3TESE",
+    "v2_claim": "A arquitetura inteira de scheduling, GIL e rede da engine pode ser deduzida desses wrappers.",
+    "v3_related": [
+      "V3-B04"
+    ]
+  },
+  {
+    "id": "D01",
+    "v2_status": "DESCARTADA",
+    "v2_claim": "O getter RVA 0x19d45e0 le o endereco externo 0x8a8e810.",
+    "v3_related": []
+  },
+  {
+    "id": "D02",
+    "v2_status": "DESCARTADA",
+    "v2_claim": "O RVA da string GetAllActors pode ser usado como endereco da funcao.",
+    "v3_related": []
+  }
+]

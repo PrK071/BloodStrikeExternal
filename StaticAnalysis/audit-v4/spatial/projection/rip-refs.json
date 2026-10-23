@@ -1,0 +1,30 @@
+[
+  {
+    "target": "0x55aef10",
+    "function": "0x1a8bf50",
+    "instruction": {
+      "rva": "0x1a8c42c",
+      "preferred_va": "0x141a8c42c",
+      "file_offset": "0x1a8ba2c",
+      "bytes": "48 8d 05 dd 2a b2 03",
+      "text": "lea rax,[1455AEF10h]",
+      "length": 7,
+      "rip_target_rva": "0x55aef10",
+      "rip_target_string": "CameraProjection"
+    }
+  },
+  {
+    "target": "0x5ba6f28",
+    "function": "0x314d4c0",
+    "instruction": {
+      "rva": "0x314d934",
+      "preferred_va": "0x14314d934",
+      "file_offset": "0x314cf34",
+      "bytes": "48 8d 0d ed 95 a5 02",
+      "text": "lea rcx,[145BA6F28h]",
+      "length": 7,
+      "rip_target_rva": "0x5ba6f28",
+      "rip_target_string": "GetMainCameraViewProjection"
+    }
+  }
+]

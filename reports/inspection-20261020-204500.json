@@ -1,0 +1,354 @@
+{
+  "generated_at_utc": "2026-10-20T23:45:00.587717+00:00",
+  "steam": {
+    "appid": "3199170",
+    "name": "BLOODSTRIKE",
+    "buildid": "25981220",
+    "TargetBuildID": "25981220"
+  },
+  "patch_pkgversion": "126",
+  "executable": {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\BloodStrike.exe",
+    "file_size": 141431288,
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747"
+  },
+  "supplied_offsets": {
+    "path": "C:\\Users\\luiz\\Downloads\\bloodstrike-offsets.json",
+    "sha256": "bca7f01e78e49403910aa200a791d41b7f4e85f23c59aa9c4ae3b6052c07a640",
+    "count": 70,
+    "declared_version": "n\u00e3o informada (arquivo local)",
+    "declared_updated_at": null,
+    "zero_values": [
+      "Item.health",
+      "Item.maxHealth",
+      "ItemDefinition.itemDisplayEnglish",
+      "PlayerEyes.eyeRotation",
+      "PlayerModel.newVelocity"
+    ],
+    "large_values_as_executable_rvas": [
+      {
+        "name": "il2cpp.get_handle",
+        "value": "0xe7ccc60",
+        "inside_image": false,
+        "section": null
+      },
+      {
+        "name": "base_networkable.typeinfo",
+        "value": "0xe43c280",
+        "inside_image": false,
+        "section": null
+      },
+      {
+        "name": "main_camera.typeinfo",
+        "value": "0xe4863e8",
+        "inside_image": false,
+        "section": null
+      },
+      {
+        "name": "BaseViewModel.BaseViewModel_C",
+        "value": "0xe4a2f20",
+        "inside_image": false,
+        "section": null
+      },
+      {
+        "name": "ListComponent_Projectile.ListComponent_C",
+        "value": "0xe4dd1c0",
+        "inside_image": false,
+        "section": null
+      },
+      {
+        "name": "TOD_Sky.TOD_Sky_C",
+        "value": "0xe401ad8",
+        "inside_image": false,
+        "section": null
+      }
+    ]
+  },
+  "pe": {
+    "machine": "0x8664",
+    "preferred_image_base": "0x140000000",
+    "size_of_image": "0x94e9000",
+    "entry_point_rva": "0x424c4a4",
+    "sections": [
+      {
+        "name": ".text",
+        "rva": 4096,
+        "virtual_size": 81996527,
+        "raw_size": 81996800,
+        "raw_offset": 1536
+      },
+      {
+        "name": ".rdata",
+        "rva": 82001920,
+        "virtual_size": 41947670,
+        "raw_size": 41948160,
+        "raw_offset": 81998336
+      },
+      {
+        "name": ".data",
+        "rva": 123953152,
+        "virtual_size": 25816612,
+        "raw_size": 11113472,
+        "raw_offset": 123946496
+      },
+      {
+        "name": ".pdata",
+        "rva": 149770240,
+        "virtual_size": 3709836,
+        "raw_size": 3709952,
+        "raw_offset": 135059968
+      },
+      {
+        "name": "PyRuntim",
+        "rva": 153481216,
+        "virtual_size": 315360,
+        "raw_size": 315392,
+        "raw_offset": 138769920
+      },
+      {
+        "name": "AsyncioD",
+        "rva": 153796608,
+        "virtual_size": 104,
+        "raw_size": 512,
+        "raw_offset": 139085312
+      },
+      {
+        "name": "_RDATA",
+        "rva": 153800704,
+        "virtual_size": 131592,
+        "raw_size": 132096,
+        "raw_offset": 139085824
+      },
+      {
+        "name": ".rsrc",
+        "rva": 153935872,
+        "virtual_size": 279152,
+        "raw_size": 279552,
+        "raw_offset": 139217920
+      },
+      {
+        "name": ".reloc",
+        "rva": 154218496,
+        "virtual_size": 1922820,
+        "raw_size": 1923072,
+        "raw_offset": 139497472
+      }
+    ],
+    "imports": [
+      "SHLWAPI.dll",
+      "KERNEL32.dll",
+      "USER32.dll",
+      "SHELL32.dll",
+      "IMM32.dll",
+      "MSWSOCK.dll",
+      "WTSAPI32.dll",
+      "bcrypt.dll",
+      "pdh.dll",
+      "PSAPI.DLL",
+      "dwmapi.dll",
+      "DSOUND.dll",
+      "SensApi.dll",
+      "wlanapi.dll",
+      "WINTRUST.dll",
+      "gdiplus.dll",
+      "dbghelp.dll",
+      "CFGMGR32.dll",
+      "CrashHunter_PC3.dll",
+      "NRD.dll",
+      "NgSocialNet.dll",
+      "NtUniSdkBase.dll",
+      "OrbitSDK.dll",
+      "CRYPT32.dll",
+      "IPHLPAPI.DLL",
+      "libenvsdk.dll",
+      "api-ms-win-core-path-l1-1-0.dll",
+      "VERSION.dll",
+      "WINMM.dll",
+      "WLDAP32.dll",
+      "WS2_32.dll",
+      "GDI32.dll",
+      "COMDLG32.dll",
+      "ADVAPI32.dll",
+      "ole32.dll",
+      "OLEAUT32.dll",
+      "SETUPAPI.dll"
+    ],
+    "anchors": {
+      "GetAllActors": {
+        "occurrences": 1,
+        "first_locations": [
+          {
+            "file_offset": "0x5bb7a78",
+            "rva": "0x5bb8878"
+          }
+        ]
+      },
+      "NewSpike": {
+        "occurrences": 752,
+        "first_locations": [
+          {
+            "file_offset": "0x4e4d8d3",
+            "rva": "0x4e4e6d3"
+          },
+          {
+            "file_offset": "0x4e5b813",
+            "rva": "0x4e5c613"
+          },
+          {
+            "file_offset": "0x4ec0313",
+            "rva": "0x4ec1113"
+          },
+          {
+            "file_offset": "0x4ec0a03",
+            "rva": "0x4ec1803"
+          },
+          {
+            "file_offset": "0x4ec70c3",
+            "rva": "0x4ec7ec3"
+          },
+          {
+            "file_offset": "0x4ec8133",
+            "rva": "0x4ec8f33"
+          },
+          {
+            "file_offset": "0x4ec8553",
+            "rva": "0x4ec9353"
+          },
+          {
+            "file_offset": "0x555d213",
+            "rva": "0x555e013"
+          }
+        ]
+      },
+      "Messiah": {
+        "occurrences": 41862,
+        "first_locations": [
+          {
+            "file_offset": "0x4e48e08",
+            "rva": "0x4e49c08"
+          },
+          {
+            "file_offset": "0x4e5724a",
+            "rva": "0x4e5804a"
+          },
+          {
+            "file_offset": "0x4e5727e",
+            "rva": "0x4e5807e"
+          },
+          {
+            "file_offset": "0x4e5731a",
+            "rva": "0x4e5811a"
+          },
+          {
+            "file_offset": "0x4e5734e",
+            "rva": "0x4e5814e"
+          },
+          {
+            "file_offset": "0x4e573ea",
+            "rva": "0x4e581ea"
+          },
+          {
+            "file_offset": "0x4e5741e",
+            "rva": "0x4e5821e"
+          },
+          {
+            "file_offset": "0x4e574ba",
+            "rva": "0x4e582ba"
+          }
+        ]
+      },
+      "FpsPlacer": {
+        "occurrences": 81,
+        "first_locations": [
+          {
+            "file_offset": "0x55d5d06",
+            "rva": "0x55d6b06"
+          },
+          {
+            "file_offset": "0x55d8d80",
+            "rva": "0x55d9b80"
+          },
+          {
+            "file_offset": "0x55d8f30",
+            "rva": "0x55d9d30"
+          },
+          {
+            "file_offset": "0x55d9940",
+            "rva": "0x55da740"
+          },
+          {
+            "file_offset": "0x55d9bde",
+            "rva": "0x55da9de"
+          },
+          {
+            "file_offset": "0x55d9d88",
+            "rva": "0x55dab88"
+          },
+          {
+            "file_offset": "0x55dae48",
+            "rva": "0x55dbc48"
+          },
+          {
+            "file_offset": "0x55daeee",
+            "rva": "0x55dbcee"
+          }
+        ]
+      },
+      "ALSTpsPlacer": {
+        "occurrences": 0,
+        "first_locations": []
+      },
+      "GetShootDir": {
+        "occurrences": 0,
+        "first_locations": []
+      },
+      "BaseNetworkable": {
+        "occurrences": 0,
+        "first_locations": []
+      },
+      "TOD_Sky": {
+        "occurrences": 0,
+        "first_locations": []
+      },
+      "il2cpp": {
+        "occurrences": 0,
+        "first_locations": []
+      }
+    }
+  },
+  "reference_page_candidate": {
+    "source": "https://globality.live/case-bloodstrike",
+    "claimed_actor_manager_rva": "0x8a8e810",
+    "section": ".data",
+    "file_backed": false,
+    "semantic_validation": "NOT_VALIDATED; section membership alone does not identify an actor manager"
+  },
+  "process_access": {
+    "pid": 13088,
+    "inspector": {
+      "image_path": "C:\\Users\\luiz\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "elevated": false
+    },
+    "target": {
+      "image_path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\BloodStrike.exe",
+      "elevated": true
+    },
+    "vm_read_handle_opened": false,
+    "vm_read_open_error": 5,
+    "memory_read_performed": false
+  },
+  "feature_status": {
+    "esp": "NOT_IMPLEMENTED_OR_VALIDATED",
+    "aimbot": "NOT_IMPLEMENTED_OR_VALIDATED",
+    "radar": "NOT_IMPLEMENTED_OR_VALIDATED",
+    "no_recoil": "NOT_IMPLEMENTED_OR_VALIDATED"
+  },
+  "interpretation_limits": [
+    "Steam depot build and local patch version are separate identifiers.",
+    "Original offsets do not identify a base module; RVA checks here apply only to BloodStrike.exe.",
+    "An offset of zero is not intrinsically invalid and is not substituted with a guessed value.",
+    "String presence is static evidence, not proof of a live object layout.",
+    "Failure to open VM_READ can reflect token integrity or access controls; the probe does not establish which protection caused it.",
+    "An opened VM_READ handle would not prove that any candidate offset is correct."
+  ]
+}

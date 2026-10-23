@@ -1,0 +1,13 @@
+test_all_sentinels_select_zero_origin_and_widen_transform (test_entity_position.EntityPositionTests.test_all_sentinels_select_zero_origin_and_widen_transform) ... ok
+test_exact_size_and_nonzero_entity_offset (test_entity_position.EntityPositionTests.test_exact_size_and_nonzero_entity_offset) ... ok
+test_float32_rounding_happens_before_widening (test_entity_position.EntityPositionTests.test_float32_rounding_happens_before_widening) ... ok
+test_insufficient_buffer_has_clear_bounds (test_entity_position.EntityPositionTests.test_insufficient_buffer_has_clear_bounds) ... ok
+test_mixed_sentinels_apply_entire_anchor_triple (test_entity_position.EntityPositionTests.test_mixed_sentinels_apply_entire_anchor_triple) ... ok
+test_mutable_input_is_not_retained_and_nonfinite_values_are_preserved (test_entity_position.EntityPositionTests.test_mutable_input_is_not_retained_and_nonfinite_values_are_preserved) ... ok
+test_negative_anchors_are_signed_and_added_in_double (test_entity_position.EntityPositionTests.test_negative_anchors_are_signed_and_added_in_double) ... ok
+test_offset_and_buffer_contract (test_entity_position.EntityPositionTests.test_offset_and_buffer_contract) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK

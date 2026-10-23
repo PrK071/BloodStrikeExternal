@@ -1,0 +1,183 @@
+{
+  "manifest_checks": [
+    {
+      "path": "C:\\Users\\luiz\\Documents\\BloodStrikeExternal\\StaticAnalysis\\audit-v2\\address-map.json",
+      "expected": "e82d85386b0beb16a3ad0c65c57f4ace71e6ce3c5316b1f0fe09699ff90b4cad",
+      "actual": "e82d85386b0beb16a3ad0c65c57f4ace71e6ce3c5316b1f0fe09699ff90b4cad",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\luiz\\Documents\\BloodStrikeExternal\\StaticAnalysis\\audit-v2\\base-initialization.json",
+      "expected": "3a0e6ac6f340799b1c8464d70481b93e8d8c4176edfb45578f87012cd8024fd2",
+      "actual": "3a0e6ac6f340799b1c8464d70481b93e8d8c4176edfb45578f87012cd8024fd2",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\luiz\\Documents\\BloodStrikeExternal\\StaticAnalysis\\audit-v2\\baseline-verify_evidence.py",
+      "expected": "e0e84e2557a5b22463354a6f80bd07b6c0bc43122ab12aea3e99272a87b4e28f",
+      "actual": "e0e84e2557a5b22463354a6f80bd07b6c0bc43122ab12aea3e99272a87b4e28f",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\luiz\\Documents\\BloodStrikeExternal\\StaticAnalysis\\audit-v2\\claims.json",
+      "expected": "2a61246ccf5363dece08c425eaeb0010db00c0cd5016eb6b9ed9e86ee86171fd",
+      "actual": "2a61246ccf5363dece08c425eaeb0010db00c0cd5016eb6b9ed9e86ee86171fd",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\luiz\\Documents\\BloodStrikeExternal\\StaticAnalysis\\audit-v2\\disassembly.txt",
+      "expected": "e13df57ff915fde21d1c085faf3d42bf5f697cf115124b5448e4d74e147a7293",
+      "actual": "e13df57ff915fde21d1c085faf3d42bf5f697cf115124b5448e4d74e147a7293",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\luiz\\Documents\\BloodStrikeExternal\\StaticAnalysis\\audit-v2\\functions.json",
+      "expected": "3b7de08e863e133c56aa6e55c582e2b6bdff9176c262b57835da1f0ef7a42256",
+      "actual": "3b7de08e863e133c56aa6e55c582e2b6bdff9176c262b57835da1f0ef7a42256",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\luiz\\Documents\\BloodStrikeExternal\\StaticAnalysis\\audit-v2\\hierarchies.json",
+      "expected": "167490900f17b10958a26e8e95674676e59f0b97756f5bc9ab9993810b4b6799",
+      "actual": "167490900f17b10958a26e8e95674676e59f0b97756f5bc9ab9993810b4b6799",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\luiz\\Documents\\BloodStrikeExternal\\StaticAnalysis\\audit-v2\\legacy-audit.json",
+      "expected": "1dde882ce62eb28a1ddb288d7d5fc764c13945aba8f84931bfaf253f6b250063",
+      "actual": "1dde882ce62eb28a1ddb288d7d5fc764c13945aba8f84931bfaf253f6b250063",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\luiz\\Documents\\BloodStrikeExternal\\StaticAnalysis\\audit-v2\\reachable-code.json",
+      "expected": "9eda09b467a2cd01d341f1942b6fda1298d0ddb9aa17f2b8c38fe85f55c75b24",
+      "actual": "9eda09b467a2cd01d341f1942b6fda1298d0ddb9aa17f2b8c38fe85f55c75b24",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\luiz\\Documents\\BloodStrikeExternal\\StaticAnalysis\\audit-v2\\references.json",
+      "expected": "da31428b2c5d05d3b720d5def12880d230609365ac87740d29df8da92c76ebf3",
+      "actual": "da31428b2c5d05d3b720d5def12880d230609365ac87740d29df8da92c76ebf3",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\luiz\\Documents\\BloodStrikeExternal\\StaticAnalysis\\audit-v2\\script-bridge.json",
+      "expected": "55aaf473dbaacf62525d90111ffd644badad1b7e0b747dc7d602dc34018453cd",
+      "actual": "55aaf473dbaacf62525d90111ffd644badad1b7e0b747dc7d602dc34018453cd",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\luiz\\Documents\\BloodStrikeExternal\\StaticAnalysis\\audit-v2\\summary.json",
+      "expected": "c0ba4b8b77b8819ee55e56fc49c4712a8d89187d1be5e5e21dbc987ed1bec120",
+      "actual": "c0ba4b8b77b8819ee55e56fc49c4712a8d89187d1be5e5e21dbc987ed1bec120",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\luiz\\Documents\\BloodStrikeExternal\\StaticAnalysis\\audit-v2\\verification-controls.json",
+      "expected": "13dc8a046f3c30e84dad5ae997638690d63f9ca9df30473d8a9ed7a998ef55b1",
+      "actual": "13dc8a046f3c30e84dad5ae997638690d63f9ca9df30473d8a9ed7a998ef55b1",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\luiz\\Documents\\BloodStrikeExternal\\StaticAnalysis\\AUDITORIA-V2.md",
+      "expected": "87d29d90c3fb7704c379e342864c1ef211184e1cf58d40074d170fee1552bba3",
+      "actual": "87d29d90c3fb7704c379e342864c1ef211184e1cf58d40074d170fee1552bba3",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\luiz\\Documents\\BloodStrikeExternal\\StaticAnalysis\\audit_v2.py",
+      "expected": "3a1a5df0bdd631c95a3f368c622a62cdc3c40dd1a3fb2b29d93956384b0b5805",
+      "actual": "3a1a5df0bdd631c95a3f368c622a62cdc3c40dd1a3fb2b29d93956384b0b5805",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\luiz\\Documents\\BloodStrikeExternal\\StaticAnalysis\\curate_audit_v2.py",
+      "expected": "c097969252850bfa81562037ba13a382976aa6b68c7eaa6b16c0bbfdc644e951",
+      "actual": "c097969252850bfa81562037ba13a382976aa6b68c7eaa6b16c0bbfdc644e951",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\luiz\\Documents\\BloodStrikeExternal\\StaticAnalysis\\verify_evidence.py",
+      "expected": "2482ecf10801ba56205e9a968aca2411733d58f4c72798bd66d755b567438e6c",
+      "actual": "2482ecf10801ba56205e9a968aca2411733d58f4c72798bd66d755b567438e6c",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\luiz\\Documents\\BloodStrikeExternal\\StaticAnalysis\\test_audit_controls.py",
+      "expected": "fec1fa6c75f729cd4ef9a4d903092f901ed679f8ef339fd12218051fd3842d42",
+      "actual": "fec1fa6c75f729cd4ef9a4d903092f901ed679f8ef339fd12218051fd3842d42",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\luiz\\Documents\\BloodStrikeExternal\\StaticAnalysis\\run-audit-v2.ps1",
+      "expected": "18056c63fd5a40b31c9a7c0e91168225c1a5a2d257b3a21a543ae8743e6c39c7",
+      "actual": "18056c63fd5a40b31c9a7c0e91168225c1a5a2d257b3a21a543ae8743e6c39c7",
+      "match": true
+    }
+  ],
+  "input_sha256": {
+    "audit-v2\\address-map.json": "e82d85386b0beb16a3ad0c65c57f4ace71e6ce3c5316b1f0fe09699ff90b4cad",
+    "audit-v2\\artifact-sha256.json": "2afeeaed0e3d68cc60275d85cf1b9993245bb415ed1c53dfad06f07def84461e",
+    "audit-v2\\base-initialization.json": "3a0e6ac6f340799b1c8464d70481b93e8d8c4176edfb45578f87012cd8024fd2",
+    "audit-v2\\baseline-verify_evidence.py": "e0e84e2557a5b22463354a6f80bd07b6c0bc43122ab12aea3e99272a87b4e28f",
+    "audit-v2\\claims.json": "2a61246ccf5363dece08c425eaeb0010db00c0cd5016eb6b9ed9e86ee86171fd",
+    "audit-v2\\disassembly.txt": "e13df57ff915fde21d1c085faf3d42bf5f697cf115124b5448e4d74e147a7293",
+    "audit-v2\\functions.json": "3b7de08e863e133c56aa6e55c582e2b6bdff9176c262b57835da1f0ef7a42256",
+    "audit-v2\\hierarchies.json": "167490900f17b10958a26e8e95674676e59f0b97756f5bc9ab9993810b4b6799",
+    "audit-v2\\legacy-audit.json": "1dde882ce62eb28a1ddb288d7d5fc764c13945aba8f84931bfaf253f6b250063",
+    "audit-v2\\reachable-code.json": "9eda09b467a2cd01d341f1942b6fda1298d0ddb9aa17f2b8c38fe85f55c75b24",
+    "audit-v2\\references.json": "da31428b2c5d05d3b720d5def12880d230609365ac87740d29df8da92c76ebf3",
+    "audit-v2\\script-bridge.json": "55aaf473dbaacf62525d90111ffd644badad1b7e0b747dc7d602dc34018453cd",
+    "audit-v2\\summary.json": "c0ba4b8b77b8819ee55e56fc49c4712a8d89187d1be5e5e21dbc987ed1bec120",
+    "audit-v2\\verification-controls.json": "13dc8a046f3c30e84dad5ae997638690d63f9ca9df30473d8a9ed7a998ef55b1",
+    "audit_v2.py": "3a1a5df0bdd631c95a3f368c622a62cdc3c40dd1a3fb2b29d93956384b0b5805",
+    "AUDITORIA-V2.md": "87d29d90c3fb7704c379e342864c1ef211184e1cf58d40074d170fee1552bba3",
+    "curate_audit_v2.py": "c097969252850bfa81562037ba13a382976aa6b68c7eaa6b16c0bbfdc644e951",
+    "RELATORIO.md": "1cf2aacf1cd088f99af16e02bf6919efd03783caec85cb528999b6bdc18156f2",
+    "results\\anchor-strings.json": "bcc3a13e8abfb81cf985f45c184cdc9da648b0f077dc830d762e7edb198a6fd6",
+    "results\\code-xrefs.json": "9fec30008718974a8ef3dc588d5802d148c800c463ed46c546e21675ce01cb55",
+    "results\\confirmed-evidence.json": "13383b1a2c4cee8d44e8b4db47571dbb99b81c9a52a0c43042be9cd732971e54",
+    "results\\core-hierarchies.json": "7ede455c2fe47e7b4f71061552c4dd1da0f5ca8fb829ffdce91dfcb7afe3d081",
+    "results\\core-vtables.json": "8ce342c96f33fb8c3ff173254ce8a45ca1fe9f133cac9889347dd8cdc2d8a578",
+    "results\\exports.json": "1c74a5fd03b52f7166e9ada453c13cff8e30e1b226b6d4a6ffd8ad6655625980",
+    "results\\external-offsets-unvalidated.json": "076d6c28e5dbe23234ed85baa8bcdef5d559a1163bc1dd2be441ab701d7ceef3",
+    "results\\function-evidence.json": "6f4c8a4b014750fb33fe321d22904ca59b055b91ae374926f3cddd25b1c412eb",
+    "results\\imports.json": "589119afc0483b837bf1639a70f164f1796bfaa15e25d12b6ea654f234dcc0b0",
+    "results\\local-dependencies.json": "01e409ef76c361210783fef761121966d3c1c1e77660f88e08e53718226b7f08",
+    "results\\provenance.json": "c6e312f03acf127f56732d032c6c438b107a50c27b5810d7434a185b2066a43f",
+    "results\\rtti-hierarchies.json": "e87d0efa5466b05cac7bd8030bee380e46b0a0ba501283e9ede2645e4331cdaf",
+    "results\\rtti-types.json": "7d7ad9edebc4bd46a48618a6365b34293f562caf54a127c0b0b2b5ec48361f2c",
+    "results\\summary.json": "b19750ee46b3c114aaeb4a566de06baecaed56617f09f3cc16337332d2268b92",
+    "results\\verification.json": "d04fb541d6801eccc8464498c2b19d4aec40b37b4001bbeb6686964be912215d",
+    "results\\xref-windows.json": "5df01b53a08d6155ea93c6216cd193474b9a6217892fadee58dfd1af0b1f0b17",
+    "verify_evidence.py": "2482ecf10801ba56205e9a968aca2411733d58f4c72798bd66d755b567438e6c"
+  },
+  "inherited_claim_ids": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "G01",
+    "G02",
+    "G03",
+    "G04",
+    "G05",
+    "G06",
+    "G07",
+    "G08",
+    "G09",
+    "G10",
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "M01",
+    "M02",
+    "M03",
+    "M04",
+    "D01",
+    "D02"
+  ]
+}

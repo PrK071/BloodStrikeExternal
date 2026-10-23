@@ -1,0 +1,707 @@
+[
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\api-ms-win-core-path-l1-1-0.dll",
+    "file_size": 3072,
+    "sha256": "9497cd51843deccbdc2c26ee2d02e6e2c8d3910df5fc9658628a6feb78d857f9",
+    "machine": "0x8664",
+    "timestamp": "0x5010ad12",
+    "preferred_base": "0x180000000",
+    "imports": [],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\cclibdll.dll",
+    "file_size": 477632,
+    "sha256": "223effc4e181664f91b3f7c223597e93d5a22ad8d2e1e1913a2ecc1b77bde086",
+    "machine": "0x8664",
+    "timestamp": "0x680ddc80",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "KERNEL32.dll",
+      "WS2_32.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\CrashHunter_PC3.dll",
+    "file_size": 3374016,
+    "sha256": "e96895d4f649fa06cf82213c462c355c490224c1b856fa4e543ed767b25a1a63",
+    "machine": "0x8664",
+    "timestamp": "0x67f8d608",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "dbghelp.dll",
+      "KERNEL32.dll",
+      "USER32.dll",
+      "GDI32.dll",
+      "ADVAPI32.dll",
+      "SHELL32.dll",
+      "CFGMGR32.dll",
+      "RPCRT4.dll",
+      "IPHLPAPI.DLL",
+      "VERSION.dll",
+      "WLDAP32.dll",
+      "WS2_32.dll",
+      "CRYPT32.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\D3DCompiler_43.dll",
+    "file_size": 2526056,
+    "sha256": "44c3a7e330b54a35a9efa015831392593aa02e7da1460be429d17c3644850e8a",
+    "machine": "0x8664",
+    "timestamp": "0x4bf70beb",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "msvcrt.dll",
+      "GDI32.dll",
+      "KERNEL32.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\D3DCompiler_47.dll",
+    "file_size": 4517376,
+    "sha256": "f642940ffb5dca7e548ba2270686798cf6b4c74b60e88bbb22f0991868cae3e5",
+    "machine": "0x8664",
+    "timestamp": "0xea5f9aa6",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "api-ms-win-crt-string-l1-1-0.dll",
+      "api-ms-win-crt-math-l1-1-0.dll",
+      "api-ms-win-crt-runtime-l1-1-0.dll",
+      "api-ms-win-crt-private-l1-1-0.dll",
+      "api-ms-win-core-libraryloader-l1-2-0.dll",
+      "api-ms-win-core-string-l1-1-0.dll",
+      "api-ms-win-core-synch-l1-1-0.dll",
+      "api-ms-win-core-debug-l1-1-0.dll",
+      "api-ms-win-core-heap-l1-1-0.dll",
+      "api-ms-win-core-file-l1-1-0.dll",
+      "api-ms-win-core-memory-l1-1-0.dll",
+      "api-ms-win-core-sysinfo-l1-1-0.dll",
+      "api-ms-win-core-file-l1-2-0.dll",
+      "api-ms-win-core-errorhandling-l1-1-0.dll",
+      "api-ms-win-core-handle-l1-1-0.dll",
+      "api-ms-win-core-synch-l1-2-0.dll",
+      "api-ms-win-core-processthreads-l1-1-0.dll",
+      "api-ms-win-core-rtlsupport-l1-1-0.dll",
+      "api-ms-win-core-processthreads-l1-1-1.dll",
+      "api-ms-win-core-profile-l1-1-0.dll",
+      "api-ms-win-core-interlocked-l1-1-0.dll",
+      "api-ms-win-core-heap-l2-1-0.dll",
+      "api-ms-win-core-registry-l1-1-0.dll",
+      "api-ms-win-core-localization-l1-2-0.dll",
+      "api-ms-win-core-io-l1-1-0.dll",
+      "RPCRT4.dll",
+      "api-ms-win-core-processenvironment-l1-1-0.dll",
+      "api-ms-win-crt-time-l1-1-0.dll",
+      "api-ms-win-core-string-obsolete-l1-1-0.dll",
+      "CRYPTSP.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\dbghelp.dll",
+    "file_size": 1199296,
+    "sha256": "cee97bc83e5aa825df059f2f2e4e83c0e65fe4a263aabbec0ac5476e70bc57e4",
+    "machine": "0x14c",
+    "timestamp": "0x558101ad",
+    "preferred_base": "0x3000000",
+    "imports": [
+      "msvcrt.dll",
+      "api-ms-win-core-misc-l1-1-0.dll",
+      "api-ms-win-core-errorhandling-l1-1-0.dll",
+      "api-ms-win-core-file-l1-1-0.dll",
+      "api-ms-win-core-synch-l1-1-0.dll",
+      "api-ms-win-core-processthreads-l1-1-0.dll",
+      "api-ms-win-core-sysinfo-l1-1-0.dll",
+      "api-ms-win-core-handle-l1-1-0.dll",
+      "api-ms-win-core-libraryloader-l1-1-0.dll",
+      "api-ms-win-core-heap-l1-1-0.dll",
+      "api-ms-win-core-processenvironment-l1-1-0.dll",
+      "api-ms-win-core-string-l1-1-0.dll",
+      "api-ms-win-core-memory-l1-1-0.dll",
+      "api-ms-win-core-debug-l1-1-0.dll",
+      "api-ms-win-core-localregistry-l1-1-0.dll",
+      "api-ms-win-core-rtlsupport-l1-1-0.dll",
+      "api-ms-win-core-profile-l1-1-0.dll",
+      "api-ms-win-core-localization-l1-1-0.dll",
+      "api-ms-win-core-io-l1-1-0.dll",
+      "api-ms-win-core-delayload-l1-1-0.dll"
+    ],
+    "delay_imports": [
+      "RPCRT4.dll"
+    ]
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\dxcompiler.dll",
+    "file_size": 20067744,
+    "sha256": "b0849eef97571a3170e20e3eb697f3467d92f98f627386ed9dbfed23a146528b",
+    "machine": "0x8664",
+    "timestamp": "0x62cf3b11",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "KERNEL32.dll",
+      "ole32.dll",
+      "OLEAUT32.dll",
+      "ADVAPI32.dll",
+      "MSVCP140.dll",
+      "VCRUNTIME140.dll",
+      "VCRUNTIME140_1.dll",
+      "api-ms-win-crt-heap-l1-1-0.dll",
+      "api-ms-win-crt-runtime-l1-1-0.dll",
+      "api-ms-win-crt-math-l1-1-0.dll",
+      "api-ms-win-crt-string-l1-1-0.dll",
+      "api-ms-win-crt-stdio-l1-1-0.dll",
+      "api-ms-win-crt-convert-l1-1-0.dll",
+      "api-ms-win-crt-utility-l1-1-0.dll",
+      "api-ms-win-crt-environment-l1-1-0.dll",
+      "api-ms-win-crt-time-l1-1-0.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\dxil.dll",
+    "file_size": 1526184,
+    "sha256": "6a63c2e01ab68b217070d1d80c94e13934f0391e65b50d2ed4eb420be37b4633",
+    "machine": "0x8664",
+    "timestamp": "0xd5aaf9b6",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "KERNEL32.dll",
+      "ADVAPI32.dll",
+      "ole32.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\GfeSDK.dll",
+    "file_size": 4228392,
+    "sha256": "b1e8741516854cc179bd772e4801c1eac76b14659a7e2cdc7352fdad0030ef47",
+    "machine": "0x8664",
+    "timestamp": "0x5ace1465",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "KERNEL32.dll",
+      "USER32.dll",
+      "SHELL32.dll",
+      "ADVAPI32.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\httpdns.dll",
+    "file_size": 2221336,
+    "sha256": "3f0fcc84a457e4bc4b2ea751aad4529b5c7b8bbefed09438f5257b7a781259b3",
+    "machine": "0x8664",
+    "timestamp": "0x62982eac",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "WS2_32.dll",
+      "WLDAP32.dll",
+      "ADVAPI32.dll",
+      "USER32.dll",
+      "CRYPT32.dll",
+      "KERNEL32.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\libenvsdk.dll",
+    "file_size": 7419896,
+    "sha256": "b4132ceda56ed0daf1f522dc593ff52eb89f95ec775a3a41fb99042d66c58394",
+    "machine": "0x8664",
+    "timestamp": "0x662337ba",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "IPHLPAPI.DLL",
+      "WS2_32.dll",
+      "KERNEL32.dll",
+      "ADVAPI32.dll",
+      "KERNEL32.dll",
+      "USER32.dll",
+      "KERNEL32.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\libiconv.dll",
+    "file_size": 981504,
+    "sha256": "2843567e3fe8c035884dcc6366628ece2f683380e6b1d64763bacf8fc617e17c",
+    "machine": "0x8664",
+    "timestamp": "0x4ee34414",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "KERNEL32.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\libzbar64-0.dll",
+    "file_size": 166400,
+    "sha256": "384d07f6a56ba14dd57ceb2ccd14a394035ed8bdfd7ec0fe0d1f457e8942dc25",
+    "machine": "0x8664",
+    "timestamp": "0x54fda9fd",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "WINMM.dll",
+      "KERNEL32.dll",
+      "USER32.dll",
+      "libiconv.dll",
+      "MSVCR120.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\mpay.dll",
+    "file_size": 9033384,
+    "sha256": "3f6ac8a7b9c44c2096b8487263ae23162d7895ccf559a266c83239374a9ddf40",
+    "machine": "0x8664",
+    "timestamp": "0x64806d2e",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "USER32.dll",
+      "GDI32.dll",
+      "WS2_32.dll",
+      "ADVAPI32.dll",
+      "IPHLPAPI.DLL",
+      "VERSION.dll",
+      "KERNEL32.dll",
+      "SHELL32.dll",
+      "ole32.dll",
+      "OLEAUT32.dll",
+      "SHLWAPI.dll",
+      "gdiplus.dll",
+      "WININET.dll",
+      "WINMM.dll",
+      "IMM32.dll",
+      "WLDAP32.dll",
+      "CRYPT32.dll",
+      "COMCTL32.dll",
+      "MSIMG32.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\msvcp140.dll",
+    "file_size": 575056,
+    "sha256": "a4c2229bdc2a2a630acdc095b4d86008e5c3e3bc7773174354f3da4f5beb9cde",
+    "machine": "0x8664",
+    "timestamp": "0xb3df2f63",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "VCRUNTIME140.dll",
+      "VCRUNTIME140_1.dll",
+      "api-ms-win-crt-heap-l1-1-0.dll",
+      "api-ms-win-crt-runtime-l1-1-0.dll",
+      "api-ms-win-crt-string-l1-1-0.dll",
+      "api-ms-win-crt-locale-l1-1-0.dll",
+      "api-ms-win-crt-stdio-l1-1-0.dll",
+      "api-ms-win-crt-filesystem-l1-1-0.dll",
+      "api-ms-win-crt-time-l1-1-0.dll",
+      "api-ms-win-crt-environment-l1-1-0.dll",
+      "api-ms-win-crt-math-l1-1-0.dll",
+      "api-ms-win-crt-convert-l1-1-0.dll",
+      "api-ms-win-crt-utility-l1-1-0.dll",
+      "KERNEL32.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\nbsextend.dll",
+    "file_size": 3359232,
+    "sha256": "d3ea2473f65498a47ff206ec1ba325443560f14f956e75390d54c1e3727f8968",
+    "machine": "0x8664",
+    "timestamp": "0x6a26ae17",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "bcrypt.dll",
+      "KERNEL32.dll",
+      "USER32.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\NgModules.dll",
+    "file_size": 95744,
+    "sha256": "81bac0e5e152b882ade20b62b01b8ce65ff9511b04de26c953c2319e05007756",
+    "machine": "0x8664",
+    "timestamp": "0x62bae8b1",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "KERNEL32.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\NgSocialNet.dll",
+    "file_size": 6121920,
+    "sha256": "c77465818af9ea67f2ed8f5ab63214f91500e3b3be0884b92e81a3fffd722f44",
+    "machine": "0x8664",
+    "timestamp": "0x685e14ed",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "CRYPT32.dll",
+      "KERNEL32.dll",
+      "USER32.dll",
+      "ADVAPI32.dll",
+      "WS2_32.dll",
+      "MSWSOCK.dll",
+      "bcrypt.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\NRD.dll",
+    "file_size": 15631872,
+    "sha256": "5822e9a2d9f667eb26477b4c2526d17c9f39ffb516fcdc95c28806fad22a701e",
+    "machine": "0x8664",
+    "timestamp": "0x67504d2f",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "KERNEL32.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\NtQRCode.dll",
+    "file_size": 1456296,
+    "sha256": "7f53c0746f425c95fd36cc3b084c184a8f9da4eef6baf13101c7231ca143979e",
+    "machine": "0x8664",
+    "timestamp": "0x64560b70",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "opencv_world3415.dll",
+      "libzbar64-0.dll",
+      "KERNEL32.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\NtUniSdkBase.dll",
+    "file_size": 5940672,
+    "sha256": "4e12a04b4d93940705ac6a30f9ee8c1190fa51b1c6de41e265ed792d136345e2",
+    "machine": "0x8664",
+    "timestamp": "0x6861fcb3",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "USER32.dll",
+      "GDI32.dll",
+      "WS2_32.dll",
+      "KERNEL32.dll",
+      "SHELL32.dll",
+      "ole32.dll",
+      "NtUniSdkRoostX.dll",
+      "SHLWAPI.dll",
+      "gdiplus.dll",
+      "COMCTL32.dll",
+      "MSIMG32.dll",
+      "WINMM.dll",
+      "IPHLPAPI.DLL",
+      "VERSION.dll",
+      "d3d9.dll",
+      "ADVAPI32.dll",
+      "WLDAP32.dll",
+      "CRYPT32.dll",
+      "OLEAUT32.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\NtUniSdkHttpDNS.dll",
+    "file_size": 2811160,
+    "sha256": "aa300dd1577226115cbc87fddb78938fd17d09a9bd2333bff18a37f7ac936809",
+    "machine": "0x8664",
+    "timestamp": "0x6298314b",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "USER32.dll",
+      "ADVAPI32.dll",
+      "WS2_32.dll",
+      "WLDAP32.dll",
+      "CRYPT32.dll",
+      "httpdns.dll",
+      "IPHLPAPI.DLL",
+      "WINMM.dll",
+      "KERNEL32.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\NtUniSdkMpay.dll",
+    "file_size": 3018920,
+    "sha256": "802f2e1298356d6163b6d3c1f15372f485f718c096367f8f32fd6069d5c591ae",
+    "machine": "0x8664",
+    "timestamp": "0x64ad2e7f",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "mpay.dll",
+      "IPHLPAPI.DLL",
+      "WINMM.dll",
+      "WS2_32.dll",
+      "USER32.dll",
+      "ADVAPI32.dll",
+      "WLDAP32.dll",
+      "CRYPT32.dll",
+      "KERNEL32.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\NtUniSdkNgBillingAssistant.dll",
+    "file_size": 3378184,
+    "sha256": "1b6555156b19cc74ea7371f6a2559b1ff5a92d534e7de852a4eaf9dc8eb1e3b6",
+    "machine": "0x8664",
+    "timestamp": "0x66f13e0c",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "USER32.dll",
+      "GDI32.dll",
+      "KERNEL32.dll",
+      "ADVAPI32.dll",
+      "ole32.dll",
+      "OLEAUT32.dll",
+      "gdiplus.dll",
+      "COMCTL32.dll",
+      "MSIMG32.dll",
+      "WINMM.dll",
+      "WS2_32.dll",
+      "IPHLPAPI.DLL",
+      "WLDAP32.dll",
+      "CRYPT32.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\NtUniSdkNgWebview.dll",
+    "file_size": 3397128,
+    "sha256": "846381aad81b7f8927d5a659af1edde677bf0439b7c5b48c2e4cc8db27f52056",
+    "machine": "0x8664",
+    "timestamp": "0x66c5a8eb",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "USER32.dll",
+      "GDI32.dll",
+      "webview_support_helper.dll",
+      "KERNEL32.dll",
+      "SHELL32.dll",
+      "SHLWAPI.dll",
+      "gdiplus.dll",
+      "COMCTL32.dll",
+      "MSIMG32.dll",
+      "IPHLPAPI.DLL",
+      "VERSION.dll",
+      "WINMM.dll",
+      "WS2_32.dll",
+      "ADVAPI32.dll",
+      "WLDAP32.dll",
+      "CRYPT32.dll",
+      "ole32.dll",
+      "OLEAUT32.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\NtUniSdkOrbit.dll",
+    "file_size": 3800232,
+    "sha256": "c442475ba9490260eea95551c76d155d98f15b86aae5d4e971be9635a83fecba",
+    "machine": "0x8664",
+    "timestamp": "0x6426a930",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "WS2_32.dll",
+      "ADVAPI32.dll",
+      "USER32.dll",
+      "CRYPT32.dll",
+      "WLDAP32.dll",
+      "KERNEL32.dll",
+      "SHELL32.dll",
+      "ole32.dll",
+      "SHLWAPI.dll",
+      "IPHLPAPI.DLL",
+      "WINMM.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\NtUniSdkPharos.dll",
+    "file_size": 3178488,
+    "sha256": "e1f2ac79fde2017a68883230de5081c416688308d8819757e30bb59bae20172c",
+    "machine": "0x8664",
+    "timestamp": "0x697753ad",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "WS2_32.dll",
+      "pharos.dll",
+      "KERNEL32.dll",
+      "NtUniSdkRoostX.dll",
+      "IPHLPAPI.DLL",
+      "WINMM.dll",
+      "USER32.dll",
+      "ADVAPI32.dll",
+      "WLDAP32.dll",
+      "CRYPT32.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\NtUniSdkRoostX.dll",
+    "file_size": 11407352,
+    "sha256": "7f4b01ee8d95ad1ee903f7fb7146e96080e285f5c3bb19f0d0c083c989b86ea6",
+    "machine": "0x8664",
+    "timestamp": "0x69dcda48",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "IPHLPAPI.DLL",
+      "WS2_32.dll",
+      "WLDAP32.dll",
+      "ADVAPI32.dll",
+      "CRYPT32.dll",
+      "USER32.dll",
+      "KERNEL32.dll",
+      "bcrypt.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\NtUniSdkSteam.dll",
+    "file_size": 3270648,
+    "sha256": "95210c1d950b75e3745132528915a4fb5ea9fec70e65e173c865e9cb9ab1c2f5",
+    "machine": "0x8664",
+    "timestamp": "0x68c7b697",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "NtUniSdkRoostX.dll",
+      "WINMM.dll",
+      "WS2_32.dll",
+      "IPHLPAPI.DLL",
+      "steam_api64.dll",
+      "USER32.dll",
+      "ADVAPI32.dll",
+      "WLDAP32.dll",
+      "CRYPT32.dll",
+      "KERNEL32.dll",
+      "SHELL32.dll",
+      "ole32.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\opencv_world3415.dll",
+    "file_size": 55622144,
+    "sha256": "7f92e88814465cffda4c7b3ae79a3deeabd3a594c5da48226649ea0228071a05",
+    "machine": "0x8664",
+    "timestamp": "0x60e2d970",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "GDI32.dll",
+      "ole32.dll",
+      "KERNEL32.dll",
+      "USER32.dll",
+      "OLEAUT32.dll",
+      "COMDLG32.dll",
+      "ADVAPI32.dll",
+      "MSVCP140.dll",
+      "CONCRT140.dll",
+      "MFPlat.DLL",
+      "MF.dll",
+      "MFReadWrite.dll",
+      "SHLWAPI.dll",
+      "VCRUNTIME140.dll",
+      "api-ms-win-crt-runtime-l1-1-0.dll",
+      "api-ms-win-crt-string-l1-1-0.dll",
+      "api-ms-win-crt-heap-l1-1-0.dll",
+      "api-ms-win-crt-stdio-l1-1-0.dll",
+      "api-ms-win-crt-math-l1-1-0.dll",
+      "api-ms-win-crt-convert-l1-1-0.dll",
+      "api-ms-win-crt-environment-l1-1-0.dll",
+      "api-ms-win-crt-filesystem-l1-1-0.dll",
+      "api-ms-win-crt-utility-l1-1-0.dll",
+      "api-ms-win-crt-locale-l1-1-0.dll",
+      "api-ms-win-crt-time-l1-1-0.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\OrbitSDK.dll",
+    "file_size": 8315384,
+    "sha256": "940a48c70fee850f2e785ad2466ac1870276875ecfdd5a538bf904a5a705fa34",
+    "machine": "0x8664",
+    "timestamp": "0x6971db60",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "KERNEL32.dll",
+      "USER32.dll",
+      "SHELL32.dll",
+      "ole32.dll",
+      "ADVAPI32.dll",
+      "IPHLPAPI.DLL",
+      "RASAPI32.dll",
+      "bcrypt.dll",
+      "WS2_32.dll",
+      "WLDAP32.dll",
+      "CRYPT32.dll",
+      "Normaliz.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\pharos.dll",
+    "file_size": 1245688,
+    "sha256": "3e7deb57bcae1122c4011005a4b7d94bce04826a0e39b9b051df4c39c3a42b91",
+    "machine": "0x8664",
+    "timestamp": "0x69773a78",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "IPHLPAPI.DLL",
+      "NtUniSdkRoostX.dll",
+      "KERNEL32.dll",
+      "SHELL32.dll",
+      "WS2_32.dll",
+      "SHLWAPI.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\steam_api64.dll",
+    "file_size": 319584,
+    "sha256": "e082bf5c9f881c822b1540a76b74f9d15e18019a73ebd206a559595badcb7f65",
+    "machine": "0x8664",
+    "timestamp": "0x67d35ec8",
+    "preferred_base": "0x13b400000",
+    "imports": [
+      "KERNEL32.dll",
+      "ADVAPI32.dll",
+      "SHELL32.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\UniCrashReporterUtil.dll",
+    "file_size": 548800,
+    "sha256": "966c7a9263888ab38ac700d63aab658bf375dc0d9a7e0f2d1f7984ef5a2484b1",
+    "machine": "0x8664",
+    "timestamp": "0x67f8d65c",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "POWRPROF.dll",
+      "VERSION.dll",
+      "KERNEL32.dll",
+      "ADVAPI32.dll"
+    ],
+    "delay_imports": []
+  },
+  {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\UniWER.dll",
+    "file_size": 315328,
+    "sha256": "f67de110fca5505f227937d9da93389bbd13619d60bb825a0d9ac3dd02812469",
+    "machine": "0x8664",
+    "timestamp": "0x67f8d5fc",
+    "preferred_base": "0x180000000",
+    "imports": [
+      "KERNEL32.dll"
+    ],
+    "delay_imports": []
+  }
+]

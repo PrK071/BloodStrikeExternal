@@ -1,0 +1,41 @@
+{
+  "status": "PASS_ASSET_HEADER_REPRODUCTION",
+  "indexes": [
+    {
+      "index": "Engine.mpkinfo",
+      "sha256": "457db446eee8dd6fcc9bfbb600f1561f44750b0625ab4278dc353fc404a3d376",
+      "headers": 49,
+      "prefix_counts": {
+        "other": 16,
+        "XML/text-like prefix": 1,
+        "JSON/text-like prefix": 3,
+        "META marker": 29
+      },
+      "comparison_note": "Resources text-like group from delegated inventory is split here into four JSON-like and one XML-like headers."
+    },
+    {
+      "index": "Resources.mpkinfo",
+      "sha256": "bb3782da03b95d66451a598add8fe0923405be0dde53a8844b2f8bc107a6ced3",
+      "headers": 197287,
+      "prefix_counts": {
+        "02 02 02 01 resource marker": 63374,
+        "other": 1280,
+        "XML/text-like prefix": 1,
+        "ZZZ4 raw prefix (compressed candidate)": 96924,
+        "E2 06 prefix (encoding/compression unknown)": 9836,
+        ".MESSIAH model marker (4-byte prefix)": 23014,
+        "BKHD (Wwise bank marker)": 2854,
+        "JSON/text-like prefix": 4
+      },
+      "comparison_note": "Resources text-like group from delegated inventory is split here into four JSON-like and one XML-like headers."
+    }
+  ],
+  "headers": 197336,
+  "signatures_at_offset_zero": {
+    "Lua_bytecode_1b4c7561": 0,
+    "shebang_2321": 0,
+    "CPython_magic_then_CRCRLF": 0
+  },
+  "maximum_payload_bytes_read": 32,
+  "limits": "Reproduces candidate header counts only; does not execute, decompress, or search payload interiors; not proof of script absence."
+}

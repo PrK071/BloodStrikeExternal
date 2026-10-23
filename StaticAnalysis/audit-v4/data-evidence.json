@@ -1,0 +1,65 @@
+[
+  {
+    "evidence_id": "V4-D01",
+    "rva": "0x79602f0",
+    "file_offset": "0x795e8f0",
+    "bytes": "01 00 00 00",
+    "description": "shared counter, initial disk value"
+  },
+  {
+    "evidence_id": "V4-D02",
+    "rva": "0x55ca5e8",
+    "file_offset": "0x55c97e8",
+    "bytes": "e0 7c fb 46 01 00 00 00 70 85 cb 41 01 00 00 00 90 85 cb 41 01 00 00 00 b0 85 cb 41 01 00 00 00 c0 85 cb 41 01 00 00 00 e0 85 cb 41 01 00 00 00 d0 85 cb 41 01 00 00 00",
+    "description": "lazy resolver COL pointer and virtual slots"
+  },
+  {
+    "evidence_id": "V4-D03",
+    "rva": "0x55c8f40",
+    "file_offset": "0x55c8140",
+    "bytes": "90 6b fb 46 01 00 00 00 00 23 cc 41 01 00 00 00 90 72 cb 41 01 00 00 00 a0 72 cb 41 01 00 00 00",
+    "description": "PyObjectsModule COL pointer and virtual slots"
+  },
+  {
+    "evidence_id": "V4-D04",
+    "rva": "0x4f60590",
+    "file_offset": "0x4f5f790",
+    "bytes": "c0 79 e4 44 01 00 00 00 09 00 00 00 74 73 5c 80 88 d9 e9 44 01 00 00 00 09 00 00 00 bc 85 12 3d 60 fe f5 44 01 00 00 00 11 00 00 00 fd 34 74 5d 00 02 01 00 00 00 04 00 20 01 00 00 00 00 00 00 d0 4a 95 40 01 00 00 00",
+    "description": "IEntity.Transform metadata"
+  },
+  {
+    "evidence_id": "V4-D05",
+    "rva": "0x4f601c0",
+    "file_offset": "0x4f5f3c0",
+    "bytes": "80 e8 95 40 01 00 00 00 00 00 00 00 00 00 00 00",
+    "description": "Transform member function and this adjustment"
+  },
+  {
+    "evidence_id": "V4-D06",
+    "rva": "0x4f43b10",
+    "file_offset": "0x4f42d10",
+    "bytes": "c0 79 e4 44 01 00 00 00 09 00 00 00 74 73 5c 80 60 02 e9 44 01 00 00 00 0a 00 00 00 59 c1 e9 16 38 50 f4 44 01 00 00 00 12 00 00 00 4e c9 aa b9 00 02 01 00 00 00 99 00 02 01 00 00 00 00 00 00 a0 f1 93 40 01 00 00 00",
+    "description": "ICamera.ViewMatrix metadata"
+  },
+  {
+    "evidence_id": "V4-D07",
+    "rva": "0x4f45130",
+    "file_offset": "0x4f44330",
+    "bytes": "90 40 96 40 01 00 00 00 00 00 00 00 00 00 00 00",
+    "description": "ViewMatrix member function and this adjustment"
+  },
+  {
+    "evidence_id": "V4-D08",
+    "rva": "0x6fb7ce0",
+    "file_offset": "0x6fb6ee0",
+    "bytes": "01 00 00 00 00 00 00 00 00 00 00 00 e0 3a f7 07 08 7d fb 06 e0 7c fb 06",
+    "description": "resolver callable COL"
+  },
+  {
+    "evidence_id": "V4-D09",
+    "rva": "0x6fb6b90",
+    "file_offset": "0x6fb5d90",
+    "bytes": "01 00 00 00 00 00 00 00 00 00 00 00 98 27 f7 07 b8 6b fb 06 90 6b fb 06",
+    "description": "module COL"
+  }
+]

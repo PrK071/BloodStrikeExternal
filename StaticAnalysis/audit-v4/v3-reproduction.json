@@ -1,0 +1,105 @@
+{
+  "status": "PASS_V3_REPRODUCED",
+  "generated_utc": "2026-10-21T04:49:41.754982+00:00",
+  "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "v3_manifest_sha256": "0e052f7c53346d61def4167eba4e8fc1915e04dd0b5b515c19b312b84b123e80",
+  "manifest_checks": [
+    {
+      "path": "audit-v3\\address-map.json",
+      "expected": "50b003d641b1be261f2fd73eeeda05fb20b95d3fcdfd8042b5ded642c4b0b8c6",
+      "actual": "50b003d641b1be261f2fd73eeeda05fb20b95d3fcdfd8042b5ded642c4b0b8c6"
+    },
+    {
+      "path": "audit-v3\\baseline-lock.json",
+      "expected": "310b1510aec54f2207d0261760cf6930823b91bf5d7faf628edca42dc5ac0e1f",
+      "actual": "310b1510aec54f2207d0261760cf6930823b91bf5d7faf628edca42dc5ac0e1f"
+    },
+    {
+      "path": "audit-v3\\claims.json",
+      "expected": "c6364a70260451b42b69380f6eb50795249edb7fb36e22fc10c95259bb07ff65",
+      "actual": "c6364a70260451b42b69380f6eb50795249edb7fb36e22fc10c95259bb07ff65"
+    },
+    {
+      "path": "audit-v3\\data-evidence.json",
+      "expected": "64fbeb3a540b9d4c11b19c5747aed107ee43b579a5d79d028c944066c7a14702",
+      "actual": "64fbeb3a540b9d4c11b19c5747aed107ee43b579a5d79d028c944066c7a14702"
+    },
+    {
+      "path": "audit-v3\\delivery-verification.json",
+      "expected": "125514ff7ec692f46680870a74e877145fb0f995255a3c01184d3aeef536c77d",
+      "actual": "125514ff7ec692f46680870a74e877145fb0f995255a3c01184d3aeef536c77d"
+    },
+    {
+      "path": "audit-v3\\disassembly.txt",
+      "expected": "35e37a2d0fda434a759f7c236125d1d18d7b94cd1195958df5bf6285f4de8cfa",
+      "actual": "35e37a2d0fda434a759f7c236125d1d18d7b94cd1195958df5bf6285f4de8cfa"
+    },
+    {
+      "path": "audit-v3\\global-scan.json",
+      "expected": "3d813b64508173f1cc23201ccad710b601e1236b069193ee5ac4944282bc1a04",
+      "actual": "3d813b64508173f1cc23201ccad710b601e1236b069193ee5ac4944282bc1a04"
+    },
+    {
+      "path": "audit-v3\\hierarchies.json",
+      "expected": "fdc0d2bd51d93b19d917fb4f869216e5c07dc65572ed975ceafd97b98db51804",
+      "actual": "fdc0d2bd51d93b19d917fb4f869216e5c07dc65572ed975ceafd97b98db51804"
+    },
+    {
+      "path": "audit-v3\\indirect-transfers.json",
+      "expected": "8023804be456ee21ae1f7260ae48ee37c6ba331f7639e86e5492c8e77c9001bd",
+      "actual": "8023804be456ee21ae1f7260ae48ee37c6ba331f7639e86e5492c8e77c9001bd"
+    },
+    {
+      "path": "audit-v3\\mask-candidates.json",
+      "expected": "f37bf6904205d75aaa435c49b8b8fa330aca9decc3378b96bd9cba1576e6d174",
+      "actual": "f37bf6904205d75aaa435c49b8b8fa330aca9decc3378b96bd9cba1576e6d174"
+    },
+    {
+      "path": "audit-v3\\reachable-code.json",
+      "expected": "43e4af837dac3d304f64f68ab6d5461634edf87b134b34eb59786778439d9eda",
+      "actual": "43e4af837dac3d304f64f68ab6d5461634edf87b134b34eb59786778439d9eda"
+    },
+    {
+      "path": "audit-v3\\summary.json",
+      "expected": "387cda40fb39433312be28d56c389c655972c0fb0fb5ed6dc08945a3a1ee9d77",
+      "actual": "387cda40fb39433312be28d56c389c655972c0fb0fb5ed6dc08945a3a1ee9d77"
+    },
+    {
+      "path": "audit-v3\\v2-claim-state.json",
+      "expected": "da971b62921ade982fb2e1cb7be519c6027b3c8addf0956959baef4a8f0f17b8",
+      "actual": "da971b62921ade982fb2e1cb7be519c6027b3c8addf0956959baef4a8f0f17b8"
+    },
+    {
+      "path": "audit_v3.py",
+      "expected": "b0d42f0e6829d8be55cba7f00e8a7949490fcb19596b41182011c2a35bb18743",
+      "actual": "b0d42f0e6829d8be55cba7f00e8a7949490fcb19596b41182011c2a35bb18743"
+    },
+    {
+      "path": "AUDITORIA-V3.md",
+      "expected": "45d6bf7521b6a0f9e4781291f3676d3ff0bde3fd49fe38e07007f7af99841028",
+      "actual": "45d6bf7521b6a0f9e4781291f3676d3ff0bde3fd49fe38e07007f7af99841028"
+    },
+    {
+      "path": "run-audit-v3.ps1",
+      "expected": "9681fdc923290da08d6eff3977e6d0a37a4442994ee9e41701f9960b0ff5a437",
+      "actual": "9681fdc923290da08d6eff3977e6d0a37a4442994ee9e41701f9960b0ff5a437"
+    },
+    {
+      "path": "seal_audit_v3.py",
+      "expected": "a48d6d2e7ac43211c975dd6593cd4de9d86a9d0d7f930c0c923fe01aa4aab6b1",
+      "actual": "a48d6d2e7ac43211c975dd6593cd4de9d86a9d0d7f930c0c923fe01aa4aab6b1"
+    },
+    {
+      "path": "v3-claims-spec.json",
+      "expected": "ec2e524a5ff37180001297e81be3f846d5aba8c78dcef1165a57cf5b3bd3539a",
+      "actual": "ec2e524a5ff37180001297e81be3f846d5aba8c78dcef1165a57cf5b3bd3539a"
+    }
+  ],
+  "unique_instructions": 8018,
+  "rip_targets": 282,
+  "branch_targets": 1606,
+  "data_blocks": 8,
+  "v2_and_legacy_inputs_unchanged": true,
+  "runtime_game_access": false,
+  "scope": "Re-read pinned sample, all V3 manifest entries, selected instruction bytes/lengths/targets with both decoders, all V3 data snapshots; no semantic or runtime equivalence assumed."
+}

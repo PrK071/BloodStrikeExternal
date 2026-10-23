@@ -1,0 +1,655 @@
+{
+  "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "code_pointer_candidates": [
+    {
+      "label": "IGameplay.Player_candidate_a",
+      "entry_rva": "0x58b020",
+      "runtime_function": null,
+      "instructions": [
+        {
+          "rva": "0x58b020",
+          "preferred_va": "0x14058b020",
+          "file_offset": "0x58a620",
+          "bytes": "48 8d 42 58",
+          "text": "lea rax,[rdx+58h]",
+          "length": 4
+        },
+        {
+          "rva": "0x58b024",
+          "preferred_va": "0x14058b024",
+          "file_offset": "0x58a624",
+          "bytes": "c3",
+          "text": "ret",
+          "length": 1
+        }
+      ]
+    },
+    {
+      "label": "IGameplay.Player_candidate_b",
+      "entry_rva": "0x940a20",
+      "runtime_function": [
+        "0x940a20",
+        "0x940a35",
+        "0x71d63e8"
+      ],
+      "instructions": [
+        {
+          "rva": "0x940a20",
+          "preferred_va": "0x140940a20",
+          "file_offset": "0x940020",
+          "bytes": "48 83 ec 28",
+          "text": "sub rsp,28h",
+          "length": 4
+        },
+        {
+          "rva": "0x940a24",
+          "preferred_va": "0x140940a24",
+          "file_offset": "0x940024",
+          "bytes": "4c 8b c2",
+          "text": "mov r8,rdx",
+          "length": 3
+        },
+        {
+          "rva": "0x940a27",
+          "preferred_va": "0x140940a27",
+          "file_offset": "0x940027",
+          "bytes": "48 8b d1",
+          "text": "mov rdx,rcx",
+          "length": 3
+        },
+        {
+          "rva": "0x940a2a",
+          "preferred_va": "0x140940a2a",
+          "file_offset": "0x94002a",
+          "bytes": "48 8d 4c 24 40",
+          "text": "lea rcx,[rsp+40h]",
+          "length": 5
+        },
+        {
+          "rva": "0x940a2f",
+          "preferred_va": "0x140940a2f",
+          "file_offset": "0x94002f",
+          "bytes": "e8 dc cd 82 ff",
+          "text": "call 000000014016D810h",
+          "length": 5,
+          "branch_target_rva": "0x16d810"
+        },
+        {
+          "rva": "0x940a34",
+          "preferred_va": "0x140940a34",
+          "file_offset": "0x940034",
+          "bytes": "cc",
+          "text": "int3",
+          "length": 1
+        }
+      ]
+    },
+    {
+      "label": "IGameplay.Player_candidate_c",
+      "entry_rva": "0x92bec0",
+      "runtime_function": null,
+      "instructions": [
+        {
+          "rva": "0x92bec0",
+          "preferred_va": "0x14092bec0",
+          "file_offset": "0x92b4c0",
+          "bytes": "48 8b 41 58",
+          "text": "mov rax,[rcx+58h]",
+          "length": 4
+        },
+        {
+          "rva": "0x92bec4",
+          "preferred_va": "0x14092bec4",
+          "file_offset": "0x92b4c4",
+          "bytes": "c3",
+          "text": "ret",
+          "length": 1
+        }
+      ]
+    },
+    {
+      "label": "IGameplay.Player_candidate_d",
+      "entry_rva": "0x948bd0",
+      "runtime_function": [
+        "0x948bd0",
+        "0x948c10",
+        "0x714d700"
+      ],
+      "instructions": [
+        {
+          "rva": "0x948bd0",
+          "preferred_va": "0x140948bd0",
+          "file_offset": "0x9481d0",
+          "bytes": "48 89 5c 24 08",
+          "text": "mov [rsp+8],rbx",
+          "length": 5
+        },
+        {
+          "rva": "0x948bd5",
+          "preferred_va": "0x140948bd5",
+          "file_offset": "0x9481d5",
+          "bytes": "57",
+          "text": "push rdi",
+          "length": 1
+        },
+        {
+          "rva": "0x948bd6",
+          "preferred_va": "0x140948bd6",
+          "file_offset": "0x9481d6",
+          "bytes": "48 83 ec 20",
+          "text": "sub rsp,20h",
+          "length": 4
+        },
+        {
+          "rva": "0x948bda",
+          "preferred_va": "0x140948bda",
+          "file_offset": "0x9481da",
+          "bytes": "48 8b d9",
+          "text": "mov rbx,rcx",
+          "length": 3
+        },
+        {
+          "rva": "0x948bdd",
+          "preferred_va": "0x140948bdd",
+          "file_offset": "0x9481dd",
+          "bytes": "48 8b fa",
+          "text": "mov rdi,rdx",
+          "length": 3
+        },
+        {
+          "rva": "0x948be0",
+          "preferred_va": "0x140948be0",
+          "file_offset": "0x9481e0",
+          "bytes": "48 8b 49 58",
+          "text": "mov rcx,[rcx+58h]",
+          "length": 4
+        },
+        {
+          "rva": "0x948be4",
+          "preferred_va": "0x140948be4",
+          "file_offset": "0x9481e4",
+          "bytes": "48 85 c9",
+          "text": "test rcx,rcx",
+          "length": 3
+        },
+        {
+          "rva": "0x948be7",
+          "preferred_va": "0x140948be7",
+          "file_offset": "0x9481e7",
+          "bytes": "74 08",
+          "text": "je short 0000000140948BF1h",
+          "length": 2,
+          "branch_target_rva": "0x948bf1"
+        },
+        {
+          "rva": "0x948be9",
+          "preferred_va": "0x140948be9",
+          "file_offset": "0x9481e9",
+          "bytes": "48 8b d3",
+          "text": "mov rdx,rbx",
+          "length": 3
+        },
+        {
+          "rva": "0x948bec",
+          "preferred_va": "0x140948bec",
+          "file_offset": "0x9481ec",
+          "bytes": "e8 8f 5e 7c ff",
+          "text": "call 000000014010EA80h",
+          "length": 5,
+          "branch_target_rva": "0x10ea80"
+        },
+        {
+          "rva": "0x948bf1",
+          "preferred_va": "0x140948bf1",
+          "file_offset": "0x9481f1",
+          "bytes": "48 89 7b 58",
+          "text": "mov [rbx+58h],rdi",
+          "length": 4
+        },
+        {
+          "rva": "0x948bf5",
+          "preferred_va": "0x140948bf5",
+          "file_offset": "0x9481f5",
+          "bytes": "48 85 ff",
+          "text": "test rdi,rdi",
+          "length": 3
+        },
+        {
+          "rva": "0x948bf8",
+          "preferred_va": "0x140948bf8",
+          "file_offset": "0x9481f8",
+          "bytes": "74 0b",
+          "text": "je short 0000000140948C05h",
+          "length": 2,
+          "branch_target_rva": "0x948c05"
+        },
+        {
+          "rva": "0x948bfa",
+          "preferred_va": "0x140948bfa",
+          "file_offset": "0x9481fa",
+          "bytes": "48 8b d3",
+          "text": "mov rdx,rbx",
+          "length": 3
+        },
+        {
+          "rva": "0x948bfd",
+          "preferred_va": "0x140948bfd",
+          "file_offset": "0x9481fd",
+          "bytes": "48 8b cf",
+          "text": "mov rcx,rdi",
+          "length": 3
+        },
+        {
+          "rva": "0x948c00",
+          "preferred_va": "0x140948c00",
+          "file_offset": "0x948200",
+          "bytes": "e8 6b 5e 7c ff",
+          "text": "call 000000014010EA70h",
+          "length": 5,
+          "branch_target_rva": "0x10ea70"
+        },
+        {
+          "rva": "0x948c05",
+          "preferred_va": "0x140948c05",
+          "file_offset": "0x948205",
+          "bytes": "48 8b 5c 24 30",
+          "text": "mov rbx,[rsp+30h]",
+          "length": 5
+        },
+        {
+          "rva": "0x948c0a",
+          "preferred_va": "0x140948c0a",
+          "file_offset": "0x94820a",
+          "bytes": "48 83 c4 20",
+          "text": "add rsp,20h",
+          "length": 4
+        },
+        {
+          "rva": "0x948c0e",
+          "preferred_va": "0x140948c0e",
+          "file_offset": "0x94820e",
+          "bytes": "5f",
+          "text": "pop rdi",
+          "length": 1
+        },
+        {
+          "rva": "0x948c0f",
+          "preferred_va": "0x140948c0f",
+          "file_offset": "0x94820f",
+          "bytes": "c3",
+          "text": "ret",
+          "length": 1
+        }
+      ]
+    },
+    {
+      "label": "IGameplay.Player_candidate_e",
+      "entry_rva": "0x948b90",
+      "runtime_function": [
+        "0x948b90",
+        "0x948ba5",
+        "0x7199dc8"
+      ],
+      "instructions": [
+        {
+          "rva": "0x948b90",
+          "preferred_va": "0x140948b90",
+          "file_offset": "0x948190",
+          "bytes": "48 83 ec 28",
+          "text": "sub rsp,28h",
+          "length": 4
+        },
+        {
+          "rva": "0x948b94",
+          "preferred_va": "0x140948b94",
+          "file_offset": "0x948194",
+          "bytes": "48 8b 49 58",
+          "text": "mov rcx,[rcx+58h]",
+          "length": 4
+        },
+        {
+          "rva": "0x948b98",
+          "preferred_va": "0x140948b98",
+          "file_offset": "0x948198",
+          "bytes": "48 85 c9",
+          "text": "test rcx,rcx",
+          "length": 3
+        },
+        {
+          "rva": "0x948b9b",
+          "preferred_va": "0x140948b9b",
+          "file_offset": "0x94819b",
+          "bytes": "74 03",
+          "text": "je short 0000000140948BA0h",
+          "length": 2,
+          "branch_target_rva": "0x948ba0"
+        },
+        {
+          "rva": "0x948b9d",
+          "preferred_va": "0x140948b9d",
+          "file_offset": "0x94819d",
+          "bytes": "ff d2",
+          "text": "call rdx",
+          "length": 2
+        },
+        {
+          "rva": "0x948b9f",
+          "preferred_va": "0x140948b9f",
+          "file_offset": "0x94819f",
+          "bytes": "90",
+          "text": "nop",
+          "length": 1
+        },
+        {
+          "rva": "0x948ba0",
+          "preferred_va": "0x140948ba0",
+          "file_offset": "0x9481a0",
+          "bytes": "48 83 c4 28",
+          "text": "add rsp,28h",
+          "length": 4
+        },
+        {
+          "rva": "0x948ba4",
+          "preferred_va": "0x140948ba4",
+          "file_offset": "0x9481a4",
+          "bytes": "c3",
+          "text": "ret",
+          "length": 1
+        }
+      ]
+    },
+    {
+      "label": "ClientPlayer.Char_candidate_a",
+      "entry_rva": "0xcef390",
+      "runtime_function": [
+        "0xcef390",
+        "0xcef3a5",
+        "0x720dd48"
+      ],
+      "instructions": [
+        {
+          "rva": "0xcef390",
+          "preferred_va": "0x140cef390",
+          "file_offset": "0xcee990",
+          "bytes": "48 83 ec 28",
+          "text": "sub rsp,28h",
+          "length": 4
+        },
+        {
+          "rva": "0xcef394",
+          "preferred_va": "0x140cef394",
+          "file_offset": "0xcee994",
+          "bytes": "4c 8b c2",
+          "text": "mov r8,rdx",
+          "length": 3
+        },
+        {
+          "rva": "0xcef397",
+          "preferred_va": "0x140cef397",
+          "file_offset": "0xcee997",
+          "bytes": "48 8b d1",
+          "text": "mov rdx,rcx",
+          "length": 3
+        },
+        {
+          "rva": "0xcef39a",
+          "preferred_va": "0x140cef39a",
+          "file_offset": "0xcee99a",
+          "bytes": "48 8d 4c 24 40",
+          "text": "lea rcx,[rsp+40h]",
+          "length": 5
+        },
+        {
+          "rva": "0xcef39f",
+          "preferred_va": "0x140cef39f",
+          "file_offset": "0xcee99f",
+          "bytes": "e8 6c e4 47 ff",
+          "text": "call 000000014016D810h",
+          "length": 5,
+          "branch_target_rva": "0x16d810"
+        },
+        {
+          "rva": "0xcef3a4",
+          "preferred_va": "0x140cef3a4",
+          "file_offset": "0xcee9a4",
+          "bytes": "cc",
+          "text": "int3",
+          "length": 1
+        }
+      ]
+    },
+    {
+      "label": "ClientPlayer.Char_candidate_b",
+      "entry_rva": "0xcef3b0",
+      "runtime_function": [
+        "0xcef3b0",
+        "0xcef3c5",
+        "0x720dd50"
+      ],
+      "instructions": [
+        {
+          "rva": "0xcef3b0",
+          "preferred_va": "0x140cef3b0",
+          "file_offset": "0xcee9b0",
+          "bytes": "48 83 ec 28",
+          "text": "sub rsp,28h",
+          "length": 4
+        },
+        {
+          "rva": "0xcef3b4",
+          "preferred_va": "0x140cef3b4",
+          "file_offset": "0xcee9b4",
+          "bytes": "4c 8b c2",
+          "text": "mov r8,rdx",
+          "length": 3
+        },
+        {
+          "rva": "0xcef3b7",
+          "preferred_va": "0x140cef3b7",
+          "file_offset": "0xcee9b7",
+          "bytes": "48 8b d1",
+          "text": "mov rdx,rcx",
+          "length": 3
+        },
+        {
+          "rva": "0xcef3ba",
+          "preferred_va": "0x140cef3ba",
+          "file_offset": "0xcee9ba",
+          "bytes": "48 8d 4c 24 40",
+          "text": "lea rcx,[rsp+40h]",
+          "length": 5
+        },
+        {
+          "rva": "0xcef3bf",
+          "preferred_va": "0x140cef3bf",
+          "file_offset": "0xcee9bf",
+          "bytes": "e8 4c e4 47 ff",
+          "text": "call 000000014016D810h",
+          "length": 5,
+          "branch_target_rva": "0x16d810"
+        },
+        {
+          "rva": "0xcef3c4",
+          "preferred_va": "0x140cef3c4",
+          "file_offset": "0xcee9c4",
+          "bytes": "cc",
+          "text": "int3",
+          "length": 1
+        }
+      ]
+    },
+    {
+      "label": "ClientPlayer.Char_candidate_c",
+      "entry_rva": "0xcef410",
+      "runtime_function": [
+        "0xcef410",
+        "0xcef422",
+        "0x720dd68"
+      ],
+      "instructions": [
+        {
+          "rva": "0xcef410",
+          "preferred_va": "0x140cef410",
+          "file_offset": "0xceea10",
+          "bytes": "48 83 ec 28",
+          "text": "sub rsp,28h",
+          "length": 4
+        },
+        {
+          "rva": "0xcef414",
+          "preferred_va": "0x140cef414",
+          "file_offset": "0xceea14",
+          "bytes": "48 8b d1",
+          "text": "mov rdx,rcx",
+          "length": 3
+        },
+        {
+          "rva": "0xcef417",
+          "preferred_va": "0x140cef417",
+          "file_offset": "0xceea17",
+          "bytes": "48 8d 4c 24 38",
+          "text": "lea rcx,[rsp+38h]",
+          "length": 5
+        },
+        {
+          "rva": "0xcef41c",
+          "preferred_va": "0x140cef41c",
+          "file_offset": "0xceea1c",
+          "bytes": "e8 ef e3 47 ff",
+          "text": "call 000000014016D810h",
+          "length": 5,
+          "branch_target_rva": "0x16d810"
+        },
+        {
+          "rva": "0xcef421",
+          "preferred_va": "0x140cef421",
+          "file_offset": "0xceea21",
+          "bytes": "cc",
+          "text": "int3",
+          "length": 1
+        }
+      ]
+    },
+    {
+      "label": "ClientPlayer.Char_candidate_d",
+      "entry_rva": "0xcef430",
+      "runtime_function": [
+        "0xcef430",
+        "0xcef445",
+        "0x720dd70"
+      ],
+      "instructions": [
+        {
+          "rva": "0xcef430",
+          "preferred_va": "0x140cef430",
+          "file_offset": "0xceea30",
+          "bytes": "48 83 ec 28",
+          "text": "sub rsp,28h",
+          "length": 4
+        },
+        {
+          "rva": "0xcef434",
+          "preferred_va": "0x140cef434",
+          "file_offset": "0xceea34",
+          "bytes": "4c 8b c2",
+          "text": "mov r8,rdx",
+          "length": 3
+        },
+        {
+          "rva": "0xcef437",
+          "preferred_va": "0x140cef437",
+          "file_offset": "0xceea37",
+          "bytes": "48 8b d1",
+          "text": "mov rdx,rcx",
+          "length": 3
+        },
+        {
+          "rva": "0xcef43a",
+          "preferred_va": "0x140cef43a",
+          "file_offset": "0xceea3a",
+          "bytes": "48 8d 4c 24 40",
+          "text": "lea rcx,[rsp+40h]",
+          "length": 5
+        },
+        {
+          "rva": "0xcef43f",
+          "preferred_va": "0x140cef43f",
+          "file_offset": "0xceea3f",
+          "bytes": "e8 cc e3 47 ff",
+          "text": "call 000000014016D810h",
+          "length": 5,
+          "branch_target_rva": "0x16d810"
+        },
+        {
+          "rva": "0xcef444",
+          "preferred_va": "0x140cef444",
+          "file_offset": "0xceea44",
+          "bytes": "cc",
+          "text": "int3",
+          "length": 1
+        }
+      ]
+    },
+    {
+      "label": "ClientPlayer.Char_candidate_e",
+      "entry_rva": "0xcef450",
+      "runtime_function": [
+        "0xcef450",
+        "0xcef465",
+        "0x720dd78"
+      ],
+      "instructions": [
+        {
+          "rva": "0xcef450",
+          "preferred_va": "0x140cef450",
+          "file_offset": "0xceea50",
+          "bytes": "48 83 ec 28",
+          "text": "sub rsp,28h",
+          "length": 4
+        },
+        {
+          "rva": "0xcef454",
+          "preferred_va": "0x140cef454",
+          "file_offset": "0xceea54",
+          "bytes": "4c 8b c2",
+          "text": "mov r8,rdx",
+          "length": 3
+        },
+        {
+          "rva": "0xcef457",
+          "preferred_va": "0x140cef457",
+          "file_offset": "0xceea57",
+          "bytes": "48 8b d1",
+          "text": "mov rdx,rcx",
+          "length": 3
+        },
+        {
+          "rva": "0xcef45a",
+          "preferred_va": "0x140cef45a",
+          "file_offset": "0xceea5a",
+          "bytes": "48 8d 4c 24 40",
+          "text": "lea rcx,[rsp+40h]",
+          "length": 5
+        },
+        {
+          "rva": "0xcef45f",
+          "preferred_va": "0x140cef45f",
+          "file_offset": "0xceea5f",
+          "bytes": "e8 ac e3 47 ff",
+          "text": "call 000000014016D810h",
+          "length": 5,
+          "branch_target_rva": "0x16d810"
+        },
+        {
+          "rva": "0xcef464",
+          "preferred_va": "0x140cef464",
+          "file_offset": "0xceea64",
+          "bytes": "cc",
+          "text": "int3",
+          "length": 1
+        }
+      ]
+    }
+  ],
+  "limitation": "Adjacency in a reflected-property metadata structure makes these callback candidates; names and exact getter/setter semantics are not established."
+}

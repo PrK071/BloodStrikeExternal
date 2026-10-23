@@ -1,0 +1,416 @@
+[
+  {
+    "rva": "0x4f60590",
+    "file_offset": "0x4f5f790",
+    "bytes": "c0 79 e4 44 01 00 00 00 09 00 00 00 74 73 5c 80 88 d9 e9 44 01 00 00 00 09 00 00 00 bc 85 12 3d 60 fe f5 44 01 00 00 00 11 00 00 00 fd 34 74 5d 00 02 01 00 00 00 04 00 20 01 00 00 00 00 00 00 d0 4a 95 40 01 00 00 00 20 0a 94 40 01 00 00 00 d0 a9 58 40 01 00 00 00 70 d9 58 40 01 00 00 00 c0 0a 94 40 01 00 00 00 20 95 93 40 01 00 00 00 00 9c 93 40 01 00 00 00 a0 0b 94 40 01 00 00 00 80 0b 94 40 01 00 00 00 e0 0a 94 40 01 00 00 00 00 0b 94 40 01 00 00 00 20 0b 94 40 01 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x4f60590",
+        "value": "0x144e479c0",
+        "target_rva": "0x4e479c0",
+        "string": "Matrix4x3"
+      },
+      {
+        "rva": "0x4f60598",
+        "value": "0x805c737400000009",
+        "target_rva": null,
+        "string": null
+      },
+      {
+        "rva": "0x4f605a0",
+        "value": "0x144e9d988",
+        "target_rva": "0x4e9d988",
+        "string": "Transform"
+      },
+      {
+        "rva": "0x4f605a8",
+        "value": "0x3d1285bc00000009",
+        "target_rva": null,
+        "string": null
+      },
+      {
+        "rva": "0x4f605b0",
+        "value": "0x144f5fe60",
+        "target_rva": "0x4f5fe60",
+        "string": "IEntity.Transform"
+      },
+      {
+        "rva": "0x4f605b8",
+        "value": "0x5d7434fd00000011",
+        "target_rva": null,
+        "string": null
+      },
+      {
+        "rva": "0x4f605c0",
+        "value": "0x4000000010200",
+        "target_rva": null,
+        "string": null
+      },
+      {
+        "rva": "0x4f605c8",
+        "value": "0x120",
+        "target_rva": null,
+        "string": null
+      },
+      {
+        "rva": "0x4f605d0",
+        "value": "0x140954ad0",
+        "target_rva": "0x954ad0",
+        "string": null
+      },
+      {
+        "rva": "0x4f605d8",
+        "value": "0x140940a20",
+        "target_rva": "0x940a20",
+        "string": null
+      },
+      {
+        "rva": "0x4f605e0",
+        "value": "0x14058a9d0",
+        "target_rva": "0x58a9d0",
+        "string": null
+      },
+      {
+        "rva": "0x4f605e8",
+        "value": "0x14058d970",
+        "target_rva": "0x58d970",
+        "string": null
+      },
+      {
+        "rva": "0x4f605f0",
+        "value": "0x140940ac0",
+        "target_rva": "0x940ac0",
+        "string": null
+      },
+      {
+        "rva": "0x4f605f8",
+        "value": "0x140939520",
+        "target_rva": "0x939520",
+        "string": null
+      },
+      {
+        "rva": "0x4f60600",
+        "value": "0x140939c00",
+        "target_rva": "0x939c00",
+        "string": null
+      },
+      {
+        "rva": "0x4f60608",
+        "value": "0x140940ba0",
+        "target_rva": "0x940ba0",
+        "string": null
+      },
+      {
+        "rva": "0x4f60610",
+        "value": "0x140940b80",
+        "target_rva": "0x940b80",
+        "string": null
+      },
+      {
+        "rva": "0x4f60618",
+        "value": "0x140940ae0",
+        "target_rva": "0x940ae0",
+        "string": null
+      },
+      {
+        "rva": "0x4f60620",
+        "value": "0x140940b00",
+        "target_rva": "0x940b00",
+        "string": null
+      },
+      {
+        "rva": "0x4f60628",
+        "value": "0x140940b20",
+        "target_rva": "0x940b20",
+        "string": null
+      }
+    ]
+  },
+  {
+    "rva": "0x4f601c0",
+    "file_offset": "0x4f5f3c0",
+    "bytes": "80 e8 95 40 01 00 00 00 00 00 00 00 00 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x4f601c0",
+        "value": "0x14095e880",
+        "target_rva": "0x95e880",
+        "string": null
+      },
+      {
+        "rva": "0x4f601c8",
+        "value": "0x0",
+        "target_rva": null,
+        "string": null
+      }
+    ]
+  },
+  {
+    "rva": "0x4f43b10",
+    "file_offset": "0x4f42d10",
+    "bytes": "c0 79 e4 44 01 00 00 00 09 00 00 00 74 73 5c 80 60 02 e9 44 01 00 00 00 0a 00 00 00 59 c1 e9 16 38 50 f4 44 01 00 00 00 12 00 00 00 4e c9 aa b9 00 02 01 00 00 00 99 00 02 01 00 00 00 00 00 00 a0 f1 93 40 01 00 00 00 20 0a 94 40 01 00 00 00 d0 a9 58 40 01 00 00 00 70 d9 58 40 01 00 00 00 c0 0a 94 40 01 00 00 00 e0 a9 93 40 01 00 00 00 00 9c 93 40 01 00 00 00 a0 0b 94 40 01 00 00 00 80 0b 94 40 01 00 00 00 e0 0a 94 40 01 00 00 00 00 0b 94 40 01 00 00 00 20 0b 94 40 01 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x4f43b10",
+        "value": "0x144e479c0",
+        "target_rva": "0x4e479c0",
+        "string": "Matrix4x3"
+      },
+      {
+        "rva": "0x4f43b18",
+        "value": "0x805c737400000009",
+        "target_rva": null,
+        "string": null
+      },
+      {
+        "rva": "0x4f43b20",
+        "value": "0x144e90260",
+        "target_rva": "0x4e90260",
+        "string": "ViewMatrix"
+      },
+      {
+        "rva": "0x4f43b28",
+        "value": "0x16e9c1590000000a",
+        "target_rva": null,
+        "string": null
+      },
+      {
+        "rva": "0x4f43b30",
+        "value": "0x144f45038",
+        "target_rva": "0x4f45038",
+        "string": "ICamera.ViewMatrix"
+      },
+      {
+        "rva": "0x4f43b38",
+        "value": "0xb9aac94e00000012",
+        "target_rva": null,
+        "string": null
+      },
+      {
+        "rva": "0x4f43b40",
+        "value": "0x99000000010200",
+        "target_rva": null,
+        "string": null
+      },
+      {
+        "rva": "0x4f43b48",
+        "value": "0x102",
+        "target_rva": null,
+        "string": null
+      },
+      {
+        "rva": "0x4f43b50",
+        "value": "0x14093f1a0",
+        "target_rva": "0x93f1a0",
+        "string": null
+      },
+      {
+        "rva": "0x4f43b58",
+        "value": "0x140940a20",
+        "target_rva": "0x940a20",
+        "string": null
+      },
+      {
+        "rva": "0x4f43b60",
+        "value": "0x14058a9d0",
+        "target_rva": "0x58a9d0",
+        "string": null
+      },
+      {
+        "rva": "0x4f43b68",
+        "value": "0x14058d970",
+        "target_rva": "0x58d970",
+        "string": null
+      },
+      {
+        "rva": "0x4f43b70",
+        "value": "0x140940ac0",
+        "target_rva": "0x940ac0",
+        "string": null
+      },
+      {
+        "rva": "0x4f43b78",
+        "value": "0x14093a9e0",
+        "target_rva": "0x93a9e0",
+        "string": null
+      },
+      {
+        "rva": "0x4f43b80",
+        "value": "0x140939c00",
+        "target_rva": "0x939c00",
+        "string": null
+      },
+      {
+        "rva": "0x4f43b88",
+        "value": "0x140940ba0",
+        "target_rva": "0x940ba0",
+        "string": null
+      },
+      {
+        "rva": "0x4f43b90",
+        "value": "0x140940b80",
+        "target_rva": "0x940b80",
+        "string": null
+      },
+      {
+        "rva": "0x4f43b98",
+        "value": "0x140940ae0",
+        "target_rva": "0x940ae0",
+        "string": null
+      },
+      {
+        "rva": "0x4f43ba0",
+        "value": "0x140940b00",
+        "target_rva": "0x940b00",
+        "string": null
+      },
+      {
+        "rva": "0x4f43ba8",
+        "value": "0x140940b20",
+        "target_rva": "0x940b20",
+        "string": null
+      }
+    ]
+  },
+  {
+    "rva": "0x4f45130",
+    "file_offset": "0x4f44330",
+    "bytes": "90 40 96 40 01 00 00 00 00 00 00 00 00 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x4f45130",
+        "value": "0x140964090",
+        "target_rva": "0x964090",
+        "string": null
+      },
+      {
+        "rva": "0x4f45138",
+        "value": "0x0",
+        "target_rva": null,
+        "string": null
+      }
+    ]
+  },
+  {
+    "rva": "0x4f50350",
+    "file_offset": "0x4f4f550",
+    "bytes": "88 d9 e9 44 01 00 00 00 09 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80 e8 95 40 01 00 00 00 00 00 00 00 00 00 00 00 20 29 96 40 01 00 00 00 00 00 00 00 00 00 00 00 50 eb 95 40 01 00 00 00 00 00 00 00 00 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x4f50350",
+        "value": "0x144e9d988",
+        "target_rva": "0x4e9d988",
+        "string": "Transform"
+      },
+      {
+        "rva": "0x4f50358",
+        "value": "0x9",
+        "target_rva": null,
+        "string": null
+      },
+      {
+        "rva": "0x4f50360",
+        "value": "0x0",
+        "target_rva": null,
+        "string": null
+      },
+      {
+        "rva": "0x4f50368",
+        "value": "0x14095e880",
+        "target_rva": "0x95e880",
+        "string": null
+      },
+      {
+        "rva": "0x4f50370",
+        "value": "0x0",
+        "target_rva": null,
+        "string": null
+      },
+      {
+        "rva": "0x4f50378",
+        "value": "0x140962920",
+        "target_rva": "0x962920",
+        "string": null
+      },
+      {
+        "rva": "0x4f50380",
+        "value": "0x0",
+        "target_rva": null,
+        "string": null
+      },
+      {
+        "rva": "0x4f50388",
+        "value": "0x14095eb50",
+        "target_rva": "0x95eb50",
+        "string": null
+      },
+      {
+        "rva": "0x4f50390",
+        "value": "0x0",
+        "target_rva": null,
+        "string": null
+      }
+    ]
+  },
+  {
+    "rva": "0x4f76d00",
+    "file_offset": "0x4f75f00",
+    "bytes": "60 02 e9 44 01 00 00 00 0a 00 00 00 00 00 00 00 02 00 00 00 00 00 00 00 90 40 96 40 01 00 00 00 00 00 00 00 00 00 00 00 20 1e 95 40 01 00 00 00 00 00 00 00 00 00 00 00 a0 40 96 40 01 00 00 00 00 00 00 00 00 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x4f76d00",
+        "value": "0x144e90260",
+        "target_rva": "0x4e90260",
+        "string": "ViewMatrix"
+      },
+      {
+        "rva": "0x4f76d08",
+        "value": "0xa",
+        "target_rva": null,
+        "string": null
+      },
+      {
+        "rva": "0x4f76d10",
+        "value": "0x2",
+        "target_rva": null,
+        "string": null
+      },
+      {
+        "rva": "0x4f76d18",
+        "value": "0x140964090",
+        "target_rva": "0x964090",
+        "string": null
+      },
+      {
+        "rva": "0x4f76d20",
+        "value": "0x0",
+        "target_rva": null,
+        "string": null
+      },
+      {
+        "rva": "0x4f76d28",
+        "value": "0x140951e20",
+        "target_rva": "0x951e20",
+        "string": null
+      },
+      {
+        "rva": "0x4f76d30",
+        "value": "0x0",
+        "target_rva": null,
+        "string": null
+      },
+      {
+        "rva": "0x4f76d38",
+        "value": "0x1409640a0",
+        "target_rva": "0x9640a0",
+        "string": null
+      },
+      {
+        "rva": "0x4f76d40",
+        "value": "0x0",
+        "target_rva": null,
+        "string": null
+      }
+    ]
+  }
+]

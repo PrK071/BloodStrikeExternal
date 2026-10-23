@@ -1,0 +1,913 @@
+{
+  "instruction_records": 38445,
+  "unique_instruction_ranges": 38445,
+  "decoder_mismatches": [],
+  "xrefs_checked": 370,
+  "xref_failures": [],
+  "vtable_slots_checked": 132,
+  "tables": [
+    {
+      "name": "Messiah::IObject",
+      "vtable_rva": "0x4e4bfe8",
+      "col_rva": "0x6e0f460",
+      "col_pointer_matches": true,
+      "col_pointer_relocated": true,
+      "slots": [
+        {
+          "slot_rva": "0x4e4bfe8",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4e4bff0",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4e4bff8",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4e4c000",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4e4c008",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        }
+      ]
+    },
+    {
+      "name": "Messiah::IComponent",
+      "vtable_rva": "0x4e4c7e8",
+      "col_rva": "0x6e103f0",
+      "col_pointer_matches": true,
+      "col_pointer_relocated": true,
+      "slots": [
+        {
+          "slot_rva": "0x4e4c7e8",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4e4c7f0",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4e4c7f8",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4e4c800",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4e4c808",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4e4c810",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4e4c818",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4e4c820",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        }
+      ]
+    },
+    {
+      "name": "Messiah::ICamera",
+      "vtable_rva": "0x4e57558",
+      "col_rva": "0x6e1e1b8",
+      "col_pointer_matches": true,
+      "col_pointer_relocated": true,
+      "slots": [
+        {
+          "slot_rva": "0x4e57558",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4e57560",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4e57568",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4e57570",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4e57578",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4e57580",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4e57588",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4e57590",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        }
+      ]
+    },
+    {
+      "name": "Messiah::IEntity",
+      "vtable_rva": "0x4f2a180",
+      "col_rva": "0x6e7a378",
+      "col_pointer_matches": true,
+      "col_pointer_relocated": true,
+      "slots": [
+        {
+          "slot_rva": "0x4f2a180",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4f2a188",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4f2a190",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4f2a198",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4f2a1a0",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4f2a1a8",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        }
+      ]
+    },
+    {
+      "name": "Messiah::ISkeletonComponent",
+      "vtable_rva": "0x4f953e0",
+      "col_rva": "0x6e95428",
+      "col_pointer_matches": true,
+      "col_pointer_relocated": true,
+      "slots": [
+        {
+          "slot_rva": "0x4f953e0",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4f953e8",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4f953f0",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4f953f8",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4f95400",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4f95408",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4f95410",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4f95418",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4f95420",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4f95428",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4f95430",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4f95438",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4f95440",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4f95448",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4f95450",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4f95458",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4f95460",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        }
+      ]
+    },
+    {
+      "name": "Messiah::ISkeletonComponent",
+      "vtable_rva": "0x4f95470",
+      "col_rva": "0x6e95450",
+      "col_pointer_matches": true,
+      "col_pointer_relocated": true,
+      "slots": [
+        {
+          "slot_rva": "0x4f95470",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4f95478",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4f95480",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4f95488",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4f95490",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        }
+      ]
+    },
+    {
+      "name": "Messiah::SkeletonComponent",
+      "vtable_rva": "0x4fa22a0",
+      "col_rva": "0x6ea7be0",
+      "col_pointer_matches": true,
+      "col_pointer_relocated": true,
+      "slots": [
+        {
+          "slot_rva": "0x4fa22a0",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa22a8",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa22b0",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa22b8",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa22c0",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa22c8",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa22d0",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa22d8",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa22e0",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa22e8",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa22f0",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa22f8",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa2300",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa2308",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa2310",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa2318",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa2320",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa2328",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa2330",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa2338",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa2340",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa2348",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa2350",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa2358",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa2360",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa2368",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa2370",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa2378",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa2380",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        }
+      ]
+    },
+    {
+      "name": "Messiah::SkeletonComponent",
+      "vtable_rva": "0x4fa2390",
+      "col_rva": "0x6ea7c78",
+      "col_pointer_matches": true,
+      "col_pointer_relocated": true,
+      "slots": [
+        {
+          "slot_rva": "0x4fa2390",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa2398",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa23a0",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa23a8",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x4fa23b0",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        }
+      ]
+    },
+    {
+      "name": "Character::Actor",
+      "vtable_rva": "0x5565060",
+      "col_rva": "0x6f481c8",
+      "col_pointer_matches": true,
+      "col_pointer_relocated": true,
+      "slots": [
+        {
+          "slot_rva": "0x5565060",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x5565068",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x5565070",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x5565078",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x5565080",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x5565088",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x5565090",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x5565098",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x55650a0",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x55650a8",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x55650b0",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        }
+      ]
+    },
+    {
+      "name": "Messiah::ActorComponent",
+      "vtable_rva": "0x559b8f8",
+      "col_rva": "0x6f72620",
+      "col_pointer_matches": true,
+      "col_pointer_relocated": true,
+      "slots": [
+        {
+          "slot_rva": "0x559b8f8",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b900",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b908",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b910",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b918",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b920",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b928",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b930",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b938",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b940",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b948",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b950",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b958",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b960",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b968",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b970",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b978",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b980",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b988",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b990",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b998",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b9a0",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b9a8",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b9b0",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b9b8",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b9c0",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b9c8",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b9d0",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b9d8",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b9e0",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        }
+      ]
+    },
+    {
+      "name": "Messiah::ActorComponent",
+      "vtable_rva": "0x559b9f0",
+      "col_rva": "0x6f726c0",
+      "col_pointer_matches": true,
+      "col_pointer_relocated": true,
+      "slots": [
+        {
+          "slot_rva": "0x559b9f0",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559b9f8",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559ba00",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559ba08",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x559ba10",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        }
+      ]
+    },
+    {
+      "name": "Messiah::PythonAsyncoreModule",
+      "vtable_rva": "0x55ca878",
+      "col_rva": "0x6fb8260",
+      "col_pointer_matches": true,
+      "col_pointer_relocated": true,
+      "slots": [
+        {
+          "slot_rva": "0x55ca878",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x55ca880",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        },
+        {
+          "slot_rva": "0x55ca888",
+          "matches": true,
+          "dir64_relocation": true,
+          "code_target": true
+        }
+      ]
+    }
+  ],
+  "type_descriptors_checked": 32609,
+  "type_descriptor_failures": [],
+  "note": "Structural validation does not prove method semantics or exact vtable extents"
+}

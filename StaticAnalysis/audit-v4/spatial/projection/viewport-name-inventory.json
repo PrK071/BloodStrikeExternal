@@ -1,0 +1,430 @@
+[
+  {
+    "rva": "0x4e56230",
+    "string": "vkCmdSetViewport"
+  },
+  {
+    "rva": "0x4e90270",
+    "string": "ViewPortPos"
+  },
+  {
+    "rva": "0x4e91a68",
+    "string": "cIsMainViewport"
+  },
+  {
+    "rva": "0x4e922f0",
+    "string": "cSubViewportPos"
+  },
+  {
+    "rva": "0x4ea2758",
+    "string": "DissolveTransitionViewport"
+  },
+  {
+    "rva": "0x4eeff48",
+    "string": "it != GRendererDispatcher->mViewports.end()"
+  },
+  {
+    "rva": "0x4ef1f10",
+    "string": "SV_ViewportArrayIndex"
+  },
+  {
+    "rva": "0x4ef8de0",
+    "string": "Viewport"
+  },
+  {
+    "rva": "0x4f0d1f0",
+    "string": "ForceRenderAthenaMainViewport"
+  },
+  {
+    "rva": "0x4f288b0",
+    "string": "SV_ViewPortIndex"
+  },
+  {
+    "rva": "0x4f36058",
+    "string": "EngineFlagSettings.ForceRenderAthenaMainViewport"
+  },
+  {
+    "rva": "0x4f3eec8",
+    "string": "ForceRenderAthenaMainViewport"
+  },
+  {
+    "rva": "0x4f584a0",
+    "string": "Messiah.ICamera.SetScreenSize"
+  },
+  {
+    "rva": "0x4f5ea18",
+    "string": "Messiah.ICamera.GetScreenSize"
+  },
+  {
+    "rva": "0x4f93b60",
+    "string": "ViewportMaskNV"
+  },
+  {
+    "rva": "0x4f93b88",
+    "string": "SecondaryViewportMaskNV"
+  },
+  {
+    "rva": "0x4f93bb8",
+    "string": "ViewportMaskPerViewNV"
+  },
+  {
+    "rva": "0x4f93cc0",
+    "string": "ShaderViewportMaskNV"
+  },
+  {
+    "rva": "0x4f93d90",
+    "string": "ViewportRelativeNV"
+  },
+  {
+    "rva": "0x4f93da8",
+    "string": "SecondaryViewportRelativeNV"
+  },
+  {
+    "rva": "0x50fb1a0",
+    "string": "PixelViewPortMinMax"
+  },
+  {
+    "rva": "0x50fb35f",
+    "string": "GInputViewportMaxBound"
+  },
+  {
+    "rva": "0x50fbf30",
+    "string": "Input_ViewportSize"
+  },
+  {
+    "rva": "0x50fbf47",
+    "string": "(Input_ViewportSizeInverse"
+  },
+  {
+    "rva": "0x50fbf67",
+    "string": "$Input_UVViewportSize"
+  },
+  {
+    "rva": "0x50fbf88",
+    "string": "Input_UVViewportSizeInverse"
+  },
+  {
+    "rva": "0x50fbfa8",
+    "string": "Input_UVViewportBilinearMin"
+  },
+  {
+    "rva": "0x50fbfc7",
+    "string": "mInput_UVViewportBilinearMax"
+  },
+  {
+    "rva": "0x52f1ce0",
+    "string": "RenderViewport should not be initialized in command encode thread."
+  },
+  {
+    "rva": "0x52f1d28",
+    "string": "InternalDissolveViewport"
+  },
+  {
+    "rva": "0x53486f0",
+    "string": "ViewportIndex"
+  },
+  {
+    "rva": "0x5349728",
+    "string": "MultiViewport"
+  },
+  {
+    "rva": "0x53499c0",
+    "string": "ShaderViewportIndexLayerNV"
+  },
+  {
+    "rva": "0x559c418",
+    "string": "CEPreviewViewport"
+  },
+  {
+    "rva": "0x569c240",
+    "string": "cViewportRect"
+  },
+  {
+    "rva": "0x569c810",
+    "string": "cViewportSize"
+  },
+  {
+    "rva": "0x569c8a0",
+    "string": "cGatherInputViewportSize"
+  },
+  {
+    "rva": "0x56a18f0",
+    "string": "Output_ViewportSize"
+  },
+  {
+    "rva": "0x56a1905",
+    "string": "y8jOutput_ViewportSizeInverse"
+  },
+  {
+    "rva": "0x56a1b80",
+    "string": "ViewportSize"
+  },
+  {
+    "rva": "0x56a1b98",
+    "string": "ViewportSizeInverse"
+  },
+  {
+    "rva": "0x56cfba0",
+    "string": "FluidDebugDrawer.ViewPortPos"
+  },
+  {
+    "rva": "0x5bac530",
+    "string": "GetMainViewportPresentSequence"
+  },
+  {
+    "rva": "0x5bbf0a0",
+    "string": "AddAffiliatedViewport"
+  },
+  {
+    "rva": "0x5bbf0b8",
+    "string": "RemoveAffiliatedViewport"
+  },
+  {
+    "rva": "0x5bbf0d8",
+    "string": "LinkSemanticToAffiliatedViewport"
+  },
+  {
+    "rva": "0x5bbf100",
+    "string": "ClearSemanticToAffiliatedViewport"
+  },
+  {
+    "rva": "0x5bbf128",
+    "string": "Link3DUIToAffiliatedViewport"
+  },
+  {
+    "rva": "0x5bbf148",
+    "string": "UpdateAffiliatedViewportResolution"
+  },
+  {
+    "rva": "0x5bbf170",
+    "string": "GetAffiliatedViewportTextureId"
+  },
+  {
+    "rva": "0x5bbf190",
+    "string": "SetAffiliatedViewportRenderTargetResource"
+  },
+  {
+    "rva": "0x5bc25b8",
+    "string": "updateShowRoomViewport"
+  },
+  {
+    "rva": "0x5bc41a0",
+    "string": "getViewPortRect"
+  },
+  {
+    "rva": "0x5bc4300",
+    "string": "setViewPortInPoints"
+  },
+  {
+    "rva": "0x5bc63b0",
+    "string": "setViewport"
+  },
+  {
+    "rva": "0x5d34c18",
+    "string": "SDL_SetGPUViewport_REAL"
+  },
+  {
+    "rva": "0x5d67498",
+    "string": "gl_ViewportIndex"
+  },
+  {
+    "rva": "0x5d75490",
+    "string": "ViewportIndex requires Metal 2.0."
+  },
+  {
+    "rva": "0x5db0158",
+    "string": "ShaderViewportIndex"
+  },
+  {
+    "rva": "0x5db02c8",
+    "string": "ShaderViewportIndexLayerEXT"
+  },
+  {
+    "rva": "0x5dc5c70",
+    "string": "ShaderViewportIndexLayerEXT or ShaderViewportIndex"
+  },
+  {
+    "rva": "0x5dc5ca8",
+    "string": "ShaderViewportIndexLayerEXT or ShaderLayer"
+  },
+  {
+    "rva": "0x5dd5580",
+    "string": "[VUID-ViewportIndex-ViewportIndex-04404] "
+  },
+  {
+    "rva": "0x5dd55b0",
+    "string": "[VUID-ViewportIndex-ViewportIndex-04405] "
+  },
+  {
+    "rva": "0x5dd55e0",
+    "string": "[VUID-ViewportIndex-ViewportIndex-04406] "
+  },
+  {
+    "rva": "0x5dd5610",
+    "string": "[VUID-ViewportIndex-ViewportIndex-04407] "
+  },
+  {
+    "rva": "0x5dd5640",
+    "string": "[VUID-ViewportIndex-ViewportIndex-04408] "
+  },
+  {
+    "rva": "0x7c9f328",
+    "string": ".?AVIDeviceViewport@Messiah@@"
+  },
+  {
+    "rva": "0x7c9f358",
+    "string": ".?AVD3D12Viewport@Messiah@@"
+  },
+  {
+    "rva": "0x7ca4050",
+    "string": ".?AV<lambda_1>@?4??CheckForCompositionChanged@ViewportClient@Messiah@@UEAAXXZ@"
+  },
+  {
+    "rva": "0x7ca40b0",
+    "string": ".?AV<lambda_1>@?4??CheckForDisplayChanged@ViewportClient@Messiah@@UEAAX_N@Z@"
+  },
+  {
+    "rva": "0x7cae7b0",
+    "string": ".?AV<lambda_1>@?1??SetFullScreen@Win32ViewportClientWindow@Messiah@@UEAAX_N0@Z@"
+  },
+  {
+    "rva": "0x7cae810",
+    "string": ".?AV<lambda_1>@?BM@??ProcessMessage@Win32ViewportClientWindow@Messiah@@AEAA_NPEAUHWND__@@I_K_J@Z@"
+  },
+  {
+    "rva": "0x7cb55e0",
+    "string": ".?AV<lambda_1>@?1??AddViewport@RendererDispatcher@Messiah@@QEAAXPEAVIRenderViewport@3@_N@Z@"
+  },
+  {
+    "rva": "0x7cba890",
+    "string": ".?AV<lambda_1>@?N@??_UpdateViewportResolution_on_rdt@SceneViewport@Messiah@@UEAAXGGW4EPixelFormat@3@@Z@"
+  },
+  {
+    "rva": "0x7cbb840",
+    "string": ".?AV<lambda_1>@?1???1SceneViewport@Messiah@@UEAA@XZ@"
+  },
+  {
+    "rva": "0x7cc3bb8",
+    "string": ".?AVIViewportComposition@Messiah@@"
+  },
+  {
+    "rva": "0x7ce7840",
+    "string": ".?AV<lambda_1>@?1??_ChangeComposition_on_rdt@RenderViewport@Messiah@@UEAAXXZ@"
+  },
+  {
+    "rva": "0x7cea7f0",
+    "string": ".?AV<lambda_1>@?1???1ShowRoomViewport@Messiah@@UEAA@XZ@"
+  },
+  {
+    "rva": "0x7ceb660",
+    "string": ".?AV<lambda_1>@?1???R0?1???1ShowRoomViewport@Messiah@@UEAA@XZ@QEAA@XZ@"
+  },
+  {
+    "rva": "0x7cefa10",
+    "string": ".?AV<lambda_1>@?BP@??_ResizeViewport_on_dt@DXGISwapChain@Messiah@@UEAA_NGGW4ECompositionFlags@3@@Z@"
+  },
+  {
+    "rva": "0x7de3698",
+    "string": ".?AVVulkanViewport@Messiah@@"
+  },
+  {
+    "rva": "0x7de3c00",
+    "string": ".?AVVulkanPSOViewportStateInfo@Messiah@@"
+  },
+  {
+    "rva": "0x7de7f08",
+    "string": ".?AVViewportClient@Messiah@@"
+  },
+  {
+    "rva": "0x7de7f38",
+    "string": ".?AVIViewportClient@Messiah@@"
+  },
+  {
+    "rva": "0x7de7f70",
+    "string": ".?AV?$THoldable@VViewportClient@Messiah@@@Messiah@@"
+  },
+  {
+    "rva": "0x7de7fb8",
+    "string": ".?AVViewportClientInput@Messiah@@"
+  },
+  {
+    "rva": "0x7deafa0",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??CheckForDisplayChanged@ViewportClient@Messiah@@UEAAX_N@Z@X$$V@std@@"
+  },
+  {
+    "rva": "0x7deb020",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??CheckForCompositionChanged@ViewportClient@Messiah@@UEAAXXZ@X$$V@std@@"
+  },
+  {
+    "rva": "0x7df1470",
+    "string": ".?AVSceneViewportClient@Messiah@@"
+  },
+  {
+    "rva": "0x7dff428",
+    "string": ".?AVIViewportClientWindow@Messiah@@"
+  },
+  {
+    "rva": "0x7dff498",
+    "string": ".?AVWin32ViewportClientWindow@Messiah@@"
+  },
+  {
+    "rva": "0x7dff630",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??SetFullScreen@Win32ViewportClientWindow@Messiah@@UEAAX_N0@Z@X$$V@std@@"
+  },
+  {
+    "rva": "0x7e18cc8",
+    "string": ".?AVSceneViewport@Messiah@@"
+  },
+  {
+    "rva": "0x7e18cf8",
+    "string": ".?AVIRenderViewport@Messiah@@"
+  },
+  {
+    "rva": "0x7e19d10",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?1???1SceneViewport@Messiah@@UEAA@XZ@X$$V@std@@"
+  },
+  {
+    "rva": "0x7e2cbb0",
+    "string": ".?AVD3D11Viewport@Messiah@@"
+  },
+  {
+    "rva": "0x7e49a20",
+    "string": ".?AVRenderTargetViewport@Messiah@@"
+  },
+  {
+    "rva": "0x7ea65d0",
+    "string": ".?AVMainRenderViewport@Messiah@@"
+  },
+  {
+    "rva": "0x7ea6608",
+    "string": ".?AVClientRenderViewport@Messiah@@"
+  },
+  {
+    "rva": "0x7ea6640",
+    "string": ".?AVGenericRenderViewport@Messiah@@"
+  },
+  {
+    "rva": "0x7ea6678",
+    "string": ".?AVRenderViewport@Messiah@@"
+  },
+  {
+    "rva": "0x7ea79f0",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??_ChangeComposition_on_rdt@RenderViewport@Messiah@@UEAAXXZ@X$$V@std@@"
+  },
+  {
+    "rva": "0x7eb0598",
+    "string": ".?AVShowRoomViewport@Messiah@@"
+  },
+  {
+    "rva": "0x7eb3c10",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?1???1ShowRoomViewport@Messiah@@UEAA@XZ@X$$V@std@@"
+  },
+  {
+    "rva": "0x7eb4a90",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?1???R1?1???1ShowRoomViewport@Messiah@@UEAA@XZ@QEAA@XZ@X$$V@std@@"
+  },
+  {
+    "rva": "0x7f30970",
+    "string": ".?AVIViewportClientListener@Messiah@@"
+  }
+]

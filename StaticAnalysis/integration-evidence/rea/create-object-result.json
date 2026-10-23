@@ -1,0 +1,15 @@
+{
+  "sample_sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "method": "Ghidra 12.1.4 direct headless -noanalysis; bodies seeded from prior CFG, not REA provider Evidence",
+  "target_executed": false,
+  "functions": [
+    {
+      "entry_va": "142d85130",
+      "label": "audited_mobject_create_object",
+      "verified_instruction_records": 63,
+      "completed": true,
+      "diagnostic": "",
+      "c": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nundefined8 FUN_142d85130(undefined8 param_1,undefined8 param_2)\r\n\r\n{\r\n  uint uVar1;\r\n  undefined4 uVar2;\r\n  undefined8 uVar3;\r\n  longlong lVar4;\r\n  undefined1 auStackX_18 [16];\r\n  longlong alStack_18 [2];\r\n  \r\n  alStack_18[0] \u003d FUN_142a3dd20(param_2,auStackX_18);\r\n  if (alStack_18[0] !\u003d 0) {\r\n    uVar3 \u003d FUN_140470e30(auStackX_18,alStack_18,1);\r\n    lVar4 \u003d FUN_1404fa480(uVar3,0);\r\n    func_0x000140470f80(auStackX_18);\r\n    if (lVar4 \u003d\u003d 0) {\r\n      FUN_142a718d0(_DAT_147a0ebd0,\u0026UNK_145b84970,alStack_18[0]);\r\n      uVar3 \u003d 0;\r\n    }\r\n    else {\r\n      FUN_1404fa600(lVar4);\r\n      lVar4 \u003d FUN_142d82d90(_DAT_148e455b8,lVar4);\r\n      (**(code **)(**(longlong **)(lVar4 + 8) + 0x10))();\r\n      if (*(longlong *)(lVar4 + 0x10) !\u003d 0) {\r\n        uVar2 \u003d FUN_142adc1c0();\r\n        uVar1 \u003d **(uint **)(lVar4 + 0x10);\r\n        if (uVar1 \u003c 0xc0000000) {\r\n          **(uint **)(lVar4 + 0x10) \u003d uVar1 + 1;\r\n        }\r\n        FUN_142adc290(uVar2);\r\n      }\r\n      uVar3 \u003d *(undefined8 *)(lVar4 + 0x10);\r\n    }\r\n    lVar4 \u003d FUN_142a70dc0();\r\n    if (lVar4 !\u003d 0) {\r\n      uVar3 \u003d 0;\r\n    }\r\n    return uVar3;\r\n  }\r\n  return 0;\r\n}\r\n\r\n"
+    }
+  ]
+}

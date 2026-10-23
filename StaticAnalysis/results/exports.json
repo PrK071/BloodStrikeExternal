@@ -1,0 +1,4559 @@
+[
+  {
+    "name": "??$FromString@V?$vector@MV?$allocator@M@std@@@std@@@Messiah@@YA_NAEAV?$vector@MV?$allocator@M@std@@@std@@AEBV?$basic_string_view@DU?$char_traits@D@std@@@2@@Z",
+    "ordinal": 1,
+    "rva": "0x122e20",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??$ToString@V?$vector@MV?$allocator@M@std@@@std@@@Messiah@@YA_NAEBV?$vector@MV?$allocator@M@std@@@std@@AEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@@Z",
+    "ordinal": 2,
+    "rva": "0x122a60",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??0AudioDecoderConfig@avy@@QEAA@XZ",
+    "ordinal": 3,
+    "rva": "0x46198b0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??0AudioEncoder@avy@@QEAA@XZ",
+    "ordinal": 4,
+    "rva": "0x216020",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??0AudioEncoderConfig@avy@@QEAA@XZ",
+    "ordinal": 5,
+    "rva": "0x4619bf0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??0ClothFabricCooker@cloth@nv@@QEAA@AEBV012@@Z",
+    "ordinal": 6,
+    "rva": "0x1c840f0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??0ClothFabricCooker@cloth@nv@@QEAA@XZ",
+    "ordinal": 7,
+    "rva": "0x1c840f0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??0IStream@avy@@QEAA@AEBV01@@Z",
+    "ordinal": 8,
+    "rva": "0x46198c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??0IStream@avy@@QEAA@W4StreamType@1@@Z",
+    "ordinal": 9,
+    "rva": "0x461a4f0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??0MuxConfig@avy@@QEAA@XZ",
+    "ordinal": 10,
+    "rva": "0x46198b0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??0OStream@avy@@QEAA@W4StreamType@1@@Z",
+    "ordinal": 11,
+    "rva": "0x46196c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??0ReadBytesMem@AK@@QEAA@PEBXJ@Z",
+    "ordinal": 12,
+    "rva": "0x4369940",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??0ReadBytesMem@AK@@QEAA@XZ",
+    "ordinal": 13,
+    "rva": "0x4369960",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??0ReadBytesSkip@AK@@QEAA@PEBXJ@Z",
+    "ordinal": 14,
+    "rva": "0x4369d60",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??0ReadBytesSkip@AK@@QEAA@XZ",
+    "ordinal": 15,
+    "rva": "0x4369d80",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??0VideoEncoder@avy@@QEAA@XZ",
+    "ordinal": 16,
+    "rva": "0x216020",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??0VideoEncoderConfig@avy@@QEAA@XZ",
+    "ordinal": 17,
+    "rva": "0x46197a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??0VideoFactory@avy@@QEAA@XZ",
+    "ordinal": 18,
+    "rva": "0x4619220",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??0WriteBytesCount@AK@@QEAA@XZ",
+    "ordinal": 19,
+    "rva": "0x4369da0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??0WriteBytesMem@AK@@QEAA@XZ",
+    "ordinal": 20,
+    "rva": "0x4369980",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??1AudioEncoder@avy@@QEAA@XZ",
+    "ordinal": 21,
+    "rva": "0x1038c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??1CAkEmitter@@UEAA@XZ",
+    "ordinal": 22,
+    "rva": "0x4396770",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??1CAkGameObject@@UEAA@XZ",
+    "ordinal": 23,
+    "rva": "0x43c6b40",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??1CAkRegisteredObj@@UEAA@XZ",
+    "ordinal": 24,
+    "rva": "0x43969b0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??1ClothFabricCooker@cloth@nv@@UEAA@XZ",
+    "ordinal": 25,
+    "rva": "0x1c85b40",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??1IStream@avy@@UEAA@XZ",
+    "ordinal": 26,
+    "rva": "0x461a510",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??1OStream@avy@@UEAA@XZ",
+    "ordinal": 27,
+    "rva": "0x46196e0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??1ReadBytesMem@AK@@UEAA@XZ",
+    "ordinal": 28,
+    "rva": "0x43699b0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??1ReadBytesSkip@AK@@UEAA@XZ",
+    "ordinal": 29,
+    "rva": "0x4369dc0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??1VideoEncoder@avy@@QEAA@XZ",
+    "ordinal": 30,
+    "rva": "0x1038c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??1VideoFactory@avy@@QEAA@XZ",
+    "ordinal": 31,
+    "rva": "0x4619250",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??1WriteBytesCount@AK@@UEAA@XZ",
+    "ordinal": 32,
+    "rva": "0x4369dd0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??1WriteBytesMem@AK@@UEAA@XZ",
+    "ordinal": 33,
+    "rva": "0x43699c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??4AudioDecoderConfig@avy@@QEAAAEAU01@$$QEAU01@@Z",
+    "ordinal": 34,
+    "rva": "0x4619c10",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??4AudioDecoderConfig@avy@@QEAAAEAU01@AEBU01@@Z",
+    "ordinal": 35,
+    "rva": "0x4619c40",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??4AudioEncoder@avy@@QEAAAEAV01@AEBV01@@Z",
+    "ordinal": 36,
+    "rva": "0x461a990",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??4AudioEncoderConfig@avy@@QEAAAEAU01@$$QEAU01@@Z",
+    "ordinal": 37,
+    "rva": "0x4619c60",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??4AudioEncoderConfig@avy@@QEAAAEAU01@AEBU01@@Z",
+    "ordinal": 38,
+    "rva": "0x4619c90",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??4ClothFabricCooker@cloth@nv@@QEAAAEAV012@AEBV012@@Z",
+    "ordinal": 39,
+    "rva": "0x1052d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??4IStream@avy@@QEAAAEAV01@AEBV01@@Z",
+    "ordinal": 40,
+    "rva": "0x46198e0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??4MuxConfig@avy@@QEAAAEAU01@$$QEAU01@@Z",
+    "ordinal": 41,
+    "rva": "0x4619280",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??4MuxConfig@avy@@QEAAAEAU01@AEBU01@@Z",
+    "ordinal": 42,
+    "rva": "0x4619280",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??4StreamUtil@avy@@QEAAAEAU01@$$QEAU01@@Z",
+    "ordinal": 43,
+    "rva": "0x1052d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??4StreamUtil@avy@@QEAAAEAU01@AEBU01@@Z",
+    "ordinal": 44,
+    "rva": "0x1052d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??4VideoEncoder@avy@@QEAAAEAV01@AEBV01@@Z",
+    "ordinal": 45,
+    "rva": "0x461a990",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??4VideoEncoderConfig@avy@@QEAAAEAU01@$$QEAU01@@Z",
+    "ordinal": 46,
+    "rva": "0x46197e0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??4VideoEncoderConfig@avy@@QEAAAEAU01@AEBU01@@Z",
+    "ordinal": 47,
+    "rva": "0x4619860",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "??_7ClothFabricCooker@cloth@nv@@6B@",
+    "ordinal": 48,
+    "rva": "0x55c65a8",
+    "kind": "data_or_forwarder",
+    "forwarder": null
+  },
+  {
+    "name": "??_7IStream@avy@@6B@",
+    "ordinal": 49,
+    "rva": "0x5f9d540",
+    "kind": "data_or_forwarder",
+    "forwarder": null
+  },
+  {
+    "name": "??_7OStream@avy@@6B@",
+    "ordinal": 50,
+    "rva": "0x5f9d508",
+    "kind": "data_or_forwarder",
+    "forwarder": null
+  },
+  {
+    "name": "?AddDefaultListener@SoundEngine@AK@@YA?AW4AKRESULT@@_K@Z",
+    "ordinal": 51,
+    "rva": "0x4321850",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?AddLanguageChangeObserver@StreamMgr@AK@@YA?AW4AKRESULT@@P6AXQEB_WPEAX@Z1@Z",
+    "ordinal": 52,
+    "rva": "0x4417000",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?AddListener@SoundEngine@AK@@YA?AW4AKRESULT@@_K0@Z",
+    "ordinal": 53,
+    "rva": "0x43218f0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?AddOutput@SoundEngine@AK@@YA?AW4AKRESULT@@AEBUAkOutputSettings@@PEA_KPEB_KK@Z",
+    "ordinal": 54,
+    "rva": "0x4321980",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?AddOutputCaptureMarker@SoundEngine@AK@@YA?AW4AKRESULT@@PEBD@Z",
+    "ordinal": 55,
+    "rva": "0x4321b10",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?ApplyGain@AkMixer@@YAXPEAVAkAudioBuffer@@0UAkRamp@@_N@Z",
+    "ordinal": 56,
+    "rva": "0x43917d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?ApplyGainAndInterleave@AkMixer@@YAXPEAVAkAudioBuffer@@0UAkRamp@@_N@Z",
+    "ordinal": 57,
+    "rva": "0x43917e0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Attach@ReadBytesMem@AK@@QEAAXPEBXJ@Z",
+    "ordinal": 58,
+    "rva": "0x4369b50",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Attach@ReadBytesSkip@AK@@QEAAXPEBXJ@Z",
+    "ordinal": 59,
+    "rva": "0x4369b50",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Break@DynamicSequence@SoundEngine@AK@@YA?AW4AKRESULT@@K@Z",
+    "ordinal": 60,
+    "rva": "0x4321e90",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Bytes@WriteBytesCount@AK@@UEBAPEAEXZ",
+    "ordinal": 61,
+    "rva": "0x102e10",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Bytes@WriteBytesMem@AK@@UEBAPEAEXZ",
+    "ordinal": 62,
+    "rva": "0x1afc00",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?CancelBankCallbackCookie@SoundEngine@AK@@YAXPEAX@Z",
+    "ordinal": 63,
+    "rva": "0x4321f00",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?CancelEventCallback@SoundEngine@AK@@YAXK@Z",
+    "ordinal": 64,
+    "rva": "0x4321f20",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?CancelEventCallbackCookie@SoundEngine@AK@@YAXPEAX@Z",
+    "ordinal": 65,
+    "rva": "0x4321f40",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?CancelEventCallbackGameObject@SoundEngine@AK@@YAX_K@Z",
+    "ordinal": 66,
+    "rva": "0x4321f60",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?CheckValid@VideoEncoderConfig@avy@@QEBA_NXZ",
+    "ordinal": 67,
+    "rva": "0x4619880",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Clear@WriteBytesCount@AK@@UEAAXXZ",
+    "ordinal": 68,
+    "rva": "0x4369f00",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Clear@WriteBytesMem@AK@@UEAAXXZ",
+    "ordinal": 69,
+    "rva": "0x4369b60",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?ClearBanks@SoundEngine@AK@@YA?AW4AKRESULT@@XZ",
+    "ordinal": 70,
+    "rva": "0x4321f80",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?ClearImageSources@SpatialAudio@AK@@YA?AW4AKRESULT@@K_K@Z",
+    "ordinal": 71,
+    "rva": "0x43e70e0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?ClearPreparedEvents@SoundEngine@AK@@YA?AW4AKRESULT@@XZ",
+    "ordinal": 72,
+    "rva": "0x4322070",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Close@AudioEncoder@avy@@QEAAXXZ",
+    "ordinal": 73,
+    "rva": "0x461f1c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Close@DynamicSequence@SoundEngine@AK@@YA?AW4AKRESULT@@K@Z",
+    "ordinal": 74,
+    "rva": "0x4322140",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Close@VideoEncoder@avy@@QEAAXXZ",
+    "ordinal": 75,
+    "rva": "0x461f1c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Close@VideoFactory@avy@@QEAAXXZ",
+    "ordinal": 76,
+    "rva": "0x4619290",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Count@ReadBytesSkip@AK@@QEAAJXZ",
+    "ordinal": 77,
+    "rva": "0x184e7c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Count@WriteBytesCount@AK@@UEBAJXZ",
+    "ordinal": 78,
+    "rva": "0x978570",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Count@WriteBytesMem@AK@@UEBAJXZ",
+    "ordinal": 79,
+    "rva": "0x184e7c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Create@StreamMgr@AK@@YAPEAVIAkStreamMgr@2@AEBUAkStreamMgrSettings@@@Z",
+    "ordinal": 80,
+    "rva": "0x4417280",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?CreateCustomOStream@StreamUtil@avy@@SA?AV?$shared_ptr@VOStream@avy@@@std@@AEBV?$function@$$A6A_NXZ@4@AEBV?$function@$$A6A_KPEBE_KN@Z@4@AEBV?$function@$$A6A_NHE@Z@4@AEBV?$function@$$A6AXXZ@4@@Z",
+    "ordinal": 81,
+    "rva": "0x4619980",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?CreateDevice@StreamMgr@AK@@YAKAEBUAkDeviceSettings@@PEAVIAkLowLevelIOHook@12@@Z",
+    "ordinal": 82,
+    "rva": "0x4417b10",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?CreateFileIStream@StreamUtil@avy@@SA?AV?$shared_ptr@VIStream@avy@@@std@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z",
+    "ordinal": 83,
+    "rva": "0x4619ab0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?CreateFileOStream@StreamUtil@avy@@SA?AV?$shared_ptr@VOStream@avy@@@std@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@@Z",
+    "ordinal": 84,
+    "rva": "0x4619b50",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?DecodeBank@SoundEngine@AK@@YA?AW4AKRESULT@@PEBXKJAEAPEAXAEAK@Z",
+    "ordinal": 85,
+    "rva": "0x43226e0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?DestroyDevice@StreamMgr@AK@@YA?AW4AKRESULT@@K@Z",
+    "ordinal": 86,
+    "rva": "0x4417fe0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Detach@WriteBytesCount@AK@@UEAAPEAEXZ",
+    "ordinal": 87,
+    "rva": "0x102e10",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Detach@WriteBytesMem@AK@@UEAAPEAEXZ",
+    "ordinal": 88,
+    "rva": "0x4369b70",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?EnableAudio@VideoFactory@avy@@QEAA?AW4ErrorCode@2@AEBUAudioEncoderConfig@2@@Z",
+    "ordinal": 89,
+    "rva": "0x46192d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?EnableVideo@VideoFactory@avy@@QEAA?AW4ErrorCode@2@AEBUVideoEncoderConfig@2@@Z",
+    "ordinal": 90,
+    "rva": "0x4619330",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?EncodeVector@CAkSpeakerPan@@SAXHPEAM0@Z",
+    "ordinal": 91,
+    "rva": "0x4377910",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?ExecuteActionOnEvent@SoundEngine@AK@@YA?AW4AKRESULT@@KW4AkActionOnEventType@12@_KJW4AkCurveInterpolation@@K@Z",
+    "ordinal": 92,
+    "rva": "0x4322c30",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?ExecuteActionOnEvent@SoundEngine@AK@@YA?AW4AKRESULT@@PEBDW4AkActionOnEventType@12@_KJW4AkCurveInterpolation@@K@Z",
+    "ordinal": 93,
+    "rva": "0x4322d20",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?ExecuteActionOnEvent@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_WW4AkActionOnEventType@12@_KJW4AkCurveInterpolation@@K@Z",
+    "ordinal": 94,
+    "rva": "0x4322d60",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?ExecuteActionOnPlayingID@SoundEngine@AK@@YAXW4AkActionOnEventType@12@KJW4AkCurveInterpolation@@@Z",
+    "ordinal": 95,
+    "rva": "0x4322da0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Falign@MemoryMgr@AK@@YAXJPEAX@Z",
+    "ordinal": 96,
+    "rva": "0x42c7440",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Flush@AudioEncoder@avy@@QEAAXXZ",
+    "ordinal": 97,
+    "rva": "0x461f1d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Flush@VideoEncoder@avy@@QEAAXXZ",
+    "ordinal": 98,
+    "rva": "0x461f1d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?FlushAll@VideoFactory@avy@@QEAA?AW4ErrorCode@2@_N@Z",
+    "ordinal": 99,
+    "rva": "0x4619390",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?FlushAllCaches@StreamMgr@AK@@YAXXZ",
+    "ordinal": 100,
+    "rva": "0x44180c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?FlushAndClose@AudioEncoder@avy@@QEAAXXZ",
+    "ordinal": 101,
+    "rva": "0x461f1e0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?FlushAndClose@OStream@avy@@EEAAXXZ",
+    "ordinal": 102,
+    "rva": "0x104120",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?FlushAndClose@VideoEncoder@avy@@QEAAXXZ",
+    "ordinal": 103,
+    "rva": "0x461f1e0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?FlushAudio@VideoFactory@avy@@QEAA?AW4ErrorCode@2@XZ",
+    "ordinal": 104,
+    "rva": "0x46193f0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?FlushVideo@VideoFactory@avy@@QEAA?AW4ErrorCode@2@XZ",
+    "ordinal": 105,
+    "rva": "0x4619450",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Free@MemoryMgr@AK@@YAXJPEAX@Z",
+    "ordinal": 106,
+    "rva": "0x42c7450",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetActiveGameObjects@Query@SoundEngine@AK@@YA?AW4AKRESULT@@AEAV?$AkArray@_K_KU?$AkArrayAllocatorNoAlign@$0A@@@UAkGrowByPolicy_Proportional@@U?$AkAssignmentMovePolicy@_K@@@@@Z",
+    "ordinal": 107,
+    "rva": "0x432c760",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetAudioSettings@SoundEngine@AK@@YA?AW4AKRESULT@@AEAUAkAudioSettings@@@Z",
+    "ordinal": 108,
+    "rva": "0x4322e70",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetBackgroundMusicMute@SoundEngine@AK@@YA_NXZ",
+    "ordinal": 109,
+    "rva": "0x4322ea0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetBufferStatusForPinnedEvent@SoundEngine@AK@@YA?AW4AKRESULT@@KAEAMAEA_N@Z",
+    "ordinal": 110,
+    "rva": "0x43230d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetBufferStatusForPinnedEvent@SoundEngine@AK@@YA?AW4AKRESULT@@PEBDAEAMAEA_N@Z",
+    "ordinal": 111,
+    "rva": "0x4323190",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetBufferStatusForPinnedEvent@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_WAEAMAEA_N@Z",
+    "ordinal": 112,
+    "rva": "0x43231c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetBufferTick@SoundEngine@AK@@YAKXZ",
+    "ordinal": 113,
+    "rva": "0x43231f0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetCapacity@OStream@avy@@QEBA_KXZ",
+    "ordinal": 114,
+    "rva": "0x4619780",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetCategoryStats@MemoryMgr@AK@@YAXJAEAUCategoryStats@12@@Z",
+    "ordinal": 115,
+    "rva": "0x104120",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetContainerHistory@SoundEngine@AK@@YA?AW4AKRESULT@@PEAVIWriteBytes@2@@Z",
+    "ordinal": 116,
+    "rva": "0x4323200",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetCurrentLanguage@StreamMgr@AK@@YAPEB_WXZ",
+    "ordinal": 117,
+    "rva": "0x4418340",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetCustomPropertyValue@Query@SoundEngine@AK@@YA?AW4AKRESULT@@KKAEAJ@Z",
+    "ordinal": 118,
+    "rva": "0x432c7d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetCustomPropertyValue@Query@SoundEngine@AK@@YA?AW4AKRESULT@@KKAEAM@Z",
+    "ordinal": 119,
+    "rva": "0x432c7d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetDecodingMatrixShape@CAkSpeakerPan@@SAXUAkChannelConfig@@AEAKAEAH@Z",
+    "ordinal": 120,
+    "rva": "0x4377d20",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetDefaultDeviceSettings@StreamMgr@AK@@YAXAEAUAkDeviceSettings@@@Z",
+    "ordinal": 121,
+    "rva": "0x4418350",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetDefaultInitSettings@MusicEngine@AK@@YAXAEAUAkMusicSettings@@@Z",
+    "ordinal": 122,
+    "rva": "0x42cc200",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetDefaultInitSettings@SoundEngine@AK@@YAXAEAUAkInitSettings@@@Z",
+    "ordinal": 123,
+    "rva": "0x43233d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetDefaultPlatformInitSettings@SoundEngine@AK@@YAXAEAUAkPlatformInitSettings@@@Z",
+    "ordinal": 124,
+    "rva": "0x4323440",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetDefaultSettings@MemoryMgr@AK@@YAXAEAUAkMemSettings@@@Z",
+    "ordinal": 125,
+    "rva": "0x42c7640",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetDefaultSettings@StreamMgr@AK@@YAXAEAUAkStreamMgrSettings@@@Z",
+    "ordinal": 126,
+    "rva": "0x104120",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetDeviceID@AK@@YAKPEAUIMMDevice@@@Z",
+    "ordinal": 127,
+    "rva": "0x4385b50",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetDeviceIDFromName@AK@@YAKPEA_W@Z",
+    "ordinal": 128,
+    "rva": "0x4385ba0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetDeviceList@SoundEngine@AK@@YA?AW4AKRESULT@@KAEAKPEAUAkDeviceDescription@@@Z",
+    "ordinal": 129,
+    "rva": "0x4323450",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetDeviceList@SoundEngine@AK@@YA?AW4AKRESULT@@KKAEAKPEAUAkDeviceDescription@@@Z",
+    "ordinal": 130,
+    "rva": "0x4323540",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetDeviceSpatialAudioSupport@SoundEngine@AK@@YA?AW4AKRESULT@@K@Z",
+    "ordinal": 131,
+    "rva": "0x4385e30",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetDialogueEventCustomPropertyValue@DynamicDialogue@SoundEngine@AK@@YA?AW4AKRESULT@@KKAEAJ@Z",
+    "ordinal": 132,
+    "rva": "0x4323680",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetDialogueEventCustomPropertyValue@DynamicDialogue@SoundEngine@AK@@YA?AW4AKRESULT@@KKAEAM@Z",
+    "ordinal": 133,
+    "rva": "0x4323750",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetDirectSoundInstance@AK@@YAPEAUIDirectSound8@@XZ",
+    "ordinal": 134,
+    "rva": "0x43db8f0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetEventIDFromPlayingID@Query@SoundEngine@AK@@YAKK@Z",
+    "ordinal": 135,
+    "rva": "0x432c970",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetFileLocationResolver@StreamMgr@AK@@YAPEAVIAkFileLocationResolver@12@XZ",
+    "ordinal": 136,
+    "rva": "0x44183a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetFrameSize@AudioEncoder@avy@@QEBAIXZ",
+    "ordinal": 137,
+    "rva": "0x461f2f0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetGameObjectAuxSendValues@Query@SoundEngine@AK@@YA?AW4AKRESULT@@_KPEAUAkAuxSendValue@@AEAK@Z",
+    "ordinal": 138,
+    "rva": "0x432c990",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetGameObjectDryLevelValue@Query@SoundEngine@AK@@YA?AW4AKRESULT@@_K0AEAM@Z",
+    "ordinal": 139,
+    "rva": "0x432cb20",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetGameObjectFromPlayingID@Query@SoundEngine@AK@@YA_KK@Z",
+    "ordinal": 140,
+    "rva": "0x432cc10",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetGlobalPluginContext@SoundEngine@AK@@YAPEAVIAkGlobalPluginContext@2@XZ",
+    "ordinal": 141,
+    "rva": "0x4323820",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetGlobalStats@MemoryMgr@AK@@YAXAEAUGlobalStats@12@@Z",
+    "ordinal": 142,
+    "rva": "0x104120",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetIDFromString@SoundEngine@AK@@YAKPEBD@Z",
+    "ordinal": 143,
+    "rva": "0x43238a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetIDFromString@SoundEngine@AK@@YAKPEB_W@Z",
+    "ordinal": 144,
+    "rva": "0x43239b0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetIsGameObjectActive@Query@SoundEngine@AK@@YA_N_K@Z",
+    "ordinal": 145,
+    "rva": "0x432cc30",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetListenerPosition@Query@SoundEngine@AK@@YA?AW4AKRESULT@@_KAEAVAkTransform@@@Z",
+    "ordinal": 146,
+    "rva": "0x432cc70",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetListenerSpatialization@Query@SoundEngine@AK@@YA?AW4AKRESULT@@KAEA_NAEAPEAMAEAUAkChannelConfig@@@Z",
+    "ordinal": 147,
+    "rva": "0x432cd20",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetListeners@Query@SoundEngine@AK@@YA?AW4AKRESULT@@_KPEA_KAEAK@Z",
+    "ordinal": 148,
+    "rva": "0x432cd90",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetMaxRadius@Query@SoundEngine@AK@@YA?AW4AKRESULT@@AEAV?$AkArray@UGameObjDst@Query@SoundEngine@AK@@AEBU1234@U?$AkArrayAllocatorNoAlign@$0A@@@UAkGrowByPolicy_Proportional@@U?$AkAssignmentMovePolicy@UGameObjDst@Query@SoundEngine@AK@@@@@@@Z",
+    "ordinal": 149,
+    "rva": "0x432ce70",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetMaxRadius@Query@SoundEngine@AK@@YAM_K@Z",
+    "ordinal": 150,
+    "rva": "0x432ceb0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetMediaInfo@AudioEncoder@avy@@AEBA?AV?$vector@EV?$allocator@E@std@@@std@@XZ",
+    "ordinal": 151,
+    "rva": "0x461f310",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetObjAndAddref@CAkRegistryMgr@@QEAAPEAVCAkRegisteredObj@@_K@Z",
+    "ordinal": 152,
+    "rva": "0x4387890",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetObjectObstructionAndOcclusion@Query@SoundEngine@AK@@YA?AW4AKRESULT@@_K0AEAM1@Z",
+    "ordinal": 153,
+    "rva": "0x432cf00",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetOutputID@SoundEngine@AK@@YA_KKK@Z",
+    "ordinal": 154,
+    "rva": "0x4323b20",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetOutputID@SoundEngine@AK@@YA_KPEBDK@Z",
+    "ordinal": 155,
+    "rva": "0x4323b80",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetOutputID@SoundEngine@AK@@YA_KPEB_WK@Z",
+    "ordinal": 156,
+    "rva": "0x4323bf0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetPanningRule@SoundEngine@AK@@YA?AW4AKRESULT@@AEAW4AkPanningRule@@_K@Z",
+    "ordinal": 157,
+    "rva": "0x4323c60",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetPauseTimes@DynamicSequence@SoundEngine@AK@@YA?AW4AKRESULT@@KAEAK0@Z",
+    "ordinal": 158,
+    "rva": "0x4323ce0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetPlayingIDsFromGameObject@Query@SoundEngine@AK@@YA?AW4AKRESULT@@_KAEAKPEAK@Z",
+    "ordinal": 159,
+    "rva": "0x432d0b0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetPlayingItem@DynamicSequence@SoundEngine@AK@@YA?AW4AKRESULT@@KAEAKAEAPEAX@Z",
+    "ordinal": 160,
+    "rva": "0x4323d80",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetPlayingSegmentInfo@MusicEngine@AK@@YA?AW4AKRESULT@@KAEAUAkSegmentInfo@@_N@Z",
+    "ordinal": 161,
+    "rva": "0x42cc210",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetPosition@Query@SoundEngine@AK@@YA?AW4AKRESULT@@_KAEAVAkTransform@@@Z",
+    "ordinal": 162,
+    "rva": "0x432d0e0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetPositioningInfo@Query@SoundEngine@AK@@YA?AW4AKRESULT@@KAEAUAkPositioningInfo@@@Z",
+    "ordinal": 163,
+    "rva": "0x432d200",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetRTPCValue@Query@SoundEngine@AK@@YA?AW4AKRESULT@@K_KKAEAMAEAW4RTPCValue_type@123@@Z",
+    "ordinal": 164,
+    "rva": "0x432d280",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetRTPCValue@Query@SoundEngine@AK@@YA?AW4AKRESULT@@PEBD_KKAEAMAEAW4RTPCValue_type@123@@Z",
+    "ordinal": 165,
+    "rva": "0x432d450",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetRTPCValue@Query@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_W_KKAEAMAEAW4RTPCValue_type@123@@Z",
+    "ordinal": 166,
+    "rva": "0x432d490",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetSourcePlayPosition@SoundEngine@AK@@YA?AW4AKRESULT@@KPEAJ_N@Z",
+    "ordinal": 167,
+    "rva": "0x4323ea0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetSourcePlayPositions@SoundEngine@AK@@YA?AW4AKRESULT@@KPEAUAkSourcePosition@@PEAK_N@Z",
+    "ordinal": 168,
+    "rva": "0x4323f00",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetSourceStreamBuffering@SoundEngine@AK@@YA?AW4AKRESULT@@KAEAJAEA_N@Z",
+    "ordinal": 169,
+    "rva": "0x4323f40",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetSpeakerAngles@SoundEngine@AK@@YA?AW4AKRESULT@@PEAMAEAKAEAM_K@Z",
+    "ordinal": 170,
+    "rva": "0x4323fa0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetSpeakerConfiguration@SoundEngine@AK@@YA?AUAkChannelConfig@@_K@Z",
+    "ordinal": 171,
+    "rva": "0x4324040",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetState@Query@SoundEngine@AK@@YA?AW4AKRESULT@@KAEAK@Z",
+    "ordinal": 172,
+    "rva": "0x432d4d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetState@Query@SoundEngine@AK@@YA?AW4AKRESULT@@PEBDAEAK@Z",
+    "ordinal": 173,
+    "rva": "0x432d530",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetState@Query@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_WAEAK@Z",
+    "ordinal": 174,
+    "rva": "0x432d590",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetSwitch@Query@SoundEngine@AK@@YA?AW4AKRESULT@@K_KAEAK@Z",
+    "ordinal": 175,
+    "rva": "0x432d5f0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetSwitch@Query@SoundEngine@AK@@YA?AW4AKRESULT@@PEBD_KAEAK@Z",
+    "ordinal": 176,
+    "rva": "0x432d6c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetSwitch@Query@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_W_KAEAK@Z",
+    "ordinal": 177,
+    "rva": "0x432d6f0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetTimeStamp@Monitor@AK@@YAJXZ",
+    "ordinal": 178,
+    "rva": "0x102e10",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetWindowsDevice@AK@@YA_NJAEAKPEAPEAUIMMDevice@@W4AkAudioDeviceState@@@Z",
+    "ordinal": 179,
+    "rva": "0x43862a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetWindowsDeviceCount@AK@@YAKW4AkAudioDeviceState@@@Z",
+    "ordinal": 180,
+    "rva": "0x43863f0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetWindowsDeviceName@AK@@YAPEB_WJAEAKW4AkAudioDeviceState@@@Z",
+    "ordinal": 181,
+    "rva": "0x4386450",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?GetWwiseXAudio2Interface@AK@@YAPEAUIUnknown@@XZ",
+    "ordinal": 182,
+    "rva": "0x43dc310",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Init@MemoryMgr@AK@@YA?AW4AKRESULT@@PEAUAkMemSettings@@@Z",
+    "ordinal": 183,
+    "rva": "0x42c76c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Init@MusicEngine@AK@@YA?AW4AKRESULT@@PEAUAkMusicSettings@@@Z",
+    "ordinal": 184,
+    "rva": "0x42cc230",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Init@SoundEngine@AK@@YA?AW4AKRESULT@@PEAUAkInitSettings@@PEAUAkPlatformInitSettings@@@Z",
+    "ordinal": 185,
+    "rva": "0x43240d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Init@SpatialAudio@AK@@YA?AW4AKRESULT@@AEBUAkSpatialAudioInitSettings@@@Z",
+    "ordinal": 186,
+    "rva": "0x43e8fb0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?InitForThread@MemoryMgr@AK@@YAXXZ",
+    "ordinal": 187,
+    "rva": "0x42c78d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Initialize@AudioEncoder@avy@@QEAA_NAEBUAudioEncoderConfig@2@V?$shared_ptr@VOStream@avy@@@std@@@Z",
+    "ordinal": 188,
+    "rva": "0x461f350",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Initialize@VideoEncoder@avy@@QEAA_NAEBUVideoEncoderConfig@2@V?$shared_ptr@VOStream@avy@@@std@@@Z",
+    "ordinal": 189,
+    "rva": "0x461f1f0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Initialize@VideoFactory@avy@@QEAA?AW4ErrorCode@2@AEBUMuxConfig@2@V?$shared_ptr@VOStream@avy@@@std@@@Z",
+    "ordinal": 190,
+    "rva": "0x46194b0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Instance@AkRuntimeEnvironmentMgr@AK@@SAPEAV12@XZ",
+    "ordinal": 191,
+    "rva": "0x43c2950",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?IsFailed@OStream@avy@@QEAA_NXZ",
+    "ordinal": 192,
+    "rva": "0x33d920",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?IsInitialized@MemoryMgr@AK@@YA_NXZ",
+    "ordinal": 193,
+    "rva": "0x42c7470",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?IsInitialized@SoundEngine@AK@@YA_NXZ",
+    "ordinal": 194,
+    "rva": "0x4324300",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?LoadBank@SoundEngine@AK@@YA?AW4AKRESULT@@K@Z",
+    "ordinal": 195,
+    "rva": "0x4324310",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?LoadBank@SoundEngine@AK@@YA?AW4AKRESULT@@KP6AXKPEBXW43@PEAX@Z2@Z",
+    "ordinal": 196,
+    "rva": "0x43243e0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?LoadBank@SoundEngine@AK@@YA?AW4AKRESULT@@PEBDAEAK@Z",
+    "ordinal": 197,
+    "rva": "0x4324470",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?LoadBank@SoundEngine@AK@@YA?AW4AKRESULT@@PEBDP6AXKPEBXW43@PEAX@Z3AEAK@Z",
+    "ordinal": 198,
+    "rva": "0x4324580",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?LoadBank@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_WAEAK@Z",
+    "ordinal": 199,
+    "rva": "0x4324660",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?LoadBank@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_WP6AXKPEBXW43@PEAX@Z3AEAK@Z",
+    "ordinal": 200,
+    "rva": "0x4324760",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?LoadBankMemoryCopy@SoundEngine@AK@@YA?AW4AKRESULT@@PEBXKAEAK@Z",
+    "ordinal": 201,
+    "rva": "0x4324840",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?LoadBankMemoryCopy@SoundEngine@AK@@YA?AW4AKRESULT@@PEBXKP6AXK0W43@PEAX@Z2AEAK@Z",
+    "ordinal": 202,
+    "rva": "0x4324940",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?LoadBankMemoryView@SoundEngine@AK@@YA?AW4AKRESULT@@PEBXKAEAK@Z",
+    "ordinal": 203,
+    "rva": "0x4324a40",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?LoadBankMemoryView@SoundEngine@AK@@YA?AW4AKRESULT@@PEBXKP6AXK0W43@PEAX@Z2AEAK@Z",
+    "ordinal": 204,
+    "rva": "0x4324b40",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?LockPlaylist@DynamicSequence@SoundEngine@AK@@YAPEAVPlaylist@123@K@Z",
+    "ordinal": 205,
+    "rva": "0x4324c40",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Malign@MemoryMgr@AK@@YAPEAXJ_KK@Z",
+    "ordinal": 206,
+    "rva": "0x42c7480",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Malloc@MemoryMgr@AK@@YAPEAXJ_K@Z",
+    "ordinal": 207,
+    "rva": "0x42c7490",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?MixBypassNinNChannels@AkMixer@@YAXPEAVAkAudioBuffer@@0AEAUAkRamp@@PEBM2MGPEAVCAkSrcLpHpFilter@@@Z",
+    "ordinal": 208,
+    "rva": "0x43919c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?MixChannel@AkMixer@@YAXPEAM0MMK@Z",
+    "ordinal": 209,
+    "rva": "0x4391a60",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?MixFilterNinNChannels@AkMixer@@YAXPEAVAkAudioBuffer@@0AEAUAkRamp@@PEBM2MGPEAVCAkSrcLpHpFilter@@@Z",
+    "ordinal": 210,
+    "rva": "0x4391a70",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?MixNinNChannels@AkMixer@@YAXPEAVAkAudioBuffer@@0AEAUAkRamp@@PEBM2MG@Z",
+    "ordinal": 211,
+    "rva": "0x4391c40",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?MixOneInNChannels@AkMixer@@YAXPEIAMPEAVAkAudioBuffer@@UAkChannelConfig@@AEAUAkRamp@@PEBM4MG@Z",
+    "ordinal": 212,
+    "rva": "0x4391c60",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?MuteBackgroundMusic@SoundEngine@AK@@YAX_N@Z",
+    "ordinal": 213,
+    "rva": "0x4324e50",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Open@DynamicSequence@SoundEngine@AK@@YAK_KKP6AXW4AkCallbackType@@PEAUAkCallbackInfo@@@ZPEAXW4DynamicSequenceType@123@@Z",
+    "ordinal": 214,
+    "rva": "0x4324ea0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Pause@DynamicSequence@SoundEngine@AK@@YA?AW4AKRESULT@@KJW4AkCurveInterpolation@@@Z",
+    "ordinal": 215,
+    "rva": "0x4324fc0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PinEventInStreamCache@SoundEngine@AK@@YA?AW4AKRESULT@@KDD@Z",
+    "ordinal": 216,
+    "rva": "0x4325050",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PinEventInStreamCache@SoundEngine@AK@@YA?AW4AKRESULT@@PEBDDD@Z",
+    "ordinal": 217,
+    "rva": "0x4325140",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PinEventInStreamCache@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_WDD@Z",
+    "ordinal": 218,
+    "rva": "0x4325170",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Play@DynamicSequence@SoundEngine@AK@@YA?AW4AKRESULT@@KJW4AkCurveInterpolation@@@Z",
+    "ordinal": 219,
+    "rva": "0x43251a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PlaySourcePlugin@SoundEngine@AK@@YAKKK_K@Z",
+    "ordinal": 220,
+    "rva": "0x4325230",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PostCode@Monitor@AK@@YA?AW4AKRESULT@@W4ErrorCode@12@W4ErrorLevel@12@K_KK_N@Z",
+    "ordinal": 221,
+    "rva": "0x163870",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PostEvent@SoundEngine@AK@@YAKK_KKP6AXW4AkCallbackType@@PEAUAkCallbackInfo@@@ZPEAXKPEAUAkExternalSourceInfo@@K@Z",
+    "ordinal": 222,
+    "rva": "0x43252c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PostEvent@SoundEngine@AK@@YAKPEBD_KKP6AXW4AkCallbackType@@PEAUAkCallbackInfo@@@ZPEAXKPEAUAkExternalSourceInfo@@K@Z",
+    "ordinal": 223,
+    "rva": "0x4325500",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PostEvent@SoundEngine@AK@@YAKPEB_W_KKP6AXW4AkCallbackType@@PEAUAkCallbackInfo@@@ZPEAXKPEAUAkExternalSourceInfo@@K@Z",
+    "ordinal": 224,
+    "rva": "0x43255d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PostMIDIOnEvent@SoundEngine@AK@@YA?AW4AKRESULT@@K_KPEAUAkMIDIPost@@G@Z",
+    "ordinal": 225,
+    "rva": "0x4325890",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PostString@Monitor@AK@@YA?AW4AKRESULT@@PEBDW4ErrorLevel@12@K_KK_N@Z",
+    "ordinal": 226,
+    "rva": "0x163870",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PostString@Monitor@AK@@YA?AW4AKRESULT@@PEB_WW4ErrorLevel@12@K_KK_N@Z",
+    "ordinal": 227,
+    "rva": "0x163870",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PostTrigger@SoundEngine@AK@@YA?AW4AKRESULT@@K_K@Z",
+    "ordinal": 228,
+    "rva": "0x4325bf0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PostTrigger@SoundEngine@AK@@YA?AW4AKRESULT@@PEBD_K@Z",
+    "ordinal": 229,
+    "rva": "0x4325c50",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PostTrigger@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_W_K@Z",
+    "ordinal": 230,
+    "rva": "0x4325cc0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PrepareBank@SoundEngine@AK@@YA?AW4AKRESULT@@W4PreparationType@12@KP6AXKPEBXW43@PEAX@Z3W4AkBankContent@12@@Z",
+    "ordinal": 231,
+    "rva": "0x4326260",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PrepareBank@SoundEngine@AK@@YA?AW4AKRESULT@@W4PreparationType@12@KW4AkBankContent@12@@Z",
+    "ordinal": 232,
+    "rva": "0x4326310",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PrepareBank@SoundEngine@AK@@YA?AW4AKRESULT@@W4PreparationType@12@PEBDP6AXKPEBXW43@PEAX@Z4W4AkBankContent@12@@Z",
+    "ordinal": 233,
+    "rva": "0x4326400",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PrepareBank@SoundEngine@AK@@YA?AW4AKRESULT@@W4PreparationType@12@PEBDW4AkBankContent@12@@Z",
+    "ordinal": 234,
+    "rva": "0x43264f0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PrepareBank@SoundEngine@AK@@YA?AW4AKRESULT@@W4PreparationType@12@PEB_WP6AXKPEBXW43@PEAX@Z4W4AkBankContent@12@@Z",
+    "ordinal": 235,
+    "rva": "0x4326610",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PrepareBank@SoundEngine@AK@@YA?AW4AKRESULT@@W4PreparationType@12@PEB_WW4AkBankContent@12@@Z",
+    "ordinal": 236,
+    "rva": "0x4326700",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PrepareEvent@SoundEngine@AK@@YA?AW4AKRESULT@@W4PreparationType@12@PEAKK@Z",
+    "ordinal": 237,
+    "rva": "0x4326820",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PrepareEvent@SoundEngine@AK@@YA?AW4AKRESULT@@W4PreparationType@12@PEAKKP6AXKPEBXW43@PEAX@Z4@Z",
+    "ordinal": 238,
+    "rva": "0x43268a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PrepareEvent@SoundEngine@AK@@YA?AW4AKRESULT@@W4PreparationType@12@PEAPEBDK@Z",
+    "ordinal": 239,
+    "rva": "0x43268d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PrepareEvent@SoundEngine@AK@@YA?AW4AKRESULT@@W4PreparationType@12@PEAPEBDKP6AXKPEBXW43@PEAX@Z4@Z",
+    "ordinal": 240,
+    "rva": "0x4326aa0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PrepareEvent@SoundEngine@AK@@YA?AW4AKRESULT@@W4PreparationType@12@PEAPEB_WK@Z",
+    "ordinal": 241,
+    "rva": "0x4326c30",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PrepareEvent@SoundEngine@AK@@YA?AW4AKRESULT@@W4PreparationType@12@PEAPEB_WKP6AXKPEBXW43@PEAX@Z4@Z",
+    "ordinal": 242,
+    "rva": "0x4326e00",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PrepareGameSyncs@SoundEngine@AK@@YA?AW4AKRESULT@@W4PreparationType@12@W4AkGroupType@@KPEAKK@Z",
+    "ordinal": 243,
+    "rva": "0x43270f0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PrepareGameSyncs@SoundEngine@AK@@YA?AW4AKRESULT@@W4PreparationType@12@W4AkGroupType@@KPEAKKP6AXKPEBXW43@PEAX@Z5@Z",
+    "ordinal": 244,
+    "rva": "0x4327190",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PrepareGameSyncs@SoundEngine@AK@@YA?AW4AKRESULT@@W4PreparationType@12@W4AkGroupType@@PEBDPEAPEBDK@Z",
+    "ordinal": 245,
+    "rva": "0x43271d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PrepareGameSyncs@SoundEngine@AK@@YA?AW4AKRESULT@@W4PreparationType@12@W4AkGroupType@@PEBDPEAPEBDKP6AXKPEBXW43@PEAX@Z6@Z",
+    "ordinal": 246,
+    "rva": "0x43273b0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PrepareGameSyncs@SoundEngine@AK@@YA?AW4AKRESULT@@W4PreparationType@12@W4AkGroupType@@PEB_WPEAPEB_WK@Z",
+    "ordinal": 247,
+    "rva": "0x43275a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PrepareGameSyncs@SoundEngine@AK@@YA?AW4AKRESULT@@W4PreparationType@12@W4AkGroupType@@PEB_WPEAPEB_WKP6AXKPEBXW43@PEAX@Z6@Z",
+    "ordinal": 248,
+    "rva": "0x4327780",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Push@AudioEncoder@avy@@QEAA_NPEBX_KW4SampleFormat@2@@Z",
+    "ordinal": 249,
+    "rva": "0x461f420",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Push@VideoEncoder@avy@@QEAA_NNPEAEI_KW4PixelType@2@_N@Z",
+    "ordinal": 250,
+    "rva": "0x461f2c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PushAudio@VideoFactory@avy@@QEAA?AW4ErrorCode@2@PEBX_KW4SampleFormat@2@@Z",
+    "ordinal": 251,
+    "rva": "0x46195a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?PushVideo@VideoFactory@avy@@QEAA?AW4ErrorCode@2@NPEAEI_KW4PixelType@2@_N@Z",
+    "ordinal": 252,
+    "rva": "0x4619620",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?QueryAudioObjectIDs@Query@SoundEngine@AK@@YA?AW4AKRESULT@@KAEAKPEAUAkObjectInfo@@@Z",
+    "ordinal": 253,
+    "rva": "0x432d750",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?QueryAudioObjectIDs@Query@SoundEngine@AK@@YA?AW4AKRESULT@@PEBDAEAKPEAUAkObjectInfo@@@Z",
+    "ordinal": 254,
+    "rva": "0x432d850",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?QueryAudioObjectIDs@Query@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_WAEAKPEAUAkObjectInfo@@@Z",
+    "ordinal": 255,
+    "rva": "0x432d890",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?QueryDiffractionPaths@SpatialAudio@AK@@YA?AW4AKRESULT@@_KAEAUAkVector@@1PEAUAkDiffractionPathInfo@@AEAK@Z",
+    "ordinal": 256,
+    "rva": "0x43e95e0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?QueryReflectionPaths@SpatialAudio@AK@@YA?AW4AKRESULT@@_KAEAUAkVector@@1PEAUAkReflectionPathInfo@@AEAK@Z",
+    "ordinal": 257,
+    "rva": "0x43e9880",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?QueryWetDiffraction@SpatialAudio@AK@@YA?AW4AKRESULT@@UAkSpatialAudioID@@AEAM@Z",
+    "ordinal": 258,
+    "rva": "0x43e9b70",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?ReadBytes@ReadBytesMem@AK@@UEAA_NPEAXJAEAJ@Z",
+    "ordinal": 259,
+    "rva": "0x4369b90",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?ReadBytes@ReadBytesSkip@AK@@UEAA_NPEAXJAEAJ@Z",
+    "ordinal": 260,
+    "rva": "0x4369f10",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Realloc@MemoryMgr@AK@@YAPEAXJPEAX_K@Z",
+    "ordinal": 261,
+    "rva": "0x42c74a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?RegisterAudioDeviceStatusCallback@SoundEngine@AK@@YA?AW4AKRESULT@@P6AXPEAVIAkGlobalPluginContext@2@KKW4AkAudioDeviceEvent@2@W43@@Z@Z",
+    "ordinal": 262,
+    "rva": "0x4327ae0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?RegisterBusMeteringCallback@SoundEngine@AK@@YA?AW4AKRESULT@@KP6AXPEAVIAkMetering@2@UAkChannelConfig@@W4AkMeteringFlags@@@Z2@Z",
+    "ordinal": 263,
+    "rva": "0x4327af0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?RegisterBusVolumeCallback@SoundEngine@AK@@YA?AW4AKRESULT@@KP6AXPEAUAkSpeakerVolumeMatrixCallbackInfo@@@Z@Z",
+    "ordinal": 264,
+    "rva": "0x4327b20",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?RegisterCodec@SoundEngine@AK@@YA?AW4AKRESULT@@KKP6APEAVIAkSoftwareCodec@@PEAX@Z1@Z",
+    "ordinal": 265,
+    "rva": "0x4327b80",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?RegisterGameObj@SoundEngine@AK@@YA?AW4AKRESULT@@_K@Z",
+    "ordinal": 266,
+    "rva": "0x4327bb0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?RegisterGameObj@SoundEngine@AK@@YA?AW4AKRESULT@@_KPEBD@Z",
+    "ordinal": 267,
+    "rva": "0x4327bb0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?RegisterGlobalCallback@SoundEngine@AK@@YA?AW4AKRESULT@@P6AXPEAVIAkGlobalPluginContext@2@W4AkGlobalCallbackLocation@@PEAX@ZK2W4AkPluginType@@KK@Z",
+    "ordinal": 268,
+    "rva": "0x4327c50",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?RegisterListener@SpatialAudio@AK@@YA?AW4AKRESULT@@_K@Z",
+    "ordinal": 269,
+    "rva": "0x43e9c90",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?RegisterPlugin@SoundEngine@AK@@YA?AW4AKRESULT@@W4AkPluginType@@KKP6APEAVIAkPlugin@2@PEAVIAkPluginMemAlloc@2@@ZP6APEAVIAkPluginParam@2@1@ZP6A?AW43@AEAKPEAUAkDeviceDescription@@@Z@Z",
+    "ordinal": 270,
+    "rva": "0x4327e60",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?RegisterPluginDLL@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_W0@Z",
+    "ordinal": 271,
+    "rva": "0x4386bb0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?RegisterResourceMonitorCallback@SoundEngine@AK@@YA?AW4AKRESULT@@P6AXPEBUAkResourceMonitorDataSummary@@@Z@Z",
+    "ordinal": 272,
+    "rva": "0x163850",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?RemoveDefaultListener@SoundEngine@AK@@YA?AW4AKRESULT@@_K@Z",
+    "ordinal": 273,
+    "rva": "0x4327ed0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?RemoveGeometry@SpatialAudio@AK@@YA?AW4AKRESULT@@UAkSpatialAudioID@@@Z",
+    "ordinal": 274,
+    "rva": "0x43e9f90",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?RemoveImageSource@SpatialAudio@AK@@YA?AW4AKRESULT@@KK_K@Z",
+    "ordinal": 275,
+    "rva": "0x43e9ff0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?RemoveLanguageChangeObserver@StreamMgr@AK@@YAXPEAX@Z",
+    "ordinal": 276,
+    "rva": "0x44186d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?RemoveListener@SoundEngine@AK@@YA?AW4AKRESULT@@_K0@Z",
+    "ordinal": 277,
+    "rva": "0x4327f40",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?RemoveOutput@SoundEngine@AK@@YA?AW4AKRESULT@@_K@Z",
+    "ordinal": 278,
+    "rva": "0x4327fd0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?RemovePortal@SpatialAudio@AK@@YA?AW4AKRESULT@@UAkSpatialAudioID@@@Z",
+    "ordinal": 279,
+    "rva": "0x43ea070",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?RemoveRoom@SpatialAudio@AK@@YA?AW4AKRESULT@@UAkRoomID@@@Z",
+    "ordinal": 280,
+    "rva": "0x43ea0d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?RenderAudio@SoundEngine@AK@@YA?AW4AKRESULT@@_N@Z",
+    "ordinal": 281,
+    "rva": "0x4328020",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?ReplaceOutput@SoundEngine@AK@@YA?AW4AKRESULT@@AEBUAkOutputSettings@@_KPEA_K@Z",
+    "ordinal": 282,
+    "rva": "0x4328030",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Reserve@WriteBytesCount@AK@@UEAA_NJ@Z",
+    "ordinal": 283,
+    "rva": "0x173570",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Reserve@WriteBytesMem@AK@@UEAA_NJ@Z",
+    "ordinal": 284,
+    "rva": "0x4369c10",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?ResetListenersToDefault@SoundEngine@AK@@YA?AW4AKRESULT@@_K@Z",
+    "ordinal": 285,
+    "rva": "0x4328190",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?ResetRTPCValue@SoundEngine@AK@@YA?AW4AKRESULT@@K_KJW4AkCurveInterpolation@@_N@Z",
+    "ordinal": 286,
+    "rva": "0x43281e0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?ResetRTPCValue@SoundEngine@AK@@YA?AW4AKRESULT@@PEBD_KJW4AkCurveInterpolation@@_N@Z",
+    "ordinal": 287,
+    "rva": "0x43282a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?ResetRTPCValue@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_W_KJW4AkCurveInterpolation@@_N@Z",
+    "ordinal": 288,
+    "rva": "0x4328300",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?ResolveDialogueEvent@DynamicDialogue@SoundEngine@AK@@YAKKPEAKKKP6A_NKKPEAX@Z1@Z",
+    "ordinal": 289,
+    "rva": "0x4328360",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?ResolveDialogueEvent@DynamicDialogue@SoundEngine@AK@@YAKPEBDPEAPEBDKKP6A_NKKPEAX@Z2@Z",
+    "ordinal": 290,
+    "rva": "0x4328440",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?ResolveDialogueEvent@DynamicDialogue@SoundEngine@AK@@YAKPEB_WPEAPEB_WKKP6A_NKKPEAX@Z2@Z",
+    "ordinal": 291,
+    "rva": "0x4328570",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Resume@DynamicSequence@SoundEngine@AK@@YA?AW4AKRESULT@@KJW4AkCurveInterpolation@@@Z",
+    "ordinal": 292,
+    "rva": "0x43286a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Seek@DynamicSequence@SoundEngine@AK@@YA?AW4AKRESULT@@KJ_N@Z",
+    "ordinal": 293,
+    "rva": "0x4328730",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Seek@DynamicSequence@SoundEngine@AK@@YA?AW4AKRESULT@@KM_N@Z",
+    "ordinal": 294,
+    "rva": "0x43287c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SeekOnEvent@SoundEngine@AK@@YA?AW4AKRESULT@@K_KJ_NK@Z",
+    "ordinal": 295,
+    "rva": "0x4328850",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SeekOnEvent@SoundEngine@AK@@YA?AW4AKRESULT@@K_KM_NK@Z",
+    "ordinal": 296,
+    "rva": "0x4328950",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SeekOnEvent@SoundEngine@AK@@YA?AW4AKRESULT@@PEBD_KJ_NK@Z",
+    "ordinal": 297,
+    "rva": "0x4328a60",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SeekOnEvent@SoundEngine@AK@@YA?AW4AKRESULT@@PEBD_KM_NK@Z",
+    "ordinal": 298,
+    "rva": "0x4328aa0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SeekOnEvent@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_W_KJ_NK@Z",
+    "ordinal": 299,
+    "rva": "0x4328ae0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SeekOnEvent@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_W_KM_NK@Z",
+    "ordinal": 300,
+    "rva": "0x4328b20",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SendPluginCustomGameData@SoundEngine@AK@@YA?AW4AKRESULT@@K_KW4AkPluginType@@KKPEBXK@Z",
+    "ordinal": 301,
+    "rva": "0x4328bb0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetActorMixerEffect@SoundEngine@AK@@YA?AW4AKRESULT@@KKK@Z",
+    "ordinal": 302,
+    "rva": "0x4328ce0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetBankLoadIOSettings@SoundEngine@AK@@YA?AW4AKRESULT@@MD@Z",
+    "ordinal": 303,
+    "rva": "0x4328d50",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetBusConfig@SoundEngine@AK@@YA?AW4AKRESULT@@KUAkChannelConfig@@@Z",
+    "ordinal": 304,
+    "rva": "0x4328d80",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetBusConfig@SoundEngine@AK@@YA?AW4AKRESULT@@PEBDUAkChannelConfig@@@Z",
+    "ordinal": 305,
+    "rva": "0x4328de0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetBusConfig@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_WUAkChannelConfig@@@Z",
+    "ordinal": 306,
+    "rva": "0x4328e50",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetBusDevice@SoundEngine@AK@@YA?AW4AKRESULT@@KK@Z",
+    "ordinal": 307,
+    "rva": "0x4328ec0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetBusDevice@SoundEngine@AK@@YA?AW4AKRESULT@@PEBD0@Z",
+    "ordinal": 308,
+    "rva": "0x4329040",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetBusDevice@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_W0@Z",
+    "ordinal": 309,
+    "rva": "0x43291f0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetBusEffect@SoundEngine@AK@@YA?AW4AKRESULT@@KKK@Z",
+    "ordinal": 310,
+    "rva": "0x4329460",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetBusEffect@SoundEngine@AK@@YA?AW4AKRESULT@@PEBDKK@Z",
+    "ordinal": 311,
+    "rva": "0x43294d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetBusEffect@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_WKK@Z",
+    "ordinal": 312,
+    "rva": "0x4329510",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetContainerHistory@SoundEngine@AK@@YA?AW4AKRESULT@@PEAVIReadBytes@2@@Z",
+    "ordinal": 313,
+    "rva": "0x4329550",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetCount@WriteBytesCount@AK@@UEAAXJ@Z",
+    "ordinal": 314,
+    "rva": "0x4369f40",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetCount@WriteBytesMem@AK@@UEAAXJ@Z",
+    "ordinal": 315,
+    "rva": "0x184f030",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetCurrentLanguage@StreamMgr@AK@@YA?AW4AKRESULT@@PEB_W@Z",
+    "ordinal": 316,
+    "rva": "0x4418770",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetDefaultListeners@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_KK@Z",
+    "ordinal": 317,
+    "rva": "0x4329790",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetEarlyReflectionsAuxSend@SpatialAudio@AK@@YA?AW4AKRESULT@@_KK@Z",
+    "ordinal": 318,
+    "rva": "0x43ea130",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetEarlyReflectionsVolume@SpatialAudio@AK@@YA?AW4AKRESULT@@_KM@Z",
+    "ordinal": 319,
+    "rva": "0x43ea190",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetFileLocationResolver@StreamMgr@AK@@YAXPEAVIAkFileLocationResolver@12@@Z",
+    "ordinal": 320,
+    "rva": "0x4418870",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetGameObjectAuxSendValues@SoundEngine@AK@@YA?AW4AKRESULT@@_KPEAUAkAuxSendValue@@K@Z",
+    "ordinal": 321,
+    "rva": "0x43297a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetGameObjectInRoom@SpatialAudio@AK@@YA?AW4AKRESULT@@_KUAkRoomID@@@Z",
+    "ordinal": 322,
+    "rva": "0x43ea200",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetGameObjectOutputBusVolume@SoundEngine@AK@@YA?AW4AKRESULT@@_K0M@Z",
+    "ordinal": 323,
+    "rva": "0x4329890",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetGeometry@SpatialAudio@AK@@YA?AW4AKRESULT@@UAkSpatialAudioID@@AEBUAkGeometryParams@@@Z",
+    "ordinal": 324,
+    "rva": "0x43ea270",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetImageSource@SpatialAudio@AK@@YA?AW4AKRESULT@@KAEBUAkImageSourceSettings@@KUAkRoomID@@_K@Z",
+    "ordinal": 325,
+    "rva": "0x43ea740",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetListenerSpatialization@SoundEngine@AK@@YA?AW4AKRESULT@@_K_NUAkChannelConfig@@PEAM@Z",
+    "ordinal": 326,
+    "rva": "0x4329930",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetListeners@SoundEngine@AK@@YA?AW4AKRESULT@@_KPEB_KK@Z",
+    "ordinal": 327,
+    "rva": "0x4329a60",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetLocalOutput@Monitor@AK@@YA?AW4AKRESULT@@KP6AXW4ErrorCode@12@PEB_WW4ErrorLevel@12@K_K@Z@Z",
+    "ordinal": 328,
+    "rva": "0x163870",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetMaxNumVoicesLimit@SoundEngine@AK@@YA?AW4AKRESULT@@G@Z",
+    "ordinal": 329,
+    "rva": "0x4329a90",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetMedia@SoundEngine@AK@@YA?AW4AKRESULT@@PEAUAkSourceSettings@@K@Z",
+    "ordinal": 330,
+    "rva": "0x4329af0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetMemPool@WriteBytesMem@AK@@QEAAXJ@Z",
+    "ordinal": 331,
+    "rva": "0x4369c70",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetMixer@SoundEngine@AK@@YA?AW4AKRESULT@@KK@Z",
+    "ordinal": 332,
+    "rva": "0x4329b20",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetMixer@SoundEngine@AK@@YA?AW4AKRESULT@@PEBDK@Z",
+    "ordinal": 333,
+    "rva": "0x4329b80",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetMixer@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_WK@Z",
+    "ordinal": 334,
+    "rva": "0x4329c00",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetMultipleObstructionAndOcclusion@SoundEngine@AK@@YA?AW4AKRESULT@@_K0PEAUAkObstructionOcclusionValues@@K@Z",
+    "ordinal": 335,
+    "rva": "0x4329c80",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetMultiplePositions@SoundEngine@AK@@YA?AW4AKRESULT@@_KPEBUAkChannelEmitter@@GW4MultiPositionType@12@@Z",
+    "ordinal": 336,
+    "rva": "0x4329de0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetMultiplePositions@SoundEngine@AK@@YA?AW4AKRESULT@@_KPEBVAkTransform@@GW4MultiPositionType@12@@Z",
+    "ordinal": 337,
+    "rva": "0x432a0c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetNumberOfPrimaryRays@SpatialAudio@AK@@YA?AW4AKRESULT@@K@Z",
+    "ordinal": 338,
+    "rva": "0x43ea990",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetObjectObstructionAndOcclusion@SoundEngine@AK@@YA?AW4AKRESULT@@_K0MM@Z",
+    "ordinal": 339,
+    "rva": "0x432a3a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetOutputVolume@SoundEngine@AK@@YA?AW4AKRESULT@@_KM@Z",
+    "ordinal": 340,
+    "rva": "0x432a480",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetPanningRule@SoundEngine@AK@@YA?AW4AKRESULT@@W4AkPanningRule@@_K@Z",
+    "ordinal": 341,
+    "rva": "0x432a500",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetPortal@SpatialAudio@AK@@YA?AW4AKRESULT@@UAkSpatialAudioID@@AEBUAkPortalParams@@@Z",
+    "ordinal": 342,
+    "rva": "0x43ea9a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetPortalObstructionAndOcclusion@SpatialAudio@AK@@YA?AW4AKRESULT@@UAkSpatialAudioID@@MM@Z",
+    "ordinal": 343,
+    "rva": "0x43eab30",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetPosition@SoundEngine@AK@@YA?AW4AKRESULT@@_KAEBVAkTransform@@@Z",
+    "ordinal": 344,
+    "rva": "0x432a560",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetPositionInternal@SoundEngine@AK@@YA?AW4AKRESULT@@_KAEBVAkTransform@@@Z",
+    "ordinal": 345,
+    "rva": "0x432a580",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetRTPCInternal@CAkRTPCMgr@@QEAA?AW4AKRESULT@@KMAEBVAkRTPCKey@@AEAUTransParamsBase@@W4AkValueMeaning@@_N@Z",
+    "ordinal": 346,
+    "rva": "0x435e900",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetRTPCInternal@CAkRTPCMgr@@QEAA?AW4AKRESULT@@KMPEAVCAkRegisteredObj@@KAEAUTransParamsBase@@W4AkValueMeaning@@@Z",
+    "ordinal": 347,
+    "rva": "0x435ebe0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetRTPCValue@SoundEngine@AK@@YA?AW4AKRESULT@@KM_KJW4AkCurveInterpolation@@_N@Z",
+    "ordinal": 348,
+    "rva": "0x432a720",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetRTPCValue@SoundEngine@AK@@YA?AW4AKRESULT@@PEBDM_KJW4AkCurveInterpolation@@_N@Z",
+    "ordinal": 349,
+    "rva": "0x432a750",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetRTPCValue@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_WM_KJW4AkCurveInterpolation@@_N@Z",
+    "ordinal": 350,
+    "rva": "0x432a7c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetRTPCValueByPlayingID@SoundEngine@AK@@YA?AW4AKRESULT@@KMKJW4AkCurveInterpolation@@_N@Z",
+    "ordinal": 351,
+    "rva": "0x432a830",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetRTPCValueByPlayingID@SoundEngine@AK@@YA?AW4AKRESULT@@PEBDMKJW4AkCurveInterpolation@@_N@Z",
+    "ordinal": 352,
+    "rva": "0x432a8b0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetRTPCValueByPlayingID@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_WMKJW4AkCurveInterpolation@@_N@Z",
+    "ordinal": 353,
+    "rva": "0x432a910",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetRandomSeed@SoundEngine@AK@@YAXK@Z",
+    "ordinal": 354,
+    "rva": "0x432aa60",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetReflectionsOrder@SpatialAudio@AK@@YA?AW4AKRESULT@@K_N@Z",
+    "ordinal": 355,
+    "rva": "0x43eabf0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetRoom@SpatialAudio@AK@@YA?AW4AKRESULT@@UAkRoomID@@AEBUAkRoomParams@@@Z",
+    "ordinal": 356,
+    "rva": "0x43eac60",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetScalingFactor@SoundEngine@AK@@YA?AW4AKRESULT@@_KM@Z",
+    "ordinal": 357,
+    "rva": "0x432aaa0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetSpeakerAngles@SoundEngine@AK@@YA?AW4AKRESULT@@PEBMKM_K@Z",
+    "ordinal": 358,
+    "rva": "0x432ab40",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetState@SoundEngine@AK@@YA?AW4AKRESULT@@KK@Z",
+    "ordinal": 359,
+    "rva": "0x432ac90",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetState@SoundEngine@AK@@YA?AW4AKRESULT@@PEBD0@Z",
+    "ordinal": 360,
+    "rva": "0x432ad70",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetState@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_W0@Z",
+    "ordinal": 361,
+    "rva": "0x432adc0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetSwitch@SoundEngine@AK@@YA?AW4AKRESULT@@KK_K@Z",
+    "ordinal": 362,
+    "rva": "0x432ae10",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetSwitch@SoundEngine@AK@@YA?AW4AKRESULT@@PEBD0_K@Z",
+    "ordinal": 363,
+    "rva": "0x432ae80",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetSwitch@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_W0_K@Z",
+    "ordinal": 364,
+    "rva": "0x432aee0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?SetVolumeThreshold@SoundEngine@AK@@YA?AW4AKRESULT@@M@Z",
+    "ordinal": 365,
+    "rva": "0x432af40",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Size@WriteBytesMem@AK@@QEBAJXZ",
+    "ordinal": 366,
+    "rva": "0x978570",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?StartOutputCapture@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_W@Z",
+    "ordinal": 367,
+    "rva": "0x432b1d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?StartProfileThreadUsage@MemoryMgr@AK@@YAXXZ",
+    "ordinal": 368,
+    "rva": "0x104120",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?StartProfilerCapture@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_W@Z",
+    "ordinal": 369,
+    "rva": "0x163870",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Stop@DynamicSequence@SoundEngine@AK@@YA?AW4AKRESULT@@KJW4AkCurveInterpolation@@@Z",
+    "ordinal": 370,
+    "rva": "0x432b280",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?StopAll@SoundEngine@AK@@YAX_K@Z",
+    "ordinal": 371,
+    "rva": "0x432b310",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?StopMIDIOnEvent@SoundEngine@AK@@YA?AW4AKRESULT@@K_K@Z",
+    "ordinal": 372,
+    "rva": "0x432b380",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?StopOutputCapture@SoundEngine@AK@@YA?AW4AKRESULT@@XZ",
+    "ordinal": 373,
+    "rva": "0x432b5a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?StopPlayingID@SoundEngine@AK@@YAXKJW4AkCurveInterpolation@@@Z",
+    "ordinal": 374,
+    "rva": "0x432b5f0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?StopProfileThreadUsage@MemoryMgr@AK@@YA_KXZ",
+    "ordinal": 375,
+    "rva": "0x102e10",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?StopProfilerCapture@SoundEngine@AK@@YA?AW4AKRESULT@@XZ",
+    "ordinal": 376,
+    "rva": "0x163870",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?StopSourcePlugin@SoundEngine@AK@@YA?AW4AKRESULT@@KKK@Z",
+    "ordinal": 377,
+    "rva": "0x432b660",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Suspend@SoundEngine@AK@@YA?AW4AKRESULT@@_N@Z",
+    "ordinal": 378,
+    "rva": "0x432b6e0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Term@MemoryMgr@AK@@YAXXZ",
+    "ordinal": 379,
+    "rva": "0x42c78e0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Term@MusicEngine@AK@@YAXXZ",
+    "ordinal": 380,
+    "rva": "0x42cd0e0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?Term@SoundEngine@AK@@YAXXZ",
+    "ordinal": 381,
+    "rva": "0x432b700",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?TermForThread@MemoryMgr@AK@@YAXXZ",
+    "ordinal": 382,
+    "rva": "0x42c7920",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?TryUnsetMedia@SoundEngine@AK@@YA?AW4AKRESULT@@PEAUAkSourceSettings@@KPEAW43@@Z",
+    "ordinal": 383,
+    "rva": "0x432bb10",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?UnloadBank@SoundEngine@AK@@YA?AW4AKRESULT@@KPEBX@Z",
+    "ordinal": 384,
+    "rva": "0x432bb70",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?UnloadBank@SoundEngine@AK@@YA?AW4AKRESULT@@KPEBXP6AXK0W43@PEAX@Z2@Z",
+    "ordinal": 385,
+    "rva": "0x432bc50",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?UnloadBank@SoundEngine@AK@@YA?AW4AKRESULT@@PEBDPEBX@Z",
+    "ordinal": 386,
+    "rva": "0x432bcf0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?UnloadBank@SoundEngine@AK@@YA?AW4AKRESULT@@PEBDPEBXP6AXK1W43@PEAX@Z3@Z",
+    "ordinal": 387,
+    "rva": "0x432bd10",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?UnloadBank@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_WPEBX@Z",
+    "ordinal": 388,
+    "rva": "0x432bdf0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?UnloadBank@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_WPEBXP6AXK1W43@PEAX@Z3@Z",
+    "ordinal": 389,
+    "rva": "0x432be10",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?UnlockPlaylist@DynamicSequence@SoundEngine@AK@@YA?AW4AKRESULT@@K@Z",
+    "ordinal": 390,
+    "rva": "0x432bef0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?UnpinEventInStreamCache@SoundEngine@AK@@YA?AW4AKRESULT@@K@Z",
+    "ordinal": 391,
+    "rva": "0x432bfa0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?UnpinEventInStreamCache@SoundEngine@AK@@YA?AW4AKRESULT@@PEBD@Z",
+    "ordinal": 392,
+    "rva": "0x432c080",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?UnpinEventInStreamCache@SoundEngine@AK@@YA?AW4AKRESULT@@PEB_W@Z",
+    "ordinal": 393,
+    "rva": "0x432c0a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?UnregisterAllGameObj@SoundEngine@AK@@YA?AW4AKRESULT@@XZ",
+    "ordinal": 394,
+    "rva": "0x432c0c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?UnregisterAudioDeviceStatusCallback@SoundEngine@AK@@YA?AW4AKRESULT@@XZ",
+    "ordinal": 395,
+    "rva": "0x432c110",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?UnregisterGameObj@SoundEngine@AK@@YA?AW4AKRESULT@@_K@Z",
+    "ordinal": 396,
+    "rva": "0x432c130",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?UnregisterGlobalCallback@SoundEngine@AK@@YA?AW4AKRESULT@@P6AXPEAVIAkGlobalPluginContext@2@W4AkGlobalCallbackLocation@@PEAX@ZK@Z",
+    "ordinal": 397,
+    "rva": "0x432c1a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?UnregisterListener@SpatialAudio@AK@@YA?AW4AKRESULT@@_K@Z",
+    "ordinal": 398,
+    "rva": "0x43eb010",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?UnregisterResourceMonitorCallback@SoundEngine@AK@@YA?AW4AKRESULT@@P6AXPEBUAkResourceMonitorDataSummary@@@Z@Z",
+    "ordinal": 399,
+    "rva": "0x163850",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?UnsetMedia@SoundEngine@AK@@YA?AW4AKRESULT@@PEAUAkSourceSettings@@K@Z",
+    "ordinal": 400,
+    "rva": "0x432c2d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?WakeupFromSuspend@SoundEngine@AK@@YA?AW4AKRESULT@@XZ",
+    "ordinal": 401,
+    "rva": "0x432c3b0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?WriteBytes@WriteBytesCount@AK@@UEAA_NPEBXJAEAJ@Z",
+    "ordinal": 402,
+    "rva": "0x4369f50",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?WriteBytes@WriteBytesMem@AK@@UEAA_NPEBXJAEAJ@Z",
+    "ordinal": 403,
+    "rva": "0x4369cb0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "?g_PlayingID@SoundEngine@AK@@3JC",
+    "ordinal": 404,
+    "rva": "0x8ea7bc8",
+    "kind": "data_or_forwarder",
+    "forwarder": null
+  },
+  {
+    "name": "?g_pAssertHook@@3P6AXPEBD0H@ZEA",
+    "ordinal": 405,
+    "rva": "0x7b09610",
+    "kind": "data_or_forwarder",
+    "forwarder": null
+  },
+  {
+    "name": "?g_pRTPCMgr@@3PEAVCAkRTPCMgr@@EA",
+    "ordinal": 406,
+    "rva": "0x8ea7b60",
+    "kind": "data_or_forwarder",
+    "forwarder": null
+  },
+  {
+    "name": "?g_pRegistryMgr@@3PEAVCAkRegistryMgr@@EA",
+    "ordinal": 407,
+    "rva": "0x8ea7b88",
+    "kind": "data_or_forwarder",
+    "forwarder": null
+  },
+  {
+    "name": "?g_pSwitchMgr@@3PEAVCAkSwitchMgr@@EA",
+    "ordinal": 408,
+    "rva": "0x8ea7b80",
+    "kind": "data_or_forwarder",
+    "forwarder": null
+  },
+  {
+    "name": "?m_pStreamMgr@IAkStreamMgr@AK@@1PEAV12@EA",
+    "ordinal": 409,
+    "rva": "0x8ea8e08",
+    "kind": "data_or_forwarder",
+    "forwarder": null
+  },
+  {
+    "name": "AkTlsAllocateSlot",
+    "ordinal": 410,
+    "rva": "0x432e290",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "AkTlsFreeSlot",
+    "ordinal": 411,
+    "rva": "0x432e2c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "AkTlsGetValue",
+    "ordinal": 412,
+    "rva": "0x432e2d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "AkTlsSetValue",
+    "ordinal": 413,
+    "rva": "0x432e2e0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "AmdPowerXpressRequestHighPerformance",
+    "ordinal": 414,
+    "rva": "0x7636004",
+    "kind": "data_or_forwarder",
+    "forwarder": null
+  },
+  {
+    "name": "FetchDefaultCrossDXGIDevice",
+    "ordinal": 415,
+    "rva": "0x824e70",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "GetNvClothAllocator",
+    "ordinal": 416,
+    "rva": "0x47066a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "GetNvClothAssertHandler",
+    "ordinal": 417,
+    "rva": "0x47067b0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "InitializeNvCloth",
+    "ordinal": 418,
+    "rva": "0x4706670",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "NvClothCompiledWithCudaSupport",
+    "ordinal": 419,
+    "rva": "0x470f750",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "NvClothCompiledWithDxSupport",
+    "ordinal": 420,
+    "rva": "0x470f760",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "NvClothCookFabricFromMesh",
+    "ordinal": 421,
+    "rva": "0x4707080",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "NvClothCreateFabricCooker",
+    "ordinal": 422,
+    "rva": "0x4706fc0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "NvClothCreateFactoryCPU",
+    "ordinal": 423,
+    "rva": "0x470f6c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "NvClothCreateFactoryCUDA",
+    "ordinal": 424,
+    "rva": "0x470f710",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "NvClothCreateFactoryDX11",
+    "ordinal": 425,
+    "rva": "0x470f720",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "NvClothCreateGeodesicTetherCooker",
+    "ordinal": 426,
+    "rva": "0x470b510",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "NvClothCreateMeshQuadifier",
+    "ordinal": 427,
+    "rva": "0x470f780",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "NvClothCreateSimpleTetherCooker",
+    "ordinal": 428,
+    "rva": "0x4711ee0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "NvClothDestroyFactory",
+    "ordinal": 429,
+    "rva": "0x470f730",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "NvOptimusEnablement",
+    "ordinal": 430,
+    "rva": "0x7636000",
+    "kind": "data_or_forwarder",
+    "forwarder": null
+  },
+  {
+    "name": "OnObjectTickBegin",
+    "ordinal": 431,
+    "rva": "0x5500e0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "OnObjectTickEnd",
+    "ordinal": 432,
+    "rva": "0x5500f0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_easy_cleanup",
+    "ordinal": 433,
+    "rva": "0x37d1ba0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_easy_duphandle",
+    "ordinal": 434,
+    "rva": "0x37d1c00",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_easy_escape",
+    "ordinal": 435,
+    "rva": "0x381ee70",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_easy_getinfo",
+    "ordinal": 436,
+    "rva": "0x37d1bd0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_easy_init",
+    "ordinal": 437,
+    "rva": "0x37d19b0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_easy_pause",
+    "ordinal": 438,
+    "rva": "0x37d1770",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_easy_perform",
+    "ordinal": 439,
+    "rva": "0x37d1a00",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_easy_recv",
+    "ordinal": 440,
+    "rva": "0x37d2040",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_easy_reset",
+    "ordinal": 441,
+    "rva": "0x37d1fa0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_easy_send",
+    "ordinal": 442,
+    "rva": "0x37d2140",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_easy_setopt",
+    "ordinal": 443,
+    "rva": "0x37d23c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_easy_strerror",
+    "ordinal": 444,
+    "rva": "0x3800200",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_easy_unescape",
+    "ordinal": 445,
+    "rva": "0x381f010",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_easy_upkeep",
+    "ordinal": 446,
+    "rva": "0x37d2260",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_escape",
+    "ordinal": 447,
+    "rva": "0x381eff0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_formadd",
+    "ordinal": 448,
+    "rva": "0x3823480",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_formfree",
+    "ordinal": 449,
+    "rva": "0x38235b0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_formget",
+    "ordinal": 450,
+    "rva": "0x38234b0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_free",
+    "ordinal": 451,
+    "rva": "0x381f170",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_getdate",
+    "ordinal": 452,
+    "rva": "0x38013b0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_getenv",
+    "ordinal": 453,
+    "rva": "0x3808890",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_global_cleanup",
+    "ordinal": 454,
+    "rva": "0x37d1720",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_global_init",
+    "ordinal": 455,
+    "rva": "0x37d1690",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_global_init_mem",
+    "ordinal": 456,
+    "rva": "0x37d16a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_global_sslset",
+    "ordinal": 457,
+    "rva": "0x37dfbc0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_maprintf",
+    "ordinal": 458,
+    "rva": "0x37fed90",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_mfprintf",
+    "ordinal": 459,
+    "rva": "0x37feb70",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_mime_addpart",
+    "ordinal": 460,
+    "rva": "0x37dc1a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_mime_data",
+    "ordinal": 461,
+    "rva": "0x37dc4e0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_mime_data_cb",
+    "ordinal": 462,
+    "rva": "0x37dc790",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_mime_encoder",
+    "ordinal": 463,
+    "rva": "0x37dc430",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_mime_filedata",
+    "ordinal": 464,
+    "rva": "0x37dc5c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_mime_filename",
+    "ordinal": 465,
+    "rva": "0x37dc310",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_mime_free",
+    "ordinal": 466,
+    "rva": "0x37dc140",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_mime_headers",
+    "ordinal": 467,
+    "rva": "0x37dc920",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_mime_init",
+    "ordinal": 468,
+    "rva": "0x37dc0a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_mime_name",
+    "ordinal": 469,
+    "rva": "0x37dc280",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_mime_subparts",
+    "ordinal": 470,
+    "rva": "0x37dc810",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_mime_type",
+    "ordinal": 471,
+    "rva": "0x37dc3a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_mprintf",
+    "ordinal": 472,
+    "rva": "0x37feb20",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_msnprintf",
+    "ordinal": 473,
+    "rva": "0x37fec00",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_msprintf",
+    "ordinal": 474,
+    "rva": "0x37febb0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_multi_add_handle",
+    "ordinal": 475,
+    "rva": "0x37d5250",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_multi_assign",
+    "ordinal": 476,
+    "rva": "0x37d5ec0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_multi_cleanup",
+    "ordinal": 477,
+    "rva": "0x37d59c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_multi_fdset",
+    "ordinal": 478,
+    "rva": "0x37d5660",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_multi_info_read",
+    "ordinal": 479,
+    "rva": "0x37d5af0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_multi_init",
+    "ordinal": 480,
+    "rva": "0x37d5110",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_multi_perform",
+    "ordinal": 481,
+    "rva": "0x37d5890",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_multi_poll",
+    "ordinal": 482,
+    "rva": "0x37d5810",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_multi_remove_handle",
+    "ordinal": 483,
+    "rva": "0x37d5440",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_multi_setopt",
+    "ordinal": 484,
+    "rva": "0x37d5d10",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_multi_socket",
+    "ordinal": 485,
+    "rva": "0x37d5b80",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_multi_socket_action",
+    "ordinal": 486,
+    "rva": "0x37d5be0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_multi_socket_all",
+    "ordinal": 487,
+    "rva": "0x37d5c40",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_multi_strerror",
+    "ordinal": 488,
+    "rva": "0x3800710",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_multi_timeout",
+    "ordinal": 489,
+    "rva": "0x37d5ce0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_multi_wait",
+    "ordinal": 490,
+    "rva": "0x37d57e0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_multi_wakeup",
+    "ordinal": 491,
+    "rva": "0x37d5840",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_mvaprintf",
+    "ordinal": 492,
+    "rva": "0x37fedc0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_mvfprintf",
+    "ordinal": 493,
+    "rva": "0x37fecc0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_mvprintf",
+    "ordinal": 494,
+    "rva": "0x37fec80",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_mvsnprintf",
+    "ordinal": 495,
+    "rva": "0x37fed20",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_mvsprintf",
+    "ordinal": 496,
+    "rva": "0x37fece0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_pushheader_byname",
+    "ordinal": 497,
+    "rva": "0x37eb850",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_pushheader_bynum",
+    "ordinal": 498,
+    "rva": "0x37eb810",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_share_cleanup",
+    "ordinal": 499,
+    "rva": "0x37f1220",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_share_init",
+    "ordinal": 500,
+    "rva": "0x37f0f80",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_share_setopt",
+    "ordinal": 501,
+    "rva": "0x37f0fe0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_share_strerror",
+    "ordinal": 502,
+    "rva": "0x3800690",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_slist_append",
+    "ordinal": 503,
+    "rva": "0x37d1410",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_slist_free_all",
+    "ordinal": 504,
+    "rva": "0x37d14d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_strequal",
+    "ordinal": 505,
+    "rva": "0x37f06a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_strnequal",
+    "ordinal": 506,
+    "rva": "0x37f06b0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_unescape",
+    "ordinal": 507,
+    "rva": "0x381f150",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_url",
+    "ordinal": 508,
+    "rva": "0x381c3c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_url_cleanup",
+    "ordinal": 509,
+    "rva": "0x381c3e0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_url_dup",
+    "ordinal": 510,
+    "rva": "0x381c410",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_url_get",
+    "ordinal": 511,
+    "rva": "0x381c560",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "curl_url_set",
+    "ordinal": 512,
+    "rva": "0x381cb60",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "g_pAKPluginList",
+    "ordinal": 513,
+    "rva": "0x8ea7db0",
+    "kind": "data_or_forwarder",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_check_authority",
+    "ordinal": 514,
+    "rva": "0x3a65120",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_check_header_name",
+    "ordinal": 515,
+    "rva": "0x3a65030",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_check_header_value",
+    "ordinal": 516,
+    "rva": "0x3a65080",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_check_method",
+    "ordinal": 517,
+    "rva": "0x3a650b0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_check_path",
+    "ordinal": 518,
+    "rva": "0x3a650f0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_hd_deflate_bound",
+    "ordinal": 519,
+    "rva": "0x3a65740",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_hd_deflate_change_table_size",
+    "ordinal": 520,
+    "rva": "0x3a655b0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_hd_deflate_del",
+    "ordinal": 521,
+    "rva": "0x3a65570",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_hd_deflate_get_dynamic_table_size",
+    "ordinal": 522,
+    "rva": "0x3a658f0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_hd_deflate_get_max_dynamic_table_size",
+    "ordinal": 523,
+    "rva": "0x3a65900",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_hd_deflate_get_num_table_entries",
+    "ordinal": 524,
+    "rva": "0x3a65880",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_hd_deflate_get_table_entry",
+    "ordinal": 525,
+    "rva": "0x3a65890",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_hd_deflate_hd",
+    "ordinal": 526,
+    "rva": "0x3a65600",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_hd_deflate_hd_vec",
+    "ordinal": 527,
+    "rva": "0x3a656a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_hd_deflate_new",
+    "ordinal": 528,
+    "rva": "0x3a65450",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_hd_deflate_new2",
+    "ordinal": 529,
+    "rva": "0x3a654e0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_hd_inflate_change_table_size",
+    "ordinal": 530,
+    "rva": "0x3a65ab0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_hd_inflate_del",
+    "ordinal": 531,
+    "rva": "0x3a65a30",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_hd_inflate_end_headers",
+    "ordinal": 532,
+    "rva": "0x3a65c30",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_hd_inflate_get_dynamic_table_size",
+    "ordinal": 533,
+    "rva": "0x3a65cf0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_hd_inflate_get_max_dynamic_table_size",
+    "ordinal": 534,
+    "rva": "0x3a65d00",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_hd_inflate_get_num_table_entries",
+    "ordinal": 535,
+    "rva": "0x3a65c80",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_hd_inflate_get_table_entry",
+    "ordinal": 536,
+    "rva": "0x3a65c90",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_hd_inflate_hd",
+    "ordinal": 537,
+    "rva": "0x3a65b90",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_hd_inflate_hd2",
+    "ordinal": 538,
+    "rva": "0x3a65ba0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_hd_inflate_new",
+    "ordinal": 539,
+    "rva": "0x3a65910",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_hd_inflate_new2",
+    "ordinal": 540,
+    "rva": "0x3a65920",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_http2_strerror",
+    "ordinal": 541,
+    "rva": "0x3a64f50",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_is_fatal",
+    "ordinal": 542,
+    "rva": "0x3a5d200",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_nv_compare_name",
+    "ordinal": 543,
+    "rva": "0x3a69eb0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_pack_settings_payload",
+    "ordinal": 544,
+    "rva": "0x3a63dc0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_priority_spec_check_default",
+    "ordinal": 545,
+    "rva": "0x3a653f0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_priority_spec_default_init",
+    "ordinal": 546,
+    "rva": "0x3a653d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_priority_spec_init",
+    "ordinal": 547,
+    "rva": "0x3a653b0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_rcbuf_decref",
+    "ordinal": 548,
+    "rva": "0x3a6d930",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_rcbuf_get_buf",
+    "ordinal": 549,
+    "rva": "0x3a6d960",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_rcbuf_incref",
+    "ordinal": 550,
+    "rva": "0x3a6d910",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_rcbuf_is_static",
+    "ordinal": 551,
+    "rva": "0x3a6d980",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_callbacks_del",
+    "ordinal": 552,
+    "rva": "0x3a5a310",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_callbacks_new",
+    "ordinal": 553,
+    "rva": "0x3a5a2d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_callbacks_set_before_frame_send_callback",
+    "ordinal": 554,
+    "rva": "0x3a5a370",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_callbacks_set_data_source_read_length_callback",
+    "ordinal": 555,
+    "rva": "0x3a5a410",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_callbacks_set_error_callback",
+    "ordinal": 556,
+    "rva": "0x3a5a470",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_callbacks_set_error_callback2",
+    "ordinal": 557,
+    "rva": "0x3a5a480",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_callbacks_set_on_begin_frame_callback",
+    "ordinal": 558,
+    "rva": "0x3a5a420",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_callbacks_set_on_begin_headers_callback",
+    "ordinal": 559,
+    "rva": "0x3a5a3b0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_callbacks_set_on_data_chunk_recv_callback",
+    "ordinal": 560,
+    "rva": "0x3a5a360",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_callbacks_set_on_extension_chunk_recv_callback",
+    "ordinal": 561,
+    "rva": "0x3a5a460",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_callbacks_set_on_frame_not_send_callback",
+    "ordinal": 562,
+    "rva": "0x3a5a390",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_callbacks_set_on_frame_recv_callback",
+    "ordinal": 563,
+    "rva": "0x3a5a340",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_callbacks_set_on_frame_send_callback",
+    "ordinal": 564,
+    "rva": "0x3a5a380",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_callbacks_set_on_header_callback",
+    "ordinal": 565,
+    "rva": "0x3a5a3c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_callbacks_set_on_header_callback2",
+    "ordinal": 566,
+    "rva": "0x3a5a3d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_callbacks_set_on_invalid_frame_recv_callback",
+    "ordinal": 567,
+    "rva": "0x3a5a350",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_callbacks_set_on_invalid_header_callback",
+    "ordinal": 568,
+    "rva": "0x3a5a3e0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_callbacks_set_on_invalid_header_callback2",
+    "ordinal": 569,
+    "rva": "0x3a5a3f0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_callbacks_set_on_stream_close_callback",
+    "ordinal": 570,
+    "rva": "0x3a5a3a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_callbacks_set_pack_extension_callback",
+    "ordinal": 571,
+    "rva": "0x3a5a440",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_callbacks_set_recv_callback",
+    "ordinal": 572,
+    "rva": "0x3a5a330",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_callbacks_set_select_padding_callback",
+    "ordinal": 573,
+    "rva": "0x3a5a400",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_callbacks_set_send_callback",
+    "ordinal": 574,
+    "rva": "0x3a5a320",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_callbacks_set_send_data_callback",
+    "ordinal": 575,
+    "rva": "0x3a5a430",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_callbacks_set_unpack_extension_callback",
+    "ordinal": 576,
+    "rva": "0x3a5a450",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_change_stream_priority",
+    "ordinal": 577,
+    "rva": "0x3a5cf40",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_check_request_allowed",
+    "ordinal": 578,
+    "rva": "0x3a5d1a0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_check_server_session",
+    "ordinal": 579,
+    "rva": "0x3a5d1f0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_client_new",
+    "ordinal": 580,
+    "rva": "0x3a5a490",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_client_new2",
+    "ordinal": 581,
+    "rva": "0x3a5a530",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_client_new3",
+    "ordinal": 582,
+    "rva": "0x3a5a5d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_consume",
+    "ordinal": 583,
+    "rva": "0x3a5cd40",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_consume_connection",
+    "ordinal": 584,
+    "rva": "0x3a5ce30",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_consume_stream",
+    "ordinal": 585,
+    "rva": "0x3a5cea0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_create_idle_stream",
+    "ordinal": 586,
+    "rva": "0x3a5cfd0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_del",
+    "ordinal": 587,
+    "rva": "0x3a5a670",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_find_stream",
+    "ordinal": 588,
+    "rva": "0x3a5d220",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_get_effective_local_window_size",
+    "ordinal": 589,
+    "rva": "0x3a5ca20",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_get_effective_recv_data_length",
+    "ordinal": 590,
+    "rva": "0x3a5ca00",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_get_hd_deflate_dynamic_table_size",
+    "ordinal": 591,
+    "rva": "0x3a5cb60",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_get_hd_inflate_dynamic_table_size",
+    "ordinal": 592,
+    "rva": "0x3a5cb40",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_get_last_proc_stream_id",
+    "ordinal": 593,
+    "rva": "0x3a5d190",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_get_local_settings",
+    "ordinal": 594,
+    "rva": "0x3a5cc50",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_get_local_window_size",
+    "ordinal": 595,
+    "rva": "0x3a5ca30",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_get_next_stream_id",
+    "ordinal": 596,
+    "rva": "0x3a5cd30",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_get_outbound_queue_size",
+    "ordinal": 597,
+    "rva": "0x3a5c900",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_get_remote_settings",
+    "ordinal": 598,
+    "rva": "0x3a5cbb0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_get_remote_window_size",
+    "ordinal": 599,
+    "rva": "0x3a5caa0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_get_root_stream",
+    "ordinal": 600,
+    "rva": "0x3a5d240",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_get_stream_effective_local_window_size",
+    "ordinal": 601,
+    "rva": "0x3a5c970",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_get_stream_effective_recv_data_length",
+    "ordinal": 602,
+    "rva": "0x3a5c920",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_get_stream_local_close",
+    "ordinal": 603,
+    "rva": "0x3a5cab0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_get_stream_local_window_size",
+    "ordinal": 604,
+    "rva": "0x3a5c9b0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_get_stream_remote_close",
+    "ordinal": 605,
+    "rva": "0x3a5cb00",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_get_stream_remote_window_size",
+    "ordinal": 606,
+    "rva": "0x3a5ca50",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_get_stream_user_data",
+    "ordinal": 607,
+    "rva": "0x3a5c7f0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_mem_recv",
+    "ordinal": 608,
+    "rva": "0x3a5aa10",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_mem_send",
+    "ordinal": 609,
+    "rva": "0x3a5a8e0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_recv",
+    "ordinal": 610,
+    "rva": "0x3a5a940",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_resume_data",
+    "ordinal": 611,
+    "rva": "0x3a5c6b0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_send",
+    "ordinal": 612,
+    "rva": "0x3a5a820",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_server_new",
+    "ordinal": 613,
+    "rva": "0x3a5a4e0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_server_new2",
+    "ordinal": 614,
+    "rva": "0x3a5a580",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_server_new3",
+    "ordinal": 615,
+    "rva": "0x3a5a620",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_set_local_window_size",
+    "ordinal": 616,
+    "rva": "0x3a64530",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_set_next_stream_id",
+    "ordinal": 617,
+    "rva": "0x3a5ccf0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_set_stream_user_data",
+    "ordinal": 618,
+    "rva": "0x3a5c830",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_set_user_data",
+    "ordinal": 619,
+    "rva": "0x3a5c8f0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_terminate_session",
+    "ordinal": 620,
+    "rva": "0x3a5cb80",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_terminate_session2",
+    "ordinal": 621,
+    "rva": "0x3a5cba0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_upgrade",
+    "ordinal": 622,
+    "rva": "0x3a5d0c0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_upgrade2",
+    "ordinal": 623,
+    "rva": "0x3a5d120",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_want_read",
+    "ordinal": 624,
+    "rva": "0x3a5c710",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_session_want_write",
+    "ordinal": 625,
+    "rva": "0x3a5c770",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_stream_get_first_child",
+    "ordinal": 626,
+    "rva": "0x3a6be10",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_stream_get_next_sibling",
+    "ordinal": 627,
+    "rva": "0x3a6bdf0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_stream_get_parent",
+    "ordinal": 628,
+    "rva": "0x3a6bdd0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_stream_get_previous_sibling",
+    "ordinal": 629,
+    "rva": "0x3a6be00",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_stream_get_state",
+    "ordinal": 630,
+    "rva": "0x3a6bd60",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_stream_get_stream_id",
+    "ordinal": 631,
+    "rva": "0x3a6bde0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_stream_get_sum_dependency_weight",
+    "ordinal": 632,
+    "rva": "0x3a6be30",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_stream_get_weight",
+    "ordinal": 633,
+    "rva": "0x3a6be20",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_strerror",
+    "ordinal": 634,
+    "rva": "0x3a64d00",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_submit_altsvc",
+    "ordinal": 635,
+    "rva": "0x3a64740",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_submit_data",
+    "ordinal": 636,
+    "rva": "0x3a64090",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_submit_extension",
+    "ordinal": 637,
+    "rva": "0x3a64660",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_submit_goaway",
+    "ordinal": 638,
+    "rva": "0x3a643f0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_submit_headers",
+    "ordinal": 639,
+    "rva": "0x3a63fc0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_submit_origin",
+    "ordinal": 640,
+    "rva": "0x3a648d0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_submit_ping",
+    "ordinal": 641,
+    "rva": "0x3a643e0",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_submit_priority",
+    "ordinal": 642,
+    "rva": "0x3a64160",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_submit_push_promise",
+    "ordinal": 643,
+    "rva": "0x3a64280",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_submit_request",
+    "ordinal": 644,
+    "rva": "0x3a63e40",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_submit_response",
+    "ordinal": 645,
+    "rva": "0x3a63f10",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_submit_rst_stream",
+    "ordinal": 646,
+    "rva": "0x3a64250",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_submit_settings",
+    "ordinal": 647,
+    "rva": "0x3a64270",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_submit_shutdown_notice",
+    "ordinal": 648,
+    "rva": "0x3a63d70",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_submit_trailer",
+    "ordinal": 649,
+    "rva": "0x3a63f80",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_submit_window_update",
+    "ordinal": 650,
+    "rva": "0x3a64430",
+    "kind": "code",
+    "forwarder": null
+  },
+  {
+    "name": "nghttp2_version",
+    "ordinal": 651,
+    "rva": "0x3a65430",
+    "kind": "code",
+    "forwarder": null
+  }
+]

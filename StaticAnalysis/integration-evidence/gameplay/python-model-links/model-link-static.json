@@ -1,0 +1,5422 @@
+{
+  "source": "python-format/selected-models-static.json",
+  "source_sha256": "0493a5c510cc06a998d4888777696e14195ed947ef7f7be144414017cd58aa9a",
+  "modules": [
+    {
+      "index": 17226,
+      "status": "PARSED_TO_EOF_AND_OPCODE_PASS",
+      "decoded_sha256": "61179f1c0859d8c40097410337147629397b65987581791e8df35ad07c417de1",
+      "code_count": 82
+    },
+    {
+      "index": 25281,
+      "status": "PARSED_TO_EOF_AND_OPCODE_PASS",
+      "decoded_sha256": "e30ac8f6d7bd03898dc171bcc6f6c36a7cf97530f358c64579844690a7f5458a",
+      "code_count": 68
+    },
+    {
+      "index": 68957,
+      "status": "PARSED_TO_EOF_AND_OPCODE_PASS",
+      "decoded_sha256": "6e6adda8eba6dfe1153301a517282472be152fe16ed16cdfc9c61bd79499f92c",
+      "code_count": 165
+    },
+    {
+      "index": 143510,
+      "status": "PARSED_TO_EOF_AND_OPCODE_PASS",
+      "decoded_sha256": "0a4a57f34d1c8e14e38c08f510f1787f46659e4b2928663cf526797eac8b0ed3",
+      "code_count": 314
+    }
+  ],
+  "records": [
+    {
+      "module_index": 17226,
+      "decoded_sha256": "61179f1c0859d8c40097410337147629397b65987581791e8df35ad07c417de1",
+      "filename": "gclient/framework/util/MHelper.py",
+      "qualname": "CreateModel",
+      "firstlineno": 183,
+      "marshal_offset": 8539,
+      "marshal_end": 11048,
+      "names": [
+        "EntityCacheManager",
+        "instance",
+        "Dequeue",
+        "IsValid",
+        "IsVisible",
+        "Primitives",
+        "CustomRenderSet",
+        "ResetShaderGraphMaterial",
+        "Timer",
+        "addTimer",
+        "MObject",
+        "CreateObject",
+        "IsAnimated",
+        "IsMovable",
+        "split",
+        "name",
+        "GlobalData",
+        "IsSceneEditorGame",
+        "SetName",
+        "ResourceLoader",
+        "LoadResource",
+        "SpikeCacheKey",
+        "LoadSkeletonAndGraph",
+        "Appearance",
+        "Filter",
+        "CharCtrl",
+        "IsCastDynamicShadow",
+        "IsReceiveDynamicShadow",
+        "resource_names",
+        "material_names",
+        "MType",
+        "Matrix4x3",
+        "isinstance",
+        "tuple",
+        "list",
+        "Vector3",
+        "scale",
+        "LoadResourceExtend",
+        "IsWholeLevelVisible",
+        "Transform",
+        "GetActiveWorld",
+        "DefaultLevel",
+        "RootArea",
+        "EnterArea"
+      ],
+      "consts": [
+        null,
+        true,
+        0,
+        {
+          "code_ref_offset": 9918,
+          "name": "<lambda>"
+        },
+        "IEntity",
+        "/",
+        "IAppearanceComponent",
+        false,
+        [],
+        -1
+      ],
+      "code_hex": {
+        "bytes": 1340,
+        "sha256": "18cc2a4fd021e690974789db8cda5301ef6d7cc75a16a6a34f5e0ef4c2141999",
+        "head_hex": "61 00 61 11 80 00 52 00 6f 11 52 08 70 0e 56 0a 27 00 00 00 00 00 00 00 64 2e 00 00 1c 00 57 12 56 03 33 02 2c 00 00 00 00 00 00 00 00 00 00 00 70 0e 5c 00 00 00 00 00 00 00 00 00 50 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+      },
+      "instruction_count": 236,
+      "actor_parent_component_windows": [
+        {
+          "anchor_offset": 350,
+          "window": [
+            {
+              "offset": 336,
+              "opname": "EXTENDED_ARG",
+              "arg": 1
+            },
+            {
+              "offset": 338,
+              "opname": "JUMP_FORWARD",
+              "arg": 286
+            },
+            {
+              "offset": 340,
+              "opname": "LOAD_GLOBAL",
+              "arg": 20,
+              "name": "MObject"
+            },
+            {
+              "offset": 350,
+              "opname": "LOAD_ATTR",
+              "arg": 22,
+              "name": "CreateObject"
+            },
+            {
+              "offset": 370,
+              "opname": "PUSH_NULL",
+              "arg": 0
+            },
+            {
+              "offset": 372,
+              "opname": "LOAD_CONST",
+              "arg": 4,
+              "const": "IEntity"
+            },
+            {
+              "offset": 374,
+              "opname": "CALL",
+              "arg": 1
+            },
+            {
+              "offset": 382,
+              "opname": "STORE_DEREF",
+              "arg": 17
+            }
+          ]
+        },
+        {
+          "anchor_offset": 712,
+          "window": [
+            {
+              "offset": 698,
+              "opname": "TO_BOOL",
+              "arg": 0
+            },
+            {
+              "offset": 706,
+              "opname": "POP_JUMP_IF_FALSE",
+              "arg": 14
+            },
+            {
+              "offset": 710,
+              "opname": "NOT_TAKEN",
+              "arg": 0
+            },
+            {
+              "offset": 712,
+              "opname": "LOAD_GLOBAL",
+              "arg": 45,
+              "name": "LoadSkeletonAndGraph"
+            },
+            {
+              "offset": 722,
+              "opname": "LOAD_DEREF",
+              "arg": 17
+            },
+            {
+              "offset": 724,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 35
+            },
+            {
+              "offset": 726,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 13
+            },
+            {
+              "offset": 728,
+              "opname": "CALL",
+              "arg": 4
+            }
+          ]
+        },
+        {
+          "anchor_offset": 784,
+          "window": [
+            {
+              "offset": 768,
+              "opname": "POP_JUMP_IF_TRUE",
+              "arg": 28
+            },
+            {
+              "offset": 772,
+              "opname": "NOT_TAKEN",
+              "arg": 0
+            },
+            {
+              "offset": 774,
+              "opname": "LOAD_GLOBAL",
+              "arg": 20,
+              "name": "MObject"
+            },
+            {
+              "offset": 784,
+              "opname": "LOAD_ATTR",
+              "arg": 22,
+              "name": "CreateObject"
+            },
+            {
+              "offset": 804,
+              "opname": "PUSH_NULL",
+              "arg": 0
+            },
+            {
+              "offset": 806,
+              "opname": "LOAD_CONST",
+              "arg": 6,
+              "const": "IAppearanceComponent"
+            },
+            {
+              "offset": 808,
+              "opname": "CALL",
+              "arg": 1
+            },
+            {
+              "offset": 816,
+              "opname": "LOAD_DEREF",
+              "arg": 17
+            }
+          ]
+        },
+        {
+          "anchor_offset": 818,
+          "window": [
+            {
+              "offset": 806,
+              "opname": "LOAD_CONST",
+              "arg": 6,
+              "const": "IAppearanceComponent"
+            },
+            {
+              "offset": 808,
+              "opname": "CALL",
+              "arg": 1
+            },
+            {
+              "offset": 816,
+              "opname": "LOAD_DEREF",
+              "arg": 17
+            },
+            {
+              "offset": 818,
+              "opname": "STORE_ATTR",
+              "arg": 23,
+              "name": "CreateObject"
+            },
+            {
+              "offset": 828,
+              "opname": "LOAD_CONST",
+              "arg": 0,
+              "const": null
+            },
+            {
+              "offset": 830,
+              "opname": "LOAD_DEREF",
+              "arg": 17
+            },
+            {
+              "offset": 832,
+              "opname": "STORE_ATTR",
+              "arg": 24,
+              "name": "IsAnimated"
+            },
+            {
+              "offset": 842,
+              "opname": "LOAD_CONST",
+              "arg": 0,
+              "const": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_index": 17226,
+      "decoded_sha256": "61179f1c0859d8c40097410337147629397b65987581791e8df35ad07c417de1",
+      "filename": "gclient/framework/util/MHelper.py",
+      "qualname": "LoadSkeletonAndGraph",
+      "firstlineno": 261,
+      "marshal_offset": 11385,
+      "marshal_end": 12517,
+      "names": [
+        "graph_dir",
+        "PreloadGraph",
+        "instance",
+        "LoadGraphInGame",
+        "isinstance",
+        "Skeleton",
+        "MObject",
+        "ActorComponent",
+        "CreateObject",
+        "LoadSkeletonAndGraph",
+        "gpl",
+        "performance_level",
+        "SetAutoFrameLimit",
+        "LoadSkeleton",
+        "StoryboardAutoFrameLimit",
+        "ScriptResourcePath",
+        "GraphFile"
+      ],
+      "consts": [
+        "ActorComponent",
+        60,
+        45,
+        3,
+        1,
+        50,
+        5,
+        "SkeletonComponent",
+        null
+      ],
+      "code_hex": {
+        "bytes": 664,
+        "sha256": "82f1f680b395965b07fc82cf4664368c8434f33ba4e6f589541f67914a15b689",
+        "head_hex": "80 00 56 02 27 00 00 00 00 00 00 00 64 e1 00 00 1c 00 5c 00 00 00 00 00 00 00 00 00 56 02 2c 00 00 00 00 00 00 00 00 00 00 00 70 02 5c 02 00 00 00 00 00 00 00 00 50 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 21 00 34 00 00 00"
+      },
+      "instruction_count": 94,
+      "actor_parent_component_windows": [
+        {
+          "anchor_offset": 144,
+          "window": [
+            {
+              "offset": 130,
+              "opname": "NOT_TAKEN",
+              "arg": 0
+            },
+            {
+              "offset": 132,
+              "opname": "LOAD_GLOBAL",
+              "arg": 9,
+              "name": "isinstance"
+            },
+            {
+              "offset": 142,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 144,
+              "opname": "LOAD_ATTR",
+              "arg": 10,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 164,
+              "opname": "LOAD_GLOBAL",
+              "arg": 12,
+              "name": "MObject"
+            },
+            {
+              "offset": 174,
+              "opname": "LOAD_ATTR",
+              "arg": 14,
+              "name": "ActorComponent"
+            },
+            {
+              "offset": 194,
+              "opname": "CALL",
+              "arg": 2
+            },
+            {
+              "offset": 202,
+              "opname": "TO_BOOL",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 174,
+          "window": [
+            {
+              "offset": 142,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 144,
+              "opname": "LOAD_ATTR",
+              "arg": 10,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 164,
+              "opname": "LOAD_GLOBAL",
+              "arg": 12,
+              "name": "MObject"
+            },
+            {
+              "offset": 174,
+              "opname": "LOAD_ATTR",
+              "arg": 14,
+              "name": "ActorComponent"
+            },
+            {
+              "offset": 194,
+              "opname": "CALL",
+              "arg": 2
+            },
+            {
+              "offset": 202,
+              "opname": "TO_BOOL",
+              "arg": 0
+            },
+            {
+              "offset": 210,
+              "opname": "POP_JUMP_IF_TRUE",
+              "arg": 28
+            },
+            {
+              "offset": 214,
+              "opname": "NOT_TAKEN",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 226,
+          "window": [
+            {
+              "offset": 210,
+              "opname": "POP_JUMP_IF_TRUE",
+              "arg": 28
+            },
+            {
+              "offset": 214,
+              "opname": "NOT_TAKEN",
+              "arg": 0
+            },
+            {
+              "offset": 216,
+              "opname": "LOAD_GLOBAL",
+              "arg": 12,
+              "name": "MObject"
+            },
+            {
+              "offset": 226,
+              "opname": "LOAD_ATTR",
+              "arg": 16,
+              "name": "CreateObject"
+            },
+            {
+              "offset": 246,
+              "opname": "PUSH_NULL",
+              "arg": 0
+            },
+            {
+              "offset": 248,
+              "opname": "LOAD_CONST",
+              "arg": 0,
+              "const": "ActorComponent"
+            },
+            {
+              "offset": 250,
+              "opname": "CALL",
+              "arg": 1
+            },
+            {
+              "offset": 258,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 272,
+          "window": [
+            {
+              "offset": 258,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 260,
+              "opname": "STORE_ATTR",
+              "arg": 5,
+              "name": "instance"
+            },
+            {
+              "offset": 270,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 272,
+              "opname": "LOAD_ATTR",
+              "arg": 10,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 292,
+              "opname": "LOAD_ATTR",
+              "arg": 19,
+              "name": "LoadSkeletonAndGraph"
+            },
+            {
+              "offset": 312,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 18
+            },
+            {
+              "offset": 314,
+              "opname": "CALL",
+              "arg": 2
+            },
+            {
+              "offset": 322,
+              "opname": "POP_TOP",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 292,
+          "window": [
+            {
+              "offset": 260,
+              "opname": "STORE_ATTR",
+              "arg": 5,
+              "name": "instance"
+            },
+            {
+              "offset": 270,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 272,
+              "opname": "LOAD_ATTR",
+              "arg": 10,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 292,
+              "opname": "LOAD_ATTR",
+              "arg": 19,
+              "name": "LoadSkeletonAndGraph"
+            },
+            {
+              "offset": 312,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 18
+            },
+            {
+              "offset": 314,
+              "opname": "CALL",
+              "arg": 2
+            },
+            {
+              "offset": 322,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 324,
+              "opname": "LOAD_CONST",
+              "arg": 1,
+              "const": 60
+            }
+          ]
+        },
+        {
+          "anchor_offset": 392,
+          "window": [
+            {
+              "offset": 384,
+              "opname": "POP_JUMP_IF_FALSE",
+              "arg": 38
+            },
+            {
+              "offset": 388,
+              "opname": "NOT_TAKEN",
+              "arg": 0
+            },
+            {
+              "offset": 390,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 392,
+              "opname": "LOAD_ATTR",
+              "arg": 10,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 412,
+              "opname": "LOAD_ATTR",
+              "arg": 25,
+              "name": "SetAutoFrameLimit"
+            },
+            {
+              "offset": 432,
+              "opname": "LOAD_CONST",
+              "arg": 3,
+              "const": 3
+            },
+            {
+              "offset": 434,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 5
+            },
+            {
+              "offset": 436,
+              "opname": "LOAD_CONST",
+              "arg": 4,
+              "const": 1
+            }
+          ]
+        },
+        {
+          "anchor_offset": 476,
+          "window": [
+            {
+              "offset": 462,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 464,
+              "opname": "JUMP_FORWARD",
+              "arg": 65
+            },
+            {
+              "offset": 466,
+              "opname": "LOAD_GLOBAL",
+              "arg": 12,
+              "name": "MObject"
+            },
+            {
+              "offset": 476,
+              "opname": "LOAD_ATTR",
+              "arg": 16,
+              "name": "CreateObject"
+            },
+            {
+              "offset": 496,
+              "opname": "PUSH_NULL",
+              "arg": 0
+            },
+            {
+              "offset": 498,
+              "opname": "LOAD_CONST",
+              "arg": 7,
+              "const": "SkeletonComponent"
+            },
+            {
+              "offset": 500,
+              "opname": "CALL",
+              "arg": 1
+            },
+            {
+              "offset": 508,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 522,
+          "window": [
+            {
+              "offset": 508,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 510,
+              "opname": "STORE_ATTR",
+              "arg": 5,
+              "name": "instance"
+            },
+            {
+              "offset": 520,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 522,
+              "opname": "LOAD_ATTR",
+              "arg": 10,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 542,
+              "opname": "LOAD_ATTR",
+              "arg": 27,
+              "name": "LoadSkeleton"
+            },
+            {
+              "offset": 562,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 1
+            },
+            {
+              "offset": 564,
+              "opname": "CALL",
+              "arg": 1
+            },
+            {
+              "offset": 572,
+              "opname": "POP_TOP",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 542,
+          "window": [
+            {
+              "offset": 510,
+              "opname": "STORE_ATTR",
+              "arg": 5,
+              "name": "instance"
+            },
+            {
+              "offset": 520,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 522,
+              "opname": "LOAD_ATTR",
+              "arg": 10,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 542,
+              "opname": "LOAD_ATTR",
+              "arg": 27,
+              "name": "LoadSkeleton"
+            },
+            {
+              "offset": 562,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 1
+            },
+            {
+              "offset": 564,
+              "opname": "CALL",
+              "arg": 1
+            },
+            {
+              "offset": 572,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 574,
+              "opname": "LOAD_GLOBAL",
+              "arg": 29,
+              "name": "StoryboardAutoFrameLimit"
+            }
+          ]
+        },
+        {
+          "anchor_offset": 598,
+          "window": [
+            {
+              "offset": 586,
+              "opname": "CALL",
+              "arg": 1
+            },
+            {
+              "offset": 594,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 596,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 16
+            },
+            {
+              "offset": 598,
+              "opname": "LOAD_ATTR",
+              "arg": 10,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 618,
+              "opname": "STORE_ATTR",
+              "arg": 15,
+              "name": "ActorComponent"
+            },
+            {
+              "offset": 628,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 32
+            },
+            {
+              "offset": 630,
+              "opname": "LOAD_ATTR",
+              "arg": 10,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 650,
+              "opname": "STORE_ATTR",
+              "arg": 16,
+              "name": "CreateObject"
+            }
+          ]
+        },
+        {
+          "anchor_offset": 618,
+          "window": [
+            {
+              "offset": 594,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 596,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 16
+            },
+            {
+              "offset": 598,
+              "opname": "LOAD_ATTR",
+              "arg": 10,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 618,
+              "opname": "STORE_ATTR",
+              "arg": 15,
+              "name": "ActorComponent"
+            },
+            {
+              "offset": 628,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 32
+            },
+            {
+              "offset": 630,
+              "opname": "LOAD_ATTR",
+              "arg": 10,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 650,
+              "opname": "STORE_ATTR",
+              "arg": 16,
+              "name": "CreateObject"
+            },
+            {
+              "offset": 660,
+              "opname": "LOAD_CONST",
+              "arg": 8,
+              "const": null
+            }
+          ]
+        },
+        {
+          "anchor_offset": 630,
+          "window": [
+            {
+              "offset": 598,
+              "opname": "LOAD_ATTR",
+              "arg": 10,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 618,
+              "opname": "STORE_ATTR",
+              "arg": 15,
+              "name": "ActorComponent"
+            },
+            {
+              "offset": 628,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 32
+            },
+            {
+              "offset": 630,
+              "opname": "LOAD_ATTR",
+              "arg": 10,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 650,
+              "opname": "STORE_ATTR",
+              "arg": 16,
+              "name": "CreateObject"
+            },
+            {
+              "offset": 660,
+              "opname": "LOAD_CONST",
+              "arg": 8,
+              "const": null
+            },
+            {
+              "offset": 662,
+              "opname": "RETURN_VALUE",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 650,
+          "window": [
+            {
+              "offset": 618,
+              "opname": "STORE_ATTR",
+              "arg": 15,
+              "name": "ActorComponent"
+            },
+            {
+              "offset": 628,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 32
+            },
+            {
+              "offset": 630,
+              "opname": "LOAD_ATTR",
+              "arg": 10,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 650,
+              "opname": "STORE_ATTR",
+              "arg": 16,
+              "name": "CreateObject"
+            },
+            {
+              "offset": 660,
+              "opname": "LOAD_CONST",
+              "arg": 8,
+              "const": null
+            },
+            {
+              "offset": 662,
+              "opname": "RETURN_VALUE",
+              "arg": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_index": 17226,
+      "decoded_sha256": "61179f1c0859d8c40097410337147629397b65987581791e8df35ad07c417de1",
+      "filename": "gclient/framework/util/MHelper.py",
+      "qualname": "BindSkeletonAndGraph",
+      "firstlineno": 1381,
+      "marshal_offset": 52367,
+      "marshal_end": 53704,
+      "names": [
+        "graph_dir",
+        "MObject",
+        "CreateObject",
+        "Skeleton",
+        "LoadSkeletonAndGraphDeferred",
+        "LoadSkeletonAndGraph",
+        "LoadSkeletonDeferred",
+        "LoadSkeleton"
+      ],
+      "consts": [
+        ".graph",
+        "ActorComponent",
+        {
+          "code_ref_offset": 52956,
+          "name": "<lambda>"
+        },
+        "SkeletonComponent",
+        {
+          "code_ref_offset": 53234,
+          "name": "<lambda>"
+        },
+        null
+      ],
+      "code_hex": {
+        "bytes": 548,
+        "sha256": "873372a91385cd89a9455fe260dc0a8c1838d961b8bfcacd9379053ddc8a2428",
+        "head_hex": "61 00 61 03 80 00 56 01 27 00 00 00 00 00 00 00 45 01 64 05 00 00 1c 00 56 02 27 00 00 00 00 00 00 00 64 89 00 00 1c 00 5c 00 00 00 00 00 00 00 00 00 56 02 2c 00 00 00 00 00 00 00 00 00 00 00 52 00 2c 00 00 00 00 00 00 00 00 00 00 00 70 02"
+      },
+      "instruction_count": 106,
+      "actor_parent_component_windows": [
+        {
+          "anchor_offset": 90,
+          "window": [
+            {
+              "offset": 66,
+              "opname": "BINARY_OP",
+              "arg": 0
+            },
+            {
+              "offset": 78,
+              "opname": "STORE_FAST",
+              "arg": 2
+            },
+            {
+              "offset": 80,
+              "opname": "LOAD_GLOBAL",
+              "arg": 2,
+              "name": "MObject"
+            },
+            {
+              "offset": 90,
+              "opname": "LOAD_ATTR",
+              "arg": 4,
+              "name": "CreateObject"
+            },
+            {
+              "offset": 110,
+              "opname": "PUSH_NULL",
+              "arg": 0
+            },
+            {
+              "offset": 112,
+              "opname": "LOAD_CONST",
+              "arg": 1,
+              "const": "ActorComponent"
+            },
+            {
+              "offset": 114,
+              "opname": "CALL",
+              "arg": 1
+            },
+            {
+              "offset": 122,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 152,
+          "window": [
+            {
+              "offset": 144,
+              "opname": "POP_JUMP_IF_FALSE",
+              "arg": 36
+            },
+            {
+              "offset": 148,
+              "opname": "NOT_TAKEN",
+              "arg": 0
+            },
+            {
+              "offset": 150,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 152,
+              "opname": "LOAD_ATTR",
+              "arg": 6,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 172,
+              "opname": "LOAD_ATTR",
+              "arg": 9,
+              "name": "LoadSkeletonAndGraphDeferred"
+            },
+            {
+              "offset": 192,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 18
+            },
+            {
+              "offset": 194,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 3
+            },
+            {
+              "offset": 196,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 172,
+          "window": [
+            {
+              "offset": 148,
+              "opname": "NOT_TAKEN",
+              "arg": 0
+            },
+            {
+              "offset": 150,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 152,
+              "opname": "LOAD_ATTR",
+              "arg": 6,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 172,
+              "opname": "LOAD_ATTR",
+              "arg": 9,
+              "name": "LoadSkeletonAndGraphDeferred"
+            },
+            {
+              "offset": 192,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 18
+            },
+            {
+              "offset": 194,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 3
+            },
+            {
+              "offset": 196,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 198,
+              "opname": "BUILD_TUPLE",
+              "arg": 2
+            }
+          ]
+        },
+        {
+          "anchor_offset": 222,
+          "window": [
+            {
+              "offset": 216,
+              "opname": "LOAD_CONST",
+              "arg": 5,
+              "const": null
+            },
+            {
+              "offset": 218,
+              "opname": "RETURN_VALUE",
+              "arg": 0
+            },
+            {
+              "offset": 220,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 222,
+              "opname": "LOAD_ATTR",
+              "arg": 6,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 242,
+              "opname": "LOAD_ATTR",
+              "arg": 11,
+              "name": "LoadSkeletonAndGraph"
+            },
+            {
+              "offset": 262,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 18
+            },
+            {
+              "offset": 264,
+              "opname": "CALL",
+              "arg": 2
+            },
+            {
+              "offset": 272,
+              "opname": "POP_TOP",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 242,
+          "window": [
+            {
+              "offset": 218,
+              "opname": "RETURN_VALUE",
+              "arg": 0
+            },
+            {
+              "offset": 220,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 222,
+              "opname": "LOAD_ATTR",
+              "arg": 6,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 242,
+              "opname": "LOAD_ATTR",
+              "arg": 11,
+              "name": "LoadSkeletonAndGraph"
+            },
+            {
+              "offset": 262,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 18
+            },
+            {
+              "offset": 264,
+              "opname": "CALL",
+              "arg": 2
+            },
+            {
+              "offset": 272,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 274,
+              "opname": "LOAD_DEREF",
+              "arg": 3
+            }
+          ]
+        },
+        {
+          "anchor_offset": 322,
+          "window": [
+            {
+              "offset": 308,
+              "opname": "LOAD_CONST",
+              "arg": 5,
+              "const": null
+            },
+            {
+              "offset": 310,
+              "opname": "RETURN_VALUE",
+              "arg": 0
+            },
+            {
+              "offset": 312,
+              "opname": "LOAD_GLOBAL",
+              "arg": 2,
+              "name": "MObject"
+            },
+            {
+              "offset": 322,
+              "opname": "LOAD_ATTR",
+              "arg": 4,
+              "name": "CreateObject"
+            },
+            {
+              "offset": 342,
+              "opname": "PUSH_NULL",
+              "arg": 0
+            },
+            {
+              "offset": 344,
+              "opname": "LOAD_CONST",
+              "arg": 3,
+              "const": "SkeletonComponent"
+            },
+            {
+              "offset": 346,
+              "opname": "CALL",
+              "arg": 1
+            },
+            {
+              "offset": 354,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 384,
+          "window": [
+            {
+              "offset": 376,
+              "opname": "POP_JUMP_IF_FALSE",
+              "arg": 36
+            },
+            {
+              "offset": 380,
+              "opname": "NOT_TAKEN",
+              "arg": 0
+            },
+            {
+              "offset": 382,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 384,
+              "opname": "LOAD_ATTR",
+              "arg": 6,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 404,
+              "opname": "LOAD_ATTR",
+              "arg": 13,
+              "name": "LoadSkeletonDeferred"
+            },
+            {
+              "offset": 424,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 1
+            },
+            {
+              "offset": 426,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 3
+            },
+            {
+              "offset": 428,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 404,
+          "window": [
+            {
+              "offset": 380,
+              "opname": "NOT_TAKEN",
+              "arg": 0
+            },
+            {
+              "offset": 382,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 384,
+              "opname": "LOAD_ATTR",
+              "arg": 6,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 404,
+              "opname": "LOAD_ATTR",
+              "arg": 13,
+              "name": "LoadSkeletonDeferred"
+            },
+            {
+              "offset": 424,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 1
+            },
+            {
+              "offset": 426,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 3
+            },
+            {
+              "offset": 428,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 430,
+              "opname": "BUILD_TUPLE",
+              "arg": 2
+            }
+          ]
+        },
+        {
+          "anchor_offset": 454,
+          "window": [
+            {
+              "offset": 448,
+              "opname": "LOAD_CONST",
+              "arg": 5,
+              "const": null
+            },
+            {
+              "offset": 450,
+              "opname": "RETURN_VALUE",
+              "arg": 0
+            },
+            {
+              "offset": 452,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 454,
+              "opname": "LOAD_ATTR",
+              "arg": 6,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 474,
+              "opname": "LOAD_ATTR",
+              "arg": 15,
+              "name": "LoadSkeleton"
+            },
+            {
+              "offset": 494,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 1
+            },
+            {
+              "offset": 496,
+              "opname": "CALL",
+              "arg": 1
+            },
+            {
+              "offset": 504,
+              "opname": "POP_TOP",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 474,
+          "window": [
+            {
+              "offset": 450,
+              "opname": "RETURN_VALUE",
+              "arg": 0
+            },
+            {
+              "offset": 452,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 454,
+              "opname": "LOAD_ATTR",
+              "arg": 6,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 474,
+              "opname": "LOAD_ATTR",
+              "arg": 15,
+              "name": "LoadSkeleton"
+            },
+            {
+              "offset": 494,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 1
+            },
+            {
+              "offset": 496,
+              "opname": "CALL",
+              "arg": 1
+            },
+            {
+              "offset": 504,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 506,
+              "opname": "LOAD_DEREF",
+              "arg": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_index": 17226,
+      "decoded_sha256": "61179f1c0859d8c40097410337147629397b65987581791e8df35ad07c417de1",
+      "filename": "gclient/framework/util/MHelper.py",
+      "qualname": "DestroySimpleModel",
+      "firstlineno": 107,
+      "marshal_offset": 5484,
+      "marshal_end": 6323,
+      "names": [
+        "IsValid",
+        "Tach",
+        "Attachments",
+        "Parent",
+        "Detach",
+        "Skeleton",
+        "gpl",
+        "is_low_memory",
+        "hasattr",
+        "MCharacter",
+        "SetFixBottomGraph",
+        "ClearGraphStack",
+        "LeaveArea"
+      ],
+      "consts": [
+        null,
+        "ClearGraphStack",
+        false,
+        true
+      ],
+      "code_hex": {
+        "bytes": 504,
+        "sha256": "2beca2e429ef764a3a227406652da4ccd300ba1c5e3068a01c0fdcde20d431d8",
+        "head_hex": "80 00 56 00 50 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 34 00 00 00 00 00 00 00 27 00 00 00 00 00 00 00 67 03 00 00 1c 00 52 00 23 00 56 00 50 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 27 00 00 00 00 00 00 00"
+      },
+      "instruction_count": 73,
+      "actor_parent_component_windows": [
+        {
+          "anchor_offset": 138,
+          "window": [
+            {
+              "offset": 130,
+              "opname": "FOR_ITER",
+              "arg": 29
+            },
+            {
+              "offset": 134,
+              "opname": "STORE_FAST",
+              "arg": 1
+            },
+            {
+              "offset": 136,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 1
+            },
+            {
+              "offset": 138,
+              "opname": "LOAD_ATTR",
+              "arg": 6,
+              "name": "Parent"
+            },
+            {
+              "offset": 158,
+              "opname": "LOAD_ATTR",
+              "arg": 9,
+              "name": "Detach"
+            },
+            {
+              "offset": 178,
+              "opname": "CALL",
+              "arg": 0
+            },
+            {
+              "offset": 186,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 188,
+              "opname": "JUMP_BACKWARD",
+              "arg": 31
+            }
+          ]
+        },
+        {
+          "anchor_offset": 230,
+          "window": [
+            {
+              "offset": 218,
+              "opname": "CALL",
+              "arg": 0
+            },
+            {
+              "offset": 226,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 228,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 230,
+              "opname": "LOAD_ATTR",
+              "arg": 10,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 250,
+              "opname": "STORE_FAST",
+              "arg": 2
+            },
+            {
+              "offset": 252,
+              "opname": "LOAD_GLOBAL",
+              "arg": 12,
+              "name": "gpl"
+            },
+            {
+              "offset": 262,
+              "opname": "LOAD_ATTR",
+              "arg": 14,
+              "name": "is_low_memory"
+            },
+            {
+              "offset": 282,
+              "opname": "TO_BOOL",
+              "arg": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_index": 17226,
+      "decoded_sha256": "61179f1c0859d8c40097410337147629397b65987581791e8df35ad07c417de1",
+      "filename": "gclient/framework/util/MHelper.py",
+      "qualname": "DestroyCppModel",
+      "firstlineno": 122,
+      "marshal_offset": 6323,
+      "marshal_end": 7420,
+      "names": [
+        "IsValid",
+        "Skeleton",
+        "ClearAllEffects",
+        "gpl",
+        "is_low_memory",
+        "hasattr",
+        "MCharacter",
+        "SetFixBottomGraph",
+        "ClearGraphStack",
+        "PopGraph",
+        "BindEvent",
+        "Filter",
+        "Tach",
+        "Attachments",
+        "Parent",
+        "Detach",
+        "owner",
+        "RigidBodies",
+        "LeaveArea"
+      ],
+      "consts": [
+        null,
+        "ClearGraphStack",
+        false,
+        true,
+        "SignalNotify"
+      ],
+      "code_hex": {
+        "bytes": 710,
+        "sha256": "d430a575e36cc842748085054dfff04bec6d921e139868c38366deb2810bd041",
+        "head_hex": "80 00 56 00 66 03 00 00 1c 00 52 00 23 00 56 00 50 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 34 00 00 00 00 00 00 00 27 00 00 00 00 00 00 00 67 03 00 00 1c 00 52 00 23 00 56 00 50 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+      },
+      "instruction_count": 119,
+      "actor_parent_component_windows": [
+        {
+          "anchor_offset": 64,
+          "window": [
+            {
+              "offset": 58,
+              "opname": "LOAD_CONST",
+              "arg": 0,
+              "const": null
+            },
+            {
+              "offset": 60,
+              "opname": "RETURN_VALUE",
+              "arg": 0
+            },
+            {
+              "offset": 62,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 64,
+              "opname": "LOAD_ATTR",
+              "arg": 2,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 84,
+              "opname": "STORE_FAST",
+              "arg": 1
+            },
+            {
+              "offset": 86,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 1
+            },
+            {
+              "offset": 88,
+              "opname": "TO_BOOL",
+              "arg": 0
+            },
+            {
+              "offset": 96,
+              "opname": "POP_JUMP_IF_FALSE",
+              "arg": 167
+            }
+          ]
+        },
+        {
+          "anchor_offset": 538,
+          "window": [
+            {
+              "offset": 530,
+              "opname": "FOR_ITER",
+              "arg": 29
+            },
+            {
+              "offset": 534,
+              "opname": "STORE_FAST",
+              "arg": 2
+            },
+            {
+              "offset": 536,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 2
+            },
+            {
+              "offset": 538,
+              "opname": "LOAD_ATTR",
+              "arg": 28,
+              "name": "Parent"
+            },
+            {
+              "offset": 558,
+              "opname": "LOAD_ATTR",
+              "arg": 31,
+              "name": "Detach"
+            },
+            {
+              "offset": 578,
+              "opname": "CALL",
+              "arg": 0
+            },
+            {
+              "offset": 586,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 588,
+              "opname": "JUMP_BACKWARD",
+              "arg": 31
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_index": 25281,
+      "decoded_sha256": "e30ac8f6d7bd03898dc171bcc6f6c36a7cf97530f358c64579844690a7f5458a",
+      "filename": "gclient/gameplay/logic_base/models/weapon_model.py",
+      "qualname": "WeaponModel.__init__",
+      "firstlineno": 38,
+      "marshal_offset": 1215,
+      "marshal_end": 3231,
+      "names": [
+        "super",
+        "WeaponModel",
+        "__init__",
+        "loaded_callback",
+        "owner",
+        "IsCombatAvatar",
+        "IsATMGuardAI",
+        "is_in_combat",
+        "hand_model",
+        "model",
+        "avatar_model",
+        "weapon_case",
+        "weapon_id",
+        "is_fps_model",
+        "skin_id",
+        "guise_id",
+        "genv",
+        "highlevel_tps_weapon",
+        "is_low_quality",
+        "use_highlevel",
+        "consts",
+        "WeaponPartType_Recevier",
+        "part_type",
+        "InitTachPoint",
+        "ads_flash_effect_id",
+        "extra",
+        "get",
+        "gpl",
+        "performance_level",
+        "disablemip",
+        "effect_color",
+        "cconst",
+        "CHARACTER_ATTACHMENT_FOCUS_DISTANCE",
+        "load_resource_extend",
+        "gui",
+        "is_pc"
+      ],
+      "consts": [
+        null,
+        "is_decal_case",
+        true,
+        false
+      ],
+      "code_hex": {
+        "bytes": 1168,
+        "sha256": "278d5c1e43f3abd18ef54af20f1ee698aa81f8ea7f2e6f0195deedfd5df62e81",
+        "head_hex": "3c 01 80 00 5c 00 00 00 00 00 00 00 00 00 5c 02 00 00 00 00 00 00 00 00 56 00 60 0b 00 00 57 12 56 03 34 03 00 00 00 00 00 00 1f 00 52 00 56 00 6e 03 00 00 00 00 00 00 00 00 56 00 50 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+      },
+      "instruction_count": 178,
+      "actor_parent_component_windows": [
+        {
+          "anchor_offset": 4,
+          "window": [
+            {
+              "offset": 0,
+              "opname": "COPY_FREE_VARS",
+              "arg": 1
+            },
+            {
+              "offset": 2,
+              "opname": "RESUME",
+              "arg": 0
+            },
+            {
+              "offset": 4,
+              "opname": "LOAD_GLOBAL",
+              "arg": 0,
+              "name": "super"
+            },
+            {
+              "offset": 14,
+              "opname": "LOAD_GLOBAL",
+              "arg": 2,
+              "name": "WeaponModel"
+            },
+            {
+              "offset": 24,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 26,
+              "opname": "LOAD_SUPER_ATTR",
+              "arg": 11
+            },
+            {
+              "offset": 30,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 18
+            }
+          ]
+        },
+        {
+          "anchor_offset": 80,
+          "window": [
+            {
+              "offset": 48,
+              "opname": "STORE_ATTR",
+              "arg": 3,
+              "name": "WeaponModel"
+            },
+            {
+              "offset": 58,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 60,
+              "opname": "LOAD_ATTR",
+              "arg": 8,
+              "name": "owner"
+            },
+            {
+              "offset": 80,
+              "opname": "LOAD_ATTR",
+              "arg": 10,
+              "name": "IsCombatAvatar"
+            },
+            {
+              "offset": 100,
+              "opname": "COPY",
+              "arg": 1
+            },
+            {
+              "offset": 102,
+              "opname": "TO_BOOL",
+              "arg": 0
+            },
+            {
+              "offset": 110,
+              "opname": "POP_JUMP_IF_TRUE",
+              "arg": 23
+            },
+            {
+              "offset": 114,
+              "opname": "NOT_TAKEN",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 140,
+          "window": [
+            {
+              "offset": 116,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 118,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 120,
+              "opname": "LOAD_ATTR",
+              "arg": 8,
+              "name": "owner"
+            },
+            {
+              "offset": 140,
+              "opname": "LOAD_ATTR",
+              "arg": 12,
+              "name": "IsATMGuardAI"
+            },
+            {
+              "offset": 160,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 162,
+              "opname": "STORE_ATTR",
+              "arg": 7,
+              "name": "loaded_callback"
+            },
+            {
+              "offset": 172,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 6
+            },
+            {
+              "offset": 174,
+              "opname": "TO_BOOL",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 330,
+          "window": [
+            {
+              "offset": 324,
+              "opname": "JUMP_FORWARD",
+              "arg": 1
+            },
+            {
+              "offset": 326,
+              "opname": "LOAD_CONST",
+              "arg": 0,
+              "const": null
+            },
+            {
+              "offset": 328,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 330,
+              "opname": "STORE_ATTR",
+              "arg": 10,
+              "name": "IsCombatAvatar"
+            },
+            {
+              "offset": 340,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 64
+            },
+            {
+              "offset": 342,
+              "opname": "STORE_ATTR",
+              "arg": 11,
+              "name": "IsCombatAvatar"
+            },
+            {
+              "offset": 352,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 80
+            },
+            {
+              "offset": 354,
+              "opname": "STORE_ATTR",
+              "arg": 12,
+              "name": "IsATMGuardAI"
+            }
+          ]
+        },
+        {
+          "anchor_offset": 342,
+          "window": [
+            {
+              "offset": 328,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 330,
+              "opname": "STORE_ATTR",
+              "arg": 10,
+              "name": "IsCombatAvatar"
+            },
+            {
+              "offset": 340,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 64
+            },
+            {
+              "offset": 342,
+              "opname": "STORE_ATTR",
+              "arg": 11,
+              "name": "IsCombatAvatar"
+            },
+            {
+              "offset": 352,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 80
+            },
+            {
+              "offset": 354,
+              "opname": "STORE_ATTR",
+              "arg": 12,
+              "name": "IsATMGuardAI"
+            },
+            {
+              "offset": 364,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 96
+            },
+            {
+              "offset": 366,
+              "opname": "STORE_ATTR",
+              "arg": 13,
+              "name": "IsATMGuardAI"
+            }
+          ]
+        },
+        {
+          "anchor_offset": 354,
+          "window": [
+            {
+              "offset": 340,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 64
+            },
+            {
+              "offset": 342,
+              "opname": "STORE_ATTR",
+              "arg": 11,
+              "name": "IsCombatAvatar"
+            },
+            {
+              "offset": 352,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 80
+            },
+            {
+              "offset": 354,
+              "opname": "STORE_ATTR",
+              "arg": 12,
+              "name": "IsATMGuardAI"
+            },
+            {
+              "offset": 364,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 96
+            },
+            {
+              "offset": 366,
+              "opname": "STORE_ATTR",
+              "arg": 13,
+              "name": "IsATMGuardAI"
+            },
+            {
+              "offset": 376,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 112
+            },
+            {
+              "offset": 378,
+              "opname": "STORE_ATTR",
+              "arg": 14,
+              "name": "is_in_combat"
+            }
+          ]
+        },
+        {
+          "anchor_offset": 366,
+          "window": [
+            {
+              "offset": 352,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 80
+            },
+            {
+              "offset": 354,
+              "opname": "STORE_ATTR",
+              "arg": 12,
+              "name": "IsATMGuardAI"
+            },
+            {
+              "offset": 364,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 96
+            },
+            {
+              "offset": 366,
+              "opname": "STORE_ATTR",
+              "arg": 13,
+              "name": "IsATMGuardAI"
+            },
+            {
+              "offset": 376,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 112
+            },
+            {
+              "offset": 378,
+              "opname": "STORE_ATTR",
+              "arg": 14,
+              "name": "is_in_combat"
+            },
+            {
+              "offset": 388,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 128
+            },
+            {
+              "offset": 390,
+              "opname": "STORE_ATTR",
+              "arg": 15,
+              "name": "is_in_combat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_index": 25281,
+      "decoded_sha256": "e30ac8f6d7bd03898dc171bcc6f6c36a7cf97530f358c64579844690a7f5458a",
+      "filename": "gclient/gameplay/logic_base/models/weapon_model.py",
+      "qualname": "WeaponModel.AttachWeaponToHandEquip",
+      "firstlineno": 367,
+      "marshal_offset": 22007,
+      "marshal_end": 23337,
+      "names": [
+        "model",
+        "hand_model",
+        "Skeleton",
+        "AddTargetSlot",
+        "AddChild",
+        "SetVariableS",
+        "tachpoint_default_hard",
+        "tachpoint_default_base",
+        "AttachToParent",
+        "RemoveHiddenReason",
+        "cconst",
+        "HIDDEN_REASON_BACK",
+        "is_fps_model",
+        "HaveHiddenReason",
+        "HIDDEN_REASON_FOR_TPS",
+        "owner",
+        "is_fps_mode"
+      ],
+      "consts": [
+        null,
+        "weapon",
+        "CatchTargetSelfNode",
+        "CatchTargetTargetNode"
+      ],
+      "code_hex": {
+        "bytes": 932,
+        "sha256": "2c35aecfa725ec06600031b7a163cb759d5f62cf08486d92303f8bd77b050f7b",
+        "head_hex": "80 00 56 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 27 00 00 00 00 00 00 00 67 03 00 00 1c 00 52 00 23 00 56 00 50 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+      },
+      "instruction_count": 104,
+      "actor_parent_component_windows": [
+        {
+          "anchor_offset": 84,
+          "window": [
+            {
+              "offset": 42,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 44,
+              "opname": "LOAD_ATTR",
+              "arg": 2,
+              "name": "hand_model"
+            },
+            {
+              "offset": 64,
+              "opname": "LOAD_ATTR",
+              "arg": 0,
+              "name": "model"
+            },
+            {
+              "offset": 84,
+              "opname": "LOAD_ATTR",
+              "arg": 4,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 104,
+              "opname": "LOAD_ATTR",
+              "arg": 7,
+              "name": "AddTargetSlot"
+            },
+            {
+              "offset": 124,
+              "opname": "LOAD_CONST",
+              "arg": 1,
+              "const": "weapon"
+            },
+            {
+              "offset": 126,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 128,
+              "opname": "LOAD_ATTR",
+              "arg": 0,
+              "name": "model"
+            }
+          ]
+        },
+        {
+          "anchor_offset": 148,
+          "window": [
+            {
+              "offset": 124,
+              "opname": "LOAD_CONST",
+              "arg": 1,
+              "const": "weapon"
+            },
+            {
+              "offset": 126,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 128,
+              "opname": "LOAD_ATTR",
+              "arg": 0,
+              "name": "model"
+            },
+            {
+              "offset": 148,
+              "opname": "LOAD_ATTR",
+              "arg": 4,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 168,
+              "opname": "CALL",
+              "arg": 2
+            },
+            {
+              "offset": 176,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 178,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 180,
+              "opname": "LOAD_ATTR",
+              "arg": 2,
+              "name": "hand_model"
+            }
+          ]
+        },
+        {
+          "anchor_offset": 220,
+          "window": [
+            {
+              "offset": 178,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 180,
+              "opname": "LOAD_ATTR",
+              "arg": 2,
+              "name": "hand_model"
+            },
+            {
+              "offset": 200,
+              "opname": "LOAD_ATTR",
+              "arg": 0,
+              "name": "model"
+            },
+            {
+              "offset": 220,
+              "opname": "LOAD_ATTR",
+              "arg": 4,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 240,
+              "opname": "LOAD_ATTR",
+              "arg": 9,
+              "name": "AddChild"
+            },
+            {
+              "offset": 260,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 262,
+              "opname": "LOAD_ATTR",
+              "arg": 0,
+              "name": "model"
+            },
+            {
+              "offset": 282,
+              "opname": "LOAD_ATTR",
+              "arg": 4,
+              "name": "Skeleton"
+            }
+          ]
+        },
+        {
+          "anchor_offset": 240,
+          "window": [
+            {
+              "offset": 180,
+              "opname": "LOAD_ATTR",
+              "arg": 2,
+              "name": "hand_model"
+            },
+            {
+              "offset": 200,
+              "opname": "LOAD_ATTR",
+              "arg": 0,
+              "name": "model"
+            },
+            {
+              "offset": 220,
+              "opname": "LOAD_ATTR",
+              "arg": 4,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 240,
+              "opname": "LOAD_ATTR",
+              "arg": 9,
+              "name": "AddChild"
+            },
+            {
+              "offset": 260,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 262,
+              "opname": "LOAD_ATTR",
+              "arg": 0,
+              "name": "model"
+            },
+            {
+              "offset": 282,
+              "opname": "LOAD_ATTR",
+              "arg": 4,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 302,
+              "opname": "CALL",
+              "arg": 1
+            }
+          ]
+        },
+        {
+          "anchor_offset": 282,
+          "window": [
+            {
+              "offset": 240,
+              "opname": "LOAD_ATTR",
+              "arg": 9,
+              "name": "AddChild"
+            },
+            {
+              "offset": 260,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 262,
+              "opname": "LOAD_ATTR",
+              "arg": 0,
+              "name": "model"
+            },
+            {
+              "offset": 282,
+              "opname": "LOAD_ATTR",
+              "arg": 4,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 302,
+              "opname": "CALL",
+              "arg": 1
+            },
+            {
+              "offset": 310,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 312,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 314,
+              "opname": "LOAD_ATTR",
+              "arg": 2,
+              "name": "hand_model"
+            }
+          ]
+        },
+        {
+          "anchor_offset": 470,
+          "window": [
+            {
+              "offset": 458,
+              "opname": "CALL",
+              "arg": 3
+            },
+            {
+              "offset": 466,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 468,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 470,
+              "opname": "LOAD_ATTR",
+              "arg": 17,
+              "name": "AttachToParent"
+            },
+            {
+              "offset": 490,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 492,
+              "opname": "LOAD_ATTR",
+              "arg": 2,
+              "name": "hand_model"
+            },
+            {
+              "offset": 512,
+              "opname": "LOAD_ATTR",
+              "arg": 0,
+              "name": "model"
+            },
+            {
+              "offset": 532,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_index": 25281,
+      "decoded_sha256": "e30ac8f6d7bd03898dc171bcc6f6c36a7cf97530f358c64579844690a7f5458a",
+      "filename": "gclient/gameplay/logic_base/models/weapon_model.py",
+      "qualname": "WeaponModel.AttachWeaponToRightHand",
+      "firstlineno": 404,
+      "marshal_offset": 24818,
+      "marshal_end": 25787,
+      "names": [
+        "model",
+        "hand_model",
+        "Skeleton",
+        "AddTargetSlot",
+        "AddChild",
+        "SetVariableS",
+        "cconst",
+        "TACH_POINT_HAND_RIGHTHAND",
+        "tachpoint_righthand",
+        "AttachToParent",
+        "RemoveHiddenReason",
+        "HIDDEN_REASON_BACK"
+      ],
+      "consts": [
+        null,
+        "weapon",
+        "CatchTargetSelfNode",
+        "CatchTargetTargetNode"
+      ],
+      "code_hex": {
+        "bytes": 668,
+        "sha256": "c159984e51994c1f54497c7e896e3b1cb6f3d8f5d7f254918fb800cd40c0a783",
+        "head_hex": "80 00 56 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 27 00 00 00 00 00 00 00 67 03 00 00 1c 00 52 00 23 00 56 00 50 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+      },
+      "instruction_count": 66,
+      "actor_parent_component_windows": [
+        {
+          "anchor_offset": 84,
+          "window": [
+            {
+              "offset": 42,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 44,
+              "opname": "LOAD_ATTR",
+              "arg": 2,
+              "name": "hand_model"
+            },
+            {
+              "offset": 64,
+              "opname": "LOAD_ATTR",
+              "arg": 0,
+              "name": "model"
+            },
+            {
+              "offset": 84,
+              "opname": "LOAD_ATTR",
+              "arg": 4,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 104,
+              "opname": "LOAD_ATTR",
+              "arg": 7,
+              "name": "AddTargetSlot"
+            },
+            {
+              "offset": 124,
+              "opname": "LOAD_CONST",
+              "arg": 1,
+              "const": "weapon"
+            },
+            {
+              "offset": 126,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 128,
+              "opname": "LOAD_ATTR",
+              "arg": 0,
+              "name": "model"
+            }
+          ]
+        },
+        {
+          "anchor_offset": 148,
+          "window": [
+            {
+              "offset": 124,
+              "opname": "LOAD_CONST",
+              "arg": 1,
+              "const": "weapon"
+            },
+            {
+              "offset": 126,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 128,
+              "opname": "LOAD_ATTR",
+              "arg": 0,
+              "name": "model"
+            },
+            {
+              "offset": 148,
+              "opname": "LOAD_ATTR",
+              "arg": 4,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 168,
+              "opname": "CALL",
+              "arg": 2
+            },
+            {
+              "offset": 176,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 178,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 180,
+              "opname": "LOAD_ATTR",
+              "arg": 2,
+              "name": "hand_model"
+            }
+          ]
+        },
+        {
+          "anchor_offset": 220,
+          "window": [
+            {
+              "offset": 178,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 180,
+              "opname": "LOAD_ATTR",
+              "arg": 2,
+              "name": "hand_model"
+            },
+            {
+              "offset": 200,
+              "opname": "LOAD_ATTR",
+              "arg": 0,
+              "name": "model"
+            },
+            {
+              "offset": 220,
+              "opname": "LOAD_ATTR",
+              "arg": 4,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 240,
+              "opname": "LOAD_ATTR",
+              "arg": 9,
+              "name": "AddChild"
+            },
+            {
+              "offset": 260,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 262,
+              "opname": "LOAD_ATTR",
+              "arg": 0,
+              "name": "model"
+            },
+            {
+              "offset": 282,
+              "opname": "LOAD_ATTR",
+              "arg": 4,
+              "name": "Skeleton"
+            }
+          ]
+        },
+        {
+          "anchor_offset": 240,
+          "window": [
+            {
+              "offset": 180,
+              "opname": "LOAD_ATTR",
+              "arg": 2,
+              "name": "hand_model"
+            },
+            {
+              "offset": 200,
+              "opname": "LOAD_ATTR",
+              "arg": 0,
+              "name": "model"
+            },
+            {
+              "offset": 220,
+              "opname": "LOAD_ATTR",
+              "arg": 4,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 240,
+              "opname": "LOAD_ATTR",
+              "arg": 9,
+              "name": "AddChild"
+            },
+            {
+              "offset": 260,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 262,
+              "opname": "LOAD_ATTR",
+              "arg": 0,
+              "name": "model"
+            },
+            {
+              "offset": 282,
+              "opname": "LOAD_ATTR",
+              "arg": 4,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 302,
+              "opname": "CALL",
+              "arg": 1
+            }
+          ]
+        },
+        {
+          "anchor_offset": 282,
+          "window": [
+            {
+              "offset": 240,
+              "opname": "LOAD_ATTR",
+              "arg": 9,
+              "name": "AddChild"
+            },
+            {
+              "offset": 260,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 262,
+              "opname": "LOAD_ATTR",
+              "arg": 0,
+              "name": "model"
+            },
+            {
+              "offset": 282,
+              "opname": "LOAD_ATTR",
+              "arg": 4,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 302,
+              "opname": "CALL",
+              "arg": 1
+            },
+            {
+              "offset": 310,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 312,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 314,
+              "opname": "LOAD_ATTR",
+              "arg": 2,
+              "name": "hand_model"
+            }
+          ]
+        },
+        {
+          "anchor_offset": 478,
+          "window": [
+            {
+              "offset": 466,
+              "opname": "CALL",
+              "arg": 3
+            },
+            {
+              "offset": 474,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 476,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 478,
+              "opname": "LOAD_ATTR",
+              "arg": 19,
+              "name": "AttachToParent"
+            },
+            {
+              "offset": 498,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 500,
+              "opname": "LOAD_ATTR",
+              "arg": 2,
+              "name": "hand_model"
+            },
+            {
+              "offset": 520,
+              "opname": "LOAD_ATTR",
+              "arg": 0,
+              "name": "model"
+            },
+            {
+              "offset": 540,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_index": 25281,
+      "decoded_sha256": "e30ac8f6d7bd03898dc171bcc6f6c36a7cf97530f358c64579844690a7f5458a",
+      "filename": "gclient/gameplay/logic_base/models/weapon_model.py",
+      "qualname": "WeaponModel.AttachWeaponToHandAnimWeapon",
+      "firstlineno": 420,
+      "marshal_offset": 25787,
+      "marshal_end": 26523,
+      "names": [
+        "model",
+        "hand_model",
+        "Skeleton",
+        "AddTargetSlot",
+        "SetVariableS",
+        "cconst",
+        "TACH_POINT_HAND_ANIM_WEAPON",
+        "TACH_POINT_GUN_RIGHTHAND_ANIM",
+        "AttachToParent"
+      ],
+      "consts": [
+        null,
+        "weapon",
+        "CatchTargetSelfNode",
+        "CatchTargetTargetNode"
+      ],
+      "code_hex": {
+        "bytes": 432,
+        "sha256": "20efa37c584a67fded9fe95e586af1416f095bca74455aad503b532188938538",
+        "head_hex": "80 00 56 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 27 00 00 00 00 00 00 00 67 03 00 00 1c 00 52 00 23 00 56 00 50 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 70 01 56 01 50 00 00 00 00 00 00 00 00 00 00 00"
+      },
+      "instruction_count": 49,
+      "actor_parent_component_windows": [
+        {
+          "anchor_offset": 88,
+          "window": [
+            {
+              "offset": 64,
+              "opname": "STORE_FAST",
+              "arg": 1
+            },
+            {
+              "offset": 66,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 1
+            },
+            {
+              "offset": 68,
+              "opname": "LOAD_ATTR",
+              "arg": 0,
+              "name": "model"
+            },
+            {
+              "offset": 88,
+              "opname": "LOAD_ATTR",
+              "arg": 4,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 108,
+              "opname": "LOAD_ATTR",
+              "arg": 7,
+              "name": "AddTargetSlot"
+            },
+            {
+              "offset": 128,
+              "opname": "LOAD_CONST",
+              "arg": 1,
+              "const": "weapon"
+            },
+            {
+              "offset": 130,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 132,
+              "opname": "LOAD_ATTR",
+              "arg": 0,
+              "name": "model"
+            }
+          ]
+        },
+        {
+          "anchor_offset": 152,
+          "window": [
+            {
+              "offset": 128,
+              "opname": "LOAD_CONST",
+              "arg": 1,
+              "const": "weapon"
+            },
+            {
+              "offset": 130,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 132,
+              "opname": "LOAD_ATTR",
+              "arg": 0,
+              "name": "model"
+            },
+            {
+              "offset": 152,
+              "opname": "LOAD_ATTR",
+              "arg": 4,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 172,
+              "opname": "CALL",
+              "arg": 2
+            },
+            {
+              "offset": 180,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 182,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 1
+            },
+            {
+              "offset": 184,
+              "opname": "LOAD_ATTR",
+              "arg": 9,
+              "name": "SetVariableS"
+            }
+          ]
+        },
+        {
+          "anchor_offset": 316,
+          "window": [
+            {
+              "offset": 304,
+              "opname": "CALL",
+              "arg": 3
+            },
+            {
+              "offset": 312,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 314,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 316,
+              "opname": "LOAD_ATTR",
+              "arg": 17,
+              "name": "AttachToParent"
+            },
+            {
+              "offset": 336,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 1
+            },
+            {
+              "offset": 338,
+              "opname": "LOAD_ATTR",
+              "arg": 0,
+              "name": "model"
+            },
+            {
+              "offset": 358,
+              "opname": "LOAD_GLOBAL",
+              "arg": 10,
+              "name": "cconst"
+            },
+            {
+              "offset": 368,
+              "opname": "LOAD_ATTR",
+              "arg": 14,
+              "name": "TACH_POINT_GUN_RIGHTHAND_ANIM"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_index": 68957,
+      "decoded_sha256": "6e6adda8eba6dfe1153301a517282472be152fe16ed16cdfc9c61bd79499f92c",
+      "filename": "gclient/framework/models/simple_model.py",
+      "qualname": "SimpleModel.__init__",
+      "firstlineno": 43,
+      "marshal_offset": 2089,
+      "marshal_end": 3188,
+      "names": [
+        "super",
+        "SimpleModel",
+        "__init__",
+        "_modelIsValid",
+        "hidden_reason",
+        "set",
+        "hidden_reasons_set",
+        "skeleton_effect_hidden_reasons",
+        "warmingup_hidden_reason",
+        "try_use_cache",
+        "model_id",
+        "model",
+        "born_position",
+        "born_yaw",
+        "is_low_quality",
+        "force_no_graph",
+        "resource_names",
+        "effect_dict",
+        "base_graph_id",
+        "is_animated",
+        "load_for_warmingup",
+        "born_scale",
+        "disablemip",
+        "load_resource_extend",
+        "hide_skeleton_effects",
+        "custom_renderset",
+        "variable_tables",
+        "_callComponents"
+      ],
+      "consts": [
+        false,
+        null,
+        true,
+        "init",
+        [],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "code_hex": {
+        "bytes": 446,
+        "sha256": "0565ccd1aae668a7867a594429e5b95e5a508dd8fc174aefa6c5f6625a04e97d",
+        "head_hex": "3c 01 80 00 5c 00 00 00 00 00 00 00 00 00 5c 02 00 00 00 00 00 00 00 00 56 00 60 0b 00 00 57 12 56 03 34 03 00 00 00 00 00 00 1f 00 52 00 56 00 6e 03 00 00 00 00 00 00 00 00 5e 00 56 00 6e 04 00 00 00 00 00 00 00 00 5c 0b 00 00 00 00 00 00"
+      },
+      "instruction_count": 86,
+      "actor_parent_component_windows": [
+        {
+          "anchor_offset": 4,
+          "window": [
+            {
+              "offset": 0,
+              "opname": "COPY_FREE_VARS",
+              "arg": 1
+            },
+            {
+              "offset": 2,
+              "opname": "RESUME",
+              "arg": 0
+            },
+            {
+              "offset": 4,
+              "opname": "LOAD_GLOBAL",
+              "arg": 0,
+              "name": "super"
+            },
+            {
+              "offset": 14,
+              "opname": "LOAD_GLOBAL",
+              "arg": 2,
+              "name": "SimpleModel"
+            },
+            {
+              "offset": 24,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 26,
+              "opname": "LOAD_SUPER_ATTR",
+              "arg": 11
+            },
+            {
+              "offset": 30,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 18
+            }
+          ]
+        },
+        {
+          "anchor_offset": 14,
+          "window": [
+            {
+              "offset": 0,
+              "opname": "COPY_FREE_VARS",
+              "arg": 1
+            },
+            {
+              "offset": 2,
+              "opname": "RESUME",
+              "arg": 0
+            },
+            {
+              "offset": 4,
+              "opname": "LOAD_GLOBAL",
+              "arg": 0,
+              "name": "super"
+            },
+            {
+              "offset": 14,
+              "opname": "LOAD_GLOBAL",
+              "arg": 2,
+              "name": "SimpleModel"
+            },
+            {
+              "offset": 24,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 26,
+              "opname": "LOAD_SUPER_ATTR",
+              "arg": 11
+            },
+            {
+              "offset": 30,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 18
+            },
+            {
+              "offset": 32,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 3
+            }
+          ]
+        },
+        {
+          "anchor_offset": 48,
+          "window": [
+            {
+              "offset": 42,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 44,
+              "opname": "LOAD_CONST",
+              "arg": 0,
+              "const": false
+            },
+            {
+              "offset": 46,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 48,
+              "opname": "STORE_ATTR",
+              "arg": 3,
+              "name": "SimpleModel"
+            },
+            {
+              "offset": 58,
+              "opname": "LOAD_SMALL_INT",
+              "arg": 0
+            },
+            {
+              "offset": 60,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 62,
+              "opname": "STORE_ATTR",
+              "arg": 4,
+              "name": "__init__"
+            },
+            {
+              "offset": 72,
+              "opname": "LOAD_GLOBAL",
+              "arg": 11,
+              "name": "set"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_index": 68957,
+      "decoded_sha256": "6e6adda8eba6dfe1153301a517282472be152fe16ed16cdfc9c61bd79499f92c",
+      "filename": "gclient/framework/models/simple_model.py",
+      "qualname": "SimpleModel.Load",
+      "firstlineno": 262,
+      "marshal_offset": 11629,
+      "marshal_end": 15019,
+      "names": [
+        "super",
+        "SimpleModel",
+        "Load",
+        "model",
+        "DestroyCppModel",
+        "AddLoadTask",
+        "_GetAvailableModelInfo",
+        "model_id",
+        "get",
+        "cconst",
+        "EnableDLCCheck",
+        "genv",
+        "dlc_manager",
+        "CheckDlcExists",
+        "sys",
+        "excepthook",
+        "exc_info",
+        "is_low_quality",
+        "resource_names",
+        "pop",
+        "load_for_warmingup",
+        "force_no_graph",
+        "MHelper",
+        "CreateModel",
+        "GetMotionSkeletonFile",
+        "disablemip",
+        "try_use_cache",
+        "is_animated",
+        "load_resource_extend",
+        "is_in_hall",
+        "gpl",
+        "performance_level",
+        "MarkPrincipleRole",
+        "_modelIsValid",
+        "SetExpireCallback",
+        "ModelExpireCallback",
+        "hidden_reason",
+        "_SetVisible",
+        "skeleton_effect_hidden_reasons",
+        "SetSkeletonEffectVisible",
+        "owner",
+        "instance",
+        "base_graph_id",
+        "born_position",
+        "Transform",
+        "MType",
+        "Vector3",
+        "translation",
+        "born_yaw",
+        "yaw",
+        "Skeleton",
+        "_skeletonIsValid",
+        "__class__",
+        "__name__",
+        "BindEventSignalNotify",
+        "PlayUnitModelEffects"
+      ],
+      "consts": [
+        "CreateModel",
+        "dlc_id",
+        null,
+        "models_low",
+        "models",
+        "use_ready_to_appear",
+        false,
+        "tps_model_need_graph",
+        "basic_graph",
+        "",
+        {
+          "code_ref_offset": 13825,
+          "name": "<lambda>"
+        },
+        "skeleton",
+        "disablemip",
+        "scale",
+        "is_movable",
+        true,
+        "cachable",
+        "is_animated",
+        "load_resource_extend",
+        "ActorComponent",
+        []
+      ],
+      "code_hex": {
+        "bytes": 2070,
+        "sha256": "26cf9271e81f95169a892deba6e201fadcada785efb9e9564ddb4ab477b8b628",
+        "head_hex": "3c 01 61 00 80 00 5c 00 00 00 00 00 00 00 00 00 5c 02 00 00 00 00 00 00 00 00 53 00 60 0b 00 00 57 12 34 02 00 00 00 00 00 00 1f 00 53 00 50 06 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3b 01 27 00 00 00 00 00 00 00 64 11 00 00"
+      },
+      "instruction_count": 313,
+      "actor_parent_component_windows": [
+        {
+          "anchor_offset": 6,
+          "window": [
+            {
+              "offset": 0,
+              "opname": "COPY_FREE_VARS",
+              "arg": 1
+            },
+            {
+              "offset": 2,
+              "opname": "MAKE_CELL",
+              "arg": 0
+            },
+            {
+              "offset": 4,
+              "opname": "RESUME",
+              "arg": 0
+            },
+            {
+              "offset": 6,
+              "opname": "LOAD_GLOBAL",
+              "arg": 0,
+              "name": "super"
+            },
+            {
+              "offset": 16,
+              "opname": "LOAD_GLOBAL",
+              "arg": 2,
+              "name": "SimpleModel"
+            },
+            {
+              "offset": 26,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 28,
+              "opname": "LOAD_SUPER_ATTR",
+              "arg": 11
+            },
+            {
+              "offset": 32,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 18
+            }
+          ]
+        },
+        {
+          "anchor_offset": 16,
+          "window": [
+            {
+              "offset": 2,
+              "opname": "MAKE_CELL",
+              "arg": 0
+            },
+            {
+              "offset": 4,
+              "opname": "RESUME",
+              "arg": 0
+            },
+            {
+              "offset": 6,
+              "opname": "LOAD_GLOBAL",
+              "arg": 0,
+              "name": "super"
+            },
+            {
+              "offset": 16,
+              "opname": "LOAD_GLOBAL",
+              "arg": 2,
+              "name": "SimpleModel"
+            },
+            {
+              "offset": 26,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 28,
+              "opname": "LOAD_SUPER_ATTR",
+              "arg": 11
+            },
+            {
+              "offset": 32,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 18
+            },
+            {
+              "offset": 34,
+              "opname": "CALL",
+              "arg": 2
+            }
+          ]
+        },
+        {
+          "anchor_offset": 816,
+          "window": [
+            {
+              "offset": 804,
+              "opname": "LOAD_CONST",
+              "arg": 9,
+              "const": ""
+            },
+            {
+              "offset": 806,
+              "opname": "CALL",
+              "arg": 2
+            },
+            {
+              "offset": 814,
+              "opname": "STORE_FAST",
+              "arg": 9
+            },
+            {
+              "offset": 816,
+              "opname": "LOAD_GLOBAL",
+              "arg": 44,
+              "name": "MHelper"
+            },
+            {
+              "offset": 826,
+              "opname": "LOAD_ATTR",
+              "arg": 46,
+              "name": "CreateModel"
+            },
+            {
+              "offset": 846,
+              "opname": "PUSH_NULL",
+              "arg": 0
+            },
+            {
+              "offset": 848,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 850,
+              "opname": "BUILD_TUPLE",
+              "arg": 1
+            }
+          ]
+        },
+        {
+          "anchor_offset": 826,
+          "window": [
+            {
+              "offset": 806,
+              "opname": "CALL",
+              "arg": 2
+            },
+            {
+              "offset": 814,
+              "opname": "STORE_FAST",
+              "arg": 9
+            },
+            {
+              "offset": 816,
+              "opname": "LOAD_GLOBAL",
+              "arg": 44,
+              "name": "MHelper"
+            },
+            {
+              "offset": 826,
+              "opname": "LOAD_ATTR",
+              "arg": 46,
+              "name": "CreateModel"
+            },
+            {
+              "offset": 846,
+              "opname": "PUSH_NULL",
+              "arg": 0
+            },
+            {
+              "offset": 848,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 850,
+              "opname": "BUILD_TUPLE",
+              "arg": 1
+            },
+            {
+              "offset": 852,
+              "opname": "LOAD_CONST",
+              "arg": 10,
+              "const": {
+                "code_ref_offset": 13825,
+                "name": "<lambda>"
+              }
+            }
+          ]
+        },
+        {
+          "anchor_offset": 882,
+          "window": [
+            {
+              "offset": 858,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 860,
+              "opname": "LOAD_ATTR",
+              "arg": 36,
+              "name": "resource_names"
+            },
+            {
+              "offset": 880,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 882,
+              "opname": "LOAD_ATTR",
+              "arg": 49,
+              "name": "GetMotionSkeletonFile"
+            },
+            {
+              "offset": 902,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 1
+            },
+            {
+              "offset": 904,
+              "opname": "LOAD_ATTR",
+              "arg": 17,
+              "name": "get"
+            },
+            {
+              "offset": 924,
+              "opname": "LOAD_CONST",
+              "arg": 11,
+              "const": "skeleton"
+            },
+            {
+              "offset": 926,
+              "opname": "LOAD_CONST",
+              "arg": 9,
+              "const": ""
+            }
+          ]
+        },
+        {
+          "anchor_offset": 1128,
+          "window": [
+            {
+              "offset": 1122,
+              "opname": "DICT_MERGE",
+              "arg": 1
+            },
+            {
+              "offset": 1124,
+              "opname": "CALL_FUNCTION_EX",
+              "arg": 0
+            },
+            {
+              "offset": 1126,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 1128,
+              "opname": "STORE_ATTR",
+              "arg": 3,
+              "name": "SimpleModel"
+            },
+            {
+              "offset": 1138,
+              "opname": "LOAD_GLOBAL",
+              "arg": 22,
+              "name": "genv"
+            },
+            {
+              "offset": 1148,
+              "opname": "LOAD_ATTR",
+              "arg": 58,
+              "name": "is_in_hall"
+            },
+            {
+              "offset": 1168,
+              "opname": "TO_BOOL",
+              "arg": 0
+            },
+            {
+              "offset": 1176,
+              "opname": "POP_JUMP_IF_FALSE",
+              "arg": 38
+            }
+          ]
+        },
+        {
+          "anchor_offset": 1452,
+          "window": [
+            {
+              "offset": 1444,
+              "opname": "POP_JUMP_IF_FALSE",
+              "arg": 18
+            },
+            {
+              "offset": 1448,
+              "opname": "NOT_TAKEN",
+              "arg": 0
+            },
+            {
+              "offset": 1450,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 1452,
+              "opname": "LOAD_ATTR",
+              "arg": 79,
+              "name": "SetSkeletonEffectVisible"
+            },
+            {
+              "offset": 1472,
+              "opname": "LOAD_CONST",
+              "arg": 6,
+              "const": false
+            },
+            {
+              "offset": 1474,
+              "opname": "CALL",
+              "arg": 1
+            },
+            {
+              "offset": 1482,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 1484,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 1758,
+          "window": [
+            {
+              "offset": 1752,
+              "opname": "PUSH_NULL",
+              "arg": 0
+            },
+            {
+              "offset": 1754,
+              "opname": "CALL_FUNCTION_EX",
+              "arg": 0
+            },
+            {
+              "offset": 1756,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 10
+            },
+            {
+              "offset": 1758,
+              "opname": "STORE_ATTR",
+              "arg": 47,
+              "name": "CreateModel"
+            },
+            {
+              "offset": 1768,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 1770,
+              "opname": "LOAD_ATTR",
+              "arg": 96,
+              "name": "born_yaw"
+            },
+            {
+              "offset": 1790,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 10
+            },
+            {
+              "offset": 1792,
+              "opname": "STORE_ATTR",
+              "arg": 49,
+              "name": "GetMotionSkeletonFile"
+            }
+          ]
+        },
+        {
+          "anchor_offset": 1792,
+          "window": [
+            {
+              "offset": 1768,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 1770,
+              "opname": "LOAD_ATTR",
+              "arg": 96,
+              "name": "born_yaw"
+            },
+            {
+              "offset": 1790,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 10
+            },
+            {
+              "offset": 1792,
+              "opname": "STORE_ATTR",
+              "arg": 49,
+              "name": "GetMotionSkeletonFile"
+            },
+            {
+              "offset": 1802,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 10
+            },
+            {
+              "offset": 1804,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 1806,
+              "opname": "LOAD_ATTR",
+              "arg": 6,
+              "name": "model"
+            },
+            {
+              "offset": 1826,
+              "opname": "STORE_ATTR",
+              "arg": 44,
+              "name": "MHelper"
+            }
+          ]
+        },
+        {
+          "anchor_offset": 1826,
+          "window": [
+            {
+              "offset": 1802,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 10
+            },
+            {
+              "offset": 1804,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 1806,
+              "opname": "LOAD_ATTR",
+              "arg": 6,
+              "name": "model"
+            },
+            {
+              "offset": 1826,
+              "opname": "STORE_ATTR",
+              "arg": 44,
+              "name": "MHelper"
+            },
+            {
+              "offset": 1836,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 1838,
+              "opname": "LOAD_ATTR",
+              "arg": 6,
+              "name": "model"
+            },
+            {
+              "offset": 1858,
+              "opname": "LOAD_ATTR",
+              "arg": 100,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 1878,
+              "opname": "STORE_FAST",
+              "arg": 11
+            }
+          ]
+        },
+        {
+          "anchor_offset": 1858,
+          "window": [
+            {
+              "offset": 1826,
+              "opname": "STORE_ATTR",
+              "arg": 44,
+              "name": "MHelper"
+            },
+            {
+              "offset": 1836,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 1838,
+              "opname": "LOAD_ATTR",
+              "arg": 6,
+              "name": "model"
+            },
+            {
+              "offset": 1858,
+              "opname": "LOAD_ATTR",
+              "arg": 100,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 1878,
+              "opname": "STORE_FAST",
+              "arg": 11
+            },
+            {
+              "offset": 1880,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 11
+            },
+            {
+              "offset": 1882,
+              "opname": "TO_BOOL",
+              "arg": 0
+            },
+            {
+              "offset": 1890,
+              "opname": "POP_JUMP_IF_FALSE",
+              "arg": 69
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_index": 68957,
+      "decoded_sha256": "6e6adda8eba6dfe1153301a517282472be152fe16ed16cdfc9c61bd79499f92c",
+      "filename": "gclient/framework/models/simple_model.py",
+      "qualname": "SimpleModel.ReloadSkeleton",
+      "firstlineno": 417,
+      "marshal_offset": 18475,
+      "marshal_end": 19539,
+      "names": [
+        "model",
+        "Skeleton",
+        "isinstance",
+        "MObject",
+        "ActorComponent",
+        "ActorParent",
+        "TargetSlots",
+        "actor",
+        "name",
+        "CheckRecreateSkeletonOnReloaded",
+        "_skeletonIsValid",
+        "__class__",
+        "force_no_graph",
+        "BindEventSignalNotify",
+        "MoveStoryboardWhenSkeletonOnly",
+        "AddTargetSlot",
+        "AddChild"
+      ],
+      "consts": [
+        null,
+        true
+      ],
+      "code_hex": {
+        "bytes": 654,
+        "sha256": "464f1cdac97657cbb6b08c625da4101fa834bdc0b87d841bad158c5da95fbfc6",
+        "head_hex": "80 00 56 00 50 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 50 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 70 02 52 00 70 03 52 00 70 04 5c 05 00 00 00 00 00 00 00 00 56 02 5c 06 00 00 00 00 00 00 00 00 50 08 00 00"
+      },
+      "instruction_count": 105,
+      "actor_parent_component_windows": [
+        {
+          "anchor_offset": 24,
+          "window": [
+            {
+              "offset": 0,
+              "opname": "RESUME",
+              "arg": 0
+            },
+            {
+              "offset": 2,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 4,
+              "opname": "LOAD_ATTR",
+              "arg": 0,
+              "name": "model"
+            },
+            {
+              "offset": 24,
+              "opname": "LOAD_ATTR",
+              "arg": 2,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 44,
+              "opname": "STORE_FAST",
+              "arg": 2
+            },
+            {
+              "offset": 46,
+              "opname": "LOAD_CONST",
+              "arg": 0,
+              "const": null
+            },
+            {
+              "offset": 48,
+              "opname": "STORE_FAST",
+              "arg": 3
+            },
+            {
+              "offset": 50,
+              "opname": "LOAD_CONST",
+              "arg": 0,
+              "const": null
+            }
+          ]
+        },
+        {
+          "anchor_offset": 76,
+          "window": [
+            {
+              "offset": 54,
+              "opname": "LOAD_GLOBAL",
+              "arg": 5,
+              "name": "isinstance"
+            },
+            {
+              "offset": 64,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 2
+            },
+            {
+              "offset": 66,
+              "opname": "LOAD_GLOBAL",
+              "arg": 6,
+              "name": "MObject"
+            },
+            {
+              "offset": 76,
+              "opname": "LOAD_ATTR",
+              "arg": 8,
+              "name": "ActorComponent"
+            },
+            {
+              "offset": 96,
+              "opname": "CALL",
+              "arg": 2
+            },
+            {
+              "offset": 104,
+              "opname": "TO_BOOL",
+              "arg": 0
+            },
+            {
+              "offset": 112,
+              "opname": "POP_JUMP_IF_FALSE",
+              "arg": 78
+            },
+            {
+              "offset": 116,
+              "opname": "NOT_TAKEN",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 120,
+          "window": [
+            {
+              "offset": 112,
+              "opname": "POP_JUMP_IF_FALSE",
+              "arg": 78
+            },
+            {
+              "offset": 116,
+              "opname": "NOT_TAKEN",
+              "arg": 0
+            },
+            {
+              "offset": 118,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 2
+            },
+            {
+              "offset": 120,
+              "opname": "LOAD_ATTR",
+              "arg": 11,
+              "name": "ActorParent"
+            },
+            {
+              "offset": 140,
+              "opname": "CALL",
+              "arg": 0
+            },
+            {
+              "offset": 148,
+              "opname": "STORE_FAST",
+              "arg": 4
+            },
+            {
+              "offset": 150,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 4
+            },
+            {
+              "offset": 152,
+              "opname": "TO_BOOL",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 274,
+          "window": [
+            {
+              "offset": 268,
+              "opname": "END_FOR",
+              "arg": 0
+            },
+            {
+              "offset": 270,
+              "opname": "POP_ITER",
+              "arg": 0
+            },
+            {
+              "offset": 272,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 274,
+              "opname": "LOAD_ATTR",
+              "arg": 19,
+              "name": "CheckRecreateSkeletonOnReloaded"
+            },
+            {
+              "offset": 294,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 1
+            },
+            {
+              "offset": 296,
+              "opname": "CALL",
+              "arg": 1
+            },
+            {
+              "offset": 304,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 306,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 328,
+          "window": [
+            {
+              "offset": 304,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 306,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 308,
+              "opname": "LOAD_ATTR",
+              "arg": 0,
+              "name": "model"
+            },
+            {
+              "offset": 328,
+              "opname": "LOAD_ATTR",
+              "arg": 2,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 348,
+              "opname": "STORE_FAST",
+              "arg": 6
+            },
+            {
+              "offset": 350,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 6
+            },
+            {
+              "offset": 352,
+              "opname": "TO_BOOL",
+              "arg": 0
+            },
+            {
+              "offset": 360,
+              "opname": "POP_JUMP_IF_FALSE",
+              "arg": 89
+            }
+          ]
+        },
+        {
+          "anchor_offset": 370,
+          "window": [
+            {
+              "offset": 364,
+              "opname": "NOT_TAKEN",
+              "arg": 0
+            },
+            {
+              "offset": 366,
+              "opname": "LOAD_CONST",
+              "arg": 1,
+              "const": true
+            },
+            {
+              "offset": 368,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 370,
+              "opname": "STORE_ATTR",
+              "arg": 10,
+              "name": "ActorParent"
+            },
+            {
+              "offset": 380,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 6
+            },
+            {
+              "offset": 382,
+              "opname": "LOAD_ATTR",
+              "arg": 22,
+              "name": "__class__"
+            },
+            {
+              "offset": 402,
+              "opname": "LOAD_GLOBAL",
+              "arg": 6,
+              "name": "MObject"
+            },
+            {
+              "offset": 412,
+              "opname": "LOAD_ATTR",
+              "arg": 8,
+              "name": "ActorComponent"
+            }
+          ]
+        },
+        {
+          "anchor_offset": 412,
+          "window": [
+            {
+              "offset": 380,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 6
+            },
+            {
+              "offset": 382,
+              "opname": "LOAD_ATTR",
+              "arg": 22,
+              "name": "__class__"
+            },
+            {
+              "offset": 402,
+              "opname": "LOAD_GLOBAL",
+              "arg": 6,
+              "name": "MObject"
+            },
+            {
+              "offset": 412,
+              "opname": "LOAD_ATTR",
+              "arg": 8,
+              "name": "ActorComponent"
+            },
+            {
+              "offset": 432,
+              "opname": "COMPARE_OP",
+              "arg": 88
+            },
+            {
+              "offset": 436,
+              "opname": "POP_JUMP_IF_FALSE",
+              "arg": 51
+            },
+            {
+              "offset": 440,
+              "opname": "NOT_TAKEN",
+              "arg": 0
+            },
+            {
+              "offset": 442,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 512,
+          "window": [
+            {
+              "offset": 500,
+              "opname": "CALL",
+              "arg": 0
+            },
+            {
+              "offset": 508,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 510,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 512,
+              "opname": "LOAD_ATTR",
+              "arg": 29,
+              "name": "MoveStoryboardWhenSkeletonOnly"
+            },
+            {
+              "offset": 532,
+              "opname": "CALL",
+              "arg": 0
+            },
+            {
+              "offset": 540,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 542,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 4
+            },
+            {
+              "offset": 544,
+              "opname": "TO_BOOL",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 610,
+          "window": [
+            {
+              "offset": 598,
+              "opname": "CALL",
+              "arg": 2
+            },
+            {
+              "offset": 606,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 608,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 4
+            },
+            {
+              "offset": 610,
+              "opname": "LOAD_ATTR",
+              "arg": 33,
+              "name": "AddChild"
+            },
+            {
+              "offset": 630,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 6
+            },
+            {
+              "offset": 632,
+              "opname": "CALL",
+              "arg": 1
+            },
+            {
+              "offset": 640,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 642,
+              "opname": "LOAD_CONST",
+              "arg": 0,
+              "const": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_index": 68957,
+      "decoded_sha256": "6e6adda8eba6dfe1153301a517282472be152fe16ed16cdfc9c61bd79499f92c",
+      "filename": "gclient/framework/models/simple_model.py",
+      "qualname": "SimpleModel.HasActorComponent",
+      "firstlineno": 563,
+      "marshal_offset": 24255,
+      "marshal_end": 24562,
+      "names": [
+        "isValid",
+        "isinstance",
+        "model",
+        "Skeleton",
+        "MObject",
+        "ActorComponent"
+      ],
+      "consts": [
+        false
+      ],
+      "code_hex": {
+        "bytes": 142,
+        "sha256": "2d7ce7ec77a1e8b81ce93a956676edd8312ad80c4ddbebf00c0715576c761712",
+        "head_hex": "80 00 56 00 50 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 34 00 00 00 00 00 00 00 27 00 00 00 00 00 00 00 67 03 00 00 1c 00 52 00 23 00 5c 03 00 00 00 00 00 00 00 00 56 00 50 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+      },
+      "instruction_count": 17,
+      "actor_parent_component_windows": [
+        {
+          "anchor_offset": 82,
+          "window": [
+            {
+              "offset": 50,
+              "opname": "LOAD_GLOBAL",
+              "arg": 3,
+              "name": "isinstance"
+            },
+            {
+              "offset": 60,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 62,
+              "opname": "LOAD_ATTR",
+              "arg": 4,
+              "name": "model"
+            },
+            {
+              "offset": 82,
+              "opname": "LOAD_ATTR",
+              "arg": 6,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 102,
+              "opname": "LOAD_GLOBAL",
+              "arg": 8,
+              "name": "MObject"
+            },
+            {
+              "offset": 112,
+              "opname": "LOAD_ATTR",
+              "arg": 10,
+              "name": "ActorComponent"
+            },
+            {
+              "offset": 132,
+              "opname": "CALL",
+              "arg": 2
+            },
+            {
+              "offset": 140,
+              "opname": "RETURN_VALUE",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 112,
+          "window": [
+            {
+              "offset": 62,
+              "opname": "LOAD_ATTR",
+              "arg": 4,
+              "name": "model"
+            },
+            {
+              "offset": 82,
+              "opname": "LOAD_ATTR",
+              "arg": 6,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 102,
+              "opname": "LOAD_GLOBAL",
+              "arg": 8,
+              "name": "MObject"
+            },
+            {
+              "offset": 112,
+              "opname": "LOAD_ATTR",
+              "arg": 10,
+              "name": "ActorComponent"
+            },
+            {
+              "offset": 132,
+              "opname": "CALL",
+              "arg": 2
+            },
+            {
+              "offset": 140,
+              "opname": "RETURN_VALUE",
+              "arg": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_index": 143510,
+      "decoded_sha256": "0a4a57f34d1c8e14e38c08f510f1787f46659e4b2928663cf526797eac8b0ed3",
+      "filename": "gclient/gameplay/logic_base/models/avatar_model.py",
+      "qualname": "AvatarModel.__init__",
+      "firstlineno": 151,
+      "marshal_offset": 4621,
+      "marshal_end": 6760,
+      "names": [
+        "super",
+        "AvatarModel",
+        "__init__",
+        "is_graph_moving",
+        "_slide_trace_cue_active",
+        "_slide_trace_active",
+        "_slide_trace_position",
+        "charctrl",
+        "charctrl_reason",
+        "normal_speed",
+        "cconst",
+        "UNIT_STATE_IDLE",
+        "motion_state",
+        "upper_motion_state",
+        "locomotion_graph_id",
+        "upper_graph_id",
+        "hit_graph_id",
+        "die_graph_id",
+        "weapon_dict",
+        "cur_client_weapon_guid",
+        "cur_client_lefthand_weapon_guid",
+        "old_cur_client_weapon_guid",
+        "lower_model_ids",
+        "charctrl_gravity_disable_reason",
+        "charctrl_resize_height_reason",
+        "vehicle_graph_id",
+        "need_graph_yaw_control_ids",
+        "enabled_auto_frame_limit",
+        "enabled_invisible_frame_limit",
+        "kick_up_graph_id",
+        "ModelHipDirection",
+        "F",
+        "hip_direction",
+        "hidden_timer",
+        "execute_graph_id",
+        "graph_yaw",
+        "pull_graph_id",
+        "samurai_hit_graph_id",
+        "weapon_list",
+        "hand_left_ik_tps",
+        "graph_list",
+        "graph_sync_slave_unable_reason",
+        "all_effect_model_dict",
+        "has_play_dead_effect",
+        "kill_mat_dissolve_timer",
+        "kill_mat_dissolve_start_time",
+        "kill_mat_dissolve_play_time",
+        "hide_model_time",
+        "meow_dance_graph_id",
+        "kill_other_models",
+        "_execute_skin_switch_serial",
+        "_execute_skin_switch_state",
+        "ClearMoveDirection"
+      ],
+      "consts": [
+        false,
+        null,
+        "",
+        0,
+        "HP_Hand_Left_IK_tps",
+        -1
+      ],
+      "code_hex": {
+        "bytes": 786,
+        "sha256": "391ddb5c06bef6323388ff6b39f0982377b0dc305472aabaaa4086c9044aac24",
+        "head_hex": "3c 01 80 00 5c 00 00 00 00 00 00 00 00 00 5c 02 00 00 00 00 00 00 00 00 56 00 60 0b 00 00 57 12 56 03 34 03 00 00 00 00 00 00 1f 00 52 00 56 00 6e 03 00 00 00 00 00 00 00 00 52 00 56 00 6e 04 00 00 00 00 00 00 00 00 52 00 56 00 6e 05 00 00"
+      },
+      "instruction_count": 154,
+      "actor_parent_component_windows": [
+        {
+          "anchor_offset": 4,
+          "window": [
+            {
+              "offset": 0,
+              "opname": "COPY_FREE_VARS",
+              "arg": 1
+            },
+            {
+              "offset": 2,
+              "opname": "RESUME",
+              "arg": 0
+            },
+            {
+              "offset": 4,
+              "opname": "LOAD_GLOBAL",
+              "arg": 0,
+              "name": "super"
+            },
+            {
+              "offset": 14,
+              "opname": "LOAD_GLOBAL",
+              "arg": 2,
+              "name": "AvatarModel"
+            },
+            {
+              "offset": 24,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 26,
+              "opname": "LOAD_SUPER_ATTR",
+              "arg": 11
+            },
+            {
+              "offset": 30,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 18
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_index": 143510,
+      "decoded_sha256": "0a4a57f34d1c8e14e38c08f510f1787f46659e4b2928663cf526797eac8b0ed3",
+      "filename": "gclient/gameplay/logic_base/models/avatar_model.py",
+      "qualname": "AvatarModel.Load",
+      "firstlineno": 242,
+      "marshal_offset": 8249,
+      "marshal_end": 10978,
+      "names": [
+        "super",
+        "SimpleModel",
+        "Load",
+        "model",
+        "DestroyCppModel",
+        "lower_model_ids",
+        "AddLoadTask",
+        "_GetAvailableModelInfo",
+        "model_id",
+        "AvatarModelCache",
+        "instance",
+        "Enqueue",
+        "_modelIsValid",
+        "SetExpireCallback",
+        "ModelExpireCallback",
+        "base_graph_id",
+        "owner",
+        "Skeleton",
+        "_skeletonIsValid",
+        "HideTPose",
+        "SkeletonExpireCallback",
+        "__class__",
+        "MObject",
+        "ActorComponent",
+        "BindEventSignalNotify",
+        "SetEnableBottomGraphSync",
+        "SetGraphSyncActorVariables",
+        "ACTOR_VARIABLES_NEED_SYNC",
+        "IsCombatAvatar",
+        "IsATMGuardAI",
+        "moving_platform_guid",
+        "area",
+        "position",
+        "yaw",
+        "IsPlayerCombatAvatar",
+        "is_replay_avatar",
+        "genv",
+        "messenger",
+        "Broadcast",
+        "events",
+        "ON_PLAYER_MODEL_CREATED",
+        "SetShaderGraphParameter",
+        "EnableDockingDetector",
+        "gpl",
+        "performance_level",
+        "DisableNormalMap"
+      ],
+      "consts": [
+        "CreateModel",
+        {
+          "code_ref_offset": 9828,
+          "name": "<lambda>"
+        },
+        true,
+        false,
+        "EnableMatcap",
+        null
+      ],
+      "code_hex": {
+        "bytes": 1538,
+        "sha256": "51fdad3f610c4d6d8ae2799a5e4d62df5f4ad180168d200179800732251dc7dc",
+        "head_hex": "3c 01 61 00 80 00 5c 00 00 00 00 00 00 00 00 00 5c 02 00 00 00 00 00 00 00 00 53 00 60 0a 00 00 21 00 57 12 33 02 2f 00 56 03 42 01 04 00 1f 00 53 00 50 06 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 3b 01 27 00 00 00 00 00 00 00"
+      },
+      "instruction_count": 203,
+      "actor_parent_component_windows": [
+        {
+          "anchor_offset": 6,
+          "window": [
+            {
+              "offset": 0,
+              "opname": "COPY_FREE_VARS",
+              "arg": 1
+            },
+            {
+              "offset": 2,
+              "opname": "MAKE_CELL",
+              "arg": 0
+            },
+            {
+              "offset": 4,
+              "opname": "RESUME",
+              "arg": 0
+            },
+            {
+              "offset": 6,
+              "opname": "LOAD_GLOBAL",
+              "arg": 0,
+              "name": "super"
+            },
+            {
+              "offset": 16,
+              "opname": "LOAD_GLOBAL",
+              "arg": 2,
+              "name": "SimpleModel"
+            },
+            {
+              "offset": 26,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 28,
+              "opname": "LOAD_SUPER_ATTR",
+              "arg": 10
+            },
+            {
+              "offset": 32,
+              "opname": "PUSH_NULL",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 16,
+          "window": [
+            {
+              "offset": 2,
+              "opname": "MAKE_CELL",
+              "arg": 0
+            },
+            {
+              "offset": 4,
+              "opname": "RESUME",
+              "arg": 0
+            },
+            {
+              "offset": 6,
+              "opname": "LOAD_GLOBAL",
+              "arg": 0,
+              "name": "super"
+            },
+            {
+              "offset": 16,
+              "opname": "LOAD_GLOBAL",
+              "arg": 2,
+              "name": "SimpleModel"
+            },
+            {
+              "offset": 26,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 28,
+              "opname": "LOAD_SUPER_ATTR",
+              "arg": 10
+            },
+            {
+              "offset": 32,
+              "opname": "PUSH_NULL",
+              "arg": 0
+            },
+            {
+              "offset": 34,
+              "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 18
+            }
+          ]
+        },
+        {
+          "anchor_offset": 330,
+          "window": [
+            {
+              "offset": 324,
+              "opname": "STORE_FAST",
+              "arg": 4
+            },
+            {
+              "offset": 326,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 4
+            },
+            {
+              "offset": 328,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 330,
+              "opname": "STORE_ATTR",
+              "arg": 3,
+              "name": "SimpleModel"
+            },
+            {
+              "offset": 340,
+              "opname": "LOAD_CONST",
+              "arg": 2,
+              "const": true
+            },
+            {
+              "offset": 342,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 344,
+              "opname": "STORE_ATTR",
+              "arg": 12,
+              "name": "AddLoadTask"
+            },
+            {
+              "offset": 354,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 518,
+          "window": [
+            {
+              "offset": 486,
+              "opname": "STORE_ATTR",
+              "arg": 16,
+              "name": "model_id"
+            },
+            {
+              "offset": 496,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 498,
+              "opname": "LOAD_ATTR",
+              "arg": 6,
+              "name": "model"
+            },
+            {
+              "offset": 518,
+              "opname": "LOAD_ATTR",
+              "arg": 34,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 538,
+              "opname": "STORE_FAST",
+              "arg": 5
+            },
+            {
+              "offset": 540,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 5
+            },
+            {
+              "offset": 542,
+              "opname": "TO_BOOL",
+              "arg": 0
+            },
+            {
+              "offset": 550,
+              "opname": "POP_JUMP_IF_FALSE",
+              "arg": 127
+            }
+          ]
+        },
+        {
+          "anchor_offset": 608,
+          "window": [
+            {
+              "offset": 584,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 5
+            },
+            {
+              "offset": 586,
+              "opname": "LOAD_ATTR",
+              "arg": 27,
+              "name": "SetExpireCallback"
+            },
+            {
+              "offset": 606,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 608,
+              "opname": "LOAD_ATTR",
+              "arg": 40,
+              "name": "SkeletonExpireCallback"
+            },
+            {
+              "offset": 628,
+              "opname": "CALL",
+              "arg": 1
+            },
+            {
+              "offset": 636,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 638,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 5
+            },
+            {
+              "offset": 640,
+              "opname": "LOAD_ATTR",
+              "arg": 42,
+              "name": "__class__"
+            }
+          ]
+        },
+        {
+          "anchor_offset": 670,
+          "window": [
+            {
+              "offset": 638,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 5
+            },
+            {
+              "offset": 640,
+              "opname": "LOAD_ATTR",
+              "arg": 42,
+              "name": "__class__"
+            },
+            {
+              "offset": 660,
+              "opname": "LOAD_GLOBAL",
+              "arg": 44,
+              "name": "MObject"
+            },
+            {
+              "offset": 670,
+              "opname": "LOAD_ATTR",
+              "arg": 46,
+              "name": "ActorComponent"
+            },
+            {
+              "offset": 690,
+              "opname": "COMPARE_OP",
+              "arg": 88
+            },
+            {
+              "offset": 694,
+              "opname": "POP_JUMP_IF_FALSE",
+              "arg": 17
+            },
+            {
+              "offset": 698,
+              "opname": "NOT_TAKEN",
+              "arg": 0
+            },
+            {
+              "offset": 700,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 830,
+          "window": [
+            {
+              "offset": 806,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 808,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 810,
+              "opname": "LOAD_ATTR",
+              "arg": 32,
+              "name": "owner"
+            },
+            {
+              "offset": 830,
+              "opname": "LOAD_ATTR",
+              "arg": 56,
+              "name": "IsCombatAvatar"
+            },
+            {
+              "offset": 850,
+              "opname": "TO_BOOL",
+              "arg": 0
+            },
+            {
+              "offset": 858,
+              "opname": "POP_JUMP_IF_TRUE",
+              "arg": 29
+            },
+            {
+              "offset": 862,
+              "opname": "NOT_TAKEN",
+              "arg": 0
+            },
+            {
+              "offset": 864,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 886,
+          "window": [
+            {
+              "offset": 862,
+              "opname": "NOT_TAKEN",
+              "arg": 0
+            },
+            {
+              "offset": 864,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 866,
+              "opname": "LOAD_ATTR",
+              "arg": 32,
+              "name": "owner"
+            },
+            {
+              "offset": 886,
+              "opname": "LOAD_ATTR",
+              "arg": 58,
+              "name": "IsATMGuardAI"
+            },
+            {
+              "offset": 906,
+              "opname": "TO_BOOL",
+              "arg": 0
+            },
+            {
+              "offset": 914,
+              "opname": "POP_JUMP_IF_FALSE",
+              "arg": 103
+            },
+            {
+              "offset": 918,
+              "opname": "NOT_TAKEN",
+              "arg": 0
+            },
+            {
+              "offset": 920,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 1146,
+          "window": [
+            {
+              "offset": 1114,
+              "opname": "STORE_ATTR",
+              "arg": 33,
+              "name": "owner"
+            },
+            {
+              "offset": 1124,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 1126,
+              "opname": "LOAD_ATTR",
+              "arg": 32,
+              "name": "owner"
+            },
+            {
+              "offset": 1146,
+              "opname": "LOAD_ATTR",
+              "arg": 68,
+              "name": "IsPlayerCombatAvatar"
+            },
+            {
+              "offset": 1166,
+              "opname": "TO_BOOL",
+              "arg": 0
+            },
+            {
+              "offset": 1174,
+              "opname": "POP_JUMP_IF_TRUE",
+              "arg": 29
+            },
+            {
+              "offset": 1178,
+              "opname": "NOT_TAKEN",
+              "arg": 0
+            },
+            {
+              "offset": 1180,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 1348,
+          "window": [
+            {
+              "offset": 1324,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 1326,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            },
+            {
+              "offset": 1328,
+              "opname": "LOAD_ATTR",
+              "arg": 32,
+              "name": "owner"
+            },
+            {
+              "offset": 1348,
+              "opname": "LOAD_ATTR",
+              "arg": 68,
+              "name": "IsPlayerCombatAvatar"
+            },
+            {
+              "offset": 1368,
+              "opname": "TO_BOOL",
+              "arg": 0
+            },
+            {
+              "offset": 1376,
+              "opname": "POP_JUMP_IF_TRUE",
+              "arg": 77
+            },
+            {
+              "offset": 1380,
+              "opname": "NOT_TAKEN",
+              "arg": 0
+            },
+            {
+              "offset": 1382,
+              "opname": "LOAD_DEREF",
+              "arg": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "module_index": 143510,
+      "decoded_sha256": "0a4a57f34d1c8e14e38c08f510f1787f46659e4b2928663cf526797eac8b0ed3",
+      "filename": "gclient/gameplay/logic_base/models/avatar_model.py",
+      "qualname": "AvatarModel.ReloadSkeleton",
+      "firstlineno": 287,
+      "marshal_offset": 10978,
+      "marshal_end": 11674,
+      "names": [
+        "_skeletonIsValid",
+        "model",
+        "Skeleton",
+        "SetExpireCallback",
+        "CheckRecreateSkeletonOnReloaded",
+        "HideTPose",
+        "SkeletonExpireCallback",
+        "__class__",
+        "MObject",
+        "ActorComponent",
+        "force_no_graph",
+        "BindEventSignalNotify"
+      ],
+      "consts": [
+        false,
+        null,
+        true
+      ],
+      "code_hex": {
+        "bytes": 412,
+        "sha256": "a7080554b9d8d0b73dd8e5ab6dc0954a57e461ef94350683839bb77f50604c76",
+        "head_hex": "80 00 52 00 56 00 6e 00 00 00 00 00 00 00 00 00 56 00 50 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 50 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 50 07 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 52 01"
+      },
+      "instruction_count": 60,
+      "actor_parent_component_windows": [
+        {
+          "anchor_offset": 38,
+          "window": [
+            {
+              "offset": 6,
+              "opname": "STORE_ATTR",
+              "arg": 0,
+              "name": "_skeletonIsValid"
+            },
+            {
+              "offset": 16,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 18,
+              "opname": "LOAD_ATTR",
+              "arg": 2,
+              "name": "model"
+            },
+            {
+              "offset": 38,
+              "opname": "LOAD_ATTR",
+              "arg": 4,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 58,
+              "opname": "LOAD_ATTR",
+              "arg": 7,
+              "name": "SetExpireCallback"
+            },
+            {
+              "offset": 78,
+              "opname": "LOAD_CONST",
+              "arg": 1,
+              "const": null
+            },
+            {
+              "offset": 80,
+              "opname": "CALL",
+              "arg": 1
+            },
+            {
+              "offset": 88,
+              "opname": "POP_TOP",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 92,
+          "window": [
+            {
+              "offset": 80,
+              "opname": "CALL",
+              "arg": 1
+            },
+            {
+              "offset": 88,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 90,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 92,
+              "opname": "LOAD_ATTR",
+              "arg": 9,
+              "name": "CheckRecreateSkeletonOnReloaded"
+            },
+            {
+              "offset": 112,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 1
+            },
+            {
+              "offset": 114,
+              "opname": "CALL",
+              "arg": 1
+            },
+            {
+              "offset": 122,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 124,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            }
+          ]
+        },
+        {
+          "anchor_offset": 146,
+          "window": [
+            {
+              "offset": 122,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 124,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 126,
+              "opname": "LOAD_ATTR",
+              "arg": 2,
+              "name": "model"
+            },
+            {
+              "offset": 146,
+              "opname": "LOAD_ATTR",
+              "arg": 4,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 166,
+              "opname": "STORE_FAST",
+              "arg": 2
+            },
+            {
+              "offset": 168,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 2
+            },
+            {
+              "offset": 170,
+              "opname": "TO_BOOL",
+              "arg": 0
+            },
+            {
+              "offset": 178,
+              "opname": "POP_JUMP_IF_FALSE",
+              "arg": 113
+            }
+          ]
+        },
+        {
+          "anchor_offset": 202,
+          "window": [
+            {
+              "offset": 188,
+              "opname": "STORE_ATTR",
+              "arg": 0,
+              "name": "_skeletonIsValid"
+            },
+            {
+              "offset": 198,
+              "opname": "LOAD_CONST",
+              "arg": 2,
+              "const": true
+            },
+            {
+              "offset": 200,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 2
+            },
+            {
+              "offset": 202,
+              "opname": "STORE_ATTR",
+              "arg": 5,
+              "name": "Skeleton"
+            },
+            {
+              "offset": 212,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 2
+            },
+            {
+              "offset": 214,
+              "opname": "LOAD_ATTR",
+              "arg": 7,
+              "name": "SetExpireCallback"
+            },
+            {
+              "offset": 234,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 236,
+              "opname": "LOAD_ATTR",
+              "arg": 12,
+              "name": "SkeletonExpireCallback"
+            }
+          ]
+        },
+        {
+          "anchor_offset": 236,
+          "window": [
+            {
+              "offset": 212,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 2
+            },
+            {
+              "offset": 214,
+              "opname": "LOAD_ATTR",
+              "arg": 7,
+              "name": "SetExpireCallback"
+            },
+            {
+              "offset": 234,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            },
+            {
+              "offset": 236,
+              "opname": "LOAD_ATTR",
+              "arg": 12,
+              "name": "SkeletonExpireCallback"
+            },
+            {
+              "offset": 256,
+              "opname": "CALL",
+              "arg": 1
+            },
+            {
+              "offset": 264,
+              "opname": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 266,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 2
+            },
+            {
+              "offset": 268,
+              "opname": "LOAD_ATTR",
+              "arg": 14,
+              "name": "__class__"
+            }
+          ]
+        },
+        {
+          "anchor_offset": 298,
+          "window": [
+            {
+              "offset": 266,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 2
+            },
+            {
+              "offset": 268,
+              "opname": "LOAD_ATTR",
+              "arg": 14,
+              "name": "__class__"
+            },
+            {
+              "offset": 288,
+              "opname": "LOAD_GLOBAL",
+              "arg": 16,
+              "name": "MObject"
+            },
+            {
+              "offset": 298,
+              "opname": "LOAD_ATTR",
+              "arg": 18,
+              "name": "ActorComponent"
+            },
+            {
+              "offset": 318,
+              "opname": "COMPARE_OP",
+              "arg": 88
+            },
+            {
+              "offset": 322,
+              "opname": "POP_JUMP_IF_FALSE",
+              "arg": 39
+            },
+            {
+              "offset": 326,
+              "opname": "NOT_TAKEN",
+              "arg": 0
+            },
+            {
+              "offset": 328,
+              "opname": "LOAD_FAST_BORROW",
+              "arg": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,794 @@
+[
+  {
+    "name": "Messiah::IObject",
+    "col_rva": "0x6e0f460",
+    "col_pointer_rva": "0x4e4bfe0",
+    "vtable_rva": "0x4e4bfe8",
+    "subobject_offset": 0,
+    "entries": [
+      {
+        "index": 0,
+        "slot_rva": "0x4e4bfe8",
+        "function_rva": "0x172800"
+      },
+      {
+        "index": 1,
+        "slot_rva": "0x4e4bff0",
+        "function_rva": "0x104120"
+      },
+      {
+        "index": 2,
+        "slot_rva": "0x4e4bff8",
+        "function_rva": "0x104120"
+      },
+      {
+        "index": 3,
+        "slot_rva": "0x4e4c000",
+        "function_rva": "0x104120"
+      },
+      {
+        "index": 4,
+        "slot_rva": "0x4e4c008",
+        "function_rva": "0x10e740"
+      }
+    ],
+    "truncated_at_512": false,
+    "extent_status": "candidate run of code pointers; exact C++ virtual method count unproven"
+  },
+  {
+    "name": "Messiah::IComponent",
+    "col_rva": "0x6e103f0",
+    "col_pointer_rva": "0x4e4c7e0",
+    "vtable_rva": "0x4e4c7e8",
+    "subobject_offset": 0,
+    "entries": [
+      {
+        "index": 0,
+        "slot_rva": "0x4e4c7e8",
+        "function_rva": "0x172750"
+      },
+      {
+        "index": 1,
+        "slot_rva": "0x4e4c7f0",
+        "function_rva": "0x104120"
+      },
+      {
+        "index": 2,
+        "slot_rva": "0x4e4c7f8",
+        "function_rva": "0x104120"
+      },
+      {
+        "index": 3,
+        "slot_rva": "0x4e4c800",
+        "function_rva": "0x104120"
+      },
+      {
+        "index": 4,
+        "slot_rva": "0x4e4c808",
+        "function_rva": "0x141760"
+      },
+      {
+        "index": 5,
+        "slot_rva": "0x4e4c810",
+        "function_rva": "0x1737c0"
+      },
+      {
+        "index": 6,
+        "slot_rva": "0x4e4c818",
+        "function_rva": "0x141750"
+      },
+      {
+        "index": 7,
+        "slot_rva": "0x4e4c820",
+        "function_rva": "0x142000"
+      }
+    ],
+    "truncated_at_512": false,
+    "extent_status": "candidate run of code pointers; exact C++ virtual method count unproven"
+  },
+  {
+    "name": "Messiah::ICamera",
+    "col_rva": "0x6e1e1b8",
+    "col_pointer_rva": "0x4e57550",
+    "vtable_rva": "0x4e57558",
+    "subobject_offset": 0,
+    "entries": [
+      {
+        "index": 0,
+        "slot_rva": "0x4e57558",
+        "function_rva": "0x28c830"
+      },
+      {
+        "index": 1,
+        "slot_rva": "0x4e57560",
+        "function_rva": "0x88d410"
+      },
+      {
+        "index": 2,
+        "slot_rva": "0x4e57568",
+        "function_rva": "0x104120"
+      },
+      {
+        "index": 3,
+        "slot_rva": "0x4e57570",
+        "function_rva": "0x104120"
+      },
+      {
+        "index": 4,
+        "slot_rva": "0x4e57578",
+        "function_rva": "0x88d420"
+      },
+      {
+        "index": 5,
+        "slot_rva": "0x4e57580",
+        "function_rva": "0x276320"
+      },
+      {
+        "index": 6,
+        "slot_rva": "0x4e57588",
+        "function_rva": "0x2765b0"
+      },
+      {
+        "index": 7,
+        "slot_rva": "0x4e57590",
+        "function_rva": "0x276ab0"
+      }
+    ],
+    "truncated_at_512": false,
+    "extent_status": "candidate run of code pointers; exact C++ virtual method count unproven"
+  },
+  {
+    "name": "Messiah::IEntity",
+    "col_rva": "0x6e7a378",
+    "col_pointer_rva": "0x4f2a178",
+    "vtable_rva": "0x4f2a180",
+    "subobject_offset": 0,
+    "entries": [
+      {
+        "index": 0,
+        "slot_rva": "0x4f2a180",
+        "function_rva": "0x8a28d0"
+      },
+      {
+        "index": 1,
+        "slot_rva": "0x4f2a188",
+        "function_rva": "0x88d410"
+      },
+      {
+        "index": 2,
+        "slot_rva": "0x4f2a190",
+        "function_rva": "0x104120"
+      },
+      {
+        "index": 3,
+        "slot_rva": "0x4f2a198",
+        "function_rva": "0x104120"
+      },
+      {
+        "index": 4,
+        "slot_rva": "0x4f2a1a0",
+        "function_rva": "0x88d420"
+      },
+      {
+        "index": 5,
+        "slot_rva": "0x4f2a1a8",
+        "function_rva": "0x894270"
+      }
+    ],
+    "truncated_at_512": false,
+    "extent_status": "candidate run of code pointers; exact C++ virtual method count unproven"
+  },
+  {
+    "name": "Messiah::ISkeletonComponent",
+    "col_rva": "0x6e95428",
+    "col_pointer_rva": "0x4f953d8",
+    "vtable_rva": "0x4f953e0",
+    "subobject_offset": 0,
+    "entries": [
+      {
+        "index": 0,
+        "slot_rva": "0x4f953e0",
+        "function_rva": "0xa1c080"
+      },
+      {
+        "index": 1,
+        "slot_rva": "0x4f953e8",
+        "function_rva": "0x104120"
+      },
+      {
+        "index": 2,
+        "slot_rva": "0x4f953f0",
+        "function_rva": "0x104120"
+      },
+      {
+        "index": 3,
+        "slot_rva": "0x4f953f8",
+        "function_rva": "0x104120"
+      },
+      {
+        "index": 4,
+        "slot_rva": "0x4f95400",
+        "function_rva": "0x141760"
+      },
+      {
+        "index": 5,
+        "slot_rva": "0x4f95408",
+        "function_rva": "0x1737c0"
+      },
+      {
+        "index": 6,
+        "slot_rva": "0x4f95410",
+        "function_rva": "0x141750"
+      },
+      {
+        "index": 7,
+        "slot_rva": "0x4f95418",
+        "function_rva": "0xa031f0"
+      },
+      {
+        "index": 8,
+        "slot_rva": "0x4f95420",
+        "function_rva": "0x4250ebc"
+      },
+      {
+        "index": 9,
+        "slot_rva": "0x4f95428",
+        "function_rva": "0x102e10"
+      },
+      {
+        "index": 10,
+        "slot_rva": "0x4f95430",
+        "function_rva": "0x4250ebc"
+      },
+      {
+        "index": 11,
+        "slot_rva": "0x4f95438",
+        "function_rva": "0x4250ebc"
+      },
+      {
+        "index": 12,
+        "slot_rva": "0x4f95440",
+        "function_rva": "0x4250ebc"
+      },
+      {
+        "index": 13,
+        "slot_rva": "0x4f95448",
+        "function_rva": "0x4250ebc"
+      },
+      {
+        "index": 14,
+        "slot_rva": "0x4f95450",
+        "function_rva": "0xa03930"
+      },
+      {
+        "index": 15,
+        "slot_rva": "0x4f95458",
+        "function_rva": "0xa03940"
+      },
+      {
+        "index": 16,
+        "slot_rva": "0x4f95460",
+        "function_rva": "0xa03950"
+      }
+    ],
+    "truncated_at_512": false,
+    "extent_status": "candidate run of code pointers; exact C++ virtual method count unproven"
+  },
+  {
+    "name": "Messiah::ISkeletonComponent",
+    "col_rva": "0x6e95450",
+    "col_pointer_rva": "0x4f95468",
+    "vtable_rva": "0x4f95470",
+    "subobject_offset": 104,
+    "entries": [
+      {
+        "index": 0,
+        "slot_rva": "0x4f95470",
+        "function_rva": "0xa1bb68"
+      },
+      {
+        "index": 1,
+        "slot_rva": "0x4f95478",
+        "function_rva": "0x104120"
+      },
+      {
+        "index": 2,
+        "slot_rva": "0x4f95480",
+        "function_rva": "0x104120"
+      },
+      {
+        "index": 3,
+        "slot_rva": "0x4f95488",
+        "function_rva": "0x104120"
+      },
+      {
+        "index": 4,
+        "slot_rva": "0x4f95490",
+        "function_rva": "0x104120"
+      }
+    ],
+    "truncated_at_512": false,
+    "extent_status": "candidate run of code pointers; exact C++ virtual method count unproven"
+  },
+  {
+    "name": "Messiah::SkeletonComponent",
+    "col_rva": "0x6ea7be0",
+    "col_pointer_rva": "0x4fa2298",
+    "vtable_rva": "0x4fa22a0",
+    "subobject_offset": 0,
+    "entries": [
+      {
+        "index": 0,
+        "slot_rva": "0x4fa22a0",
+        "function_rva": "0xb11a00"
+      },
+      {
+        "index": 1,
+        "slot_rva": "0x4fa22a8",
+        "function_rva": "0x104120"
+      },
+      {
+        "index": 2,
+        "slot_rva": "0x4fa22b0",
+        "function_rva": "0x104120"
+      },
+      {
+        "index": 3,
+        "slot_rva": "0x4fa22b8",
+        "function_rva": "0x104120"
+      },
+      {
+        "index": 4,
+        "slot_rva": "0x4fa22c0",
+        "function_rva": "0x141760"
+      },
+      {
+        "index": 5,
+        "slot_rva": "0x4fa22c8",
+        "function_rva": "0x1737c0"
+      },
+      {
+        "index": 6,
+        "slot_rva": "0x4fa22d0",
+        "function_rva": "0x141750"
+      },
+      {
+        "index": 7,
+        "slot_rva": "0x4fa22d8",
+        "function_rva": "0xae2300"
+      },
+      {
+        "index": 8,
+        "slot_rva": "0x4fa22e0",
+        "function_rva": "0xad6510"
+      },
+      {
+        "index": 9,
+        "slot_rva": "0x4fa22e8",
+        "function_rva": "0xad6560"
+      },
+      {
+        "index": 10,
+        "slot_rva": "0x4fa22f0",
+        "function_rva": "0xad65b0"
+      },
+      {
+        "index": 11,
+        "slot_rva": "0x4fa22f8",
+        "function_rva": "0xad65c0"
+      },
+      {
+        "index": 12,
+        "slot_rva": "0x4fa2300",
+        "function_rva": "0xad6600"
+      },
+      {
+        "index": 13,
+        "slot_rva": "0x4fa2308",
+        "function_rva": "0xad66d0"
+      },
+      {
+        "index": 14,
+        "slot_rva": "0x4fa2310",
+        "function_rva": "0xae2800"
+      },
+      {
+        "index": 15,
+        "slot_rva": "0x4fa2318",
+        "function_rva": "0xae2930"
+      },
+      {
+        "index": 16,
+        "slot_rva": "0x4fa2320",
+        "function_rva": "0xae29d0"
+      },
+      {
+        "index": 17,
+        "slot_rva": "0x4fa2328",
+        "function_rva": "0xad6700"
+      },
+      {
+        "index": 18,
+        "slot_rva": "0x4fa2330",
+        "function_rva": "0xad6750"
+      },
+      {
+        "index": 19,
+        "slot_rva": "0x4fa2338",
+        "function_rva": "0x173850"
+      },
+      {
+        "index": 20,
+        "slot_rva": "0x4fa2340",
+        "function_rva": "0xad6760"
+      },
+      {
+        "index": 21,
+        "slot_rva": "0x4fa2348",
+        "function_rva": "0xad6bf0"
+      },
+      {
+        "index": 22,
+        "slot_rva": "0x4fa2350",
+        "function_rva": "0xada160"
+      },
+      {
+        "index": 23,
+        "slot_rva": "0x4fa2358",
+        "function_rva": "0x187810"
+      },
+      {
+        "index": 24,
+        "slot_rva": "0x4fa2360",
+        "function_rva": "0x102e10"
+      },
+      {
+        "index": 25,
+        "slot_rva": "0x4fa2368",
+        "function_rva": "0xae2a80"
+      },
+      {
+        "index": 26,
+        "slot_rva": "0x4fa2370",
+        "function_rva": "0xae2c60"
+      },
+      {
+        "index": 27,
+        "slot_rva": "0x4fa2378",
+        "function_rva": "0xae3180"
+      },
+      {
+        "index": 28,
+        "slot_rva": "0x4fa2380",
+        "function_rva": "0x104120"
+      }
+    ],
+    "truncated_at_512": false,
+    "extent_status": "candidate run of code pointers; exact C++ virtual method count unproven"
+  },
+  {
+    "name": "Messiah::SkeletonComponent",
+    "col_rva": "0x6ea7c78",
+    "col_pointer_rva": "0x4fa2388",
+    "vtable_rva": "0x4fa2390",
+    "subobject_offset": 104,
+    "entries": [
+      {
+        "index": 0,
+        "slot_rva": "0x4fa2390",
+        "function_rva": "0xb1070c"
+      },
+      {
+        "index": 1,
+        "slot_rva": "0x4fa2398",
+        "function_rva": "0xae2cf0"
+      },
+      {
+        "index": 2,
+        "slot_rva": "0x4fa23a0",
+        "function_rva": "0xae2d10"
+      },
+      {
+        "index": 3,
+        "slot_rva": "0x4fa23a8",
+        "function_rva": "0xae3080"
+      },
+      {
+        "index": 4,
+        "slot_rva": "0x4fa23b0",
+        "function_rva": "0xae3410"
+      }
+    ],
+    "truncated_at_512": false,
+    "extent_status": "candidate run of code pointers; exact C++ virtual method count unproven"
+  },
+  {
+    "name": "Character::Actor",
+    "col_rva": "0x6f481c8",
+    "col_pointer_rva": "0x5565058",
+    "vtable_rva": "0x5565060",
+    "subobject_offset": 0,
+    "entries": [
+      {
+        "index": 0,
+        "slot_rva": "0x5565060",
+        "function_rva": "0x16f7460"
+      },
+      {
+        "index": 1,
+        "slot_rva": "0x5565068",
+        "function_rva": "0x173830"
+      },
+      {
+        "index": 2,
+        "slot_rva": "0x5565070",
+        "function_rva": "0x11891b0"
+      },
+      {
+        "index": 3,
+        "slot_rva": "0x5565078",
+        "function_rva": "0x18a87f0"
+      },
+      {
+        "index": 4,
+        "slot_rva": "0x5565080",
+        "function_rva": "0x16d58c0"
+      },
+      {
+        "index": 5,
+        "slot_rva": "0x5565088",
+        "function_rva": "0x16d17d0"
+      },
+      {
+        "index": 6,
+        "slot_rva": "0x5565090",
+        "function_rva": "0x16d17e0"
+      },
+      {
+        "index": 7,
+        "slot_rva": "0x5565098",
+        "function_rva": "0x16d1e10"
+      },
+      {
+        "index": 8,
+        "slot_rva": "0x55650a0",
+        "function_rva": "0x16d1a90"
+      },
+      {
+        "index": 9,
+        "slot_rva": "0x55650a8",
+        "function_rva": "0x16d1d50"
+      },
+      {
+        "index": 10,
+        "slot_rva": "0x55650b0",
+        "function_rva": "0x16d5e20"
+      }
+    ],
+    "truncated_at_512": false,
+    "extent_status": "candidate run of code pointers; exact C++ virtual method count unproven"
+  },
+  {
+    "name": "Messiah::ActorComponent",
+    "col_rva": "0x6f72620",
+    "col_pointer_rva": "0x559b8f0",
+    "vtable_rva": "0x559b8f8",
+    "subobject_offset": 0,
+    "entries": [
+      {
+        "index": 0,
+        "slot_rva": "0x559b8f8",
+        "function_rva": "0x1a1e560"
+      },
+      {
+        "index": 1,
+        "slot_rva": "0x559b900",
+        "function_rva": "0x104120"
+      },
+      {
+        "index": 2,
+        "slot_rva": "0x559b908",
+        "function_rva": "0x104120"
+      },
+      {
+        "index": 3,
+        "slot_rva": "0x559b910",
+        "function_rva": "0x104120"
+      },
+      {
+        "index": 4,
+        "slot_rva": "0x559b918",
+        "function_rva": "0x141760"
+      },
+      {
+        "index": 5,
+        "slot_rva": "0x559b920",
+        "function_rva": "0x1737c0"
+      },
+      {
+        "index": 6,
+        "slot_rva": "0x559b928",
+        "function_rva": "0x141750"
+      },
+      {
+        "index": 7,
+        "slot_rva": "0x559b930",
+        "function_rva": "0x19d4aa0"
+      },
+      {
+        "index": 8,
+        "slot_rva": "0x559b938",
+        "function_rva": "0xad6510"
+      },
+      {
+        "index": 9,
+        "slot_rva": "0x559b940",
+        "function_rva": "0xad6560"
+      },
+      {
+        "index": 10,
+        "slot_rva": "0x559b948",
+        "function_rva": "0xad65b0"
+      },
+      {
+        "index": 11,
+        "slot_rva": "0x559b950",
+        "function_rva": "0xad65c0"
+      },
+      {
+        "index": 12,
+        "slot_rva": "0x559b958",
+        "function_rva": "0xad6600"
+      },
+      {
+        "index": 13,
+        "slot_rva": "0x559b960",
+        "function_rva": "0xad66d0"
+      },
+      {
+        "index": 14,
+        "slot_rva": "0x559b968",
+        "function_rva": "0x19d4b00"
+      },
+      {
+        "index": 15,
+        "slot_rva": "0x559b970",
+        "function_rva": "0x19d4eb0"
+      },
+      {
+        "index": 16,
+        "slot_rva": "0x559b978",
+        "function_rva": "0x19d5140"
+      },
+      {
+        "index": 17,
+        "slot_rva": "0x559b980",
+        "function_rva": "0xad6700"
+      },
+      {
+        "index": 18,
+        "slot_rva": "0x559b988",
+        "function_rva": "0x19d09c0"
+      },
+      {
+        "index": 19,
+        "slot_rva": "0x559b990",
+        "function_rva": "0x1a1fd30"
+      },
+      {
+        "index": 20,
+        "slot_rva": "0x559b998",
+        "function_rva": "0x19c0000"
+      },
+      {
+        "index": 21,
+        "slot_rva": "0x559b9a0",
+        "function_rva": "0x19c0080"
+      },
+      {
+        "index": 22,
+        "slot_rva": "0x559b9a8",
+        "function_rva": "0x19d0a40"
+      },
+      {
+        "index": 23,
+        "slot_rva": "0x559b9b0",
+        "function_rva": "0x19d60a0"
+      },
+      {
+        "index": 24,
+        "slot_rva": "0x559b9b8",
+        "function_rva": "0x1a21510"
+      },
+      {
+        "index": 25,
+        "slot_rva": "0x559b9c0",
+        "function_rva": "0x19d46c0"
+      },
+      {
+        "index": 26,
+        "slot_rva": "0x559b9c8",
+        "function_rva": "0xae2c60"
+      },
+      {
+        "index": 27,
+        "slot_rva": "0x559b9d0",
+        "function_rva": "0x19d5260"
+      },
+      {
+        "index": 28,
+        "slot_rva": "0x559b9d8",
+        "function_rva": "0x19d7100"
+      },
+      {
+        "index": 29,
+        "slot_rva": "0x559b9e0",
+        "function_rva": "0x19d46e0"
+      }
+    ],
+    "truncated_at_512": false,
+    "extent_status": "candidate run of code pointers; exact C++ virtual method count unproven"
+  },
+  {
+    "name": "Messiah::ActorComponent",
+    "col_rva": "0x6f726c0",
+    "col_pointer_rva": "0x559b9e8",
+    "vtable_rva": "0x559b9f0",
+    "subobject_offset": 104,
+    "entries": [
+      {
+        "index": 0,
+        "slot_rva": "0x559b9f0",
+        "function_rva": "0x1a1e2fc"
+      },
+      {
+        "index": 1,
+        "slot_rva": "0x559b9f8",
+        "function_rva": "0x19d5180"
+      },
+      {
+        "index": 2,
+        "slot_rva": "0x559ba00",
+        "function_rva": "0x19d5200"
+      },
+      {
+        "index": 3,
+        "slot_rva": "0x559ba08",
+        "function_rva": "0x19d5240"
+      },
+      {
+        "index": 4,
+        "slot_rva": "0x559ba10",
+        "function_rva": "0x19d5520"
+      }
+    ],
+    "truncated_at_512": false,
+    "extent_status": "candidate run of code pointers; exact C++ virtual method count unproven"
+  },
+  {
+    "name": "Messiah::PythonAsyncoreModule",
+    "col_rva": "0x6fb8260",
+    "col_pointer_rva": "0x55ca870",
+    "vtable_rva": "0x55ca878",
+    "subobject_offset": 0,
+    "entries": [
+      {
+        "index": 0,
+        "slot_rva": "0x55ca878",
+        "function_rva": "0x1cf45c0"
+      },
+      {
+        "index": 1,
+        "slot_rva": "0x55ca880",
+        "function_rva": "0x1cf4580"
+      },
+      {
+        "index": 2,
+        "slot_rva": "0x55ca888",
+        "function_rva": "0x1cf4590"
+      }
+    ],
+    "truncated_at_512": false,
+    "extent_status": "candidate run of code pointers; exact C++ virtual method count unproven"
+  }
+]

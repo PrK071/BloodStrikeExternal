@@ -1,0 +1,60 @@
+{
+  "status": "PASS_SELECTED_EVIDENCE",
+  "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "binary": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\BloodStrike.exe",
+  "generated_utc": "2026-10-21T04:40:29.228815+00:00",
+  "image_base_preferred": "0x140000000",
+  "runtime_records_scanned": 309153,
+  "decoded_discovery_records": 18587982,
+  "invalid_discovery_records": 11007,
+  "global_reference_records": 77,
+  "root_direct_references": 21,
+  "getter_direct_references": 6,
+  "cfg_entries": 75,
+  "unique_reachable_instructions": 8018,
+  "second_decoder_mismatches": [],
+  "independent_rip_target_checks": 282,
+  "independent_branch_target_checks": 1606,
+  "indirect_transfers": 121,
+  "cfg_entries_crossing_unwind": 8,
+  "unclosed_cfg_targets": {
+    "0x10e1f0": [
+      "0x424c1b0"
+    ],
+    "0x10e410": [
+      "0x424c1b0"
+    ],
+    "0xa030d0": [
+      "0x1416d0"
+    ],
+    "0xad6090": [
+      "0x1416d0"
+    ],
+    "0x16d17d0": [
+      "0x1163300"
+    ],
+    "0x19bfb60": [
+      "0xad6090"
+    ],
+    "0x19d7b40": [
+      "0x899eb0"
+    ],
+    "0x2d82b80": [
+      "0x424c1b0"
+    ],
+    "0x3226aa0": [
+      "0x34c790"
+    ]
+  },
+  "mask_candidate_accesses": 10398,
+  "claims_by_status": {
+    "CONFIRMADA": 9,
+    "PARCIAL": 4,
+    "DESCARTADA": 2
+  },
+  "old_artifacts_unchanged": true,
+  "sample_hash_rechecked": true,
+  "runtime_game_access": false,
+  "seconds": 20.62,
+  "limitations": "PASS applies only to selected byte/length/metadata evidence. Discovery decode is not a whole-image validity or reachability result. Direct calls are separate CFG seeds; unresolved indirect transfers and external tails remain explicit."
+}

@@ -1,0 +1,2148 @@
+{
+  "status": "ZLIB_EOF_CHECKSUM_PASS_WITH_TRAILERS",
+  "index_sha256": "bb3782da03b95d66451a598add8fe0923405be0dde53a8844b2f8bc107a6ced3",
+  "entries": 130,
+  "results": [
+    {
+      "index": 22450,
+      "opaque_id": "0xfab3d3e234333623",
+      "package": 0,
+      "offset": 63653438,
+      "size": 120,
+      "compressed_sha256": "fb9428becc2db5e1044a9d84626f638e9b5fbe3395d07c83899b4947d9461a00",
+      "decoded_sha256": "593e8915823362b25c6d4a85422ee3ffd112febf664f9fa710d48e17adc91207",
+      "decoded_size": 134,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_rookieguide/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4f c9 c9 c9",
+      "unused_sha256": "7f8c52847d53fe6937b9900b57e95c5fe8500f7aff95f2045b023d1c854a716e"
+    },
+    {
+      "index": 8917,
+      "opaque_id": "0xa26babb763636623",
+      "package": 0,
+      "offset": 71829398,
+      "size": 105,
+      "compressed_sha256": "63881e4d0d3a1e2797b49770eeea3257be4d69f9408a1cba8676a9ea3d5f40e9",
+      "decoded_sha256": "128e49299cb62a1e035c48d4195b4f46e7142f66bbfaa9312315f9dcba3c5a22",
+      "decoded_size": 125,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/data_lang/data_in/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b b4 c9 c9 c9",
+      "unused_sha256": "14f05549e8e4513f46508a7ec096fbbd86ac9bfc92596694f99034d99bb02988"
+    },
+    {
+      "index": 9437,
+      "opaque_id": "0x2409c09161306623",
+      "package": 0,
+      "offset": 100733875,
+      "size": 120,
+      "compressed_sha256": "e804f143925225e168eafa985a2edecdb4dbfd37ae5cc64a9b526fa2f973c54b",
+      "decoded_sha256": "d8adc1fd2990fc59c4350137ba318f3697d6573d3edfb4ceefc57acd0eb8ddef",
+      "decoded_size": 134,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_grand_theft/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4f c9 c9 c9",
+      "unused_sha256": "7f8c52847d53fe6937b9900b57e95c5fe8500f7aff95f2045b023d1c854a716e"
+    },
+    {
+      "index": 25248,
+      "opaque_id": "0x12a9ec4935613823",
+      "package": 0,
+      "offset": 107108125,
+      "size": 121,
+      "compressed_sha256": "d845018621086494db19b2cc1a565da34d4584b15acceed9be979d725a28fa3c",
+      "decoded_sha256": "b1a7d3092dddef7bb043ad2c931aaa5560024d29c8e3a5271fb307f2221f41ad",
+      "decoded_size": 135,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_blasting/bot/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4e c9 c9 c9",
+      "unused_sha256": "1403222e4a5b4e89fcc9730186ec6be6e0ebe84660dfba74eb724ccfb84d5db8"
+    },
+    {
+      "index": 3501,
+      "opaque_id": "0x6eedadc166623723",
+      "package": 0,
+      "offset": 108241564,
+      "size": 119,
+      "compressed_sha256": "61b68729fb363f6632d932f130aa6c6dd17a82f55a18c95a010b69cced0dc45c",
+      "decoded_sha256": "085b2ab14046d0dac3718080c39664c1e085d42fd5a439a319da02dd12264056",
+      "decoded_size": 133,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_team_death/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4c c9 c9 c9",
+      "unused_sha256": "1dd177d64f0d0627c39efbfb940d99367de50f4538b06231f4806096d5828006"
+    },
+    {
+      "index": 34766,
+      "opaque_id": "0x3f795bd865343623",
+      "package": 0,
+      "offset": 112399894,
+      "size": 121,
+      "compressed_sha256": "c1853fcb3c63f2ab6840998bd8ead6115558d321a649c835a40742b91db06548",
+      "decoded_sha256": "80de112d7600c0d21009d3522e7c7b0b6530106caef256f25a5c12284cb464a4",
+      "decoded_size": 140,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_snipe/logic_comps/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 45 c9 c9 c9",
+      "unused_sha256": "70af865b6c6430282becbe9bc783d81d9d3b46d5fa9cb32febc1f7dce0b0f856"
+    },
+    {
+      "index": 26824,
+      "opaque_id": "0x4c244ac833663823",
+      "package": 0,
+      "offset": 114378435,
+      "size": 99,
+      "compressed_sha256": "8e1e622ac8e2939d892691b9ee76c58632062c84e1ca081285ce809ebf71f1fe",
+      "decoded_sha256": "8e5213ec70799dc326b8a24f49a082210aa127b892956c8e5f27e5ab8664f868",
+      "decoded_size": 113,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b b8 c9 c9 c9",
+      "unused_sha256": "7f52ccbe2f5a0f19ef7ab413aac55ae47194904a7484fa0697b8332122513c72"
+    },
+    {
+      "index": 36048,
+      "opaque_id": "0xe06a1a363663123",
+      "package": 0,
+      "offset": 118269531,
+      "size": 120,
+      "compressed_sha256": "c165d9422ed946ec5968891914082b7772edee9621d79e9135f04849b7514ae7",
+      "decoded_sha256": "aadfef1f3b862c8c0a7a144cf97e2bc179a66693bc6a9ce12ed94079ca82c9af",
+      "decoded_size": 134,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/framework/ui/director_comp/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4f c9 c9 c9",
+      "unused_sha256": "7f8c52847d53fe6937b9900b57e95c5fe8500f7aff95f2045b023d1c854a716e"
+    },
+    {
+      "index": 41764,
+      "opaque_id": "0xcb18357a31323323",
+      "package": 0,
+      "offset": 148373020,
+      "size": 103,
+      "compressed_sha256": "06d933d3d3a271607a241d1f36421ceb6d8c0b203294dc43e71a270576625da0",
+      "decoded_sha256": "61a6a836042982cad0492e900cafd6870ad4ddf390fcbf12080ddc2695a4fc5a",
+      "decoded_size": 117,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/ui/common/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b bc c9 c9 c9",
+      "unused_sha256": "dbe50acdc0de7803a3792e9d6bc7328f595f34b2a50a51c21d75ff0dcf30fb31"
+    },
+    {
+      "index": 41797,
+      "opaque_id": "0x62044c331306423",
+      "package": 0,
+      "offset": 148538013,
+      "size": 123,
+      "compressed_sha256": "0218ddd2231052dbd8ecfd31e311b9033601cee28036b7f7938f5b6d0307630c",
+      "decoded_sha256": "77d0e1e3a069153a432ed3931f0f533af8e87992cf8b0f0e2fabbb967c307d02",
+      "decoded_size": 137,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_halloween/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 40 c9 c9 c9",
+      "unused_sha256": "e380297b2bf46997d90c70fefa9da3f529ec9193fb4f140af34e5bd1b4c5e07e"
+    },
+    {
+      "index": 24343,
+      "opaque_id": "0x49b594c230363123",
+      "package": 0,
+      "offset": 151544027,
+      "size": 123,
+      "compressed_sha256": "4042dfbe06df020cddb8f43f3881eb7b228238760468f6f653a5bbaaa5e3b0da",
+      "decoded_sha256": "2cd324420456c09722b7359858b90240aac8062f6283a3bafc3a6537c7e7609f",
+      "decoded_size": 137,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_first/bot/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 40 c9 c9 c9",
+      "unused_sha256": "e380297b2bf46997d90c70fefa9da3f529ec9193fb4f140af34e5bd1b4c5e07e"
+    },
+    {
+      "index": 23917,
+      "opaque_id": "0xb0a8317b32313523",
+      "package": 0,
+      "offset": 152893296,
+      "size": 122,
+      "compressed_sha256": "d33c45cad74566e732c8f90f1bebfe71226b4cfb16669b893a1d4e8f5b1f14d3",
+      "decoded_sha256": "6905e852a03443c17371737187733d3cfe62c8e08f87a25e305fb935480657e7",
+      "decoded_size": 136,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_first/ui/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 41 c9 c9 c9",
+      "unused_sha256": "3ade7271c6dcee1aaec8a424b3078171318d2b16c168ac3c4efd727beb0aefd6"
+    },
+    {
+      "index": 6561,
+      "opaque_id": "0xf10417f834653823",
+      "package": 0,
+      "offset": 153473332,
+      "size": 122,
+      "compressed_sha256": "c75017eeed1ddeff1b4eecdeab224704d0d58bfd11a8b0d05f6dcc2456097d38",
+      "decoded_sha256": "a80700502f324e373972bc3b5debb903e9c6b697523ba259dcfa29289779d506",
+      "decoded_size": 139,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gamesystem/uihall/ui_dlc_center/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 42 c9 c9 c9",
+      "unused_sha256": "e43b4816a0c68f769945106137b76b0d2120a92aab56e41a0c876801a9945042"
+    },
+    {
+      "index": 13600,
+      "opaque_id": "0xdc57343738393823",
+      "package": 0,
+      "offset": 156579469,
+      "size": 101,
+      "compressed_sha256": "1567bb7316ba8e556d034123c18dcb19d0ef2325b31c411b2014258237714364",
+      "decoded_sha256": "3f8d3781c97dd26e4a00cf12ac36f0f890f790fe494ce339ab3896bdf155fcce",
+      "decoded_size": 115,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "engine/Lib/gcgo/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b ba c9 c9 c9",
+      "unused_sha256": "024094810170f6a18f058750f2f1a7682e1753e8456dc71ea9116c64188abfaf"
+    },
+    {
+      "index": 16944,
+      "opaque_id": "0x541cd5e031316523",
+      "package": 0,
+      "offset": 161196278,
+      "size": 122,
+      "compressed_sha256": "7c9ace043d31029e44be778dc8ff929f92f5cd9f9b448801d291db4d4027e5f8",
+      "decoded_sha256": "6332afce226238b3f7ff594414e32306260f0448af4d21605e9105c325e93b9c",
+      "decoded_size": 137,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_nowhere/models/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 40 c9 c9 c9",
+      "unused_sha256": "e380297b2bf46997d90c70fefa9da3f529ec9193fb4f140af34e5bd1b4c5e07e"
+    },
+    {
+      "index": 44952,
+      "opaque_id": "0x887ccfab33663123",
+      "package": 0,
+      "offset": 166278058,
+      "size": 120,
+      "compressed_sha256": "e5ffcfe85c504b01d8d590b038bc613f4a136ce78503f4acd19cd42971502a06",
+      "decoded_sha256": "95d98962bc3486bf7ec1856c9a78ec2861e844cb7322a4fbbe4c1c1a11459cd9",
+      "decoded_size": 134,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gamesystem/uihall/activity/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4f c9 c9 c9",
+      "unused_sha256": "7f8c52847d53fe6937b9900b57e95c5fe8500f7aff95f2045b023d1c854a716e"
+    },
+    {
+      "index": 17070,
+      "opaque_id": "0x200d020c63386123",
+      "package": 0,
+      "offset": 170920219,
+      "size": 121,
+      "compressed_sha256": "869f8d7908898f7c8607a625a6cf9e835049a3446ce176c4ca0a3932cadc62f3",
+      "decoded_sha256": "9665c759b5bd5796b7d93d0338d9f9987dc5c4e228c73c6cbed0300eff4c13aa",
+      "decoded_size": 135,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_mega/ui/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4e c9 c9 c9",
+      "unused_sha256": "1403222e4a5b4e89fcc9730186ec6be6e0ebe84660dfba74eb724ccfb84d5db8"
+    },
+    {
+      "index": 38595,
+      "opaque_id": "0xc4f1fa5339383823",
+      "package": 0,
+      "offset": 180301186,
+      "size": 103,
+      "compressed_sha256": "300343b920f6cf05142ca8d8c468bca7d869bbafc2d73098bdb8abf593aa7039",
+      "decoded_sha256": "1f99bb78cc56f1a64a247d572455369e58ea7d2accb4111994cdecad2d7064e3",
+      "decoded_size": 117,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/data_lang/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b bc c9 c9 c9",
+      "unused_sha256": "dbe50acdc0de7803a3792e9d6bc7328f595f34b2a50a51c21d75ff0dcf30fb31"
+    },
+    {
+      "index": 49375,
+      "opaque_id": "0xca025d3764396123",
+      "package": 0,
+      "offset": 204296623,
+      "size": 100,
+      "compressed_sha256": "a8fe0dfc7767c94593b0d92a8f014cd4293d374ec9bbc1da63212e905cb2b251",
+      "decoded_sha256": "0d86488d2f79fa673b75eb456970d521022e52b925586eea59094b785ad73f91",
+      "decoded_size": 114,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b bb c9 c9 c9",
+      "unused_sha256": "afebe4614f70501c15fef5b1a45fc60645fe1bd369570a803911b6b83d7b58af"
+    },
+    {
+      "index": 51872,
+      "opaque_id": "0xa6f5654662316123",
+      "package": 0,
+      "offset": 220816596,
+      "size": 98,
+      "compressed_sha256": "521c96fe9bddd435848a855859cebbd4c5aa660e5e30b6c75df1c03c05bbf2b3",
+      "decoded_sha256": "b56ae3009c63fbf9663ad15ce889c63e2c88b068d642e603cbbd45c38c09fd1f",
+      "decoded_size": 112,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/util/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b b9 c9 c9 c9",
+      "unused_sha256": "072cf62ba932ba674cb343f64020601fbea4595839490c84451ef06409c3bf65"
+    },
+    {
+      "index": 17017,
+      "opaque_id": "0x7aa2d4533383723",
+      "package": 0,
+      "offset": 240420044,
+      "size": 122,
+      "compressed_sha256": "d813053d985c16d61c801110d9aa178bd0da40f52daf9a655aaf016c4abfb75a",
+      "decoded_sha256": "eb7e80bb7db8147fbb0e9eb44e1637ff2aadf10f40f63a02400959fd805d02ee",
+      "decoded_size": 136,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gamesystem/uihall/gunupgrade/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 41 c9 c9 c9",
+      "unused_sha256": "3ade7271c6dcee1aaec8a424b3078171318d2b16c168ac3c4efd727beb0aefd6"
+    },
+    {
+      "index": 20231,
+      "opaque_id": "0x38e0793432623023",
+      "package": 0,
+      "offset": 244599901,
+      "size": 95,
+      "compressed_sha256": "fd1bb64c4717eb9aec1304de6dc01ac19d0a82ae3383c3187462c8cc5be4bcef",
+      "decoded_sha256": "f470df3256aae0353971f619a08749264c641ceb6bb17e8707676f9b229ca008",
+      "decoded_size": 109,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b a4 c9 c9 c9",
+      "unused_sha256": "7f2e96995853fb6c36e1f193c266723f82bc36723c4c76380aa17193c845a2f7"
+    },
+    {
+      "index": 12048,
+      "opaque_id": "0x570dd50135396423",
+      "package": 0,
+      "offset": 271838556,
+      "size": 121,
+      "compressed_sha256": "f2ff71cbf300fa972ba6667b2989135c66d5a85d27a8131bcb32a99e0b205810",
+      "decoded_sha256": "1a71f8354091067c3c9ed55fbb3f0d8749ae37d7537b3d31b992772910b86d20",
+      "decoded_size": 137,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gamesystem/uiwarehouse/panpan/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 40 c9 c9 c9",
+      "unused_sha256": "e380297b2bf46997d90c70fefa9da3f529ec9193fb4f140af34e5bd1b4c5e07e"
+    },
+    {
+      "index": 59805,
+      "opaque_id": "0x4f6d752566636523",
+      "package": 0,
+      "offset": 275096274,
+      "size": 121,
+      "compressed_sha256": "964d76dc912ac83ad2d3111d9a8c48b3f6c8d6fc27b2778eb0b71b77e7b10bb9",
+      "decoded_sha256": "e23382e8cb90af223f1784c9930f50d4ffef3957b1060698e96baa50fd5d1ecc",
+      "decoded_size": 135,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "engine/Lib/google/protobuf/compiler/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4e c9 c9 c9",
+      "unused_sha256": "1403222e4a5b4e89fcc9730186ec6be6e0ebe84660dfba74eb724ccfb84d5db8"
+    },
+    {
+      "index": 63225,
+      "opaque_id": "0xc287689465623423",
+      "package": 0,
+      "offset": 298987980,
+      "size": 105,
+      "compressed_sha256": "0d22a03f561313ccad38bd8dbe78881ddb7e77a89baa994a8992001dfd9a6dbd",
+      "decoded_sha256": "b2994629b6ce24289dc2e5c1a7bb6f912f192b7073aa68b284fdcbfd7439838e",
+      "decoded_size": 122,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b b3 c9 c9 c9",
+      "unused_sha256": "a324f19b07d50126b5644c1294f82aedeec3013e898980686203bdb869161011"
+    },
+    {
+      "index": 63261,
+      "opaque_id": "0x607643b033366523",
+      "package": 0,
+      "offset": 299138438,
+      "size": 100,
+      "compressed_sha256": "8b6ea0bb885bb29ceae5ddd6e99ac4d0ba617693c0a238f36781f1b83aa9c331",
+      "decoded_sha256": "3d024cb87bf0db5f50fdb8e58ea950d058a9f1988740b4d5c9b28a04372d1f47",
+      "decoded_size": 114,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b bb c9 c9 c9",
+      "unused_sha256": "afebe4614f70501c15fef5b1a45fc60645fe1bd369570a803911b6b83d7b58af"
+    },
+    {
+      "index": 62688,
+      "opaque_id": "0x864f85f536623623",
+      "package": 0,
+      "offset": 302381807,
+      "size": 121,
+      "compressed_sha256": "6a9b984253ae2269cda8d0529d5950143b801760c20e89041a9c9a741830cddb",
+      "decoded_sha256": "4e6083cf858658ecd3df8a2fc8f12857bf4802d2ab0f9da0b08f3c4476fcfc09",
+      "decoded_size": 135,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_titan_2/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4e c9 c9 c9",
+      "unused_sha256": "1403222e4a5b4e89fcc9730186ec6be6e0ebe84660dfba74eb724ccfb84d5db8"
+    },
+    {
+      "index": 65384,
+      "opaque_id": "0xca871d163343323",
+      "package": 0,
+      "offset": 316484205,
+      "size": 121,
+      "compressed_sha256": "f3c8f0ce1387385e79ca0b2f9b7f00d96ae24e8d791753d71535981a339745d0",
+      "decoded_sha256": "9dc9a8fd267ef88cd32765a91aa61bcbb569fea425d9c068cb8aa5970afabc14",
+      "decoded_size": 135,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_peak/ui/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4e c9 c9 c9",
+      "unused_sha256": "1403222e4a5b4e89fcc9730186ec6be6e0ebe84660dfba74eb724ccfb84d5db8"
+    },
+    {
+      "index": 66516,
+      "opaque_id": "0xd13ec7fa34343623",
+      "package": 0,
+      "offset": 326239515,
+      "size": 119,
+      "compressed_sha256": "89532e6c115462e7fae8274626f8fe2bfa7aed343b0eebd46d07e05825f40935",
+      "decoded_sha256": "91b9d54b7767896eb8e229d370079168de2d5500938934f330af29e3422593ab",
+      "decoded_size": 133,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_first/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4c c9 c9 c9",
+      "unused_sha256": "1dd177d64f0d0627c39efbfb940d99367de50f4538b06231f4806096d5828006"
+    },
+    {
+      "index": 67412,
+      "opaque_id": "0xcca15d2f61346323",
+      "package": 0,
+      "offset": 333357748,
+      "size": 99,
+      "compressed_sha256": "f2fc5c0a774d4f04f786c9c228b6159249c25a8786b0b1a55a8dc7fcc149bd41",
+      "decoded_sha256": "0244aae7946c911521b82f5b4d3e478868945f19188e5de7c10319f891803e32",
+      "decoded_size": 113,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/logic/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b b8 c9 c9 c9",
+      "unused_sha256": "7f52ccbe2f5a0f19ef7ab413aac55ae47194904a7484fa0697b8332122513c72"
+    },
+    {
+      "index": 71004,
+      "opaque_id": "0x679cfb5f61333323",
+      "package": 0,
+      "offset": 373400979,
+      "size": 98,
+      "compressed_sha256": "1c59b1f95e03ebbac91ea47f43f78dc2ba02671fc94c1f8711fcee78cfa3e646",
+      "decoded_sha256": "c2b664246653aed073b2110dea8e7401b68a227c830cdf1ee9f6d0ba568a3b74",
+      "decoded_size": 112,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b b9 c9 c9 c9",
+      "unused_sha256": "072cf62ba932ba674cb343f64020601fbea4595839490c84451ef06409c3bf65"
+    },
+    {
+      "index": 45639,
+      "opaque_id": "0xd9fd09e038653723",
+      "package": 0,
+      "offset": 374158743,
+      "size": 121,
+      "compressed_sha256": "18dd74e037344ba94c17b823d4c9d71d9322488f2644c3e72241f7c887dea10c",
+      "decoded_sha256": "8c1c51276e7ebc906792f455c0620a3cb9533489e9afcd6a147a93f183f4a45a",
+      "decoded_size": 135,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_overload/bot/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4e c9 c9 c9",
+      "unused_sha256": "1403222e4a5b4e89fcc9730186ec6be6e0ebe84660dfba74eb724ccfb84d5db8"
+    },
+    {
+      "index": 71617,
+      "opaque_id": "0xc92a475037633723",
+      "package": 0,
+      "offset": 380871965,
+      "size": 121,
+      "compressed_sha256": "438c0adc438737e7091735b058d6dde05cb1927c5fee2dcf63a0cde6036f027a",
+      "decoded_sha256": "fdc1b4b16a750f88f53aa61ee7de698ff9cbfe4820dc56ff0d32932e325ed9e5",
+      "decoded_size": 135,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "engine/Lib/google/protobuf/internal/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4e c9 c9 c9",
+      "unused_sha256": "1403222e4a5b4e89fcc9730186ec6be6e0ebe84660dfba74eb724ccfb84d5db8"
+    },
+    {
+      "index": 26093,
+      "opaque_id": "0x59deb17336633223",
+      "package": 0,
+      "offset": 407632854,
+      "size": 93,
+      "compressed_sha256": "e10d8818139ef684e98abec24edb64ce4a60f16c790b8f94095b9ead9813ae77",
+      "decoded_sha256": "6140bac713d1a53a8a09412971bd2d7605c995af1e0e902f71f64e4b2ee349b1",
+      "decoded_size": 107,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b a2 c9 c9 c9",
+      "unused_sha256": "75e75cfa2123945c2f4b2ef9610e18e60c941c3208dcb2b63efd4de45e0897f6"
+    },
+    {
+      "index": 75145,
+      "opaque_id": "0xe2c0750b61643923",
+      "package": 0,
+      "offset": 425845170,
+      "size": 120,
+      "compressed_sha256": "4520ca98fb5f547e0c81f3c5c756e8837624cdd9cc2cd5c1cc7bb60d48b3a690",
+      "decoded_sha256": "91755719e521a3f34b12bac988b49bc393f20002c5d5152b2d1f1a70433ddd31",
+      "decoded_size": 134,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_football/ui/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4f c9 c9 c9",
+      "unused_sha256": "7f8c52847d53fe6937b9900b57e95c5fe8500f7aff95f2045b023d1c854a716e"
+    },
+    {
+      "index": 76210,
+      "opaque_id": "0x55c09cc66333623",
+      "package": 0,
+      "offset": 435116107,
+      "size": 123,
+      "compressed_sha256": "d78734f84dbf3270aabf04d38a6a082a5689f3844c1b40ca54ab7c299a366fd0",
+      "decoded_sha256": "d5f54b6dbaebcd2d1e4270257792555b7f65d5bddda3688d6210a5b4b05820b6",
+      "decoded_size": 138,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_peekaboo/models/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 43 c9 c9 c9",
+      "unused_sha256": "e9187311568daf3da1b22436378b954225c410df22ce3f942123ed5c768f3258"
+    },
+    {
+      "index": 70408,
+      "opaque_id": "0xae38905f66376423",
+      "package": 0,
+      "offset": 435357205,
+      "size": 98,
+      "compressed_sha256": "374448f969409a59395dce9f3aaa29d4aad86ded9c7b4e597d5e9008b7d7da49",
+      "decoded_sha256": "5c7c2f89764a41118aa3221599f91cc584b9c6e7feea1ffaf15a0f3030c65009",
+      "decoded_size": 112,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "engine/tools/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b b9 c9 c9 c9",
+      "unused_sha256": "072cf62ba932ba674cb343f64020601fbea4595839490c84451ef06409c3bf65"
+    },
+    {
+      "index": 4593,
+      "opaque_id": "0x55608c7939356223",
+      "package": 0,
+      "offset": 450490147,
+      "size": 119,
+      "compressed_sha256": "c7cd772c25c2de549b5afed517d5916e4028b2603c2e857f5311833c57814d2f",
+      "decoded_sha256": "56ce0ed2a1a5ce6d7846a4d5e72479af9d3370ca5e00818f55bfff6cdd5d822c",
+      "decoded_size": 136,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "client/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 41 c9 c9 c9",
+      "unused_sha256": "3ade7271c6dcee1aaec8a424b3078171318d2b16c168ac3c4efd727beb0aefd6"
+    },
+    {
+      "index": 75656,
+      "opaque_id": "0xb9f64b462656623",
+      "package": 0,
+      "offset": 460663293,
+      "size": 102,
+      "compressed_sha256": "a616d3b6efd1b0112acdde30bc7ba267af1b018c0f0c7309cf4286c859f019c5",
+      "decoded_sha256": "537156f9f67f7d0538896ae0efb8b564dc2b5ff0e31e4bfe26b0c3f801f35c56",
+      "decoded_size": 116,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b bd c9 c9 c9",
+      "unused_sha256": "485474426231a21a6292c074196debb2ce82d340be41ab1c577c9c3b79a2911f"
+    },
+    {
+      "index": 50449,
+      "opaque_id": "0x7b953f1c61623123",
+      "package": 0,
+      "offset": 472147155,
+      "size": 100,
+      "compressed_sha256": "e39d192f687215207ee0e9caa083f7c12c58abb90db8dfb117d895574decd656",
+      "decoded_sha256": "dd03d4682eebfa167ae560f580a0de546ddf484b2024382208d644a5c46a1e2d",
+      "decoded_size": 114,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b bb c9 c9 c9",
+      "unused_sha256": "afebe4614f70501c15fef5b1a45fc60645fe1bd369570a803911b6b83d7b58af"
+    },
+    {
+      "index": 47138,
+      "opaque_id": "0x16a9040535616123",
+      "package": 0,
+      "offset": 487768769,
+      "size": 123,
+      "compressed_sha256": "81d7f75e4ed00f4b32bec177529f8a4a239e62993e5a98cfb368615aa6964b0f",
+      "decoded_sha256": "cfb467a8d4b996629331ff2640a21f38a5a84608ed0d6d3b388225cd5d9a8aef",
+      "decoded_size": 137,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_bleach/ui/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 40 c9 c9 c9",
+      "unused_sha256": "e380297b2bf46997d90c70fefa9da3f529ec9193fb4f140af34e5bd1b4c5e07e"
+    },
+    {
+      "index": 83708,
+      "opaque_id": "0x2b784cf934356523",
+      "package": 0,
+      "offset": 501778269,
+      "size": 122,
+      "compressed_sha256": "40fade82252b73bffae2cceec2ef5897a3dca3ef32191a9689e547117eae2e3d",
+      "decoded_sha256": "44d0776d55daf0ce437c5349b6a9d5f256370a42788b3d4d226c9c1adbbed414",
+      "decoded_size": 137,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_arms_race_mode/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 40 c9 c9 c9",
+      "unused_sha256": "e380297b2bf46997d90c70fefa9da3f529ec9193fb4f140af34e5bd1b4c5e07e"
+    },
+    {
+      "index": 17236,
+      "opaque_id": "0x54413aae38366123",
+      "package": 0,
+      "offset": 502096026,
+      "size": 99,
+      "compressed_sha256": "d42bc21fe9866c94d98ebee86b14c72fc979498a1cb47f7564a4d13016f85f8a",
+      "decoded_sha256": "f2d5b6c2357ef3216fff4f356144f12c53381a483a599ed03166da63bb03ce93",
+      "decoded_size": 113,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/local/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b b8 c9 c9 c9",
+      "unused_sha256": "7f52ccbe2f5a0f19ef7ab413aac55ae47194904a7484fa0697b8332122513c72"
+    },
+    {
+      "index": 34278,
+      "opaque_id": "0x814836d131363523",
+      "package": 0,
+      "offset": 516949023,
+      "size": 119,
+      "compressed_sha256": "982e1b29e97ebbc2f6d10015018b7c31c840b7498715ee283fb15c14fe6802ae",
+      "decoded_sha256": "b839592e3ab8fe53ae54ffbe8ec9cc1eb371bc6b9671c59efbfecc1647a5932e",
+      "decoded_size": 133,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_nowhere/ui/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4c c9 c9 c9",
+      "unused_sha256": "1dd177d64f0d0627c39efbfb940d99367de50f4538b06231f4806096d5828006"
+    },
+    {
+      "index": 36004,
+      "opaque_id": "0x9a6de6ea39646423",
+      "package": 0,
+      "offset": 522725180,
+      "size": 121,
+      "compressed_sha256": "e02b45476f2a92a8a3c538542c50774e65bb39bf96ff1af9e3a089b6dd18aac6",
+      "decoded_sha256": "2f974c461d4d8242ac1688b1852d0e0ad63d69767fb34f7989628e774457bce9",
+      "decoded_size": 135,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_free_for_all/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4e c9 c9 c9",
+      "unused_sha256": "1403222e4a5b4e89fcc9730186ec6be6e0ebe84660dfba74eb724ccfb84d5db8"
+    },
+    {
+      "index": 86390,
+      "opaque_id": "0x3d43c2ac38366323",
+      "package": 0,
+      "offset": 523958545,
+      "size": 123,
+      "compressed_sha256": "454e3d7da23fc08acecdfb21b40dcb8da4543b6344ea3218714fd26666b9b333",
+      "decoded_sha256": "5380e8cdb4dec264b94f1dc4246f263eeb21ad88451ac869d6173d9113c99a20",
+      "decoded_size": 137,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gamesystem/uihall/random_gift/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 40 c9 c9 c9",
+      "unused_sha256": "e380297b2bf46997d90c70fefa9da3f529ec9193fb4f140af34e5bd1b4c5e07e"
+    },
+    {
+      "index": 87686,
+      "opaque_id": "0x2d62abca37343023",
+      "package": 0,
+      "offset": 537990944,
+      "size": 104,
+      "compressed_sha256": "160184ca9a2d81d1718e067c37a7bb5a2fce587c557bb281007d6a98e506bad6",
+      "decoded_sha256": "b8968739012d7c749808459d8b66ef14f554dd9bb7833a0d1460e394691fcdd7",
+      "decoded_size": 118,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b bf c9 c9 c9",
+      "unused_sha256": "9187964fe0bedd563f619b8d6a0b3d9856619e48afe70a06f2c53d04b429ad08"
+    },
+    {
+      "index": 70814,
+      "opaque_id": "0x168032f034623723",
+      "package": 0,
+      "offset": 549382380,
+      "size": 101,
+      "compressed_sha256": "5f10cf08362b5648b50a5a590673a01c58aaca55decdc8f29c3583fcd9dfaea4",
+      "decoded_sha256": "fcce851baca8e265f6612ad732367fcac47b9ef93ee481008f909faddd256de4",
+      "decoded_size": 115,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b ba c9 c9 c9",
+      "unused_sha256": "024094810170f6a18f058750f2f1a7682e1753e8456dc71ea9116c64188abfaf"
+    },
+    {
+      "index": 89299,
+      "opaque_id": "0x675987dd30353023",
+      "package": 0,
+      "offset": 552427271,
+      "size": 119,
+      "compressed_sha256": "2ae82c144055f4e44dabfab4d30c0e30195dbc5c8bc23ac0a1bd3de3d93d52c7",
+      "decoded_sha256": "4179bcee66107bf0389ecd8b58695f2a813ba79aea6b574f6b39e78cad9ac13c",
+      "decoded_size": 134,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/models/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4f c9 c9 c9",
+      "unused_sha256": "7f8c52847d53fe6937b9900b57e95c5fe8500f7aff95f2045b023d1c854a716e"
+    },
+    {
+      "index": 91993,
+      "opaque_id": "0xc2b8ec3835393623",
+      "package": 0,
+      "offset": 581800423,
+      "size": 121,
+      "compressed_sha256": "267a79f48b0bc5e3a5bcc218b0ba3856c61e3b1441d01db19f0c64fe10f1a8aa",
+      "decoded_sha256": "780e10ca9f92e7e39e8e54517d15d1d931b1519520b2b7fe25aa8e57c993b845",
+      "decoded_size": 136,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gamesystem/uihall/ui_linkage/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 41 c9 c9 c9",
+      "unused_sha256": "3ade7271c6dcee1aaec8a424b3078171318d2b16c168ac3c4efd727beb0aefd6"
+    },
+    {
+      "index": 92865,
+      "opaque_id": "0x7eb5b4563303223",
+      "package": 0,
+      "offset": 589333457,
+      "size": 102,
+      "compressed_sha256": "ef28dd6db28770a973423f51dcbe660e0a911be06c6e0ff278646ed00f51c27b",
+      "decoded_sha256": "3e01a1562439a3c00f3239b5b05d08a91734d5ec39695b46e5a9e4fd2881de5f",
+      "decoded_size": 116,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b bd c9 c9 c9",
+      "unused_sha256": "485474426231a21a6292c074196debb2ce82d340be41ab1c577c9c3b79a2911f"
+    },
+    {
+      "index": 40036,
+      "opaque_id": "0xb2111ae133306623",
+      "package": 0,
+      "offset": 590855042,
+      "size": 119,
+      "compressed_sha256": "93f278df0c6b34ddde7141463c95084844370376a5cd304b4ec657e8072d8d75",
+      "decoded_sha256": "3b1ad33ea9c5b1edd453f3efb43531fd99b5ec3e58615a7f4af22df983f1d5c9",
+      "decoded_size": 136,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 41 c9 c9 c9",
+      "unused_sha256": "3ade7271c6dcee1aaec8a424b3078171318d2b16c168ac3c4efd727beb0aefd6"
+    },
+    {
+      "index": 93425,
+      "opaque_id": "0xb659f8f230383723",
+      "package": 0,
+      "offset": 594678484,
+      "size": 123,
+      "compressed_sha256": "3eb92c2755157e5e3bd580b1e546c107e0a06062267ad30a41e2a358b6f689eb",
+      "decoded_sha256": "57091c36a2b10958d42b7450e20d26de0bbcbc1e4a6767013387838c80bc124c",
+      "decoded_size": 137,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_rookieguide/ui/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 40 c9 c9 c9",
+      "unused_sha256": "e380297b2bf46997d90c70fefa9da3f529ec9193fb4f140af34e5bd1b4c5e07e"
+    },
+    {
+      "index": 93999,
+      "opaque_id": "0x81a5797f63626323",
+      "package": 0,
+      "offset": 602030772,
+      "size": 102,
+      "compressed_sha256": "6307c343865a8dcf89da2464ab2fed4afbcc1c413314e0b03ce97be9924b37c7",
+      "decoded_sha256": "1c58e20513b5e10c273b19f168e0d7a6a2753db7c116d3700e29440181a3d286",
+      "decoded_size": 118,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/ui/uilogin/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b bf c9 c9 c9",
+      "unused_sha256": "9187964fe0bedd563f619b8d6a0b3d9856619e48afe70a06f2c53d04b429ad08"
+    },
+    {
+      "index": 12171,
+      "opaque_id": "0x231e37d765326223",
+      "package": 0,
+      "offset": 603180749,
+      "size": 100,
+      "compressed_sha256": "7fb16bb544d00d24c9259f1d8f005942ccc3a17643a1ac7f74656f29e59abe70",
+      "decoded_sha256": "b8ac9b7b160b22cd32110f0a81e2ddafbdf9428467377a918b39f68be3cbfca6",
+      "decoded_size": 114,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b bb c9 c9 c9",
+      "unused_sha256": "afebe4614f70501c15fef5b1a45fc60645fe1bd369570a803911b6b83d7b58af"
+    },
+    {
+      "index": 44340,
+      "opaque_id": "0x3e5e456a32653923",
+      "package": 0,
+      "offset": 605539401,
+      "size": 123,
+      "compressed_sha256": "21f7183da9c3a9511ff20f1cf06145dac2cb259d745895edf68aa3a222a56a6f",
+      "decoded_sha256": "7fae9e47360ace68b5fd5dfa34d299639a6133c82ac7de5d5d2f34a11f612c27",
+      "decoded_size": 138,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_big_head/models/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 43 c9 c9 c9",
+      "unused_sha256": "e9187311568daf3da1b22436378b954225c410df22ce3f942123ed5c768f3258"
+    },
+    {
+      "index": 49084,
+      "opaque_id": "0x48d809fb33626423",
+      "package": 0,
+      "offset": 611447032,
+      "size": 122,
+      "compressed_sha256": "bcca5b4b5a64c08dae54cd3a9ec11e8645b3d79ca5e754b06cf0b500be24cdf3",
+      "decoded_sha256": "e34caf5ad6729079297b66eae15c3e006b04f4e507d4f64aef6bc3e3060564cc",
+      "decoded_size": 139,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 0a 00",
+      "filename_candidates": [
+        "gclient/util/profile/csb_list.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 42 c9 c9 c9",
+      "unused_sha256": "e43b4816a0c68f769945106137b76b0d2120a92aab56e41a0c876801a9945042"
+    },
+    {
+      "index": 79491,
+      "opaque_id": "0x5ae07c1564386223",
+      "package": 0,
+      "offset": 628275808,
+      "size": 123,
+      "compressed_sha256": "1a7c35ceca61b9d693e6596b090badfd25ca987cfa223c2ea8c10413e43b60cc",
+      "decoded_sha256": "c2da37f2432d6a76f31d7640835e4b9a617e2242b3b942b508555fbb6b74363f",
+      "decoded_size": 137,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_squad_fight/ui/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 40 c9 c9 c9",
+      "unused_sha256": "e380297b2bf46997d90c70fefa9da3f529ec9193fb4f140af34e5bd1b4c5e07e"
+    },
+    {
+      "index": 61395,
+      "opaque_id": "0xdf0a495065633423",
+      "package": 0,
+      "offset": 637009897,
+      "size": 103,
+      "compressed_sha256": "c1f47e69cede3565122fb4a069177d1a758b1509c0f54ee717b8a9b9aa4d72fe",
+      "decoded_sha256": "2b2bfe87db8fb9a097ee102d6197fe2b38b9849fda5ea5cae6b94300c023dcbe",
+      "decoded_size": 117,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b bc c9 c9 c9",
+      "unused_sha256": "dbe50acdc0de7803a3792e9d6bc7328f595f34b2a50a51c21d75ff0dcf30fb31"
+    },
+    {
+      "index": 97703,
+      "opaque_id": "0x34e70ade35653223",
+      "package": 0,
+      "offset": 652385001,
+      "size": 96,
+      "compressed_sha256": "9287616af508cf0049686b97af090ed28e2f2177ddcd1fa8e999483343b5ef37",
+      "decoded_sha256": "a2f2333a99143031c7d8ca5638818c2a56925dffa9eceac9c6c9b63e435441ba",
+      "decoded_size": 110,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b a7 c9 c9 c9",
+      "unused_sha256": "6ebece27cd7951c2e2e266c780cd95449bc701fd554dbf89f19d5df149d2bd95"
+    },
+    {
+      "index": 97754,
+      "opaque_id": "0x1b84357835346123",
+      "package": 0,
+      "offset": 653283642,
+      "size": 103,
+      "compressed_sha256": "3119e7895a83684d75effc83e79ea0373bd92f416bf64a29d798d9eb996ad36d",
+      "decoded_sha256": "1ad3c35f5541059c0f22a33d43c8c09781e2623aacf1f952809131b700bef36d",
+      "decoded_size": 117,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "engine/Lib/google/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b bc c9 c9 c9",
+      "unused_sha256": "dbe50acdc0de7803a3792e9d6bc7328f595f34b2a50a51c21d75ff0dcf30fb31"
+    },
+    {
+      "index": 34704,
+      "opaque_id": "0x733577ce30373523",
+      "package": 0,
+      "offset": 673801804,
+      "size": 99,
+      "compressed_sha256": "81c97f941c3e26e3b31d1850cafc33622ed9814c1d26440ca2038d20cf6ea5b5",
+      "decoded_sha256": "48c5f4317f76322bf9cffe692b83ee4ea5b2ddd3baf6158e6013c6f32f29cf8f",
+      "decoded_size": 113,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b b8 c9 c9 c9",
+      "unused_sha256": "7f52ccbe2f5a0f19ef7ab413aac55ae47194904a7484fa0697b8332122513c72"
+    },
+    {
+      "index": 101102,
+      "opaque_id": "0xfdd2dd5a64623823",
+      "package": 0,
+      "offset": 705416282,
+      "size": 104,
+      "compressed_sha256": "72691f7552cc8cfaf1b9706a7129eed2240d404839d1df1b9a0ae8a8daf35e78",
+      "decoded_sha256": "bbf6f785894b8d717c69fe85c0b580bb4219971df89b0e20506d678697983d72",
+      "decoded_size": 118,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gamesystem/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b bf c9 c9 c9",
+      "unused_sha256": "9187964fe0bedd563f619b8d6a0b3d9856619e48afe70a06f2c53d04b429ad08"
+    },
+    {
+      "index": 46732,
+      "opaque_id": "0xde8587dd64633323",
+      "package": 0,
+      "offset": 729182738,
+      "size": 122,
+      "compressed_sha256": "5313974f6fdbe0751fc5bc44a59280ca8a0d93defd4b338dc1c6994043944190",
+      "decoded_sha256": "1c64a1d05d119b159bac58bb1611752a32da3b768e874b5e12f6b1021cd0c66f",
+      "decoded_size": 136,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_team_death/ui/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 41 c9 c9 c9",
+      "unused_sha256": "3ade7271c6dcee1aaec8a424b3078171318d2b16c168ac3c4efd727beb0aefd6"
+    },
+    {
+      "index": 47320,
+      "opaque_id": "0xa96f9ed437626323",
+      "package": 0,
+      "offset": 744919754,
+      "size": 119,
+      "compressed_sha256": "1c639a8d71809f1b1f23d55573ef914c8a58a40d9adbdda6cdc946e6b31e4594",
+      "decoded_sha256": "6649c9f274b8d9137b076d2b7eb63240be9523ac07c8d60fc7f64b888e226b64",
+      "decoded_size": 134,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba/models/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4f c9 c9 c9",
+      "unused_sha256": "7f8c52847d53fe6937b9900b57e95c5fe8500f7aff95f2045b023d1c854a716e"
+    },
+    {
+      "index": 22796,
+      "opaque_id": "0xafcb5bd361656623",
+      "package": 0,
+      "offset": 767504854,
+      "size": 99,
+      "compressed_sha256": "d199ef95dab6f5e78f716b142365a6419e7e05520ecc5cc4594cbe2f3efaf58f",
+      "decoded_sha256": "18c9195fe04aadaf3e95bf0c4b7483b81b9d670ef6851d9b08f3fbf030ecf0e4",
+      "decoded_size": 113,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "engine/common/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b b8 c9 c9 c9",
+      "unused_sha256": "7f52ccbe2f5a0f19ef7ab413aac55ae47194904a7484fa0697b8332122513c72"
+    },
+    {
+      "index": 86887,
+      "opaque_id": "0x1990384e65346323",
+      "package": 0,
+      "offset": 794196054,
+      "size": 121,
+      "compressed_sha256": "2bfbb0a2619adb95cabf0823069f47b4e54d27bcf15264904c5fc2019ad20626",
+      "decoded_sha256": "f047a9064031596040372253e6424fd0124ef0a7b6e415a3a2c83b967dbf20ae",
+      "decoded_size": 135,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_big_head/bot/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4e c9 c9 c9",
+      "unused_sha256": "1403222e4a5b4e89fcc9730186ec6be6e0ebe84660dfba74eb724ccfb84d5db8"
+    },
+    {
+      "index": 25566,
+      "opaque_id": "0x78d7128032323923",
+      "package": 0,
+      "offset": 799638211,
+      "size": 103,
+      "compressed_sha256": "a6e42917b6cadcc692bb8dfc3fa84866ece422e25a7eaaa5996b8d8065cea5d8",
+      "decoded_sha256": "0c7ea1e69f164083847c89a35381cd6f7187626aadb15b565210c606d66ddc31",
+      "decoded_size": 117,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/framework/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b bc c9 c9 c9",
+      "unused_sha256": "dbe50acdc0de7803a3792e9d6bc7328f595f34b2a50a51c21d75ff0dcf30fb31"
+    },
+    {
+      "index": 80947,
+      "opaque_id": "0x8eecda2a31633223",
+      "package": 0,
+      "offset": 800718439,
+      "size": 102,
+      "compressed_sha256": "92a0a2cc2e603bee6cb01a4732e9a27eaf5785b2fae5b662997bc4d373acf72f",
+      "decoded_sha256": "fa4dc0bceb80d1bf34aee5536f3aae174f75ed84fe3b88518d82ebada77d9716",
+      "decoded_size": 116,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b bd c9 c9 c9",
+      "unused_sha256": "485474426231a21a6292c074196debb2ce82d340be41ab1c577c9c3b79a2911f"
+    },
+    {
+      "index": 2363,
+      "opaque_id": "0xe5e14bcc61623123",
+      "package": 0,
+      "offset": 830108425,
+      "size": 98,
+      "compressed_sha256": "3b84018a3b5584044a58b07243333273b7263f4dffdc5f2994c28ac55a73771c",
+      "decoded_sha256": "b76ca0078c62f97081d31f298272395835613dc350a33855cb50b479d83a251e",
+      "decoded_size": 112,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/data/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b b9 c9 c9 c9",
+      "unused_sha256": "072cf62ba932ba674cb343f64020601fbea4595839490c84451ef06409c3bf65"
+    },
+    {
+      "index": 108885,
+      "opaque_id": "0x6e02c07b35646423",
+      "package": 0,
+      "offset": 844763813,
+      "size": 121,
+      "compressed_sha256": "32c92ccea4056223b32fc802f902a4f35cd2fb8f4f9bc0a0c654e90e41263581",
+      "decoded_sha256": "4e77991b494de222c7dd321b17b3f730bc52f2db89d1891fbb6c3e78e55b852d",
+      "decoded_size": 135,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gamesystem/uihall/clan/util/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4e c9 c9 c9",
+      "unused_sha256": "1403222e4a5b4e89fcc9730186ec6be6e0ebe84660dfba74eb724ccfb84d5db8"
+    },
+    {
+      "index": 109067,
+      "opaque_id": "0xb9109ecc64323123",
+      "package": 0,
+      "offset": 847312052,
+      "size": 123,
+      "compressed_sha256": "261282e43116820efecff431dff9109d6f2b790a2bbe14cd9a7200222940c2a1",
+      "decoded_sha256": "0ba63228662935fc62612775d4052b9f0e8b5e0bf5a6edeadd67c8a1e67645cb",
+      "decoded_size": 143,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 46 c9 c9 c9",
+      "unused_sha256": "1b747d453640cb77f09ac6c87337b98d32f2f6223033173494f6c59c66ee9b52"
+    },
+    {
+      "index": 78167,
+      "opaque_id": "0xe7a082ee34653123",
+      "package": 0,
+      "offset": 857216792,
+      "size": 123,
+      "compressed_sha256": "715c8df1b05252985ed1f9a7b2d0279cfc8133b857d9cd897c851e4e7c2a8664",
+      "decoded_sha256": "c543d23f4085bf956d51b8a149044970f02dfd44c390f219048f19cca748327f",
+      "decoded_size": 137,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_lightning/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 40 c9 c9 c9",
+      "unused_sha256": "e380297b2bf46997d90c70fefa9da3f529ec9193fb4f140af34e5bd1b4c5e07e"
+    },
+    {
+      "index": 60372,
+      "opaque_id": "0x1f77efb463386623",
+      "package": 0,
+      "offset": 858159777,
+      "size": 97,
+      "compressed_sha256": "04dc9877e7090cff245249ed52f38eb91e6ebdff626c1f527c0b7a143c11f0f4",
+      "decoded_sha256": "ee774e2ac5afcae9b9598ffd5429119e7db83a313828cfccc85dc01823baec78",
+      "decoded_size": 111,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b a6 c9 c9 c9",
+      "unused_sha256": "38355ecb1a548b7125bea3bf71f541596222dba5a867f1d733badd6d5218fa63"
+    },
+    {
+      "index": 1539,
+      "opaque_id": "0xcf9495c132316123",
+      "package": 0,
+      "offset": 862242761,
+      "size": 121,
+      "compressed_sha256": "a1ae454a3b95f76121949dd37fc92e0816749fabd35128e09b9545805cf5eefd",
+      "decoded_sha256": "1e27bfc66742e8ce1dc8494408f47b42621a7060ab3fa016a6736b239880f83a",
+      "decoded_size": 135,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_faction/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4e c9 c9 c9",
+      "unused_sha256": "1403222e4a5b4e89fcc9730186ec6be6e0ebe84660dfba74eb724ccfb84d5db8"
+    },
+    {
+      "index": 111008,
+      "opaque_id": "0xfbf7ebe730653523",
+      "package": 0,
+      "offset": 866591347,
+      "size": 105,
+      "compressed_sha256": "db8f1e4e81c441c92a1cadad826dd1d7c8047e46637deabe681198f887eaddd5",
+      "decoded_sha256": "501c8e5225e228a53f1f68f0a70fc48f8ad709c1ce44662b4a28465fc5554844",
+      "decoded_size": 120,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/util/routine/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b b1 c9 c9 c9",
+      "unused_sha256": "87404d29a23db834d889fca659402bb6b6553dfb819e29ae74649d882d5bf15c"
+    },
+    {
+      "index": 111028,
+      "opaque_id": "0x59aaf9e066613923",
+      "package": 0,
+      "offset": 867188070,
+      "size": 102,
+      "compressed_sha256": "a1b648cb18f055faa7d30b5d712830be5655c9d34a950a4000c5ec2d8cfe47cb",
+      "decoded_sha256": "c01c2f9f6be37f9b52901e1ba5a861a7bfa53264334ceb143e2af2b2cb93cab5",
+      "decoded_size": 116,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "engine/mobilerpc/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b bd c9 c9 c9",
+      "unused_sha256": "485474426231a21a6292c074196debb2ce82d340be41ab1c577c9c3b79a2911f"
+    },
+    {
+      "index": 111174,
+      "opaque_id": "0x7299529f62303523",
+      "package": 0,
+      "offset": 869617714,
+      "size": 120,
+      "compressed_sha256": "72a39608ad8bd3dacffeb0dbbb33c19b1a2594f60b5899212b86b642a8bf720c",
+      "decoded_sha256": "e06616b873043adf093eeb8d2d3b99e7b88def90f8b722643de744761d4d05ab",
+      "decoded_size": 134,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_blasting/ui/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4f c9 c9 c9",
+      "unused_sha256": "7f8c52847d53fe6937b9900b57e95c5fe8500f7aff95f2045b023d1c854a716e"
+    },
+    {
+      "index": 112038,
+      "opaque_id": "0xb6f3001735306123",
+      "package": 0,
+      "offset": 880791918,
+      "size": 102,
+      "compressed_sha256": "e63c0257e2a1d9bbe81a90cb8b67838d8a55e6267ef45ee6d664a8e0867f354c",
+      "decoded_sha256": "49bd0f68d1d0eb5eefa6f387994106ec6fd53cdf0d4a9cbd2465da49ecf17713",
+      "decoded_size": 116,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b bd c9 c9 c9",
+      "unused_sha256": "485474426231a21a6292c074196debb2ce82d340be41ab1c577c9c3b79a2911f"
+    },
+    {
+      "index": 113359,
+      "opaque_id": "0xf4a83e8861656523",
+      "package": 0,
+      "offset": 897537736,
+      "size": 119,
+      "compressed_sha256": "eed0e3d096539b6d997ff400643597b8bca926cad4cf7677bb7a36e74bfcb763",
+      "decoded_sha256": "0133ea48c16f1dc96b36c658be30e0f1b28396d3d6f3f415f50427bc619fbbce",
+      "decoded_size": 137,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_client_offline/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 40 c9 c9 c9",
+      "unused_sha256": "e380297b2bf46997d90c70fefa9da3f529ec9193fb4f140af34e5bd1b4c5e07e"
+    },
+    {
+      "index": 114065,
+      "opaque_id": "0x72fcb7da38336123",
+      "package": 0,
+      "offset": 904539190,
+      "size": 120,
+      "compressed_sha256": "d07ffcd7f85f6526f0a8cc002c5b12f6f437cb39391b0ac82b3380d7376ca270",
+      "decoded_sha256": "9d88b324f45b2887c6064adb28c028c3eaa172da529363f7c792c44d570289c5",
+      "decoded_size": 134,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_overload/ui/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4f c9 c9 c9",
+      "unused_sha256": "7f8c52847d53fe6937b9900b57e95c5fe8500f7aff95f2045b023d1c854a716e"
+    },
+    {
+      "index": 117369,
+      "opaque_id": "0xaaebf8ff37376123",
+      "package": 0,
+      "offset": 945105663,
+      "size": 121,
+      "compressed_sha256": "8a9602bf5704a26ea0f153362b6bffc65b9872ff87d0a93c327b75e783bb4951",
+      "decoded_sha256": "8572bd327a805a49ad866e71c6ba1f7e270945a96c77e9c9890f16499affd643",
+      "decoded_size": 135,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_block_strike/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4e c9 c9 c9",
+      "unused_sha256": "1403222e4a5b4e89fcc9730186ec6be6e0ebe84660dfba74eb724ccfb84d5db8"
+    },
+    {
+      "index": 20211,
+      "opaque_id": "0x5f2afc4a31623223",
+      "package": 0,
+      "offset": 946356456,
+      "size": 96,
+      "compressed_sha256": "5c05ea7f6a6e0fdb368e2ef51898052334f15322fedb90b5cc69167cc2a9a1eb",
+      "decoded_sha256": "8813da0b914128491fa9d14278d0a84f99a0fdd18734160693b4da5c5ef1a9e1",
+      "decoded_size": 110,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/ui/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b a7 c9 c9 c9",
+      "unused_sha256": "6ebece27cd7951c2e2e266c780cd95449bc701fd554dbf89f19d5df149d2bd95"
+    },
+    {
+      "index": 110813,
+      "opaque_id": "0x1951b20064313323",
+      "package": 0,
+      "offset": 957786303,
+      "size": 104,
+      "compressed_sha256": "7518eb02f72dcdfbeea7decebd6306278a13622f9261cb4a8ddb2848d5d5d673",
+      "decoded_sha256": "1774ac5e3ac33e9a8934f216f7598b39a56d471b46790ae7d18ea7912e070b7e",
+      "decoded_size": 118,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/util/mocks/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b bf c9 c9 c9",
+      "unused_sha256": "9187964fe0bedd563f619b8d6a0b3d9856619e48afe70a06f2c53d04b429ad08"
+    },
+    {
+      "index": 118199,
+      "opaque_id": "0xab9fe1be64613623",
+      "package": 0,
+      "offset": 958453699,
+      "size": 120,
+      "compressed_sha256": "4e2e9e63f440fdcbe6dbcb7ae4fc0d7c1a4ee8d80d90e3f5eec104670b5acca8",
+      "decoded_sha256": "053b8750ca6405cac23a5a27aec799b0f082e9c2127833c38fa9cbfa2741fbd9",
+      "decoded_size": 137,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gamesystem/uihall/uicombatsys/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 40 c9 c9 c9",
+      "unused_sha256": "e380297b2bf46997d90c70fefa9da3f529ec9193fb4f140af34e5bd1b4c5e07e"
+    },
+    {
+      "index": 3897,
+      "opaque_id": "0x858a47a364316523",
+      "package": 0,
+      "offset": 963519872,
+      "size": 95,
+      "compressed_sha256": "097a97923f2398945d5b7fb1933e6bc952db9d34ed0661b51fb3dae8b2918eb3",
+      "decoded_sha256": "892c12167623f92d2ad4f65a80b0492bb0ca401a50ba2158c3d6c8a8fa837f68",
+      "decoded_size": 110,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b a7 c9 c9 c9",
+      "unused_sha256": "6ebece27cd7951c2e2e266c780cd95449bc701fd554dbf89f19d5df149d2bd95"
+    },
+    {
+      "index": 20430,
+      "opaque_id": "0xb79354a136366123",
+      "package": 0,
+      "offset": 964514774,
+      "size": 102,
+      "compressed_sha256": "7ffac6cf19f26a89248339ee683e45afee1408a45b160e2905c6c152f2ed814f",
+      "decoded_sha256": "ca4e7298ef3dc7de60ec6ce08823bd9de8a85281806ebd73bdab611aa6acefaa",
+      "decoded_size": 116,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "engine/mobilelog/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b bd c9 c9 c9",
+      "unused_sha256": "485474426231a21a6292c074196debb2ce82d340be41ab1c577c9c3b79a2911f"
+    },
+    {
+      "index": 93531,
+      "opaque_id": "0x8ce8a05935633723",
+      "package": 0,
+      "offset": 972011867,
+      "size": 103,
+      "compressed_sha256": "80131d95949510c12a52c2b61db83f93013640ba3469510b3f22429dde6c8bc4",
+      "decoded_sha256": "068665d3d645cc011e103ac2ce4242dab305aa33072b4798529d893d8ee9abc0",
+      "decoded_size": 117,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b bc c9 c9 c9",
+      "unused_sha256": "dbe50acdc0de7803a3792e9d6bc7328f595f34b2a50a51c21d75ff0dcf30fb31"
+    },
+    {
+      "index": 119627,
+      "opaque_id": "0xa062fc2933386423",
+      "package": 0,
+      "offset": 974153900,
+      "size": 120,
+      "compressed_sha256": "c05b1b8886a970bf47d73c7834a8ca80fd92db15bee7a9ad8a1ddba025d6941c",
+      "decoded_sha256": "f4edc0646188621e591801b72522e8f527a725213ebb0eebfea8a2b55e2cfb64",
+      "decoded_size": 134,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_peekaboo/ui/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4f c9 c9 c9",
+      "unused_sha256": "7f8c52847d53fe6937b9900b57e95c5fe8500f7aff95f2045b023d1c854a716e"
+    },
+    {
+      "index": 119842,
+      "opaque_id": "0xcba7abf036376323",
+      "package": 0,
+      "offset": 976587504,
+      "size": 93,
+      "compressed_sha256": "6b85d387844aaeaac88a2dc9cded06fb3137d41036e8c9aa5b861d5dbad51ca0",
+      "decoded_sha256": "09d8ab50e1de7f084aef28e1ca8b015dbf9bc15a0f5a9e70f765d5944f7d1107",
+      "decoded_size": 107,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b a2 c9 c9 c9",
+      "unused_sha256": "75e75cfa2123945c2f4b2ef9610e18e60c941c3208dcb2b63efd4de45e0897f6"
+    },
+    {
+      "index": 80846,
+      "opaque_id": "0x88af904a39313423",
+      "package": 0,
+      "offset": 992075455,
+      "size": 119,
+      "compressed_sha256": "f80ebe971a2c564d4cbd05f6a61c4d2812bcb0a89c0306835ab3d639ab1266c3",
+      "decoded_sha256": "628f276b4a1d6121027a527b944e7854223009f12b9d79a46379e54a8a38dac6",
+      "decoded_size": 133,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/comps/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4c c9 c9 c9",
+      "unused_sha256": "1dd177d64f0d0627c39efbfb940d99367de50f4538b06231f4806096d5828006"
+    },
+    {
+      "index": 76112,
+      "opaque_id": "0x7b52718a31633023",
+      "package": 0,
+      "offset": 994140595,
+      "size": 100,
+      "compressed_sha256": "99a6a41a1305f6ae75d533852475d0305bbefacd285e56d6e75e357306b313a3",
+      "decoded_sha256": "ee17b7b752aab174b71d767b6212b274cd794ffaaba5e0532437d34882a53a85",
+      "decoded_size": 114,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b bb c9 c9 c9",
+      "unused_sha256": "afebe4614f70501c15fef5b1a45fc60645fe1bd369570a803911b6b83d7b58af"
+    },
+    {
+      "index": 121336,
+      "opaque_id": "0x60ccdaea36366423",
+      "package": 0,
+      "offset": 996467514,
+      "size": 123,
+      "compressed_sha256": "8a3db919b431ef9ee7e5f40c19945c58c1828df74b2321e1e02fffe6fa147c42",
+      "decoded_sha256": "b18176e6dd1c79eac44d5b5bd2910f5cf6fd47b28fd97ae6ee4a1e9d8c9bf71b",
+      "decoded_size": 145,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/util/telnet_client_agent/scene_object_observer.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 58 c9 c9 c9",
+      "unused_sha256": "5ea6560ac4d409ce9fe9837b01ca670a6653c707976eeb39fec324c6828810e6"
+    },
+    {
+      "index": 114107,
+      "opaque_id": "0xfb4fa29164636523",
+      "package": 0,
+      "offset": 1022601123,
+      "size": 119,
+      "compressed_sha256": "65ae791c052599a032e92eb7cc7ba899cd7615ed7921dfdb9968df6134771d2e",
+      "decoded_sha256": "2b45b9233a81d8e59ec59d5244989c2c017d308f7b2a2eb92eced3f7df1ac9c8",
+      "decoded_size": 133,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba/comps/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4c c9 c9 c9",
+      "unused_sha256": "1dd177d64f0d0627c39efbfb940d99367de50f4538b06231f4806096d5828006"
+    },
+    {
+      "index": 123517,
+      "opaque_id": "0xbc638c1d34383223",
+      "package": 0,
+      "offset": 1025600545,
+      "size": 99,
+      "compressed_sha256": "5928c64fbb74a868dc0ad272851eec1b294abf8dab06cabcbed8cf570f3303b6",
+      "decoded_sha256": "4936d46954974c264fd70c2e9326bfc6e06d1681ac3454ae879b8995c9f6df7e",
+      "decoded_size": 113,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "engine/client/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b b8 c9 c9 c9",
+      "unused_sha256": "7f52ccbe2f5a0f19ef7ab413aac55ae47194904a7484fa0697b8332122513c72"
+    },
+    {
+      "index": 124227,
+      "opaque_id": "0x5eac9ffb64336123",
+      "package": 0,
+      "offset": 1037847802,
+      "size": 98,
+      "compressed_sha256": "bbf105f1628ce835a9cced3cb8d1c74d88d3061b3295ca0d9e9d04b1b1cb0e12",
+      "decoded_sha256": "fefa60577fa6cd34997de765dffff646effdaf5018b237d7537c7f0a1c241c3d",
+      "decoded_size": 112,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b b9 c9 c9 c9",
+      "unused_sha256": "072cf62ba932ba674cb343f64020601fbea4595839490c84451ef06409c3bf65"
+    },
+    {
+      "index": 87212,
+      "opaque_id": "0x4985f3034376123",
+      "package": 0,
+      "offset": 1053015597,
+      "size": 121,
+      "compressed_sha256": "88f2d7f30867cd65a4995d1198b5b190178c78cb12a2362143b0e5a81b679b27",
+      "decoded_sha256": "9ac6e434da00aec9e0dc847bf1d87a14c12de252f25d576e226c13160577b005",
+      "decoded_size": 135,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_gun_fight/ui/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4e c9 c9 c9",
+      "unused_sha256": "1403222e4a5b4e89fcc9730186ec6be6e0ebe84660dfba74eb724ccfb84d5db8"
+    },
+    {
+      "index": 126931,
+      "opaque_id": "0xf18b793737646423",
+      "package": 1,
+      "offset": 2069984,
+      "size": 120,
+      "compressed_sha256": "e9ae5858860d1e7fc9313a552705aeef68fdf5290db0677a22d17551ad6b6740",
+      "decoded_sha256": "ef0c500c8c9851fcac38ba6c106d05463709b3e61c6decfc1a3e182aac33c29c",
+      "decoded_size": 134,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_zombie/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4f c9 c9 c9",
+      "unused_sha256": "7f8c52847d53fe6937b9900b57e95c5fe8500f7aff95f2045b023d1c854a716e"
+    },
+    {
+      "index": 127059,
+      "opaque_id": "0xc364557c64653223",
+      "package": 1,
+      "offset": 3932042,
+      "size": 101,
+      "compressed_sha256": "4225c2611aaed8440ec865787fbf974bc7c11b5095f64ecbec16c2df96461def",
+      "decoded_sha256": "048592cd2050e726c0f2e8b4307345d07701475a2e45e3be001d577d6d81176b",
+      "decoded_size": 115,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b ba c9 c9 c9",
+      "unused_sha256": "024094810170f6a18f058750f2f1a7682e1753e8456dc71ea9116c64188abfaf"
+    },
+    {
+      "index": 127666,
+      "opaque_id": "0x73c4c4830643223",
+      "package": 1,
+      "offset": 9251829,
+      "size": 104,
+      "compressed_sha256": "1a36c7705da766a455a9a2696dbde92e2455cab6cc444bcebe04832285c308d6",
+      "decoded_sha256": "ce58497cb1c8d3ab028df19c22ea9cefc904790227c5fc06ff3e987adc5f2cca",
+      "decoded_size": 118,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b bf c9 c9 c9",
+      "unused_sha256": "9187964fe0bedd563f619b8d6a0b3d9856619e48afe70a06f2c53d04b429ad08"
+    },
+    {
+      "index": 128265,
+      "opaque_id": "0x299e67d736663323",
+      "package": 1,
+      "offset": 16179006,
+      "size": 122,
+      "compressed_sha256": "4dcebc3a3a52213c3fe68e6d2e9c2ced8e676f3fba4d8d5a90c9307d7ca6018c",
+      "decoded_sha256": "94fdbc272077deb69ee4a875b5e00ac4b680cb4eeeeb49491293045d901c22e5",
+      "decoded_size": 136,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_lockdown/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 41 c9 c9 c9",
+      "unused_sha256": "3ade7271c6dcee1aaec8a424b3078171318d2b16c168ac3c4efd727beb0aefd6"
+    },
+    {
+      "index": 42129,
+      "opaque_id": "0xe0a2008566626123",
+      "package": 1,
+      "offset": 22090206,
+      "size": 96,
+      "compressed_sha256": "69bf39352e3fb32cdd4d3a167610c939c72c4ff49a20976f4ce652835aafed7f",
+      "decoded_sha256": "154b1f17fd914eeea92b64e21d4e3875a6aafe44ea3aa62d73d45b4a5a20f924",
+      "decoded_size": 110,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b a7 c9 c9 c9",
+      "unused_sha256": "6ebece27cd7951c2e2e266c780cd95449bc701fd554dbf89f19d5df149d2bd95"
+    },
+    {
+      "index": 129129,
+      "opaque_id": "0x5f57137e31353323",
+      "package": 1,
+      "offset": 26103010,
+      "size": 120,
+      "compressed_sha256": "38bf4fde7a862b892b24ed2f82dc630fcd8198bc59b8aa8954673d3209400e7e",
+      "decoded_sha256": "3070ece90d1a99740f783c18cd470d4044e3e12cc8fbc3d3027dbb2b69dd635b",
+      "decoded_size": 134,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_squad_fight/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4f c9 c9 c9",
+      "unused_sha256": "7f8c52847d53fe6937b9900b57e95c5fe8500f7aff95f2045b023d1c854a716e"
+    },
+    {
+      "index": 127496,
+      "opaque_id": "0xf3da32ad33363523",
+      "package": 1,
+      "offset": 26499763,
+      "size": 122,
+      "compressed_sha256": "85f39023f0d217d47448a8fc37682ac4a548d48df5c6529b7f2498598d14a2cf",
+      "decoded_sha256": "6bb1288e8ea8508a0d7d2a9195d82d58f1451ea597eaa2391b2ff672c987638d",
+      "decoded_size": 136,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_shootingrange/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 41 c9 c9 c9",
+      "unused_sha256": "3ade7271c6dcee1aaec8a424b3078171318d2b16c168ac3c4efd727beb0aefd6"
+    },
+    {
+      "index": 129859,
+      "opaque_id": "0xe10548db66383023",
+      "package": 1,
+      "offset": 36249227,
+      "size": 100,
+      "compressed_sha256": "e0ede3ca46c85bcfdf062c21c564bc8c5eaf154950315821f49b16503e2f9edc",
+      "decoded_sha256": "f1ab5e9776faca0c2b21b7e37c68cf1ea52ea356dcac3a8000741a19ea9f2308",
+      "decoded_size": 114,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b bb c9 c9 c9",
+      "unused_sha256": "afebe4614f70501c15fef5b1a45fc60645fe1bd369570a803911b6b83d7b58af"
+    },
+    {
+      "index": 52972,
+      "opaque_id": "0x715c971b39643623",
+      "package": 1,
+      "offset": 50160377,
+      "size": 104,
+      "compressed_sha256": "7910b54f62c5d917867a7b7c14956a371027a388ff347544114bca14ff134bf3",
+      "decoded_sha256": "5afd03a407a74c38e33edc6f5e516391f657574bbfa24e68c02ef7a8f6dc0e03",
+      "decoded_size": 121,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/data/ets_data/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b b0 c9 c9 c9",
+      "unused_sha256": "a685a1aafee84d8aea1c38fb676fb2a964913c33efdaa3b259d03376bcb819a2"
+    },
+    {
+      "index": 131263,
+      "opaque_id": "0x7ff7ee2f31323123",
+      "package": 1,
+      "offset": 58256620,
+      "size": 92,
+      "compressed_sha256": "43f3c21aaeabbe7782bf6c68232cc9dc2873dfbbaa1b0bbdaa2b363989efd94a",
+      "decoded_sha256": "da30476bad1cf610adf9c2ca9e0fc439ee5b0c60f0dd895413ac9d636e1a3652",
+      "decoded_size": 106,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "engine/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b a3 c9 c9 c9",
+      "unused_sha256": "5ba874aadac2d80ef6c9679419c17cfaaf867db725e7457d11daac2e4b0fe7d1"
+    },
+    {
+      "index": 62567,
+      "opaque_id": "0xae5583c765643923",
+      "package": 1,
+      "offset": 86116105,
+      "size": 92,
+      "compressed_sha256": "df7dcf1b9f84ab806edca1dc6cbe7e17a3896789acd556d9a5a672d5603e5f6c",
+      "decoded_sha256": "a46226f52f2a0fbcf389e24e50b5c1cd3ca4283ba5254cc3e753668649d8ecf1",
+      "decoded_size": 106,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b a3 c9 c9 c9",
+      "unused_sha256": "5ba874aadac2d80ef6c9679419c17cfaaf867db725e7457d11daac2e4b0fe7d1"
+    },
+    {
+      "index": 106116,
+      "opaque_id": "0x1452dcdc65376123",
+      "package": 1,
+      "offset": 101877469,
+      "size": 121,
+      "compressed_sha256": "0eaf406801a806931de3725cb2c20da1f8b4f99fe1a15dda991eabb3cf99d4b4",
+      "decoded_sha256": "5f33353591986cc2d2cf1c9bf4fb30ed09ff1702c699e0bc7acd4cd08867a6b7",
+      "decoded_size": 136,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 41 c9 c9 c9",
+      "unused_sha256": "3ade7271c6dcee1aaec8a424b3078171318d2b16c168ac3c4efd727beb0aefd6"
+    },
+    {
+      "index": 42097,
+      "opaque_id": "0x6a19899965303423",
+      "package": 1,
+      "offset": 101954172,
+      "size": 123,
+      "compressed_sha256": "5dd096a297eade3276932fe5bde5fb6eba4832a86a59c323c4d9b9989b4b4b94",
+      "decoded_sha256": "562736f96fa6e5c6c553179d7f8a4670f630047136d52986431a3edec540654c",
+      "decoded_size": 137,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_zombie/ui/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 40 c9 c9 c9",
+      "unused_sha256": "e380297b2bf46997d90c70fefa9da3f529ec9193fb4f140af34e5bd1b4c5e07e"
+    },
+    {
+      "index": 135131,
+      "opaque_id": "0x6c3cf2b837396223",
+      "package": 1,
+      "offset": 123596363,
+      "size": 105,
+      "compressed_sha256": "5005970ff17cf0808ddfaf0d1a32777411a56eac004ad7c846ce04e6bade2132",
+      "decoded_sha256": "19bb6c04063bfba2db8e59b9b92425563a29c51dfc0a13766a3300e71b5c5e82",
+      "decoded_size": 123,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "common/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b b2 c9 c9 c9",
+      "unused_sha256": "20ce4028276258cf605ff45eec7048a79a1c08c5466f4b089900604f360dac30"
+    },
+    {
+      "index": 135625,
+      "opaque_id": "0x50b7b32a39613723",
+      "package": 1,
+      "offset": 131837873,
+      "size": 101,
+      "compressed_sha256": "f353d106d2e473d7655a55efcae82db96f4dde29eec353d2b0ead38bccc7a93c",
+      "decoded_sha256": "cd97bad45bb6e994c68262a40f02d655645aeca3432e5a826c910d48d81481ac",
+      "decoded_size": 115,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b ba c9 c9 c9",
+      "unused_sha256": "024094810170f6a18f058750f2f1a7682e1753e8456dc71ea9116c64188abfaf"
+    },
+    {
+      "index": 34974,
+      "opaque_id": "0x45f7bfd37626423",
+      "package": 1,
+      "offset": 133877816,
+      "size": 123,
+      "compressed_sha256": "7dd1916e09afe5bef61d5d9908359430a50ace8e7f1f5e4a2a890a008768fe4c",
+      "decoded_sha256": "515349ce4634fea05e756caf541df2c425f825a8965a7ae7b4260c89d67a5324",
+      "decoded_size": 138,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_overload/models/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 43 c9 c9 c9",
+      "unused_sha256": "e9187311568daf3da1b22436378b954225c410df22ce3f942123ed5c768f3258"
+    },
+    {
+      "index": 135830,
+      "opaque_id": "0xfa9fec1133303823",
+      "package": 1,
+      "offset": 135313831,
+      "size": 103,
+      "compressed_sha256": "7fb9616fb84b9b08ae860958293d1c78c1b1819e79ff913998b4ec2590534e2d",
+      "decoded_sha256": "5784e086ee1045481a199a93a12192cd2622f4381a2f527d3a22e70aba3f6530",
+      "decoded_size": 119,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/ui/uicreate/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b be c9 c9 c9",
+      "unused_sha256": "103bc21a1aae1d30d8c0e7a2909cd5058a1ca58a1404a964da37e88c9237b3bf"
+    },
+    {
+      "index": 108047,
+      "opaque_id": "0xeb20155436633723",
+      "package": 1,
+      "offset": 135314562,
+      "size": 121,
+      "compressed_sha256": "d63a2462a5419292fde245e2f764eee7a2cff69c369357a0a2100adc9a1c4a15",
+      "decoded_sha256": "bad68c09f757eaca6ff9501c784e540d64824fecdcae1a464b44896c517e2b41",
+      "decoded_size": 135,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_hotspot_mega/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4e c9 c9 c9",
+      "unused_sha256": "1403222e4a5b4e89fcc9730186ec6be6e0ebe84660dfba74eb724ccfb84d5db8"
+    },
+    {
+      "index": 15638,
+      "opaque_id": "0x99be9a7537653123",
+      "package": 1,
+      "offset": 136646187,
+      "size": 94,
+      "compressed_sha256": "e95585598aaea40e657d0426054c9ecf24c793682ae54c402738c4e53bf1d3f3",
+      "decoded_sha256": "44e9906dec5d0276b33d113426eef37e8cbc52f595938d73ff96b51442324b55",
+      "decoded_size": 108,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b a5 c9 c9 c9",
+      "unused_sha256": "e784e773c279da866d98e39826328d8cd7e47943cea0c719bc5326505bf3476b"
+    },
+    {
+      "index": 66675,
+      "opaque_id": "0xa3a21edb30646623",
+      "package": 1,
+      "offset": 152818190,
+      "size": 119,
+      "compressed_sha256": "078c4961f4e3331d629dbfc93d5ffa4b3013d1304b299e0bae70e6f7474ca1de",
+      "decoded_sha256": "513eb460778584ecb8daefcbf720d1e749cdbf4b578f7d25f5588498c49b4971",
+      "decoded_size": 133,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gamesystem/uihall/v8_flag/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4c c9 c9 c9",
+      "unused_sha256": "1dd177d64f0d0627c39efbfb940d99367de50f4538b06231f4806096d5828006"
+    },
+    {
+      "index": 32835,
+      "opaque_id": "0x90c1aba939343523",
+      "package": 1,
+      "offset": 179113196,
+      "size": 120,
+      "compressed_sha256": "28abd8ebfd664118de16f3fec92221f4c6d1556acb21848f41351f8a2fe45f69",
+      "decoded_sha256": "0db2ec43d3b4b08d6c50166af5ae9e8221c691917ffc1dfdb19ac3e85b4230af",
+      "decoded_size": 134,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_bleach/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4f c9 c9 c9",
+      "unused_sha256": "7f8c52847d53fe6937b9900b57e95c5fe8500f7aff95f2045b023d1c854a716e"
+    },
+    {
+      "index": 10050,
+      "opaque_id": "0x18bad74b62353223",
+      "package": 1,
+      "offset": 181708987,
+      "size": 99,
+      "compressed_sha256": "290b7c3381efb35da380994939e82b7bd34048f7268653be54034627e2b4f268",
+      "decoded_sha256": "c73c61ce1bf87e726777c51dfab3452500535f4eedca83b397a931a1e649dfae",
+      "decoded_size": 113,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b b8 c9 c9 c9",
+      "unused_sha256": "7f52ccbe2f5a0f19ef7ab413aac55ae47194904a7484fa0697b8332122513c72"
+    },
+    {
+      "index": 58038,
+      "opaque_id": "0x684974df32353323",
+      "package": 1,
+      "offset": 194861548,
+      "size": 123,
+      "compressed_sha256": "89101d3615683ebf22874a0cebf3206b40c62e256c6931a8a0ea7e256192db56",
+      "decoded_sha256": "6e4ed71b3084738b4c54232f033ad69444c36820046d32691ee69554022a1931",
+      "decoded_size": 137,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_grand_theft/ui/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 40 c9 c9 c9",
+      "unused_sha256": "e380297b2bf46997d90c70fefa9da3f529ec9193fb4f140af34e5bd1b4c5e07e"
+    },
+    {
+      "index": 5298,
+      "opaque_id": "0xcc85c50a65343223",
+      "package": 1,
+      "offset": 204995064,
+      "size": 119,
+      "compressed_sha256": "97efeef6448278522315f08200f36915a48430a5c5b06ad33baa44d97f5edda9",
+      "decoded_sha256": "d936f8f142bca9fa587013abb6a57f837e33a8f08cf8266a13ef4d7489600df0",
+      "decoded_size": 134,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gamesystem/uihall/uiinvite/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4f c9 c9 c9",
+      "unused_sha256": "7f8c52847d53fe6937b9900b57e95c5fe8500f7aff95f2045b023d1c854a716e"
+    },
+    {
+      "index": 538,
+      "opaque_id": "0x1719ef5562636123",
+      "package": 1,
+      "offset": 209935408,
+      "size": 103,
+      "compressed_sha256": "1b352ab4e5d408b234c2c600c0157bf404b2a5f40dcda87090e9e6b3a115c378",
+      "decoded_sha256": "800e4a25955da2434fbe2b2258a652d77c497059c72b4ac5bb38dab5d5e999ea",
+      "decoded_size": 118,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b bf c9 c9 c9",
+      "unused_sha256": "9187964fe0bedd563f619b8d6a0b3d9856619e48afe70a06f2c53d04b429ad08"
+    },
+    {
+      "index": 79910,
+      "opaque_id": "0x5e2684a733306223",
+      "package": 1,
+      "offset": 217781718,
+      "size": 122,
+      "compressed_sha256": "c6d9f732d44dccdaf71e0c2be6480078d9d4a4ff0f182346f8d0e889a6f6cd30",
+      "decoded_sha256": "d35ddf73520b58db9da78ef5fb63f746d06983d204bddeabbaa6caf6551ad9ef",
+      "decoded_size": 141,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00 00 f3 10 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 44 c9 c9 c9",
+      "unused_sha256": "8fad51631cb6a9cf39dcddf3c90e9f434bcf9ade70e2837be4c84c15f68fa1b3"
+    },
+    {
+      "index": 111051,
+      "opaque_id": "0x3df3e1c434396123",
+      "package": 1,
+      "offset": 218872543,
+      "size": 120,
+      "compressed_sha256": "f862d0df5d9ba926b8816360afd5ec87034bafa1aaa119c0830eda6bd53e108a",
+      "decoded_sha256": "73380314c9ccf44ee2602a25bcfd4249c2b6b2acc49bfc3d6b4fe01c74c895f5",
+      "decoded_size": 134,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_eva/ui/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4f c9 c9 c9",
+      "unused_sha256": "7f8c52847d53fe6937b9900b57e95c5fe8500f7aff95f2045b023d1c854a716e"
+    },
+    {
+      "index": 141119,
+      "opaque_id": "0xbae6b75238633423",
+      "package": 1,
+      "offset": 226056622,
+      "size": 97,
+      "compressed_sha256": "0ef4f6a4dec4ce51cd12a52e12abe18bed169ba63f71136fd7edb40604a6577d",
+      "decoded_sha256": "9f63151bb577165ac2e1be04a86113b5d55f1450639df6402a77175c5202ae04",
+      "decoded_size": 111,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b a6 c9 c9 c9",
+      "unused_sha256": "38355ecb1a548b7125bea3bf71f541596222dba5a867f1d733badd6d5218fa63"
+    },
+    {
+      "index": 142291,
+      "opaque_id": "0x283992a730393523",
+      "package": 1,
+      "offset": 246086105,
+      "size": 119,
+      "compressed_sha256": "de1aa154221fec9ad8739a16dc3bd9d25ee0557bf91a3755716652aa94c39aaf",
+      "decoded_sha256": "ccbc97c04bf4ae511f9e03459f690061bea5075c3b3287996bd29e0866417ff6",
+      "decoded_size": 133,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_hotspot/ui/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4c c9 c9 c9",
+      "unused_sha256": "1dd177d64f0d0627c39efbfb940d99367de50f4538b06231f4806096d5828006"
+    },
+    {
+      "index": 99180,
+      "opaque_id": "0x2e254eff35633223",
+      "package": 1,
+      "offset": 249904050,
+      "size": 120,
+      "compressed_sha256": "275601e9019fa464bcd62d58d78664a7492510ba08056d8eb1dbef692d67877b",
+      "decoded_sha256": "a8038f15c5d108e4202e0028279826c805788577442985789fb165d3ce0baa4b",
+      "decoded_size": 134,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_big_head/ui/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4f c9 c9 c9",
+      "unused_sha256": "7f8c52847d53fe6937b9900b57e95c5fe8500f7aff95f2045b023d1c854a716e"
+    },
+    {
+      "index": 39726,
+      "opaque_id": "0xfbc9e4df35323523",
+      "package": 1,
+      "offset": 265831187,
+      "size": 120,
+      "compressed_sha256": "304bb35893bc301575aac32b22d495e407865968da48f1105727a9bd516f9304",
+      "decoded_sha256": "666e924792e884064979bcdca88610acba5f9f7be225dfcdb50fd3fcd76abac7",
+      "decoded_size": 135,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_dmz/entities/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4e c9 c9 c9",
+      "unused_sha256": "1403222e4a5b4e89fcc9730186ec6be6e0ebe84660dfba74eb724ccfb84d5db8"
+    },
+    {
+      "index": 89048,
+      "opaque_id": "0x4334e7d664386323",
+      "package": 1,
+      "offset": 268654310,
+      "size": 120,
+      "compressed_sha256": "355f7d0d70dfd196a6c13b569fa23d79373cd9d7d32ccca9c033e6f3c7cf819f",
+      "decoded_sha256": "cd4d669c6329d0803730af0d4ad903f82ad1a2c3bb291b074b709b3229b1014b",
+      "decoded_size": 135,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/util/cinematics/calculation/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 4e c9 c9 c9",
+      "unused_sha256": "1403222e4a5b4e89fcc9730186ec6be6e0ebe84660dfba74eb724ccfb84d5db8"
+    },
+    {
+      "index": 144010,
+      "opaque_id": "0x68d08d333626223",
+      "package": 1,
+      "offset": 274914337,
+      "size": 123,
+      "compressed_sha256": "9bdce7d459bfba93fee26a20a6dc67fb5fc52e62ef74cfca6f96421fb699f28c",
+      "decoded_sha256": "f57e2c6842e2a8c8c791ac9b5f399f90661e58968169dc146e80cfbd816e2b4d",
+      "decoded_size": 137,
+      "head": "2b 0e 0d 0a 00 00 00 00 63 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 f3 06 00",
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_nightmare/__init__.py"
+      ],
+      "unused_bytes": 8,
+      "unused_head": "93 85 80 8b 40 c9 c9 c9",
+      "unused_sha256": "e380297b2bf46997d90c70fefa9da3f529ec9193fb4f140af34e5bd1b4c5e07e"
+    }
+  ],
+  "interpretation": "Original index rejected these because the zlib input contains extra bytes. Valid stream CRC and EOF do not explain the trailer; decoded payload metadata is separate evidence."
+}

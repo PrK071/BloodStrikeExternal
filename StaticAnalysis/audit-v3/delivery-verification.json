@@ -1,0 +1,27 @@
+{
+  "status": "PASS_REPORT_AND_DELIVERY",
+  "generated_utc": "2026-10-21T04:40:30.225165+00:00",
+  "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "claim_ids": [
+    "V3-L01",
+    "V3-L02",
+    "V3-L03",
+    "V3-L04",
+    "V3-L05",
+    "V3-B01",
+    "V3-B02",
+    "V3-B03",
+    "V3-B04",
+    "V3-B05",
+    "V3-F01",
+    "V3-F02",
+    "V3-F03",
+    "V3-R01",
+    "V3-R02"
+  ],
+  "instruction_records_rechecked": 8018,
+  "data_blocks_rechecked": 8,
+  "prior_artifacts_unchanged": true,
+  "runtime_game_access": false,
+  "limitation": "Cross-reference/integrity checks; not an independent semantic review or runtime validation."
+}

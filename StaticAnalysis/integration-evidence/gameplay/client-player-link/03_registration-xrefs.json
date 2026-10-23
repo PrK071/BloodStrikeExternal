@@ -1,0 +1,149 @@
+{
+  "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "rtti_types_sha256": "7d7ad9edebc4bd46a48618a6365b34293f562caf54a127c0b0b2b5ec48361f2c",
+  "selected_closure_descriptors": [
+    {
+      "rva": "0x7d5dab0",
+      "name": ".?AV<lambda_1>@?4??RegisterObjectClass__ClientPlayer@Messiah@@YAXXZ@"
+    },
+    {
+      "rva": "0x7d5db10",
+      "name": ".?AV<lambda_1>@?4??InitializeObjectClass__ClientPlayer@Messiah@@YAXXZ@"
+    },
+    {
+      "rva": "0x8024b10",
+      "name": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??InitializeObjectClass__ClientPlayer@Messiah@@YAXXZ@X$$V@std@@"
+    },
+    {
+      "rva": "0x8024b90",
+      "name": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??RegisterObjectClass__ClientPlayer@Messiah@@YAXXZ@PEAVPyIObject@3@PEAVIObject@3@@std@@"
+    }
+  ],
+  "target_map": {
+    "0x7d5dab0": "RTTI closure .?AV<lambda_1>@?4??RegisterObjectClass__ClientPlayer@Messiah@@YAXXZ@",
+    "0x7d5db10": "RTTI closure .?AV<lambda_1>@?4??InitializeObjectClass__ClientPlayer@Messiah@@YAXXZ@",
+    "0x8024b10": "RTTI closure .?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??InitializeObjectClass__ClientPlayer@Messiah@@YAXXZ@X$$V@std@@",
+    "0x8024b90": "RTTI closure .?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??RegisterObjectClass__ClientPlayer@Messiah@@YAXXZ@PEAVPyIObject@3@PEAVIObject@3@@std@@",
+    "0x51c47e0": "string ClientPlayer.Char",
+    "0x51f9170": "ClientPlayer metadata block A",
+    "0x51f91e0": "ClientPlayer metadata block B",
+    "0x51f91f0": "ClientPlayer.Char reflected name slot",
+    "0x51f9210": "ClientPlayer.Char reflected duplicate slot",
+    "0x51f9230": "ClientPlayer.Char callback block",
+    "0x51f9280": "ClientPlayer.Char tail callback block",
+    "0xce4570": "ClientPlayer.Char offset-accessor candidate +0xea0",
+    "0x6a5850": "ClientPlayer.Char offset-accessor candidate +0xec0"
+  },
+  "references": [
+    {
+      "kind": "data_pointer",
+      "target": "string ClientPlayer.Char",
+      "target_rva": "0x51c47e0",
+      "rva": "0x51e4680",
+      "file_offset": "0x51e3880",
+      "dir64_relocation": true
+    },
+    {
+      "kind": "data_pointer",
+      "target": "string ClientPlayer.Char",
+      "target_rva": "0x51c47e0",
+      "rva": "0x51f91f0",
+      "file_offset": "0x51f83f0",
+      "dir64_relocation": true
+    },
+    {
+      "kind": "data_pointer",
+      "target": "string ClientPlayer.Char",
+      "target_rva": "0x51c47e0",
+      "rva": "0x51f9210",
+      "file_offset": "0x51f8410",
+      "dir64_relocation": true
+    },
+    {
+      "kind": "data_pointer",
+      "target": "ClientPlayer.Char offset-accessor candidate +0xea0",
+      "target_rva": "0xce4570",
+      "rva": "0x51f9170",
+      "file_offset": "0x51f8370",
+      "dir64_relocation": true
+    },
+    {
+      "kind": "data_pointer",
+      "target": "ClientPlayer.Char offset-accessor candidate +0xea0",
+      "target_rva": "0xce4570",
+      "rva": "0x52939c0",
+      "file_offset": "0x5292bc0",
+      "dir64_relocation": true
+    },
+    {
+      "kind": "data_pointer",
+      "target": "ClientPlayer.Char offset-accessor candidate +0xec0",
+      "target_rva": "0x6a5850",
+      "rva": "0x4ef9760",
+      "file_offset": "0x4ef8960",
+      "dir64_relocation": true
+    },
+    {
+      "kind": "data_pointer",
+      "target": "ClientPlayer.Char offset-accessor candidate +0xec0",
+      "target_rva": "0x6a5850",
+      "rva": "0x4efb010",
+      "file_offset": "0x4efa210",
+      "dir64_relocation": true
+    },
+    {
+      "kind": "data_pointer",
+      "target": "ClientPlayer.Char offset-accessor candidate +0xec0",
+      "target_rva": "0x6a5850",
+      "rva": "0x50ec838",
+      "file_offset": "0x50eba38",
+      "dir64_relocation": true
+    },
+    {
+      "kind": "data_pointer",
+      "target": "ClientPlayer.Char offset-accessor candidate +0xec0",
+      "target_rva": "0x6a5850",
+      "rva": "0x50f23a0",
+      "file_offset": "0x50f15a0",
+      "dir64_relocation": true
+    },
+    {
+      "kind": "data_pointer",
+      "target": "ClientPlayer.Char offset-accessor candidate +0xec0",
+      "target_rva": "0x6a5850",
+      "rva": "0x50f3d78",
+      "file_offset": "0x50f2f78",
+      "dir64_relocation": true
+    },
+    {
+      "kind": "data_pointer",
+      "target": "ClientPlayer.Char offset-accessor candidate +0xec0",
+      "target_rva": "0x6a5850",
+      "rva": "0x51f9280",
+      "file_offset": "0x51f8480",
+      "dir64_relocation": true
+    },
+    {
+      "kind": "data_pointer",
+      "target": "ClientPlayer.Char offset-accessor candidate +0xec0",
+      "target_rva": "0x6a5850",
+      "rva": "0x5293ad0",
+      "file_offset": "0x5292cd0",
+      "dir64_relocation": true
+    },
+    {
+      "kind": "data_pointer",
+      "target": "ClientPlayer.Char offset-accessor candidate +0xec0",
+      "target_rva": "0x6a5850",
+      "rva": "0x52f0fc0",
+      "file_offset": "0x52f01c0",
+      "dir64_relocation": true
+    }
+  ],
+  "caller_functions": [],
+  "limits": [
+    "Only statically decoded direct RIP and relative-branch references are captured; indirect and computed references may be missed.",
+    "Closure type descriptors identify lambdas but not source-level call semantics.",
+    "CFG follows direct branches only and does not follow callees or indirect branches."
+  ]
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "target": "0x80f6dc8",
+    "function": "0x750070",
+    "instruction": {
+      "rva": "0x750105",
+      "preferred_va": "0x140750105",
+      "file_offset": "0x74f705",
+      "bytes": "48 8d 05 bc 6c 9a 07",
+      "text": "lea rax,[1480F6DC8h]",
+      "length": 7,
+      "rip_target_rva": "0x80f6dc8",
+      "rip_target_string": null
+    }
+  },
+  {
+    "target": "0x80f6dc8",
+    "function": "0x766370",
+    "instruction": {
+      "rva": "0x76637e",
+      "preferred_va": "0x14076637e",
+      "file_offset": "0x76597e",
+      "bytes": "48 8d 05 43 0a 99 07",
+      "text": "lea rax,[1480F6DC8h]",
+      "length": 7,
+      "rip_target_rva": "0x80f6dc8",
+      "rip_target_string": null
+    }
+  }
+]

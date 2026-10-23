@@ -1,0 +1,73 @@
+[
+  {
+    "id": "V4-K01",
+    "statement": "Two Skeleton constructors fetch-add the same 32-bit counter and store the returned old value at +0x0c.",
+    "status": "confirmed_static",
+    "instructions": [
+      "V4-I-115EB42",
+      "V4-I-115EB4A",
+      "V4-I-115E502",
+      "V4-I-115E50A"
+    ]
+  },
+  {
+    "id": "V4-K02",
+    "statement": "Both Character::Actor construction paths call those Skeleton constructors.",
+    "status": "confirmed_static",
+    "instructions": [
+      "V4-I-16D0E9A",
+      "V4-I-16D11B2"
+    ]
+  },
+  {
+    "id": "V4-K03",
+    "statement": "Existing-key insertion returns without payload replacement.",
+    "status": "confirmed_static",
+    "instructions": [
+      "V4-I-254422",
+      "V4-I-254435",
+      "V4-I-254438"
+    ]
+  },
+  {
+    "id": "V4-K04",
+    "statement": "A deferred cleanup path invalidates the wrapper before invoking the native virtual destructor.",
+    "status": "confirmed_path",
+    "instructions": [
+      "V4-I-4FAA28",
+      "V4-I-4FAA35"
+    ]
+  },
+  {
+    "id": "V4-K05",
+    "statement": "Wrapper expiration clears W+0x18; Python method checks reject an expired native object.",
+    "status": "confirmed_path",
+    "instructions": [
+      "V4-I-2D85FE7",
+      "V4-I-29BB2F4",
+      "V4-I-29BB2F8",
+      "V4-I-29BB313"
+    ]
+  },
+  {
+    "id": "V4-K06",
+    "statement": "Metadata resolver has a concrete adapter and name-based pending registration path.",
+    "status": "confirmed_path",
+    "instructions": [
+      "V4-I-1CB85B0",
+      "V4-I-20CB175",
+      "V4-I-20CB194",
+      "V4-I-20CB1B9",
+      "V4-I-20CB1D8"
+    ]
+  },
+  {
+    "id": "V4-K07",
+    "statement": "Entity Transform and camera ViewMatrix getters return addresses, not a world-to-screen result.",
+    "status": "confirmed_static",
+    "instructions": [
+      "V4-I-95E880",
+      "V4-I-964090"
+    ]
+  }
+]

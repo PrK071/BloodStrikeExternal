@@ -1,0 +1,614 @@
+[
+  {
+    "rva": "0x6e0f460",
+    "type_descriptor_rva": "0x7dd90c8",
+    "name": "Messiah::IObject",
+    "object_offset": 0,
+    "construction_displacement": 0,
+    "hierarchy_rva": "0x6e0f488",
+    "hierarchy_attributes": "0x0",
+    "bases": [
+      {
+        "name": "Messiah::IObject",
+        "type_descriptor_rva": "0x7dd90c8",
+        "descriptor_rva": "0x6e0f4b0",
+        "contained_bases": 0,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      }
+    ]
+  },
+  {
+    "rva": "0x6e103f0",
+    "type_descriptor_rva": "0x7dd9838",
+    "name": "Messiah::IComponent",
+    "object_offset": 0,
+    "construction_displacement": 0,
+    "hierarchy_rva": "0x6e10418",
+    "hierarchy_attributes": "0x0",
+    "bases": [
+      {
+        "name": "Messiah::IComponent",
+        "type_descriptor_rva": "0x7dd9838",
+        "descriptor_rva": "0x6e10448",
+        "contained_bases": 1,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::IObject",
+        "type_descriptor_rva": "0x7dd90c8",
+        "descriptor_rva": "0x6e0f4b0",
+        "contained_bases": 0,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      }
+    ]
+  },
+  {
+    "rva": "0x6e1e1b8",
+    "type_descriptor_rva": "0x7de5d50",
+    "name": "Messiah::ICamera",
+    "object_offset": 0,
+    "construction_displacement": 0,
+    "hierarchy_rva": "0x6e1e1e0",
+    "hierarchy_attributes": "0x1",
+    "bases": [
+      {
+        "name": "Messiah::ICamera",
+        "type_descriptor_rva": "0x7de5d50",
+        "descriptor_rva": "0x6e1e228",
+        "contained_bases": 4,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::IEntity",
+        "type_descriptor_rva": "0x7de5d78",
+        "descriptor_rva": "0x6e1e250",
+        "contained_bases": 3,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::IObject",
+        "type_descriptor_rva": "0x7dd90c8",
+        "descriptor_rva": "0x6e0f4b0",
+        "contained_bases": 0,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": ".?AV?$TObjectComponent@VIEntity@Messiah@@@Messiah@@",
+        "type_descriptor_rva": "0x7de5da0",
+        "descriptor_rva": "0x6e1e2b8",
+        "contained_bases": 1,
+        "member_displacement": 64,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x4d"
+      },
+      {
+        "name": "Messiah::ObjectComponentBase",
+        "type_descriptor_rva": "0x7de5de8",
+        "descriptor_rva": "0x6e1e388",
+        "contained_bases": 0,
+        "member_displacement": 64,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x49"
+      }
+    ]
+  },
+  {
+    "rva": "0x6e7a378",
+    "type_descriptor_rva": "0x7de5d78",
+    "name": "Messiah::IEntity",
+    "object_offset": 0,
+    "construction_displacement": 0,
+    "hierarchy_rva": "0x6e1e278",
+    "hierarchy_attributes": "0x1",
+    "bases": [
+      {
+        "name": "Messiah::IEntity",
+        "type_descriptor_rva": "0x7de5d78",
+        "descriptor_rva": "0x6e1e250",
+        "contained_bases": 3,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::IObject",
+        "type_descriptor_rva": "0x7dd90c8",
+        "descriptor_rva": "0x6e0f4b0",
+        "contained_bases": 0,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": ".?AV?$TObjectComponent@VIEntity@Messiah@@@Messiah@@",
+        "type_descriptor_rva": "0x7de5da0",
+        "descriptor_rva": "0x6e1e2b8",
+        "contained_bases": 1,
+        "member_displacement": 64,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x4d"
+      },
+      {
+        "name": "Messiah::ObjectComponentBase",
+        "type_descriptor_rva": "0x7de5de8",
+        "descriptor_rva": "0x6e1e388",
+        "contained_bases": 0,
+        "member_displacement": 64,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x49"
+      }
+    ]
+  },
+  {
+    "rva": "0x6e95428",
+    "type_descriptor_rva": "0x7dedf18",
+    "name": "Messiah::ISkeletonComponent",
+    "object_offset": 0,
+    "construction_displacement": 0,
+    "hierarchy_rva": "0x6e27e98",
+    "hierarchy_attributes": "0x1",
+    "bases": [
+      {
+        "name": "Messiah::ISkeletonComponent",
+        "type_descriptor_rva": "0x7dedf18",
+        "descriptor_rva": "0x6e27e70",
+        "contained_bases": 3,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::IComponent",
+        "type_descriptor_rva": "0x7dd9838",
+        "descriptor_rva": "0x6e10448",
+        "contained_bases": 1,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::IObject",
+        "type_descriptor_rva": "0x7dd90c8",
+        "descriptor_rva": "0x6e0f4b0",
+        "contained_bases": 0,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::ITickable",
+        "type_descriptor_rva": "0x7de8140",
+        "descriptor_rva": "0x6e21558",
+        "contained_bases": 0,
+        "member_displacement": 104,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      }
+    ]
+  },
+  {
+    "rva": "0x6e95450",
+    "type_descriptor_rva": "0x7dedf18",
+    "name": "Messiah::ISkeletonComponent",
+    "object_offset": 104,
+    "construction_displacement": 0,
+    "hierarchy_rva": "0x6e27e98",
+    "hierarchy_attributes": "0x1",
+    "bases": [
+      {
+        "name": "Messiah::ISkeletonComponent",
+        "type_descriptor_rva": "0x7dedf18",
+        "descriptor_rva": "0x6e27e70",
+        "contained_bases": 3,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::IComponent",
+        "type_descriptor_rva": "0x7dd9838",
+        "descriptor_rva": "0x6e10448",
+        "contained_bases": 1,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::IObject",
+        "type_descriptor_rva": "0x7dd90c8",
+        "descriptor_rva": "0x6e0f4b0",
+        "contained_bases": 0,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::ITickable",
+        "type_descriptor_rva": "0x7de8140",
+        "descriptor_rva": "0x6e21558",
+        "contained_bases": 0,
+        "member_displacement": 104,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      }
+    ]
+  },
+  {
+    "rva": "0x6ea7be0",
+    "type_descriptor_rva": "0x7cd1a48",
+    "name": "Messiah::SkeletonComponent",
+    "object_offset": 0,
+    "construction_displacement": 0,
+    "hierarchy_rva": "0x6ea7c08",
+    "hierarchy_attributes": "0x1",
+    "bases": [
+      {
+        "name": "Messiah::SkeletonComponent",
+        "type_descriptor_rva": "0x7cd1a48",
+        "descriptor_rva": "0x6ea7c50",
+        "contained_bases": 4,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::ISkeletonComponent",
+        "type_descriptor_rva": "0x7dedf18",
+        "descriptor_rva": "0x6e27e70",
+        "contained_bases": 3,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::IComponent",
+        "type_descriptor_rva": "0x7dd9838",
+        "descriptor_rva": "0x6e10448",
+        "contained_bases": 1,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::IObject",
+        "type_descriptor_rva": "0x7dd90c8",
+        "descriptor_rva": "0x6e0f4b0",
+        "contained_bases": 0,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::ITickable",
+        "type_descriptor_rva": "0x7de8140",
+        "descriptor_rva": "0x6e21558",
+        "contained_bases": 0,
+        "member_displacement": 104,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      }
+    ]
+  },
+  {
+    "rva": "0x6ea7c78",
+    "type_descriptor_rva": "0x7cd1a48",
+    "name": "Messiah::SkeletonComponent",
+    "object_offset": 104,
+    "construction_displacement": 0,
+    "hierarchy_rva": "0x6ea7c08",
+    "hierarchy_attributes": "0x1",
+    "bases": [
+      {
+        "name": "Messiah::SkeletonComponent",
+        "type_descriptor_rva": "0x7cd1a48",
+        "descriptor_rva": "0x6ea7c50",
+        "contained_bases": 4,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::ISkeletonComponent",
+        "type_descriptor_rva": "0x7dedf18",
+        "descriptor_rva": "0x6e27e70",
+        "contained_bases": 3,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::IComponent",
+        "type_descriptor_rva": "0x7dd9838",
+        "descriptor_rva": "0x6e10448",
+        "contained_bases": 1,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::IObject",
+        "type_descriptor_rva": "0x7dd90c8",
+        "descriptor_rva": "0x6e0f4b0",
+        "contained_bases": 0,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::ITickable",
+        "type_descriptor_rva": "0x7de8140",
+        "descriptor_rva": "0x6e21558",
+        "contained_bases": 0,
+        "member_displacement": 104,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      }
+    ]
+  },
+  {
+    "rva": "0x6f481c8",
+    "type_descriptor_rva": "0x7f14ed8",
+    "name": "Character::Actor",
+    "object_offset": 0,
+    "construction_displacement": 0,
+    "hierarchy_rva": "0x6f481f0",
+    "hierarchy_attributes": "0x0",
+    "bases": [
+      {
+        "name": "Character::Actor",
+        "type_descriptor_rva": "0x7f14ed8",
+        "descriptor_rva": "0x6f48228",
+        "contained_bases": 2,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "AnimationCore::Skeleton",
+        "type_descriptor_rva": "0x7eb85a0",
+        "descriptor_rva": "0x6f0b7a0",
+        "contained_bases": 1,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::IRefObject",
+        "type_descriptor_rva": "0x7dd91c8",
+        "descriptor_rva": "0x6e0f630",
+        "contained_bases": 0,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      }
+    ]
+  },
+  {
+    "rva": "0x6f72620",
+    "type_descriptor_rva": "0x7cfca00",
+    "name": "Messiah::ActorComponent",
+    "object_offset": 0,
+    "construction_displacement": 0,
+    "hierarchy_rva": "0x6f72648",
+    "hierarchy_attributes": "0x1",
+    "bases": [
+      {
+        "name": "Messiah::ActorComponent",
+        "type_descriptor_rva": "0x7cfca00",
+        "descriptor_rva": "0x6f72698",
+        "contained_bases": 5,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::SkeletonComponent",
+        "type_descriptor_rva": "0x7cd1a48",
+        "descriptor_rva": "0x6ea7c50",
+        "contained_bases": 4,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::ISkeletonComponent",
+        "type_descriptor_rva": "0x7dedf18",
+        "descriptor_rva": "0x6e27e70",
+        "contained_bases": 3,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::IComponent",
+        "type_descriptor_rva": "0x7dd9838",
+        "descriptor_rva": "0x6e10448",
+        "contained_bases": 1,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::IObject",
+        "type_descriptor_rva": "0x7dd90c8",
+        "descriptor_rva": "0x6e0f4b0",
+        "contained_bases": 0,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::ITickable",
+        "type_descriptor_rva": "0x7de8140",
+        "descriptor_rva": "0x6e21558",
+        "contained_bases": 0,
+        "member_displacement": 104,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      }
+    ]
+  },
+  {
+    "rva": "0x6f726c0",
+    "type_descriptor_rva": "0x7cfca00",
+    "name": "Messiah::ActorComponent",
+    "object_offset": 104,
+    "construction_displacement": 0,
+    "hierarchy_rva": "0x6f72648",
+    "hierarchy_attributes": "0x1",
+    "bases": [
+      {
+        "name": "Messiah::ActorComponent",
+        "type_descriptor_rva": "0x7cfca00",
+        "descriptor_rva": "0x6f72698",
+        "contained_bases": 5,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::SkeletonComponent",
+        "type_descriptor_rva": "0x7cd1a48",
+        "descriptor_rva": "0x6ea7c50",
+        "contained_bases": 4,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::ISkeletonComponent",
+        "type_descriptor_rva": "0x7dedf18",
+        "descriptor_rva": "0x6e27e70",
+        "contained_bases": 3,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::IComponent",
+        "type_descriptor_rva": "0x7dd9838",
+        "descriptor_rva": "0x6e10448",
+        "contained_bases": 1,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::IObject",
+        "type_descriptor_rva": "0x7dd90c8",
+        "descriptor_rva": "0x6e0f4b0",
+        "contained_bases": 0,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::ITickable",
+        "type_descriptor_rva": "0x7de8140",
+        "descriptor_rva": "0x6e21558",
+        "contained_bases": 0,
+        "member_displacement": 104,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      }
+    ]
+  },
+  {
+    "rva": "0x6fb8260",
+    "type_descriptor_rva": "0x7f74288",
+    "name": "Messiah::PythonAsyncoreModule",
+    "object_offset": 0,
+    "construction_displacement": 0,
+    "hierarchy_rva": "0x6fb8288",
+    "hierarchy_attributes": "0x0",
+    "bases": [
+      {
+        "name": "Messiah::PythonAsyncoreModule",
+        "type_descriptor_rva": "0x7f74288",
+        "descriptor_rva": "0x6fb82c0",
+        "contained_bases": 2,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::IPlugin",
+        "type_descriptor_rva": "0x7ddb738",
+        "descriptor_rva": "0x6e13310",
+        "contained_bases": 1,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      },
+      {
+        "name": "Messiah::IModule",
+        "type_descriptor_rva": "0x7c992e8",
+        "descriptor_rva": "0x6e0fe00",
+        "contained_bases": 0,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40"
+      }
+    ]
+  }
+]

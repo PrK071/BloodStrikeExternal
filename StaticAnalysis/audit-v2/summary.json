@@ -1,0 +1,113 @@
+{
+  "generated_utc": "2026-10-21T03:38:06.693079+00:00",
+  "binary": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\BloodStrike.exe",
+  "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "pe_timestamp_raw": "0x6acbbfba",
+  "pe_timestamp_utc": "2026-10-11T16:56:26+00:00",
+  "image_base_preferred": "0x140000000",
+  "size_of_image": "0x94e9000",
+  "entry_point_rva": "0x424c4a4",
+  "decoder": "iced-x86 1.21.0",
+  "parser": "independent raw struct PE parser in audit_v2.py",
+  "source_artifact_hashes": {
+    "anchor-strings.json": "bcc3a13e8abfb81cf985f45c184cdc9da648b0f077dc830d762e7edb198a6fd6",
+    "code-xrefs.json": "9fec30008718974a8ef3dc588d5802d148c800c463ed46c546e21675ce01cb55",
+    "confirmed-evidence.json": "13383b1a2c4cee8d44e8b4db47571dbb99b81c9a52a0c43042be9cd732971e54",
+    "core-hierarchies.json": "7ede455c2fe47e7b4f71061552c4dd1da0f5ca8fb829ffdce91dfcb7afe3d081",
+    "core-vtables.json": "8ce342c96f33fb8c3ff173254ce8a45ca1fe9f133cac9889347dd8cdc2d8a578",
+    "exports.json": "1c74a5fd03b52f7166e9ada453c13cff8e30e1b226b6d4a6ffd8ad6655625980",
+    "external-offsets-unvalidated.json": "076d6c28e5dbe23234ed85baa8bcdef5d559a1163bc1dd2be441ab701d7ceef3",
+    "function-evidence.json": "6f4c8a4b014750fb33fe321d22904ca59b055b91ae374926f3cddd25b1c412eb",
+    "imports.json": "589119afc0483b837bf1639a70f164f1796bfaa15e25d12b6ea654f234dcc0b0",
+    "local-dependencies.json": "01e409ef76c361210783fef761121966d3c1c1e77660f88e08e53718226b7f08",
+    "provenance.json": "c6e312f03acf127f56732d032c6c438b107a50c27b5810d7434a185b2066a43f",
+    "rtti-hierarchies.json": "e87d0efa5466b05cac7bd8030bee380e46b0a0ba501283e9ede2645e4331cdaf",
+    "rtti-types.json": "7d7ad9edebc4bd46a48618a6365b34293f562caf54a127c0b0b2b5ec48361f2c",
+    "summary.json": "b19750ee46b3c114aaeb4a566de06baecaed56617f09f3cc16337332d2268b92",
+    "verification.json": "d04fb541d6801eccc8464498c2b19d4aec40b37b4001bbeb6686964be912215d",
+    "xref-windows.json": "5df01b53a08d6155ea93c6216cd193474b9a6217892fadee58dfd1af0b1f0b17",
+    "../RELATORIO.md": "1cf2aacf1cd088f99af16e02bf6919efd03783caec85cb528999b6bdc18156f2",
+    "../analyze_static.py": "d2194860fa51e431f6a7fd8061230e72e7e77c607359717d7e92ec97521aebb0",
+    "../verify_evidence.py": "2482ecf10801ba56205e9a968aca2411733d58f4c72798bd66d755b567438e6c"
+  },
+  "sections": [
+    {
+      "name": ".text",
+      "rva": 4096,
+      "virtual_size": 81996527,
+      "raw_size": 81996800,
+      "raw_offset": 1536,
+      "flags": 1610612768
+    },
+    {
+      "name": ".rdata",
+      "rva": 82001920,
+      "virtual_size": 41947670,
+      "raw_size": 41948160,
+      "raw_offset": 81998336,
+      "flags": 1073741888
+    },
+    {
+      "name": ".data",
+      "rva": 123953152,
+      "virtual_size": 25816612,
+      "raw_size": 11113472,
+      "raw_offset": 123946496,
+      "flags": 3221225536
+    },
+    {
+      "name": ".pdata",
+      "rva": 149770240,
+      "virtual_size": 3709836,
+      "raw_size": 3709952,
+      "raw_offset": 135059968,
+      "flags": 1073741888
+    },
+    {
+      "name": "PyRuntim",
+      "rva": 153481216,
+      "virtual_size": 315360,
+      "raw_size": 315392,
+      "raw_offset": 138769920,
+      "flags": 3221225536
+    },
+    {
+      "name": "AsyncioD",
+      "rva": 153796608,
+      "virtual_size": 104,
+      "raw_size": 512,
+      "raw_offset": 139085312,
+      "flags": 3221225536
+    },
+    {
+      "name": "_RDATA",
+      "rva": 153800704,
+      "virtual_size": 131592,
+      "raw_size": 132096,
+      "raw_offset": 139085824,
+      "flags": 1073741888
+    },
+    {
+      "name": ".rsrc",
+      "rva": 153935872,
+      "virtual_size": 279152,
+      "raw_size": 279552,
+      "raw_offset": 139217920,
+      "flags": 1073741888
+    },
+    {
+      "name": ".reloc",
+      "rva": 154218496,
+      "virtual_size": 1922820,
+      "raw_size": 1923072,
+      "raw_offset": 139497472,
+      "flags": 1107296320
+    }
+  ],
+  "runtime_function_entries": 309153,
+  "reference_records": 1291,
+  "dumped_units": 55,
+  "status": "PASS_STRUCTURAL",
+  "wall_seconds": 13.147,
+  "runtime_game_access": false
+}

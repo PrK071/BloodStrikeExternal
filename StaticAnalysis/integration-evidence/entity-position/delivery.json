@@ -1,0 +1,15 @@
+{
+  "implementation": "READY",
+  "offline_test_cases": 8,
+  "offline_status": "PASS",
+  "dynamic_tests": 0,
+  "game_or_process_opened": false,
+  "sample_sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "files": {
+    "ExternalCore\\entity_position.py": "307a56c5dff047000e8cd2601398b8f869b0ff2b12231b258c274ca9695a1451",
+    "tests\\test_entity_position.py": "81b7b918ee886d68d9f693626103d7fb3ea4348d50770e5898eb476210859d8d",
+    "StaticAnalysis\\integration-evidence\\entity-position\\verified-instructions.json": "4815c5b3fefcac7595c566e64de5f10a39fb67723b7d0a633309d90625b06b4c",
+    "StaticAnalysis\\integration-evidence\\entity-position\\cfg-and-types.json": "273f6313d475e2a1dbf94ef57e5d8f46daf33f9009b794fc96f754d421a83209",
+    "StaticAnalysis\\integration-evidence\\entity-position\\ENTITY-POSITION.md": "56f3d9bc36c0cf6318811da39d85150a5e2bd6e3d392a82a345e90a9f243af8a"
+  }
+}

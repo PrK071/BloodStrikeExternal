@@ -1,0 +1,1286 @@
+[
+  {
+    "id": "V3-D01",
+    "label": "IEntity.IsInWorld descriptor",
+    "rva": "0x4f64210",
+    "preferred_va": "0x144f64210",
+    "file_offset": "0x4f63410",
+    "bytes": "98 5b ea 44 01 00 00 00 07 00 00 00 ee c6 23 8a 00 9c e4 44 01 00 00 00 04 00 00 00 4a d2 d0 8f d8 d9 e9 44 01 00 00 00 09 00 00 00 31 c4 7a c4 20 de f5 44 01 00 00 00 11 00 00 00 8e 03 52 ce 01 03 10 00 00 00 3d 00 82 02 02 00 00 00 00 00 40 e5 16 40 01 00 00 00 40 e5 16 40 01 00 00 00 80 0a 94 40 01 00 00 00 a0 0a 94 40 01 00 00 00 c0 0a 94 40 01 00 00 00 20 95 93 40 01 00 00 00 60 a2 58 40 01 00 00 00 a0 0b 94 40 01 00 00 00 80 0b 94 40 01 00 00 00 e0 0a 94 40 01 00 00 00 00 0b 94 40 01 00 00 00 20 0b 94 40 01 00 00 00 40 0b 94 40 01 00 00 00 60 0b 94 40 01 00 00 00 40 26 95 40 01 00 00 00 60 26 95 40 01 00 00 00 60 26 95 40 01 00 00 00 f0 26 95 40 01 00 00 00 10 27 95 40 01 00 00 00 40 27 95 40 01 00 00 00 f0 0b 94 40 01 00 00 00 40 e5 16 40 01 00 00 00 10 0c 94 40 01 00 00 00 00 00 00 00 00 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x4f64210",
+        "value": "0x144ea5b98",
+        "dir64_relocation": true,
+        "target_rva": "0x4ea5b98",
+        "target_string": "IEntity"
+      },
+      {
+        "rva": "0x4f64218",
+        "value": "0x8a23c6ee00000007",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x4f64220",
+        "value": "0x144e49c00",
+        "dir64_relocation": true,
+        "target_rva": "0x4e49c00",
+        "target_string": "bool"
+      },
+      {
+        "rva": "0x4f64228",
+        "value": "0x8fd0d24a00000004",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x4f64230",
+        "value": "0x144e9d9d8",
+        "dir64_relocation": true,
+        "target_rva": "0x4e9d9d8",
+        "target_string": "IsInWorld"
+      },
+      {
+        "rva": "0x4f64238",
+        "value": "0xc47ac43100000009",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x4f64240",
+        "value": "0x144f5de20",
+        "dir64_relocation": true,
+        "target_rva": "0x4f5de20",
+        "target_string": "IEntity.IsInWorld"
+      },
+      {
+        "rva": "0x4f64248",
+        "value": "0xce52038e00000011",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x4f64250",
+        "value": "0x3d000000100301",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x4f64258",
+        "value": "0x20282",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x4f64260",
+        "value": "0x14016e540",
+        "dir64_relocation": true,
+        "target_rva": "0x16e540",
+        "target_string": null
+      },
+      {
+        "rva": "0x4f64268",
+        "value": "0x14016e540",
+        "dir64_relocation": true,
+        "target_rva": "0x16e540",
+        "target_string": null
+      },
+      {
+        "rva": "0x4f64270",
+        "value": "0x140940a80",
+        "dir64_relocation": true,
+        "target_rva": "0x940a80",
+        "target_string": null
+      },
+      {
+        "rva": "0x4f64278",
+        "value": "0x140940aa0",
+        "dir64_relocation": true,
+        "target_rva": "0x940aa0",
+        "target_string": null
+      },
+      {
+        "rva": "0x4f64280",
+        "value": "0x140940ac0",
+        "dir64_relocation": true,
+        "target_rva": "0x940ac0",
+        "target_string": null
+      },
+      {
+        "rva": "0x4f64288",
+        "value": "0x140939520",
+        "dir64_relocation": true,
+        "target_rva": "0x939520",
+        "target_string": null
+      },
+      {
+        "rva": "0x4f64290",
+        "value": "0x14058a260",
+        "dir64_relocation": true,
+        "target_rva": "0x58a260",
+        "target_string": null
+      },
+      {
+        "rva": "0x4f64298",
+        "value": "0x140940ba0",
+        "dir64_relocation": true,
+        "target_rva": "0x940ba0",
+        "target_string": null
+      },
+      {
+        "rva": "0x4f642a0",
+        "value": "0x140940b80",
+        "dir64_relocation": true,
+        "target_rva": "0x940b80",
+        "target_string": null
+      },
+      {
+        "rva": "0x4f642a8",
+        "value": "0x140940ae0",
+        "dir64_relocation": true,
+        "target_rva": "0x940ae0",
+        "target_string": null
+      },
+      {
+        "rva": "0x4f642b0",
+        "value": "0x140940b00",
+        "dir64_relocation": true,
+        "target_rva": "0x940b00",
+        "target_string": null
+      },
+      {
+        "rva": "0x4f642b8",
+        "value": "0x140940b20",
+        "dir64_relocation": true,
+        "target_rva": "0x940b20",
+        "target_string": null
+      },
+      {
+        "rva": "0x4f642c0",
+        "value": "0x140940b40",
+        "dir64_relocation": true,
+        "target_rva": "0x940b40",
+        "target_string": null
+      },
+      {
+        "rva": "0x4f642c8",
+        "value": "0x140940b60",
+        "dir64_relocation": true,
+        "target_rva": "0x940b60",
+        "target_string": null
+      },
+      {
+        "rva": "0x4f642d0",
+        "value": "0x140952640",
+        "dir64_relocation": true,
+        "target_rva": "0x952640",
+        "target_string": null
+      },
+      {
+        "rva": "0x4f642d8",
+        "value": "0x140952660",
+        "dir64_relocation": true,
+        "target_rva": "0x952660",
+        "target_string": null
+      },
+      {
+        "rva": "0x4f642e0",
+        "value": "0x140952660",
+        "dir64_relocation": true,
+        "target_rva": "0x952660",
+        "target_string": null
+      },
+      {
+        "rva": "0x4f642e8",
+        "value": "0x1409526f0",
+        "dir64_relocation": true,
+        "target_rva": "0x9526f0",
+        "target_string": null
+      },
+      {
+        "rva": "0x4f642f0",
+        "value": "0x140952710",
+        "dir64_relocation": true,
+        "target_rva": "0x952710",
+        "target_string": null
+      },
+      {
+        "rva": "0x4f642f8",
+        "value": "0x140952740",
+        "dir64_relocation": true,
+        "target_rva": "0x952740",
+        "target_string": null
+      },
+      {
+        "rva": "0x4f64300",
+        "value": "0x140940bf0",
+        "dir64_relocation": true,
+        "target_rva": "0x940bf0",
+        "target_string": null
+      },
+      {
+        "rva": "0x4f64308",
+        "value": "0x14016e540",
+        "dir64_relocation": true,
+        "target_rva": "0x16e540",
+        "target_string": null
+      },
+      {
+        "rva": "0x4f64310",
+        "value": "0x140940c10",
+        "dir64_relocation": true,
+        "target_rva": "0x940c10",
+        "target_string": null
+      },
+      {
+        "rva": "0x4f64318",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      }
+    ]
+  },
+  {
+    "id": "V3-D02",
+    "label": "IComponent.Parent descriptor",
+    "rva": "0x4ed0e40",
+    "preferred_va": "0x144ed0e40",
+    "file_offset": "0x4ed0040",
+    "bytes": "a0 82 ed 44 01 00 00 00 0a 00 00 00 6a 81 d8 a6 60 10 ed 44 01 00 00 00 07 00 00 00 8c 0a 50 2b 08 9a ea 44 01 00 00 00 06 00 00 00 03 76 fc dc 58 0c ed 44 01 00 00 00 11 00 00 00 89 88 80 ac 00 02 04 00 00 00 04 00 12 01 02 00 00 00 00 00 40 e5 16 40 01 00 00 00 b0 bb 58 40 01 00 00 00 c0 9c 26 40 01 00 00 00 70 b4 58 40 01 00 00 00 40 c5 58 40 01 00 00 00 00 b1 58 40 01 00 00 00 e0 b1 58 40 01 00 00 00 30 bd 58 40 01 00 00 00 10 bd 58 40 01 00 00 00 70 bc 58 40 01 00 00 00 90 bc 58 40 01 00 00 00 b0 bc 58 40 01 00 00 00 d0 bc 58 40 01 00 00 00 f0 bc 58 40 01 00 00 00 e0 b3 58 40 01 00 00 00 30 b4 58 40 01 00 00 00 30 b4 58 40 01 00 00 00 50 b4 58 40 01 00 00 00 70 35 17 40 01 00 00 00 70 35 17 40 01 00 00 00 80 bd 58 40 01 00 00 00 60 bd 58 40 01 00 00 00 20 41 10 40 01 00 00 00 00 00 00 00 00 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x4ed0e40",
+        "value": "0x144ed82a0",
+        "dir64_relocation": true,
+        "target_rva": "0x4ed82a0",
+        "target_string": "IComponent"
+      },
+      {
+        "rva": "0x4ed0e48",
+        "value": "0xa6d8816a0000000a",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0e50",
+        "value": "0x144ed1060",
+        "dir64_relocation": true,
+        "target_rva": "0x4ed1060",
+        "target_string": "IObject"
+      },
+      {
+        "rva": "0x4ed0e58",
+        "value": "0x2b500a8c00000007",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0e60",
+        "value": "0x144ea9a08",
+        "dir64_relocation": true,
+        "target_rva": "0x4ea9a08",
+        "target_string": "Parent"
+      },
+      {
+        "rva": "0x4ed0e68",
+        "value": "0xdcfc760300000006",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0e70",
+        "value": "0x144ed0c58",
+        "dir64_relocation": true,
+        "target_rva": "0x4ed0c58",
+        "target_string": "IComponent.Parent"
+      },
+      {
+        "rva": "0x4ed0e78",
+        "value": "0xac80888900000011",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0e80",
+        "value": "0x4000000040200",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0e88",
+        "value": "0x20112",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0e90",
+        "value": "0x14016e540",
+        "dir64_relocation": true,
+        "target_rva": "0x16e540",
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0e98",
+        "value": "0x14058bbb0",
+        "dir64_relocation": true,
+        "target_rva": "0x58bbb0",
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0ea0",
+        "value": "0x140269cc0",
+        "dir64_relocation": true,
+        "target_rva": "0x269cc0",
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0ea8",
+        "value": "0x14058b470",
+        "dir64_relocation": true,
+        "target_rva": "0x58b470",
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0eb0",
+        "value": "0x14058c540",
+        "dir64_relocation": true,
+        "target_rva": "0x58c540",
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0eb8",
+        "value": "0x14058b100",
+        "dir64_relocation": true,
+        "target_rva": "0x58b100",
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0ec0",
+        "value": "0x14058b1e0",
+        "dir64_relocation": true,
+        "target_rva": "0x58b1e0",
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0ec8",
+        "value": "0x14058bd30",
+        "dir64_relocation": true,
+        "target_rva": "0x58bd30",
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0ed0",
+        "value": "0x14058bd10",
+        "dir64_relocation": true,
+        "target_rva": "0x58bd10",
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0ed8",
+        "value": "0x14058bc70",
+        "dir64_relocation": true,
+        "target_rva": "0x58bc70",
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0ee0",
+        "value": "0x14058bc90",
+        "dir64_relocation": true,
+        "target_rva": "0x58bc90",
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0ee8",
+        "value": "0x14058bcb0",
+        "dir64_relocation": true,
+        "target_rva": "0x58bcb0",
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0ef0",
+        "value": "0x14058bcd0",
+        "dir64_relocation": true,
+        "target_rva": "0x58bcd0",
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0ef8",
+        "value": "0x14058bcf0",
+        "dir64_relocation": true,
+        "target_rva": "0x58bcf0",
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0f00",
+        "value": "0x14058b3e0",
+        "dir64_relocation": true,
+        "target_rva": "0x58b3e0",
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0f08",
+        "value": "0x14058b430",
+        "dir64_relocation": true,
+        "target_rva": "0x58b430",
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0f10",
+        "value": "0x14058b430",
+        "dir64_relocation": true,
+        "target_rva": "0x58b430",
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0f18",
+        "value": "0x14058b450",
+        "dir64_relocation": true,
+        "target_rva": "0x58b450",
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0f20",
+        "value": "0x140173570",
+        "dir64_relocation": true,
+        "target_rva": "0x173570",
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0f28",
+        "value": "0x140173570",
+        "dir64_relocation": true,
+        "target_rva": "0x173570",
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0f30",
+        "value": "0x14058bd80",
+        "dir64_relocation": true,
+        "target_rva": "0x58bd80",
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0f38",
+        "value": "0x14058bd60",
+        "dir64_relocation": true,
+        "target_rva": "0x58bd60",
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0f40",
+        "value": "0x140104120",
+        "dir64_relocation": true,
+        "target_rva": "0x104120",
+        "target_string": null
+      },
+      {
+        "rva": "0x4ed0f48",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      }
+    ]
+  },
+  {
+    "id": "V3-D03",
+    "label": "ActorComponent native registration",
+    "rva": "0x7998b00",
+    "preferred_va": "0x147998b00",
+    "file_offset": "0x7997100",
+    "bytes": "a0 e4 e9 44 01 00 00 00 0e 00 00 00 80 5b 10 d3 c0 4b c3 48 01 00 00 00 c0 8e e1 41 01 00 00 00 00 00 00 00 00 00 00 00 00 ca cf 47 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 5e 65 45 01 00 00 00 00 00 00 00 00 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x7998b00",
+        "value": "0x144e9e4a0",
+        "dir64_relocation": true,
+        "target_rva": "0x4e9e4a0",
+        "target_string": "ActorComponent"
+      },
+      {
+        "rva": "0x7998b08",
+        "value": "0xd3105b800000000e",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7998b10",
+        "value": "0x148c34bc0",
+        "dir64_relocation": true,
+        "target_rva": "0x8c34bc0",
+        "target_string": null
+      },
+      {
+        "rva": "0x7998b18",
+        "value": "0x141e18ec0",
+        "dir64_relocation": true,
+        "target_rva": "0x1e18ec0",
+        "target_string": null
+      },
+      {
+        "rva": "0x7998b20",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7998b28",
+        "value": "0x147cfca00",
+        "dir64_relocation": true,
+        "target_rva": "0x7cfca00",
+        "target_string": null
+      },
+      {
+        "rva": "0x7998b30",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7998b38",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7998b40",
+        "value": "0x145655e00",
+        "dir64_relocation": true,
+        "target_rva": "0x5655e00",
+        "target_string": null
+      },
+      {
+        "rva": "0x7998b48",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      }
+    ]
+  },
+  {
+    "id": "V3-D04",
+    "label": "ActorComponent factory COL pointer and callable slots",
+    "rva": "0x580bcd0",
+    "preferred_va": "0x14580bcd0",
+    "file_offset": "0x580aed0",
+    "bytes": "c0 a9 07 47 01 00 00 00 90 bc 9a 42 01 00 00 00 b0 bc 9a 42 01 00 00 00 d0 bc 9a 42 01 00 00 00 00 bd 9a 42 01 00 00 00 20 bd 9a 42 01 00 00 00 10 bd 9a 42 01 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x580bcd0",
+        "value": "0x14707a9c0",
+        "dir64_relocation": true,
+        "target_rva": "0x707a9c0",
+        "target_string": null
+      },
+      {
+        "rva": "0x580bcd8",
+        "value": "0x1429abc90",
+        "dir64_relocation": true,
+        "target_rva": "0x29abc90",
+        "target_string": null
+      },
+      {
+        "rva": "0x580bce0",
+        "value": "0x1429abcb0",
+        "dir64_relocation": true,
+        "target_rva": "0x29abcb0",
+        "target_string": null
+      },
+      {
+        "rva": "0x580bce8",
+        "value": "0x1429abcd0",
+        "dir64_relocation": true,
+        "target_rva": "0x29abcd0",
+        "target_string": null
+      },
+      {
+        "rva": "0x580bcf0",
+        "value": "0x1429abd00",
+        "dir64_relocation": true,
+        "target_rva": "0x29abd00",
+        "target_string": null
+      },
+      {
+        "rva": "0x580bcf8",
+        "value": "0x1429abd20",
+        "dir64_relocation": true,
+        "target_rva": "0x29abd20",
+        "target_string": null
+      },
+      {
+        "rva": "0x580bd00",
+        "value": "0x1429abd10",
+        "dir64_relocation": true,
+        "target_rva": "0x29abd10",
+        "target_string": null
+      }
+    ]
+  },
+  {
+    "id": "V3-D05",
+    "label": "PyActorComponent COL pointer and virtual slots",
+    "rva": "0x580b048",
+    "preferred_va": "0x14580b048",
+    "file_offset": "0x580a248",
+    "bytes": "40 96 07 47 01 00 00 00 20 05 16 42 01 00 00 00 20 8d 9a 42 01 00 00 00 50 8e 9a 42 01 00 00 00 60 8e 9a 42 01 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x580b048",
+        "value": "0x147079640",
+        "dir64_relocation": true,
+        "target_rva": "0x7079640",
+        "target_string": null
+      },
+      {
+        "rva": "0x580b050",
+        "value": "0x142160520",
+        "dir64_relocation": true,
+        "target_rva": "0x2160520",
+        "target_string": null
+      },
+      {
+        "rva": "0x580b058",
+        "value": "0x1429a8d20",
+        "dir64_relocation": true,
+        "target_rva": "0x29a8d20",
+        "target_string": null
+      },
+      {
+        "rva": "0x580b060",
+        "value": "0x1429a8e50",
+        "dir64_relocation": true,
+        "target_rva": "0x29a8e50",
+        "target_string": null
+      },
+      {
+        "rva": "0x580b068",
+        "value": "0x1429a8e60",
+        "dir64_relocation": true,
+        "target_rva": "0x29a8e60",
+        "target_string": null
+      }
+    ]
+  },
+  {
+    "id": "V3-D06",
+    "label": "ActorComponent COL pointer and primary virtual slots",
+    "rva": "0x559b8f0",
+    "preferred_va": "0x14559b8f0",
+    "file_offset": "0x559aaf0",
+    "bytes": "20 26 f7 46 01 00 00 00 60 e5 a1 41 01 00 00 00 20 41 10 40 01 00 00 00 20 41 10 40 01 00 00 00 20 41 10 40 01 00 00 00 60 17 14 40 01 00 00 00 c0 37 17 40 01 00 00 00 50 17 14 40 01 00 00 00 a0 4a 9d 41 01 00 00 00 10 65 ad 40 01 00 00 00 60 65 ad 40 01 00 00 00 b0 65 ad 40 01 00 00 00 c0 65 ad 40 01 00 00 00 00 66 ad 40 01 00 00 00 d0 66 ad 40 01 00 00 00 00 4b 9d 41 01 00 00 00 b0 4e 9d 41 01 00 00 00 40 51 9d 41 01 00 00 00 00 67 ad 40 01 00 00 00 c0 09 9d 41 01 00 00 00 30 fd a1 41 01 00 00 00 00 00 9c 41 01 00 00 00 80 00 9c 41 01 00 00 00 40 0a 9d 41 01 00 00 00 a0 60 9d 41 01 00 00 00 10 15 a2 41 01 00 00 00 c0 46 9d 41 01 00 00 00 60 2c ae 40 01 00 00 00 60 52 9d 41 01 00 00 00 00 71 9d 41 01 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x559b8f0",
+        "value": "0x146f72620",
+        "dir64_relocation": true,
+        "target_rva": "0x6f72620",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b8f8",
+        "value": "0x141a1e560",
+        "dir64_relocation": true,
+        "target_rva": "0x1a1e560",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b900",
+        "value": "0x140104120",
+        "dir64_relocation": true,
+        "target_rva": "0x104120",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b908",
+        "value": "0x140104120",
+        "dir64_relocation": true,
+        "target_rva": "0x104120",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b910",
+        "value": "0x140104120",
+        "dir64_relocation": true,
+        "target_rva": "0x104120",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b918",
+        "value": "0x140141760",
+        "dir64_relocation": true,
+        "target_rva": "0x141760",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b920",
+        "value": "0x1401737c0",
+        "dir64_relocation": true,
+        "target_rva": "0x1737c0",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b928",
+        "value": "0x140141750",
+        "dir64_relocation": true,
+        "target_rva": "0x141750",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b930",
+        "value": "0x1419d4aa0",
+        "dir64_relocation": true,
+        "target_rva": "0x19d4aa0",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b938",
+        "value": "0x140ad6510",
+        "dir64_relocation": true,
+        "target_rva": "0xad6510",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b940",
+        "value": "0x140ad6560",
+        "dir64_relocation": true,
+        "target_rva": "0xad6560",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b948",
+        "value": "0x140ad65b0",
+        "dir64_relocation": true,
+        "target_rva": "0xad65b0",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b950",
+        "value": "0x140ad65c0",
+        "dir64_relocation": true,
+        "target_rva": "0xad65c0",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b958",
+        "value": "0x140ad6600",
+        "dir64_relocation": true,
+        "target_rva": "0xad6600",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b960",
+        "value": "0x140ad66d0",
+        "dir64_relocation": true,
+        "target_rva": "0xad66d0",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b968",
+        "value": "0x1419d4b00",
+        "dir64_relocation": true,
+        "target_rva": "0x19d4b00",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b970",
+        "value": "0x1419d4eb0",
+        "dir64_relocation": true,
+        "target_rva": "0x19d4eb0",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b978",
+        "value": "0x1419d5140",
+        "dir64_relocation": true,
+        "target_rva": "0x19d5140",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b980",
+        "value": "0x140ad6700",
+        "dir64_relocation": true,
+        "target_rva": "0xad6700",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b988",
+        "value": "0x1419d09c0",
+        "dir64_relocation": true,
+        "target_rva": "0x19d09c0",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b990",
+        "value": "0x141a1fd30",
+        "dir64_relocation": true,
+        "target_rva": "0x1a1fd30",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b998",
+        "value": "0x1419c0000",
+        "dir64_relocation": true,
+        "target_rva": "0x19c0000",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b9a0",
+        "value": "0x1419c0080",
+        "dir64_relocation": true,
+        "target_rva": "0x19c0080",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b9a8",
+        "value": "0x1419d0a40",
+        "dir64_relocation": true,
+        "target_rva": "0x19d0a40",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b9b0",
+        "value": "0x1419d60a0",
+        "dir64_relocation": true,
+        "target_rva": "0x19d60a0",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b9b8",
+        "value": "0x141a21510",
+        "dir64_relocation": true,
+        "target_rva": "0x1a21510",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b9c0",
+        "value": "0x1419d46c0",
+        "dir64_relocation": true,
+        "target_rva": "0x19d46c0",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b9c8",
+        "value": "0x140ae2c60",
+        "dir64_relocation": true,
+        "target_rva": "0xae2c60",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b9d0",
+        "value": "0x1419d5260",
+        "dir64_relocation": true,
+        "target_rva": "0x19d5260",
+        "target_string": null
+      },
+      {
+        "rva": "0x559b9d8",
+        "value": "0x1419d7100",
+        "dir64_relocation": true,
+        "target_rva": "0x19d7100",
+        "target_string": null
+      }
+    ]
+  },
+  {
+    "id": "V3-D07",
+    "label": "Python type storage used by ActorComponent factory",
+    "rva": "0x7a07d30",
+    "preferred_va": "0x147a07d30",
+    "file_offset": "0x7a06330",
+    "bytes": "00 00 00 c0 00 00 05 00 70 51 a1 47 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 30 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x7a07d30",
+        "value": "0x50000c0000000",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07d38",
+        "value": "0x147a15170",
+        "dir64_relocation": true,
+        "target_rva": "0x7a15170",
+        "target_string": ""
+      },
+      {
+        "rva": "0x7a07d40",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07d48",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07d50",
+        "value": "0x30",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07d58",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07d60",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07d68",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07d70",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07d78",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07d80",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07d88",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07d90",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07d98",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07da0",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07da8",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07db0",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07db8",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07dc0",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07dc8",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07dd0",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07dd8",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07de0",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07de8",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07df0",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07df8",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07e00",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07e08",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07e10",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07e18",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07e20",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07e28",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07e30",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07e38",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07e40",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07e48",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07e50",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07e58",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07e60",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07e68",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07e70",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      },
+      {
+        "rva": "0x7a07e78",
+        "value": "0x0",
+        "dir64_relocation": false,
+        "target_rva": null,
+        "target_string": null
+      }
+    ]
+  },
+  {
+    "id": "V3-D08",
+    "label": "Character Actor COL pointer and virtual slots",
+    "rva": "0x5565058",
+    "preferred_va": "0x145565058",
+    "file_offset": "0x5564258",
+    "bytes": "c8 81 f4 46 01 00 00 00 60 74 6f 41 01 00 00 00 30 38 17 40 01 00 00 00 b0 91 18 41 01 00 00 00 f0 87 8a 41 01 00 00 00 c0 58 6d 41 01 00 00 00 d0 17 6d 41 01 00 00 00 e0 17 6d 41 01 00 00 00 10 1e 6d 41 01 00 00 00 90 1a 6d 41 01 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x5565058",
+        "value": "0x146f481c8",
+        "dir64_relocation": true,
+        "target_rva": "0x6f481c8",
+        "target_string": null
+      },
+      {
+        "rva": "0x5565060",
+        "value": "0x1416f7460",
+        "dir64_relocation": true,
+        "target_rva": "0x16f7460",
+        "target_string": null
+      },
+      {
+        "rva": "0x5565068",
+        "value": "0x140173830",
+        "dir64_relocation": true,
+        "target_rva": "0x173830",
+        "target_string": null
+      },
+      {
+        "rva": "0x5565070",
+        "value": "0x1411891b0",
+        "dir64_relocation": true,
+        "target_rva": "0x11891b0",
+        "target_string": null
+      },
+      {
+        "rva": "0x5565078",
+        "value": "0x1418a87f0",
+        "dir64_relocation": true,
+        "target_rva": "0x18a87f0",
+        "target_string": null
+      },
+      {
+        "rva": "0x5565080",
+        "value": "0x1416d58c0",
+        "dir64_relocation": true,
+        "target_rva": "0x16d58c0",
+        "target_string": null
+      },
+      {
+        "rva": "0x5565088",
+        "value": "0x1416d17d0",
+        "dir64_relocation": true,
+        "target_rva": "0x16d17d0",
+        "target_string": null
+      },
+      {
+        "rva": "0x5565090",
+        "value": "0x1416d17e0",
+        "dir64_relocation": true,
+        "target_rva": "0x16d17e0",
+        "target_string": null
+      },
+      {
+        "rva": "0x5565098",
+        "value": "0x1416d1e10",
+        "dir64_relocation": true,
+        "target_rva": "0x16d1e10",
+        "target_string": null
+      },
+      {
+        "rva": "0x55650a0",
+        "value": "0x1416d1a90",
+        "dir64_relocation": true,
+        "target_rva": "0x16d1a90",
+        "target_string": null
+      }
+    ]
+  }
+]

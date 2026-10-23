@@ -1,0 +1,160 @@
+{
+  "generated_utc": "2026-10-21T01:35:11.251065+00:00",
+  "binary": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\BloodStrike.exe",
+  "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "file_size": 141431288,
+  "pe_timestamp_raw": "0x6acbbfba",
+  "pe_timestamp_utc": "2026-10-11T16:56:26+00:00",
+  "timestamp_caveat": "Header declaration, not independently authenticated build date; check REPRO debug entry",
+  "image_base_preferred": "0x140000000",
+  "size_of_image": "0x94e9000",
+  "entry_point_rva": "0x424c4a4",
+  "machine": "0x8664",
+  "sections": [
+    {
+      "name": ".text",
+      "rva": 4096,
+      "virtual_size": 81996527,
+      "raw_offset": 1536,
+      "raw_size": 81996800,
+      "characteristics": "0x60000020",
+      "executable": true
+    },
+    {
+      "name": ".rdata",
+      "rva": 82001920,
+      "virtual_size": 41947670,
+      "raw_offset": 81998336,
+      "raw_size": 41948160,
+      "characteristics": "0x40000040",
+      "executable": false
+    },
+    {
+      "name": ".data",
+      "rva": 123953152,
+      "virtual_size": 25816612,
+      "raw_offset": 123946496,
+      "raw_size": 11113472,
+      "characteristics": "0xc0000040",
+      "executable": false
+    },
+    {
+      "name": ".pdata",
+      "rva": 149770240,
+      "virtual_size": 3709836,
+      "raw_offset": 135059968,
+      "raw_size": 3709952,
+      "characteristics": "0x40000040",
+      "executable": false
+    },
+    {
+      "name": "PyRuntim",
+      "rva": 153481216,
+      "virtual_size": 315360,
+      "raw_offset": 138769920,
+      "raw_size": 315392,
+      "characteristics": "0xc0000040",
+      "executable": false
+    },
+    {
+      "name": "AsyncioD",
+      "rva": 153796608,
+      "virtual_size": 104,
+      "raw_offset": 139085312,
+      "raw_size": 512,
+      "characteristics": "0xc0000040",
+      "executable": false
+    },
+    {
+      "name": "_RDATA",
+      "rva": 153800704,
+      "virtual_size": 131592,
+      "raw_offset": 139085824,
+      "raw_size": 132096,
+      "characteristics": "0x40000040",
+      "executable": false
+    },
+    {
+      "name": ".rsrc",
+      "rva": 153935872,
+      "virtual_size": 279152,
+      "raw_offset": 139217920,
+      "raw_size": 279552,
+      "characteristics": "0x40000040",
+      "executable": false
+    },
+    {
+      "name": ".reloc",
+      "rva": 154218496,
+      "virtual_size": 1922820,
+      "raw_offset": 139497472,
+      "raw_size": 1923072,
+      "characteristics": "0x42000040",
+      "executable": false
+    }
+  ],
+  "debug": [
+    {
+      "type": 2,
+      "timestamp": "0x6acbbfba",
+      "size": 92,
+      "signature": "RSDS",
+      "raw_hex": "5253445352dc6e869b82534da6516e7b30c41032d1000000473a5c4e65775370696b655c7372635f6465765f323032345c456e67696e655c42696e61726965735c57696e363452656c656173655c47616d655f783634722e70646200",
+      "pdb_path": "G:\\NewSpike\\src_dev_2024\\Engine\\Binaries\\Win64Release\\Game_x64r.pdb"
+    },
+    {
+      "type": 12,
+      "timestamp": "0x6acbbfba",
+      "size": 20
+    },
+    {
+      "type": 13,
+      "timestamp": "0x6acbbfba",
+      "size": 1264
+    }
+  ],
+  "tools": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "pefile": "2024.8.26",
+    "capstone_package": "5.0.9",
+    "capstone_engine": "5.0.7"
+  },
+  "counts": {
+    "rtti_type_descriptors": 32609,
+    "complete_object_locators": 21764,
+    "runtime_function_entries": 309153,
+    "imports_modules": 37,
+    "exports": 651,
+    "adjacent_dlls_inventoried": 35,
+    "core_vtables": 12,
+    "code_xrefs": 370,
+    "dumped_functions": 262
+  },
+  "anchor_occurrences": {
+    "GetAllActors": 1,
+    "ActorComponent": 501,
+    "SkeletonComponent": 331,
+    "ICamera": 67,
+    "Asyncore": 4596,
+    "PythonAsyncore": 2,
+    "NewSpike": 752
+  },
+  "binary_unchanged_after_analysis": true,
+  "scope": "STATIC_FILE_ANALYSIS",
+  "runtime_validation_performed": false,
+  "limits": [
+    "No inferred field names solely from displacement values",
+    "RTTI inventory is not a full source class reconstruction",
+    "xrefs cover selected RIP-relative 64-bit LEA/MOV forms only",
+    "No claim that strings designate live actors",
+    "Vtable extents are candidate executable pointer runs; capped at 512",
+    "Unknown engine reflection metadata layouts not assumed"
+  ],
+  "measurements": {
+    "wall_seconds": 19.517,
+    "cpu_seconds": 12.672,
+    "peak_working_set_bytes": 559403008,
+    "working_set_bytes": 373592064,
+    "scope": "analysis Python process, not game performance"
+  }
+}

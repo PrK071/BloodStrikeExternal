@@ -1,0 +1,92 @@
+[
+  {
+    "id": "V3-L01", "status": "CONFIRMADA", "confidence": "alta", "legacy_ids": ["G05", "G06", "G07"],
+    "claim": "Dois callsites de insercao e tres de remocao foram ligados diretamente a mesma raiz; associacao, desassociacao e destrucao de ActorComponent participam desse ciclo.",
+    "limitations": "Contagem limitada aos caminhos diretos cobertos; alias e transferencias indiretas nao resolvidas impedem exclusividade global.",
+    "instruction_rvas": ["19c0203", "19c020a", "19c0409", "19c0410", "19d4ca3", "19d4caa", "19d50ad", "19d50b4", "19bfbb4", "19bfbbb", "1a1e56f"], "data_evidence": ["V3-D06"]
+  },
+  {
+    "id": "V3-L02", "status": "CONFIRMADA", "confidence": "alta", "legacy_ids": ["G06", "G09"],
+    "claim": "A insercao rejeita duplicata sem substituir o payload; a remocao desenlaca e libera um no de 0x20 bytes sem desreferenciar/destruir seu payload.",
+    "limitations": "A semantica local e de indice sem retencao do payload nestes helpers; ownership total do sistema nao foi reconstruido.",
+    "instruction_rvas": ["254422", "254435", "254438", "254497", "25449e", "ad06f4", "ad06f7", "ad06ff", "ad0706", "ad070a", "ad070f"], "data_evidence": []
+  },
+  {
+    "id": "V3-L03", "status": "PARCIAL", "confidence": "alta para os caminhos positivos; limitada para exclusividade", "legacy_ids": ["G07", "G08"],
+    "claim": "Os caminhos de mutacao demonstrados usam ActorComponent e um valor de 32 bits de Character::Actor. Nenhuma segunda categoria inserida nessa raiz foi demonstrada.",
+    "limitations": "O inventario RTTI anterior so lista ActorComponent no ramo derivado de ActorComponent; isso nao exclui tipos sem RTTI, aliases, modulos externos ou extensoes dinamicas.",
+    "instruction_rvas": ["19bf52d", "19bf534", "19bf540", "19c03f0", "19c03f7", "19d4c75", "19d4c84"], "data_evidence": ["V3-D03", "V3-D06"]
+  },
+  {
+    "id": "V3-L04", "status": "DESCARTADA", "confidence": "alta", "legacy_ids": ["G07", "G09"],
+    "claim": "Todos os callers dos helpers de hash identificam a mesma raiz ou provam heterogeneidade do registro de GetAllActors.",
+    "limitations": "O destrutor de SkeletonComponent usa outra raiz, 0x8143e90; o caller de controle 0x225740 usa um container embutido no argumento +0xf90.",
+    "instruction_rvas": ["ad6144", "ad614b", "19bfbb4", "225799", "2258f1", "2258f4"], "data_evidence": []
+  },
+  {
+    "id": "V3-L05", "status": "PARCIAL", "confidence": "alta para remocao local", "legacy_ids": ["G05", "G07"],
+    "claim": "A destruicao de ActorComponent remove condicionalmente sua entrada antes de liberar referencias nativas e encadear destruicao das bases.",
+    "limitations": "O teste do byte nativo +0x2ad condiciona esse caminho; nao foi localizada uma destruicao global completa do container alocado nem provada ausencia de aliases pendentes.",
+    "instruction_rvas": ["19bfba8", "19bfbbb", "19bfbf5", "19bfc03", "19bfdf1", "ad60ac", "a030ed", "1416e4"], "data_evidence": ["V3-D06"]
+  },
+  {
+    "id": "V3-B01", "status": "CONFIRMADA", "confidence": "alta", "legacy_ids": ["G07", "M03"],
+    "claim": "Ha uma fabrica registrada pelo nome ActorComponent cuja invocacao chama 0x29aec10 e constroi um wrapper C++ Messiah::PyActorComponent.",
+    "limitations": "Ligacao condicional ao metadado/delegado efetivamente selecionado; nao prova que toda entrada viva sempre selecione essa fabrica.",
+    "instruction_rvas": ["29a90b5", "29a90cb", "29a90f9", "29abce1", "29abcf0", "29aec3e", "29aec90", "29aec95", "29aec9c", "29aecd4", "29aecd8"], "data_evidence": ["V3-D03", "V3-D04", "V3-D05", "V3-D07"]
+  },
+  {
+    "id": "V3-B02", "status": "CONFIRMADA", "confidence": "alta", "legacy_ids": ["G07", "M03"],
+    "claim": "A selecao da fabrica usa metadados do objeto +8, cache +0xc0, relacao +0xb8 e delegado +0xc8; existe fallback por ancestral, sujeito ao callback de resolucao.",
+    "limitations": "Essa relacao de metadados nao e a cadeia RTTI em si. O callback indireto pode impedir o cache local; nome Python e tipo dinamico global nao decorrem do nome do registro.",
+    "instruction_rvas": ["2d82db1", "2d82db5", "2d82dc6", "2d82ddc", "2d82e0e", "2d82e15", "2d82e23", "2d82e2f", "2d82e44", "2d82aa4", "2d82aab", "2d84ee1", "2d84ee8"], "data_evidence": []
+  },
+  {
+    "id": "V3-B03", "status": "CONFIRMADA", "confidence": "alta", "legacy_ids": ["G07", "M03"],
+    "claim": "A conversao reaproveita a associacao existente; o controle em nativo+0x18 e o registro de associacao guardam o wrapper e o objeto Python em duas camadas.",
+    "limitations": "Identidade e reutilizacao comprovadas para esse caminho com associacao viva; nao constituem garantia de unicidade eterna, seguranca concorrente ou ausencia de recriacao.",
+    "instruction_rvas": ["2d82d98", "2d82da4", "2d82dab", "2d82e71", "2d82e76", "2d82e7b", "2d82ebf", "2d82ec3", "2d82ecb", "2d82ef5", "10e8c9", "10e902", "10e916"], "data_evidence": []
+  },
+  {
+    "id": "V3-B04", "status": "PARCIAL", "confidence": "alta para operacoes; limitada para politica completa", "legacy_ids": ["G07", "M04"],
+    "claim": "Foram rastreados incrementos/decrementos de referencias do wrapper e do Python, liberacao de controle, limpeza do backlink e um caminho de invalidacao que chama o callback registrado antes de romper os vinculos nativo/controle.",
+    "limitations": "Nao foi reconstruida toda a politica de ownership, sincronizacao, coleta ou callback durante destruicao; helpers de estado nao foram automaticamente chamados de GIL.",
+    "instruction_rvas": ["2d829d0", "2d82ec3", "2d82ee2", "2d82ee9", "2d82cc7", "2d82ccb", "2d82ce5", "2d82cee", "2d82cfa", "10e1fe", "10e422", "2d845dd", "10ea90", "10e3fd", "10ea29", "10ea32", "10ea3b", "10ea4d", "10ea51", "10eaa4"], "data_evidence": []
+  },
+  {
+    "id": "V3-B05", "status": "PARCIAL", "confidence": "alta para fabrica e armazenamento de tipo", "legacy_ids": ["G07", "M02", "M03"],
+    "claim": "A fabrica ActorComponent usa o armazenamento de tipo Python 0x7a07d30, com alocador e inicializacao chamados indiretamente; a hierarquia C++ PyActorComponent e verificavel.",
+    "limitations": "O slot compativel com tp_name esta zerado no arquivo. O nome Python qualificado final, customizacoes e conjunto de tipos vivos nao foram observados.",
+    "instruction_rvas": ["29c1b6b", "29aec43", "29aec4f", "29aecf4", "29aed09"], "data_evidence": ["V3-D05", "V3-D07"]
+  },
+  {
+    "id": "V3-F01", "status": "CONFIRMADA", "confidence": "alta", "legacy_ids": ["G10"],
+    "claim": "O bit 0x10 no byte +0x130 e a representacao usada pelos accessors da propriedade refletida IEntity.IsInWorld.",
+    "limitations": "A equivalencia e de representacao e contrato refletido nesta amostra; nao atribui significado de jogador, inimigo, visibilidade nem garante estado real de subsistemas.",
+    "instruction_rvas": ["952640", "952647", "95264a", "952664", "95266b", "95266e", "952714", "952765", "32597cd"], "data_evidence": ["V3-D01"]
+  },
+  {
+    "id": "V3-F02", "status": "CONFIRMADA", "confidence": "alta", "legacy_ids": ["G10", "C02"],
+    "claim": "O ponteiro +0x40 lido pelo filtro corresponde a IComponent.Parent, cujo descritor declara IObject; o callback aplica a esse objeto o teste de IsInWorld.",
+    "limitations": "O callback nao faz verificacao RTTI demonstrada. O tipo declarado IObject nao prova que todo Parent globalmente seja IEntity.",
+    "instruction_rvas": ["58b3e0", "58b3e4", "58b43a", "141d5b", "141d81", "32597c0", "32597c4", "32597c8", "32597cd"], "data_evidence": ["V3-D01", "V3-D02"]
+  },
+  {
+    "id": "V3-F03", "status": "CONFIRMADA", "confidence": "alta", "legacy_ids": ["G10"],
+    "claim": "Ha rotinas distintas que ligam/desligam o bit e callers que so as chamam quando o valor anterior difere; o construtor de IEntity inicializa o dword +0x130 com 0x1285, deixando 0x10 limpo.",
+    "limitations": "Os nomes fonte dessas rotinas anonimas nao foram recuperados; setters de reflexao tambem alteram o bit, portanto seu valor isolado nao comprova todos os efeitos de entrada/saida.",
+    "instruction_rvas": ["88cafb", "89680f", "896f97", "89f0b2", "89f0be", "89f262", "89f26e"], "data_evidence": ["V3-D01"]
+  },
+  {
+    "id": "V3-R01", "status": "CONFIRMADA", "confidence": "alta no escopo selecionado", "legacy_ids": ["A01", "A03"],
+    "claim": "Os CFGs selecionados seguem ramos entre regioes de unwind; bytes e comprimentos foram conferidos com iced-x86 e Capstone.",
+    "limitations": "A descoberta linear global contem decodificacoes invalidas e nao cobre toda leaf function; chamadas indiretas e caudas fora do limite continuam explicitas. PASS e restrito a evidencia selecionada.",
+    "instruction_rvas": ["141d50", "141e25", "2d82dc1", "2d82e06", "2d82ef9"], "data_evidence": []
+  },
+  {
+    "id": "V3-R02", "status": "DESCARTADA", "confidence": "alta", "legacy_ids": ["G08", "G10"],
+    "claim": "A repeticao de +0x130, o nome Actor ou o filtro de 0x10 bastam para identificar uma lista exclusiva de jogadores/inimigos ou um flag de visibilidade.",
+    "limitations": "Ha campos de objetos distintos e frames de pilha com o mesmo deslocamento; a evidencia positiva nomeia IsInWorld e a familia ActorComponent, sem identidade de gameplay.",
+    "instruction_rvas": ["ad60e6", "88cafb", "32597cd", "952647"], "data_evidence": ["V3-D01", "V3-D02"]
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "controls": [
+    {
+      "case": "valid fixture and nine curated packets",
+      "result": "PASS"
+    },
+    {
+      "case": "tampered instruction claim replaces stale PASS with FAIL",
+      "result": "PASS_CONTROL",
+      "observed_status": "FAIL"
+    },
+    {
+      "case": "independent decoder rejects tampered instruction claim",
+      "result": "PASS_CONTROL"
+    },
+    {
+      "case": "late curated hash rejection replaces stale PASS with FAIL",
+      "result": "PASS_CONTROL",
+      "observed_status": "FAIL"
+    }
+  ],
+  "game_file_modified": false,
+  "runtime_game_access": false,
+  "scope": "small artifact fixtures; not an execution of the game or a claim of gameplay validation"
+}

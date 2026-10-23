@@ -1,0 +1,889 @@
+[
+  {
+    "name": "Messiah::IObject",
+    "col_rva": "0x6e0f460",
+    "object_offset": 0,
+    "class_hierarchy_rva": "0x6e0f488",
+    "legacy_matches": true,
+    "bases": [
+      {
+        "index": 0,
+        "descriptor_rva": "0x6e0f4b0",
+        "type_descriptor_rva": "0x7dd90c8",
+        "name": ".?AVIObject@Messiah@@",
+        "contained_bases": 0,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e0f488"
+      }
+    ],
+    "direct_edges": []
+  },
+  {
+    "name": "Messiah::IComponent",
+    "col_rva": "0x6e103f0",
+    "object_offset": 0,
+    "class_hierarchy_rva": "0x6e10418",
+    "legacy_matches": true,
+    "bases": [
+      {
+        "index": 0,
+        "descriptor_rva": "0x6e10448",
+        "type_descriptor_rva": "0x7dd9838",
+        "name": ".?AVIComponent@Messiah@@",
+        "contained_bases": 1,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e10418"
+      },
+      {
+        "index": 1,
+        "descriptor_rva": "0x6e0f4b0",
+        "type_descriptor_rva": "0x7dd90c8",
+        "name": ".?AVIObject@Messiah@@",
+        "contained_bases": 0,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e0f488"
+      }
+    ],
+    "direct_edges": [
+      {
+        "parent": ".?AVIComponent@Messiah@@",
+        "child": ".?AVIObject@Messiah@@",
+        "member_displacement": 0
+      }
+    ]
+  },
+  {
+    "name": "Messiah::ICamera",
+    "col_rva": "0x6e1e1b8",
+    "object_offset": 0,
+    "class_hierarchy_rva": "0x6e1e1e0",
+    "legacy_matches": true,
+    "bases": [
+      {
+        "index": 0,
+        "descriptor_rva": "0x6e1e228",
+        "type_descriptor_rva": "0x7de5d50",
+        "name": ".?AVICamera@Messiah@@",
+        "contained_bases": 4,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e1e1e0"
+      },
+      {
+        "index": 1,
+        "descriptor_rva": "0x6e1e250",
+        "type_descriptor_rva": "0x7de5d78",
+        "name": ".?AVIEntity@Messiah@@",
+        "contained_bases": 3,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e1e278"
+      },
+      {
+        "index": 2,
+        "descriptor_rva": "0x6e0f4b0",
+        "type_descriptor_rva": "0x7dd90c8",
+        "name": ".?AVIObject@Messiah@@",
+        "contained_bases": 0,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e0f488"
+      },
+      {
+        "index": 3,
+        "descriptor_rva": "0x6e1e2b8",
+        "type_descriptor_rva": "0x7de5da0",
+        "name": ".?AV?$TObjectComponent@VIEntity@Messiah@@@Messiah@@",
+        "contained_bases": 1,
+        "member_displacement": 64,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x4d",
+        "class_descriptor_rva": "0x6e1e2e0"
+      },
+      {
+        "index": 4,
+        "descriptor_rva": "0x6e1e388",
+        "type_descriptor_rva": "0x7de5de8",
+        "name": ".?AVObjectComponentBase@Messiah@@",
+        "contained_bases": 0,
+        "member_displacement": 64,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x49",
+        "class_descriptor_rva": "0x6e1e360"
+      }
+    ],
+    "direct_edges": [
+      {
+        "parent": ".?AVICamera@Messiah@@",
+        "child": ".?AVIEntity@Messiah@@",
+        "member_displacement": 0
+      },
+      {
+        "parent": ".?AVIEntity@Messiah@@",
+        "child": ".?AVIObject@Messiah@@",
+        "member_displacement": 0
+      },
+      {
+        "parent": ".?AVIEntity@Messiah@@",
+        "child": ".?AV?$TObjectComponent@VIEntity@Messiah@@@Messiah@@",
+        "member_displacement": 64
+      },
+      {
+        "parent": ".?AV?$TObjectComponent@VIEntity@Messiah@@@Messiah@@",
+        "child": ".?AVObjectComponentBase@Messiah@@",
+        "member_displacement": 64
+      }
+    ]
+  },
+  {
+    "name": "Messiah::IEntity",
+    "col_rva": "0x6e7a378",
+    "object_offset": 0,
+    "class_hierarchy_rva": "0x6e1e278",
+    "legacy_matches": true,
+    "bases": [
+      {
+        "index": 0,
+        "descriptor_rva": "0x6e1e250",
+        "type_descriptor_rva": "0x7de5d78",
+        "name": ".?AVIEntity@Messiah@@",
+        "contained_bases": 3,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e1e278"
+      },
+      {
+        "index": 1,
+        "descriptor_rva": "0x6e0f4b0",
+        "type_descriptor_rva": "0x7dd90c8",
+        "name": ".?AVIObject@Messiah@@",
+        "contained_bases": 0,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e0f488"
+      },
+      {
+        "index": 2,
+        "descriptor_rva": "0x6e1e2b8",
+        "type_descriptor_rva": "0x7de5da0",
+        "name": ".?AV?$TObjectComponent@VIEntity@Messiah@@@Messiah@@",
+        "contained_bases": 1,
+        "member_displacement": 64,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x4d",
+        "class_descriptor_rva": "0x6e1e2e0"
+      },
+      {
+        "index": 3,
+        "descriptor_rva": "0x6e1e388",
+        "type_descriptor_rva": "0x7de5de8",
+        "name": ".?AVObjectComponentBase@Messiah@@",
+        "contained_bases": 0,
+        "member_displacement": 64,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x49",
+        "class_descriptor_rva": "0x6e1e360"
+      }
+    ],
+    "direct_edges": [
+      {
+        "parent": ".?AVIEntity@Messiah@@",
+        "child": ".?AVIObject@Messiah@@",
+        "member_displacement": 0
+      },
+      {
+        "parent": ".?AVIEntity@Messiah@@",
+        "child": ".?AV?$TObjectComponent@VIEntity@Messiah@@@Messiah@@",
+        "member_displacement": 64
+      },
+      {
+        "parent": ".?AV?$TObjectComponent@VIEntity@Messiah@@@Messiah@@",
+        "child": ".?AVObjectComponentBase@Messiah@@",
+        "member_displacement": 64
+      }
+    ]
+  },
+  {
+    "name": "Messiah::ISkeletonComponent",
+    "col_rva": "0x6e95428",
+    "object_offset": 0,
+    "class_hierarchy_rva": "0x6e27e98",
+    "legacy_matches": true,
+    "bases": [
+      {
+        "index": 0,
+        "descriptor_rva": "0x6e27e70",
+        "type_descriptor_rva": "0x7dedf18",
+        "name": ".?AVISkeletonComponent@Messiah@@",
+        "contained_bases": 3,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e27e98"
+      },
+      {
+        "index": 1,
+        "descriptor_rva": "0x6e10448",
+        "type_descriptor_rva": "0x7dd9838",
+        "name": ".?AVIComponent@Messiah@@",
+        "contained_bases": 1,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e10418"
+      },
+      {
+        "index": 2,
+        "descriptor_rva": "0x6e0f4b0",
+        "type_descriptor_rva": "0x7dd90c8",
+        "name": ".?AVIObject@Messiah@@",
+        "contained_bases": 0,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e0f488"
+      },
+      {
+        "index": 3,
+        "descriptor_rva": "0x6e21558",
+        "type_descriptor_rva": "0x7de8140",
+        "name": ".?AVITickable@Messiah@@",
+        "contained_bases": 0,
+        "member_displacement": 104,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e20fe8"
+      }
+    ],
+    "direct_edges": [
+      {
+        "parent": ".?AVISkeletonComponent@Messiah@@",
+        "child": ".?AVIComponent@Messiah@@",
+        "member_displacement": 0
+      },
+      {
+        "parent": ".?AVIComponent@Messiah@@",
+        "child": ".?AVIObject@Messiah@@",
+        "member_displacement": 0
+      },
+      {
+        "parent": ".?AVISkeletonComponent@Messiah@@",
+        "child": ".?AVITickable@Messiah@@",
+        "member_displacement": 104
+      }
+    ]
+  },
+  {
+    "name": "Messiah::ISkeletonComponent",
+    "col_rva": "0x6e95450",
+    "object_offset": 104,
+    "class_hierarchy_rva": "0x6e27e98",
+    "legacy_matches": true,
+    "bases": [
+      {
+        "index": 0,
+        "descriptor_rva": "0x6e27e70",
+        "type_descriptor_rva": "0x7dedf18",
+        "name": ".?AVISkeletonComponent@Messiah@@",
+        "contained_bases": 3,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e27e98"
+      },
+      {
+        "index": 1,
+        "descriptor_rva": "0x6e10448",
+        "type_descriptor_rva": "0x7dd9838",
+        "name": ".?AVIComponent@Messiah@@",
+        "contained_bases": 1,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e10418"
+      },
+      {
+        "index": 2,
+        "descriptor_rva": "0x6e0f4b0",
+        "type_descriptor_rva": "0x7dd90c8",
+        "name": ".?AVIObject@Messiah@@",
+        "contained_bases": 0,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e0f488"
+      },
+      {
+        "index": 3,
+        "descriptor_rva": "0x6e21558",
+        "type_descriptor_rva": "0x7de8140",
+        "name": ".?AVITickable@Messiah@@",
+        "contained_bases": 0,
+        "member_displacement": 104,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e20fe8"
+      }
+    ],
+    "direct_edges": [
+      {
+        "parent": ".?AVISkeletonComponent@Messiah@@",
+        "child": ".?AVIComponent@Messiah@@",
+        "member_displacement": 0
+      },
+      {
+        "parent": ".?AVIComponent@Messiah@@",
+        "child": ".?AVIObject@Messiah@@",
+        "member_displacement": 0
+      },
+      {
+        "parent": ".?AVISkeletonComponent@Messiah@@",
+        "child": ".?AVITickable@Messiah@@",
+        "member_displacement": 104
+      }
+    ]
+  },
+  {
+    "name": "Messiah::SkeletonComponent",
+    "col_rva": "0x6ea7be0",
+    "object_offset": 0,
+    "class_hierarchy_rva": "0x6ea7c08",
+    "legacy_matches": true,
+    "bases": [
+      {
+        "index": 0,
+        "descriptor_rva": "0x6ea7c50",
+        "type_descriptor_rva": "0x7cd1a48",
+        "name": ".?AVSkeletonComponent@Messiah@@",
+        "contained_bases": 4,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6ea7c08"
+      },
+      {
+        "index": 1,
+        "descriptor_rva": "0x6e27e70",
+        "type_descriptor_rva": "0x7dedf18",
+        "name": ".?AVISkeletonComponent@Messiah@@",
+        "contained_bases": 3,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e27e98"
+      },
+      {
+        "index": 2,
+        "descriptor_rva": "0x6e10448",
+        "type_descriptor_rva": "0x7dd9838",
+        "name": ".?AVIComponent@Messiah@@",
+        "contained_bases": 1,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e10418"
+      },
+      {
+        "index": 3,
+        "descriptor_rva": "0x6e0f4b0",
+        "type_descriptor_rva": "0x7dd90c8",
+        "name": ".?AVIObject@Messiah@@",
+        "contained_bases": 0,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e0f488"
+      },
+      {
+        "index": 4,
+        "descriptor_rva": "0x6e21558",
+        "type_descriptor_rva": "0x7de8140",
+        "name": ".?AVITickable@Messiah@@",
+        "contained_bases": 0,
+        "member_displacement": 104,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e20fe8"
+      }
+    ],
+    "direct_edges": [
+      {
+        "parent": ".?AVSkeletonComponent@Messiah@@",
+        "child": ".?AVISkeletonComponent@Messiah@@",
+        "member_displacement": 0
+      },
+      {
+        "parent": ".?AVISkeletonComponent@Messiah@@",
+        "child": ".?AVIComponent@Messiah@@",
+        "member_displacement": 0
+      },
+      {
+        "parent": ".?AVIComponent@Messiah@@",
+        "child": ".?AVIObject@Messiah@@",
+        "member_displacement": 0
+      },
+      {
+        "parent": ".?AVISkeletonComponent@Messiah@@",
+        "child": ".?AVITickable@Messiah@@",
+        "member_displacement": 104
+      }
+    ]
+  },
+  {
+    "name": "Messiah::SkeletonComponent",
+    "col_rva": "0x6ea7c78",
+    "object_offset": 104,
+    "class_hierarchy_rva": "0x6ea7c08",
+    "legacy_matches": true,
+    "bases": [
+      {
+        "index": 0,
+        "descriptor_rva": "0x6ea7c50",
+        "type_descriptor_rva": "0x7cd1a48",
+        "name": ".?AVSkeletonComponent@Messiah@@",
+        "contained_bases": 4,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6ea7c08"
+      },
+      {
+        "index": 1,
+        "descriptor_rva": "0x6e27e70",
+        "type_descriptor_rva": "0x7dedf18",
+        "name": ".?AVISkeletonComponent@Messiah@@",
+        "contained_bases": 3,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e27e98"
+      },
+      {
+        "index": 2,
+        "descriptor_rva": "0x6e10448",
+        "type_descriptor_rva": "0x7dd9838",
+        "name": ".?AVIComponent@Messiah@@",
+        "contained_bases": 1,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e10418"
+      },
+      {
+        "index": 3,
+        "descriptor_rva": "0x6e0f4b0",
+        "type_descriptor_rva": "0x7dd90c8",
+        "name": ".?AVIObject@Messiah@@",
+        "contained_bases": 0,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e0f488"
+      },
+      {
+        "index": 4,
+        "descriptor_rva": "0x6e21558",
+        "type_descriptor_rva": "0x7de8140",
+        "name": ".?AVITickable@Messiah@@",
+        "contained_bases": 0,
+        "member_displacement": 104,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e20fe8"
+      }
+    ],
+    "direct_edges": [
+      {
+        "parent": ".?AVSkeletonComponent@Messiah@@",
+        "child": ".?AVISkeletonComponent@Messiah@@",
+        "member_displacement": 0
+      },
+      {
+        "parent": ".?AVISkeletonComponent@Messiah@@",
+        "child": ".?AVIComponent@Messiah@@",
+        "member_displacement": 0
+      },
+      {
+        "parent": ".?AVIComponent@Messiah@@",
+        "child": ".?AVIObject@Messiah@@",
+        "member_displacement": 0
+      },
+      {
+        "parent": ".?AVISkeletonComponent@Messiah@@",
+        "child": ".?AVITickable@Messiah@@",
+        "member_displacement": 104
+      }
+    ]
+  },
+  {
+    "name": "Character::Actor",
+    "col_rva": "0x6f481c8",
+    "object_offset": 0,
+    "class_hierarchy_rva": "0x6f481f0",
+    "legacy_matches": true,
+    "bases": [
+      {
+        "index": 0,
+        "descriptor_rva": "0x6f48228",
+        "type_descriptor_rva": "0x7f14ed8",
+        "name": ".?AVActor@Character@@",
+        "contained_bases": 2,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6f481f0"
+      },
+      {
+        "index": 1,
+        "descriptor_rva": "0x6f0b7a0",
+        "type_descriptor_rva": "0x7eb85a0",
+        "name": ".?AVSkeleton@AnimationCore@@",
+        "contained_bases": 1,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6f0b770"
+      },
+      {
+        "index": 2,
+        "descriptor_rva": "0x6e0f630",
+        "type_descriptor_rva": "0x7dd91c8",
+        "name": ".?AVIRefObject@Messiah@@",
+        "contained_bases": 0,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e0f608"
+      }
+    ],
+    "direct_edges": [
+      {
+        "parent": ".?AVActor@Character@@",
+        "child": ".?AVSkeleton@AnimationCore@@",
+        "member_displacement": 0
+      },
+      {
+        "parent": ".?AVSkeleton@AnimationCore@@",
+        "child": ".?AVIRefObject@Messiah@@",
+        "member_displacement": 0
+      }
+    ]
+  },
+  {
+    "name": "Messiah::ActorComponent",
+    "col_rva": "0x6f72620",
+    "object_offset": 0,
+    "class_hierarchy_rva": "0x6f72648",
+    "legacy_matches": true,
+    "bases": [
+      {
+        "index": 0,
+        "descriptor_rva": "0x6f72698",
+        "type_descriptor_rva": "0x7cfca00",
+        "name": ".?AVActorComponent@Messiah@@",
+        "contained_bases": 5,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6f72648"
+      },
+      {
+        "index": 1,
+        "descriptor_rva": "0x6ea7c50",
+        "type_descriptor_rva": "0x7cd1a48",
+        "name": ".?AVSkeletonComponent@Messiah@@",
+        "contained_bases": 4,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6ea7c08"
+      },
+      {
+        "index": 2,
+        "descriptor_rva": "0x6e27e70",
+        "type_descriptor_rva": "0x7dedf18",
+        "name": ".?AVISkeletonComponent@Messiah@@",
+        "contained_bases": 3,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e27e98"
+      },
+      {
+        "index": 3,
+        "descriptor_rva": "0x6e10448",
+        "type_descriptor_rva": "0x7dd9838",
+        "name": ".?AVIComponent@Messiah@@",
+        "contained_bases": 1,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e10418"
+      },
+      {
+        "index": 4,
+        "descriptor_rva": "0x6e0f4b0",
+        "type_descriptor_rva": "0x7dd90c8",
+        "name": ".?AVIObject@Messiah@@",
+        "contained_bases": 0,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e0f488"
+      },
+      {
+        "index": 5,
+        "descriptor_rva": "0x6e21558",
+        "type_descriptor_rva": "0x7de8140",
+        "name": ".?AVITickable@Messiah@@",
+        "contained_bases": 0,
+        "member_displacement": 104,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e20fe8"
+      }
+    ],
+    "direct_edges": [
+      {
+        "parent": ".?AVActorComponent@Messiah@@",
+        "child": ".?AVSkeletonComponent@Messiah@@",
+        "member_displacement": 0
+      },
+      {
+        "parent": ".?AVSkeletonComponent@Messiah@@",
+        "child": ".?AVISkeletonComponent@Messiah@@",
+        "member_displacement": 0
+      },
+      {
+        "parent": ".?AVISkeletonComponent@Messiah@@",
+        "child": ".?AVIComponent@Messiah@@",
+        "member_displacement": 0
+      },
+      {
+        "parent": ".?AVIComponent@Messiah@@",
+        "child": ".?AVIObject@Messiah@@",
+        "member_displacement": 0
+      },
+      {
+        "parent": ".?AVISkeletonComponent@Messiah@@",
+        "child": ".?AVITickable@Messiah@@",
+        "member_displacement": 104
+      }
+    ]
+  },
+  {
+    "name": "Messiah::ActorComponent",
+    "col_rva": "0x6f726c0",
+    "object_offset": 104,
+    "class_hierarchy_rva": "0x6f72648",
+    "legacy_matches": true,
+    "bases": [
+      {
+        "index": 0,
+        "descriptor_rva": "0x6f72698",
+        "type_descriptor_rva": "0x7cfca00",
+        "name": ".?AVActorComponent@Messiah@@",
+        "contained_bases": 5,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6f72648"
+      },
+      {
+        "index": 1,
+        "descriptor_rva": "0x6ea7c50",
+        "type_descriptor_rva": "0x7cd1a48",
+        "name": ".?AVSkeletonComponent@Messiah@@",
+        "contained_bases": 4,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6ea7c08"
+      },
+      {
+        "index": 2,
+        "descriptor_rva": "0x6e27e70",
+        "type_descriptor_rva": "0x7dedf18",
+        "name": ".?AVISkeletonComponent@Messiah@@",
+        "contained_bases": 3,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e27e98"
+      },
+      {
+        "index": 3,
+        "descriptor_rva": "0x6e10448",
+        "type_descriptor_rva": "0x7dd9838",
+        "name": ".?AVIComponent@Messiah@@",
+        "contained_bases": 1,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e10418"
+      },
+      {
+        "index": 4,
+        "descriptor_rva": "0x6e0f4b0",
+        "type_descriptor_rva": "0x7dd90c8",
+        "name": ".?AVIObject@Messiah@@",
+        "contained_bases": 0,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e0f488"
+      },
+      {
+        "index": 5,
+        "descriptor_rva": "0x6e21558",
+        "type_descriptor_rva": "0x7de8140",
+        "name": ".?AVITickable@Messiah@@",
+        "contained_bases": 0,
+        "member_displacement": 104,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e20fe8"
+      }
+    ],
+    "direct_edges": [
+      {
+        "parent": ".?AVActorComponent@Messiah@@",
+        "child": ".?AVSkeletonComponent@Messiah@@",
+        "member_displacement": 0
+      },
+      {
+        "parent": ".?AVSkeletonComponent@Messiah@@",
+        "child": ".?AVISkeletonComponent@Messiah@@",
+        "member_displacement": 0
+      },
+      {
+        "parent": ".?AVISkeletonComponent@Messiah@@",
+        "child": ".?AVIComponent@Messiah@@",
+        "member_displacement": 0
+      },
+      {
+        "parent": ".?AVIComponent@Messiah@@",
+        "child": ".?AVIObject@Messiah@@",
+        "member_displacement": 0
+      },
+      {
+        "parent": ".?AVISkeletonComponent@Messiah@@",
+        "child": ".?AVITickable@Messiah@@",
+        "member_displacement": 104
+      }
+    ]
+  },
+  {
+    "name": "Messiah::PythonAsyncoreModule",
+    "col_rva": "0x6fb8260",
+    "object_offset": 0,
+    "class_hierarchy_rva": "0x6fb8288",
+    "legacy_matches": true,
+    "bases": [
+      {
+        "index": 0,
+        "descriptor_rva": "0x6fb82c0",
+        "type_descriptor_rva": "0x7f74288",
+        "name": ".?AVPythonAsyncoreModule@Messiah@@",
+        "contained_bases": 2,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6fb8288"
+      },
+      {
+        "index": 1,
+        "descriptor_rva": "0x6e13310",
+        "type_descriptor_rva": "0x7ddb738",
+        "name": ".?AVIPlugin@Messiah@@",
+        "contained_bases": 1,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e132e0"
+      },
+      {
+        "index": 2,
+        "descriptor_rva": "0x6e0fe00",
+        "type_descriptor_rva": "0x7c992e8",
+        "name": ".?AVIModule@Messiah@@",
+        "contained_bases": 0,
+        "member_displacement": 0,
+        "vbtable_displacement": -1,
+        "displacement_inside_vbtable": 0,
+        "attributes": "0x40",
+        "class_descriptor_rva": "0x6e0fdd8"
+      }
+    ],
+    "direct_edges": [
+      {
+        "parent": ".?AVPythonAsyncoreModule@Messiah@@",
+        "child": ".?AVIPlugin@Messiah@@",
+        "member_displacement": 0
+      },
+      {
+        "parent": ".?AVIPlugin@Messiah@@",
+        "child": ".?AVIModule@Messiah@@",
+        "member_displacement": 0
+      }
+    ]
+  }
+]

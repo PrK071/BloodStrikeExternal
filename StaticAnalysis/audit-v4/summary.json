@@ -1,0 +1,48 @@
+{
+  "status": "PASS_SELECTED_V4_EVIDENCE",
+  "generated_utc": "2026-10-21T05:09:54.983563+00:00",
+  "sample_sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "cfg_entries": 67,
+  "unique_instructions": 8628,
+  "instruction_records": 8802,
+  "cross_unwind_entries": 8,
+  "data_blocks": 9,
+  "claims": 7,
+  "byte_length_target_mismatches": 0,
+  "unfollowed_targets": {
+    "actor_component_destructor": [
+      "0xad6090"
+    ],
+    "skeleton_component_destructor": [
+      "0x1416d0"
+    ],
+    "association_cleanup": [
+      "0x424c1b0"
+    ],
+    "wrapper_actor_expire": [
+      "0x2148390"
+    ],
+    "wrapper_skeleton_expire": [
+      "0x2d85f40"
+    ],
+    "wrapper_iskeleton_expire": [
+      "0x2d85f40"
+    ],
+    "wrapper_component_expire": [
+      "0x2d85f40"
+    ],
+    "lazy_resolver_adapter": [
+      "0x20cb120"
+    ],
+    "association_callback_a": [
+      "0x899eb0"
+    ],
+    "root_consumer_3226aa0": [
+      "0x34c790"
+    ]
+  },
+  "runtime_observations": 0,
+  "game_process_access": false,
+  "v3_inputs_unchanged": true,
+  "limits": "Selected reachable CFGs; calls require explicit seeds; no exhaustive computed-pointer, type, concurrency or runtime proof."
+}

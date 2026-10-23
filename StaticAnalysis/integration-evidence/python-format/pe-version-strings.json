@@ -1,0 +1,294 @@
+[
+  {
+    "rva": "0x580d5f0",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Objects\\object.c"
+  },
+  {
+    "rva": "0x580f4c2",
+    "string": "the Python version, and the hardware/OS platform and version."
+  },
+  {
+    "rva": "0x580fd10",
+    "string": "Bitwise inversion '~' on bool is deprecated and will be removed in Python 3.16. This returns the bitwise inversion of the underlying int object and is usually not what you expect from negating a bool. Use the 'not' operator for boolean negation or ~int(x) if you really want the bitwise inversion of the underlying int."
+  },
+  {
+    "rva": "0x5811370",
+    "string": "%.50s.__float__ returned non-float (type %.50s).  The ability to return an instance of a strict subclass of float is deprecated, and may be removed in a future version of Python."
+  },
+  {
+    "rva": "0x5812480",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Objects\\funcobject.c"
+  },
+  {
+    "rva": "0x5814740",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Objects\\typeobject.c"
+  },
+  {
+    "rva": "0x5818ae0",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Objects\\bytesobject.c"
+  },
+  {
+    "rva": "0x581d800",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Objects\\unicodeobject.c"
+  },
+  {
+    "rva": "0x5821190",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Objects\\longobject.c"
+  },
+  {
+    "rva": "0x5821e60",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Objects\\tupleobject.c"
+  },
+  {
+    "rva": "0x58226f0",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Objects\\listobject.c"
+  },
+  {
+    "rva": "0x58235f0",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Objects\\dictobject.c"
+  },
+  {
+    "rva": "0x5823e60",
+    "string": "Python C API version mismatch for module %.100s: This Python has API version %d, module %.100s has version %d."
+  },
+  {
+    "rva": "0x5824230",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Objects\\moduleobject.c"
+  },
+  {
+    "rva": "0x5824c00",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Python\\getargs.c"
+  },
+  {
+    "rva": "0x5828e30",
+    "string": "sys._enablelegacywindowsfsencoding() is deprecated and will be removed in Python 3.16. Use PYTHONLEGACYWINDOWSFSENCODING instead."
+  },
+  {
+    "rva": "0x582bcb0",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Objects\\abstract.c"
+  },
+  {
+    "rva": "0x582c0a0",
+    "string": "__index__ returned non-int (type %.200s).  The ability to return an instance of a strict subclass of int is deprecated, and may be removed in a future version of Python."
+  },
+  {
+    "rva": "0x582c1b0",
+    "string": "__int__ returned non-int (type %.200s).  The ability to return an instance of a strict subclass of int is deprecated, and may be removed in a future version of Python."
+  },
+  {
+    "rva": "0x582ca30",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Objects\\weakrefobject.c"
+  },
+  {
+    "rva": "0x582ce30",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Python\\gc.c"
+  },
+  {
+    "rva": "0x582cfa0",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Python\\ceval_gil.c"
+  },
+  {
+    "rva": "0x582e020",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Python\\import.c"
+  },
+  {
+    "rva": "0x582e3d0",
+    "string": "PyImport_ImportModuleNoBlock() is deprecated and scheduled for removal in Python 3.15. Use PyImport_ImportModule() instead."
+  },
+  {
+    "rva": "0x582ea90",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Objects\\methodobject.c"
+  },
+  {
+    "rva": "0x5831820",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Objects\\setobject.c"
+  },
+  {
+    "rva": "0x58899c0",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Objects\\bytearrayobject.c"
+  },
+  {
+    "rva": "0x5889f60",
+    "string": "__complex__ returned non-complex (type %.200s).  The ability to return an instance of a strict subclass of complex is deprecated, and may be removed in a future version of Python."
+  },
+  {
+    "rva": "0x588ba40",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Objects\\memoryobject.c"
+  },
+  {
+    "rva": "0x588c700",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Objects\\classobject.c"
+  },
+  {
+    "rva": "0x588c900",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Objects\\fileobject.c"
+  },
+  {
+    "rva": "0x588dad0",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Objects\\codeobject.c"
+  },
+  {
+    "rva": "0x588de40",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Python\\traceback.c"
+  },
+  {
+    "rva": "0x588e500",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Objects\\cellobject.c"
+  },
+  {
+    "rva": "0x588e77d",
+    "string": "and may be removed in a future version of Python."
+  },
+  {
+    "rva": "0x588e800",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Objects\\iterobject.c"
+  },
+  {
+    "rva": "0x588ea25",
+    "string": "and may be removed in a future version of Python."
+  },
+  {
+    "rva": "0x588ee6d",
+    "string": "and may be removed in a future version of Python."
+  },
+  {
+    "rva": "0x588f125",
+    "string": "and may be removed in a future version of Python."
+  },
+  {
+    "rva": "0x5897290",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Objects\\structseq.c"
+  },
+  {
+    "rva": "0x58973b0",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Python\\pystrtod.c"
+  },
+  {
+    "rva": "0x58bee18",
+    "string": "3.14.0"
+  },
+  {
+    "rva": "0x58c01c0",
+    "string": "%.400s.__init__ got an unexpected keyword argument '%U'. Support for arbitrary keyword arguments is deprecated and will be removed in Python 3.15."
+  },
+  {
+    "rva": "0x58c0260",
+    "string": "Field '%U' is missing from %.400s._field_types. This will become an error in Python 3.15."
+  },
+  {
+    "rva": "0x58c02c0",
+    "string": "%.400s.__init__ missing 1 required positional argument: '%U'. This will become an error in Python 3.15."
+  },
+  {
+    "rva": "0x58ca290",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Python\\crossinterp.c"
+  },
+  {
+    "rva": "0x58ca558",
+    "string": "python3.dll"
+  },
+  {
+    "rva": "0x58ca5d8",
+    "string": "python%d%d.dll"
+  },
+  {
+    "rva": "0x58ca5e8",
+    "string": "Module use of %.150s conflicts with this version of Python."
+  },
+  {
+    "rva": "0x59c7760",
+    "string": "Underscores in numeric literals are only supported in Python 3.6 and greater"
+  },
+  {
+    "rva": "0x59c9280",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Modules\\arraymodule.c"
+  },
+  {
+    "rva": "0x59c9a60",
+    "string": "The 'u' type code is deprecated and will be removed in Python 3.16"
+  },
+  {
+    "rva": "0x59d9630",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Modules\\sha3module.c"
+  },
+  {
+    "rva": "0x59e3410",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Modules\\_heapqmodule.c"
+  },
+  {
+    "rva": "0x5aab880",
+    "string": "%s only supported in Python 3.%i and greater"
+  },
+  {
+    "rva": "0x5aad540",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Modules\\_hacl\\Hacl_Hash_SHA3.c"
+  },
+  {
+    "rva": "0x5ac7190",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Modules\\_ssl.c"
+  },
+  {
+    "rva": "0x5ac7c00",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Modules\\pyexpat.c"
+  },
+  {
+    "rva": "0x5b81ad0",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Parser\\string_parser.c"
+  },
+  {
+    "rva": "0x5b84190",
+    "string": "Enable JIT or not(only avaliable on Python3.13)."
+  },
+  {
+    "rva": "0x5b89a30",
+    "string": "compile time Python version %d.%d of module '%.100s' %s runtime version %d.%d"
+  },
+  {
+    "rva": "0x5b8af30",
+    "string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\Runtime\\Plugins\\Python\\Source\\MImporter_py3.cpp"
+  },
+  {
+    "rva": "0x5b8c160",
+    "string": "I:\\git\\2024\\messiah\\Engine\\Sources\\Runtime\\Plugins\\Python\\MImporter_py3.py"
+  },
+  {
+    "rva": "0x5bad770",
+    "string": "PythonCore_x64h.dll"
+  },
+  {
+    "rva": "0x6d934e0",
+    "string": "an str is required in Python 2.x, or a bytes is required in Python 3.x!"
+  },
+  {
+    "rva": "0x6d93540",
+    "string": "An str is required in Python 2.x or a bytes is required in Python 3.x!"
+  },
+  {
+    "rva": "0x6ddce40",
+    "string": "Passing more than 1 positional argument to sqlite3.connect() is deprecated. Parameters 'timeout', 'detect_types', 'isolation_level', 'check_same_thread', 'factory', 'cached_statements' and 'uri' will become keyword-only parameters in Python 3.15."
+  },
+  {
+    "rva": "0x6ddea80",
+    "string": "Passing more than 1 positional argument to _sqlite3.Connection() is deprecated. Parameters 'timeout', 'detect_types', 'isolation_level', 'check_same_thread', 'factory', 'cached_statements' and 'uri' will become keyword-only parameters in Python 3.15."
+  },
+  {
+    "rva": "0x6ddf040",
+    "string": "Passing keyword arguments 'name', 'narg' and 'func' to _sqlite3.Connection.create_function() is deprecated. Parameters 'name', 'narg' and 'func' will become positional-only in Python 3.15."
+  },
+  {
+    "rva": "0x6ddf480",
+    "string": "Passing keyword arguments 'name', 'n_arg' and 'aggregate_class' to _sqlite3.Connection.create_aggregate() is deprecated. Parameters 'name', 'n_arg' and 'aggregate_class' will become positional-only in Python 3.15."
+  },
+  {
+    "rva": "0x6ddf6a0",
+    "string": "Passing keyword argument 'authorizer_callback' to _sqlite3.Connection.set_authorizer() is deprecated. Parameter 'authorizer_callback' will become positional-only in Python 3.15."
+  },
+  {
+    "rva": "0x6ddfa30",
+    "string": "Passing keyword argument 'progress_handler' to _sqlite3.Connection.set_progress_handler() is deprecated. Parameter 'progress_handler' will become positional-only in Python 3.15."
+  },
+  {
+    "rva": "0x6ddfc60",
+    "string": "Passing keyword argument 'trace_callback' to _sqlite3.Connection.set_trace_callback() is deprecated. Parameter 'trace_callback' will become positional-only in Python 3.15."
+  }
+]

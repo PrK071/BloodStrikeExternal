@@ -1,0 +1,1047 @@
+[
+  {
+    "id": "A01",
+    "status": "CONFIRMADA",
+    "claim": "Os registros antigos de instrucoes, RVAs, xrefs e vftables sao estruturalmente consistentes.",
+    "reason": "Segundo parser PE e iced-x86 conferem bytes, comprimento de instrucao e destinos; ver legacy-audit.json.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [],
+    "public_sources": [],
+    "runtime_validation": false
+  },
+  {
+    "id": "A02",
+    "status": "PARCIAL",
+    "claim": "Reconstrucao do mapa de tipos e layouts a partir dos inventarios RTTI.",
+    "reason": "A forma binaria e os nomes foram conferidos; faltam cobertura de tipos sem RTTI e tamanhos/semantica de campos.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [],
+    "public_sources": [],
+    "runtime_validation": false
+  },
+  {
+    "id": "A03",
+    "status": "DESCARTADA",
+    "claim": "Uma entrada RUNTIME_FUNCTION ou truncated=false garante a funcao fonte completa.",
+    "reason": "O ramo de sucesso do helper de listas sai do primeiro registro; o CFG alcanca quatro registros.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [
+      {
+        "rva": "0x2a8327c",
+        "preferred_va": "0x142a8327c",
+        "file_offset": "0x2a8287c",
+        "bytes": "79 19",
+        "text": "jns short 0000000142A83297h",
+        "length": 2,
+        "branch_target_rva": "0x2a83297"
+      },
+      {
+        "rva": "0x2a83297",
+        "preferred_va": "0x142a83297",
+        "file_offset": "0x2a82897",
+        "bytes": "48 89 5c 24 30",
+        "text": "mov [rsp+30h],rbx",
+        "length": 5
+      }
+    ],
+    "public_sources": [],
+    "runtime_validation": false
+  },
+  {
+    "id": "A04",
+    "status": "DESCARTADA",
+    "claim": "Todos os enderecos do bloco asm do relatorio anterior estavam escritos como RVAs.",
+    "reason": "As colunas da esquerda eram RVAs, enquanto destinos call absolutos foram formatados como VAs preferenciais.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [
+      {
+        "rva": "0x3239681",
+        "preferred_va": "0x143239681",
+        "file_offset": "0x3238c81",
+        "bytes": "e8 e2 2a 01 01",
+        "text": "call 000000014424C168h",
+        "length": 5,
+        "branch_target_rva": "0x424c168"
+      }
+    ],
+    "public_sources": [],
+    "runtime_validation": false
+  },
+  {
+    "id": "A05",
+    "status": "PARCIAL",
+    "claim": "Recuperacao das vftables, sua extensao e identidade dos metodos.",
+    "reason": "132 ponteiros sao autenticos e tem relocacoes DIR64; extensao exata das tabelas e identidade dos metodos nao decorrem disso.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [],
+    "public_sources": [],
+    "runtime_validation": false
+  },
+  {
+    "id": "G01",
+    "status": "CONFIRMADA",
+    "claim": "GetAllActors e registrado com callback no RVA 0x3259770.",
+    "reason": "Nome e endereco sao escritos no mesmo registro de 32 bytes.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [
+      {
+        "rva": "0x3239686",
+        "preferred_va": "0x143239686",
+        "file_offset": "0x3238c86",
+        "bytes": "48 8d 15 eb f1 97 02",
+        "text": "lea rdx,[145BB8878h]",
+        "length": 7,
+        "rip_target_rva": "0x5bb8878",
+        "rip_target_string": "GetAllActors"
+      },
+      {
+        "rva": "0x3239693",
+        "preferred_va": "0x143239693",
+        "file_offset": "0x3238c93",
+        "bytes": "48 89 10",
+        "text": "mov [rax],rdx",
+        "length": 3
+      },
+      {
+        "rva": "0x3239696",
+        "preferred_va": "0x143239696",
+        "file_offset": "0x3238c96",
+        "bytes": "48 8d 15 d3 00 02 00",
+        "text": "lea rdx,[143259770h]",
+        "length": 7,
+        "rip_target_rva": "0x3259770",
+        "rip_target_string": null
+      },
+      {
+        "rva": "0x323969d",
+        "preferred_va": "0x14323969d",
+        "file_offset": "0x3238c9d",
+        "bytes": "48 89 50 08",
+        "text": "mov [rax+8],rdx",
+        "length": 4
+      },
+      {
+        "rva": "0x32396a4",
+        "preferred_va": "0x1432396a4",
+        "file_offset": "0x3238ca4",
+        "bytes": "c7 40 10 04 00 00 00",
+        "text": "mov dword ptr [rax+10h],4",
+        "length": 7
+      },
+      {
+        "rva": "0x32396af",
+        "preferred_va": "0x1432396af",
+        "file_offset": "0x3238caf",
+        "bytes": "e8 bc 61 9c fe",
+        "text": "call 0000000141BFF870h",
+        "length": 5,
+        "branch_target_rva": "0x1bff870"
+      }
+    ],
+    "public_sources": [],
+    "runtime_validation": false
+  },
+  {
+    "id": "G02",
+    "status": "CONFIRMADA",
+    "claim": "O registro integra a inicializacao do modulo de scripts MCharacter.",
+    "reason": "A definicao de modulo aponta para MCharacter; a mesma rotina cria o modulo e instala o callback. Outra rotina usa o mesmo nome.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [
+      {
+        "rva": "0x32362e2",
+        "preferred_va": "0x1432362e2",
+        "file_offset": "0x32358e2",
+        "bytes": "48 8d 0d a7 e4 85 04",
+        "text": "lea rcx,[147A94790h]",
+        "length": 7,
+        "rip_target_rva": "0x7a94790",
+        "rip_target_string": ""
+      },
+      {
+        "rva": "0x32362e9",
+        "preferred_va": "0x1432362e9",
+        "file_offset": "0x32358e9",
+        "bytes": "e8 a2 ea 85 ff",
+        "text": "call 0000000142A94D90h",
+        "length": 5,
+        "branch_target_rva": "0x2a94d90"
+      },
+      {
+        "rva": "0x323630e",
+        "preferred_va": "0x14323630e",
+        "file_offset": "0x323590e",
+        "bytes": "48 8d 0d 23 0d 98 02",
+        "text": "lea rcx,[145BB7038h]",
+        "length": 7,
+        "rip_target_rva": "0x5bb7038",
+        "rip_target_string": "MCharacter"
+      },
+      {
+        "rva": "0x3244dce",
+        "preferred_va": "0x143244dce",
+        "file_offset": "0x32443ce",
+        "bytes": "48 8d 15 63 22 97 02",
+        "text": "lea rdx,[145BB7038h]",
+        "length": 7,
+        "rip_target_rva": "0x5bb7038",
+        "rip_target_string": "MCharacter"
+      }
+    ],
+    "public_sources": [
+      "https://docs.python.org/3.14/c-api/module.html#c.PyModuleDef"
+    ],
+    "runtime_validation": false
+  },
+  {
+    "id": "G03",
+    "status": "CONFIRMADA",
+    "claim": "A chamada de scripts nao aceita argumentos Python; o dispatcher fornece self e NULL conforme METH_NOARGS.",
+    "reason": "Flag 4 seleciona o dispatcher NOARGS, que zera EDX antes da chamada indireta; isso nao equivale a prototipo C sem parametros.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [
+      {
+        "rva": "0x32396a4",
+        "preferred_va": "0x1432396a4",
+        "file_offset": "0x3238ca4",
+        "bytes": "c7 40 10 04 00 00 00",
+        "text": "mov dword ptr [rax+10h],4",
+        "length": 7
+      },
+      {
+        "rva": "0x2abf926",
+        "preferred_va": "0x142abf926",
+        "file_offset": "0x2abef26",
+        "bytes": "48 8d 1d 53 04 00 00",
+        "text": "lea rbx,[142ABFD80h]",
+        "length": 7,
+        "rip_target_rva": "0x2abfd80",
+        "rip_target_string": null
+      },
+      {
+        "rva": "0x2abfe72",
+        "preferred_va": "0x142abfe72",
+        "file_offset": "0x2abf472",
+        "bytes": "48 8b 4b 18",
+        "text": "mov rcx,[rbx+18h]",
+        "length": 4
+      },
+      {
+        "rva": "0x2abfe76",
+        "preferred_va": "0x142abfe76",
+        "file_offset": "0x2abf476",
+        "bytes": "33 d2",
+        "text": "xor edx,edx",
+        "length": 2
+      },
+      {
+        "rva": "0x2abfe78",
+        "preferred_va": "0x142abfe78",
+        "file_offset": "0x2abf478",
+        "bytes": "41 ff d0",
+        "text": "call r8",
+        "length": 3
+      }
+    ],
+    "public_sources": [
+      "https://raw.githubusercontent.com/python/cpython/v3.14.0/Include/methodobject.h",
+      "https://learn.microsoft.com/en-us/cpp/build/x64-calling-convention?view=msvc-170"
+    ],
+    "runtime_validation": false
+  },
+  {
+    "id": "G04",
+    "status": "CONFIRMADA",
+    "claim": "O callback constroi uma lista Python nova e retorna a lista ou NULL nos caminhos observados.",
+    "reason": "Alocacao com tamanho zero, PyTypeObject com nome list, append e fluxo de erro; ver script-bridge.json e reachable-code.json.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [
+      {
+        "rva": "0x3259786",
+        "preferred_va": "0x143259786",
+        "file_offset": "0x3258d86",
+        "bytes": "33 c9",
+        "text": "xor ecx,ecx",
+        "length": 2
+      },
+      {
+        "rva": "0x3259788",
+        "preferred_va": "0x143259788",
+        "file_offset": "0x3258d88",
+        "bytes": "e8 e3 9a 82 ff",
+        "text": "call 0000000142A83270h",
+        "length": 5,
+        "branch_target_rva": "0x2a83270"
+      },
+      {
+        "rva": "0x2a832f5",
+        "preferred_va": "0x142a832f5",
+        "file_offset": "0x2a828f5",
+        "bytes": "48 8d 0d e4 60 f9 04",
+        "text": "lea rcx,[147A193E0h]",
+        "length": 7,
+        "rip_target_rva": "0x7a193e0",
+        "rip_target_string": ""
+      },
+      {
+        "rva": "0x2a832fc",
+        "preferred_va": "0x142a832fc",
+        "file_offset": "0x2a828fc",
+        "bytes": "e8 6f 18 03 00",
+        "text": "call 0000000142AB4B70h",
+        "length": 5,
+        "branch_target_rva": "0x2ab4b70"
+      },
+      {
+        "rva": "0x2a832cf",
+        "preferred_va": "0x142a832cf",
+        "file_offset": "0x2a828cf",
+        "bytes": "48 c7 43 18 00 00 00 00",
+        "text": "mov qword ptr [rbx+18h],0",
+        "length": 8
+      },
+      {
+        "rva": "0x2a832da",
+        "preferred_va": "0x142a832da",
+        "file_offset": "0x2a828da",
+        "bytes": "48 89 7b 10",
+        "text": "mov [rbx+10h],rdi",
+        "length": 4
+      },
+      {
+        "rva": "0x32597fe",
+        "preferred_va": "0x1432597fe",
+        "file_offset": "0x3258dfe",
+        "bytes": "e8 6d 9d 82 ff",
+        "text": "call 0000000142A83570h",
+        "length": 5,
+        "branch_target_rva": "0x2a83570"
+      },
+      {
+        "rva": "0x3259837",
+        "preferred_va": "0x143259837",
+        "file_offset": "0x3258e37",
+        "bytes": "e8 84 75 81 ff",
+        "text": "call 0000000142A70DC0h",
+        "length": 5,
+        "branch_target_rva": "0x2a70dc0"
+      },
+      {
+        "rva": "0x325983f",
+        "preferred_va": "0x14325983f",
+        "file_offset": "0x3258e3f",
+        "bytes": "4d 0f 44 e6",
+        "text": "cmove r12,r14",
+        "length": 4
+      },
+      {
+        "rva": "0x3259843",
+        "preferred_va": "0x143259843",
+        "file_offset": "0x3258e43",
+        "bytes": "49 8b c4",
+        "text": "mov rax,r12",
+        "length": 3
+      }
+    ],
+    "public_sources": [
+      "https://raw.githubusercontent.com/python/cpython/v3.14.0/Objects/listobject.c"
+    ],
+    "runtime_validation": false
+  },
+  {
+    "id": "G05",
+    "status": "CONFIRMADA",
+    "claim": "O codigo demonstra a alocacao e inicializacao da raiz cujo ponteiro e armazenado em 0x8b7cd90.",
+    "reason": "Alocacao de 0x40, inicializacao de sentinela e store global; o getter le esse slot. Valores vivos continuam desconhecidos.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [
+      {
+        "rva": "0x19b9366",
+        "preferred_va": "0x1419b9366",
+        "file_offset": "0x19b8966",
+        "bytes": "b9 40 00 00 00",
+        "text": "mov ecx,40h",
+        "length": 5
+      },
+      {
+        "rva": "0x19b937b",
+        "preferred_va": "0x1419b937b",
+        "file_offset": "0x19b897b",
+        "bytes": "e8 50 bf 7e fe",
+        "text": "call 00000001401A52D0h",
+        "length": 5,
+        "branch_target_rva": "0x1a52d0"
+      },
+      {
+        "rva": "0x19b9385",
+        "preferred_va": "0x1419b9385",
+        "file_offset": "0x19b8985",
+        "bytes": "48 89 1d 04 3a 1c 07",
+        "text": "mov [148B7CD90h],rbx",
+        "length": 7,
+        "rip_target_rva": "0x8b7cd90",
+        "rip_target_string": null
+      },
+      {
+        "rva": "0x19d45e0",
+        "preferred_va": "0x1419d45e0",
+        "file_offset": "0x19d3be0",
+        "bytes": "48 8b 05 a9 87 1a 07",
+        "text": "mov rax,[148B7CD90h]",
+        "length": 7,
+        "rip_target_rva": "0x8b7cd90",
+        "rip_target_string": null
+      },
+      {
+        "rva": "0x1a52f8",
+        "preferred_va": "0x1401a52f8",
+        "file_offset": "0x1a48f8",
+        "bytes": "48 89 00",
+        "text": "mov [rax],rax",
+        "length": 3
+      },
+      {
+        "rva": "0x1a52fb",
+        "preferred_va": "0x1401a52fb",
+        "file_offset": "0x1a48fb",
+        "bytes": "48 89 40 08",
+        "text": "mov [rax+8],rax",
+        "length": 4
+      },
+      {
+        "rva": "0x1a52ff",
+        "preferred_va": "0x1401a52ff",
+        "file_offset": "0x1a48ff",
+        "bytes": "48 89 43 08",
+        "text": "mov [rbx+8],rax",
+        "length": 4
+      }
+    ],
+    "public_sources": [],
+    "runtime_validation": false
+  },
+  {
+    "id": "G06",
+    "status": "CONFIRMADA",
+    "claim": "Existe um caminho que associa um valor de 32 bits de Character::Actor a ActorComponent nesse registro.",
+    "reason": "Construcao do ator, passagem ao componente, chave de quatro bytes e ponteiro this inserido no payload +0x18 do no.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [
+      {
+        "rva": "0x19bfe53",
+        "preferred_va": "0x1419bfe53",
+        "file_offset": "0x19bf453",
+        "bytes": "e8 18 10 d1 ff",
+        "text": "call 00000001416D0E70h",
+        "length": 5,
+        "branch_target_rva": "0x16d0e70"
+      },
+      {
+        "rva": "0x19bfe75",
+        "preferred_va": "0x1419bfe75",
+        "file_offset": "0x19bf475",
+        "bytes": "e8 86 02 00 00",
+        "text": "call 00000001419C0100h",
+        "length": 5,
+        "branch_target_rva": "0x19c0100"
+      },
+      {
+        "rva": "0x19c01dc",
+        "preferred_va": "0x1419c01dc",
+        "file_offset": "0x19bf7dc",
+        "bytes": "48 8d 9f 78 03 00 00",
+        "text": "lea rbx,[rdi+378h]",
+        "length": 7
+      },
+      {
+        "rva": "0x19c0266",
+        "preferred_va": "0x1419c0266",
+        "file_offset": "0x19bf866",
+        "bytes": "48 89 03",
+        "text": "mov [rbx],rax",
+        "length": 3
+      },
+      {
+        "rva": "0x19c03f0",
+        "preferred_va": "0x1419c03f0",
+        "file_offset": "0x19bf9f0",
+        "bytes": "48 89 7d 77",
+        "text": "mov [rbp+77h],rdi",
+        "length": 4
+      },
+      {
+        "rva": "0x19c03f7",
+        "preferred_va": "0x1419c03f7",
+        "file_offset": "0x19bf9f7",
+        "bytes": "8b 48 0c",
+        "text": "mov ecx,[rax+0Ch]",
+        "length": 3
+      },
+      {
+        "rva": "0x19c03fd",
+        "preferred_va": "0x1419c03fd",
+        "file_offset": "0x19bf9fd",
+        "bytes": "4c 8d 4d 77",
+        "text": "lea r9,[rbp+77h]",
+        "length": 4
+      },
+      {
+        "rva": "0x19c0409",
+        "preferred_va": "0x1419c0409",
+        "file_offset": "0x19bfa09",
+        "bytes": "48 8b 0d 80 c9 1b 07",
+        "text": "mov rcx,[148B7CD90h]",
+        "length": 7,
+        "rip_target_rva": "0x8b7cd90",
+        "rip_target_string": null
+      },
+      {
+        "rva": "0x19c0410",
+        "preferred_va": "0x1419c0410",
+        "file_offset": "0x19bfa10",
+        "bytes": "e8 7b 3f 89 fe",
+        "text": "call 0000000140254390h",
+        "length": 5,
+        "branch_target_rva": "0x254390"
+      },
+      {
+        "rva": "0x254497",
+        "preferred_va": "0x140254497",
+        "file_offset": "0x253a97",
+        "bytes": "89 48 10",
+        "text": "mov [rax+10h],ecx",
+        "length": 3
+      },
+      {
+        "rva": "0x25449a",
+        "preferred_va": "0x14025449a",
+        "file_offset": "0x253a9a",
+        "bytes": "49 8b 4d 00",
+        "text": "mov rcx,[r13]",
+        "length": 4
+      },
+      {
+        "rva": "0x25449e",
+        "preferred_va": "0x14025449e",
+        "file_offset": "0x253a9e",
+        "bytes": "48 89 48 18",
+        "text": "mov [rax+18h],rcx",
+        "length": 4
+      }
+    ],
+    "public_sources": [],
+    "runtime_validation": false
+  },
+  {
+    "id": "G07",
+    "status": "PARCIAL",
+    "claim": "Caracterizacao dos elementos retornados como ActorComponent.",
+    "reason": "O caminho de insercao acima e comprovado; nem todas as insercoes e subclasses dinamicas foram demonstradas.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [],
+    "public_sources": [],
+    "runtime_validation": false
+  },
+  {
+    "id": "G08",
+    "status": "HIP\u00d3TESE",
+    "claim": "GetAllActors enumera exclusivamente jogadores ou inimigos.",
+    "reason": "Nao ha verificacao demonstrada de time, jogador local ou identidade de gameplay. O nome Actor nao prova isso.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [],
+    "public_sources": [],
+    "runtime_validation": false
+  },
+  {
+    "id": "G09",
+    "status": "HIP\u00d3TESE",
+    "claim": "O container tem exatamente a identidade fonte std::unordered_map<uint32_t, ActorComponent*>.",
+    "reason": "Ha hashing de quatro bytes, buckets e nos encadeados. O nome/template e o sinal do tipo de chave nao foram recuperados.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [
+      {
+        "rva": "0x2543b8",
+        "preferred_va": "0x1402543b8",
+        "file_offset": "0x2539b8",
+        "bytes": "41 0f b6 28",
+        "text": "movzx ebp,byte ptr [r8]",
+        "length": 4
+      },
+      {
+        "rva": "0x2543d7",
+        "preferred_va": "0x1402543d7",
+        "file_offset": "0x2539d7",
+        "bytes": "41 0f b6 40 01",
+        "text": "movzx eax,byte ptr [r8+1]",
+        "length": 5
+      },
+      {
+        "rva": "0x2543e3",
+        "preferred_va": "0x1402543e3",
+        "file_offset": "0x2539e3",
+        "bytes": "41 0f b6 40 02",
+        "text": "movzx eax,byte ptr [r8+2]",
+        "length": 5
+      },
+      {
+        "rva": "0x2543ef",
+        "preferred_va": "0x1402543ef",
+        "file_offset": "0x2539ef",
+        "bytes": "41 0f b6 40 03",
+        "text": "movzx eax,byte ptr [r8+3]",
+        "length": 5
+      },
+      {
+        "rva": "0x2543fe",
+        "preferred_va": "0x1402543fe",
+        "file_offset": "0x2539fe",
+        "bytes": "48 23 56 30",
+        "text": "and rdx,[rsi+30h]",
+        "length": 4
+      },
+      {
+        "rva": "0x254405",
+        "preferred_va": "0x140254405",
+        "file_offset": "0x253a05",
+        "bytes": "48 8b 4e 18",
+        "text": "mov rcx,[rsi+18h]",
+        "length": 4
+      },
+      {
+        "rva": "0x254497",
+        "preferred_va": "0x140254497",
+        "file_offset": "0x253a97",
+        "bytes": "89 48 10",
+        "text": "mov [rax+10h],ecx",
+        "length": 3
+      },
+      {
+        "rva": "0x25449e",
+        "preferred_va": "0x14025449e",
+        "file_offset": "0x253a9e",
+        "bytes": "48 89 48 18",
+        "text": "mov [rax+18h],rcx",
+        "length": 4
+      }
+    ],
+    "public_sources": [],
+    "runtime_validation": false
+  },
+  {
+    "id": "G10",
+    "status": "CONFIRMADA",
+    "claim": "O callback filtra por ponteiro nao nulo e mascara 0x10 em um objeto relacionado antes da conversao.",
+    "reason": "Operacoes de leitura e teste sao explicitas; o significado de gameplay do bit nao foi identificado.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [
+      {
+        "rva": "0x32597c0",
+        "preferred_va": "0x1432597c0",
+        "file_offset": "0x3258dc0",
+        "bytes": "48 8b 53 18",
+        "text": "mov rdx,[rbx+18h]",
+        "length": 4
+      },
+      {
+        "rva": "0x32597c4",
+        "preferred_va": "0x1432597c4",
+        "file_offset": "0x3258dc4",
+        "bytes": "48 8b 42 40",
+        "text": "mov rax,[rdx+40h]",
+        "length": 4
+      },
+      {
+        "rva": "0x32597c8",
+        "preferred_va": "0x1432597c8",
+        "file_offset": "0x3258dc8",
+        "bytes": "48 85 c0",
+        "text": "test rax,rax",
+        "length": 3
+      },
+      {
+        "rva": "0x32597cd",
+        "preferred_va": "0x1432597cd",
+        "file_offset": "0x3258dcd",
+        "bytes": "f6 80 30 01 00 00 10",
+        "text": "test byte ptr [rax+130h],10h",
+        "length": 7
+      },
+      {
+        "rva": "0x32597dd",
+        "preferred_va": "0x1432597dd",
+        "file_offset": "0x3258ddd",
+        "bytes": "e8 be 91 b2 ff",
+        "text": "call 0000000142D829A0h",
+        "length": 5,
+        "branch_target_rva": "0x2d829a0"
+      }
+    ],
+    "public_sources": [],
+    "runtime_validation": false
+  },
+  {
+    "id": "C01",
+    "status": "CONFIRMADA",
+    "claim": "Character::Actor deriva de AnimationCore::Skeleton e instala sua vftable apos a inicializacao da base.",
+    "reason": "RTTI, chamada da base e stores sucessivos de vptr.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [
+      {
+        "rva": "0x16d0e9a",
+        "preferred_va": "0x1416d0e9a",
+        "file_offset": "0x16d049a",
+        "bytes": "e8 61 dc a8 ff",
+        "text": "call 000000014115EB00h",
+        "length": 5,
+        "branch_target_rva": "0x115eb00"
+      },
+      {
+        "rva": "0x115eb33",
+        "preferred_va": "0x14115eb33",
+        "file_offset": "0x115e133",
+        "bytes": "48 8d 05 fe 6d 1c 04",
+        "text": "lea rax,[145325938h]",
+        "length": 7,
+        "rip_target_rva": "0x5325938",
+        "rip_target_string": null
+      },
+      {
+        "rva": "0x115eb3a",
+        "preferred_va": "0x14115eb3a",
+        "file_offset": "0x115e13a",
+        "bytes": "48 89 01",
+        "text": "mov [rcx],rax",
+        "length": 3
+      },
+      {
+        "rva": "0x16d0e9f",
+        "preferred_va": "0x1416d0e9f",
+        "file_offset": "0x16d049f",
+        "bytes": "48 8d 05 ba 41 e9 03",
+        "text": "lea rax,[145565060h]",
+        "length": 7,
+        "rip_target_rva": "0x5565060",
+        "rip_target_string": null
+      },
+      {
+        "rva": "0x16d0ea6",
+        "preferred_va": "0x1416d0ea6",
+        "file_offset": "0x16d04a6",
+        "bytes": "48 89 07",
+        "text": "mov [rdi],rax",
+        "length": 3
+      }
+    ],
+    "public_sources": [],
+    "runtime_validation": false
+  },
+  {
+    "id": "C02",
+    "status": "CONFIRMADA",
+    "claim": "ActorComponent e SkeletonComponent possuem vptr principal +0 e subobjeto ITickable +0x68.",
+    "reason": "Hierarquias RTTI, inicializadores de base/derivada e thunks de ajuste de this concordam.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [
+      {
+        "rva": "0x19bf534",
+        "preferred_va": "0x1419bf534",
+        "file_offset": "0x19beb34",
+        "bytes": "e8 57 68 11 ff",
+        "text": "call 0000000140AD5D90h",
+        "length": 5,
+        "branch_target_rva": "0xad5d90"
+      },
+      {
+        "rva": "0x19bf540",
+        "preferred_va": "0x1419bf540",
+        "file_offset": "0x19beb40",
+        "bytes": "48 89 03",
+        "text": "mov [rbx],rax",
+        "length": 3
+      },
+      {
+        "rva": "0x19bf54a",
+        "preferred_va": "0x1419bf54a",
+        "file_offset": "0x19beb4a",
+        "bytes": "48 89 43 68",
+        "text": "mov [rbx+68h],rax",
+        "length": 4
+      },
+      {
+        "rva": "0xad5c24",
+        "preferred_va": "0x140ad5c24",
+        "file_offset": "0xad5224",
+        "bytes": "e8 27 d4 f2 ff",
+        "text": "call 0000000140A03050h",
+        "length": 5,
+        "branch_target_rva": "0xa03050"
+      },
+      {
+        "rva": "0xad5c30",
+        "preferred_va": "0x140ad5c30",
+        "file_offset": "0xad5230",
+        "bytes": "48 89 03",
+        "text": "mov [rbx],rax",
+        "length": 3
+      },
+      {
+        "rva": "0xad5c3a",
+        "preferred_va": "0x140ad5c3a",
+        "file_offset": "0xad523a",
+        "bytes": "48 89 43 68",
+        "text": "mov [rbx+68h],rax",
+        "length": 4
+      },
+      {
+        "rva": "0xa03077",
+        "preferred_va": "0x140a03077",
+        "file_offset": "0xa02677",
+        "bytes": "48 89 07",
+        "text": "mov [rdi],rax",
+        "length": 3
+      },
+      {
+        "rva": "0xa03081",
+        "preferred_va": "0x140a03081",
+        "file_offset": "0xa02681",
+        "bytes": "48 89 47 68",
+        "text": "mov [rdi+68h],rax",
+        "length": 4
+      },
+      {
+        "rva": "0x1a1e2fc",
+        "preferred_va": "0x141a1e2fc",
+        "file_offset": "0x1a1d8fc",
+        "bytes": "48 83 e9 68",
+        "text": "sub rcx,68h",
+        "length": 4
+      },
+      {
+        "rva": "0x1a1e300",
+        "preferred_va": "0x141a1e300",
+        "file_offset": "0x1a1d900",
+        "bytes": "e9 5b 02 00 00",
+        "text": "jmp 0000000141A1E560h",
+        "length": 5,
+        "branch_target_rva": "0x1a1e560"
+      },
+      {
+        "rva": "0xb1070c",
+        "preferred_va": "0x140b1070c",
+        "file_offset": "0xb0fd0c",
+        "bytes": "48 83 e9 68",
+        "text": "sub rcx,68h",
+        "length": 4
+      },
+      {
+        "rva": "0xb10710",
+        "preferred_va": "0x140b10710",
+        "file_offset": "0xb0fd10",
+        "bytes": "e9 eb 12 00 00",
+        "text": "jmp 0000000140B11A00h",
+        "length": 5,
+        "branch_target_rva": "0xb11a00"
+      }
+    ],
+    "public_sources": [],
+    "runtime_validation": false
+  },
+  {
+    "id": "C03",
+    "status": "CONFIRMADA",
+    "claim": "ICamera deriva de IEntity e instala sua tabela principal em +0.",
+    "reason": "RTTI e chamada do inicializador de IEntity, com stores da base e depois da derivada.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [
+      {
+        "rva": "0x275738",
+        "preferred_va": "0x140275738",
+        "file_offset": "0x274d38",
+        "bytes": "e8 e3 72 61 00",
+        "text": "call 000000014088CA20h",
+        "length": 5,
+        "branch_target_rva": "0x88ca20"
+      },
+      {
+        "rva": "0x88ca40",
+        "preferred_va": "0x14088ca40",
+        "file_offset": "0x88c040",
+        "bytes": "48 8d 05 39 d7 69 04",
+        "text": "lea rax,[144F2A180h]",
+        "length": 7,
+        "rip_target_rva": "0x4f2a180",
+        "rip_target_string": null
+      },
+      {
+        "rva": "0x88ca47",
+        "preferred_va": "0x14088ca47",
+        "file_offset": "0x88c047",
+        "bytes": "48 89 03",
+        "text": "mov [rbx],rax",
+        "length": 3
+      },
+      {
+        "rva": "0x27573d",
+        "preferred_va": "0x14027573d",
+        "file_offset": "0x274d3d",
+        "bytes": "48 8d 05 14 1e be 04",
+        "text": "lea rax,[144E57558h]",
+        "length": 7,
+        "rip_target_rva": "0x4e57558",
+        "rip_target_string": null
+      },
+      {
+        "rva": "0x275744",
+        "preferred_va": "0x140275744",
+        "file_offset": "0x274d44",
+        "bytes": "48 89 07",
+        "text": "mov [rdi],rax",
+        "length": 3
+      }
+    ],
+    "public_sources": [],
+    "runtime_validation": false
+  },
+  {
+    "id": "C04",
+    "status": "DESCARTADA",
+    "claim": "O offset +0x68 pode ser generalizado como vptr secundario das quatro classes.",
+    "reason": "O subobjeto ITickable foi provado apenas nas duas classes de componentes; nao ha fundamento para a generalizacao.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [],
+    "public_sources": [],
+    "runtime_validation": false
+  },
+  {
+    "id": "C05",
+    "status": "HIP\u00d3TESE",
+    "claim": "ICamera +0x454 e necessariamente o FOV.",
+    "reason": "A escrita dos bits de 60.0 e real; nome e unidade ainda nao foram demonstrados.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [
+      {
+        "rva": "0x27579c",
+        "preferred_va": "0x14027579c",
+        "file_offset": "0x274d9c",
+        "bytes": "c7 87 54 04 00 00 00 00 70 42",
+        "text": "mov dword ptr [rdi+454h],42700000h",
+        "length": 10
+      }
+    ],
+    "public_sources": [],
+    "runtime_validation": false
+  },
+  {
+    "id": "M01",
+    "status": "CONFIRMADA",
+    "claim": "Ha procedencia embutida Python-3.14.0 nos helpers de listas usados pelo callback.",
+    "reason": "As instrucoes de erro referenciam caminho PythonCore3/Python-3.14.0/Objects/listobject.c.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [
+      {
+        "rva": "0x2a83283",
+        "preferred_va": "0x142a83283",
+        "file_offset": "0x2a82883",
+        "bytes": "48 8d 0d 66 f4 d9 02",
+        "text": "lea rcx,[1458226F0h]",
+        "length": 7,
+        "rip_target_rva": "0x58226f0",
+        "rip_target_string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Objects\\listobject.c"
+      },
+      {
+        "rva": "0x2a835a4",
+        "preferred_va": "0x142a835a4",
+        "file_offset": "0x2a82ba4",
+        "bytes": "48 8d 0d 45 f1 d9 02",
+        "text": "lea rcx,[1458226F0h]",
+        "length": 7,
+        "rip_target_rva": "0x58226f0",
+        "rip_target_string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Objects\\listobject.c"
+      }
+    ],
+    "public_sources": [],
+    "runtime_validation": false
+  },
+  {
+    "id": "M02",
+    "status": "PARCIAL",
+    "claim": "Identificacao do runtime incorporado com a base CPython 3.14.0.",
+    "reason": "Nomes e operacoes concordam, mas caminhos nao comprovam identidade de fontes. Numeros de linha do binario diferem da tag publica.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [],
+    "public_sources": [],
+    "runtime_validation": false
+  },
+  {
+    "id": "M03",
+    "status": "CONFIRMADA",
+    "claim": "Existem tipos C++ Asyncore::pybase_object_impl e Messiah::PythonAsyncoreModule.",
+    "reason": "Nomes dos TypeDescriptors foram relidos e verificados independentemente; nao demonstram todas as regras de threading do framework.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [],
+    "public_sources": [],
+    "runtime_validation": false
+  },
+  {
+    "id": "M04",
+    "status": "HIP\u00d3TESE",
+    "claim": "A arquitetura inteira de scheduling, GIL e rede da engine pode ser deduzida desses wrappers.",
+    "reason": "As evidencias analisadas cobrem registros, conversao e referencias; nao cobrem esses subsistemas por inteiro.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [],
+    "public_sources": [],
+    "runtime_validation": false
+  },
+  {
+    "id": "D01",
+    "status": "DESCARTADA",
+    "claim": "O getter RVA 0x19d45e0 le o endereco externo 0x8a8e810.",
+    "reason": "O destino RIP-relative e 0x8b7cd90 nesta amostra.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [
+      {
+        "rva": "0x19d45e0",
+        "preferred_va": "0x1419d45e0",
+        "file_offset": "0x19d3be0",
+        "bytes": "48 8b 05 a9 87 1a 07",
+        "text": "mov rax,[148B7CD90h]",
+        "length": 7,
+        "rip_target_rva": "0x8b7cd90",
+        "rip_target_string": null
+      }
+    ],
+    "public_sources": [],
+    "runtime_validation": false
+  },
+  {
+    "id": "D02",
+    "status": "DESCARTADA",
+    "claim": "O RVA da string GetAllActors pode ser usado como endereco da funcao.",
+    "reason": "String em .rdata e callback em .text sao objetos distintos, associados por um registro.",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": [
+      {
+        "rva": "0x3239686",
+        "preferred_va": "0x143239686",
+        "file_offset": "0x3238c86",
+        "bytes": "48 8d 15 eb f1 97 02",
+        "text": "lea rdx,[145BB8878h]",
+        "length": 7,
+        "rip_target_rva": "0x5bb8878",
+        "rip_target_string": "GetAllActors"
+      },
+      {
+        "rva": "0x3239696",
+        "preferred_va": "0x143239696",
+        "file_offset": "0x3238c96",
+        "bytes": "48 8d 15 d3 00 02 00",
+        "text": "lea rdx,[143259770h]",
+        "length": 7,
+        "rip_target_rva": "0x3259770",
+        "rip_target_string": null
+      }
+    ],
+    "public_sources": [],
+    "runtime_validation": false
+  }
+]

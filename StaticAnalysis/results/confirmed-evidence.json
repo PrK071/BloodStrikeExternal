@@ -1,0 +1,356 @@
+[
+  {
+    "id": "getallactors-binding",
+    "claim": "O nome GetAllActors e o callback RVA 0x3259770 sao associados no mesmo registro.",
+    "status": "CONFIRMADO_NO_BINARIO",
+    "confidence": "ALTA",
+    "evidence": [
+      {
+        "rva": "0x3239686",
+        "preferred_va": "0x143239686",
+        "file_offset": "0x3238c86",
+        "bytes": "48 8d 15 eb f1 97 02",
+        "interpretation": "LEA da string RVA 0x5bb8878"
+      },
+      {
+        "rva": "0x3239693",
+        "preferred_va": "0x143239693",
+        "file_offset": "0x3238c93",
+        "bytes": "48 89 10",
+        "interpretation": "Grava ponteiro do nome em registro +0"
+      },
+      {
+        "rva": "0x3239696",
+        "preferred_va": "0x143239696",
+        "file_offset": "0x3238c96",
+        "bytes": "48 8d 15 d3 00 02 00",
+        "interpretation": "LEA do callback RVA 0x3259770"
+      },
+      {
+        "rva": "0x323969d",
+        "preferred_va": "0x14323969d",
+        "file_offset": "0x3238c9d",
+        "bytes": "48 89 50 08",
+        "interpretation": "Grava callback em registro +8"
+      },
+      {
+        "rva": "0x32396a4",
+        "preferred_va": "0x1432396a4",
+        "file_offset": "0x3238ca4",
+        "bytes": "c7 40 10 04 00 00 00",
+        "interpretation": "Grava flags 4 em registro +0x10"
+      },
+      {
+        "rva": "0x32396ab",
+        "preferred_va": "0x1432396ab",
+        "file_offset": "0x3238cab",
+        "bytes": "48 89 70 18",
+        "interpretation": "Grava ponteiro em registro +0x18"
+      },
+      {
+        "rva": "0x32396af",
+        "preferred_va": "0x1432396af",
+        "file_offset": "0x3238caf",
+        "bytes": "e8 bc 61 9c fe",
+        "interpretation": "Passa registro a rotina RVA 0x1bff870"
+      }
+    ],
+    "semantic_limit": "Registro compativel com PyMethodDef x64; nao e endereco de lista de jogadores."
+  },
+  {
+    "id": "binding-record-size",
+    "claim": "O registro acima recebe alocacao solicitada de 0x20 bytes.",
+    "status": "CONFIRMADO_NO_BINARIO",
+    "confidence": "ALTA",
+    "evidence": [
+      {
+        "rva": "0x3239679",
+        "preferred_va": "0x143239679",
+        "file_offset": "0x3238c79",
+        "bytes": "b9 20 00 00 00",
+        "interpretation": "ECX = 0x20 antes da chamada de alocacao"
+      },
+      {
+        "rva": "0x3239681",
+        "preferred_va": "0x143239681",
+        "file_offset": "0x3238c81",
+        "bytes": "e8 e2 2a 01 01",
+        "interpretation": "CALL RVA 0x424c168"
+      }
+    ],
+    "semantic_limit": null
+  },
+  {
+    "id": "enumeration-global",
+    "claim": "O callback chama um getter que le um ponteiro no RVA 0x8b7cd90.",
+    "status": "CONFIRMADO_NO_BINARIO",
+    "confidence": "ALTA",
+    "evidence": [
+      {
+        "rva": "0x32597a5",
+        "preferred_va": "0x1432597a5",
+        "file_offset": "0x3258da5",
+        "bytes": "e8 36 ae 77 fe",
+        "interpretation": "CALL RVA 0x19d45e0"
+      },
+      {
+        "rva": "0x19d45e0",
+        "preferred_va": "0x1419d45e0",
+        "file_offset": "0x19d3be0",
+        "bytes": "48 8b 05 a9 87 1a 07 c3",
+        "interpretation": "MOV RAX,[RIP+0x71a87a9]; RET => RVA 0x8b7cd90"
+      }
+    ],
+    "semantic_limit": "Uso como raiz de enumeracao comprovado. Nome da classe, vida util e conteudo runtime nao confirmados."
+  },
+  {
+    "id": "enumeration-observed-accesses",
+    "claim": "A enumeracao usa estes deslocamentos e um teste de bit.",
+    "status": "CONFIRMADO_NO_BINARIO",
+    "confidence": "ALTA",
+    "evidence": [
+      {
+        "rva": "0x32597aa",
+        "preferred_va": "0x1432597aa",
+        "file_offset": "0x3258daa",
+        "bytes": "48 8b 78 08",
+        "interpretation": "Le ponteiro de [resultado_getter+8]"
+      },
+      {
+        "rva": "0x32597ae",
+        "preferred_va": "0x1432597ae",
+        "file_offset": "0x3258dae",
+        "bytes": "48 8b 1f",
+        "interpretation": "Le primeiro ponteiro do objeto anterior"
+      },
+      {
+        "rva": "0x32597c0",
+        "preferred_va": "0x1432597c0",
+        "file_offset": "0x3258dc0",
+        "bytes": "48 8b 53 18",
+        "interpretation": "Le [no_atual+0x18]"
+      },
+      {
+        "rva": "0x32597c4",
+        "preferred_va": "0x1432597c4",
+        "file_offset": "0x3258dc4",
+        "bytes": "48 8b 42 40",
+        "interpretation": "Le [valor_anterior+0x40]"
+      },
+      {
+        "rva": "0x32597cd",
+        "preferred_va": "0x1432597cd",
+        "file_offset": "0x3258dcd",
+        "bytes": "f6 80 30 01 00 00 10",
+        "interpretation": "Testa bit 0x10 no byte +0x130 do objeto nao nulo"
+      },
+      {
+        "rva": "0x325982f",
+        "preferred_va": "0x14325982f",
+        "file_offset": "0x3258e2f",
+        "bytes": "48 8b 1b",
+        "interpretation": "Avanca via [no_atual+0]"
+      }
+    ],
+    "semantic_limit": "Layout operacional parcial sem nomes de campos; tipo STL, identidade de jogador e semantica do bit nao comprovados."
+  },
+  {
+    "id": "actor-vptr",
+    "claim": "Inicializacao de Character::Actor instala a vftable em +0.",
+    "status": "CONFIRMADO_NO_BINARIO",
+    "confidence": "ALTA",
+    "evidence": [
+      {
+        "rva": "0x16d0e94",
+        "preferred_va": "0x1416d0e94",
+        "file_offset": "0x16d0494",
+        "bytes": "48 8b f9",
+        "interpretation": "RDI preserva RCX, ponteiro de instancia"
+      },
+      {
+        "rva": "0x16d0e9f",
+        "preferred_va": "0x1416d0e9f",
+        "file_offset": "0x16d049f",
+        "bytes": "48 8d 05 ba 41 e9 03",
+        "interpretation": "Carrega vftable RVA 0x5565060"
+      },
+      {
+        "rva": "0x16d0ea6",
+        "preferred_va": "0x1416d0ea6",
+        "file_offset": "0x16d04a6",
+        "bytes": "48 89 07",
+        "interpretation": "Instala vptr em [RDI+0]"
+      }
+    ],
+    "semantic_limit": null
+  },
+  {
+    "id": "actorcomponent-vptrs",
+    "claim": "ActorComponent instala vptrs em +0 e +0x68; RTTI confirma subobjeto ITickable em +0x68.",
+    "status": "CONFIRMADO_NO_BINARIO",
+    "confidence": "ALTA",
+    "evidence": [
+      {
+        "rva": "0x19bf52a",
+        "preferred_va": "0x1419bf52a",
+        "file_offset": "0x19beb2a",
+        "bytes": "48 8b d9",
+        "interpretation": "RBX preserva RCX"
+      },
+      {
+        "rva": "0x19bf539",
+        "preferred_va": "0x1419bf539",
+        "file_offset": "0x19beb39",
+        "bytes": "48 8d 05 b8 c3 bd 03",
+        "interpretation": "Vftable primaria RVA 0x559b8f8"
+      },
+      {
+        "rva": "0x19bf540",
+        "preferred_va": "0x1419bf540",
+        "file_offset": "0x19beb40",
+        "bytes": "48 89 03",
+        "interpretation": "Store em +0"
+      },
+      {
+        "rva": "0x19bf543",
+        "preferred_va": "0x1419bf543",
+        "file_offset": "0x19beb43",
+        "bytes": "48 8d 05 a6 c4 bd 03",
+        "interpretation": "Vftable secundaria RVA 0x559b9f0"
+      },
+      {
+        "rva": "0x19bf54a",
+        "preferred_va": "0x1419bf54a",
+        "file_offset": "0x19beb4a",
+        "bytes": "48 89 43 68",
+        "interpretation": "Store em +0x68"
+      }
+    ],
+    "semantic_limit": null
+  },
+  {
+    "id": "skeletoncomponent-vptrs",
+    "claim": "SkeletonComponent instala vptrs em +0 e +0x68.",
+    "status": "CONFIRMADO_NO_BINARIO",
+    "confidence": "ALTA",
+    "evidence": [
+      {
+        "rva": "0xad5c1a",
+        "preferred_va": "0x140ad5c1a",
+        "file_offset": "0xad521a",
+        "bytes": "48 8b d9",
+        "interpretation": "RBX preserva RCX"
+      },
+      {
+        "rva": "0xad5c29",
+        "preferred_va": "0x140ad5c29",
+        "file_offset": "0xad5229",
+        "bytes": "48 8d 05 70 c6 4c 04",
+        "interpretation": "Vftable primaria RVA 0x4fa22a0"
+      },
+      {
+        "rva": "0xad5c30",
+        "preferred_va": "0x140ad5c30",
+        "file_offset": "0xad5230",
+        "bytes": "48 89 03",
+        "interpretation": "Store em +0"
+      },
+      {
+        "rva": "0xad5c33",
+        "preferred_va": "0x140ad5c33",
+        "file_offset": "0xad5233",
+        "bytes": "48 8d 05 56 c7 4c 04",
+        "interpretation": "Vftable secundaria RVA 0x4fa2390"
+      },
+      {
+        "rva": "0xad5c3a",
+        "preferred_va": "0x140ad5c3a",
+        "file_offset": "0xad523a",
+        "bytes": "48 89 43 68",
+        "interpretation": "Store em +0x68"
+      }
+    ],
+    "semantic_limit": null
+  },
+  {
+    "id": "camera-initialization",
+    "claim": "ICamera instala vptr em +0 e inicializa armazenamento em +0x408 e +0x454.",
+    "status": "CONFIRMADO_NO_BINARIO",
+    "confidence": "ALTA",
+    "evidence": [
+      {
+        "rva": "0x27572b",
+        "preferred_va": "0x14027572b",
+        "file_offset": "0x274d2b",
+        "bytes": "48 8b f9",
+        "interpretation": "RDI preserva RCX"
+      },
+      {
+        "rva": "0x27573d",
+        "preferred_va": "0x14027573d",
+        "file_offset": "0x274d3d",
+        "bytes": "48 8d 05 14 1e be 04",
+        "interpretation": "Vftable RVA 0x4e57558"
+      },
+      {
+        "rva": "0x275744",
+        "preferred_va": "0x140275744",
+        "file_offset": "0x274d44",
+        "bytes": "48 89 07",
+        "interpretation": "Store vptr em +0"
+      },
+      {
+        "rva": "0x275747",
+        "preferred_va": "0x140275747",
+        "file_offset": "0x274d47",
+        "bytes": "c7 87 08 04 00 00 01 00 01 00",
+        "interpretation": "Dword +0x408 = 0x10001"
+      },
+      {
+        "rva": "0x27579c",
+        "preferred_va": "0x14027579c",
+        "file_offset": "0x274d9c",
+        "bytes": "c7 87 54 04 00 00 00 00 70 42",
+        "interpretation": "Dword +0x454 = 0x42700000 (60.0 se interpretado como float)"
+      }
+    ],
+    "semantic_limit": "O nome FieldOfView para +0x454 nao esta comprovado; nao e publicado como offset de FOV."
+  },
+  {
+    "id": "camera-reflection-delegation",
+    "claim": "Wrappers associados a ViewMatrix e FieldOfView usam ajuste e chamada indireta.",
+    "status": "CONFIRMADO_NO_BINARIO",
+    "confidence": "ALTA",
+    "evidence": [
+      {
+        "rva": "0x93f1a4",
+        "preferred_va": "0x14093f1a4",
+        "file_offset": "0x93e7a4",
+        "bytes": "48 63 0d 8d 5f 60 04",
+        "interpretation": "Le ajuste em RVA 0x4f45138"
+      },
+      {
+        "rva": "0x93f1ae",
+        "preferred_va": "0x14093f1ae",
+        "file_offset": "0x93e7ae",
+        "bytes": "48 8b 05 7b 5f 60 04",
+        "interpretation": "Le delegado em RVA 0x4f45130"
+      },
+      {
+        "rva": "0x943d44",
+        "preferred_va": "0x140943d44",
+        "file_offset": "0x943344",
+        "bytes": "48 63 0d 25 78 60 04",
+        "interpretation": "Le ajuste em RVA 0x4f4b570"
+      },
+      {
+        "rva": "0x943d4e",
+        "preferred_va": "0x140943d4e",
+        "file_offset": "0x94334e",
+        "bytes": "48 8b 05 13 78 60 04",
+        "interpretation": "Le delegado em RVA 0x4f4b568"
+      }
+    ],
+    "semantic_limit": "Ponteiros e ajustes sao zero no arquivo; nao derivam layout final de matriz/FOV nesta etapa."
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "reuse_without_output_mutation": "PASS",
+  "outputs": {
+    "marshal-static-results.json": "2c0de08c662c1d89f9958182f7416bd509807a082b645fe4b589cf46843429e9",
+    "initial-opcode-validation.json": "6b99fbf8f6782d269b95450478924b3cfa33c886d80c59a283bd02ee53301ffb",
+    "selected-models-static.json": "0493a5c510cc06a998d4888777696e14195ed947ef7f7be144414017cd58aa9a"
+  },
+  "opcode_names": {
+    "43": "WITH_EXCEPT_START",
+    "129": "BINARY_OP_ADD_FLOAT",
+    "234": "INSTRUMENTED_END_FOR"
+  },
+  "affected_opcode_occurrences_in_samples": {
+    "43": 0,
+    "129": 0,
+    "234": 0
+  },
+  "initial_code_objects": 294,
+  "selected_code_objects": 629,
+  "all_prior_checks_still_pass": true
+}

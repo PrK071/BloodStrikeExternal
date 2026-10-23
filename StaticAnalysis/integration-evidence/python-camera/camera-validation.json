@@ -1,0 +1,258 @@
+{
+  "module_counts": {
+    "50901": 17,
+    "75597": 16,
+    "78462": 6
+  },
+  "branch_validation": [
+    {
+      "index": 50901,
+      "name": "EnginePlacer.__init__",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 50901,
+      "name": "EnginePlacer.StartExposeProperties",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 50901,
+      "name": "EnginePlacer.FinishExposeProperties",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 50901,
+      "name": "EnginePlacer.IsValid",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 50901,
+      "name": "EnginePlacer.OnActive",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 50901,
+      "name": "EnginePlacer.OnDeactive",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 50901,
+      "name": "EnginePlacer.SetFocusTarget",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 50901,
+      "name": "EnginePlacer.RefreshConfig",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 50901,
+      "name": "EnginePlacer.UseBonePosition",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 50901,
+      "name": "EnginePlacer.DelayRestoreUseBonePosition",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 50901,
+      "name": "EnginePlacer.TurnView",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 50901,
+      "name": "EnginePlacer.TurnViewBegin",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 50901,
+      "name": "EnginePlacer.TurnViewEnd",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 50901,
+      "name": "EnginePlacer.CreateBlender",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 50901,
+      "name": "EnginePlacer.BlenderInFinished",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 50901,
+      "name": "EnginePlacer",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 50901,
+      "name": "<module>",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 75597,
+      "name": "BasePlacer.__init__",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 75597,
+      "name": "BasePlacer.target",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 75597,
+      "name": "BasePlacer.debug_enabled",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 75597,
+      "name": "BasePlacer.GetPlacerType",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 75597,
+      "name": "BasePlacer.GetAllPlacerTypes",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 75597,
+      "name": "BasePlacer.IsValid",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 75597,
+      "name": "BasePlacer.OnActive",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 75597,
+      "name": "BasePlacer.OnDeactive",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 75597,
+      "name": "BasePlacer.OnStoryTick",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 75597,
+      "name": "BasePlacer.EnableStoryTick",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 75597,
+      "name": "BasePlacer.DisableStoryTick",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 75597,
+      "name": "BasePlacer.RefreshConfig",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 75597,
+      "name": "BasePlacer.SetFocusTarget",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 75597,
+      "name": "BasePlacer.SyncDirectionToTarget",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 75597,
+      "name": "BasePlacer",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 75597,
+      "name": "<module>",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 78462,
+      "name": "AimPlacer.__init__",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 78462,
+      "name": "AimPlacer.OnActive",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 78462,
+      "name": "AimPlacer.SetFocusTarget",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 78462,
+      "name": "AimPlacer.TurnView",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 78462,
+      "name": "AimPlacer",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    },
+    {
+      "index": 78462,
+      "name": "<module>",
+      "branch_targets_on_instruction_boundaries": true,
+      "bad": []
+    }
+  ],
+  "exact_co_names_presence": {
+    "GetGameplay": false,
+    "Camera": false,
+    "MainCamera": false,
+    "ICamera": false,
+    "Transform": false,
+    "ViewMatrix": false,
+    "Project": false,
+    "ProjectInner": false,
+    "CameraMatrix": false,
+    "GetScreenSize": false,
+    "SetScreenSize": false,
+    "WorldPosition": false
+  },
+  "limits": "Exact co_names absence in these three modules only; dynamic getattr/configuration can introduce other attributes."
+}

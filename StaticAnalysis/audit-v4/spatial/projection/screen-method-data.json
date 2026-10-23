@@ -1,0 +1,530 @@
+[
+  {
+    "string": "Messiah.ICamera.SetScreenSize",
+    "pointer_rva": "0x4f447d0",
+    "block_rva": "0x4f447b0",
+    "bytes": "10 0c 94 40 01 00 00 00 00 00 00 00 00 00 00 00 f0 27 f4 44 01 00 00 00 07 00 00 00 db 34 8b 53 a0 84 f5 44 01 00 00 00 1d 00 00 00 9b 1f 9e 7f e8 0c f7 44 01 00 00 00 0d 00 00 00 84 13 7e bb a0 84 f5 44 01 00 00 00 1d 00 00 00 9b 1f 9e 7f 06 02 20 00 00 00 a5 00 02 00 00 00 00 00 00 00 00 0a 94 40 01 00 00 00 20 0a 94 40 01 00 00 00 80 0a 94 40 01 00 00 00 a0 0a 94 40 01 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x4f447b0",
+        "value": "0x140940c10",
+        "string": null
+      },
+      {
+        "rva": "0x4f447b8",
+        "value": "0x0",
+        "string": null
+      },
+      {
+        "rva": "0x4f447c0",
+        "value": "0x144f427f0",
+        "string": "ICamera"
+      },
+      {
+        "rva": "0x4f447c8",
+        "value": "0x538b34db00000007",
+        "string": null
+      },
+      {
+        "rva": "0x4f447d0",
+        "value": "0x144f584a0",
+        "string": "Messiah.ICamera.SetScreenSize"
+      },
+      {
+        "rva": "0x4f447d8",
+        "value": "0x7f9e1f9b0000001d",
+        "string": null
+      },
+      {
+        "rva": "0x4f447e0",
+        "value": "0x144f70ce8",
+        "string": "SetScreenSize"
+      },
+      {
+        "rva": "0x4f447e8",
+        "value": "0xbb7e13840000000d",
+        "string": null
+      },
+      {
+        "rva": "0x4f447f0",
+        "value": "0x144f584a0",
+        "string": "Messiah.ICamera.SetScreenSize"
+      },
+      {
+        "rva": "0x4f447f8",
+        "value": "0x7f9e1f9b0000001d",
+        "string": null
+      },
+      {
+        "rva": "0x4f44800",
+        "value": "0xa5000000200206",
+        "string": null
+      },
+      {
+        "rva": "0x4f44808",
+        "value": "0x2",
+        "string": null
+      },
+      {
+        "rva": "0x4f44810",
+        "value": "0x140940a00",
+        "string": null
+      },
+      {
+        "rva": "0x4f44818",
+        "value": "0x140940a20",
+        "string": null
+      },
+      {
+        "rva": "0x4f44820",
+        "value": "0x140940a80",
+        "string": null
+      },
+      {
+        "rva": "0x4f44828",
+        "value": "0x140940aa0",
+        "string": null
+      }
+    ]
+  },
+  {
+    "string": "Messiah.ICamera.SetScreenSize",
+    "pointer_rva": "0x4f447f0",
+    "block_rva": "0x4f447d0",
+    "bytes": "a0 84 f5 44 01 00 00 00 1d 00 00 00 9b 1f 9e 7f e8 0c f7 44 01 00 00 00 0d 00 00 00 84 13 7e bb a0 84 f5 44 01 00 00 00 1d 00 00 00 9b 1f 9e 7f 06 02 20 00 00 00 a5 00 02 00 00 00 00 00 00 00 00 0a 94 40 01 00 00 00 20 0a 94 40 01 00 00 00 80 0a 94 40 01 00 00 00 a0 0a 94 40 01 00 00 00 c0 0a 94 40 01 00 00 00 e0 a9 93 40 01 00 00 00 c0 17 95 40 01 00 00 00 30 17 95 40 01 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x4f447d0",
+        "value": "0x144f584a0",
+        "string": "Messiah.ICamera.SetScreenSize"
+      },
+      {
+        "rva": "0x4f447d8",
+        "value": "0x7f9e1f9b0000001d",
+        "string": null
+      },
+      {
+        "rva": "0x4f447e0",
+        "value": "0x144f70ce8",
+        "string": "SetScreenSize"
+      },
+      {
+        "rva": "0x4f447e8",
+        "value": "0xbb7e13840000000d",
+        "string": null
+      },
+      {
+        "rva": "0x4f447f0",
+        "value": "0x144f584a0",
+        "string": "Messiah.ICamera.SetScreenSize"
+      },
+      {
+        "rva": "0x4f447f8",
+        "value": "0x7f9e1f9b0000001d",
+        "string": null
+      },
+      {
+        "rva": "0x4f44800",
+        "value": "0xa5000000200206",
+        "string": null
+      },
+      {
+        "rva": "0x4f44808",
+        "value": "0x2",
+        "string": null
+      },
+      {
+        "rva": "0x4f44810",
+        "value": "0x140940a00",
+        "string": null
+      },
+      {
+        "rva": "0x4f44818",
+        "value": "0x140940a20",
+        "string": null
+      },
+      {
+        "rva": "0x4f44820",
+        "value": "0x140940a80",
+        "string": null
+      },
+      {
+        "rva": "0x4f44828",
+        "value": "0x140940aa0",
+        "string": null
+      },
+      {
+        "rva": "0x4f44830",
+        "value": "0x140940ac0",
+        "string": null
+      },
+      {
+        "rva": "0x4f44838",
+        "value": "0x14093a9e0",
+        "string": null
+      },
+      {
+        "rva": "0x4f44840",
+        "value": "0x1409517c0",
+        "string": null
+      },
+      {
+        "rva": "0x4f44848",
+        "value": "0x140951730",
+        "string": null
+      }
+    ]
+  },
+  {
+    "string": "Messiah.ICamera.SetScreenSize",
+    "pointer_rva": "0x4f5c740",
+    "block_rva": "0x4f5c720",
+    "bytes": "4e 61 6d 65 44 69 63 74 3c 49 41 72 65 61 3e 00 08 9c e4 44 01 00 00 00 07 00 00 00 9c 25 e2 f4 a0 84 f5 44 01 00 00 00 1d 00 00 00 9b 1f 9e 7f 04 00 02 00 07 00 00 00 02 00 00 00 00 00 00 00 00 00 00 02 00 00 00 00 60 df f5 44 01 00 00 00 d0 08 94 40 01 00 00 00 90 16 95 40 01 00 00 00 30 17 95 40 01 00 00 00 70 66 10 40 01 00 00 00 20 41 10 40 01 00 00 00 10 09 94 40 01 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x4f5c720",
+        "value": "0x74636944656d614e",
+        "string": null
+      },
+      {
+        "rva": "0x4f5c728",
+        "value": "0x3e61657241493c",
+        "string": null
+      },
+      {
+        "rva": "0x4f5c730",
+        "value": "0x144e49c08",
+        "string": "Messiah"
+      },
+      {
+        "rva": "0x4f5c738",
+        "value": "0xf4e2259c00000007",
+        "string": null
+      },
+      {
+        "rva": "0x4f5c740",
+        "value": "0x144f584a0",
+        "string": "Messiah.ICamera.SetScreenSize"
+      },
+      {
+        "rva": "0x4f5c748",
+        "value": "0x7f9e1f9b0000001d",
+        "string": null
+      },
+      {
+        "rva": "0x4f5c750",
+        "value": "0x700020004",
+        "string": null
+      },
+      {
+        "rva": "0x4f5c758",
+        "value": "0x2",
+        "string": null
+      },
+      {
+        "rva": "0x4f5c760",
+        "value": "0x2000000",
+        "string": null
+      },
+      {
+        "rva": "0x4f5c768",
+        "value": "0x144f5df60",
+        "string": null
+      },
+      {
+        "rva": "0x4f5c770",
+        "value": "0x1409408d0",
+        "string": null
+      },
+      {
+        "rva": "0x4f5c778",
+        "value": "0x140951690",
+        "string": null
+      },
+      {
+        "rva": "0x4f5c780",
+        "value": "0x140951730",
+        "string": null
+      },
+      {
+        "rva": "0x4f5c788",
+        "value": "0x140106670",
+        "string": null
+      },
+      {
+        "rva": "0x4f5c790",
+        "value": "0x140104120",
+        "string": null
+      },
+      {
+        "rva": "0x4f5c798",
+        "value": "0x140940910",
+        "string": null
+      }
+    ]
+  },
+  {
+    "string": "Messiah.ICamera.GetScreenSize",
+    "pointer_rva": "0x4f448e0",
+    "block_rva": "0x4f448c0",
+    "bytes": "10 0c 94 40 01 00 00 00 00 00 00 00 00 00 00 00 f0 27 f4 44 01 00 00 00 07 00 00 00 db 34 8b 53 18 ea f5 44 01 00 00 00 1d 00 00 00 68 da 27 2d 90 0c f7 44 01 00 00 00 0d 00 00 00 64 6f dd 13 18 ea f5 44 01 00 00 00 1d 00 00 00 68 da 27 2d 06 02 20 00 00 00 a6 00 02 00 00 00 00 00 00 00 00 0a 94 40 01 00 00 00 20 0a 94 40 01 00 00 00 80 0a 94 40 01 00 00 00 a0 0a 94 40 01 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x4f448c0",
+        "value": "0x140940c10",
+        "string": null
+      },
+      {
+        "rva": "0x4f448c8",
+        "value": "0x0",
+        "string": null
+      },
+      {
+        "rva": "0x4f448d0",
+        "value": "0x144f427f0",
+        "string": "ICamera"
+      },
+      {
+        "rva": "0x4f448d8",
+        "value": "0x538b34db00000007",
+        "string": null
+      },
+      {
+        "rva": "0x4f448e0",
+        "value": "0x144f5ea18",
+        "string": "Messiah.ICamera.GetScreenSize"
+      },
+      {
+        "rva": "0x4f448e8",
+        "value": "0x2d27da680000001d",
+        "string": null
+      },
+      {
+        "rva": "0x4f448f0",
+        "value": "0x144f70c90",
+        "string": "GetScreenSize"
+      },
+      {
+        "rva": "0x4f448f8",
+        "value": "0x13dd6f640000000d",
+        "string": null
+      },
+      {
+        "rva": "0x4f44900",
+        "value": "0x144f5ea18",
+        "string": "Messiah.ICamera.GetScreenSize"
+      },
+      {
+        "rva": "0x4f44908",
+        "value": "0x2d27da680000001d",
+        "string": null
+      },
+      {
+        "rva": "0x4f44910",
+        "value": "0xa6000000200206",
+        "string": null
+      },
+      {
+        "rva": "0x4f44918",
+        "value": "0x2",
+        "string": null
+      },
+      {
+        "rva": "0x4f44920",
+        "value": "0x140940a00",
+        "string": null
+      },
+      {
+        "rva": "0x4f44928",
+        "value": "0x140940a20",
+        "string": null
+      },
+      {
+        "rva": "0x4f44930",
+        "value": "0x140940a80",
+        "string": null
+      },
+      {
+        "rva": "0x4f44938",
+        "value": "0x140940aa0",
+        "string": null
+      }
+    ]
+  },
+  {
+    "string": "Messiah.ICamera.GetScreenSize",
+    "pointer_rva": "0x4f44900",
+    "block_rva": "0x4f448e0",
+    "bytes": "18 ea f5 44 01 00 00 00 1d 00 00 00 68 da 27 2d 90 0c f7 44 01 00 00 00 0d 00 00 00 64 6f dd 13 18 ea f5 44 01 00 00 00 1d 00 00 00 68 da 27 2d 06 02 20 00 00 00 a6 00 02 00 00 00 00 00 00 00 00 0a 94 40 01 00 00 00 20 0a 94 40 01 00 00 00 80 0a 94 40 01 00 00 00 a0 0a 94 40 01 00 00 00 c0 0a 94 40 01 00 00 00 e0 a9 93 40 01 00 00 00 40 5e 95 40 01 00 00 00 f0 53 95 40 01 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x4f448e0",
+        "value": "0x144f5ea18",
+        "string": "Messiah.ICamera.GetScreenSize"
+      },
+      {
+        "rva": "0x4f448e8",
+        "value": "0x2d27da680000001d",
+        "string": null
+      },
+      {
+        "rva": "0x4f448f0",
+        "value": "0x144f70c90",
+        "string": "GetScreenSize"
+      },
+      {
+        "rva": "0x4f448f8",
+        "value": "0x13dd6f640000000d",
+        "string": null
+      },
+      {
+        "rva": "0x4f44900",
+        "value": "0x144f5ea18",
+        "string": "Messiah.ICamera.GetScreenSize"
+      },
+      {
+        "rva": "0x4f44908",
+        "value": "0x2d27da680000001d",
+        "string": null
+      },
+      {
+        "rva": "0x4f44910",
+        "value": "0xa6000000200206",
+        "string": null
+      },
+      {
+        "rva": "0x4f44918",
+        "value": "0x2",
+        "string": null
+      },
+      {
+        "rva": "0x4f44920",
+        "value": "0x140940a00",
+        "string": null
+      },
+      {
+        "rva": "0x4f44928",
+        "value": "0x140940a20",
+        "string": null
+      },
+      {
+        "rva": "0x4f44930",
+        "value": "0x140940a80",
+        "string": null
+      },
+      {
+        "rva": "0x4f44938",
+        "value": "0x140940aa0",
+        "string": null
+      },
+      {
+        "rva": "0x4f44940",
+        "value": "0x140940ac0",
+        "string": null
+      },
+      {
+        "rva": "0x4f44948",
+        "value": "0x14093a9e0",
+        "string": null
+      },
+      {
+        "rva": "0x4f44950",
+        "value": "0x140955e40",
+        "string": null
+      },
+      {
+        "rva": "0x4f44958",
+        "value": "0x1409553f0",
+        "string": null
+      }
+    ]
+  },
+  {
+    "string": "Messiah.ICamera.GetScreenSize",
+    "pointer_rva": "0x4f58a50",
+    "block_rva": "0x4f58a30",
+    "bytes": "20 08 94 40 01 00 00 00 40 08 94 40 01 00 00 00 08 9c e4 44 01 00 00 00 07 00 00 00 9c 25 e2 f4 18 ea f5 44 01 00 00 00 1d 00 00 00 68 da 27 2d 04 00 02 00 07 00 00 00 01 00 00 00 00 00 00 00 00 00 08 02 00 00 00 00 20 a1 f6 44 01 00 00 00 d0 08 94 40 01 00 00 00 50 53 95 40 01 00 00 00 f0 53 95 40 01 00 00 00 70 66 10 40 01 00 00 00 20 41 10 40 01 00 00 00 10 09 94 40 01 00 00 00",
+    "qwords": [
+      {
+        "rva": "0x4f58a30",
+        "value": "0x140940820",
+        "string": null
+      },
+      {
+        "rva": "0x4f58a38",
+        "value": "0x140940840",
+        "string": null
+      },
+      {
+        "rva": "0x4f58a40",
+        "value": "0x144e49c08",
+        "string": "Messiah"
+      },
+      {
+        "rva": "0x4f58a48",
+        "value": "0xf4e2259c00000007",
+        "string": null
+      },
+      {
+        "rva": "0x4f58a50",
+        "value": "0x144f5ea18",
+        "string": "Messiah.ICamera.GetScreenSize"
+      },
+      {
+        "rva": "0x4f58a58",
+        "value": "0x2d27da680000001d",
+        "string": null
+      },
+      {
+        "rva": "0x4f58a60",
+        "value": "0x700020004",
+        "string": null
+      },
+      {
+        "rva": "0x4f58a68",
+        "value": "0x1",
+        "string": null
+      },
+      {
+        "rva": "0x4f58a70",
+        "value": "0x2080000",
+        "string": null
+      },
+      {
+        "rva": "0x4f58a78",
+        "value": "0x144f6a120",
+        "string": null
+      },
+      {
+        "rva": "0x4f58a80",
+        "value": "0x1409408d0",
+        "string": null
+      },
+      {
+        "rva": "0x4f58a88",
+        "value": "0x140955350",
+        "string": null
+      },
+      {
+        "rva": "0x4f58a90",
+        "value": "0x1409553f0",
+        "string": null
+      },
+      {
+        "rva": "0x4f58a98",
+        "value": "0x140106670",
+        "string": null
+      },
+      {
+        "rva": "0x4f58aa0",
+        "value": "0x140104120",
+        "string": null
+      },
+      {
+        "rva": "0x4f58aa8",
+        "value": "0x140940910",
+        "string": null
+      }
+    ]
+  }
+]

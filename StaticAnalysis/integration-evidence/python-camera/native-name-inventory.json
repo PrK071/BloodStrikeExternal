@@ -1,0 +1,938 @@
+[
+  {
+    "rva": "0x4ea0110",
+    "string": "CameraController"
+  },
+  {
+    "rva": "0x4ea4b20",
+    "string": "FreeviewCameraController"
+  },
+  {
+    "rva": "0x51c3d10",
+    "string": "Messiah.FreeviewCameraController.KeyDown"
+  },
+  {
+    "rva": "0x51c52d0",
+    "string": "Messiah.FreeviewCameraController.KeyUp"
+  },
+  {
+    "rva": "0x5217018",
+    "string": "FreeviewCameraController.VirtualCamera"
+  },
+  {
+    "rva": "0x5219d50",
+    "string": "FreeviewCameraController.KeepRoll"
+  },
+  {
+    "rva": "0x521bcc0",
+    "string": "FreeviewCameraController.KeepAnchor"
+  },
+  {
+    "rva": "0x521d5e0",
+    "string": "FreeviewCameraController.BlockControlKey"
+  },
+  {
+    "rva": "0x521e800",
+    "string": "FreeviewCameraController.BlockNormalKey"
+  },
+  {
+    "rva": "0x5282010",
+    "string": "ClientNavigator.CameraController"
+  },
+  {
+    "rva": "0x54365c8",
+    "string": "VirtualCameraControllerBase"
+  },
+  {
+    "rva": "0x55cd290",
+    "string": "AffiliatedCameraController"
+  },
+  {
+    "rva": "0x55eeb60",
+    "string": "AimPlacer.Target"
+  },
+  {
+    "rva": "0x55eebd0",
+    "string": "CameraController.Suspend"
+  },
+  {
+    "rva": "0x55f1500",
+    "string": "LerpBlender.LastTargetPos"
+  },
+  {
+    "rva": "0x55f1548",
+    "string": "AimPlacer.TargetTransform"
+  },
+  {
+    "rva": "0x55f1770",
+    "string": "CameraManager.CameraController.Release"
+  },
+  {
+    "rva": "0x55f1830",
+    "string": "CameraController.EarlyTick"
+  },
+  {
+    "rva": "0x55f1850",
+    "string": "LerpBlender.LastDirection"
+  },
+  {
+    "rva": "0x55f1910",
+    "string": "CameraManager.AimPlacer.ApplyRuntimeInfo"
+  },
+  {
+    "rva": "0x55f1c50",
+    "string": "CameraManager.CameraController.GetRootLocatePlacer"
+  },
+  {
+    "rva": "0x55f1e70",
+    "string": "LerpBlender.LastFov"
+  },
+  {
+    "rva": "0x55f1ff0",
+    "string": "CameraController.PlacerCache"
+  },
+  {
+    "rva": "0x55f3838",
+    "string": "LerpBlender.LastRoll"
+  },
+  {
+    "rva": "0x55f38a0",
+    "string": "CameraController.LocateBlendTree"
+  },
+  {
+    "rva": "0x55f38d0",
+    "string": "CameraManager.AimPlacer.Rotate"
+  },
+  {
+    "rva": "0x55f3d70",
+    "string": "LerpBlender.BlendTime"
+  },
+  {
+    "rva": "0x55f3dc0",
+    "string": "CameraController.SensorBlendTree"
+  },
+  {
+    "rva": "0x55f44f0",
+    "string": "CameraManager.CameraController.PrintTree"
+  },
+  {
+    "rva": "0x55f4790",
+    "string": "LerpBlender.Escaped"
+  },
+  {
+    "rva": "0x55f48c0",
+    "string": "CameraController.PostProcessorBlendTree"
+  },
+  {
+    "rva": "0x55f5130",
+    "string": "LerpBlender"
+  },
+  {
+    "rva": "0x55f5500",
+    "string": "LerpBlender.Finished"
+  },
+  {
+    "rva": "0x55f5c58",
+    "string": "LerpBlender.InvalidLastInfo"
+  },
+  {
+    "rva": "0x55f6510",
+    "string": "CameraController.ControlledCamera"
+  },
+  {
+    "rva": "0x55f9ac8",
+    "string": "LerpBlender.DirectTransit"
+  },
+  {
+    "rva": "0x55f9c10",
+    "string": "CameraManager.CameraController.GetCurrXzDirection"
+  },
+  {
+    "rva": "0x55fae18",
+    "string": "CameraController.AffiliatedCamera"
+  },
+  {
+    "rva": "0x55faf90",
+    "string": "LerpBlender.BlendType"
+  },
+  {
+    "rva": "0x55fc9d8",
+    "string": "CameraController.VirtualCtrlCamera"
+  },
+  {
+    "rva": "0x55fcd00",
+    "string": "CameraController.EnableRecord"
+  },
+  {
+    "rva": "0x55fda48",
+    "string": "CameraController.MaxRecordNum"
+  },
+  {
+    "rva": "0x55fde38",
+    "string": "AimPlacer.ManualAdjust"
+  },
+  {
+    "rva": "0x55fde68",
+    "string": "CameraController.RecordedTransform"
+  },
+  {
+    "rva": "0x55fdee8",
+    "string": "CameraManager.CameraController.GetXzDirection"
+  },
+  {
+    "rva": "0x55feaf0",
+    "string": "CameraController.RecordedFov"
+  },
+  {
+    "rva": "0x55feb10",
+    "string": "AimPlacer.PitchMin"
+  },
+  {
+    "rva": "0x55ff200",
+    "string": "CameraController.EnableKeyframeEvent"
+  },
+  {
+    "rva": "0x55ff3d0",
+    "string": "BlendInPlacer"
+  },
+  {
+    "rva": "0x55ff410",
+    "string": "AimPlacer.PitchMax"
+  },
+  {
+    "rva": "0x55ffc08",
+    "string": "CameraManager.CameraController.RuntimeInfoUpdate"
+  },
+  {
+    "rva": "0x55ffc58",
+    "string": "AimPlacer.Finished"
+  },
+  {
+    "rva": "0x55ffd90",
+    "string": "AffiliatedCameraController.CameraName"
+  },
+  {
+    "rva": "0x56000c8",
+    "string": "CameraManager.CameraController.CameraKeyframeColliding"
+  },
+  {
+    "rva": "0x56001e0",
+    "string": "AimPlacer.Fov"
+  },
+  {
+    "rva": "0x5600310",
+    "string": "CameraManager.CameraController.BlendInPlacer"
+  },
+  {
+    "rva": "0x5600368",
+    "string": "AimPlacer.InertiaType"
+  },
+  {
+    "rva": "0x5600470",
+    "string": "AffiliatedCameraController.EarlyTick"
+  },
+  {
+    "rva": "0x5600c40",
+    "string": "AimPlacer.InertiaTol"
+  },
+  {
+    "rva": "0x5600da0",
+    "string": "AffiliatedCameraController.TickRole"
+  },
+  {
+    "rva": "0x5600ea0",
+    "string": "AimPlacer.InertiaCoeff"
+  },
+  {
+    "rva": "0x56011b0",
+    "string": "AffiliatedCameraController.Suspend"
+  },
+  {
+    "rva": "0x5601218",
+    "string": "CameraManager.CameraController.GetRuntimeInfo"
+  },
+  {
+    "rva": "0x5601bd8",
+    "string": "AimPlacer.MaxYawDelta"
+  },
+  {
+    "rva": "0x5603d40",
+    "string": "AimPlacer.ExpRatio"
+  },
+  {
+    "rva": "0x5603ff0",
+    "string": "AimPlacer.EnableInertia"
+  },
+  {
+    "rva": "0x5604470",
+    "string": "AimPlacer.EnableFocusInertia"
+  },
+  {
+    "rva": "0x5604490",
+    "string": "CameraManager.CameraController.SetSensor"
+  },
+  {
+    "rva": "0x56044c0",
+    "string": "CameraManager.CameraController.GetLastRuntimeInfo"
+  },
+  {
+    "rva": "0x56077a0",
+    "string": "AimPlacer.FocusInertiaCoeff"
+  },
+  {
+    "rva": "0x56077e8",
+    "string": "CameraManager.CameraController.SetTickRole"
+  },
+  {
+    "rva": "0x5608490",
+    "string": "AimPlacer.FocusInertiaMaxLength"
+  },
+  {
+    "rva": "0x5608be0",
+    "string": "CameraManager.CameraController.ToggleRecordEnabled"
+  },
+  {
+    "rva": "0x5609310",
+    "string": "AimPlacer.FocusPos"
+  },
+  {
+    "rva": "0x5609860",
+    "string": "AimPlacer.TargetPos"
+  },
+  {
+    "rva": "0x56099a8",
+    "string": "AimPlacer"
+  },
+  {
+    "rva": "0x5609b88",
+    "string": "CameraManager.CameraController.SetPostProcessor"
+  },
+  {
+    "rva": "0x5609bb8",
+    "string": "CameraManager.CameraController.ApplyRuntimeInfo"
+  },
+  {
+    "rva": "0x560a730",
+    "string": "AimPlacer.TargetPosOffset"
+  },
+  {
+    "rva": "0x560aea0",
+    "string": "AimPlacer.Direction"
+  },
+  {
+    "rva": "0x560afe8",
+    "string": "CameraController.SweepShape"
+  },
+  {
+    "rva": "0x560b2d0",
+    "string": "AimPlacer.AimDirection"
+  },
+  {
+    "rva": "0x560b2f0",
+    "string": "CameraManager.CameraController.GetClampedScreenPointFromWorldPoint"
+  },
+  {
+    "rva": "0x560b410",
+    "string": "CameraController.TickRole"
+  },
+  {
+    "rva": "0x560b820",
+    "string": "AimPlacer.AimDirectionPitchMax"
+  },
+  {
+    "rva": "0x560b890",
+    "string": "CameraController.Detector"
+  },
+  {
+    "rva": "0x560bd38",
+    "string": "CameraManager.CameraController.Retain"
+  },
+  {
+    "rva": "0x560be60",
+    "string": "AimPlacer.AimDirectionPitchMin"
+  },
+  {
+    "rva": "0x560c1a8",
+    "string": "CameraController.PlatformEntity"
+  },
+  {
+    "rva": "0x560fb60",
+    "string": "class std::basic_string_view<char,struct std::char_traits<char> > __cdecl Messiah::constexpr_typename_base<bool (__cdecl Messiah::IObject::*)(class Messiah::VirtualCameraController *) noexcept>::__name(void) noexcept"
+  },
+  {
+    "rva": "0x5610818",
+    "string": "CameraManager.VirtualCameraController.BeforeControllerUpdate"
+  },
+  {
+    "rva": "0x5611138",
+    "string": "CameraManager.VirtualCameraController.AfterControllerUpdate"
+  },
+  {
+    "rva": "0x56115d0",
+    "string": "VirtualCameraController.ControlledCamera"
+  },
+  {
+    "rva": "0x56131a0",
+    "string": "VirtualCameraController.Controllers"
+  },
+  {
+    "rva": "0x56138a0",
+    "string": "CameraManager.VirtualCameraController.AddController"
+  },
+  {
+    "rva": "0x5617920",
+    "string": "CameraManager.VirtualCameraController.DelController"
+  },
+  {
+    "rva": "0x5617b90",
+    "string": "VirtualCameraController"
+  },
+  {
+    "rva": "0x5617f78",
+    "string": "CameraManager.VirtualCameraController.BeforeUpdate"
+  },
+  {
+    "rva": "0x561a2f8",
+    "string": "CameraManager.VirtualCameraController.Update"
+  },
+  {
+    "rva": "0x561abc8",
+    "string": "CameraManager.VirtualCameraController.AfterUpdate"
+  },
+  {
+    "rva": "0x561e7c0",
+    "string": "Vector<VirtualCameraController>"
+  },
+  {
+    "rva": "0x5786770",
+    "string": "Asyncore::pybase_object_impl<class Messiah::PyVirtualCameraController>::add_getset"
+  },
+  {
+    "rva": "0x57867d0",
+    "string": "Asyncore::pybase_object_impl<class Messiah::PyVirtualCameraController>::add_method"
+  },
+  {
+    "rva": "0x578f020",
+    "string": "Asyncore::pybase_object_impl<class Messiah::PyCameraController>::add_getset"
+  },
+  {
+    "rva": "0x578f070",
+    "string": "Asyncore::pybase_object_impl<class Messiah::PyCameraController>::add_method"
+  },
+  {
+    "rva": "0x5792ed0",
+    "string": "Asyncore::pybase_object_impl<class Messiah::PyVirtualCameraControllerBase>::add_getset"
+  },
+  {
+    "rva": "0x57dfc90",
+    "string": "Asyncore::pybase_object_impl<class Messiah::PyLerpBlender>::add_getset"
+  },
+  {
+    "rva": "0x57e24d0",
+    "string": "Asyncore::pybase_object_impl<class Messiah::PyAimPlacer>::add_getset"
+  },
+  {
+    "rva": "0x57e2520",
+    "string": "Asyncore::pybase_object_impl<class Messiah::PyAimPlacer>::add_method"
+  },
+  {
+    "rva": "0x57f2ed0",
+    "string": "Asyncore::pybase_object_impl<class Messiah::PyFreeviewCameraController>::add_getset"
+  },
+  {
+    "rva": "0x5803220",
+    "string": "Asyncore::pybase_object_impl<class Messiah::PyAffiliatedCameraController>::add_getset"
+  },
+  {
+    "rva": "0x7ce9380",
+    "string": ".?AV<lambda_1>@?4??CreateVirtualCameraController@AnimationCore@@YAPEAVIObjectHolder@2@AEBVName@Messiah@@@Z@"
+  },
+  {
+    "rva": "0x7d23260",
+    "string": ".?AV?$vector@PEAVVirtualCameraController@Messiah@@V?$allocator@PEAVVirtualCameraController@Messiah@@@std@@@std@@"
+  },
+  {
+    "rva": "0x7d34f60",
+    "string": ".?AV?$pybase_object_impl@VPyVirtualCameraController@Messiah@@@Asyncore@@"
+  },
+  {
+    "rva": "0x7d3ca90",
+    "string": ".?AV?$pybase_object_impl@VPyCameraController@Messiah@@@Asyncore@@"
+  },
+  {
+    "rva": "0x7d3dcf0",
+    "string": ".?AV<lambda_1>@?4??RegisterObjectClass__CameraController@Messiah@@YAXXZ@"
+  },
+  {
+    "rva": "0x7d3dd50",
+    "string": ".?AV<lambda_1>@?4??InitializeObjectClass__CameraController@Messiah@@YAXXZ@"
+  },
+  {
+    "rva": "0x7d3ddb0",
+    "string": ".?AV<lambda_2>@?6??BindCameraKeyframeColliding@PyCameraController@Messiah@@QEAAXAEAVscoped_object@Asyncore@@@Z@"
+  },
+  {
+    "rva": "0x7d3de30",
+    "string": ".?AV<lambda_2>@?6??BindRuntimeInfoUpdate@PyCameraController@Messiah@@QEAAXAEAVscoped_object@Asyncore@@@Z@"
+  },
+  {
+    "rva": "0x7d3e920",
+    "string": ".?AV<lambda_1>@?9???R<lambda_2>@?6??BindCameraKeyframeColliding@PyCameraController@Messiah@@QEAAXAEAVscoped_object@Asyncore@@@Z@QEBA@H@Z@"
+  },
+  {
+    "rva": "0x7d3e9c0",
+    "string": ".?AV<lambda_1>@?9???R<lambda_2>@?6??BindRuntimeInfoUpdate@PyCameraController@Messiah@@QEAAXAEAVscoped_object@Asyncore@@@Z@QEBA@AEBUCameraRuntimeInfo@4@@Z@"
+  },
+  {
+    "rva": "0x7d3ef00",
+    "string": ".?AV<lambda_2>@?1??PyCameraController_InitEvent@Messiah@@YAXXZ@"
+  },
+  {
+    "rva": "0x7d3ef50",
+    "string": ".?AV<lambda_1>@?1??PyCameraController_InitEvent@Messiah@@YAXXZ@"
+  },
+  {
+    "rva": "0x7d409e0",
+    "string": ".?AV?$pybase_object_impl@VPyVirtualCameraControllerBase@Messiah@@@Asyncore@@"
+  },
+  {
+    "rva": "0x7d41200",
+    "string": ".?AV<lambda_1>@?4??RegisterObjectClass__VirtualCameraController@Messiah@@YAXXZ@"
+  },
+  {
+    "rva": "0x7d41260",
+    "string": ".?AV<lambda_1>@?4??InitializeObjectClass__VirtualCameraController@Messiah@@YAXXZ@"
+  },
+  {
+    "rva": "0x7d412d0",
+    "string": ".?AV<lambda_2>@?6??BindAfterControllerUpdate@PyVirtualCameraController@Messiah@@QEAAXAEAVscoped_object@Asyncore@@@Z@"
+  },
+  {
+    "rva": "0x7d41360",
+    "string": ".?AV<lambda_2>@?6??BindBeforeControllerUpdate@PyVirtualCameraController@Messiah@@QEAAXAEAVscoped_object@Asyncore@@@Z@"
+  },
+  {
+    "rva": "0x7d42640",
+    "string": ".?AV<lambda_1>@?9???R<lambda_2>@?6??BindAfterControllerUpdate@PyVirtualCameraController@Messiah@@QEAAXAEAVscoped_object@Asyncore@@@Z@QEBA@PEAVIObject@4@@Z@"
+  },
+  {
+    "rva": "0x7d426f0",
+    "string": ".?AV<lambda_1>@?9???R<lambda_2>@?6??BindBeforeControllerUpdate@PyVirtualCameraController@Messiah@@QEAAXAEAVscoped_object@Asyncore@@@Z@QEBA@PEAVIObject@4@@Z@"
+  },
+  {
+    "rva": "0x7d42b80",
+    "string": ".?AV<lambda_2>@?1??PyVirtualCameraController_InitEvent@Messiah@@YAXXZ@"
+  },
+  {
+    "rva": "0x7d42be0",
+    "string": ".?AV<lambda_1>@?1??PyVirtualCameraController_InitEvent@Messiah@@YAXXZ@"
+  },
+  {
+    "rva": "0x7d45c20",
+    "string": ".?AV?$pybase_object_impl@VPyLerpBlender@Messiah@@@Asyncore@@"
+  },
+  {
+    "rva": "0x7d46250",
+    "string": ".?AV<lambda_1>@?4??RegisterObjectClass__LerpBlender@Messiah@@YAXXZ@"
+  },
+  {
+    "rva": "0x7d462b0",
+    "string": ".?AV<lambda_1>@?4??InitializeObjectClass__LerpBlender@Messiah@@YAXXZ@"
+  },
+  {
+    "rva": "0x7d48560",
+    "string": ".?AV?$pybase_object_impl@VPyAimPlacer@Messiah@@@Asyncore@@"
+  },
+  {
+    "rva": "0x7d485b0",
+    "string": ".?AV<lambda_1>@?4??RegisterObjectClass__VirtualCameraControllerBase@Messiah@@YAXXZ@"
+  },
+  {
+    "rva": "0x7d48620",
+    "string": ".?AV<lambda_1>@?4??InitializeObjectClass__VirtualCameraControllerBase@Messiah@@YAXXZ@"
+  },
+  {
+    "rva": "0x7d49500",
+    "string": ".?AV<lambda_1>@?4??RegisterObjectClass__AimPlacer@Messiah@@YAXXZ@"
+  },
+  {
+    "rva": "0x7d49560",
+    "string": ".?AV<lambda_1>@?4??InitializeObjectClass__AimPlacer@Messiah@@YAXXZ@"
+  },
+  {
+    "rva": "0x7d59b40",
+    "string": ".?AV?$pybase_object_impl@VPyFreeviewCameraController@Messiah@@@Asyncore@@"
+  },
+  {
+    "rva": "0x7d5ada0",
+    "string": ".?AV<lambda_1>@?4??RegisterObjectClass__FreeviewCameraController@Messiah@@YAXXZ@"
+  },
+  {
+    "rva": "0x7d5ae10",
+    "string": ".?AV<lambda_1>@?4??InitializeObjectClass__FreeviewCameraController@Messiah@@YAXXZ@"
+  },
+  {
+    "rva": "0x7d5ae80",
+    "string": ".?AV<lambda_2>@?6??BindKeyUp@PyFreeviewCameraController@Messiah@@QEAAXAEAVscoped_object@Asyncore@@@Z@"
+  },
+  {
+    "rva": "0x7d5af00",
+    "string": ".?AV<lambda_2>@?6??BindKeyDown@PyFreeviewCameraController@Messiah@@QEAAXAEAVscoped_object@Asyncore@@@Z@"
+  },
+  {
+    "rva": "0x7d5bdb0",
+    "string": ".?AV<lambda_1>@?N@???R<lambda_2>@?6??BindKeyUp@PyFreeviewCameraController@Messiah@@QEAAXAEAVscoped_object@Asyncore@@@Z@QEBA@II@Z@"
+  },
+  {
+    "rva": "0x7d5be50",
+    "string": ".?AV<lambda_1>@?N@???R<lambda_2>@?6??BindKeyDown@PyFreeviewCameraController@Messiah@@QEAAXAEAVscoped_object@Asyncore@@@Z@QEBA@II@Z@"
+  },
+  {
+    "rva": "0x7d5c500",
+    "string": ".?AV<lambda_2>@?1??PyFreeviewCameraController_InitEvent@Messiah@@YAXXZ@"
+  },
+  {
+    "rva": "0x7d5c560",
+    "string": ".?AV<lambda_1>@?1??PyFreeviewCameraController_InitEvent@Messiah@@YAXXZ@"
+  },
+  {
+    "rva": "0x7d6c3e0",
+    "string": ".?AV?$pybase_object_impl@VPyAffiliatedCameraController@Messiah@@@Asyncore@@"
+  },
+  {
+    "rva": "0x7d6d530",
+    "string": ".?AV<lambda_1>@?4??RegisterObjectClass__AffiliatedCameraController@Messiah@@YAXXZ@"
+  },
+  {
+    "rva": "0x7d6d5a0",
+    "string": ".?AV<lambda_1>@?4??InitializeObjectClass__AffiliatedCameraController@Messiah@@YAXXZ@"
+  },
+  {
+    "rva": "0x7ded448",
+    "string": ".?AVFreeviewCameraController@Messiah@@"
+  },
+  {
+    "rva": "0x7ead4a8",
+    "string": ".?AVVirtualCameraControllerBase@Messiah@@"
+  },
+  {
+    "rva": "0x7ead9e0",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??CreateVirtualCameraController@AnimationCore@@YAPEAVIObjectHolder@3@AEBVName@Messiah@@@Z@X$$V@std@@"
+  },
+  {
+    "rva": "0x7f16998",
+    "string": ".?AVBaseCameraController@Character@@"
+  },
+  {
+    "rva": "0x7f20b90",
+    "string": ".?AVKeyFrameCameraController@Character@@"
+  },
+  {
+    "rva": "0x7f20bd0",
+    "string": ".?AVAnimationCameraController@Character@@"
+  },
+  {
+    "rva": "0x7f2c248",
+    "string": ".?AVBaseCameraController@AnimationCore@@"
+  },
+  {
+    "rva": "0x7f2c620",
+    "string": ".?AVAimPlacer@Messiah@@"
+  },
+  {
+    "rva": "0x7f2c650",
+    "string": ".?AU?$_delegate_interface_object@P8AimPlacer@Messiah@@EAAXPEAVIEntity@2@AEBV?$TMatrix4x3@M@2@@_EU?$decl_caller@P8AimPlacer@Messiah@@EAAXPEAVIEntity@2@AEBV?$TMatrix4x3@M@2@@_E$1?OnTargetTransformChanged@12@IEAAX01@Z@2@@Messiah@@"
+  },
+  {
+    "rva": "0x7f2c748",
+    "string": ".?AVCameraController@Messiah@@"
+  },
+  {
+    "rva": "0x7f2c7e0",
+    "string": ".?AU?$_delegate_interface_object@P8CameraController@Messiah@@EAAXPEAVIEntity@2@@_EU?$decl_caller@P8CameraController@Messiah@@EAAXPEAVIEntity@2@@_E$H?_OnEnterWorld@12@IEAAX0@ZA@@2@@Messiah@@"
+  },
+  {
+    "rva": "0x7f2c8b0",
+    "string": ".?AU?$_delegate_interface_object@P8CameraController@Messiah@@EAAXPEAVIEntity@2@@_EU?$decl_caller@P8CameraController@Messiah@@EAAXPEAVIEntity@2@@_E$H?_OnLeaveWorld@12@IEAAX0@ZA@@2@@Messiah@@"
+  },
+  {
+    "rva": "0x7f2d330",
+    "string": ".?AVVirtualCameraController@Messiah@@"
+  },
+  {
+    "rva": "0x7f77448",
+    "string": ".?AVAffiliatedCameraController@Messiah@@"
+  },
+  {
+    "rva": "0x7f77490",
+    "string": ".?AU?$_delegate_interface_object@P8AffiliatedCameraController@Messiah@@EAAXPEAVIEntity@2@@_EU?$decl_caller@P8AffiliatedCameraController@Messiah@@EAAXPEAVIEntity@2@@_E$H?_OnEnterWorld@12@IEAAX0@ZA@@2@@Messiah@@"
+  },
+  {
+    "rva": "0x7f77580",
+    "string": ".?AU?$_delegate_interface_object@P8AffiliatedCameraController@Messiah@@EAAXPEAVIEntity@2@@_EU?$decl_caller@P8AffiliatedCameraController@Messiah@@EAAXPEAVIEntity@2@@_E$H?_OnLeaveWorld@12@IEAAX0@ZA@@2@@Messiah@@"
+  },
+  {
+    "rva": "0x7f77698",
+    "string": ".?AVLerpBlender@Messiah@@"
+  },
+  {
+    "rva": "0x7f812c0",
+    "string": ".?AU?$constexpr_method_binding@P8CameraController@Messiah@@EAAXPEAVCameraPlacer@2@PEAVCameraBlender@2@@_E$MP812@EAAX01@_E1?BlendInPlacer@12@QEAAX01@Z@Reflection@Messiah@@"
+  },
+  {
+    "rva": "0x7f81480",
+    "string": ".?AU?$constexpr_method_binding@P8CameraController@Messiah@@EAAXPEAVCameraSensor@2@@_E$MP812@EAAX0@_E1?SetSensor@12@QEAAX0@Z@Reflection@Messiah@@"
+  },
+  {
+    "rva": "0x7f81600",
+    "string": ".?AU?$constexpr_method_binding@P8CameraController@Messiah@@EAAXPEAVCameraPostProcessor@2@@_E$MP812@EAAX0@_E1?SetPostProcessor@12@QEAAX0@Z@Reflection@Messiah@@"
+  },
+  {
+    "rva": "0x7f81790",
+    "string": ".?AU?$constexpr_method_binding@P8CameraController@Messiah@@EAAXPEAVCameraPlacer@2@@_E$MP812@EAAX0@_E1?Retain@12@QEAAX0@Z@Reflection@Messiah@@"
+  },
+  {
+    "rva": "0x7f81830",
+    "string": ".?AU?$constexpr_method_binding@P8CameraController@Messiah@@EAAXPEAVCameraPlacer@2@@_E$MP812@EAAX0@_E1?Release@12@QEAAX0@Z@Reflection@Messiah@@"
+  },
+  {
+    "rva": "0x7f818d0",
+    "string": ".?AU?$constexpr_method_binding@P8CameraController@Messiah@@EAAPEAVCameraPlacer@2@X_E$MP812@EAAPEAV32@X_E1?GetRootLocatePlacer@12@QEAAPEAV32@XZ@Reflection@Messiah@@"
+  },
+  {
+    "rva": "0x7f81a50",
+    "string": ".?AU?$constexpr_method_binding@P8CameraController@Messiah@@EAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@X_E$MP812@EAA?AV34@X_E1?PrintTree@12@QEAA?AV34@XZ@Reflection@Messiah@@"
+  },
+  {
+    "rva": "0x7f81b30",
+    "string": ".?AU?$constexpr_method_binding@P8CameraController@Messiah@@EAA?AV?$TVec3@M@2@MM@_E$MP812@EAA?AV32@MM@_E1?GetCurrXzDirection@12@QEAA?AV32@MM@Z@Reflection@Messiah@@"
+  },
+  {
+    "rva": "0x7f81cb0",
+    "string": ".?AU?$constexpr_method_binding@P8CameraController@Messiah@@EAA?AV?$TVec3@M@2@AEBV32@MM@_E$MP812@EAA?AV32@0MM@_E1?GetXzDirection@12@QEAA?AV32@0MM@Z@Reflection@Messiah@@"
+  },
+  {
+    "rva": "0x7f81e50",
+    "string": ".?AU?$constexpr_method_binding@P8CameraController@Messiah@@EAA?AUCameraRuntimeInfo@2@X_E$MP812@EAA?AU32@X_E1?GetRuntimeInfo@12@QEAA?AU32@XZ@Reflection@Messiah@@"
+  },
+  {
+    "rva": "0x7f81fe0",
+    "string": ".?AU?$constexpr_method_binding@P8CameraController@Messiah@@EAA?AUCameraRuntimeInfo@2@X_E$MP812@EAA?AU32@X_E1?GetLastRuntimeInfo@12@QEAA?AU32@XZ@Reflection@Messiah@@"
+  },
+  {
+    "rva": "0x7f820a0",
+    "string": ".?AU?$constexpr_method_binding@P8CameraController@Messiah@@EAAXPEAVIEntity@2@@_E$MP812@EAAX0@_E1?SetTickRole@12@QEAAX0@Z@Reflection@Messiah@@"
+  },
+  {
+    "rva": "0x7f82140",
+    "string": ".?AU?$constexpr_method_binding@P8CameraController@Messiah@@EAAX_N@_E$MP812@EAAX0@_E1?ToggleRecordEnabled@12@QEAAX0@Z@Reflection@Messiah@@"
+  },
+  {
+    "rva": "0x7f821e0",
+    "string": ".?AU?$constexpr_method_binding@P8CameraController@Messiah@@EAAXAEBUCameraRuntimeInfo@2@@_E$MP812@EAAX0@_E1?ApplyRuntimeInfo@12@QEAAX0@Z@Reflection@Messiah@@"
+  },
+  {
+    "rva": "0x7f82290",
+    "string": ".?AU?$constexpr_method_binding@P8CameraController@Messiah@@EAA?AV?$TVec3@M@2@AEBV32@@_E$MP812@EAA?AV32@0@_E1?GetClampedScreenPointFromWorldPoint@12@QEAA?AV32@0@Z@Reflection@Messiah@@"
+  },
+  {
+    "rva": "0x7f825b0",
+    "string": ".?AU?$constexpr_method_binding@P8AimPlacer@Messiah@@EAAXAEBUCameraRuntimeInfo@2@@_E$MP812@EAAX0@_E1??_912@$BFI@AA@Reflection@Messiah@@"
+  },
+  {
+    "rva": "0x7f82650",
+    "string": ".?AU?$constexpr_method_binding@P8AimPlacer@Messiah@@EAAXMM@_E$MP812@EAAXMM@_E1?Rotate@12@QEAAXMM@Z@Reflection@Messiah@@"
+  },
+  {
+    "rva": "0x7f83b00",
+    "string": ".?AU?$constexpr_method_binding@P8VirtualCameraController@Messiah@@EAA_NPEAV12@@_E$MP812@EAA_N0@_E1?_AddController_on_ot@12@QEAA_N0@Z@Reflection@Messiah@@"
+  },
+  {
+    "rva": "0x7f83bb0",
+    "string": ".?AV?$delegate_interface@P8IObject@Messiah@@EAA_NPEAVVirtualCameraController@2@@_E@Messiah@@"
+  },
+  {
+    "rva": "0x7f83c20",
+    "string": ".?AV?$_delegate_base@P8IObject@Messiah@@EAA_NPEAVVirtualCameraController@2@@_E@Messiah@@"
+  },
+  {
+    "rva": "0x7f83c90",
+    "string": ".?AU?$constexpr_method_binding@P8VirtualCameraController@Messiah@@EAA_NPEAV12@@_E$MP812@EAA_N0@_E1?_DelController_on_ot@12@QEAA_N0@Z@Reflection@Messiah@@"
+  },
+  {
+    "rva": "0x7f83d40",
+    "string": ".?AU?$constexpr_method_binding@P8VirtualCameraController@Messiah@@EAAXM@_E$MP812@EAAXM@_E1??_912@$BEA@AA@Reflection@Messiah@@"
+  },
+  {
+    "rva": "0x7f83dd0",
+    "string": ".?AU?$constexpr_method_binding@P8VirtualCameraController@Messiah@@EAAXM@_E$MP812@EAAXM@_E1??_912@$BEI@AA@Reflection@Messiah@@"
+  },
+  {
+    "rva": "0x7f83e60",
+    "string": ".?AU?$constexpr_method_binding@P8VirtualCameraController@Messiah@@EAAXM@_E$MP812@EAAXM@_E1??_912@$BFA@AA@Reflection@Messiah@@"
+  },
+  {
+    "rva": "0x7f83ef0",
+    "string": ".?AU?$vector_const_iterator@V?$vector@PEAVVirtualCameraController@Messiah@@V?$allocator@PEAVVirtualCameraController@Messiah@@@std@@@std@@@Reflection@Messiah@@"
+  },
+  {
+    "rva": "0x7f83fa0",
+    "string": ".?AU?$vector_iterator@V?$vector@PEAVVirtualCameraController@Messiah@@V?$allocator@PEAVVirtualCameraController@Messiah@@@std@@@std@@@Reflection@Messiah@@"
+  },
+  {
+    "rva": "0x7fd6880",
+    "string": ".?AVPyVirtualCameraController@Messiah@@"
+  },
+  {
+    "rva": "0x7fd68b8",
+    "string": ".?AVPyVirtualCameraControllerBase@Messiah@@"
+  },
+  {
+    "rva": "0x7fe0c88",
+    "string": ".?AVPyCameraController@Messiah@@"
+  },
+  {
+    "rva": "0x7fe23c0",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_2>@?6??BindRuntimeInfoUpdate@PyCameraController@Messiah@@QEAAXAEAVscoped_object@Asyncore@@@Z@XAEBUCameraRuntimeInfo@4@@std@@"
+  },
+  {
+    "rva": "0x7fe2470",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_2>@?6??BindCameraKeyframeColliding@PyCameraController@Messiah@@QEAAXAEAVscoped_object@Asyncore@@@Z@XH@std@@"
+  },
+  {
+    "rva": "0x7fe2510",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??InitializeObjectClass__CameraController@Messiah@@YAXXZ@X$$V@std@@"
+  },
+  {
+    "rva": "0x7fe2590",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??RegisterObjectClass__CameraController@Messiah@@YAXXZ@PEAVPyIObject@3@PEAVIObject@3@@std@@"
+  },
+  {
+    "rva": "0x7fe3e90",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?9???R<lambda_2>@?6??BindRuntimeInfoUpdate@PyCameraController@Messiah@@QEAAXAEAVscoped_object@Asyncore@@@Z@QEBA@AEBUCameraRuntimeInfo@5@@Z@X$$V@std@@"
+  },
+  {
+    "rva": "0x7fe3f60",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?9???R<lambda_2>@?6??BindCameraKeyframeColliding@PyCameraController@Messiah@@QEAAXAEAVscoped_object@Asyncore@@@Z@QEBA@H@Z@X$$V@std@@"
+  },
+  {
+    "rva": "0x7fe4a10",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??PyCameraController_InitEvent@Messiah@@YAXXZ@XPEAVPyIObject@3@Vscoped_object@Asyncore@@@std@@"
+  },
+  {
+    "rva": "0x7fe4ab0",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??PyCameraController_InitEvent@Messiah@@YAXXZ@XPEAVPyIObject@3@Vscoped_object@Asyncore@@@std@@"
+  },
+  {
+    "rva": "0x7fea240",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_2>@?6??BindBeforeControllerUpdate@PyVirtualCameraController@Messiah@@QEAAXAEAVscoped_object@Asyncore@@@Z@XPEAVIObject@4@@std@@"
+  },
+  {
+    "rva": "0x7fea300",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_2>@?6??BindAfterControllerUpdate@PyVirtualCameraController@Messiah@@QEAAXAEAVscoped_object@Asyncore@@@Z@XPEAVIObject@4@@std@@"
+  },
+  {
+    "rva": "0x7fea3c0",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??InitializeObjectClass__VirtualCameraController@Messiah@@YAXXZ@X$$V@std@@"
+  },
+  {
+    "rva": "0x7fea450",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??RegisterObjectClass__VirtualCameraController@Messiah@@YAXXZ@PEAVPyIObject@3@PEAVIObject@3@@std@@"
+  },
+  {
+    "rva": "0x7fea990",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?9???R<lambda_2>@?6??BindBeforeControllerUpdate@PyVirtualCameraController@Messiah@@QEAAXAEAVscoped_object@Asyncore@@@Z@QEBA@PEAVIObject@5@@Z@X$$V@std@@"
+  },
+  {
+    "rva": "0x7feaa60",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?9???R<lambda_2>@?6??BindAfterControllerUpdate@PyVirtualCameraController@Messiah@@QEAAXAEAVscoped_object@Asyncore@@@Z@QEBA@PEAVIObject@5@@Z@X$$V@std@@"
+  },
+  {
+    "rva": "0x7feaef0",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??PyVirtualCameraController_InitEvent@Messiah@@YAXXZ@XPEAVPyIObject@3@Vscoped_object@Asyncore@@@std@@"
+  },
+  {
+    "rva": "0x7feaf90",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??PyVirtualCameraController_InitEvent@Messiah@@YAXXZ@XPEAVPyIObject@3@Vscoped_object@Asyncore@@@std@@"
+  },
+  {
+    "rva": "0x7ffea80",
+    "string": ".?AVPyLerpBlender@Messiah@@"
+  },
+  {
+    "rva": "0x7fff700",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??InitializeObjectClass__LerpBlender@Messiah@@YAXXZ@X$$V@std@@"
+  },
+  {
+    "rva": "0x7fff780",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??RegisterObjectClass__LerpBlender@Messiah@@YAXXZ@PEAVPyIObject@3@PEAVIObject@3@@std@@"
+  },
+  {
+    "rva": "0x8001c00",
+    "string": ".?AVPyAimPlacer@Messiah@@"
+  },
+  {
+    "rva": "0x8002660",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??InitializeObjectClass__AimPlacer@Messiah@@YAXXZ@X$$V@std@@"
+  },
+  {
+    "rva": "0x80026e0",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??RegisterObjectClass__AimPlacer@Messiah@@YAXXZ@PEAVPyIObject@3@PEAVIObject@3@@std@@"
+  },
+  {
+    "rva": "0x8003d10",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??InitializeObjectClass__VirtualCameraControllerBase@Messiah@@YAXXZ@X$$V@std@@"
+  },
+  {
+    "rva": "0x8003da0",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??RegisterObjectClass__VirtualCameraControllerBase@Messiah@@YAXXZ@PEAVPyIObject@3@PEAVIObject@3@@std@@"
+  },
+  {
+    "rva": "0x801b9d8",
+    "string": ".?AVPyFreeviewCameraController@Messiah@@"
+  },
+  {
+    "rva": "0x801c720",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_2>@?6??BindKeyDown@PyFreeviewCameraController@Messiah@@QEAAXAEAVscoped_object@Asyncore@@@Z@XII@std@@"
+  },
+  {
+    "rva": "0x801c7c0",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_2>@?6??BindKeyUp@PyFreeviewCameraController@Messiah@@QEAAXAEAVscoped_object@Asyncore@@@Z@XII@std@@"
+  },
+  {
+    "rva": "0x801c860",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??InitializeObjectClass__FreeviewCameraController@Messiah@@YAXXZ@X$$V@std@@"
+  },
+  {
+    "rva": "0x801c8f0",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??RegisterObjectClass__FreeviewCameraController@Messiah@@YAXXZ@PEAVPyIObject@3@PEAVIObject@3@@std@@"
+  },
+  {
+    "rva": "0x801e280",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?N@???R<lambda_2>@?6??BindKeyDown@PyFreeviewCameraController@Messiah@@QEAAXAEAVscoped_object@Asyncore@@@Z@QEBA@II@Z@X$$V@std@@"
+  },
+  {
+    "rva": "0x801e340",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?N@???R<lambda_2>@?6??BindKeyUp@PyFreeviewCameraController@Messiah@@QEAAXAEAVscoped_object@Asyncore@@@Z@QEBA@II@Z@X$$V@std@@"
+  },
+  {
+    "rva": "0x801f230",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?1??PyFreeviewCameraController_InitEvent@Messiah@@YAXXZ@XPEAVPyIObject@3@Vscoped_object@Asyncore@@@std@@"
+  },
+  {
+    "rva": "0x801f2d0",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_2>@?1??PyFreeviewCameraController_InitEvent@Messiah@@YAXXZ@XPEAVPyIObject@3@Vscoped_object@Asyncore@@@std@@"
+  },
+  {
+    "rva": "0x80381d8",
+    "string": ".?AVPyAffiliatedCameraController@Messiah@@"
+  },
+  {
+    "rva": "0x8038bf0",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??InitializeObjectClass__AffiliatedCameraController@Messiah@@YAXXZ@X$$V@std@@"
+  },
+  {
+    "rva": "0x8038c80",
+    "string": ".?AV?$_Func_impl_no_alloc@V<lambda_1>@?4??RegisterObjectClass__AffiliatedCameraController@Messiah@@YAXXZ@PEAVPyIObject@3@PEAVIObject@3@@std@@"
+  }
+]

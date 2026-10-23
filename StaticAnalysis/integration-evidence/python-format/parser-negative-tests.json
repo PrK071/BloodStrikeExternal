@@ -1,0 +1,35 @@
+[
+  {
+    "test": "truncated_code",
+    "status": "REJECTED_AS_EXPECTED",
+    "error": "bounds"
+  },
+  {
+    "test": "invalid_reference",
+    "status": "REJECTED_AS_EXPECTED",
+    "error": "bad ref"
+  },
+  {
+    "test": "negative_length",
+    "status": "REJECTED_AS_EXPECTED",
+    "error": "bounds"
+  },
+  {
+    "test": "excess_length",
+    "status": "REJECTED_AS_EXPECTED",
+    "error": "bounds"
+  },
+  {
+    "test": "unknown_tag",
+    "status": "REJECTED_AS_EXPECTED",
+    "error": "unsupported tag '?' at 8"
+  },
+  {
+    "test": "typed_data_control",
+    "status": "PASS"
+  },
+  {
+    "test": "opcode_markers_excluded_43_129_234",
+    "status": "PASS"
+  }
+]

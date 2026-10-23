@@ -1,0 +1,17 @@
+# Local interpreter caches and reports that contain per-machine runtime state.
+__pycache__/
+*.py[cod]
+*.log
+.venv/
+venv/
+
+# Portable analysis dependencies are installed on demand by repository scripts.
+/tools/providers/
+/tools/npm-*/
+/tools/rea-source/
+/tools/rea-runtime/
+
+# Ghidra databases are large, binary, and tied to the local analysis session.
+/StaticAnalysis/integration-evidence/rea/ghidra-project/
+*.gpr
+*.rep/
