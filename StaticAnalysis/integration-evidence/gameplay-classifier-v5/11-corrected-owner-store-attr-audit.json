@@ -1,0 +1,928 @@
+{
+  "target_sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "scope": "Previously identified MPK indices 17226, 68957, 122267, 143510 only; compressed and decoded SHA-256 verified; marshal parse to EOF; no payload execution. STORE_ATTR uses direct co_names index; LOAD_ATTR/LOAD_METHOD/LOAD_GLOBAL use arg>>1.",
+  "records": [
+    {
+      "index": 17226,
+      "filename": "gclient/framework/util/MHelper.py",
+      "qualname": "CreateDummy",
+      "decoded_sha256": "61179f1c0859d8c40097410337147629397b65987581791e8df35ad07c417de1",
+      "names": [
+        "MObject",
+        "CreateObject",
+        "Skeleton",
+        "LoadSkeleton",
+        "GetActiveWorld",
+        "DefaultLevel",
+        "RootArea",
+        "MType",
+        "Matrix4x3",
+        "Vector3",
+        "translation",
+        "set_pitch_yaw_roll",
+        "Transform",
+        "EnterArea"
+      ],
+      "relevant_instructions": [
+        {
+          "offset": 12,
+          "op": "LOAD_ATTR",
+          "arg": 2,
+          "resolved": "CreateObject"
+        },
+        {
+          "offset": 64,
+          "op": "LOAD_ATTR",
+          "arg": 4,
+          "resolved": "Skeleton"
+        },
+        {
+          "offset": 108,
+          "op": "LOAD_ATTR",
+          "arg": 2,
+          "resolved": "CreateObject"
+        },
+        {
+          "offset": 142,
+          "op": "STORE_ATTR",
+          "arg": 2,
+          "resolved": "Skeleton"
+        },
+        {
+          "offset": 154,
+          "op": "LOAD_ATTR",
+          "arg": 4,
+          "resolved": "Skeleton"
+        },
+        {
+          "offset": 364,
+          "op": "STORE_ATTR",
+          "arg": 10,
+          "resolved": "translation"
+        },
+        {
+          "offset": 424,
+          "op": "STORE_ATTR",
+          "arg": 12,
+          "resolved": "Transform"
+        }
+      ],
+      "parsed_to_eof": true
+    },
+    {
+      "index": 17226,
+      "filename": "gclient/framework/util/MHelper.py",
+      "qualname": "CreateModel",
+      "decoded_sha256": "61179f1c0859d8c40097410337147629397b65987581791e8df35ad07c417de1",
+      "names": [
+        "EntityCacheManager",
+        "instance",
+        "Dequeue",
+        "IsValid",
+        "IsVisible",
+        "Primitives",
+        "CustomRenderSet",
+        "ResetShaderGraphMaterial",
+        "Timer",
+        "addTimer",
+        "MObject",
+        "CreateObject",
+        "IsAnimated",
+        "IsMovable",
+        "split",
+        "name",
+        "GlobalData",
+        "IsSceneEditorGame",
+        "SetName",
+        "ResourceLoader",
+        "LoadResource",
+        "SpikeCacheKey",
+        "LoadSkeletonAndGraph",
+        "Appearance",
+        "Filter",
+        "CharCtrl",
+        "IsCastDynamicShadow",
+        "IsReceiveDynamicShadow",
+        "resource_names",
+        "material_names",
+        "MType",
+        "Matrix4x3",
+        "isinstance",
+        "tuple",
+        "list",
+        "Vector3",
+        "scale",
+        "LoadResourceExtend",
+        "IsWholeLevelVisible",
+        "Transform",
+        "GetActiveWorld",
+        "DefaultLevel",
+        "RootArea",
+        "EnterArea"
+      ],
+      "relevant_instructions": [
+        {
+          "offset": 184,
+          "op": "STORE_ATTR",
+          "arg": 4,
+          "resolved": "IsVisible"
+        },
+        {
+          "offset": 228,
+          "op": "STORE_ATTR",
+          "arg": 6,
+          "resolved": "CustomRenderSet"
+        },
+        {
+          "offset": 350,
+          "op": "LOAD_ATTR",
+          "arg": 22,
+          "resolved": "CreateObject"
+        },
+        {
+          "offset": 404,
+          "op": "STORE_ATTR",
+          "arg": 12,
+          "resolved": "IsAnimated"
+        },
+        {
+          "offset": 418,
+          "op": "STORE_ATTR",
+          "arg": 13,
+          "resolved": "IsMovable"
+        },
+        {
+          "offset": 506,
+          "op": "STORE_ATTR",
+          "arg": 15,
+          "resolved": "name"
+        },
+        {
+          "offset": 686,
+          "op": "STORE_ATTR",
+          "arg": 21,
+          "resolved": "SpikeCacheKey"
+        },
+        {
+          "offset": 784,
+          "op": "LOAD_ATTR",
+          "arg": 22,
+          "resolved": "CreateObject"
+        },
+        {
+          "offset": 818,
+          "op": "STORE_ATTR",
+          "arg": 23,
+          "resolved": "Appearance"
+        },
+        {
+          "offset": 832,
+          "op": "STORE_ATTR",
+          "arg": 24,
+          "resolved": "Filter"
+        },
+        {
+          "offset": 846,
+          "op": "STORE_ATTR",
+          "arg": 25,
+          "resolved": "CharCtrl"
+        },
+        {
+          "offset": 860,
+          "op": "STORE_ATTR",
+          "arg": 26,
+          "resolved": "IsCastDynamicShadow"
+        },
+        {
+          "offset": 874,
+          "op": "STORE_ATTR",
+          "arg": 27,
+          "resolved": "IsReceiveDynamicShadow"
+        },
+        {
+          "offset": 888,
+          "op": "STORE_ATTR",
+          "arg": 28,
+          "resolved": "resource_names"
+        },
+        {
+          "offset": 902,
+          "op": "STORE_ATTR",
+          "arg": 29,
+          "resolved": "material_names"
+        },
+        {
+          "offset": 1098,
+          "op": "STORE_ATTR",
+          "arg": 36,
+          "resolved": "scale"
+        },
+        {
+          "offset": 1156,
+          "op": "STORE_ATTR",
+          "arg": 36,
+          "resolved": "scale"
+        },
+        {
+          "offset": 1184,
+          "op": "STORE_ATTR",
+          "arg": 37,
+          "resolved": "LoadResourceExtend"
+        },
+        {
+          "offset": 1198,
+          "op": "STORE_ATTR",
+          "arg": 38,
+          "resolved": "IsWholeLevelVisible"
+        },
+        {
+          "offset": 1212,
+          "op": "STORE_ATTR",
+          "arg": 39,
+          "resolved": "Transform"
+        }
+      ],
+      "parsed_to_eof": true
+    },
+    {
+      "index": 17226,
+      "filename": "gclient/framework/util/MHelper.py",
+      "qualname": "LoadSkeletonAndGraph",
+      "decoded_sha256": "61179f1c0859d8c40097410337147629397b65987581791e8df35ad07c417de1",
+      "names": [
+        "graph_dir",
+        "PreloadGraph",
+        "instance",
+        "LoadGraphInGame",
+        "isinstance",
+        "Skeleton",
+        "MObject",
+        "ActorComponent",
+        "CreateObject",
+        "LoadSkeletonAndGraph",
+        "gpl",
+        "performance_level",
+        "SetAutoFrameLimit",
+        "LoadSkeleton",
+        "StoryboardAutoFrameLimit",
+        "ScriptResourcePath",
+        "GraphFile"
+      ],
+      "relevant_instructions": [
+        {
+          "offset": 144,
+          "op": "LOAD_ATTR",
+          "arg": 10,
+          "resolved": "Skeleton"
+        },
+        {
+          "offset": 226,
+          "op": "LOAD_ATTR",
+          "arg": 16,
+          "resolved": "CreateObject"
+        },
+        {
+          "offset": 260,
+          "op": "STORE_ATTR",
+          "arg": 5,
+          "resolved": "Skeleton"
+        },
+        {
+          "offset": 272,
+          "op": "LOAD_ATTR",
+          "arg": 10,
+          "resolved": "Skeleton"
+        },
+        {
+          "offset": 392,
+          "op": "LOAD_ATTR",
+          "arg": 10,
+          "resolved": "Skeleton"
+        },
+        {
+          "offset": 476,
+          "op": "LOAD_ATTR",
+          "arg": 16,
+          "resolved": "CreateObject"
+        },
+        {
+          "offset": 510,
+          "op": "STORE_ATTR",
+          "arg": 5,
+          "resolved": "Skeleton"
+        },
+        {
+          "offset": 522,
+          "op": "LOAD_ATTR",
+          "arg": 10,
+          "resolved": "Skeleton"
+        },
+        {
+          "offset": 598,
+          "op": "LOAD_ATTR",
+          "arg": 10,
+          "resolved": "Skeleton"
+        },
+        {
+          "offset": 618,
+          "op": "STORE_ATTR",
+          "arg": 15,
+          "resolved": "ScriptResourcePath"
+        },
+        {
+          "offset": 630,
+          "op": "LOAD_ATTR",
+          "arg": 10,
+          "resolved": "Skeleton"
+        },
+        {
+          "offset": 650,
+          "op": "STORE_ATTR",
+          "arg": 16,
+          "resolved": "GraphFile"
+        }
+      ],
+      "parsed_to_eof": true
+    },
+    {
+      "index": 17226,
+      "filename": "gclient/framework/util/MHelper.py",
+      "qualname": "BindSkeletonAndGraph",
+      "decoded_sha256": "61179f1c0859d8c40097410337147629397b65987581791e8df35ad07c417de1",
+      "names": [
+        "graph_dir",
+        "MObject",
+        "CreateObject",
+        "Skeleton",
+        "LoadSkeletonAndGraphDeferred",
+        "LoadSkeletonAndGraph",
+        "LoadSkeletonDeferred",
+        "LoadSkeleton"
+      ],
+      "relevant_instructions": [
+        {
+          "offset": 90,
+          "op": "LOAD_ATTR",
+          "arg": 4,
+          "resolved": "CreateObject"
+        },
+        {
+          "offset": 124,
+          "op": "STORE_ATTR",
+          "arg": 3,
+          "resolved": "Skeleton"
+        },
+        {
+          "offset": 152,
+          "op": "LOAD_ATTR",
+          "arg": 6,
+          "resolved": "Skeleton"
+        },
+        {
+          "offset": 222,
+          "op": "LOAD_ATTR",
+          "arg": 6,
+          "resolved": "Skeleton"
+        },
+        {
+          "offset": 322,
+          "op": "LOAD_ATTR",
+          "arg": 4,
+          "resolved": "CreateObject"
+        },
+        {
+          "offset": 356,
+          "op": "STORE_ATTR",
+          "arg": 3,
+          "resolved": "Skeleton"
+        },
+        {
+          "offset": 384,
+          "op": "LOAD_ATTR",
+          "arg": 6,
+          "resolved": "Skeleton"
+        },
+        {
+          "offset": 454,
+          "op": "LOAD_ATTR",
+          "arg": 6,
+          "resolved": "Skeleton"
+        }
+      ],
+      "parsed_to_eof": true
+    },
+    {
+      "index": 68957,
+      "filename": "gclient/framework/models/simple_model.py",
+      "qualname": "SimpleModel.Load",
+      "decoded_sha256": "6e6adda8eba6dfe1153301a517282472be152fe16ed16cdfc9c61bd79499f92c",
+      "names": [
+        "super",
+        "SimpleModel",
+        "Load",
+        "model",
+        "DestroyCppModel",
+        "AddLoadTask",
+        "_GetAvailableModelInfo",
+        "model_id",
+        "get",
+        "cconst",
+        "EnableDLCCheck",
+        "genv",
+        "dlc_manager",
+        "CheckDlcExists",
+        "sys",
+        "excepthook",
+        "exc_info",
+        "is_low_quality",
+        "resource_names",
+        "pop",
+        "load_for_warmingup",
+        "force_no_graph",
+        "MHelper",
+        "CreateModel",
+        "GetMotionSkeletonFile",
+        "disablemip",
+        "try_use_cache",
+        "is_animated",
+        "load_resource_extend",
+        "is_in_hall",
+        "gpl",
+        "performance_level",
+        "MarkPrincipleRole",
+        "_modelIsValid",
+        "SetExpireCallback",
+        "ModelExpireCallback",
+        "hidden_reason",
+        "_SetVisible",
+        "skeleton_effect_hidden_reasons",
+        "SetSkeletonEffectVisible",
+        "owner",
+        "instance",
+        "base_graph_id",
+        "born_position",
+        "Transform",
+        "MType",
+        "Vector3",
+        "translation",
+        "born_yaw",
+        "yaw",
+        "Skeleton",
+        "_skeletonIsValid",
+        "__class__",
+        "__name__",
+        "BindEventSignalNotify",
+        "PlayUnitModelEffects"
+      ],
+      "relevant_instructions": [
+        {
+          "offset": 46,
+          "op": "LOAD_ATTR",
+          "arg": 6,
+          "resolved": "model"
+        },
+        {
+          "offset": 188,
+          "op": "STORE_ATTR",
+          "arg": 7,
+          "resolved": "model_id"
+        },
+        {
+          "offset": 572,
+          "op": "STORE_ATTR",
+          "arg": 18,
+          "resolved": "resource_names"
+        },
+        {
+          "offset": 1128,
+          "op": "STORE_ATTR",
+          "arg": 3,
+          "resolved": "model"
+        },
+        {
+          "offset": 1260,
+          "op": "STORE_ATTR",
+          "arg": 33,
+          "resolved": "_modelIsValid"
+        },
+        {
+          "offset": 1272,
+          "op": "LOAD_ATTR",
+          "arg": 6,
+          "resolved": "model"
+        },
+        {
+          "offset": 1486,
+          "op": "LOAD_ATTR",
+          "arg": 80,
+          "resolved": "owner"
+        },
+        {
+          "offset": 1508,
+          "op": "LOAD_ATTR",
+          "arg": 6,
+          "resolved": "model"
+        },
+        {
+          "offset": 1528,
+          "op": "STORE_ATTR",
+          "arg": 40,
+          "resolved": "owner"
+        },
+        {
+          "offset": 1542,
+          "op": "LOAD_ATTR",
+          "arg": 6,
+          "resolved": "model"
+        },
+        {
+          "offset": 1562,
+          "op": "STORE_ATTR",
+          "arg": 41,
+          "resolved": "instance"
+        },
+        {
+          "offset": 1592,
+          "op": "STORE_ATTR",
+          "arg": 42,
+          "resolved": "base_graph_id"
+        },
+        {
+          "offset": 1608,
+          "op": "STORE_ATTR",
+          "arg": 42,
+          "resolved": "base_graph_id"
+        },
+        {
+          "offset": 1656,
+          "op": "LOAD_ATTR",
+          "arg": 6,
+          "resolved": "model"
+        },
+        {
+          "offset": 1758,
+          "op": "STORE_ATTR",
+          "arg": 47,
+          "resolved": "translation"
+        },
+        {
+          "offset": 1792,
+          "op": "STORE_ATTR",
+          "arg": 49,
+          "resolved": "yaw"
+        },
+        {
+          "offset": 1806,
+          "op": "LOAD_ATTR",
+          "arg": 6,
+          "resolved": "model"
+        },
+        {
+          "offset": 1826,
+          "op": "STORE_ATTR",
+          "arg": 44,
+          "resolved": "Transform"
+        },
+        {
+          "offset": 1838,
+          "op": "LOAD_ATTR",
+          "arg": 6,
+          "resolved": "model"
+        },
+        {
+          "offset": 1858,
+          "op": "LOAD_ATTR",
+          "arg": 100,
+          "resolved": "Skeleton"
+        },
+        {
+          "offset": 1900,
+          "op": "STORE_ATTR",
+          "arg": 51,
+          "resolved": "_skeletonIsValid"
+        }
+      ],
+      "parsed_to_eof": true
+    },
+    {
+      "index": 122267,
+      "filename": "gclient/framework/models/base_model.py",
+      "qualname": "BaseModel.__init__",
+      "decoded_sha256": "fa89d954bac2e48a5c53b09fc06e6f46c91d04e067221f59836ade8e77b2dc08",
+      "names": [
+        "owner",
+        "_is_destroyed",
+        "set",
+        "load_tasks",
+        "load_done",
+        "reload_done",
+        "loaded"
+      ],
+      "relevant_instructions": [
+        {
+          "offset": 4,
+          "op": "STORE_ATTR",
+          "arg": 0,
+          "resolved": "owner"
+        },
+        {
+          "offset": 18,
+          "op": "STORE_ATTR",
+          "arg": 1,
+          "resolved": "_is_destroyed"
+        },
+        {
+          "offset": 48,
+          "op": "STORE_ATTR",
+          "arg": 3,
+          "resolved": "load_tasks"
+        },
+        {
+          "offset": 62,
+          "op": "STORE_ATTR",
+          "arg": 4,
+          "resolved": "load_done"
+        },
+        {
+          "offset": 76,
+          "op": "STORE_ATTR",
+          "arg": 5,
+          "resolved": "reload_done"
+        },
+        {
+          "offset": 90,
+          "op": "STORE_ATTR",
+          "arg": 6,
+          "resolved": "loaded"
+        }
+      ],
+      "parsed_to_eof": true
+    },
+    {
+      "index": 143510,
+      "filename": "gclient/gameplay/logic_base/models/avatar_model.py",
+      "qualname": "AvatarModel.Load",
+      "decoded_sha256": "0a4a57f34d1c8e14e38c08f510f1787f46659e4b2928663cf526797eac8b0ed3",
+      "names": [
+        "super",
+        "SimpleModel",
+        "Load",
+        "model",
+        "DestroyCppModel",
+        "lower_model_ids",
+        "AddLoadTask",
+        "_GetAvailableModelInfo",
+        "model_id",
+        "AvatarModelCache",
+        "instance",
+        "Enqueue",
+        "_modelIsValid",
+        "SetExpireCallback",
+        "ModelExpireCallback",
+        "base_graph_id",
+        "owner",
+        "Skeleton",
+        "_skeletonIsValid",
+        "HideTPose",
+        "SkeletonExpireCallback",
+        "__class__",
+        "MObject",
+        "ActorComponent",
+        "BindEventSignalNotify",
+        "SetEnableBottomGraphSync",
+        "SetGraphSyncActorVariables",
+        "ACTOR_VARIABLES_NEED_SYNC",
+        "IsCombatAvatar",
+        "IsATMGuardAI",
+        "moving_platform_guid",
+        "area",
+        "position",
+        "yaw",
+        "IsPlayerCombatAvatar",
+        "is_replay_avatar",
+        "genv",
+        "messenger",
+        "Broadcast",
+        "events",
+        "ON_PLAYER_MODEL_CREATED",
+        "SetShaderGraphParameter",
+        "EnableDockingDetector",
+        "gpl",
+        "performance_level",
+        "DisableNormalMap"
+      ],
+      "relevant_instructions": [
+        {
+          "offset": 50,
+          "op": "LOAD_ATTR",
+          "arg": 6,
+          "resolved": "model"
+        },
+        {
+          "offset": 124,
+          "op": "STORE_ATTR",
+          "arg": 5,
+          "resolved": "lower_model_ids"
+        },
+        {
+          "offset": 206,
+          "op": "STORE_ATTR",
+          "arg": 8,
+          "resolved": "model_id"
+        },
+        {
+          "offset": 330,
+          "op": "STORE_ATTR",
+          "arg": 3,
+          "resolved": "model"
+        },
+        {
+          "offset": 344,
+          "op": "STORE_ATTR",
+          "arg": 12,
+          "resolved": "_modelIsValid"
+        },
+        {
+          "offset": 356,
+          "op": "LOAD_ATTR",
+          "arg": 6,
+          "resolved": "model"
+        },
+        {
+          "offset": 432,
+          "op": "STORE_ATTR",
+          "arg": 15,
+          "resolved": "base_graph_id"
+        },
+        {
+          "offset": 444,
+          "op": "LOAD_ATTR",
+          "arg": 32,
+          "resolved": "owner"
+        },
+        {
+          "offset": 466,
+          "op": "LOAD_ATTR",
+          "arg": 6,
+          "resolved": "model"
+        },
+        {
+          "offset": 486,
+          "op": "STORE_ATTR",
+          "arg": 16,
+          "resolved": "owner"
+        },
+        {
+          "offset": 498,
+          "op": "LOAD_ATTR",
+          "arg": 6,
+          "resolved": "model"
+        },
+        {
+          "offset": 518,
+          "op": "LOAD_ATTR",
+          "arg": 34,
+          "resolved": "Skeleton"
+        },
+        {
+          "offset": 560,
+          "op": "STORE_ATTR",
+          "arg": 18,
+          "resolved": "_skeletonIsValid"
+        },
+        {
+          "offset": 574,
+          "op": "STORE_ATTR",
+          "arg": 19,
+          "resolved": "HideTPose"
+        },
+        {
+          "offset": 810,
+          "op": "LOAD_ATTR",
+          "arg": 32,
+          "resolved": "owner"
+        },
+        {
+          "offset": 866,
+          "op": "LOAD_ATTR",
+          "arg": 32,
+          "resolved": "owner"
+        },
+        {
+          "offset": 922,
+          "op": "LOAD_ATTR",
+          "arg": 32,
+          "resolved": "owner"
+        },
+        {
+          "offset": 978,
+          "op": "LOAD_ATTR",
+          "arg": 32,
+          "resolved": "owner"
+        },
+        {
+          "offset": 1040,
+          "op": "STORE_ATTR",
+          "arg": 32,
+          "resolved": "position"
+        },
+        {
+          "offset": 1052,
+          "op": "LOAD_ATTR",
+          "arg": 32,
+          "resolved": "owner"
+        },
+        {
+          "offset": 1114,
+          "op": "STORE_ATTR",
+          "arg": 33,
+          "resolved": "yaw"
+        },
+        {
+          "offset": 1126,
+          "op": "LOAD_ATTR",
+          "arg": 32,
+          "resolved": "owner"
+        },
+        {
+          "offset": 1182,
+          "op": "LOAD_ATTR",
+          "arg": 32,
+          "resolved": "owner"
+        },
+        {
+          "offset": 1328,
+          "op": "LOAD_ATTR",
+          "arg": 32,
+          "resolved": "owner"
+        }
+      ],
+      "parsed_to_eof": true
+    },
+    {
+      "index": 143510,
+      "filename": "gclient/gameplay/logic_base/models/avatar_model.py",
+      "qualname": "AvatarModel.ReloadSkeleton",
+      "decoded_sha256": "0a4a57f34d1c8e14e38c08f510f1787f46659e4b2928663cf526797eac8b0ed3",
+      "names": [
+        "_skeletonIsValid",
+        "model",
+        "Skeleton",
+        "SetExpireCallback",
+        "CheckRecreateSkeletonOnReloaded",
+        "HideTPose",
+        "SkeletonExpireCallback",
+        "__class__",
+        "MObject",
+        "ActorComponent",
+        "force_no_graph",
+        "BindEventSignalNotify"
+      ],
+      "relevant_instructions": [
+        {
+          "offset": 6,
+          "op": "STORE_ATTR",
+          "arg": 0,
+          "resolved": "_skeletonIsValid"
+        },
+        {
+          "offset": 18,
+          "op": "LOAD_ATTR",
+          "arg": 2,
+          "resolved": "model"
+        },
+        {
+          "offset": 38,
+          "op": "LOAD_ATTR",
+          "arg": 4,
+          "resolved": "Skeleton"
+        },
+        {
+          "offset": 126,
+          "op": "LOAD_ATTR",
+          "arg": 2,
+          "resolved": "model"
+        },
+        {
+          "offset": 146,
+          "op": "LOAD_ATTR",
+          "arg": 4,
+          "resolved": "Skeleton"
+        },
+        {
+          "offset": 188,
+          "op": "STORE_ATTR",
+          "arg": 0,
+          "resolved": "_skeletonIsValid"
+        },
+        {
+          "offset": 202,
+          "op": "STORE_ATTR",
+          "arg": 5,
+          "resolved": "HideTPose"
+        }
+      ],
+      "parsed_to_eof": true
+    }
+  ]
+}

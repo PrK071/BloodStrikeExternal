@@ -1,0 +1,1179 @@
+{
+  "entries_scanned": 9705,
+  "source_index_sha256": "bb3782da03b95d66451a598add8fe0923405be0dde53a8844b2f8bc107a6ced3",
+  "terms": [
+    "AvatarModel",
+    "PlayerAvatarModel",
+    "NativeEntity",
+    "UserData",
+    "owner"
+  ],
+  "positive_streams": [
+    {
+      "index": 3974,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_seven_sins/combat_avatar_moba_seven_sins.py"
+      ],
+      "decoded_sha256": "1732851541aa6aab1796895f7ec22db8d16945ec19f96e1d0ae5b422d0ff67d1",
+      "hits": {
+        "AvatarModel": 9,
+        "PlayerAvatarModel": 1,
+        "owner": 1
+      },
+      "bytes": 12856
+    },
+    {
+      "index": 4522,
+      "filename_candidates": [
+        "gclient/gameplay/logic_rookieguide_new/rookieguide_robot_avatar_model.py"
+      ],
+      "decoded_sha256": "0a728d3368281594bdf5593ec7bc03391eeddfab1d4dbdc577b07676638182be",
+      "hits": {
+        "AvatarModel": 6,
+        "owner": 1
+      },
+      "bytes": 1935
+    },
+    {
+      "index": 5741,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_zombie/models/moba_zombie_avatar_model.py"
+      ],
+      "decoded_sha256": "50a1aa5aa3f5cc85ef7da4a8fbc6100de98ca005e40d2bc5317991542f6fd111",
+      "hits": {
+        "AvatarModel": 28,
+        "PlayerAvatarModel": 10,
+        "owner": 1
+      },
+      "bytes": 12543
+    },
+    {
+      "index": 8332,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_halloween/models/halloween_avatar_model.py"
+      ],
+      "decoded_sha256": "3e497e4ab7df52465cf1675037309b6b611ee6fdfac2ae9f2bafb6ab25121092",
+      "hits": {
+        "AvatarModel": 11,
+        "PlayerAvatarModel": 6,
+        "owner": 1
+      },
+      "bytes": 7523
+    },
+    {
+      "index": 9715,
+      "filename_candidates": [
+        "gclient/gameplay/logic_snipe/combat_avatar_snipe.py"
+      ],
+      "decoded_sha256": "943fbc9131603f1bb59e2dfc6a8daa094c3c8cb5b413feabc4b08518cde8ee59",
+      "hits": {
+        "AvatarModel": 5,
+        "PlayerAvatarModel": 1
+      },
+      "bytes": 4624
+    },
+    {
+      "index": 10842,
+      "filename_candidates": [
+        "gclient/gameplay/logic_arms_race_mode/combat_avatar_arms_race_mode.py"
+      ],
+      "decoded_sha256": "a7155c97c7ee97ad8dd411d6fc7093564a6d1c9fffd4c35192395b776ddfbc8e",
+      "hits": {
+        "AvatarModel": 5,
+        "PlayerAvatarModel": 1,
+        "owner": 1
+      },
+      "bytes": 8450
+    },
+    {
+      "index": 11297,
+      "filename_candidates": [
+        "gclient/util/cinematics/performer.py"
+      ],
+      "decoded_sha256": "d70a77b8b54fb5cb461ede8f562f8b28fb22ef12fc5aa23a3166f48b534f17aa",
+      "hits": {
+        "AvatarModel": 7,
+        "owner": 2
+      },
+      "bytes": 36048
+    },
+    {
+      "index": 13069,
+      "filename_candidates": [
+        "gclient/gameplay/logic_dmz/models/dmz_avatar_model.py"
+      ],
+      "decoded_sha256": "9704900b80d7e2be9094f0f1c8d2d530af1593cd900de4bfa44cfdea393236ae",
+      "hits": {
+        "AvatarModel": 2,
+        "PlayerAvatarModel": 2
+      },
+      "bytes": 749
+    },
+    {
+      "index": 19073,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_titan_2/avatarmember/cimp_transform.py"
+      ],
+      "decoded_sha256": "4092c3dcdc427fe98f8a576c69bbb16d6de8ea9b6b5ee8108c1f18a257275abc",
+      "hits": {
+        "AvatarModel": 60,
+        "PlayerAvatarModel": 19,
+        "owner": 2
+      },
+      "bytes": 205093
+    },
+    {
+      "index": 19291,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/models/hero_skin_cue_component.py"
+      ],
+      "decoded_sha256": "ea89e8c8a81523d2e3fbe51ac83062ca0860258690367b2442ecce1a5624ff3d",
+      "hits": {
+        "AvatarModel": 2,
+        "PlayerAvatarModel": 1,
+        "owner": 1
+      },
+      "bytes": 1946
+    },
+    {
+      "index": 21485,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/comps/comp_fly.py"
+      ],
+      "decoded_sha256": "4cb8185d8af0689fcfc225a89918d80790cf8a0b411214d89e07812144d419d4",
+      "hits": {
+        "AvatarModel": 8,
+        "PlayerAvatarModel": 4,
+        "owner": 1
+      },
+      "bytes": 9468
+    },
+    {
+      "index": 25433,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/comps/comp_climb_wall.py"
+      ],
+      "decoded_sha256": "940c5fa053dc4b9ed4c74044f5f32e8be8735233af9399e719640a1b672d0bf0",
+      "hits": {
+        "AvatarModel": 21,
+        "PlayerAvatarModel": 21,
+        "owner": 1
+      },
+      "bytes": 22041
+    },
+    {
+      "index": 28430,
+      "filename_candidates": [
+        "gclient/gamesystem/uihall/activity/activity_alcatraz_rank_window.py"
+      ],
+      "decoded_sha256": "29c125841abe29ee4d82bcdb4415d0a3e1e3163880f282aeefac99842a212e90",
+      "hits": {
+        "AvatarModel": 1
+      },
+      "bytes": 38279
+    },
+    {
+      "index": 29779,
+      "filename_candidates": [
+        "gclient/framework/entities/space.py"
+      ],
+      "decoded_sha256": "0965992fef0dd6c69f1c4e17bd4d0c7152a2a43d8a6a631aef9b42291a06400e",
+      "hits": {
+        "AvatarModel": 3,
+        "owner": 3
+      },
+      "bytes": 141865
+    },
+    {
+      "index": 30121,
+      "filename_candidates": [
+        "gclient/util/CinematicsBase.py"
+      ],
+      "decoded_sha256": "8c5d4610528f31987f3db08ef89bb4734815ec3041edf41905ad8734eccbd64f",
+      "hits": {
+        "UserData": 1
+      },
+      "bytes": 47188
+    },
+    {
+      "index": 30414,
+      "filename_candidates": [
+        "gclient/gamesystem/entities/avatarmembers/cimp_rank.py"
+      ],
+      "decoded_sha256": "63dd8b02848fcb5bb618a556a124fd42bc9f233e982c88d657771d3c67d72a8a",
+      "hits": {
+        "AvatarModel": 2
+      },
+      "bytes": 14187
+    },
+    {
+      "index": 30485,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba/combat_avatar_moba.py"
+      ],
+      "decoded_sha256": "90277f10f9983fb0d8ec91bb0372a8233f9b751fb5f2757458da07e49b6b15e2",
+      "hits": {
+        "AvatarModel": 8,
+        "PlayerAvatarModel": 1
+      },
+      "bytes": 66933
+    },
+    {
+      "index": 30908,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_debug.py"
+      ],
+      "decoded_sha256": "6e25798034bf5ed1fd8a819b26cbfb9a5f4311120492b77cac7de6c5e24e78db",
+      "hits": {
+        "AvatarModel": 3,
+        "PlayerAvatarModel": 3,
+        "owner": 1
+      },
+      "bytes": 6082
+    },
+    {
+      "index": 31862,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/models/avatar_model_cache.py"
+      ],
+      "decoded_sha256": "a45368fbf798d961f44ac4b2369d4496b39fc24c79cf0d42c1d12272ddce36b3",
+      "hits": {
+        "AvatarModel": 5,
+        "owner": 1
+      },
+      "bytes": 5218
+    },
+    {
+      "index": 32994,
+      "filename_candidates": [
+        "gclient/gameplay/logic_nowhere/combat_avatar_nowhere.py"
+      ],
+      "decoded_sha256": "6caeb3856119314cd4c98ae222e7f6c28498b07ebbf057c13509f5213e5ae17f",
+      "hits": {
+        "AvatarModel": 7,
+        "PlayerAvatarModel": 2
+      },
+      "bytes": 4877
+    },
+    {
+      "index": 39185,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba/models/moba_avatar_model.py"
+      ],
+      "decoded_sha256": "39f2cb60d5698adda489b8d16ab275a8d479c44ec75ead2a11c52cc2372aea4f",
+      "hits": {
+        "AvatarModel": 25,
+        "PlayerAvatarModel": 15,
+        "owner": 1
+      },
+      "bytes": 12378
+    },
+    {
+      "index": 41009,
+      "filename_candidates": [
+        "gclient/gameplay/logic_overload/combat_avatar_overload.py"
+      ],
+      "decoded_sha256": "306d6bdaeb37e5585050c834d760436b83fc8c548e6473c3dc5a1b5da9ba1134",
+      "hits": {
+        "AvatarModel": 7,
+        "PlayerAvatarModel": 1
+      },
+      "bytes": 14787
+    },
+    {
+      "index": 41114,
+      "filename_candidates": [
+        "gclient/gamesystem/uihall/uirank/hall_peak_rank_lbs_comp.py"
+      ],
+      "decoded_sha256": "f26490ca75f91fd3636f3b084d599dad632052497a245c56dc661f0a1ff16a66",
+      "hits": {
+        "AvatarModel": 3
+      },
+      "bytes": 29051
+    },
+    {
+      "index": 41309,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_titan_2/models/avatar_model_moba_titan_2.py"
+      ],
+      "decoded_sha256": "c38af31b3588b2dc064d0ab36dc4417bcba026b464f13e3a51a18555d1514754",
+      "hits": {
+        "AvatarModel": 46,
+        "PlayerAvatarModel": 4,
+        "owner": 1
+      },
+      "bytes": 22101
+    },
+    {
+      "index": 42241,
+      "filename_candidates": [
+        "gclient/gameplay/logic_peekaboo/combat_avatar_peekaboo.py"
+      ],
+      "decoded_sha256": "b46b0fc20bb345ff1cd5ffac082b4666962cea5f634b0f01120218c2b7a49414",
+      "hits": {
+        "AvatarModel": 5,
+        "PlayerAvatarModel": 1,
+        "owner": 2
+      },
+      "bytes": 28280
+    },
+    {
+      "index": 42830,
+      "filename_candidates": [
+        "gclient/gameplay/logic_big_head/combat_avatar_bighead.py"
+      ],
+      "decoded_sha256": "a161a24041e4d8a93f87c0496a82aadd55cd74c48f8511ab2ea6bbabb216e400",
+      "hits": {
+        "AvatarModel": 7,
+        "PlayerAvatarModel": 1,
+        "owner": 2
+      },
+      "bytes": 24237
+    },
+    {
+      "index": 46976,
+      "filename_candidates": [
+        "gclient/gamesystem/uihall/gunupgrade/hall_hand_doll.py"
+      ],
+      "decoded_sha256": "caef9898378e7abf4d7f71644a31358f0f8b19f0cf25b9bba68d858f48aa5051",
+      "hits": {
+        "AvatarModel": 3
+      },
+      "bytes": 35388
+    },
+    {
+      "index": 47190,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/comps/comp_emote.py"
+      ],
+      "decoded_sha256": "a99c33881b8baab8886fd6d3e4675c857a1c3e78351043f21da4604b635f2aa6",
+      "hits": {
+        "AvatarModel": 22,
+        "PlayerAvatarModel": 5,
+        "owner": 1
+      },
+      "bytes": 17876
+    },
+    {
+      "index": 47505,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_halloween/combat_avatar_moba_halloween.py"
+      ],
+      "decoded_sha256": "8e06611dd5ccaf1293d170864e4a0703ef489a150097a39b5520ab0fb242d237",
+      "hits": {
+        "AvatarModel": 5,
+        "PlayerAvatarModel": 1
+      },
+      "bytes": 21710
+    },
+    {
+      "index": 50384,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_ultra_mega/models/avatar_model_moba_ultra_mega.py"
+      ],
+      "decoded_sha256": "4d87112f2907bd1a7b9bcb71ad800ff97fe5062dc60eaa5530eadf7f243213b0",
+      "hits": {
+        "AvatarModel": 17,
+        "PlayerAvatarModel": 14,
+        "owner": 1
+      },
+      "bytes": 6563
+    },
+    {
+      "index": 54237,
+      "filename_candidates": [
+        "gclient/gameplay/logic_blasting/combat_avatar_blasting.py"
+      ],
+      "decoded_sha256": "1c9d78ca425f571689048d7d1102f1f503d52d62dfe5ad790e388943d495f8d8",
+      "hits": {
+        "AvatarModel": 5,
+        "PlayerAvatarModel": 1,
+        "owner": 1
+      },
+      "bytes": 51048
+    },
+    {
+      "index": 54549,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_char_model.py"
+      ],
+      "decoded_sha256": "7169a739f1c8a54b58402607dbb918a11497eb77b5cd0b7867ae64705e5fa8e9",
+      "hits": {
+        "AvatarModel": 1,
+        "PlayerAvatarModel": 1
+      },
+      "bytes": 4482
+    },
+    {
+      "index": 55373,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_zombie/combat_avatar_moba_zombie.py"
+      ],
+      "decoded_sha256": "04bea55a5b1286e1ddbfd5a8623457fe0b83b80628e6f9b3413f9da8e41f55b7",
+      "hits": {
+        "AvatarModel": 8,
+        "PlayerAvatarModel": 1,
+        "owner": 2
+      },
+      "bytes": 31169
+    },
+    {
+      "index": 57482,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_lockdown/combat_avatar_lock_down.py"
+      ],
+      "decoded_sha256": "abdc2a147fc5bb7ee0bd00ff1fd6cfe52a0fa6213f943eb6e4728c336d579a65",
+      "hits": {
+        "AvatarModel": 7,
+        "PlayerAvatarModel": 1,
+        "owner": 1
+      },
+      "bytes": 11986
+    },
+    {
+      "index": 61251,
+      "filename_candidates": [
+        "gclient/gameplay/logic_shootingrange/combat_avatar_shootingrange.py"
+      ],
+      "decoded_sha256": "5b365a827b487318c6848bc443ebd451f3df0f91bdbdb52b2aae0c57bf838b93",
+      "hits": {
+        "AvatarModel": 3
+      },
+      "bytes": 25684
+    },
+    {
+      "index": 61925,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_model.py"
+      ],
+      "decoded_sha256": "04bde99e6e2715d32cacce94496d4aba3f89919aae650d513a5468da1e790f4c",
+      "hits": {
+        "AvatarModel": 5,
+        "PlayerAvatarModel": 1,
+        "owner": 6
+      },
+      "bytes": 68455
+    },
+    {
+      "index": 65147,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/robot_combat_avatar.py"
+      ],
+      "decoded_sha256": "94a653c8909c7dfda197a2a59971467c8aace43df45b7fb5c01f9dc15ecc18ab",
+      "hits": {
+        "AvatarModel": 4,
+        "owner": 5
+      },
+      "bytes": 73380
+    },
+    {
+      "index": 66387,
+      "filename_candidates": [],
+      "decoded_sha256": "5fa00cc9cf93a0beeecec7b7227e1cccf57751c71e1808be8c793190295790ed",
+      "hits": {
+        "UserData": 5,
+        "owner": 3
+      },
+      "bytes": 83646
+    },
+    {
+      "index": 70535,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/cmonster.py"
+      ],
+      "decoded_sha256": "4b70b637ca4fdc22a79b5ccb27521fcd9cda6796b5190bbaa874e80b1c480053",
+      "hits": {
+        "AvatarModel": 5,
+        "owner": 1
+      },
+      "bytes": 31760
+    },
+    {
+      "index": 70547,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/comps/comp_meow_dance.py"
+      ],
+      "decoded_sha256": "8ffd305f7907fcb5ea7ce14266221c05150145f3580f0bbf859ea600a42dc962",
+      "hits": {
+        "AvatarModel": 8,
+        "PlayerAvatarModel": 3,
+        "owner": 1
+      },
+      "bytes": 12509
+    },
+    {
+      "index": 75327,
+      "filename_candidates": [
+        "gclient/gameplay/logic_grand_theft/combat_avatar_grand_theft.py"
+      ],
+      "decoded_sha256": "67cd17216d76718e2fc3f272373a03295428dcf3c4e18cbeca3324a5c00709c9",
+      "hits": {
+        "AvatarModel": 7,
+        "PlayerAvatarModel": 1,
+        "owner": 1
+      },
+      "bytes": 16073
+    },
+    {
+      "index": 78022,
+      "filename_candidates": [
+        "gclient/gameplay/logic_overload/models/over_load_avatar_model.py"
+      ],
+      "decoded_sha256": "bfb2486a01da64adb056feadec5af55eb42180441583303fed1172314e9519b5",
+      "hits": {
+        "AvatarModel": 8,
+        "PlayerAvatarModel": 3,
+        "owner": 1
+      },
+      "bytes": 4272
+    },
+    {
+      "index": 78192,
+      "filename_candidates": [
+        "gclient/gameplay/logic_placement/combat_avatar_placement.py"
+      ],
+      "decoded_sha256": "d2eaffaa383635bdf4647a5d004fc6877ffb4715b5c90771dcac5bec0c023974",
+      "hits": {
+        "AvatarModel": 2,
+        "PlayerAvatarModel": 1
+      },
+      "bytes": 3636
+    },
+    {
+      "index": 78274,
+      "filename_candidates": [
+        "gclient/gameplay/logic_squad_fight/combat_avatar_squad_fight.py"
+      ],
+      "decoded_sha256": "b9fdd4a7712f27fbc349da5a218ba2001c22511cc252ddb0d9e882e9a823f87e",
+      "hits": {
+        "AvatarModel": 9,
+        "PlayerAvatarModel": 1,
+        "owner": 2
+      },
+      "bytes": 46731
+    },
+    {
+      "index": 78291,
+      "filename_candidates": [
+        "gclient/util/debug_opacity/debug_ui_opacity.py"
+      ],
+      "decoded_sha256": "050815e7985628b961fcf24ac9d651397ebb785fe8058705387f7644c5b93582",
+      "hits": {
+        "UserData": 1
+      },
+      "bytes": 8655
+    },
+    {
+      "index": 78838,
+      "filename_candidates": [
+        "gclient/gameplay/uicomponents/hud_topright_comp.py"
+      ],
+      "decoded_sha256": "8114d0358771347b3f69262e2ea77f2887d6d8f3d227b4d39fe4a61f24a3edd5",
+      "hits": {
+        "AvatarModel": 2,
+        "owner": 5
+      },
+      "bytes": 108187
+    },
+    {
+      "index": 79616,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/comps/comp_ladder.py"
+      ],
+      "decoded_sha256": "53c060ee7ef7415f34e33ba24e00601fa3c552ba6b03a73e9b8ab4bd780d52c3",
+      "hits": {
+        "AvatarModel": 29,
+        "PlayerAvatarModel": 29,
+        "owner": 1
+      },
+      "bytes": 23200
+    },
+    {
+      "index": 80873,
+      "filename_candidates": [
+        "gclient/gameplay/logic_dmz/combat_avatar_dmz.py"
+      ],
+      "decoded_sha256": "8ec3d3d3d3abb7b75ce13511cb3d17b39a31161be4a4907977c4c553c7c14413",
+      "hits": {
+        "AvatarModel": 3,
+        "PlayerAvatarModel": 1,
+        "owner": 2
+      },
+      "bytes": 72503
+    },
+    {
+      "index": 83049,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/models/avatar_model_cue.py"
+      ],
+      "decoded_sha256": "7514c9148daa07495008a8fdab649f3f0f81fa2d1fc7c054e7fc1b1e216111e2",
+      "hits": {
+        "AvatarModel": 129,
+        "PlayerAvatarModel": 90,
+        "owner": 1
+      },
+      "bytes": 104031
+    },
+    {
+      "index": 83324,
+      "filename_candidates": [
+        "gclient/gameplay/logic_rivals/combat_avatar_rivals.py"
+      ],
+      "decoded_sha256": "a8eee9ebc0f3c66379f372f1068ef6fd61fc52a68b0aa97aff9dfe9d02626aba",
+      "hits": {
+        "AvatarModel": 9,
+        "PlayerAvatarModel": 3,
+        "owner": 1
+      },
+      "bytes": 25345
+    },
+    {
+      "index": 85710,
+      "filename_candidates": [
+        "gclient/gameplay/logic_shootingrange/shootingrange_robot_model.py"
+      ],
+      "decoded_sha256": "1202baab36bca6f8e8a7942f23e30cf2e89bed3e8af248b2f3a6cb871e1b05ef",
+      "hits": {
+        "AvatarModel": 12,
+        "owner": 2
+      },
+      "bytes": 7117
+    },
+    {
+      "index": 90880,
+      "filename_candidates": [
+        "gclient/framework/ui/widgets/ui_window.py"
+      ],
+      "decoded_sha256": "8e2daa6415fc64209c4c6606059562f74ac39da1e297096c221b8170730d2420",
+      "hits": {
+        "UserData": 1
+      },
+      "bytes": 35072
+    },
+    {
+      "index": 91444,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/models/als_avatar_model.py"
+      ],
+      "decoded_sha256": "0d06919d120943865edc49dbd9ff6e3b1ca5230d99f6cf2a2a9a7341bd8d9bba",
+      "hits": {
+        "AvatarModel": 23,
+        "PlayerAvatarModel": 19,
+        "owner": 1
+      },
+      "bytes": 13843
+    },
+    {
+      "index": 92233,
+      "filename_candidates": [
+        "gclient/entitylist.py"
+      ],
+      "decoded_sha256": "de1fd179b6a3848f6313dbb401a283bd54aa6decf5adde1bc5ade810d7fe69ec",
+      "hits": {
+        "AvatarModel": 1
+      },
+      "bytes": 27027
+    },
+    {
+      "index": 94048,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_space.py"
+      ],
+      "decoded_sha256": "43f2c0b7b45e52378b45920f44473b28d6b7219dbb64f1e7ab0c83ad0256fcae",
+      "hits": {
+        "AvatarModel": 1
+      },
+      "bytes": 4063
+    },
+    {
+      "index": 95834,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_lockdown/models/lock_down_avatar_model.py"
+      ],
+      "decoded_sha256": "7c8ffc9fbab1ffb23f34e3959103806a4a5d120d45d2eea9a4af7cb65b5b1584",
+      "hits": {
+        "AvatarModel": 6,
+        "PlayerAvatarModel": 2,
+        "owner": 1
+      },
+      "bytes": 4706
+    },
+    {
+      "index": 99175,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_ultra_mega/avatarmember/cimp_transform.py"
+      ],
+      "decoded_sha256": "17b6f33f04d0a738c3fb5d17c89b60fd7e4428212c9a6f1033d1480bed116878",
+      "hits": {
+        "AvatarModel": 22,
+        "PlayerAvatarModel": 14,
+        "owner": 1
+      },
+      "bytes": 66948
+    },
+    {
+      "index": 100546,
+      "filename_candidates": [
+        "gclient/util/debug_opacity/debug_stat_node_write_file.py"
+      ],
+      "decoded_sha256": "3f28f7e107ceed3d816859b4bf91b2f24cd801a168eb553794fa5775069a0b7f",
+      "hits": {
+        "UserData": 1
+      },
+      "bytes": 6156
+    },
+    {
+      "index": 103456,
+      "filename_candidates": [
+        "gclient/gameplay/util/warmingup_util.py"
+      ],
+      "decoded_sha256": "68f5c83014e2973740fd4d1d089e40c311f4e6c500d1475df70856efae436e12",
+      "hits": {
+        "AvatarModel": 1
+      },
+      "bytes": 3039
+    },
+    {
+      "index": 104487,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba/models/moba_robot_avatar_model.py"
+      ],
+      "decoded_sha256": "3ba811aa116e1a50359ade5715330ff6439823d3a5ede464d231ae1bbb6a0d75",
+      "hits": {
+        "AvatarModel": 7
+      },
+      "bytes": 1739
+    },
+    {
+      "index": 104525,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/models/robot_avatar_model.py"
+      ],
+      "decoded_sha256": "5a33fe7d60ac98cd66f77882b219cd6852a9596c029b0626b3287e2a32374c37",
+      "hits": {
+        "AvatarModel": 93,
+        "owner": 2
+      },
+      "bytes": 46767
+    },
+    {
+      "index": 104677,
+      "filename_candidates": [
+        "gclient/gameplay/logic_grand_theft/models/grand_theft_avatar_model.py"
+      ],
+      "decoded_sha256": "41b06cce594bc09f632c6a2405e2689045044ead6b84df224183026eddfb7c4a",
+      "hits": {
+        "AvatarModel": 9,
+        "PlayerAvatarModel": 3,
+        "owner": 1
+      },
+      "bytes": 5388
+    },
+    {
+      "index": 105910,
+      "filename_candidates": [
+        "gclient/framework/commoncomps/model_char_component.py"
+      ],
+      "decoded_sha256": "96e2a4dc0575b694c5a392619e526a500959501eccf5f2e790d3a36e61cbd66e",
+      "hits": {
+        "AvatarModel": 3,
+        "PlayerAvatarModel": 3,
+        "owner": 1
+      },
+      "bytes": 6479
+    },
+    {
+      "index": 106784,
+      "filename_candidates": [
+        "gclient/gamesystem/uihall/uimall/gacha_model_comp.py"
+      ],
+      "decoded_sha256": "776b43a686a0039be6bcda89ecdec81f6019a9e14317f2073b7cd40324f2c6d7",
+      "hits": {
+        "AvatarModel": 4,
+        "owner": 1
+      },
+      "bytes": 242837
+    },
+    {
+      "index": 106785,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/comps/comp_spike_transfer.py"
+      ],
+      "decoded_sha256": "83a8683079cbc7d48f970a5e0bdfe5b465777173594ffddaa2a10d70d3191222",
+      "hits": {
+        "AvatarModel": 8,
+        "PlayerAvatarModel": 4,
+        "owner": 1
+      },
+      "bytes": 4239
+    },
+    {
+      "index": 107175,
+      "filename_candidates": [
+        "gclient/gameplay/logic_rookieguide/rookieguide_robot_avatar_model.py"
+      ],
+      "decoded_sha256": "66fefdd4b97f8069e0a7f13e89c7dbc07718e8102f7f39acc26266edb9b280af",
+      "hits": {
+        "AvatarModel": 6,
+        "owner": 1
+      },
+      "bytes": 1931
+    },
+    {
+      "index": 108986,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/comps/comp_thruster_pack.py"
+      ],
+      "decoded_sha256": "39f75ad9b1c2f6f0ff5757b507fad46018826bf7463f12dac3f0d62d26375395",
+      "hits": {
+        "AvatarModel": 6,
+        "PlayerAvatarModel": 3,
+        "owner": 1
+      },
+      "bytes": 62629
+    },
+    {
+      "index": 110296,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_seven_sins/models/seven_sins_avatar_model.py"
+      ],
+      "decoded_sha256": "2c71b2c377b88aacbed819c1a885bb61b45fa6901f86016d5aec66fe1baa1b8a",
+      "hits": {
+        "AvatarModel": 9,
+        "PlayerAvatarModel": 2,
+        "owner": 1
+      },
+      "bytes": 28190
+    },
+    {
+      "index": 113000,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/comps/comp_dancing_cure.py"
+      ],
+      "decoded_sha256": "448f4e89bef3504084f2a54a1adda5a699733abff509683106617ce9dee4701d",
+      "hits": {
+        "AvatarModel": 8,
+        "PlayerAvatarModel": 4,
+        "owner": 1
+      },
+      "bytes": 3247
+    },
+    {
+      "index": 113733,
+      "filename_candidates": [
+        "gclient/gameplay/logic_rookieguide/combat_avatar_rookieguide.py"
+      ],
+      "decoded_sha256": "164d5c8d8039e25e58903f20400db9825b0b31a259c1361218b74b2e5e041a42",
+      "hits": {
+        "AvatarModel": 3
+      },
+      "bytes": 12571
+    },
+    {
+      "index": 113975,
+      "filename_candidates": [
+        "gclient/gameplay/logic_big_head/models/big_head_avatar_model.py"
+      ],
+      "decoded_sha256": "51c14d0dbc6fe129e194483110cab25282c74a938eac93055717315dd6048633",
+      "hits": {
+        "AvatarModel": 12,
+        "PlayerAvatarModel": 4,
+        "owner": 1
+      },
+      "bytes": 8924
+    },
+    {
+      "index": 116215,
+      "filename_candidates": [
+        "gclient/gamesystem/uihall/activity/grand_theft/rank_window.py"
+      ],
+      "decoded_sha256": "34451c2576ef8e4826503dd5484a98cc51111f44d4f739b7429bb82a13ba089f",
+      "hits": {
+        "AvatarModel": 1
+      },
+      "bytes": 31440
+    },
+    {
+      "index": 117722,
+      "filename_candidates": [
+        "gclient/gamesystem/uiwarehouse/warehouse_skin_window_base.py"
+      ],
+      "decoded_sha256": "ba6a6d9cb0af9a218444f68bf56303600d5f732bf8a98e25c9c9fb69b96ab8f2",
+      "hits": {
+        "AvatarModel": 2
+      },
+      "bytes": 18886
+    },
+    {
+      "index": 117948,
+      "filename_candidates": [
+        "gclient/gameplay/logic_gun_fight/combat_avatar_gun_fight.py"
+      ],
+      "decoded_sha256": "d7827751f366634eb6e1b5dd4f86943ce588fb25bd4474d02dca81a5eaf53e08",
+      "hits": {
+        "AvatarModel": 5,
+        "PlayerAvatarModel": 1
+      },
+      "bytes": 23978
+    },
+    {
+      "index": 118204,
+      "filename_candidates": [
+        "gclient/gameplay/logic_nowhere/models/nowhere_avatar_model.py"
+      ],
+      "decoded_sha256": "06ffcc858cb036aad30380ca1e9789bad9ac3b49a5cc4cef34562f0426d224b9",
+      "hits": {
+        "AvatarModel": 5,
+        "PlayerAvatarModel": 3
+      },
+      "bytes": 1364
+    },
+    {
+      "index": 120305,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_lightning/models/lightning_slipper_hit_model.py"
+      ],
+      "decoded_sha256": "0eded7d322ab14f6fd77b8870f30ff3db66541295815b7ea1dfac1da3f8f4be4",
+      "hits": {
+        "AvatarModel": 9,
+        "owner": 2
+      },
+      "bytes": 7162
+    },
+    {
+      "index": 124063,
+      "filename_candidates": [
+        "gclient/gamesystem/uihall/uirank/comp_rank_listview.py"
+      ],
+      "decoded_sha256": "0eba68c98b96dfe61abae4ee42fa3b524dfe8efd209950338ec13c179c3c07c6",
+      "hits": {
+        "AvatarModel": 3
+      },
+      "bytes": 52831
+    },
+    {
+      "index": 124418,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_halloween/avatarmembers/comp_ladder.py"
+      ],
+      "decoded_sha256": "aeb4c2d1819ce7f05ecd22f68648c1161800d80d0d5baaf145a499de0c693bc2",
+      "hits": {
+        "AvatarModel": 3,
+        "PlayerAvatarModel": 3,
+        "owner": 1
+      },
+      "bytes": 2083
+    },
+    {
+      "index": 125644,
+      "filename_candidates": [
+        "gclient/framework/ui/ui_director.py"
+      ],
+      "decoded_sha256": "97adc8d45b3a6ce600616af806cb06c1062f10e913afbe325d5fedf2406e6d11",
+      "hits": {
+        "UserData": 7
+      },
+      "bytes": 141476
+    },
+    {
+      "index": 126144,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_ultra_mega/combat_avatar_moba_ultra_mega.py"
+      ],
+      "decoded_sha256": "edfa0433e3d2400a0d7b2802e830c724e5471a3a49d8fc5197cae9bac222ceb1",
+      "hits": {
+        "AvatarModel": 6,
+        "PlayerAvatarModel": 1
+      },
+      "bytes": 7029
+    },
+    {
+      "index": 129468,
+      "filename_candidates": [],
+      "decoded_sha256": "6cc3479c41fecd1ac6193468d503318aee85e2c91c197b94d39e6efb78b7a473",
+      "hits": {
+        "UserData": 1
+      },
+      "bytes": 5399
+    },
+    {
+      "index": 129906,
+      "filename_candidates": [
+        "gclient/framework/ui/widgets/ui_node.py"
+      ],
+      "decoded_sha256": "f54e951b1573a43e105149a5e1be6fca57daf2be0f7ea1b2983af9d97109ecdb",
+      "hits": {
+        "UserData": 1
+      },
+      "bytes": 69368
+    },
+    {
+      "index": 130998,
+      "filename_candidates": [
+        "gclient/gamesystem/uiwarehouse/warehouse_item_window.py"
+      ],
+      "decoded_sha256": "5d209ad06ec2857a340188edc364508599f65177da1c0a19d626b14ca45a9dd8",
+      "hits": {
+        "AvatarModel": 2
+      },
+      "bytes": 155226
+    },
+    {
+      "index": 131325,
+      "filename_candidates": [
+        "gclient/gamesystem/uihall/uipeak/hall_peak_fame_window.py"
+      ],
+      "decoded_sha256": "cfb3ea480e5668c7026e738be5c813719787b21ca915b62818cb2141947ab950",
+      "hits": {
+        "AvatarModel": 3
+      },
+      "bytes": 34788
+    },
+    {
+      "index": 131609,
+      "filename_candidates": [
+        "gclient/util/cinematics/cinematics_avatar.py"
+      ],
+      "decoded_sha256": "d41c7a77c9a5aba5db5c78fc45f032980c310afb45370fec7899f5e6c2764822",
+      "hits": {
+        "AvatarModel": 6,
+        "owner": 1
+      },
+      "bytes": 6768
+    },
+    {
+      "index": 133370,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_lightning/models/lightning_capybara_model.py"
+      ],
+      "decoded_sha256": "621f60dff9c939cd6bd72cbd9709b48330dfdc14d4c872b7bad6333b5cea26d9",
+      "hits": {
+        "AvatarModel": 36,
+        "PlayerAvatarModel": 17,
+        "owner": 2
+      },
+      "bytes": 43327
+    },
+    {
+      "index": 133656,
+      "filename_candidates": [
+        "gclient/gameplay/uicomponents/mapbase_comp.py"
+      ],
+      "decoded_sha256": "1e0219f0653a43095534f06713975d5d5b700f469407ada90fcb641708801ca0",
+      "hits": {
+        "AvatarModel": 2,
+        "UserData": 2,
+        "owner": 1
+      },
+      "bytes": 81808
+    },
+    {
+      "index": 134442,
+      "filename_candidates": [
+        "gclient/gamesystem/uihall/activity/common_activity_window.py"
+      ],
+      "decoded_sha256": "b2c069de6407d44f1cc689e2672f718ed9f33e2c2d679e6e13331fcabe15d1cb",
+      "hits": {
+        "AvatarModel": 2
+      },
+      "bytes": 90510
+    },
+    {
+      "index": 135109,
+      "filename_candidates": [
+        "gclient/gameplay/logic_rookieguide_new/combat_avatar_rookieguide.py"
+      ],
+      "decoded_sha256": "c7fe341e6ae076f51f5452eef3b12cf6b72cb6a6b35311a45239a7658b0f6da4",
+      "hits": {
+        "AvatarModel": 3
+      },
+      "bytes": 12146
+    },
+    {
+      "index": 136845,
+      "filename_candidates": [
+        "gclient/gamesystem/uihall/activity/activity_blood_ranking_window.py"
+      ],
+      "decoded_sha256": "5ef50e289cc4b3edcab90a9e9d9b9b67672c39f8fe5bde3ac244ffc305158f2a",
+      "hits": {
+        "AvatarModel": 2
+      },
+      "bytes": 24523
+    },
+    {
+      "index": 137121,
+      "filename_candidates": [
+        "gclient/gamesystem/uihall/gunupgrade/hall_avatar_model.py"
+      ],
+      "decoded_sha256": "3bbbfc65688ec185de799892b85970b6e3f7f39df59f4d42fe7b0658a787802d",
+      "hits": {
+        "AvatarModel": 2
+      },
+      "bytes": 663
+    },
+    {
+      "index": 137996,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_lightning/combat_avatar_moba_lightning.py"
+      ],
+      "decoded_sha256": "3e4d51377955066f84b4a4f903f9e610204c96111b0fa6dfb7320095d65b4c25",
+      "hits": {
+        "AvatarModel": 9,
+        "PlayerAvatarModel": 1
+      },
+      "bytes": 105230
+    },
+    {
+      "index": 138967,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_titan_2/combat_avatar_moba_titan_2.py"
+      ],
+      "decoded_sha256": "f1281156289acaad1dbd59aa8ea07078649281487fc31f0aecfd1b3f602db493",
+      "hits": {
+        "AvatarModel": 6,
+        "PlayerAvatarModel": 1,
+        "owner": 1
+      },
+      "bytes": 14886
+    },
+    {
+      "index": 142722,
+      "filename_candidates": [
+        "gclient/gameplay/logic_peekaboo/models/peekaboo_avatar_model.py"
+      ],
+      "decoded_sha256": "3eb495c6e82343026c39e0efc60ac10ed4f533cccad68ede99ca8a2e92d99abc",
+      "hits": {
+        "AvatarModel": 30,
+        "PlayerAvatarModel": 19,
+        "owner": 3
+      },
+      "bytes": 30309
+    },
+    {
+      "index": 143510,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/models/avatar_model.py"
+      ],
+      "decoded_sha256": "0a4a57f34d1c8e14e38c08f510f1787f46659e4b2928663cf526797eac8b0ed3",
+      "hits": {
+        "AvatarModel": 330,
+        "PlayerAvatarModel": 105,
+        "owner": 3
+      },
+      "bytes": 224837
+    },
+    {
+      "index": 144394,
+      "filename_candidates": [
+        "gclient/data/unit_model_data.py"
+      ],
+      "decoded_sha256": "da7787f676e2ae1a02a3a33431ecd18bcd0f722e1152d95b9cfcbb61555d1b4e",
+      "hits": {
+        "AvatarModel": 1,
+        "PlayerAvatarModel": 1
+      },
+      "bytes": 1844275
+    }
+  ],
+  "bytecode_executed": false
+}

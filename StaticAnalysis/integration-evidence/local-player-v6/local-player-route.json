@@ -1,0 +1,89 @@
+{
+  "sample_sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "execution": "static file reads only; target never loaded/executed; no process opened",
+  "root": {
+    "runtime_rva": "0x925f000",
+    "section": {
+      "name": "PyRuntim",
+      "rva": 153481216,
+      "virtual_size": 315360,
+      "raw_size": 315392,
+      "raw_offset": 138769920,
+      "flags": 3221225536
+    },
+    "runtime_debug_cookie": "xdebugpy",
+    "version": "0x030e00f0",
+    "free_threaded": false,
+    "head_slot_rva": "0x925f328",
+    "head_slot_image_qword": "0x0",
+    "initialization_corroboration": "runtime-root.json: function 0x2af9e50 passes address RVA0x925f000 to 0x2addac0"
+  },
+  "route": [
+    {
+      "operation": "read_pointer",
+      "address": "module_base + 0x925f328",
+      "result": "interpreter list head"
+    },
+    {
+      "operation": "iterate_bounded_list",
+      "next_offset": "0x1c68",
+      "id_offset": "0x1c70",
+      "id_type": "int64",
+      "selection": "prefer id==0; if looking across interpreters preserve interpreter identity and reject duplicate matches"
+    },
+    {
+      "operation": "read_pointer",
+      "address": "interpreter + 0x1de8",
+      "result": "sys.modules dictionary",
+      "validation": "exact PyDict_Type as established in python-owner-v5/layout-contract.json"
+    },
+    {
+      "operation": "lookup_dictionary_key",
+      "key": "gclient.genv",
+      "result": "module object",
+      "validation": "object.ob_type +0x08 equals module_base+0x7a1b1f0 for exact module type; source permits subclasses but exact type is conservative"
+    },
+    {
+      "operation": "read_pointer",
+      "address": "module_object + 0x10",
+      "result": "module.__dict__",
+      "validation": "non-null and exact PyDict_Type"
+    },
+    {
+      "operation": "lookup_dictionary_key",
+      "key": "player",
+      "alternate": "main_player",
+      "result": "Python local-player owner; assignments/lifetime established separately by existing model bytecode evidence"
+    }
+  ],
+  "module_type": {
+    "rva": "0x7a1b1f0",
+    "name_rva": "0x5823d9c",
+    "name": "module",
+    "basicsize": "0x38",
+    "header_bytes": "00 00 00 c0 00 00 05 00 70 51 a1 47 01 00 00 00 00 00 00 00 00 00 00 00 9c 3d 82 45 01 00 00 00 38 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 40 62 a9 42 01 00 00 00",
+    "md_dict_offset": "0x10",
+    "getter_rva": "0x2a94850"
+  },
+  "export_search": {
+    "requested": [
+      "PyInterpreterState_Head",
+      "PyInterpreterState_Main",
+      "PyImport_GetModuleDict",
+      "PyModule_GetDict",
+      "_PyRuntime",
+      "PyModule_Type"
+    ],
+    "exported_name_count": 651,
+    "matches": []
+  },
+  "confidence": "Exact native runtime/module route supported by file-resident self-describing offsets and disassembly; module and player presence not observed at runtime",
+  "limitations": [
+    "sys.modules and player are runtime mutable pointers; image head slot is zero and cannot reveal live objects",
+    "No game execution, process attachment or process memory read was performed",
+    "Acquisition cannot take the native interpreter mutex; repeated equal reads still cannot prove atomicity, liveness or absence of ABA",
+    "A module may be absent during startup/teardown, aliased under another name, or present in another interpreter",
+    "The route reaches a Python object only; mapping that owner to native actor/local flags still needs separately verified owner layout and observation",
+    "Dictionary/Unicode decoding must reuse the pinned CPython3.14 contracts, not assume Python3.12 host layouts"
+  ]
+}

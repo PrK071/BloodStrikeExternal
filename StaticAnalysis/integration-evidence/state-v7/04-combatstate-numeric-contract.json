@@ -1,0 +1,495 @@
+{
+  "target_sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "index_sha256": "bb3782da03b95d66451a598add8fe0923405be0dde53a8844b2f8bc107a6ced3",
+  "scope": "hash-checked MPK stream parse and bytecode analysis only; no module import or code execution",
+  "definition": {
+    "mpk_index": 141076,
+    "module_path": "gshare/consts.py",
+    "module_compressed_sha256": "2bea35b562aae8d06fa5e272ece89508190b9fb7da889a8004886131e6f206b7",
+    "module_decoded_sha256": "3ef7443167b4c9b6e4e5b63a79a1c2fcc83c6b9292cfd6617c9ce633eb5408ac",
+    "CombatState_line": 282,
+    "CombatState_code_sha256": "f3fd00e1aed344715b1bf07fb6962f3cfa7abf97bcc187f9c996d01c07165f58",
+    "class_body_assignments": [
+      {
+        "offset": 14,
+        "op": "LOAD_SMALL_INT",
+        "arg": 0
+      },
+      {
+        "offset": 16,
+        "op": "STORE_NAME",
+        "arg": 4,
+        "value": "ALIVE"
+      },
+      {
+        "offset": 18,
+        "op": "LOAD_SMALL_INT",
+        "arg": 1
+      },
+      {
+        "offset": 20,
+        "op": "STORE_NAME",
+        "arg": 5,
+        "value": "DYING"
+      },
+      {
+        "offset": 22,
+        "op": "LOAD_SMALL_INT",
+        "arg": 2
+      },
+      {
+        "offset": 24,
+        "op": "STORE_NAME",
+        "arg": 6,
+        "value": "DEAD"
+      },
+      {
+        "offset": 26,
+        "op": "LOAD_SMALL_INT",
+        "arg": 3
+      },
+      {
+        "offset": 28,
+        "op": "STORE_NAME",
+        "arg": 7,
+        "value": "GHOST"
+      },
+      {
+        "offset": 30,
+        "op": "LOAD_SMALL_INT",
+        "arg": 4
+      },
+      {
+        "offset": 32,
+        "op": "STORE_NAME",
+        "arg": 8,
+        "value": "NONE"
+      },
+      {
+        "offset": 34,
+        "op": "LOAD_SMALL_INT",
+        "arg": 5
+      },
+      {
+        "offset": 36,
+        "op": "STORE_NAME",
+        "arg": 9,
+        "value": "SPIRIT"
+      }
+    ],
+    "values": {
+      "ALIVE": 0,
+      "DYING": 1,
+      "DEAD": 2,
+      "GHOST": 3,
+      "NONE": 4,
+      "SPIRIT": 5
+    },
+    "module_import_enum": [
+      {
+        "offset": 6,
+        "op": "IMPORT_NAME",
+        "arg": 0,
+        "value": "gshare.utils",
+        "resolved_name": "gshare.utils"
+      },
+      {
+        "offset": 8,
+        "op": "IMPORT_FROM",
+        "arg": 1,
+        "value": "enum",
+        "resolved_name": "enum"
+      },
+      {
+        "offset": 10,
+        "op": "STORE_NAME",
+        "arg": 1,
+        "value": "enum",
+        "resolved_name": "enum"
+      },
+      {
+        "offset": 12,
+        "op": "POP_TOP",
+        "arg": 0
+      },
+      {
+        "offset": 14,
+        "op": "LOAD_SMALL_INT",
+        "arg": 0
+      }
+    ],
+    "class_creation_sequence": [
+      {
+        "offset": 644,
+        "op": "LOAD_BUILD_CLASS",
+        "arg": 0
+      },
+      {
+        "offset": 646,
+        "op": "PUSH_NULL",
+        "arg": 0
+      },
+      {
+        "offset": 648,
+        "op": "LOAD_CONST",
+        "arg": 34,
+        "value": "CombatState"
+      },
+      {
+        "offset": 650,
+        "op": "MAKE_FUNCTION",
+        "arg": 0
+      },
+      {
+        "offset": 652,
+        "op": "LOAD_CONST",
+        "arg": 35,
+        "value": "CombatState"
+      },
+      {
+        "offset": 654,
+        "op": "LOAD_NAME",
+        "arg": 1,
+        "value": "enum",
+        "resolved_name": "enum"
+      },
+      {
+        "offset": 656,
+        "op": "CALL",
+        "arg": 3
+      },
+      {
+        "offset": 664,
+        "op": "STORE_NAME",
+        "arg": 48,
+        "value": "CombatState",
+        "resolved_name": "CombatState"
+      },
+      {
+        "offset": 666,
+        "op": "LOAD_BUILD_CLASS",
+        "arg": 0
+      },
+      {
+        "offset": 668,
+        "op": "PUSH_NULL",
+        "arg": 0
+      }
+    ],
+    "conclusion": "CombatState class body assigns ALIVE=0, DYING=1. The class is created with enum as its base; enum is imported from gshare.utils."
+  },
+  "enum_factory": {
+    "mpk_index": 66389,
+    "module_path": "gshare/utils.py",
+    "module_decoded_sha256": "6d25d8acdae724ffed4e7544a4eaed6668a9c1a45efc5ee2898c8d9462882cea",
+    "EnumMetaclass_new_line": 204,
+    "EnumMetaclass_new_code_sha256": "aa9ea547bc9d5c39d4dcd643fa923a37955e7c8bcd06fdb642a445a7c79b2be7",
+    "relevant_instructions": [
+      {
+        "offset": 10,
+        "op": "LOAD_GLOBAL",
+        "arg": 0,
+        "value": "six2",
+        "resolved_name": "six2"
+      },
+      {
+        "offset": 20,
+        "op": "LOAD_ATTR",
+        "arg": 2,
+        "value": "iteritems",
+        "resolved_name": "iteritems"
+      },
+      {
+        "offset": 42,
+        "op": "LOAD_FAST_BORROW",
+        "arg": 3,
+        "value": "bdict"
+      },
+      {
+        "offset": 44,
+        "op": "CALL",
+        "arg": 1
+      },
+      {
+        "offset": 52,
+        "op": "GET_ITER",
+        "arg": 0
+      },
+      {
+        "offset": 54,
+        "op": "FOR_ITER",
+        "arg": 87
+      },
+      {
+        "offset": 58,
+        "op": "UNPACK_SEQUENCE",
+        "arg": 2
+      },
+      {
+        "offset": 62,
+        "op": "STORE_FAST_STORE_FAST",
+        "arg": 103
+      },
+      {
+        "offset": 64,
+        "op": "LOAD_FAST_BORROW",
+        "arg": 6,
+        "value": "name"
+      },
+      {
+        "offset": 66,
+        "op": "LOAD_ATTR",
+        "arg": 5,
+        "value": "startswith",
+        "resolved_name": "startswith"
+      },
+      {
+        "offset": 86,
+        "op": "LOAD_CONST",
+        "arg": 0,
+        "value": "__"
+      },
+      {
+        "offset": 88,
+        "op": "CALL",
+        "arg": 1
+      },
+      {
+        "offset": 114,
+        "op": "LOAD_GLOBAL",
+        "arg": 7,
+        "value": "callable",
+        "resolved_name": "callable"
+      },
+      {
+        "offset": 124,
+        "op": "LOAD_FAST_BORROW",
+        "arg": 7,
+        "value": "member"
+      },
+      {
+        "offset": 126,
+        "op": "CALL",
+        "arg": 1
+      },
+      {
+        "offset": 134,
+        "op": "TO_BOOL",
+        "arg": 0
+      },
+      {
+        "offset": 142,
+        "op": "POP_JUMP_IF_FALSE",
+        "arg": 3
+      },
+      {
+        "offset": 152,
+        "op": "LOAD_GLOBAL",
+        "arg": 8,
+        "value": "inspect",
+        "resolved_name": "inspect"
+      },
+      {
+        "offset": 162,
+        "op": "LOAD_ATTR",
+        "arg": 10,
+        "value": "ismethoddescriptor",
+        "resolved_name": "ismethoddescriptor"
+      },
+      {
+        "offset": 182,
+        "op": "PUSH_NULL",
+        "arg": 0
+      },
+      {
+        "offset": 184,
+        "op": "LOAD_FAST_BORROW",
+        "arg": 7,
+        "value": "member"
+      },
+      {
+        "offset": 186,
+        "op": "CALL",
+        "arg": 1
+      },
+      {
+        "offset": 194,
+        "op": "TO_BOOL",
+        "arg": 0
+      },
+      {
+        "offset": 202,
+        "op": "POP_JUMP_IF_FALSE",
+        "arg": 3
+      },
+      {
+        "offset": 212,
+        "op": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+        "arg": 117
+      },
+      {
+        "offset": 214,
+        "op": "LOAD_FAST_BORROW",
+        "arg": 6,
+        "value": "name"
+      },
+      {
+        "offset": 216,
+        "op": "STORE_SUBSCR",
+        "arg": 0
+      },
+      {
+        "offset": 220,
+        "op": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+        "arg": 100
+      },
+      {
+        "offset": 222,
+        "op": "LOAD_FAST_BORROW",
+        "arg": 7,
+        "value": "member"
+      },
+      {
+        "offset": 224,
+        "op": "STORE_SUBSCR",
+        "arg": 0
+      },
+      {
+        "offset": 228,
+        "op": "JUMP_BACKWARD",
+        "arg": 89
+      },
+      {
+        "offset": 236,
+        "op": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+        "arg": 67
+      },
+      {
+        "offset": 238,
+        "op": "LOAD_CONST",
+        "arg": 1,
+        "value": "value_to_names"
+      },
+      {
+        "offset": 240,
+        "op": "STORE_SUBSCR",
+        "arg": 0
+      },
+      {
+        "offset": 244,
+        "op": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+        "arg": 83
+      },
+      {
+        "offset": 246,
+        "op": "LOAD_CONST",
+        "arg": 2,
+        "value": "name_to_values"
+      },
+      {
+        "offset": 248,
+        "op": "STORE_SUBSCR",
+        "arg": 0
+      },
+      {
+        "offset": 252,
+        "op": "LOAD_GLOBAL",
+        "arg": 12,
+        "value": "type",
+        "resolved_name": "type"
+      },
+      {
+        "offset": 262,
+        "op": "LOAD_ATTR",
+        "arg": 15,
+        "value": "__new__",
+        "resolved_name": "__new__"
+      },
+      {
+        "offset": 282,
+        "op": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+        "arg": 1,
+        "value": "clsname"
+      },
+      {
+        "offset": 284,
+        "op": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+        "arg": 35
+      },
+      {
+        "offset": 286,
+        "op": "CALL",
+        "arg": 4
+      },
+      {
+        "offset": 294,
+        "op": "RETURN_VALUE",
+        "arg": 0
+      }
+    ],
+    "analysis": "EnumMetaclass.__new__ iterates the class namespace, excludes dunder/callable/method-descriptor entries from enum-member maps, adds value_to_names and name_to_values mappings, then calls type.__new__(mcs, clsname, bases, bdict) on the original namespace. It does not replace ALIVE or DYING values before type.__new__; their class-dictionary values remain integers 0 and 1. This is a custom enum metaclass, not a stdlib enum.Enum declaration."
+  },
+  "aim_consumer_anchor": {
+    "source_index": 68262,
+    "source_path": "gclient/framework/util/assist_aim_util.py",
+    "decoded_sha256": "8163bc535975fd931d2df900fc04bf0d0402e1e5555aa6c2c3d2ffd53168f3de",
+    "SelectTarget_code_sha256": "a06f588dcb9ec7072759f71dd612025ffc65a6a8e6253ff2fbd9291890c457bf",
+    "argcount": 5,
+    "localsplusnames": [
+      "self",
+      "max_dist",
+      "detect_box",
+      "randomOne",
+      "combat_states",
+      "player",
+      "CanDamage",
+      "center",
+      "best_target",
+      "max_dot",
+      "box_trans",
+      "camera_dir",
+      "camera_pos",
+      "camera_dir_tuple",
+      "collisions",
+      "max_dist_square",
+      "collision",
+      "entity",
+      "cur_result",
+      "target_pos",
+      "distance",
+      "aim_pos",
+      "camera_to_aim_pos",
+      "aim_pos_distance",
+      "dot"
+    ],
+    "CombatState_import": [
+      {
+        "offset": 118,
+        "op": "IMPORT_NAME",
+        "arg": 16,
+        "value": "gshare.consts",
+        "resolved_name": null
+      },
+      {
+        "offset": 120,
+        "op": "IMPORT_FROM",
+        "arg": 17,
+        "resolved_name": null
+      },
+      {
+        "offset": 122,
+        "op": "STORE_NAME",
+        "arg": 17,
+        "value": "CombatState",
+        "resolved_name": null
+      }
+    ],
+    "default_shape": "outer one-element defaults tuple whose member is the one-element tuple (CombatState.ALIVE,); argcount=5 and five positional arguments means this is the combat_states default. At runtime the class-dict function __defaults__[-1][0] is the enum member object.",
+    "runtime_route": "Read the loaded AssistAim.SelectTarget function; verify its code-byte SHA-256, argcount and localsplusnames. Read function.__globals__[\"CombatState\"] (the module import binding), then class dictionary ALIVE and DYING. Cross-check the function default tuple object equals ALIVE. Expected values from pinned source are ALIVE=0 and DYING=1; no generic zero/default inference is involved."
+  },
+  "native_link_boundary": {
+    "pe_sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "evidence": "Existing native-properties-v6 evidence establishes numeric property storage and a raw combat_state property path only after dispatch; its bounded standalone PE NUL-string search did not find the combat_state or faction literals. No PE-side symbolic CombatState/ALIVE/DYING binding was found in the reviewed artifacts. The numeric semantic labels here come from the pinned Python MPK schema and the original SelectTarget allow-list, not a guessed native enum."
+  },
+  "opcode_semantics_source": "CPython 3.14 documents LOAD_SMALL_INT as pushing a small integer equal to oparg: https://docs.python.org/3.14/whatsnew/3.14.html#cpython-bytecode-changes"
+}

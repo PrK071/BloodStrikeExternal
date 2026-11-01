@@ -1,0 +1,28 @@
+name: Project tests
+permissions:
+  contents: read
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  core:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+        python: ['3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python }}
+          architecture: x64
+      - run: python tools/run_tests.py
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: tests-${{ matrix.os }}-${{ matrix.python }}
+          path: reports/tests/
+          if-no-files-found: error

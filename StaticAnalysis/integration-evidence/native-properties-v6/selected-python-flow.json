@@ -1,0 +1,5937 @@
+[
+  {
+    "index": 32464,
+    "decoded_sha256": "7e25e3c1907b728ce029281a72888ba35e85dd56923cb593383c134903e7f071",
+    "code": {
+      "kind": "code",
+      "marshal_offset": 12236,
+      "argcount": 2,
+      "posonlyargcount": 0,
+      "kwonlyargcount": 0,
+      "stacksize": 8,
+      "flags": 3,
+      "code": {
+        "bytes": 340,
+        "sha256": "4a76f03915e54460cb936cc7ab7df66d3846893a6f129b8358348ebb9e877372",
+        "head_hex": "80 00 5c 01 00 00 00 00 00 00 00 00 56 01 52 00 34 02 00 00 00 00 00 00 27 00 00 00 00 00 00 00 67 17 00 00 1c 00 5c 02 00 00 00 00 00 00 00 00 50 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 21 00 56 01 34 01 00 00 00 00 00 00"
+      },
+      "names": [
+        "hasattr",
+        "py3compat",
+        "iteritems",
+        "normal_iteritems",
+        "__property_all__",
+        "get",
+        "isCustomType",
+        "setattr",
+        "VALUE_TYPE"
+      ],
+      "localsplusnames": [
+        "self",
+        "data",
+        "name",
+        "value",
+        "default"
+      ],
+      "localspluskinds": {
+        "bytes": 5,
+        "sha256": "643a2e33f796d833232eb6fa39f4000bf773dcb6685a0f77877d68674fe800db",
+        "head_hex": "26 26 20 20 20"
+      },
+      "filename": "engine/common/classutils.py",
+      "name": "_initPropertyWithValueType",
+      "qualname": "_initPropertyWithValueType",
+      "firstlineno": 259,
+      "marshal_end": 12819,
+      "consts": [
+        "normal_iteritems",
+        null
+      ],
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": 128,
+          "opname": "RESUME",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 2,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 1,
+          "cache_words": 4,
+          "symbol": "hasattr",
+          "name_flags": 1
+        },
+        {
+          "offset": 12,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 1,
+          "cache_words": 0,
+          "symbol": "data"
+        },
+        {
+          "offset": 14,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 0,
+          "cache_words": 0,
+          "constant": "normal_iteritems"
+        },
+        {
+          "offset": 16,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 2,
+          "cache_words": 3
+        },
+        {
+          "offset": 24,
+          "opcode": 39,
+          "opname": "TO_BOOL",
+          "arg": 0,
+          "cache_words": 3
+        },
+        {
+          "offset": 32,
+          "opcode": 103,
+          "opname": "POP_JUMP_IF_TRUE",
+          "arg": 23,
+          "cache_words": 1,
+          "target": 82
+        },
+        {
+          "offset": 36,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 38,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 2,
+          "cache_words": 4,
+          "symbol": "py3compat",
+          "name_flags": 0
+        },
+        {
+          "offset": 48,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 4,
+          "cache_words": 9,
+          "symbol": "iteritems",
+          "name_flags": 0
+        },
+        {
+          "offset": 68,
+          "opcode": 33,
+          "opname": "PUSH_NULL",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 70,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 1,
+          "cache_words": 0,
+          "symbol": "data"
+        },
+        {
+          "offset": 72,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 1,
+          "cache_words": 3
+        },
+        {
+          "offset": 80,
+          "opcode": 77,
+          "opname": "JUMP_FORWARD",
+          "arg": 15,
+          "cache_words": 0,
+          "target": 112
+        },
+        {
+          "offset": 82,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 1,
+          "cache_words": 0,
+          "symbol": "data"
+        },
+        {
+          "offset": 84,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 7,
+          "cache_words": 9,
+          "symbol": "normal_iteritems",
+          "name_flags": 1
+        },
+        {
+          "offset": 104,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 0,
+          "cache_words": 3
+        },
+        {
+          "offset": 112,
+          "opcode": 16,
+          "opname": "GET_ITER",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 114,
+          "opcode": 70,
+          "opname": "FOR_ITER",
+          "arg": 107,
+          "cache_words": 1,
+          "target": 332
+        },
+        {
+          "offset": 118,
+          "opcode": 119,
+          "opname": "UNPACK_SEQUENCE",
+          "arg": 2,
+          "cache_words": 1
+        },
+        {
+          "offset": 122,
+          "opcode": 114,
+          "opname": "STORE_FAST_STORE_FAST",
+          "arg": 35,
+          "cache_words": 0,
+          "symbols": [
+            "name",
+            "value"
+          ]
+        },
+        {
+          "offset": 124,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "self"
+        },
+        {
+          "offset": 126,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 8,
+          "cache_words": 9,
+          "symbol": "__property_all__",
+          "name_flags": 0
+        },
+        {
+          "offset": 146,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 11,
+          "cache_words": 9,
+          "symbol": "get",
+          "name_flags": 1
+        },
+        {
+          "offset": 166,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 2,
+          "cache_words": 0,
+          "symbol": "name"
+        },
+        {
+          "offset": 168,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 1,
+          "cache_words": 0,
+          "constant": null
+        },
+        {
+          "offset": 170,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 2,
+          "cache_words": 3
+        },
+        {
+          "offset": 178,
+          "opcode": 112,
+          "opname": "STORE_FAST",
+          "arg": 4,
+          "cache_words": 0,
+          "symbol": "default"
+        },
+        {
+          "offset": 180,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 4,
+          "cache_words": 0,
+          "symbol": "default"
+        },
+        {
+          "offset": 182,
+          "opcode": 101,
+          "opname": "POP_JUMP_IF_NONE",
+          "arg": 52,
+          "cache_words": 1,
+          "target": 290
+        },
+        {
+          "offset": 186,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 188,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 13,
+          "cache_words": 4,
+          "symbol": "isCustomType",
+          "name_flags": 1
+        },
+        {
+          "offset": 198,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 4,
+          "cache_words": 0,
+          "symbol": "default"
+        },
+        {
+          "offset": 200,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 1,
+          "cache_words": 3
+        },
+        {
+          "offset": 208,
+          "opcode": 39,
+          "opname": "TO_BOOL",
+          "arg": 0,
+          "cache_words": 3
+        },
+        {
+          "offset": 216,
+          "opcode": 100,
+          "opname": "POP_JUMP_IF_FALSE",
+          "arg": 21,
+          "cache_words": 1,
+          "target": 262
+        },
+        {
+          "offset": 220,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 222,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 15,
+          "cache_words": 4,
+          "symbol": "setattr",
+          "name_flags": 1
+        },
+        {
+          "offset": 232,
+          "opcode": 87,
+          "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+          "arg": 2,
+          "cache_words": 0,
+          "symbols": [
+            "self",
+            "name"
+          ]
+        },
+        {
+          "offset": 234,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 4,
+          "cache_words": 0,
+          "symbol": "default"
+        },
+        {
+          "offset": 236,
+          "opcode": 33,
+          "opname": "PUSH_NULL",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 238,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 3,
+          "cache_words": 0,
+          "symbol": "value"
+        },
+        {
+          "offset": 240,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 1,
+          "cache_words": 3
+        },
+        {
+          "offset": 248,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 3,
+          "cache_words": 3
+        },
+        {
+          "offset": 256,
+          "opcode": 31,
+          "opname": "POP_TOP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 258,
+          "opcode": 75,
+          "opname": "JUMP_BACKWARD",
+          "arg": 74,
+          "cache_words": 1,
+          "target": 114
+        },
+        {
+          "offset": 262,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 15,
+          "cache_words": 4,
+          "symbol": "setattr",
+          "name_flags": 1
+        },
+        {
+          "offset": 272,
+          "opcode": 87,
+          "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+          "arg": 2,
+          "cache_words": 0,
+          "symbols": [
+            "self",
+            "name"
+          ]
+        },
+        {
+          "offset": 274,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 3,
+          "cache_words": 0,
+          "symbol": "value"
+        },
+        {
+          "offset": 276,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 3,
+          "cache_words": 3
+        },
+        {
+          "offset": 284,
+          "opcode": 31,
+          "opname": "POP_TOP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 286,
+          "opcode": 75,
+          "opname": "JUMP_BACKWARD",
+          "arg": 88,
+          "cache_words": 1,
+          "target": 114
+        },
+        {
+          "offset": 290,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "self"
+        },
+        {
+          "offset": 292,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 17,
+          "cache_words": 9,
+          "symbol": "VALUE_TYPE",
+          "name_flags": 1
+        },
+        {
+          "offset": 312,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 3,
+          "cache_words": 0,
+          "symbol": "value"
+        },
+        {
+          "offset": 314,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 1,
+          "cache_words": 3
+        },
+        {
+          "offset": 322,
+          "opcode": 87,
+          "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+          "arg": 2,
+          "cache_words": 0,
+          "symbols": [
+            "self",
+            "name"
+          ]
+        },
+        {
+          "offset": 324,
+          "opcode": 38,
+          "opname": "STORE_SUBSCR",
+          "arg": 0,
+          "cache_words": 1
+        },
+        {
+          "offset": 328,
+          "opcode": 75,
+          "opname": "JUMP_BACKWARD",
+          "arg": 109,
+          "cache_words": 1,
+          "target": 114
+        },
+        {
+          "offset": 332,
+          "opcode": 9,
+          "opname": "END_FOR",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 334,
+          "opcode": 30,
+          "opname": "POP_ITER",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 336,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 1,
+          "cache_words": 0,
+          "constant": null
+        },
+        {
+          "offset": 338,
+          "opcode": 35,
+          "opname": "RETURN_VALUE",
+          "arg": 0,
+          "cache_words": 0
+        }
+      ]
+    }
+  },
+  {
+    "index": 32464,
+    "decoded_sha256": "7e25e3c1907b728ce029281a72888ba35e85dd56923cb593383c134903e7f071",
+    "code": {
+      "kind": "code",
+      "marshal_offset": 12819,
+      "argcount": 2,
+      "posonlyargcount": 0,
+      "kwonlyargcount": 0,
+      "stacksize": 8,
+      "flags": 3,
+      "code": {
+        "bytes": 328,
+        "sha256": "dd8b3940c90bebeb6581d3c56d26f6863d5f0362fc090f820273a3258de846cc",
+        "head_hex": "80 00 5c 01 00 00 00 00 00 00 00 00 56 01 52 00 34 02 00 00 00 00 00 00 27 00 00 00 00 00 00 00 67 17 00 00 1c 00 5c 02 00 00 00 00 00 00 00 00 50 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 21 00 56 01 34 01 00 00 00 00 00 00"
+      },
+      "names": [
+        "hasattr",
+        "py3compat",
+        "iteritems",
+        "normal_iteritems",
+        "__property_all__",
+        "get",
+        "isCustomType",
+        "setattr",
+        "to_custom_type"
+      ],
+      "localsplusnames": [
+        "self",
+        "data",
+        "name",
+        "value",
+        "default"
+      ],
+      "localspluskinds": {
+        "bytes": 5,
+        "sha256": "643a2e33f796d833232eb6fa39f4000bf773dcb6685a0f77877d68674fe800db",
+        "head_hex": "26 26 20 20 20"
+      },
+      "filename": "engine/common/classutils.py",
+      "name": "_initPropertyWithNoneValueType",
+      "qualname": "_initPropertyWithNoneValueType",
+      "firstlineno": 271,
+      "marshal_end": 13346,
+      "consts": [
+        "normal_iteritems",
+        null
+      ],
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": 128,
+          "opname": "RESUME",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 2,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 1,
+          "cache_words": 4,
+          "symbol": "hasattr",
+          "name_flags": 1
+        },
+        {
+          "offset": 12,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 1,
+          "cache_words": 0,
+          "symbol": "data"
+        },
+        {
+          "offset": 14,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 0,
+          "cache_words": 0,
+          "constant": "normal_iteritems"
+        },
+        {
+          "offset": 16,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 2,
+          "cache_words": 3
+        },
+        {
+          "offset": 24,
+          "opcode": 39,
+          "opname": "TO_BOOL",
+          "arg": 0,
+          "cache_words": 3
+        },
+        {
+          "offset": 32,
+          "opcode": 103,
+          "opname": "POP_JUMP_IF_TRUE",
+          "arg": 23,
+          "cache_words": 1,
+          "target": 82
+        },
+        {
+          "offset": 36,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 38,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 2,
+          "cache_words": 4,
+          "symbol": "py3compat",
+          "name_flags": 0
+        },
+        {
+          "offset": 48,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 4,
+          "cache_words": 9,
+          "symbol": "iteritems",
+          "name_flags": 0
+        },
+        {
+          "offset": 68,
+          "opcode": 33,
+          "opname": "PUSH_NULL",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 70,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 1,
+          "cache_words": 0,
+          "symbol": "data"
+        },
+        {
+          "offset": 72,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 1,
+          "cache_words": 3
+        },
+        {
+          "offset": 80,
+          "opcode": 77,
+          "opname": "JUMP_FORWARD",
+          "arg": 15,
+          "cache_words": 0,
+          "target": 112
+        },
+        {
+          "offset": 82,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 1,
+          "cache_words": 0,
+          "symbol": "data"
+        },
+        {
+          "offset": 84,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 7,
+          "cache_words": 9,
+          "symbol": "normal_iteritems",
+          "name_flags": 1
+        },
+        {
+          "offset": 104,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 0,
+          "cache_words": 3
+        },
+        {
+          "offset": 112,
+          "opcode": 16,
+          "opname": "GET_ITER",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 114,
+          "opcode": 70,
+          "opname": "FOR_ITER",
+          "arg": 101,
+          "cache_words": 1,
+          "target": 320
+        },
+        {
+          "offset": 118,
+          "opcode": 119,
+          "opname": "UNPACK_SEQUENCE",
+          "arg": 2,
+          "cache_words": 1
+        },
+        {
+          "offset": 122,
+          "opcode": 114,
+          "opname": "STORE_FAST_STORE_FAST",
+          "arg": 35,
+          "cache_words": 0,
+          "symbols": [
+            "name",
+            "value"
+          ]
+        },
+        {
+          "offset": 124,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "self"
+        },
+        {
+          "offset": 126,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 8,
+          "cache_words": 9,
+          "symbol": "__property_all__",
+          "name_flags": 0
+        },
+        {
+          "offset": 146,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 11,
+          "cache_words": 9,
+          "symbol": "get",
+          "name_flags": 1
+        },
+        {
+          "offset": 166,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 2,
+          "cache_words": 0,
+          "symbol": "name"
+        },
+        {
+          "offset": 168,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 1,
+          "cache_words": 0,
+          "constant": null
+        },
+        {
+          "offset": 170,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 2,
+          "cache_words": 3
+        },
+        {
+          "offset": 178,
+          "opcode": 112,
+          "opname": "STORE_FAST",
+          "arg": 4,
+          "cache_words": 0,
+          "symbol": "default"
+        },
+        {
+          "offset": 180,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 4,
+          "cache_words": 0,
+          "symbol": "default"
+        },
+        {
+          "offset": 182,
+          "opcode": 101,
+          "opname": "POP_JUMP_IF_NONE",
+          "arg": 52,
+          "cache_words": 1,
+          "target": 290
+        },
+        {
+          "offset": 186,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 188,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 13,
+          "cache_words": 4,
+          "symbol": "isCustomType",
+          "name_flags": 1
+        },
+        {
+          "offset": 198,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 4,
+          "cache_words": 0,
+          "symbol": "default"
+        },
+        {
+          "offset": 200,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 1,
+          "cache_words": 3
+        },
+        {
+          "offset": 208,
+          "opcode": 39,
+          "opname": "TO_BOOL",
+          "arg": 0,
+          "cache_words": 3
+        },
+        {
+          "offset": 216,
+          "opcode": 100,
+          "opname": "POP_JUMP_IF_FALSE",
+          "arg": 21,
+          "cache_words": 1,
+          "target": 262
+        },
+        {
+          "offset": 220,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 222,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 15,
+          "cache_words": 4,
+          "symbol": "setattr",
+          "name_flags": 1
+        },
+        {
+          "offset": 232,
+          "opcode": 87,
+          "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+          "arg": 2,
+          "cache_words": 0,
+          "symbols": [
+            "self",
+            "name"
+          ]
+        },
+        {
+          "offset": 234,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 4,
+          "cache_words": 0,
+          "symbol": "default"
+        },
+        {
+          "offset": 236,
+          "opcode": 33,
+          "opname": "PUSH_NULL",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 238,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 3,
+          "cache_words": 0,
+          "symbol": "value"
+        },
+        {
+          "offset": 240,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 1,
+          "cache_words": 3
+        },
+        {
+          "offset": 248,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 3,
+          "cache_words": 3
+        },
+        {
+          "offset": 256,
+          "opcode": 31,
+          "opname": "POP_TOP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 258,
+          "opcode": 75,
+          "opname": "JUMP_BACKWARD",
+          "arg": 74,
+          "cache_words": 1,
+          "target": 114
+        },
+        {
+          "offset": 262,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 15,
+          "cache_words": 4,
+          "symbol": "setattr",
+          "name_flags": 1
+        },
+        {
+          "offset": 272,
+          "opcode": 87,
+          "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+          "arg": 2,
+          "cache_words": 0,
+          "symbols": [
+            "self",
+            "name"
+          ]
+        },
+        {
+          "offset": 274,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 3,
+          "cache_words": 0,
+          "symbol": "value"
+        },
+        {
+          "offset": 276,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 3,
+          "cache_words": 3
+        },
+        {
+          "offset": 284,
+          "opcode": 31,
+          "opname": "POP_TOP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 286,
+          "opcode": 75,
+          "opname": "JUMP_BACKWARD",
+          "arg": 88,
+          "cache_words": 1,
+          "target": 114
+        },
+        {
+          "offset": 290,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 17,
+          "cache_words": 4,
+          "symbol": "to_custom_type",
+          "name_flags": 1
+        },
+        {
+          "offset": 300,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 3,
+          "cache_words": 0,
+          "symbol": "value"
+        },
+        {
+          "offset": 302,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 1,
+          "cache_words": 3
+        },
+        {
+          "offset": 310,
+          "opcode": 87,
+          "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+          "arg": 2,
+          "cache_words": 0,
+          "symbols": [
+            "self",
+            "name"
+          ]
+        },
+        {
+          "offset": 312,
+          "opcode": 38,
+          "opname": "STORE_SUBSCR",
+          "arg": 0,
+          "cache_words": 1
+        },
+        {
+          "offset": 316,
+          "opcode": 75,
+          "opname": "JUMP_BACKWARD",
+          "arg": 103,
+          "cache_words": 1,
+          "target": 114
+        },
+        {
+          "offset": 320,
+          "opcode": 9,
+          "opname": "END_FOR",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 322,
+          "opcode": 30,
+          "opname": "POP_ITER",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 324,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 1,
+          "cache_words": 0,
+          "constant": null
+        },
+        {
+          "offset": 326,
+          "opcode": 35,
+          "opname": "RETURN_VALUE",
+          "arg": 0,
+          "cache_words": 0
+        }
+      ]
+    }
+  },
+  {
+    "index": 32464,
+    "decoded_sha256": "7e25e3c1907b728ce029281a72888ba35e85dd56923cb593383c134903e7f071",
+    "code": {
+      "kind": "code",
+      "marshal_offset": 13346,
+      "argcount": 2,
+      "posonlyargcount": 0,
+      "kwonlyargcount": 0,
+      "stacksize": 8,
+      "flags": 3,
+      "code": {
+        "bytes": 302,
+        "sha256": "a7db60d1016431dc6ebfe87eb2ecaf7fd4fb6a3d19f0297c933ca11e77ca882c",
+        "head_hex": "80 00 5c 01 00 00 00 00 00 00 00 00 56 01 52 00 34 02 00 00 00 00 00 00 27 00 00 00 00 00 00 00 67 17 00 00 1c 00 5c 02 00 00 00 00 00 00 00 00 50 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 21 00 56 01 34 01 00 00 00 00 00 00"
+      },
+      "names": [
+        "hasattr",
+        "py3compat",
+        "iteritems",
+        "normal_iteritems",
+        "__property_all__",
+        "get",
+        "isCustomType",
+        "setattr"
+      ],
+      "localsplusnames": [
+        "self",
+        "data",
+        "name",
+        "value",
+        "default"
+      ],
+      "localspluskinds": {
+        "bytes": 5,
+        "sha256": "643a2e33f796d833232eb6fa39f4000bf773dcb6685a0f77877d68674fe800db",
+        "head_hex": "26 26 20 20 20"
+      },
+      "filename": "engine/common/classutils.py",
+      "name": "_initPropertyWithOutValueType",
+      "qualname": "_initPropertyWithOutValueType",
+      "firstlineno": 283,
+      "marshal_end": 13837,
+      "consts": [
+        "normal_iteritems",
+        null
+      ],
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": 128,
+          "opname": "RESUME",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 2,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 1,
+          "cache_words": 4,
+          "symbol": "hasattr",
+          "name_flags": 1
+        },
+        {
+          "offset": 12,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 1,
+          "cache_words": 0,
+          "symbol": "data"
+        },
+        {
+          "offset": 14,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 0,
+          "cache_words": 0,
+          "constant": "normal_iteritems"
+        },
+        {
+          "offset": 16,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 2,
+          "cache_words": 3
+        },
+        {
+          "offset": 24,
+          "opcode": 39,
+          "opname": "TO_BOOL",
+          "arg": 0,
+          "cache_words": 3
+        },
+        {
+          "offset": 32,
+          "opcode": 103,
+          "opname": "POP_JUMP_IF_TRUE",
+          "arg": 23,
+          "cache_words": 1,
+          "target": 82
+        },
+        {
+          "offset": 36,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 38,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 2,
+          "cache_words": 4,
+          "symbol": "py3compat",
+          "name_flags": 0
+        },
+        {
+          "offset": 48,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 4,
+          "cache_words": 9,
+          "symbol": "iteritems",
+          "name_flags": 0
+        },
+        {
+          "offset": 68,
+          "opcode": 33,
+          "opname": "PUSH_NULL",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 70,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 1,
+          "cache_words": 0,
+          "symbol": "data"
+        },
+        {
+          "offset": 72,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 1,
+          "cache_words": 3
+        },
+        {
+          "offset": 80,
+          "opcode": 77,
+          "opname": "JUMP_FORWARD",
+          "arg": 15,
+          "cache_words": 0,
+          "target": 112
+        },
+        {
+          "offset": 82,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 1,
+          "cache_words": 0,
+          "symbol": "data"
+        },
+        {
+          "offset": 84,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 7,
+          "cache_words": 9,
+          "symbol": "normal_iteritems",
+          "name_flags": 1
+        },
+        {
+          "offset": 104,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 0,
+          "cache_words": 3
+        },
+        {
+          "offset": 112,
+          "opcode": 16,
+          "opname": "GET_ITER",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 114,
+          "opcode": 70,
+          "opname": "FOR_ITER",
+          "arg": 88,
+          "cache_words": 1,
+          "target": 294
+        },
+        {
+          "offset": 118,
+          "opcode": 119,
+          "opname": "UNPACK_SEQUENCE",
+          "arg": 2,
+          "cache_words": 1
+        },
+        {
+          "offset": 122,
+          "opcode": 114,
+          "opname": "STORE_FAST_STORE_FAST",
+          "arg": 35,
+          "cache_words": 0,
+          "symbols": [
+            "name",
+            "value"
+          ]
+        },
+        {
+          "offset": 124,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "self"
+        },
+        {
+          "offset": 126,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 8,
+          "cache_words": 9,
+          "symbol": "__property_all__",
+          "name_flags": 0
+        },
+        {
+          "offset": 146,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 11,
+          "cache_words": 9,
+          "symbol": "get",
+          "name_flags": 1
+        },
+        {
+          "offset": 166,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 2,
+          "cache_words": 0,
+          "symbol": "name"
+        },
+        {
+          "offset": 168,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 1,
+          "cache_words": 0,
+          "constant": null
+        },
+        {
+          "offset": 170,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 2,
+          "cache_words": 3
+        },
+        {
+          "offset": 178,
+          "opcode": 112,
+          "opname": "STORE_FAST",
+          "arg": 4,
+          "cache_words": 0,
+          "symbol": "default"
+        },
+        {
+          "offset": 180,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 4,
+          "cache_words": 0,
+          "symbol": "default"
+        },
+        {
+          "offset": 182,
+          "opcode": 102,
+          "opname": "POP_JUMP_IF_NOT_NONE",
+          "arg": 3,
+          "cache_words": 1,
+          "target": 192
+        },
+        {
+          "offset": 186,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 188,
+          "opcode": 75,
+          "opname": "JUMP_BACKWARD",
+          "arg": 39,
+          "cache_words": 1,
+          "target": 114
+        },
+        {
+          "offset": 192,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 13,
+          "cache_words": 4,
+          "symbol": "isCustomType",
+          "name_flags": 1
+        },
+        {
+          "offset": 202,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 4,
+          "cache_words": 0,
+          "symbol": "default"
+        },
+        {
+          "offset": 204,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 1,
+          "cache_words": 3
+        },
+        {
+          "offset": 212,
+          "opcode": 39,
+          "opname": "TO_BOOL",
+          "arg": 0,
+          "cache_words": 3
+        },
+        {
+          "offset": 220,
+          "opcode": 100,
+          "opname": "POP_JUMP_IF_FALSE",
+          "arg": 21,
+          "cache_words": 1,
+          "target": 266
+        },
+        {
+          "offset": 224,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 226,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 15,
+          "cache_words": 4,
+          "symbol": "setattr",
+          "name_flags": 1
+        },
+        {
+          "offset": 236,
+          "opcode": 87,
+          "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+          "arg": 2,
+          "cache_words": 0,
+          "symbols": [
+            "self",
+            "name"
+          ]
+        },
+        {
+          "offset": 238,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 4,
+          "cache_words": 0,
+          "symbol": "default"
+        },
+        {
+          "offset": 240,
+          "opcode": 33,
+          "opname": "PUSH_NULL",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 242,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 3,
+          "cache_words": 0,
+          "symbol": "value"
+        },
+        {
+          "offset": 244,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 1,
+          "cache_words": 3
+        },
+        {
+          "offset": 252,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 3,
+          "cache_words": 3
+        },
+        {
+          "offset": 260,
+          "opcode": 31,
+          "opname": "POP_TOP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 262,
+          "opcode": 75,
+          "opname": "JUMP_BACKWARD",
+          "arg": 76,
+          "cache_words": 1,
+          "target": 114
+        },
+        {
+          "offset": 266,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 15,
+          "cache_words": 4,
+          "symbol": "setattr",
+          "name_flags": 1
+        },
+        {
+          "offset": 276,
+          "opcode": 87,
+          "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+          "arg": 2,
+          "cache_words": 0,
+          "symbols": [
+            "self",
+            "name"
+          ]
+        },
+        {
+          "offset": 278,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 3,
+          "cache_words": 0,
+          "symbol": "value"
+        },
+        {
+          "offset": 280,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 3,
+          "cache_words": 3
+        },
+        {
+          "offset": 288,
+          "opcode": 31,
+          "opname": "POP_TOP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 290,
+          "opcode": 75,
+          "opname": "JUMP_BACKWARD",
+          "arg": 90,
+          "cache_words": 1,
+          "target": 114
+        },
+        {
+          "offset": 294,
+          "opcode": 9,
+          "opname": "END_FOR",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 296,
+          "opcode": 30,
+          "opname": "POP_ITER",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 298,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 1,
+          "cache_words": 0,
+          "constant": null
+        },
+        {
+          "offset": 300,
+          "opcode": 35,
+          "opname": "RETURN_VALUE",
+          "arg": 0,
+          "cache_words": 0
+        }
+      ]
+    }
+  },
+  {
+    "index": 32464,
+    "decoded_sha256": "7e25e3c1907b728ce029281a72888ba35e85dd56923cb593383c134903e7f071",
+    "code": {
+      "kind": "code",
+      "marshal_offset": 15513,
+      "argcount": 4,
+      "posonlyargcount": 0,
+      "kwonlyargcount": 0,
+      "stacksize": 10,
+      "flags": 134217731,
+      "code": {
+        "bytes": 1386,
+        "sha256": "9cba4d556c23bbbb823d5a757281396bc2ed399a04ae03b7e391627aca189bee",
+        "head_hex": "3c 01 80 00 5c 01 00 00 00 00 00 00 00 00 56 03 34 01 00 00 00 00 00 00 1f 00 56 03 50 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 52 00 52 01 34 02 00 00 00 00 00 00 70 04 56 02 10 00 45 01 46 07 00 00 70 05 5c 05 00 00 00 00"
+      },
+      "names": [
+        "_initClassWityProperty",
+        "get",
+        "hasattr",
+        "update",
+        "py3compat",
+        "iteritems",
+        "__property_all__",
+        "__property_flag__",
+        "getattr",
+        "_initPropertyWithNoneValueType",
+        "asiocore",
+        "area_map",
+        "dsize",
+        "_initPropertyWithValueType",
+        "_initPropertyWithOutValueType",
+        "PY3",
+        "_nonzeroWithOutValueType",
+        "super",
+        "PropertyMetaClass",
+        "__new__",
+        "area_prop_index",
+        "__property_index__",
+        "area_map_index"
+      ],
+      "localsplusnames": [
+        "cls",
+        "name",
+        "bases",
+        "dct",
+        "is_custom_type",
+        "base",
+        "k",
+        "v",
+        "newcls",
+        "prop_all",
+        "prop_flag",
+        "value_type",
+        "__class__"
+      ],
+      "localspluskinds": {
+        "bytes": 13,
+        "sha256": "efd17993b2d65a0958a4ceb36455c7fcb84721922e2a1df8582341f4cec64537",
+        "head_hex": "26 26 26 26 20 20 20 20 20 20 20 20 80"
+      },
+      "filename": "engine/common/classutils.py",
+      "name": "__new__",
+      "qualname": "PropertyMetaClass.__new__",
+      "firstlineno": 332,
+      "marshal_end": 17600,
+      "consts": [
+        "IS_CUSTOM_TYPE",
+        false,
+        "__property_all__",
+        "__property_flag__",
+        "VALUE_TYPE",
+        "CustomMapType",
+        "_initProperty",
+        "__len__",
+        "__bool__",
+        "__nonzero__",
+        "area_prop_index",
+        null,
+        "area_map_index"
+      ],
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": 60,
+          "opname": "COPY_FREE_VARS",
+          "arg": 1,
+          "cache_words": 0
+        },
+        {
+          "offset": 2,
+          "opcode": 128,
+          "opname": "RESUME",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 4,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 1,
+          "cache_words": 4,
+          "symbol": "_initClassWityProperty",
+          "name_flags": 1
+        },
+        {
+          "offset": 14,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 3,
+          "cache_words": 0,
+          "symbol": "dct"
+        },
+        {
+          "offset": 16,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 1,
+          "cache_words": 3
+        },
+        {
+          "offset": 24,
+          "opcode": 31,
+          "opname": "POP_TOP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 26,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 3,
+          "cache_words": 0,
+          "symbol": "dct"
+        },
+        {
+          "offset": 28,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 3,
+          "cache_words": 9,
+          "symbol": "get",
+          "name_flags": 1
+        },
+        {
+          "offset": 48,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 0,
+          "cache_words": 0,
+          "constant": "IS_CUSTOM_TYPE"
+        },
+        {
+          "offset": 50,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 1,
+          "cache_words": 0,
+          "constant": false
+        },
+        {
+          "offset": 52,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 2,
+          "cache_words": 3
+        },
+        {
+          "offset": 60,
+          "opcode": 112,
+          "opname": "STORE_FAST",
+          "arg": 4,
+          "cache_words": 0,
+          "symbol": "is_custom_type"
+        },
+        {
+          "offset": 62,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 2,
+          "cache_words": 0,
+          "symbol": "bases"
+        },
+        {
+          "offset": 64,
+          "opcode": 16,
+          "opname": "GET_ITER",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 66,
+          "opcode": 69,
+          "opname": "EXTENDED_ARG",
+          "arg": 1,
+          "cache_words": 0
+        },
+        {
+          "offset": 68,
+          "opcode": 70,
+          "opname": "FOR_ITER",
+          "arg": 263,
+          "cache_words": 1,
+          "target": 598
+        },
+        {
+          "offset": 72,
+          "opcode": 112,
+          "opname": "STORE_FAST",
+          "arg": 5,
+          "cache_words": 0,
+          "symbol": "base"
+        },
+        {
+          "offset": 74,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 5,
+          "cache_words": 4,
+          "symbol": "hasattr",
+          "name_flags": 1
+        },
+        {
+          "offset": 84,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 5,
+          "cache_words": 0,
+          "symbol": "base"
+        },
+        {
+          "offset": 86,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 2,
+          "cache_words": 0,
+          "constant": "__property_all__"
+        },
+        {
+          "offset": 88,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 2,
+          "cache_words": 3
+        },
+        {
+          "offset": 96,
+          "opcode": 39,
+          "opname": "TO_BOOL",
+          "arg": 0,
+          "cache_words": 3
+        },
+        {
+          "offset": 104,
+          "opcode": 100,
+          "opname": "POP_JUMP_IF_FALSE",
+          "arg": 179,
+          "cache_words": 1,
+          "target": 466
+        },
+        {
+          "offset": 108,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 110,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 3,
+          "cache_words": 0,
+          "symbol": "dct"
+        },
+        {
+          "offset": 112,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 2,
+          "cache_words": 0,
+          "constant": "__property_all__"
+        },
+        {
+          "offset": 114,
+          "opcode": 44,
+          "opname": "BINARY_OP",
+          "arg": 26,
+          "cache_words": 5
+        },
+        {
+          "offset": 126,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 7,
+          "cache_words": 9,
+          "symbol": "update",
+          "name_flags": 1
+        },
+        {
+          "offset": 146,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 8,
+          "cache_words": 4,
+          "symbol": "py3compat",
+          "name_flags": 0
+        },
+        {
+          "offset": 156,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 10,
+          "cache_words": 9,
+          "symbol": "iteritems",
+          "name_flags": 0
+        },
+        {
+          "offset": 176,
+          "opcode": 33,
+          "opname": "PUSH_NULL",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 178,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 5,
+          "cache_words": 0,
+          "symbol": "base"
+        },
+        {
+          "offset": 180,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 12,
+          "cache_words": 9,
+          "symbol": "__property_all__",
+          "name_flags": 0
+        },
+        {
+          "offset": 200,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 1,
+          "cache_words": 3
+        },
+        {
+          "offset": 208,
+          "opcode": 16,
+          "opname": "GET_ITER",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 210,
+          "opcode": 85,
+          "opname": "LOAD_FAST_AND_CLEAR",
+          "arg": 6,
+          "cache_words": 0,
+          "symbol": "k"
+        },
+        {
+          "offset": 212,
+          "opcode": 85,
+          "opname": "LOAD_FAST_AND_CLEAR",
+          "arg": 7,
+          "cache_words": 0,
+          "symbol": "v"
+        },
+        {
+          "offset": 214,
+          "opcode": 117,
+          "opname": "SWAP",
+          "arg": 3,
+          "cache_words": 0
+        },
+        {
+          "offset": 216,
+          "opcode": 47,
+          "opname": "BUILD_MAP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 218,
+          "opcode": 117,
+          "opname": "SWAP",
+          "arg": 2,
+          "cache_words": 0
+        },
+        {
+          "offset": 220,
+          "opcode": 70,
+          "opname": "FOR_ITER",
+          "arg": 22,
+          "cache_words": 1,
+          "target": 268
+        },
+        {
+          "offset": 224,
+          "opcode": 119,
+          "opname": "UNPACK_SEQUENCE",
+          "arg": 2,
+          "cache_words": 1
+        },
+        {
+          "offset": 228,
+          "opcode": 114,
+          "opname": "STORE_FAST_STORE_FAST",
+          "arg": 103,
+          "cache_words": 0,
+          "symbols": [
+            "k",
+            "v"
+          ]
+        },
+        {
+          "offset": 230,
+          "opcode": 87,
+          "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+          "arg": 99,
+          "cache_words": 0,
+          "symbols": [
+            "k",
+            "dct"
+          ]
+        },
+        {
+          "offset": 232,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 2,
+          "cache_words": 0,
+          "constant": "__property_all__"
+        },
+        {
+          "offset": 234,
+          "opcode": 44,
+          "opname": "BINARY_OP",
+          "arg": 26,
+          "cache_words": 5
+        },
+        {
+          "offset": 246,
+          "opcode": 57,
+          "opname": "CONTAINS_OP",
+          "arg": 1,
+          "cache_words": 1
+        },
+        {
+          "offset": 250,
+          "opcode": 103,
+          "opname": "POP_JUMP_IF_TRUE",
+          "arg": 3,
+          "cache_words": 1,
+          "target": 260
+        },
+        {
+          "offset": 254,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 256,
+          "opcode": 75,
+          "opname": "JUMP_BACKWARD",
+          "arg": 20,
+          "cache_words": 1,
+          "target": 220
+        },
+        {
+          "offset": 260,
+          "opcode": 87,
+          "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+          "arg": 103,
+          "cache_words": 0,
+          "symbols": [
+            "k",
+            "v"
+          ]
+        },
+        {
+          "offset": 262,
+          "opcode": 98,
+          "opname": "MAP_ADD",
+          "arg": 2,
+          "cache_words": 0
+        },
+        {
+          "offset": 264,
+          "opcode": 75,
+          "opname": "JUMP_BACKWARD",
+          "arg": 24,
+          "cache_words": 1,
+          "target": 220
+        },
+        {
+          "offset": 268,
+          "opcode": 9,
+          "opname": "END_FOR",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 270,
+          "opcode": 30,
+          "opname": "POP_ITER",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 272,
+          "opcode": 117,
+          "opname": "SWAP",
+          "arg": 3,
+          "cache_words": 0
+        },
+        {
+          "offset": 274,
+          "opcode": 112,
+          "opname": "STORE_FAST",
+          "arg": 7,
+          "cache_words": 0,
+          "symbol": "v"
+        },
+        {
+          "offset": 276,
+          "opcode": 112,
+          "opname": "STORE_FAST",
+          "arg": 6,
+          "cache_words": 0,
+          "symbol": "k"
+        },
+        {
+          "offset": 278,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 1,
+          "cache_words": 3
+        },
+        {
+          "offset": 286,
+          "opcode": 31,
+          "opname": "POP_TOP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 288,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 3,
+          "cache_words": 0,
+          "symbol": "dct"
+        },
+        {
+          "offset": 290,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 3,
+          "cache_words": 0,
+          "constant": "__property_flag__"
+        },
+        {
+          "offset": 292,
+          "opcode": 44,
+          "opname": "BINARY_OP",
+          "arg": 26,
+          "cache_words": 5
+        },
+        {
+          "offset": 304,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 7,
+          "cache_words": 9,
+          "symbol": "update",
+          "name_flags": 1
+        },
+        {
+          "offset": 324,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 8,
+          "cache_words": 4,
+          "symbol": "py3compat",
+          "name_flags": 0
+        },
+        {
+          "offset": 334,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 10,
+          "cache_words": 9,
+          "symbol": "iteritems",
+          "name_flags": 0
+        },
+        {
+          "offset": 354,
+          "opcode": 33,
+          "opname": "PUSH_NULL",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 356,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 5,
+          "cache_words": 0,
+          "symbol": "base"
+        },
+        {
+          "offset": 358,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 14,
+          "cache_words": 9,
+          "symbol": "__property_flag__",
+          "name_flags": 0
+        },
+        {
+          "offset": 378,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 1,
+          "cache_words": 3
+        },
+        {
+          "offset": 386,
+          "opcode": 16,
+          "opname": "GET_ITER",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 388,
+          "opcode": 85,
+          "opname": "LOAD_FAST_AND_CLEAR",
+          "arg": 6,
+          "cache_words": 0,
+          "symbol": "k"
+        },
+        {
+          "offset": 390,
+          "opcode": 85,
+          "opname": "LOAD_FAST_AND_CLEAR",
+          "arg": 7,
+          "cache_words": 0,
+          "symbol": "v"
+        },
+        {
+          "offset": 392,
+          "opcode": 117,
+          "opname": "SWAP",
+          "arg": 3,
+          "cache_words": 0
+        },
+        {
+          "offset": 394,
+          "opcode": 47,
+          "opname": "BUILD_MAP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 396,
+          "opcode": 117,
+          "opname": "SWAP",
+          "arg": 2,
+          "cache_words": 0
+        },
+        {
+          "offset": 398,
+          "opcode": 70,
+          "opname": "FOR_ITER",
+          "arg": 22,
+          "cache_words": 1,
+          "target": 446
+        },
+        {
+          "offset": 402,
+          "opcode": 119,
+          "opname": "UNPACK_SEQUENCE",
+          "arg": 2,
+          "cache_words": 1
+        },
+        {
+          "offset": 406,
+          "opcode": 114,
+          "opname": "STORE_FAST_STORE_FAST",
+          "arg": 103,
+          "cache_words": 0,
+          "symbols": [
+            "k",
+            "v"
+          ]
+        },
+        {
+          "offset": 408,
+          "opcode": 87,
+          "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+          "arg": 99,
+          "cache_words": 0,
+          "symbols": [
+            "k",
+            "dct"
+          ]
+        },
+        {
+          "offset": 410,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 3,
+          "cache_words": 0,
+          "constant": "__property_flag__"
+        },
+        {
+          "offset": 412,
+          "opcode": 44,
+          "opname": "BINARY_OP",
+          "arg": 26,
+          "cache_words": 5
+        },
+        {
+          "offset": 424,
+          "opcode": 57,
+          "opname": "CONTAINS_OP",
+          "arg": 1,
+          "cache_words": 1
+        },
+        {
+          "offset": 428,
+          "opcode": 103,
+          "opname": "POP_JUMP_IF_TRUE",
+          "arg": 3,
+          "cache_words": 1,
+          "target": 438
+        },
+        {
+          "offset": 432,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 434,
+          "opcode": 75,
+          "opname": "JUMP_BACKWARD",
+          "arg": 20,
+          "cache_words": 1,
+          "target": 398
+        },
+        {
+          "offset": 438,
+          "opcode": 87,
+          "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+          "arg": 103,
+          "cache_words": 0,
+          "symbols": [
+            "k",
+            "v"
+          ]
+        },
+        {
+          "offset": 440,
+          "opcode": 98,
+          "opname": "MAP_ADD",
+          "arg": 2,
+          "cache_words": 0
+        },
+        {
+          "offset": 442,
+          "opcode": 75,
+          "opname": "JUMP_BACKWARD",
+          "arg": 24,
+          "cache_words": 1,
+          "target": 398
+        },
+        {
+          "offset": 446,
+          "opcode": 9,
+          "opname": "END_FOR",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 448,
+          "opcode": 30,
+          "opname": "POP_ITER",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 450,
+          "opcode": 117,
+          "opname": "SWAP",
+          "arg": 3,
+          "cache_words": 0
+        },
+        {
+          "offset": 452,
+          "opcode": 112,
+          "opname": "STORE_FAST",
+          "arg": 7,
+          "cache_words": 0,
+          "symbol": "v"
+        },
+        {
+          "offset": 454,
+          "opcode": 112,
+          "opname": "STORE_FAST",
+          "arg": 6,
+          "cache_words": 0,
+          "symbol": "k"
+        },
+        {
+          "offset": 456,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 1,
+          "cache_words": 3
+        },
+        {
+          "offset": 464,
+          "opcode": 31,
+          "opname": "POP_TOP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 466,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 5,
+          "cache_words": 4,
+          "symbol": "hasattr",
+          "name_flags": 1
+        },
+        {
+          "offset": 476,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 5,
+          "cache_words": 0,
+          "symbol": "base"
+        },
+        {
+          "offset": 478,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 4,
+          "cache_words": 0,
+          "constant": "VALUE_TYPE"
+        },
+        {
+          "offset": 480,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 2,
+          "cache_words": 3
+        },
+        {
+          "offset": 488,
+          "opcode": 39,
+          "opname": "TO_BOOL",
+          "arg": 0,
+          "cache_words": 3
+        },
+        {
+          "offset": 496,
+          "opcode": 100,
+          "opname": "POP_JUMP_IF_FALSE",
+          "arg": 23,
+          "cache_words": 1,
+          "target": 546
+        },
+        {
+          "offset": 500,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 502,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 4,
+          "cache_words": 0,
+          "constant": "VALUE_TYPE"
+        },
+        {
+          "offset": 504,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 3,
+          "cache_words": 0,
+          "symbol": "dct"
+        },
+        {
+          "offset": 506,
+          "opcode": 57,
+          "opname": "CONTAINS_OP",
+          "arg": 1,
+          "cache_words": 1
+        },
+        {
+          "offset": 510,
+          "opcode": 100,
+          "opname": "POP_JUMP_IF_FALSE",
+          "arg": 16,
+          "cache_words": 1,
+          "target": 546
+        },
+        {
+          "offset": 514,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 516,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 17,
+          "cache_words": 4,
+          "symbol": "getattr",
+          "name_flags": 1
+        },
+        {
+          "offset": 526,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 5,
+          "cache_words": 0,
+          "symbol": "base"
+        },
+        {
+          "offset": 528,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 4,
+          "cache_words": 0,
+          "constant": "VALUE_TYPE"
+        },
+        {
+          "offset": 530,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 2,
+          "cache_words": 3
+        },
+        {
+          "offset": 538,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 3,
+          "cache_words": 0,
+          "symbol": "dct"
+        },
+        {
+          "offset": 540,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 4,
+          "cache_words": 0,
+          "constant": "VALUE_TYPE"
+        },
+        {
+          "offset": 542,
+          "opcode": 38,
+          "opname": "STORE_SUBSCR",
+          "arg": 0,
+          "cache_words": 1
+        },
+        {
+          "offset": 546,
+          "opcode": 84,
+          "opname": "LOAD_FAST",
+          "arg": 4,
+          "cache_words": 0,
+          "symbol": "is_custom_type"
+        },
+        {
+          "offset": 548,
+          "opcode": 59,
+          "opname": "COPY",
+          "arg": 1,
+          "cache_words": 0
+        },
+        {
+          "offset": 550,
+          "opcode": 39,
+          "opname": "TO_BOOL",
+          "arg": 0,
+          "cache_words": 3
+        },
+        {
+          "offset": 558,
+          "opcode": 103,
+          "opname": "POP_JUMP_IF_TRUE",
+          "arg": 14,
+          "cache_words": 1,
+          "target": 590
+        },
+        {
+          "offset": 562,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 564,
+          "opcode": 31,
+          "opname": "POP_TOP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 566,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 17,
+          "cache_words": 4,
+          "symbol": "getattr",
+          "name_flags": 1
+        },
+        {
+          "offset": 576,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 5,
+          "cache_words": 0,
+          "symbol": "base"
+        },
+        {
+          "offset": 578,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 0,
+          "cache_words": 0,
+          "constant": "IS_CUSTOM_TYPE"
+        },
+        {
+          "offset": 580,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 1,
+          "cache_words": 0,
+          "constant": false
+        },
+        {
+          "offset": 582,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 3,
+          "cache_words": 3
+        },
+        {
+          "offset": 590,
+          "opcode": 112,
+          "opname": "STORE_FAST",
+          "arg": 4,
+          "cache_words": 0,
+          "symbol": "is_custom_type"
+        },
+        {
+          "offset": 592,
+          "opcode": 69,
+          "opname": "EXTENDED_ARG",
+          "arg": 1,
+          "cache_words": 0
+        },
+        {
+          "offset": 594,
+          "opcode": 75,
+          "opname": "JUMP_BACKWARD",
+          "arg": 266,
+          "cache_words": 1,
+          "target": 66
+        },
+        {
+          "offset": 598,
+          "opcode": 9,
+          "opname": "END_FOR",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 600,
+          "opcode": 30,
+          "opname": "POP_ITER",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 602,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 4,
+          "cache_words": 0,
+          "symbol": "is_custom_type"
+        },
+        {
+          "offset": 604,
+          "opcode": 39,
+          "opname": "TO_BOOL",
+          "arg": 0,
+          "cache_words": 3
+        },
+        {
+          "offset": 612,
+          "opcode": 100,
+          "opname": "POP_JUMP_IF_FALSE",
+          "arg": 168,
+          "cache_words": 1,
+          "target": 952
+        },
+        {
+          "offset": 616,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 618,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 1,
+          "cache_words": 0,
+          "symbol": "name"
+        },
+        {
+          "offset": 620,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 5,
+          "cache_words": 0,
+          "constant": "CustomMapType"
+        },
+        {
+          "offset": 622,
+          "opcode": 56,
+          "opname": "COMPARE_OP",
+          "arg": 88,
+          "cache_words": 1
+        },
+        {
+          "offset": 626,
+          "opcode": 100,
+          "opname": "POP_JUMP_IF_FALSE",
+          "arg": 40,
+          "cache_words": 1,
+          "target": 710
+        },
+        {
+          "offset": 630,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 632,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 18,
+          "cache_words": 4,
+          "symbol": "_initPropertyWithNoneValueType",
+          "name_flags": 0
+        },
+        {
+          "offset": 642,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 3,
+          "cache_words": 0,
+          "symbol": "dct"
+        },
+        {
+          "offset": 644,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 6,
+          "cache_words": 0,
+          "constant": "_initProperty"
+        },
+        {
+          "offset": 646,
+          "opcode": 38,
+          "opname": "STORE_SUBSCR",
+          "arg": 0,
+          "cache_words": 1
+        },
+        {
+          "offset": 650,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 20,
+          "cache_words": 4,
+          "symbol": "asiocore",
+          "name_flags": 0
+        },
+        {
+          "offset": 660,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 22,
+          "cache_words": 9,
+          "symbol": "area_map",
+          "name_flags": 0
+        },
+        {
+          "offset": 680,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 24,
+          "cache_words": 9,
+          "symbol": "dsize",
+          "name_flags": 0
+        },
+        {
+          "offset": 700,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 3,
+          "cache_words": 0,
+          "symbol": "dct"
+        },
+        {
+          "offset": 702,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 7,
+          "cache_words": 0,
+          "constant": "__len__"
+        },
+        {
+          "offset": 704,
+          "opcode": 38,
+          "opname": "STORE_SUBSCR",
+          "arg": 0,
+          "cache_words": 1
+        },
+        {
+          "offset": 708,
+          "opcode": 77,
+          "opname": "JUMP_FORWARD",
+          "arg": 121,
+          "cache_words": 0,
+          "target": 952
+        },
+        {
+          "offset": 710,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 4,
+          "cache_words": 0,
+          "constant": "VALUE_TYPE"
+        },
+        {
+          "offset": 712,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 3,
+          "cache_words": 0,
+          "symbol": "dct"
+        },
+        {
+          "offset": 714,
+          "opcode": 57,
+          "opname": "CONTAINS_OP",
+          "arg": 0,
+          "cache_words": 1
+        },
+        {
+          "offset": 718,
+          "opcode": 100,
+          "opname": "POP_JUMP_IF_FALSE",
+          "arg": 65,
+          "cache_words": 1,
+          "target": 852
+        },
+        {
+          "offset": 722,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 724,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 20,
+          "cache_words": 4,
+          "symbol": "asiocore",
+          "name_flags": 0
+        },
+        {
+          "offset": 734,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 22,
+          "cache_words": 9,
+          "symbol": "area_map",
+          "name_flags": 0
+        },
+        {
+          "offset": 754,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 24,
+          "cache_words": 9,
+          "symbol": "dsize",
+          "name_flags": 0
+        },
+        {
+          "offset": 774,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 3,
+          "cache_words": 0,
+          "symbol": "dct"
+        },
+        {
+          "offset": 776,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 7,
+          "cache_words": 0,
+          "constant": "__len__"
+        },
+        {
+          "offset": 778,
+          "opcode": 38,
+          "opname": "STORE_SUBSCR",
+          "arg": 0,
+          "cache_words": 1
+        },
+        {
+          "offset": 782,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 3,
+          "cache_words": 0,
+          "symbol": "dct"
+        },
+        {
+          "offset": 784,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 4,
+          "cache_words": 0,
+          "constant": "VALUE_TYPE"
+        },
+        {
+          "offset": 786,
+          "opcode": 44,
+          "opname": "BINARY_OP",
+          "arg": 26,
+          "cache_words": 5
+        },
+        {
+          "offset": 798,
+          "opcode": 39,
+          "opname": "TO_BOOL",
+          "arg": 0,
+          "cache_words": 3
+        },
+        {
+          "offset": 806,
+          "opcode": 100,
+          "opname": "POP_JUMP_IF_FALSE",
+          "arg": 11,
+          "cache_words": 1,
+          "target": 832
+        },
+        {
+          "offset": 810,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 812,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 26,
+          "cache_words": 4,
+          "symbol": "_initPropertyWithValueType",
+          "name_flags": 0
+        },
+        {
+          "offset": 822,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 3,
+          "cache_words": 0,
+          "symbol": "dct"
+        },
+        {
+          "offset": 824,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 6,
+          "cache_words": 0,
+          "constant": "_initProperty"
+        },
+        {
+          "offset": 826,
+          "opcode": 38,
+          "opname": "STORE_SUBSCR",
+          "arg": 0,
+          "cache_words": 1
+        },
+        {
+          "offset": 830,
+          "opcode": 77,
+          "opname": "JUMP_FORWARD",
+          "arg": 60,
+          "cache_words": 0,
+          "target": 952
+        },
+        {
+          "offset": 832,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 18,
+          "cache_words": 4,
+          "symbol": "_initPropertyWithNoneValueType",
+          "name_flags": 0
+        },
+        {
+          "offset": 842,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 3,
+          "cache_words": 0,
+          "symbol": "dct"
+        },
+        {
+          "offset": 844,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 6,
+          "cache_words": 0,
+          "constant": "_initProperty"
+        },
+        {
+          "offset": 846,
+          "opcode": 38,
+          "opname": "STORE_SUBSCR",
+          "arg": 0,
+          "cache_words": 1
+        },
+        {
+          "offset": 850,
+          "opcode": 77,
+          "opname": "JUMP_FORWARD",
+          "arg": 50,
+          "cache_words": 0,
+          "target": 952
+        },
+        {
+          "offset": 852,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 28,
+          "cache_words": 4,
+          "symbol": "_initPropertyWithOutValueType",
+          "name_flags": 0
+        },
+        {
+          "offset": 862,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 3,
+          "cache_words": 0,
+          "symbol": "dct"
+        },
+        {
+          "offset": 864,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 6,
+          "cache_words": 0,
+          "constant": "_initProperty"
+        },
+        {
+          "offset": 866,
+          "opcode": 38,
+          "opname": "STORE_SUBSCR",
+          "arg": 0,
+          "cache_words": 1
+        },
+        {
+          "offset": 870,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 8,
+          "cache_words": 4,
+          "symbol": "py3compat",
+          "name_flags": 0
+        },
+        {
+          "offset": 880,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 30,
+          "cache_words": 9,
+          "symbol": "PY3",
+          "name_flags": 0
+        },
+        {
+          "offset": 900,
+          "opcode": 39,
+          "opname": "TO_BOOL",
+          "arg": 0,
+          "cache_words": 3
+        },
+        {
+          "offset": 908,
+          "opcode": 100,
+          "opname": "POP_JUMP_IF_FALSE",
+          "arg": 11,
+          "cache_words": 1,
+          "target": 934
+        },
+        {
+          "offset": 912,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 914,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 32,
+          "cache_words": 4,
+          "symbol": "_nonzeroWithOutValueType",
+          "name_flags": 0
+        },
+        {
+          "offset": 924,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 3,
+          "cache_words": 0,
+          "symbol": "dct"
+        },
+        {
+          "offset": 926,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 8,
+          "cache_words": 0,
+          "constant": "__bool__"
+        },
+        {
+          "offset": 928,
+          "opcode": 38,
+          "opname": "STORE_SUBSCR",
+          "arg": 0,
+          "cache_words": 1
+        },
+        {
+          "offset": 932,
+          "opcode": 77,
+          "opname": "JUMP_FORWARD",
+          "arg": 9,
+          "cache_words": 0,
+          "target": 952
+        },
+        {
+          "offset": 934,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 32,
+          "cache_words": 4,
+          "symbol": "_nonzeroWithOutValueType",
+          "name_flags": 0
+        },
+        {
+          "offset": 944,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 3,
+          "cache_words": 0,
+          "symbol": "dct"
+        },
+        {
+          "offset": 946,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 9,
+          "cache_words": 0,
+          "constant": "__nonzero__"
+        },
+        {
+          "offset": 948,
+          "opcode": 38,
+          "opname": "STORE_SUBSCR",
+          "arg": 0,
+          "cache_words": 1
+        },
+        {
+          "offset": 952,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 34,
+          "cache_words": 4,
+          "symbol": "super",
+          "name_flags": 0
+        },
+        {
+          "offset": 962,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 36,
+          "cache_words": 4,
+          "symbol": "PropertyMetaClass",
+          "name_flags": 0
+        },
+        {
+          "offset": 972,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "cls"
+        },
+        {
+          "offset": 974,
+          "opcode": 96,
+          "opname": "LOAD_SUPER_ATTR",
+          "arg": 79,
+          "cache_words": 1,
+          "symbol": "__new__",
+          "name_flags": 3
+        },
+        {
+          "offset": 978,
+          "opcode": 87,
+          "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+          "arg": 1,
+          "cache_words": 0,
+          "symbols": [
+            "cls",
+            "name"
+          ]
+        },
+        {
+          "offset": 980,
+          "opcode": 87,
+          "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+          "arg": 35,
+          "cache_words": 0,
+          "symbols": [
+            "bases",
+            "dct"
+          ]
+        },
+        {
+          "offset": 982,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 4,
+          "cache_words": 3
+        },
+        {
+          "offset": 990,
+          "opcode": 112,
+          "opname": "STORE_FAST",
+          "arg": 8,
+          "cache_words": 0,
+          "symbol": "newcls"
+        },
+        {
+          "offset": 992,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 4,
+          "cache_words": 0,
+          "symbol": "is_custom_type"
+        },
+        {
+          "offset": 994,
+          "opcode": 39,
+          "opname": "TO_BOOL",
+          "arg": 0,
+          "cache_words": 3
+        },
+        {
+          "offset": 1002,
+          "opcode": 100,
+          "opname": "POP_JUMP_IF_FALSE",
+          "arg": 176,
+          "cache_words": 1,
+          "target": 1358
+        },
+        {
+          "offset": 1006,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 1008,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 5,
+          "cache_words": 4,
+          "symbol": "hasattr",
+          "name_flags": 1
+        },
+        {
+          "offset": 1018,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 20,
+          "cache_words": 4,
+          "symbol": "asiocore",
+          "name_flags": 0
+        },
+        {
+          "offset": 1028,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 10,
+          "cache_words": 0,
+          "constant": "area_prop_index"
+        },
+        {
+          "offset": 1030,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 2,
+          "cache_words": 3
+        },
+        {
+          "offset": 1038,
+          "opcode": 39,
+          "opname": "TO_BOOL",
+          "arg": 0,
+          "cache_words": 3
+        },
+        {
+          "offset": 1046,
+          "opcode": 100,
+          "opname": "POP_JUMP_IF_FALSE",
+          "arg": 84,
+          "cache_words": 1,
+          "target": 1218
+        },
+        {
+          "offset": 1050,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 1052,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 17,
+          "cache_words": 4,
+          "symbol": "getattr",
+          "name_flags": 1
+        },
+        {
+          "offset": 1062,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 8,
+          "cache_words": 0,
+          "symbol": "newcls"
+        },
+        {
+          "offset": 1064,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 2,
+          "cache_words": 0,
+          "constant": "__property_all__"
+        },
+        {
+          "offset": 1066,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 11,
+          "cache_words": 0,
+          "constant": null
+        },
+        {
+          "offset": 1068,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 3,
+          "cache_words": 3
+        },
+        {
+          "offset": 1076,
+          "opcode": 112,
+          "opname": "STORE_FAST",
+          "arg": 9,
+          "cache_words": 0,
+          "symbol": "prop_all"
+        },
+        {
+          "offset": 1078,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 17,
+          "cache_words": 4,
+          "symbol": "getattr",
+          "name_flags": 1
+        },
+        {
+          "offset": 1088,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 8,
+          "cache_words": 0,
+          "symbol": "newcls"
+        },
+        {
+          "offset": 1090,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 3,
+          "cache_words": 0,
+          "constant": "__property_flag__"
+        },
+        {
+          "offset": 1092,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 11,
+          "cache_words": 0,
+          "constant": null
+        },
+        {
+          "offset": 1094,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 3,
+          "cache_words": 3
+        },
+        {
+          "offset": 1102,
+          "opcode": 112,
+          "opname": "STORE_FAST",
+          "arg": 10,
+          "cache_words": 0,
+          "symbol": "prop_flag"
+        },
+        {
+          "offset": 1104,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 17,
+          "cache_words": 4,
+          "symbol": "getattr",
+          "name_flags": 1
+        },
+        {
+          "offset": 1114,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 8,
+          "cache_words": 0,
+          "symbol": "newcls"
+        },
+        {
+          "offset": 1116,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 4,
+          "cache_words": 0,
+          "constant": "VALUE_TYPE"
+        },
+        {
+          "offset": 1118,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 1,
+          "cache_words": 0,
+          "constant": false
+        },
+        {
+          "offset": 1120,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 3,
+          "cache_words": 3
+        },
+        {
+          "offset": 1128,
+          "opcode": 112,
+          "opname": "STORE_FAST",
+          "arg": 11,
+          "cache_words": 0,
+          "symbol": "value_type"
+        },
+        {
+          "offset": 1130,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 11,
+          "cache_words": 0,
+          "symbol": "value_type"
+        },
+        {
+          "offset": 1132,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 1,
+          "cache_words": 0,
+          "constant": false
+        },
+        {
+          "offset": 1134,
+          "opcode": 74,
+          "opname": "IS_OP",
+          "arg": 1,
+          "cache_words": 0
+        },
+        {
+          "offset": 1136,
+          "opcode": 103,
+          "opname": "POP_JUMP_IF_TRUE",
+          "arg": 9,
+          "cache_words": 1,
+          "target": 1158
+        },
+        {
+          "offset": 1140,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 1142,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 9,
+          "cache_words": 0,
+          "symbol": "prop_all"
+        },
+        {
+          "offset": 1144,
+          "opcode": 101,
+          "opname": "POP_JUMP_IF_NONE",
+          "arg": 33,
+          "cache_words": 1,
+          "target": 1214
+        },
+        {
+          "offset": 1148,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 1150,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 10,
+          "cache_words": 0,
+          "symbol": "prop_flag"
+        },
+        {
+          "offset": 1152,
+          "opcode": 101,
+          "opname": "POP_JUMP_IF_NONE",
+          "arg": 29,
+          "cache_words": 1,
+          "target": 1214
+        },
+        {
+          "offset": 1156,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 1158,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 20,
+          "cache_words": 4,
+          "symbol": "asiocore",
+          "name_flags": 0
+        },
+        {
+          "offset": 1168,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 40,
+          "cache_words": 9,
+          "symbol": "area_prop_index",
+          "name_flags": 0
+        },
+        {
+          "offset": 1188,
+          "opcode": 33,
+          "opname": "PUSH_NULL",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 1190,
+          "opcode": 87,
+          "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+          "arg": 137,
+          "cache_words": 0,
+          "symbols": [
+            "newcls",
+            "prop_all"
+          ]
+        },
+        {
+          "offset": 1192,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 10,
+          "cache_words": 0,
+          "symbol": "prop_flag"
+        },
+        {
+          "offset": 1194,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 3,
+          "cache_words": 3
+        },
+        {
+          "offset": 1202,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 8,
+          "cache_words": 0,
+          "symbol": "newcls"
+        },
+        {
+          "offset": 1204,
+          "opcode": 110,
+          "opname": "STORE_ATTR",
+          "arg": 21,
+          "cache_words": 4,
+          "symbol": "__property_index__"
+        },
+        {
+          "offset": 1214,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 8,
+          "cache_words": 0,
+          "symbol": "newcls"
+        },
+        {
+          "offset": 1216,
+          "opcode": 35,
+          "opname": "RETURN_VALUE",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 1218,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 5,
+          "cache_words": 4,
+          "symbol": "hasattr",
+          "name_flags": 1
+        },
+        {
+          "offset": 1228,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 20,
+          "cache_words": 4,
+          "symbol": "asiocore",
+          "name_flags": 0
+        },
+        {
+          "offset": 1238,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 12,
+          "cache_words": 0,
+          "constant": "area_map_index"
+        },
+        {
+          "offset": 1240,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 2,
+          "cache_words": 3
+        },
+        {
+          "offset": 1248,
+          "opcode": 39,
+          "opname": "TO_BOOL",
+          "arg": 0,
+          "cache_words": 3
+        },
+        {
+          "offset": 1256,
+          "opcode": 100,
+          "opname": "POP_JUMP_IF_FALSE",
+          "arg": 49,
+          "cache_words": 1,
+          "target": 1358
+        },
+        {
+          "offset": 1260,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 1262,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 17,
+          "cache_words": 4,
+          "symbol": "getattr",
+          "name_flags": 1
+        },
+        {
+          "offset": 1272,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 8,
+          "cache_words": 0,
+          "symbol": "newcls"
+        },
+        {
+          "offset": 1274,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 2,
+          "cache_words": 0,
+          "constant": "__property_all__"
+        },
+        {
+          "offset": 1276,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 11,
+          "cache_words": 0,
+          "constant": null
+        },
+        {
+          "offset": 1278,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 3,
+          "cache_words": 3
+        },
+        {
+          "offset": 1286,
+          "opcode": 112,
+          "opname": "STORE_FAST",
+          "arg": 9,
+          "cache_words": 0,
+          "symbol": "prop_all"
+        },
+        {
+          "offset": 1288,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 9,
+          "cache_words": 0,
+          "symbol": "prop_all"
+        },
+        {
+          "offset": 1290,
+          "opcode": 39,
+          "opname": "TO_BOOL",
+          "arg": 0,
+          "cache_words": 3
+        },
+        {
+          "offset": 1298,
+          "opcode": 100,
+          "opname": "POP_JUMP_IF_FALSE",
+          "arg": 28,
+          "cache_words": 1,
+          "target": 1358
+        },
+        {
+          "offset": 1302,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 1304,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 20,
+          "cache_words": 4,
+          "symbol": "asiocore",
+          "name_flags": 0
+        },
+        {
+          "offset": 1314,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 44,
+          "cache_words": 9,
+          "symbol": "area_map_index",
+          "name_flags": 0
+        },
+        {
+          "offset": 1334,
+          "opcode": 33,
+          "opname": "PUSH_NULL",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 1336,
+          "opcode": 87,
+          "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+          "arg": 137,
+          "cache_words": 0,
+          "symbols": [
+            "newcls",
+            "prop_all"
+          ]
+        },
+        {
+          "offset": 1338,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 2,
+          "cache_words": 3
+        },
+        {
+          "offset": 1346,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 8,
+          "cache_words": 0,
+          "symbol": "newcls"
+        },
+        {
+          "offset": 1348,
+          "opcode": 110,
+          "opname": "STORE_ATTR",
+          "arg": 21,
+          "cache_words": 4,
+          "symbol": "__property_index__"
+        },
+        {
+          "offset": 1358,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 8,
+          "cache_words": 0,
+          "symbol": "newcls"
+        },
+        {
+          "offset": 1360,
+          "opcode": 35,
+          "opname": "RETURN_VALUE",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 1362,
+          "opcode": 117,
+          "opname": "SWAP",
+          "arg": 2,
+          "cache_words": 0
+        },
+        {
+          "offset": 1364,
+          "opcode": 31,
+          "opname": "POP_TOP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 1366,
+          "opcode": 117,
+          "opname": "SWAP",
+          "arg": 3,
+          "cache_words": 0
+        },
+        {
+          "offset": 1368,
+          "opcode": 112,
+          "opname": "STORE_FAST",
+          "arg": 7,
+          "cache_words": 0,
+          "symbol": "v"
+        },
+        {
+          "offset": 1370,
+          "opcode": 112,
+          "opname": "STORE_FAST",
+          "arg": 6,
+          "cache_words": 0,
+          "symbol": "k"
+        },
+        {
+          "offset": 1372,
+          "opcode": 105,
+          "opname": "RERAISE",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 1374,
+          "opcode": 117,
+          "opname": "SWAP",
+          "arg": 2,
+          "cache_words": 0
+        },
+        {
+          "offset": 1376,
+          "opcode": 31,
+          "opname": "POP_TOP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 1378,
+          "opcode": 117,
+          "opname": "SWAP",
+          "arg": 3,
+          "cache_words": 0
+        },
+        {
+          "offset": 1380,
+          "opcode": 112,
+          "opname": "STORE_FAST",
+          "arg": 7,
+          "cache_words": 0,
+          "symbol": "v"
+        },
+        {
+          "offset": 1382,
+          "opcode": 112,
+          "opname": "STORE_FAST",
+          "arg": 6,
+          "cache_words": 0,
+          "symbol": "k"
+        },
+        {
+          "offset": 1384,
+          "opcode": 105,
+          "opname": "RERAISE",
+          "arg": 0,
+          "cache_words": 0
+        }
+      ]
+    }
+  },
+  {
+    "index": 32464,
+    "decoded_sha256": "7e25e3c1907b728ce029281a72888ba35e85dd56923cb593383c134903e7f071",
+    "code": {
+      "kind": "code",
+      "marshal_offset": 22817,
+      "argcount": 0,
+      "posonlyargcount": 0,
+      "kwonlyargcount": 0,
+      "stacksize": 1,
+      "flags": 0,
+      "code": {
+        "bytes": 84,
+        "sha256": "25df580e3fcb790108d7716b413aeb1f1896d0dca5e4da7feb86e6782b9cfd85",
+        "head_hex": "61 00 80 00 5d 00 74 01 52 00 74 02 52 01 74 03 16 00 6f 00 52 02 74 04 52 03 17 00 74 05 52 04 17 00 74 06 52 05 17 00 74 07 52 06 17 00 74 08 52 07 17 00 74 09 52 08 17 00 74 0a 52 09 17 00 74 0b 52 0a 17 00 74 0c 52 0b 74 0d 56 00 74 0e"
+      },
+      "names": [
+        "__name__",
+        "__module__",
+        "__qualname__",
+        "__firstlineno__",
+        "IS_CUSTOM_TYPE",
+        "__str__",
+        "__repr__",
+        "keys",
+        "values",
+        "items",
+        "setdefault",
+        "update2",
+        "show_memory_status",
+        "__static_attributes__",
+        "__classdictcell__"
+      ],
+      "localsplusnames": [
+        "__classdict__"
+      ],
+      "localspluskinds": {
+        "bytes": 1,
+        "sha256": "c3641f8544d7c02f3580b07c0f9887f0c6a27ff5ab1d4a3e29caf197cfc299ae",
+        "head_hex": "40"
+      },
+      "filename": "engine/common/classutils.py",
+      "name": "CustomMapType",
+      "qualname": "CustomMapType",
+      "firstlineno": 509,
+      "marshal_end": 25272,
+      "consts": [
+        "CustomMapType",
+        509,
+        true,
+        {
+          "code_ref_offset": 22940,
+          "name": "__str__"
+        },
+        {
+          "code_ref_offset": 23350,
+          "name": "__repr__"
+        },
+        {
+          "code_ref_offset": 23804,
+          "name": "keys"
+        },
+        {
+          "code_ref_offset": 23970,
+          "name": "values"
+        },
+        {
+          "code_ref_offset": 24129,
+          "name": "items"
+        },
+        {
+          "code_ref_offset": 24280,
+          "name": "setdefault"
+        },
+        {
+          "code_ref_offset": 24511,
+          "name": "update2"
+        },
+        {
+          "code_ref_offset": 24667,
+          "name": "show_memory_status"
+        },
+        [],
+        null
+      ],
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": 97,
+          "opname": "MAKE_CELL",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "__classdict__"
+        },
+        {
+          "offset": 2,
+          "opcode": 128,
+          "opname": "RESUME",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 4,
+          "opcode": 93,
+          "opname": "LOAD_NAME",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "__name__"
+        },
+        {
+          "offset": 6,
+          "opcode": 116,
+          "opname": "STORE_NAME",
+          "arg": 1,
+          "cache_words": 0,
+          "symbol": "__module__"
+        },
+        {
+          "offset": 8,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 0,
+          "cache_words": 0,
+          "constant": "CustomMapType"
+        },
+        {
+          "offset": 10,
+          "opcode": 116,
+          "opname": "STORE_NAME",
+          "arg": 2,
+          "cache_words": 0,
+          "symbol": "__qualname__"
+        },
+        {
+          "offset": 12,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 1,
+          "cache_words": 0,
+          "constant": 509
+        },
+        {
+          "offset": 14,
+          "opcode": 116,
+          "opname": "STORE_NAME",
+          "arg": 3,
+          "cache_words": 0,
+          "symbol": "__firstlineno__"
+        },
+        {
+          "offset": 16,
+          "opcode": 22,
+          "opname": "LOAD_LOCALS",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 18,
+          "opcode": 111,
+          "opname": "STORE_DEREF",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "__classdict__"
+        },
+        {
+          "offset": 20,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 2,
+          "cache_words": 0,
+          "constant": true
+        },
+        {
+          "offset": 22,
+          "opcode": 116,
+          "opname": "STORE_NAME",
+          "arg": 4,
+          "cache_words": 0,
+          "symbol": "IS_CUSTOM_TYPE"
+        },
+        {
+          "offset": 24,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 3,
+          "cache_words": 0,
+          "constant": {
+            "code_ref_offset": 22940,
+            "name": "__str__"
+          }
+        },
+        {
+          "offset": 26,
+          "opcode": 23,
+          "opname": "MAKE_FUNCTION",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 28,
+          "opcode": 116,
+          "opname": "STORE_NAME",
+          "arg": 5,
+          "cache_words": 0,
+          "symbol": "__str__"
+        },
+        {
+          "offset": 30,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 4,
+          "cache_words": 0,
+          "constant": {
+            "code_ref_offset": 23350,
+            "name": "__repr__"
+          }
+        },
+        {
+          "offset": 32,
+          "opcode": 23,
+          "opname": "MAKE_FUNCTION",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 34,
+          "opcode": 116,
+          "opname": "STORE_NAME",
+          "arg": 6,
+          "cache_words": 0,
+          "symbol": "__repr__"
+        },
+        {
+          "offset": 36,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 5,
+          "cache_words": 0,
+          "constant": {
+            "code_ref_offset": 23804,
+            "name": "keys"
+          }
+        },
+        {
+          "offset": 38,
+          "opcode": 23,
+          "opname": "MAKE_FUNCTION",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 40,
+          "opcode": 116,
+          "opname": "STORE_NAME",
+          "arg": 7,
+          "cache_words": 0,
+          "symbol": "keys"
+        },
+        {
+          "offset": 42,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 6,
+          "cache_words": 0,
+          "constant": {
+            "code_ref_offset": 23970,
+            "name": "values"
+          }
+        },
+        {
+          "offset": 44,
+          "opcode": 23,
+          "opname": "MAKE_FUNCTION",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 46,
+          "opcode": 116,
+          "opname": "STORE_NAME",
+          "arg": 8,
+          "cache_words": 0,
+          "symbol": "values"
+        },
+        {
+          "offset": 48,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 7,
+          "cache_words": 0,
+          "constant": {
+            "code_ref_offset": 24129,
+            "name": "items"
+          }
+        },
+        {
+          "offset": 50,
+          "opcode": 23,
+          "opname": "MAKE_FUNCTION",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 52,
+          "opcode": 116,
+          "opname": "STORE_NAME",
+          "arg": 9,
+          "cache_words": 0,
+          "symbol": "items"
+        },
+        {
+          "offset": 54,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 8,
+          "cache_words": 0,
+          "constant": {
+            "code_ref_offset": 24280,
+            "name": "setdefault"
+          }
+        },
+        {
+          "offset": 56,
+          "opcode": 23,
+          "opname": "MAKE_FUNCTION",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 58,
+          "opcode": 116,
+          "opname": "STORE_NAME",
+          "arg": 10,
+          "cache_words": 0,
+          "symbol": "setdefault"
+        },
+        {
+          "offset": 60,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 9,
+          "cache_words": 0,
+          "constant": {
+            "code_ref_offset": 24511,
+            "name": "update2"
+          }
+        },
+        {
+          "offset": 62,
+          "opcode": 23,
+          "opname": "MAKE_FUNCTION",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 64,
+          "opcode": 116,
+          "opname": "STORE_NAME",
+          "arg": 11,
+          "cache_words": 0,
+          "symbol": "update2"
+        },
+        {
+          "offset": 66,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 10,
+          "cache_words": 0,
+          "constant": {
+            "code_ref_offset": 24667,
+            "name": "show_memory_status"
+          }
+        },
+        {
+          "offset": 68,
+          "opcode": 23,
+          "opname": "MAKE_FUNCTION",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 70,
+          "opcode": 116,
+          "opname": "STORE_NAME",
+          "arg": 12,
+          "cache_words": 0,
+          "symbol": "show_memory_status"
+        },
+        {
+          "offset": 72,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 11,
+          "cache_words": 0,
+          "constant": []
+        },
+        {
+          "offset": 74,
+          "opcode": 116,
+          "opname": "STORE_NAME",
+          "arg": 13,
+          "cache_words": 0,
+          "symbol": "__static_attributes__"
+        },
+        {
+          "offset": 76,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "__classdict__"
+        },
+        {
+          "offset": 78,
+          "opcode": 116,
+          "opname": "STORE_NAME",
+          "arg": 14,
+          "cache_words": 0,
+          "symbol": "__classdictcell__"
+        },
+        {
+          "offset": 80,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 12,
+          "cache_words": 0,
+          "constant": null
+        },
+        {
+          "offset": 82,
+          "opcode": 35,
+          "opname": "RETURN_VALUE",
+          "arg": 0,
+          "cache_words": 0
+        }
+      ]
+    }
+  },
+  {
+    "index": 66925,
+    "decoded_sha256": "a36404ae9ebdfc46e3512f5e5d62b5bd6cf3ad4cbaa831a9166fce1dd4e97051",
+    "code": {
+      "kind": "code",
+      "marshal_offset": 731,
+      "argcount": 1,
+      "posonlyargcount": 0,
+      "kwonlyargcount": 0,
+      "stacksize": 9,
+      "flags": 134217731,
+      "code": {
+        "bytes": 492,
+        "sha256": "f21679bb96e4ffb59b5654c792c7358df921372cd0c97a6fbce80450ca39ca0a",
+        "head_hex": "3c 01 61 00 80 00 5c 00 00 00 00 00 00 00 00 00 5c 02 00 00 00 00 00 00 00 00 53 00 60 0b 00 00 34 00 00 00 00 00 00 00 1f 00 5c 07 00 00 00 00 00 00 00 00 5c 08 00 00 00 00 00 00 00 00 52 00 34 02 00 00 00 00 00 00 27 00 00 00 00 00 00 00"
+      },
+      "names": [
+        "super",
+        "ClientEntity",
+        "onEntityClassRegistered",
+        "hasattr",
+        "asiocore",
+        "CustomMapType",
+        "__name__",
+        "set_prop_index",
+        "regist_class",
+        "regist_rpc_methods",
+        "set_prop_desc",
+        "get_props_desc"
+      ],
+      "localsplusnames": [
+        "klass",
+        "ClientAreaMap",
+        "__class__"
+      ],
+      "localspluskinds": {
+        "bytes": 3,
+        "sha256": "5d1957225650fd7bd94ecc747147a80d4a8b2a5e4656f343cb092ff465757aff",
+        "head_hex": "66 20 80"
+      },
+      "filename": "engine/client/ClientEntity.py",
+      "name": "onEntityClassRegistered",
+      "qualname": "ClientEntity.onEntityClassRegistered",
+      "firstlineno": 16,
+      "marshal_end": 2736,
+      "consts": [
+        "area_prop_index",
+        {
+          "code_ref_offset": 1268,
+          "name": "ClientAreaMap"
+        },
+        "ClientAreaMap",
+        {
+          "code_ref_offset": 1973,
+          "name": "ClientAreaMap"
+        },
+        "type",
+        "props",
+        null
+      ],
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": 60,
+          "opname": "COPY_FREE_VARS",
+          "arg": 1,
+          "cache_words": 0
+        },
+        {
+          "offset": 2,
+          "opcode": 97,
+          "opname": "MAKE_CELL",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "klass"
+        },
+        {
+          "offset": 4,
+          "opcode": 128,
+          "opname": "RESUME",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 6,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 0,
+          "cache_words": 4,
+          "symbol": "super",
+          "name_flags": 0
+        },
+        {
+          "offset": 16,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 2,
+          "cache_words": 4,
+          "symbol": "ClientEntity",
+          "name_flags": 0
+        },
+        {
+          "offset": 26,
+          "opcode": 83,
+          "opname": "LOAD_DEREF",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "klass"
+        },
+        {
+          "offset": 28,
+          "opcode": 96,
+          "opname": "LOAD_SUPER_ATTR",
+          "arg": 11,
+          "cache_words": 1,
+          "symbol": "onEntityClassRegistered",
+          "name_flags": 3
+        },
+        {
+          "offset": 32,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 0,
+          "cache_words": 3
+        },
+        {
+          "offset": 40,
+          "opcode": 31,
+          "opname": "POP_TOP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 42,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 7,
+          "cache_words": 4,
+          "symbol": "hasattr",
+          "name_flags": 1
+        },
+        {
+          "offset": 52,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 8,
+          "cache_words": 4,
+          "symbol": "asiocore",
+          "name_flags": 0
+        },
+        {
+          "offset": 62,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 0,
+          "cache_words": 0,
+          "constant": "area_prop_index"
+        },
+        {
+          "offset": 64,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 2,
+          "cache_words": 3
+        },
+        {
+          "offset": 72,
+          "opcode": 39,
+          "opname": "TO_BOOL",
+          "arg": 0,
+          "cache_words": 3
+        },
+        {
+          "offset": 80,
+          "opcode": 100,
+          "opname": "POP_JUMP_IF_FALSE",
+          "arg": 105,
+          "cache_words": 1,
+          "target": 294
+        },
+        {
+          "offset": 84,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 86,
+          "opcode": 21,
+          "opname": "LOAD_BUILD_CLASS",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 88,
+          "opcode": 33,
+          "opname": "PUSH_NULL",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 90,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "klass"
+        },
+        {
+          "offset": 92,
+          "opcode": 51,
+          "opname": "BUILD_TUPLE",
+          "arg": 1,
+          "cache_words": 0
+        },
+        {
+          "offset": 94,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 1,
+          "cache_words": 0,
+          "constant": {
+            "code_ref_offset": 1268,
+            "name": "ClientAreaMap"
+          }
+        },
+        {
+          "offset": 96,
+          "opcode": 23,
+          "opname": "MAKE_FUNCTION",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 98,
+          "opcode": 108,
+          "opname": "SET_FUNCTION_ATTRIBUTE",
+          "arg": 8,
+          "cache_words": 0
+        },
+        {
+          "offset": 100,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 2,
+          "cache_words": 0,
+          "constant": "ClientAreaMap"
+        },
+        {
+          "offset": 102,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 10,
+          "cache_words": 4,
+          "symbol": "CustomMapType",
+          "name_flags": 0
+        },
+        {
+          "offset": 112,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 3,
+          "cache_words": 3
+        },
+        {
+          "offset": 120,
+          "opcode": 112,
+          "opname": "STORE_FAST",
+          "arg": 1,
+          "cache_words": 0,
+          "symbol": "ClientAreaMap"
+        },
+        {
+          "offset": 122,
+          "opcode": 83,
+          "opname": "LOAD_DEREF",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "klass"
+        },
+        {
+          "offset": 124,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 12,
+          "cache_words": 9,
+          "symbol": "__name__",
+          "name_flags": 0
+        },
+        {
+          "offset": 144,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 1,
+          "cache_words": 0,
+          "symbol": "ClientAreaMap"
+        },
+        {
+          "offset": 146,
+          "opcode": 110,
+          "opname": "STORE_ATTR",
+          "arg": 6,
+          "cache_words": 4,
+          "symbol": "__name__"
+        },
+        {
+          "offset": 156,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 8,
+          "cache_words": 4,
+          "symbol": "asiocore",
+          "name_flags": 0
+        },
+        {
+          "offset": 166,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 14,
+          "cache_words": 9,
+          "symbol": "set_prop_index",
+          "name_flags": 0
+        },
+        {
+          "offset": 186,
+          "opcode": 33,
+          "opname": "PUSH_NULL",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 188,
+          "opcode": 83,
+          "opname": "LOAD_DEREF",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "klass"
+        },
+        {
+          "offset": 190,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 1,
+          "cache_words": 0,
+          "symbol": "ClientAreaMap"
+        },
+        {
+          "offset": 192,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 2,
+          "cache_words": 3
+        },
+        {
+          "offset": 200,
+          "opcode": 31,
+          "opname": "POP_TOP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 202,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 8,
+          "cache_words": 4,
+          "symbol": "asiocore",
+          "name_flags": 0
+        },
+        {
+          "offset": 212,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 16,
+          "cache_words": 9,
+          "symbol": "regist_class",
+          "name_flags": 0
+        },
+        {
+          "offset": 232,
+          "opcode": 33,
+          "opname": "PUSH_NULL",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 234,
+          "opcode": 83,
+          "opname": "LOAD_DEREF",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "klass"
+        },
+        {
+          "offset": 236,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 12,
+          "cache_words": 9,
+          "symbol": "__name__",
+          "name_flags": 0
+        },
+        {
+          "offset": 256,
+          "opcode": 83,
+          "opname": "LOAD_DEREF",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "klass"
+        },
+        {
+          "offset": 258,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 2,
+          "cache_words": 3
+        },
+        {
+          "offset": 266,
+          "opcode": 31,
+          "opname": "POP_TOP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 268,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 19,
+          "cache_words": 4,
+          "symbol": "regist_rpc_methods",
+          "name_flags": 1
+        },
+        {
+          "offset": 278,
+          "opcode": 83,
+          "opname": "LOAD_DEREF",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "klass"
+        },
+        {
+          "offset": 280,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 1,
+          "cache_words": 3
+        },
+        {
+          "offset": 288,
+          "opcode": 31,
+          "opname": "POP_TOP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 290,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 6,
+          "cache_words": 0,
+          "constant": null
+        },
+        {
+          "offset": 292,
+          "opcode": 35,
+          "opname": "RETURN_VALUE",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 294,
+          "opcode": 21,
+          "opname": "LOAD_BUILD_CLASS",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 296,
+          "opcode": 33,
+          "opname": "PUSH_NULL",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 298,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "klass"
+        },
+        {
+          "offset": 300,
+          "opcode": 51,
+          "opname": "BUILD_TUPLE",
+          "arg": 1,
+          "cache_words": 0
+        },
+        {
+          "offset": 302,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 3,
+          "cache_words": 0,
+          "constant": {
+            "code_ref_offset": 1973,
+            "name": "ClientAreaMap"
+          }
+        },
+        {
+          "offset": 304,
+          "opcode": 23,
+          "opname": "MAKE_FUNCTION",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 306,
+          "opcode": 108,
+          "opname": "SET_FUNCTION_ATTRIBUTE",
+          "arg": 8,
+          "cache_words": 0
+        },
+        {
+          "offset": 308,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 2,
+          "cache_words": 0,
+          "constant": "ClientAreaMap"
+        },
+        {
+          "offset": 310,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 10,
+          "cache_words": 4,
+          "symbol": "CustomMapType",
+          "name_flags": 0
+        },
+        {
+          "offset": 320,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 3,
+          "cache_words": 3
+        },
+        {
+          "offset": 328,
+          "opcode": 112,
+          "opname": "STORE_FAST",
+          "arg": 1,
+          "cache_words": 0,
+          "symbol": "ClientAreaMap"
+        },
+        {
+          "offset": 330,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 8,
+          "cache_words": 4,
+          "symbol": "asiocore",
+          "name_flags": 0
+        },
+        {
+          "offset": 340,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 20,
+          "cache_words": 9,
+          "symbol": "set_prop_desc",
+          "name_flags": 0
+        },
+        {
+          "offset": 360,
+          "opcode": 33,
+          "opname": "PUSH_NULL",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 362,
+          "opcode": 83,
+          "opname": "LOAD_DEREF",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "klass"
+        },
+        {
+          "offset": 364,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 12,
+          "cache_words": 9,
+          "symbol": "__name__",
+          "name_flags": 0
+        },
+        {
+          "offset": 384,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 4,
+          "cache_words": 0,
+          "constant": "type"
+        },
+        {
+          "offset": 386,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 1,
+          "cache_words": 0,
+          "symbol": "ClientAreaMap"
+        },
+        {
+          "offset": 388,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 5,
+          "cache_words": 0,
+          "constant": "props"
+        },
+        {
+          "offset": 390,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 23,
+          "cache_words": 4,
+          "symbol": "get_props_desc",
+          "name_flags": 1
+        },
+        {
+          "offset": 400,
+          "opcode": 83,
+          "opname": "LOAD_DEREF",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "klass"
+        },
+        {
+          "offset": 402,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 1,
+          "cache_words": 3
+        },
+        {
+          "offset": 410,
+          "opcode": 47,
+          "opname": "BUILD_MAP",
+          "arg": 2,
+          "cache_words": 0
+        },
+        {
+          "offset": 412,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 2,
+          "cache_words": 3
+        },
+        {
+          "offset": 420,
+          "opcode": 31,
+          "opname": "POP_TOP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 422,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 8,
+          "cache_words": 4,
+          "symbol": "asiocore",
+          "name_flags": 0
+        },
+        {
+          "offset": 432,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 16,
+          "cache_words": 9,
+          "symbol": "regist_class",
+          "name_flags": 0
+        },
+        {
+          "offset": 452,
+          "opcode": 33,
+          "opname": "PUSH_NULL",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 454,
+          "opcode": 83,
+          "opname": "LOAD_DEREF",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "klass"
+        },
+        {
+          "offset": 456,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 12,
+          "cache_words": 9,
+          "symbol": "__name__",
+          "name_flags": 0
+        },
+        {
+          "offset": 476,
+          "opcode": 83,
+          "opname": "LOAD_DEREF",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "klass"
+        },
+        {
+          "offset": 478,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 2,
+          "cache_words": 3
+        },
+        {
+          "offset": 486,
+          "opcode": 31,
+          "opname": "POP_TOP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 488,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 6,
+          "cache_words": 0,
+          "constant": null
+        },
+        {
+          "offset": 490,
+          "opcode": 35,
+          "opname": "RETURN_VALUE",
+          "arg": 0,
+          "cache_words": 0
+        }
+      ]
+    }
+  },
+  {
+    "index": 66925,
+    "decoded_sha256": "a36404ae9ebdfc46e3512f5e5d62b5bd6cf3ad4cbaa831a9166fce1dd4e97051",
+    "code": {
+      "kind": "code",
+      "marshal_offset": 4583,
+      "argcount": 2,
+      "posonlyargcount": 0,
+      "kwonlyargcount": 0,
+      "stacksize": 7,
+      "flags": 134217731,
+      "code": {
+        "bytes": 184,
+        "sha256": "e55e234b87d606825d8ba820a7ae9398330b2aa3d81a1109880f5ecb9060e4ae",
+        "head_hex": "80 00 1b 00 5c 01 00 00 00 00 00 00 00 00 56 00 50 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 50 05 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 34 00 00 00 00 00 00 00 56 01 34 02 00 00 00 00 00 00 23 00 20 00 5c 06"
+      },
+      "names": [
+        "getattr",
+        "area",
+        "prop",
+        "Exception",
+        "AttributeError",
+        "__class__",
+        "__name__"
+      ],
+      "localsplusnames": [
+        "self",
+        "name"
+      ],
+      "localspluskinds": {
+        "bytes": 2,
+        "sha256": "73e7b6f86214bc78ee505fb5f7d4fb97cfa99924a67ca3105113c9a3d52f8fef",
+        "head_hex": "26 26"
+      },
+      "filename": "engine/client/ClientEntity.py",
+      "name": "__getattr__",
+      "qualname": "ClientEntity.__getattr__",
+      "firstlineno": 102,
+      "marshal_end": 5001,
+      "consts": [
+        " object has no attribute '",
+        "'"
+      ],
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": 128,
+          "opname": "RESUME",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 2,
+          "opcode": 27,
+          "opname": "NOP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 4,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 1,
+          "cache_words": 4,
+          "symbol": "getattr",
+          "name_flags": 1
+        },
+        {
+          "offset": 14,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "self"
+        },
+        {
+          "offset": 16,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 2,
+          "cache_words": 9,
+          "symbol": "area",
+          "name_flags": 0
+        },
+        {
+          "offset": 36,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 5,
+          "cache_words": 9,
+          "symbol": "prop",
+          "name_flags": 1
+        },
+        {
+          "offset": 56,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 0,
+          "cache_words": 3
+        },
+        {
+          "offset": 64,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 1,
+          "cache_words": 0,
+          "symbol": "name"
+        },
+        {
+          "offset": 66,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 2,
+          "cache_words": 3
+        },
+        {
+          "offset": 74,
+          "opcode": 35,
+          "opname": "RETURN_VALUE",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 76,
+          "opcode": 32,
+          "opname": "PUSH_EXC_INFO",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 78,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 6,
+          "cache_words": 4,
+          "symbol": "Exception",
+          "name_flags": 0
+        },
+        {
+          "offset": 88,
+          "opcode": 6,
+          "opname": "CHECK_EXC_MATCH",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 90,
+          "opcode": 100,
+          "opname": "POP_JUMP_IF_FALSE",
+          "arg": 41,
+          "cache_words": 1,
+          "target": 176
+        },
+        {
+          "offset": 94,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 96,
+          "opcode": 31,
+          "opname": "POP_TOP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 98,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 9,
+          "cache_words": 4,
+          "symbol": "AttributeError",
+          "name_flags": 1
+        },
+        {
+          "offset": 108,
+          "opcode": 84,
+          "opname": "LOAD_FAST",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "self"
+        },
+        {
+          "offset": 110,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 10,
+          "cache_words": 9,
+          "symbol": "__class__",
+          "name_flags": 0
+        },
+        {
+          "offset": 130,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 12,
+          "cache_words": 9,
+          "symbol": "__name__",
+          "name_flags": 0
+        },
+        {
+          "offset": 150,
+          "opcode": 58,
+          "opname": "CONVERT_VALUE",
+          "arg": 1,
+          "cache_words": 0
+        },
+        {
+          "offset": 152,
+          "opcode": 12,
+          "opname": "FORMAT_SIMPLE",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 154,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 0,
+          "cache_words": 0,
+          "constant": " object has no attribute '"
+        },
+        {
+          "offset": 156,
+          "opcode": 84,
+          "opname": "LOAD_FAST",
+          "arg": 1,
+          "cache_words": 0,
+          "symbol": "name"
+        },
+        {
+          "offset": 158,
+          "opcode": 58,
+          "opname": "CONVERT_VALUE",
+          "arg": 1,
+          "cache_words": 0
+        },
+        {
+          "offset": 160,
+          "opcode": 12,
+          "opname": "FORMAT_SIMPLE",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 162,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 1,
+          "cache_words": 0,
+          "constant": "'"
+        },
+        {
+          "offset": 164,
+          "opcode": 50,
+          "opname": "BUILD_STRING",
+          "arg": 4,
+          "cache_words": 0
+        },
+        {
+          "offset": 166,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 1,
+          "cache_words": 3
+        },
+        {
+          "offset": 174,
+          "opcode": 104,
+          "opname": "RAISE_VARARGS",
+          "arg": 1,
+          "cache_words": 0
+        },
+        {
+          "offset": 176,
+          "opcode": 105,
+          "opname": "RERAISE",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 178,
+          "opcode": 59,
+          "opname": "COPY",
+          "arg": 3,
+          "cache_words": 0
+        },
+        {
+          "offset": 180,
+          "opcode": 29,
+          "opname": "POP_EXCEPT",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 182,
+          "opcode": 105,
+          "opname": "RERAISE",
+          "arg": 1,
+          "cache_words": 0
+        }
+      ]
+    }
+  },
+  {
+    "index": 66925,
+    "decoded_sha256": "a36404ae9ebdfc46e3512f5e5d62b5bd6cf3ad4cbaa831a9166fce1dd4e97051",
+    "code": {
+      "kind": "code",
+      "marshal_offset": 5001,
+      "argcount": 3,
+      "posonlyargcount": 0,
+      "kwonlyargcount": 0,
+      "stacksize": 5,
+      "flags": 134217731,
+      "code": {
+        "bytes": 160,
+        "sha256": "7eef633c3ff04e825d9304b9c4cb571ef5bb994aa23fd306ee9112884330e38d",
+        "head_hex": "80 00 57 10 50 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 39 00 00 00 64 27 00 00 1c 00 5c 03 00 00 00 00 00 00 00 00 56 00 50 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 50 07 00 00 00 00 00 00 00 00 00 00 00 00"
+      },
+      "names": [
+        "__property_all__",
+        "setattr",
+        "area",
+        "prop",
+        "Entity",
+        "__setattr__"
+      ],
+      "localsplusnames": [
+        "self",
+        "name",
+        "value"
+      ],
+      "localspluskinds": {
+        "bytes": 3,
+        "sha256": "f0bfa9ca26cb91203e9acac654e84a194bc96d127df153bd85ca9051a50a3257",
+        "head_hex": "26 26 26"
+      },
+      "filename": "engine/client/ClientEntity.py",
+      "name": "__setattr__",
+      "qualname": "ClientEntity.__setattr__",
+      "firstlineno": 108,
+      "marshal_end": 5329,
+      "consts": [
+        null
+      ],
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": 128,
+          "opname": "RESUME",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 2,
+          "opcode": 87,
+          "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+          "arg": 16,
+          "cache_words": 0,
+          "symbols": [
+            "name",
+            "self"
+          ]
+        },
+        {
+          "offset": 4,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 0,
+          "cache_words": 9,
+          "symbol": "__property_all__",
+          "name_flags": 0
+        },
+        {
+          "offset": 24,
+          "opcode": 57,
+          "opname": "CONTAINS_OP",
+          "arg": 0,
+          "cache_words": 1
+        },
+        {
+          "offset": 28,
+          "opcode": 100,
+          "opname": "POP_JUMP_IF_FALSE",
+          "arg": 39,
+          "cache_words": 1,
+          "target": 110
+        },
+        {
+          "offset": 32,
+          "opcode": 28,
+          "opname": "NOT_TAKEN",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 34,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 3,
+          "cache_words": 4,
+          "symbol": "setattr",
+          "name_flags": 1
+        },
+        {
+          "offset": 44,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "self"
+        },
+        {
+          "offset": 46,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 4,
+          "cache_words": 9,
+          "symbol": "area",
+          "name_flags": 0
+        },
+        {
+          "offset": 66,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 7,
+          "cache_words": 9,
+          "symbol": "prop",
+          "name_flags": 1
+        },
+        {
+          "offset": 86,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 0,
+          "cache_words": 3
+        },
+        {
+          "offset": 94,
+          "opcode": 87,
+          "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+          "arg": 18,
+          "cache_words": 0,
+          "symbols": [
+            "name",
+            "value"
+          ]
+        },
+        {
+          "offset": 96,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 3,
+          "cache_words": 3
+        },
+        {
+          "offset": 104,
+          "opcode": 31,
+          "opname": "POP_TOP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 106,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 0,
+          "cache_words": 0,
+          "constant": null
+        },
+        {
+          "offset": 108,
+          "opcode": 35,
+          "opname": "RETURN_VALUE",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 110,
+          "opcode": 92,
+          "opname": "LOAD_GLOBAL",
+          "arg": 8,
+          "cache_words": 4,
+          "symbol": "Entity",
+          "name_flags": 0
+        },
+        {
+          "offset": 120,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 10,
+          "cache_words": 9,
+          "symbol": "__setattr__",
+          "name_flags": 0
+        },
+        {
+          "offset": 140,
+          "opcode": 33,
+          "opname": "PUSH_NULL",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 142,
+          "opcode": 87,
+          "opname": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+          "arg": 1,
+          "cache_words": 0,
+          "symbols": [
+            "self",
+            "name"
+          ]
+        },
+        {
+          "offset": 144,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 2,
+          "cache_words": 0,
+          "symbol": "value"
+        },
+        {
+          "offset": 146,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 3,
+          "cache_words": 3
+        },
+        {
+          "offset": 154,
+          "opcode": 31,
+          "opname": "POP_TOP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 156,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 0,
+          "cache_words": 0,
+          "constant": null
+        },
+        {
+          "offset": 158,
+          "opcode": 35,
+          "opname": "RETURN_VALUE",
+          "arg": 0,
+          "cache_words": 0
+        }
+      ]
+    }
+  },
+  {
+    "index": 119023,
+    "decoded_sha256": "a6ef435ce5cefa8d72529fded95e670f44ba1224c39f6e51e658cd64ca4d0ac9",
+    "code": {
+      "kind": "code",
+      "marshal_offset": 5205,
+      "argcount": 2,
+      "posonlyargcount": 0,
+      "kwonlyargcount": 0,
+      "stacksize": 3,
+      "flags": 134217731,
+      "code": {
+        "bytes": 156,
+        "sha256": "2eb2a48f240645ce7ee6981cd09e534486ca1b67badb6f79128ffd7c16cfdbdd",
+        "head_hex": "80 00 56 00 50 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 56 01 34 01 00 00 00 00 00 00 1f 00 56 00 50 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 50 05 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 34 00"
+      },
+      "names": [
+        "_initComponents",
+        "area",
+        "prop",
+        "_initProperty",
+        "_postComponents"
+      ],
+      "localsplusnames": [
+        "self",
+        "bdict"
+      ],
+      "localspluskinds": {
+        "bytes": 2,
+        "sha256": "73e7b6f86214bc78ee505fb5f7d4fb97cfa99924a67ca3105113c9a3d52f8fef",
+        "head_hex": "26 26"
+      },
+      "filename": "engine/common/Entity.py",
+      "name": "init_from_dict",
+      "qualname": "Entity.init_from_dict",
+      "firstlineno": 120,
+      "marshal_end": 5549,
+      "consts": [
+        null
+      ],
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": 128,
+          "opname": "RESUME",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 2,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "self"
+        },
+        {
+          "offset": 4,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 1,
+          "cache_words": 9,
+          "symbol": "_initComponents",
+          "name_flags": 1
+        },
+        {
+          "offset": 24,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 1,
+          "cache_words": 0,
+          "symbol": "bdict"
+        },
+        {
+          "offset": 26,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 1,
+          "cache_words": 3
+        },
+        {
+          "offset": 34,
+          "opcode": 31,
+          "opname": "POP_TOP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 36,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "self"
+        },
+        {
+          "offset": 38,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 2,
+          "cache_words": 9,
+          "symbol": "area",
+          "name_flags": 0
+        },
+        {
+          "offset": 58,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 5,
+          "cache_words": 9,
+          "symbol": "prop",
+          "name_flags": 1
+        },
+        {
+          "offset": 78,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 0,
+          "cache_words": 3
+        },
+        {
+          "offset": 86,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 7,
+          "cache_words": 9,
+          "symbol": "_initProperty",
+          "name_flags": 1
+        },
+        {
+          "offset": 106,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 1,
+          "cache_words": 0,
+          "symbol": "bdict"
+        },
+        {
+          "offset": 108,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 1,
+          "cache_words": 3
+        },
+        {
+          "offset": 116,
+          "opcode": 31,
+          "opname": "POP_TOP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 118,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 0,
+          "cache_words": 0,
+          "symbol": "self"
+        },
+        {
+          "offset": 120,
+          "opcode": 80,
+          "opname": "LOAD_ATTR",
+          "arg": 9,
+          "cache_words": 9,
+          "symbol": "_postComponents",
+          "name_flags": 1
+        },
+        {
+          "offset": 140,
+          "opcode": 86,
+          "opname": "LOAD_FAST_BORROW",
+          "arg": 1,
+          "cache_words": 0,
+          "symbol": "bdict"
+        },
+        {
+          "offset": 142,
+          "opcode": 52,
+          "opname": "CALL",
+          "arg": 1,
+          "cache_words": 3
+        },
+        {
+          "offset": 150,
+          "opcode": 31,
+          "opname": "POP_TOP",
+          "arg": 0,
+          "cache_words": 0
+        },
+        {
+          "offset": 152,
+          "opcode": 82,
+          "opname": "LOAD_CONST",
+          "arg": 0,
+          "cache_words": 0,
+          "constant": null
+        },
+        {
+          "offset": 154,
+          "opcode": 35,
+          "opname": "RETURN_VALUE",
+          "arg": 0,
+          "cache_words": 0
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "record": {
+    "rva": "0x4f779b0",
+    "file_offset": "0x4f76bb0",
+    "size": 160,
+    "bytes_hex": "49 45 6e 74 69 74 79 2e 53 6b 65 6c 65 74 6f 6e 00 00 00 00 00 00 00 00 50 61 72 61 6d 65 74 65 72 5f 32 00 00 00 00 00 00 00 00 00 00 00 00 00 90 6d e4 44 01 00 00 00 00 00 00 00 00 00 00 00 90 6d e4 44 01 00 00 00 00 00 00 00 00 00 00 00 b0 d8 f5 44 01 00 00 00 0b 00 00 00 9e ed b6 4b b0 d8 f5 44 01 00 00 00 0b 00 00 00 9e ed b6 4b 05 00 03 00 08 00 00 00 00 0a 00 00 00 00 00 00 70 bd 57 40 01 00 00 00 70 bd 57 40 01 00 00 00 90 39 15 40 01 00 00 00 30 b1 58 40 01 00 00 00",
+    "ascii_literals": [
+      "IEntity.Skeleton",
+      "Parameter_2"
+    ],
+    "adjacent_callback_candidates": {
+      "rva_0x4f77a30": "0x57bd70",
+      "rva_0x4f77a38": "0x57bd70",
+      "rva_0x4f77a48": "0x58b130"
+    }
+  },
+  "candidate_callback_bodies": {
+    "first": {
+      "rva": "0x57bd70",
+      "runtime_function": null,
+      "instructions": [
+        {
+          "rva": "0x57bd70",
+          "preferred_va": "0x14057bd70",
+          "file_offset": "0x57b370",
+          "bytes": "48 8b c2",
+          "text": "mov rax,rdx",
+          "length": 3
+        },
+        {
+          "rva": "0x57bd73",
+          "preferred_va": "0x14057bd73",
+          "file_offset": "0x57b373",
+          "bytes": "c3",
+          "text": "ret",
+          "length": 1
+        }
+      ]
+    },
+    "store_candidate": {
+      "rva": "0x58b130",
+      "runtime_function": null,
+      "instructions": [
+        {
+          "rva": "0x58b130",
+          "preferred_va": "0x14058b130",
+          "file_offset": "0x58a730",
+          "bytes": "48 89 11",
+          "text": "mov [rcx],rdx",
+          "length": 3
+        },
+        {
+          "rva": "0x58b133",
+          "preferred_va": "0x14058b133",
+          "file_offset": "0x58a733",
+          "bytes": "c3",
+          "text": "ret",
+          "length": 1
+        }
+      ]
+    }
+  },
+  "limitation": "The record adjacency does not establish callback roles or prove that assigning IEntity.Skeleton sets ActorComponent.Parent."
+}

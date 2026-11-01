@@ -1,0 +1,2586 @@
+{
+  "source_index_sha256": "bb3782da03b95d66451a598add8fe0923405be0dde53a8844b2f8bc107a6ced3",
+  "entries_scanned": 9705,
+  "terms": [
+    "CombatAvatarMember",
+    "PlayerCombatAvatarMember",
+    "avatar_model"
+  ],
+  "matches": [
+    {
+      "index": 808,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_story_tick.py"
+      ],
+      "hash": "460e8dac6d9212312fb7ba8fba7f4ef67e9a1ed1d9ef2629eb5037e702c63f17",
+      "hits": {
+        "CombatAvatarMember": 2,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 3974,
+      "path": [
+        "gclient/gameplay/logic_moba_seven_sins/combat_avatar_moba_seven_sins.py"
+      ],
+      "hash": "1732851541aa6aab1796895f7ec22db8d16945ec19f96e1d0ae5b422d0ff67d1",
+      "hits": {
+        "CombatAvatarMember": 2,
+        "PlayerCombatAvatarMember": 1,
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 4522,
+      "path": [
+        "gclient/gameplay/logic_rookieguide_new/rookieguide_robot_avatar_model.py"
+      ],
+      "hash": "0a728d3368281594bdf5593ec7bc03391eeddfab1d4dbdc577b07676638182be",
+      "hits": {
+        "avatar_model": 2
+      }
+    },
+    {
+      "index": 4526,
+      "path": [
+        "gclient/gameplay/logic_dmz/avatarmembers/cimp_dmz_monster_armor.py"
+      ],
+      "hash": "48211b4b1e6a6f7b6517ea2cecf5d340eb367ef703aa1a8f1d8d062d3aae1a9d",
+      "hits": {
+        "CombatAvatarMember": 23,
+        "PlayerCombatAvatarMember": 23
+      }
+    },
+    {
+      "index": 5741,
+      "path": [
+        "gclient/gameplay/logic_moba_zombie/models/moba_zombie_avatar_model.py"
+      ],
+      "hash": "50a1aa5aa3f5cc85ef7da4a8fbc6100de98ca005e40d2bc5317991542f6fd111",
+      "hits": {
+        "avatar_model": 3
+      }
+    },
+    {
+      "index": 8332,
+      "path": [
+        "gclient/gameplay/logic_moba_halloween/models/halloween_avatar_model.py"
+      ],
+      "hash": "3e497e4ab7df52465cf1675037309b6b611ee6fdfac2ae9f2bafb6ab25121092",
+      "hits": {
+        "avatar_model": 2
+      }
+    },
+    {
+      "index": 9715,
+      "path": [
+        "gclient/gameplay/logic_snipe/combat_avatar_snipe.py"
+      ],
+      "hash": "943fbc9131603f1bb59e2dfc6a8daa094c3c8cb5b413feabc4b08518cde8ee59",
+      "hits": {
+        "CombatAvatarMember": 1,
+        "PlayerCombatAvatarMember": 1,
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 10842,
+      "path": [
+        "gclient/gameplay/logic_arms_race_mode/combat_avatar_arms_race_mode.py"
+      ],
+      "hash": "a7155c97c7ee97ad8dd411d6fc7093564a6d1c9fffd4c35192395b776ddfbc8e",
+      "hits": {
+        "CombatAvatarMember": 1,
+        "PlayerCombatAvatarMember": 1,
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 11902,
+      "path": [
+        "gclient/gameplay/logic_moba_ultra_mega/avatarmember/cimp_combat_item.py"
+      ],
+      "hash": "8742aca324fd62dcdcb3e8c7e4118e3b2c67860792a86cad9100cbc91e17092e",
+      "hits": {
+        "CombatAvatarMember": 8,
+        "PlayerCombatAvatarMember": 8
+      }
+    },
+    {
+      "index": 13053,
+      "path": [
+        "gclient/gameplay/logic_moba/avatarmembers/cimp_mark_comp.py"
+      ],
+      "hash": "5edab0343922c3f4695ef7ac8bb2b8a13d754754dd24f256f27e5b44ed043506",
+      "hits": {
+        "CombatAvatarMember": 3,
+        "PlayerCombatAvatarMember": 3
+      }
+    },
+    {
+      "index": 13069,
+      "path": [
+        "gclient/gameplay/logic_dmz/models/dmz_avatar_model.py"
+      ],
+      "hash": "9704900b80d7e2be9094f0f1c8d2d530af1593cd900de4bfa44cfdea393236ae",
+      "hits": {
+        "avatar_model": 2
+      }
+    },
+    {
+      "index": 13766,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_guide.py"
+      ],
+      "hash": "c9e9cf369d7bf705431f7305d09c48af8fe6018d594e62c8b754c70d1f53706b",
+      "hits": {
+        "CombatAvatarMember": 4,
+        "PlayerCombatAvatarMember": 4
+      }
+    },
+    {
+      "index": 14066,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_combat_unit.py"
+      ],
+      "hash": "5a2ccf79f644a908e6475ed76c870312fb61526b260dfdc0dc90d0c772c9c648",
+      "hits": {
+        "CombatAvatarMember": 147,
+        "PlayerCombatAvatarMember": 95
+      }
+    },
+    {
+      "index": 15194,
+      "path": [
+        "gclient/gameplay/logic_moba_ultra_mega/avatarmember/cimp_input_controller.py"
+      ],
+      "hash": "ba7270d7c70d2c0ea7085b4730d468ddcfe17d2124e7e41791737950534902e4",
+      "hits": {
+        "CombatAvatarMember": 85,
+        "PlayerCombatAvatarMember": 85
+      }
+    },
+    {
+      "index": 15763,
+      "path": [
+        "gclient/gameplay/logic_desperado_trifecta/avatarmembers/cimp_desperado_trifecta.py"
+      ],
+      "hash": "f2d647a4aa62185e846620c5c10ce935e64c826f70bda7669bcd76c62f1983ee",
+      "hits": {
+        "CombatAvatarMember": 16,
+        "PlayerCombatAvatarMember": 8
+      }
+    },
+    {
+      "index": 15963,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_backpack.py"
+      ],
+      "hash": "6765bf1c779d785702c86d7e1b02995afd87e969c1459c1c50b7a6139a12d98b",
+      "hits": {
+        "CombatAvatarMember": 155,
+        "PlayerCombatAvatarMember": 103
+      }
+    },
+    {
+      "index": 16272,
+      "path": [
+        "gclient/gameplay/logic_moba_lightning/lightning_alpaca_drive_move.py"
+      ],
+      "hash": "a54ddb6f30bebef6b45c6553f0610b76b117f14496f2ddb1981d3b8816073885",
+      "hits": {
+        "CombatAvatarMember": 1,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 16698,
+      "path": [
+        "gclient/gameplay/logic_base/models/hand_model_cue.py"
+      ],
+      "hash": "62d4f6c13bded6051319d3aef42568139b94761ea3759e19eee0c21b4fd6d629",
+      "hits": {
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 17761,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_calculation.py"
+      ],
+      "hash": "88ed63c5bf3e513514a4dbb366107d4ce782c24ca4aab696498cae67a5b80d32",
+      "hits": {
+        "CombatAvatarMember": 10,
+        "PlayerCombatAvatarMember": 9
+      }
+    },
+    {
+      "index": 19073,
+      "path": [
+        "gclient/gameplay/logic_moba_titan_2/avatarmember/cimp_transform.py"
+      ],
+      "hash": "4092c3dcdc427fe98f8a576c69bbb16d6de8ea9b6b5ee8108c1f18a257275abc",
+      "hits": {
+        "CombatAvatarMember": 312,
+        "PlayerCombatAvatarMember": 224,
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 19599,
+      "path": [
+        "gclient/gameplay/logic_moba_lockdown/avatarmember/cimp_input_controller.py"
+      ],
+      "hash": "a8af64f88f70ec10ea435cbfac07a83d074dd8279c3d02e76ce381d5f0cbc7f5",
+      "hits": {
+        "CombatAvatarMember": 8,
+        "PlayerCombatAvatarMember": 8
+      }
+    },
+    {
+      "index": 19932,
+      "path": [
+        "gclient/gameplay/logic_moba_seven_sins/avatarmember/cimp_input_controller.py"
+      ],
+      "hash": "7d8af406a151d3b9ce7b19cf0ba848eb9d456d3cf46cec8ed880f41dc0b3563b",
+      "hits": {
+        "CombatAvatarMember": 22,
+        "PlayerCombatAvatarMember": 22
+      }
+    },
+    {
+      "index": 20564,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_help.py"
+      ],
+      "hash": "94b6198c7b0290922413db7e41efe362a2a301736b97ba50b4f25356b52204e4",
+      "hits": {
+        "CombatAvatarMember": 31,
+        "PlayerCombatAvatarMember": 20
+      }
+    },
+    {
+      "index": 20880,
+      "path": [
+        "gclient/gameplay/logic_base/equips/common_skill_case.py"
+      ],
+      "hash": "9ff479c8d1cede6b41355cdaae629d81a5c074c00c1269bd00fec2296a711078",
+      "hits": {
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 21006,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_contract.py"
+      ],
+      "hash": "7e9e76a79907d77b836a09f011c4b32d3792a58b0f4d79c90cb8c7f23162dc70",
+      "hits": {
+        "CombatAvatarMember": 28,
+        "PlayerCombatAvatarMember": 7
+      }
+    },
+    {
+      "index": 21342,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_combat_log.py"
+      ],
+      "hash": "aeb8aaa349ee68e45680af398bce5d0ed2fc6eba066e95a5dfc2f674fe17938a",
+      "hits": {
+        "CombatAvatarMember": 6,
+        "PlayerCombatAvatarMember": 6
+      }
+    },
+    {
+      "index": 21485,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_fly.py"
+      ],
+      "hash": "4cb8185d8af0689fcfc225a89918d80790cf8a0b411214d89e07812144d419d4",
+      "hits": {
+        "CombatAvatarMember": 12,
+        "PlayerCombatAvatarMember": 9
+      }
+    },
+    {
+      "index": 22228,
+      "path": [
+        "gclient/gameplay/logic_big_head/avatarmembers/cimp_input_controller.py"
+      ],
+      "hash": "92384a20a8c056778c4c16052c451674d0fb5ba5422d988ce1e7a5ee91e3af64",
+      "hits": {
+        "CombatAvatarMember": 10,
+        "PlayerCombatAvatarMember": 10
+      }
+    },
+    {
+      "index": 22569,
+      "path": [
+        "gclient/gameplay/logic_rivals/avatarmembers/cimp_input_controller.py"
+      ],
+      "hash": "c9fa0497d45d82d45f0022b3275b590067706c25cf91789e1637ad604b2a177d",
+      "hits": {
+        "CombatAvatarMember": 15,
+        "PlayerCombatAvatarMember": 15
+      }
+    },
+    {
+      "index": 23735,
+      "path": [
+        "gclient/gameplay/logic_peekaboo/avatarmembers/comp_strop.py"
+      ],
+      "hash": "c72b5f038dae5a262d69d1d2ca3d28f19bb7d79277b58c9d61e723f7e681f946",
+      "hits": {
+        "CombatAvatarMember": 1,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 24085,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_mark.py"
+      ],
+      "hash": "97aa75a8340bea52d818aa60e59eb027d43e029e83ae504b05ead9022829f1db",
+      "hits": {
+        "CombatAvatarMember": 59,
+        "PlayerCombatAvatarMember": 59
+      }
+    },
+    {
+      "index": 24178,
+      "path": [
+        "gclient/gameplay/logic_base/models/melee_extra_weapon_model.py"
+      ],
+      "hash": "32552b8e7fc66bbf16fd4cff280e890b88ede7723e92faa1aa7cf7ccfc6b68b2",
+      "hits": {
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 24829,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_graph_cue.py"
+      ],
+      "hash": "969eccc215620a1139d121e5e781065740e78d888c83591964b690e3ccfda932",
+      "hits": {
+        "CombatAvatarMember": 13,
+        "PlayerCombatAvatarMember": 6
+      }
+    },
+    {
+      "index": 24928,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_face.py"
+      ],
+      "hash": "e7b23e4d2e7f9a51c98c506157aecb8d3968dfcc34bb92fcf2591cfa09e5403c",
+      "hits": {
+        "CombatAvatarMember": 3,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 24959,
+      "path": [
+        "gclient/gameplay/logic_dmz/avatarmembers/cimp_input_controller.py"
+      ],
+      "hash": "e7cc4976d52b6f2d5ab63d2c56a9ced93a5efa473ad5236c84831e45d7422ec8",
+      "hits": {
+        "CombatAvatarMember": 23,
+        "PlayerCombatAvatarMember": 23
+      }
+    },
+    {
+      "index": 25281,
+      "path": [
+        "gclient/gameplay/logic_base/models/weapon_model.py"
+      ],
+      "hash": "e30ac8f6d7bd03898dc171bcc6f6c36a7cf97530f358c64579844690a7f5458a",
+      "hits": {
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 25433,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_climb_wall.py"
+      ],
+      "hash": "940c5fa053dc4b9ed4c74044f5f32e8be8735233af9399e719640a1b672d0bf0",
+      "hits": {
+        "CombatAvatarMember": 5,
+        "PlayerCombatAvatarMember": 5
+      }
+    },
+    {
+      "index": 27781,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/recover_to_player_spell.py"
+      ],
+      "hash": "0fd1c69861f93f7a3d18765aa6c7e9bbc1853cc80e4000db6304261819ae0298",
+      "hits": {
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 27935,
+      "path": [
+        "gclient/gameplay/logic_base/models/para_model_comp.py"
+      ],
+      "hash": "0fabebf16762dc633e719bcb9bd36f382e93b03d4667e2568d4b5dc16bb6fc71",
+      "hits": {
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 28430,
+      "path": [
+        "gclient/gamesystem/uihall/activity/activity_alcatraz_rank_window.py"
+      ],
+      "hash": "29c125841abe29ee4d82bcdb4415d0a3e1e3163880f282aeefac99842a212e90",
+      "hits": {
+        "avatar_model": 2
+      }
+    },
+    {
+      "index": 29734,
+      "path": [
+        "gclient/gameplay/logic_base/entities/holographic_robot.py"
+      ],
+      "hash": "ec6aed1c27715fab75f0d357fc9291f38cdd4b503ca467b3b716b01a2e4d761a",
+      "hits": {
+        "CombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 29779,
+      "path": [
+        "gclient/framework/entities/space.py"
+      ],
+      "hash": "0965992fef0dd6c69f1c4e17bd4d0c7152a2a43d8a6a631aef9b42291a06400e",
+      "hits": {
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 30081,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_xingfu_record.py"
+      ],
+      "hash": "255165a646053aa162c58eb8a6176337491bcdbe4fe9848c424c5a827b5e09ed",
+      "hits": {
+        "CombatAvatarMember": 10,
+        "PlayerCombatAvatarMember": 7
+      }
+    },
+    {
+      "index": 30485,
+      "path": [
+        "gclient/gameplay/logic_moba/combat_avatar_moba.py"
+      ],
+      "hash": "90277f10f9983fb0d8ec91bb0372a8233f9b751fb5f2757458da07e49b6b15e2",
+      "hits": {
+        "CombatAvatarMember": 5,
+        "PlayerCombatAvatarMember": 2,
+        "avatar_model": 3
+      }
+    },
+    {
+      "index": 30908,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_debug.py"
+      ],
+      "hash": "6e25798034bf5ed1fd8a819b26cbfb9a5f4311120492b77cac7de6c5e24e78db",
+      "hits": {
+        "CombatAvatarMember": 5,
+        "PlayerCombatAvatarMember": 5
+      }
+    },
+    {
+      "index": 31845,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_kick_up.py"
+      ],
+      "hash": "29e6eb75395a9dcf4662cd940ee00f175931f29f49d4b4daa0ec0399fc756f1a",
+      "hits": {
+        "CombatAvatarMember": 8,
+        "PlayerCombatAvatarMember": 4
+      }
+    },
+    {
+      "index": 31862,
+      "path": [
+        "gclient/gameplay/logic_base/models/avatar_model_cache.py"
+      ],
+      "hash": "a45368fbf798d961f44ac4b2369d4496b39fc24c79cf0d42c1d12272ddce36b3",
+      "hits": {
+        "avatar_model": 2
+      }
+    },
+    {
+      "index": 32994,
+      "path": [
+        "gclient/gameplay/logic_nowhere/combat_avatar_nowhere.py"
+      ],
+      "hash": "6caeb3856119314cd4c98ae222e7f6c28498b07ebbf057c13509f5213e5ae17f",
+      "hits": {
+        "CombatAvatarMember": 3,
+        "PlayerCombatAvatarMember": 1,
+        "avatar_model": 2
+      }
+    },
+    {
+      "index": 33033,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_spell.py"
+      ],
+      "hash": "cedf56187ae334f9f96a655e88838239ad1dcf536c7c818c7938c8ef0ff287d9",
+      "hits": {
+        "CombatAvatarMember": 391,
+        "PlayerCombatAvatarMember": 174
+      }
+    },
+    {
+      "index": 34703,
+      "path": [
+        "gclient/gameplay/logic_gun_fight/avatarmembers/cimp_gun_fight.py"
+      ],
+      "hash": "d40c0287959adaeed1735e7a3cc1fb6e632b1d857dd1cd322d2512844ed8d4b9",
+      "hits": {
+        "CombatAvatarMember": 5,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 34733,
+      "path": [
+        "gclient/gameplay/logic_block_strike/avatarmembers/cimp_mineral.py"
+      ],
+      "hash": "9e2dcff6a60060fd2ef2181ab560895aebbbf85dd121138aecebc8fd462b313b",
+      "hits": {
+        "CombatAvatarMember": 5,
+        "PlayerCombatAvatarMember": 5
+      }
+    },
+    {
+      "index": 34858,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_drone.py"
+      ],
+      "hash": "e8dd5171df941a0587bc8952c86aa408834d0122ed033410ed372b6979a88a8f",
+      "hits": {
+        "CombatAvatarMember": 26,
+        "PlayerCombatAvatarMember": 15
+      }
+    },
+    {
+      "index": 37694,
+      "path": [
+        "gclient/gameplay/logic_football/combat_avatar_football.py"
+      ],
+      "hash": "fcf5efaff85ae75cd038c263badf467147b5937c2dd9948181256d8751636da5",
+      "hits": {
+        "CombatAvatarMember": 3,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 38016,
+      "path": [
+        "gclient/gameplay/logic_big_head/avatarmembers/cimp_bighead.py"
+      ],
+      "hash": "62be777e7d95aa9261ca6956f388420281059c6189d2aa1450a54012f9304e79",
+      "hits": {
+        "CombatAvatarMember": 16,
+        "PlayerCombatAvatarMember": 8
+      }
+    },
+    {
+      "index": 39185,
+      "path": [
+        "gclient/gameplay/logic_moba/models/moba_avatar_model.py"
+      ],
+      "hash": "39f2cb60d5698adda489b8d16ab275a8d479c44ec75ead2a11c52cc2372aea4f",
+      "hits": {
+        "avatar_model": 3
+      }
+    },
+    {
+      "index": 39845,
+      "path": [
+        "gclient/gameplay/logic_moba_zombie/avatarmembers/cimp_zombie_xray.py"
+      ],
+      "hash": "16b4fec840818003e5de9c7298f2c91918cec93308d266f03940431391b1fb4b",
+      "hits": {
+        "CombatAvatarMember": 7,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 39973,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_vehicle.py"
+      ],
+      "hash": "99a625b26bcd26c6d73796fce6c00f1bd06e72a8da466cc05adc0a0fc63455ed",
+      "hits": {
+        "CombatAvatarMember": 51,
+        "PlayerCombatAvatarMember": 38
+      }
+    },
+    {
+      "index": 40012,
+      "path": [
+        "gclient/gameplay/logic_arms_race_mode/avatarmember/cimp_input_controller.py"
+      ],
+      "hash": "0b2892b4926ff801049376c812ec1ab2579b7109fa31c29858fa27c41a77d081",
+      "hits": {
+        "CombatAvatarMember": 4,
+        "PlayerCombatAvatarMember": 4
+      }
+    },
+    {
+      "index": 41009,
+      "path": [
+        "gclient/gameplay/logic_overload/combat_avatar_overload.py"
+      ],
+      "hash": "306d6bdaeb37e5585050c834d760436b83fc8c548e6473c3dc5a1b5da9ba1134",
+      "hits": {
+        "CombatAvatarMember": 2,
+        "PlayerCombatAvatarMember": 2,
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 41266,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_wall_weapon_raise.py"
+      ],
+      "hash": "ae25cffc24843163710321aeeabbe30ef0bfa97cb8013ae0609eb08045fcbb48",
+      "hits": {
+        "CombatAvatarMember": 15,
+        "PlayerCombatAvatarMember": 15
+      }
+    },
+    {
+      "index": 41309,
+      "path": [
+        "gclient/gameplay/logic_moba_titan_2/models/avatar_model_moba_titan_2.py"
+      ],
+      "hash": "c38af31b3588b2dc064d0ab36dc4417bcba026b464f13e3a51a18555d1514754",
+      "hits": {
+        "avatar_model": 3
+      }
+    },
+    {
+      "index": 41313,
+      "path": [
+        "gclient/gameplay/logic_dmz/avatarmembers/cimp_noise.py"
+      ],
+      "hash": "51013591f0130e52501ca6f9ac7819fc03b162b2fb71e659dfffe744042a0560",
+      "hits": {
+        "CombatAvatarMember": 4,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 41326,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_mountain_detect.py"
+      ],
+      "hash": "f1588968a63c9ff40fa134fdb55bdbc814268643030695f13f90a67f1b3d0162",
+      "hits": {
+        "CombatAvatarMember": 2,
+        "PlayerCombatAvatarMember": 2
+      }
+    },
+    {
+      "index": 41809,
+      "path": [
+        "gclient/gameplay/logic_moba_zombie/avatarmembers/cimp_input_controller.py"
+      ],
+      "hash": "7338dead0dd51f278e9c60a7a2d031458407c1e6f74651f438e16d6d194a4d63",
+      "hits": {
+        "CombatAvatarMember": 14,
+        "PlayerCombatAvatarMember": 14
+      }
+    },
+    {
+      "index": 42206,
+      "path": [
+        "gclient/gameplay/logic_moba_zombie/avatarmembers/cimp_zombie_overlay_model.py"
+      ],
+      "hash": "d3eacd1eee4cd30afbf6dacbf302da6eac6a8becb4480ab0b7fd1ec58e541f26",
+      "hits": {
+        "CombatAvatarMember": 5,
+        "PlayerCombatAvatarMember": 5
+      }
+    },
+    {
+      "index": 42241,
+      "path": [
+        "gclient/gameplay/logic_peekaboo/combat_avatar_peekaboo.py"
+      ],
+      "hash": "b46b0fc20bb345ff1cd5ffac082b4666962cea5f634b0f01120218c2b7a49414",
+      "hits": {
+        "CombatAvatarMember": 3,
+        "PlayerCombatAvatarMember": 1,
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 42830,
+      "path": [
+        "gclient/gameplay/logic_big_head/combat_avatar_bighead.py"
+      ],
+      "hash": "a161a24041e4d8a93f87c0496a82aadd55cd74c48f8511ab2ea6bbabb216e400",
+      "hits": {
+        "CombatAvatarMember": 3,
+        "PlayerCombatAvatarMember": 1,
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 45233,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_report.py"
+      ],
+      "hash": "b7dfa0d0bee647a355ddb5eacfad4422000543eba9ed687d8adbf9a9baadd9bd",
+      "hits": {
+        "CombatAvatarMember": 2,
+        "PlayerCombatAvatarMember": 2
+      }
+    },
+    {
+      "index": 45511,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_hero.py"
+      ],
+      "hash": "60538a431168c1552dcea1bfec69748ac4f5cd926f5ddedb4dff3750595db655",
+      "hits": {
+        "CombatAvatarMember": 7,
+        "PlayerCombatAvatarMember": 3
+      }
+    },
+    {
+      "index": 45530,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_projection.py"
+      ],
+      "hash": "a3ab88805c2a839905dcc80cf094961e65f00e7757080058d0e0091d93c36c58",
+      "hits": {
+        "CombatAvatarMember": 5,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 46169,
+      "path": [
+        "gclient/gameplay/logic_moba_ultra_mega/avatarmember/cimp_ultra_mega_energy.py"
+      ],
+      "hash": "7e8c948273e72b8064ae7145cba409a4bd575fd4bbf4b92336cc78a2948321a2",
+      "hits": {
+        "CombatAvatarMember": 13,
+        "PlayerCombatAvatarMember": 13
+      }
+    },
+    {
+      "index": 46575,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_sound.py"
+      ],
+      "hash": "935b1c8443e4a9b6c417425f91653d1b04666ab6b4cb0b5e175dcf7b06b88ff2",
+      "hits": {
+        "CombatAvatarMember": 49,
+        "PlayerCombatAvatarMember": 10
+      }
+    },
+    {
+      "index": 46610,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_strop.py"
+      ],
+      "hash": "b77e7fa18d076be4aa730113d970815ea8558ce65f4cd79266f54abd5669b8ba",
+      "hits": {
+        "CombatAvatarMember": 64,
+        "PlayerCombatAvatarMember": 35
+      }
+    },
+    {
+      "index": 46976,
+      "path": [
+        "gclient/gamesystem/uihall/gunupgrade/hall_hand_doll.py"
+      ],
+      "hash": "caef9898378e7abf4d7f71644a31358f0f8b19f0cf25b9bba68d858f48aa5051",
+      "hits": {
+        "avatar_model": 2
+      }
+    },
+    {
+      "index": 47505,
+      "path": [
+        "gclient/gameplay/logic_moba_halloween/combat_avatar_moba_halloween.py"
+      ],
+      "hash": "8e06611dd5ccaf1293d170864e4a0703ef489a150097a39b5520ab0fb242d237",
+      "hits": {
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 48033,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_combat_antiplugin.py"
+      ],
+      "hash": "cdf95eb7ee7c24743e0e9e319ae622307cd60071dd459ff65dcab10016d4bf1b",
+      "hits": {
+        "CombatAvatarMember": 12,
+        "PlayerCombatAvatarMember": 11
+      }
+    },
+    {
+      "index": 49361,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_snare.py"
+      ],
+      "hash": "cae5b629b7d15a7f84f059d5764036f9624e1237d48aeab8b2adb4cbfbb88225",
+      "hits": {
+        "CombatAvatarMember": 7,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 50285,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_parachute.py"
+      ],
+      "hash": "ce920ebd9f89619f0f55a46d55f19007c83b481aefa7c095614f363ecc342e1d",
+      "hits": {
+        "CombatAvatarMember": 237,
+        "PlayerCombatAvatarMember": 134
+      }
+    },
+    {
+      "index": 50384,
+      "path": [
+        "gclient/gameplay/logic_moba_ultra_mega/models/avatar_model_moba_ultra_mega.py"
+      ],
+      "hash": "4d87112f2907bd1a7b9bcb71ad800ff97fe5062dc60eaa5530eadf7f243213b0",
+      "hits": {
+        "avatar_model": 2
+      }
+    },
+    {
+      "index": 50459,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_moving_platform.py"
+      ],
+      "hash": "4dc2cde48019d0320a5750590a909d734cc90f1b8f8f6b7539a297057c0a215b",
+      "hits": {
+        "CombatAvatarMember": 33,
+        "PlayerCombatAvatarMember": 12
+      }
+    },
+    {
+      "index": 51507,
+      "path": [
+        "gclient/gameplay/logic_rivals/avatarmembers/cimp_rivals.py"
+      ],
+      "hash": "0b8948fa1e3f09ffc63670f9c698af10f54cd86e001580b32d3aea39d4cbc493",
+      "hits": {
+        "CombatAvatarMember": 18,
+        "PlayerCombatAvatarMember": 5
+      }
+    },
+    {
+      "index": 52915,
+      "path": [
+        "gclient/gameplay/logic_peekaboo/avatarmembers/cimp_peekaboo.py"
+      ],
+      "hash": "f88bdfb8e6400066c86e6527654670c0a4cf816bde8d9041e3677ebbc16fe6b5",
+      "hits": {
+        "CombatAvatarMember": 31,
+        "PlayerCombatAvatarMember": 16,
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 53004,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_compatible.py"
+      ],
+      "hash": "1f6260f5dc89217585a234e98f036274ba6b82239d3bc0e4fb7673ca9b695273",
+      "hits": {
+        "CombatAvatarMember": 12,
+        "PlayerCombatAvatarMember": 10
+      }
+    },
+    {
+      "index": 54237,
+      "path": [
+        "gclient/gameplay/logic_blasting/combat_avatar_blasting.py"
+      ],
+      "hash": "1c9d78ca425f571689048d7d1102f1f503d52d62dfe5ad790e388943d495f8d8",
+      "hits": {
+        "CombatAvatarMember": 3,
+        "PlayerCombatAvatarMember": 1,
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 54549,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_char_model.py"
+      ],
+      "hash": "7169a739f1c8a54b58402607dbb918a11497eb77b5cd0b7867ae64705e5fa8e9",
+      "hits": {
+        "CombatAvatarMember": 8,
+        "PlayerCombatAvatarMember": 7
+      }
+    },
+    {
+      "index": 54623,
+      "path": [
+        "gclient/gameplay/logic_grand_theft/avatarmembers/cimp_input_controller.py"
+      ],
+      "hash": "0e8035a60312c8dd60a775cb26d77256d488b475a184011ff712350005679773",
+      "hits": {
+        "CombatAvatarMember": 4,
+        "PlayerCombatAvatarMember": 4
+      }
+    },
+    {
+      "index": 55178,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_space_black_hole.py"
+      ],
+      "hash": "2218a08a3252176d1a0837aa9d68c6bcc408451fc018e212f2c73c01faad4d41",
+      "hits": {
+        "CombatAvatarMember": 29
+      }
+    },
+    {
+      "index": 55373,
+      "path": [
+        "gclient/gameplay/logic_moba_zombie/combat_avatar_moba_zombie.py"
+      ],
+      "hash": "04bea55a5b1286e1ddbfd5a8623457fe0b83b80628e6f9b3413f9da8e41f55b7",
+      "hits": {
+        "CombatAvatarMember": 2,
+        "PlayerCombatAvatarMember": 1,
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 55455,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_dj_battle_rhythm.py"
+      ],
+      "hash": "af52b3edb9d7ed2c99f471e6f11308b46a443665fcfc064e7798d50d5f0d90f9",
+      "hits": {
+        "CombatAvatarMember": 27
+      }
+    },
+    {
+      "index": 55679,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_execute.py"
+      ],
+      "hash": "523157eb2f8e894cfa4bdbd210c15c2aee2315de016e56d4f6f034a3eab86e4f",
+      "hits": {
+        "CombatAvatarMember": 109,
+        "PlayerCombatAvatarMember": 49
+      }
+    },
+    {
+      "index": 56885,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_effect.py"
+      ],
+      "hash": "9c64a8fbf00962b952baf3e6fbe5a785cfe487a5856bc46232025552b8a72691",
+      "hits": {
+        "CombatAvatarMember": 10,
+        "PlayerCombatAvatarMember": 9
+      }
+    },
+    {
+      "index": 57482,
+      "path": [
+        "gclient/gameplay/logic_moba_lockdown/combat_avatar_lock_down.py"
+      ],
+      "hash": "abdc2a147fc5bb7ee0bd00ff1fd6cfe52a0fa6213f943eb6e4728c336d579a65",
+      "hits": {
+        "CombatAvatarMember": 1,
+        "PlayerCombatAvatarMember": 1,
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 58325,
+      "path": [
+        "gclient/gameplay/logic_block_strike/combat_avatar_block_strike.py"
+      ],
+      "hash": "a40b1f2c6ffb167542a0c05a28b0259495cc0835331d2174bc18431fd2e41532",
+      "hits": {
+        "CombatAvatarMember": 2,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 58838,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_bomb.py"
+      ],
+      "hash": "f5cf76867e46c1fa805485f88e028a08690a2cf9972b76b9cb9973458d5f3703",
+      "hits": {
+        "CombatAvatarMember": 25,
+        "PlayerCombatAvatarMember": 16
+      }
+    },
+    {
+      "index": 58904,
+      "path": [
+        "gclient/gameplay/logic_snipe/avatarmember/cimp_input_controller.py"
+      ],
+      "hash": "00ce571e86c628443cd8d8b43552d46471bced9242d450ff5783320c8f21faed",
+      "hits": {
+        "CombatAvatarMember": 5,
+        "PlayerCombatAvatarMember": 5
+      }
+    },
+    {
+      "index": 60551,
+      "path": [
+        "gclient/gameplay/logic_moba_zombie/avatarmembers/cimp_zombie_talent.py"
+      ],
+      "hash": "1cf976697393ea073a843b4952322cb06231ce37626c132add046b6b21c4fea1",
+      "hits": {
+        "CombatAvatarMember": 3,
+        "PlayerCombatAvatarMember": 3
+      }
+    },
+    {
+      "index": 60793,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_sunshine.py"
+      ],
+      "hash": "8f40e53c4e628c78e90799c556777f4797748128c74dc2e9b7dcd1ea6a4e3e8a",
+      "hits": {
+        "CombatAvatarMember": 7,
+        "PlayerCombatAvatarMember": 7
+      }
+    },
+    {
+      "index": 61251,
+      "path": [
+        "gclient/gameplay/logic_shootingrange/combat_avatar_shootingrange.py"
+      ],
+      "hash": "5b365a827b487318c6848bc443ebd451f3df0f91bdbdb52b2aae0c57bf838b93",
+      "hits": {
+        "CombatAvatarMember": 3,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 61379,
+      "path": [
+        "gclient/gameplay/logic_blasting/avatarmembers/cimp_blasting.py"
+      ],
+      "hash": "4320867fa349eb99e9be5c7783791e9b99e931916bca4ba2a65d4707a8a759de",
+      "hits": {
+        "CombatAvatarMember": 22,
+        "PlayerCombatAvatarMember": 8
+      }
+    },
+    {
+      "index": 61925,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_model.py"
+      ],
+      "hash": "04bde99e6e2715d32cacce94496d4aba3f89919aae650d513a5468da1e790f4c",
+      "hits": {
+        "CombatAvatarMember": 94,
+        "PlayerCombatAvatarMember": 64,
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 61980,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_house_detector.py"
+      ],
+      "hash": "fad3c16125ef17d1e19c73b04faba98c4940622c24c66665b20f855d36ffc5da",
+      "hits": {
+        "CombatAvatarMember": 25,
+        "PlayerCombatAvatarMember": 6
+      }
+    },
+    {
+      "index": 63613,
+      "path": [
+        "gclient/gameplay/logic_overload/avatarmember/cimp_input_controller.py"
+      ],
+      "hash": "49e354335b4916a79d58b5828186d20ee230b791f4346aa150c434ae9594e806",
+      "hits": {
+        "CombatAvatarMember": 4,
+        "PlayerCombatAvatarMember": 4
+      }
+    },
+    {
+      "index": 64615,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_advertising.py"
+      ],
+      "hash": "1086d57df3e9fdd4900872b2100993959551f1801399a428e7f00cf616c6d70d",
+      "hits": {
+        "CombatAvatarMember": 4,
+        "PlayerCombatAvatarMember": 4
+      }
+    },
+    {
+      "index": 64882,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_emote.py"
+      ],
+      "hash": "1e08973c017e7e8599be720d7eb530a2a18f5b11e3506b3a3ba6e8fc47a191f4",
+      "hits": {
+        "CombatAvatarMember": 60,
+        "PlayerCombatAvatarMember": 45
+      }
+    },
+    {
+      "index": 65147,
+      "path": [
+        "gclient/gameplay/logic_base/entities/robot_combat_avatar.py"
+      ],
+      "hash": "94a653c8909c7dfda197a2a59971467c8aace43df45b7fb5c01f9dc15ecc18ab",
+      "hits": {
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 69462,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/inspirator_spell.py"
+      ],
+      "hash": "c0a4943a2fb0be560d42a46a9b5054e6feccc5578a4890814f2868418d65a25b",
+      "hits": {
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 69775,
+      "path": [
+        "gclient/gamesystem/uiwarehouse/panpan/panpan_model_mgr.py"
+      ],
+      "hash": "59f8c5664f51ecdfcd00b2d878f6fe2261dfd8862d504606a70493d2108040cb",
+      "hits": {
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 70535,
+      "path": [
+        "gclient/gameplay/logic_base/entities/cmonster.py"
+      ],
+      "hash": "4b70b637ca4fdc22a79b5ccb27521fcd9cda6796b5190bbaa874e80b1c480053",
+      "hits": {
+        "avatar_model": 2
+      }
+    },
+    {
+      "index": 70547,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_meow_dance.py"
+      ],
+      "hash": "8ffd305f7907fcb5ea7ce14266221c05150145f3580f0bbf859ea600a42dc962",
+      "hits": {
+        "CombatAvatarMember": 23,
+        "PlayerCombatAvatarMember": 7
+      }
+    },
+    {
+      "index": 72412,
+      "path": [
+        "gclient/gameplay/logic_squad_fight/avatarmembers/cimp_input_controller.py"
+      ],
+      "hash": "e78b658b26444ddcae289a87e6a98152ffdae5705d49b381c00aced2671e9024",
+      "hits": {
+        "CombatAvatarMember": 12,
+        "PlayerCombatAvatarMember": 12
+      }
+    },
+    {
+      "index": 73515,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_continue_kill_count.py"
+      ],
+      "hash": "7b9b16820bb61081e57e3efde64360fc5cc39bdd9a5bb4b9fc8afd127a701e78",
+      "hits": {
+        "CombatAvatarMember": 2,
+        "PlayerCombatAvatarMember": 2
+      }
+    },
+    {
+      "index": 73867,
+      "path": [
+        "gclient/gameplay/logic_overload/avatarmember/cimp_backpack.py"
+      ],
+      "hash": "09832fa09dc68423628bf1ae6eea719d2be80bf7065792826ba4a7f233b25d8d",
+      "hits": {
+        "CombatAvatarMember": 5,
+        "PlayerCombatAvatarMember": 5
+      }
+    },
+    {
+      "index": 74087,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_third_mode_logic.py"
+      ],
+      "hash": "b8d384f822b24aea1d75add7e421d83c6054955dec759a2eb95ea0e6a07b5e74",
+      "hits": {
+        "CombatAvatarMember": 9
+      }
+    },
+    {
+      "index": 75038,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_grand_theft.py"
+      ],
+      "hash": "6bd877e852a2c5571e9ac92e8d654f2d404a236ed33a6ecc960655af76fb0994",
+      "hits": {
+        "CombatAvatarMember": 23,
+        "PlayerCombatAvatarMember": 15
+      }
+    },
+    {
+      "index": 75327,
+      "path": [
+        "gclient/gameplay/logic_grand_theft/combat_avatar_grand_theft.py"
+      ],
+      "hash": "67cd17216d76718e2fc3f272373a03295428dcf3c4e18cbeca3324a5c00709c9",
+      "hits": {
+        "CombatAvatarMember": 2,
+        "PlayerCombatAvatarMember": 1,
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 75580,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_safe_region.py"
+      ],
+      "hash": "a6cbd9218f19f59dbb9af09889bd7668b843e5dd9e2e4284b205819f5a801d6c",
+      "hits": {
+        "CombatAvatarMember": 6,
+        "PlayerCombatAvatarMember": 4
+      }
+    },
+    {
+      "index": 75920,
+      "path": [
+        "gclient/gameplay/logic_moba_halloween/avatarmembers/cimp_emote.py"
+      ],
+      "hash": "995abb1e78ced29b1ced02a28a20ba70494bfb51093a73be078907968921a581",
+      "hits": {
+        "CombatAvatarMember": 1,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 76199,
+      "path": [
+        "gclient/gameplay/logic_peekaboo/avatarmembers/cimp_input_controller.py"
+      ],
+      "hash": "b19f612479c74b8ad290f45efbba804addeb943eb6817f48cd1e3c935fc956eb",
+      "hits": {
+        "CombatAvatarMember": 23,
+        "PlayerCombatAvatarMember": 23
+      }
+    },
+    {
+      "index": 77113,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_combat_cc.py"
+      ],
+      "hash": "df95f000b49fd2ffed4f773fce98a25f0c46dcfdfc4b856e3f997cb0073ee357",
+      "hits": {
+        "CombatAvatarMember": 54,
+        "PlayerCombatAvatarMember": 52
+      }
+    },
+    {
+      "index": 77309,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_sticky_master.py"
+      ],
+      "hash": "58d90b4f64dcb58571154bb164bab04ca8028ef091e0f291eccedafe0a9cf4c4",
+      "hits": {
+        "CombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 77732,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_combat_attr.py"
+      ],
+      "hash": "ccdffee1dfe1b410935312f1a95b1dfa5be415efe5d7044326e3acfea2ea9856",
+      "hits": {
+        "CombatAvatarMember": 19,
+        "PlayerCombatAvatarMember": 7
+      }
+    },
+    {
+      "index": 78022,
+      "path": [
+        "gclient/gameplay/logic_overload/models/over_load_avatar_model.py"
+      ],
+      "hash": "bfb2486a01da64adb056feadec5af55eb42180441583303fed1172314e9519b5",
+      "hits": {
+        "avatar_model": 5
+      }
+    },
+    {
+      "index": 78192,
+      "path": [
+        "gclient/gameplay/logic_placement/combat_avatar_placement.py"
+      ],
+      "hash": "d2eaffaa383635bdf4647a5d004fc6877ffb4715b5c90771dcac5bec0c023974",
+      "hits": {
+        "CombatAvatarMember": 2,
+        "PlayerCombatAvatarMember": 1,
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 78274,
+      "path": [
+        "gclient/gameplay/logic_squad_fight/combat_avatar_squad_fight.py"
+      ],
+      "hash": "b9fdd4a7712f27fbc349da5a218ba2001c22511cc252ddb0d9e882e9a823f87e",
+      "hits": {
+        "CombatAvatarMember": 3,
+        "PlayerCombatAvatarMember": 1,
+        "avatar_model": 2
+      }
+    },
+    {
+      "index": 78571,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_pickup.py"
+      ],
+      "hash": "5b65de4c7c794114897181553b2dfff4ac129b2d609e9ca163cb70742d8dfba2",
+      "hits": {
+        "CombatAvatarMember": 26,
+        "PlayerCombatAvatarMember": 26
+      }
+    },
+    {
+      "index": 79537,
+      "path": [
+        "gclient/gameplay/logic_football/avatarmembers/cimp_input_controller.py"
+      ],
+      "hash": "4fa47e95da63246e411bbd3b886b958114d2f664e6c6e51913a49e77a7331ca7",
+      "hits": {
+        "CombatAvatarMember": 49,
+        "PlayerCombatAvatarMember": 49
+      }
+    },
+    {
+      "index": 80873,
+      "path": [
+        "gclient/gameplay/logic_dmz/combat_avatar_dmz.py"
+      ],
+      "hash": "8ec3d3d3d3abb7b75ce13511cb3d17b39a31161be4a4907977c4c553c7c14413",
+      "hits": {
+        "CombatAvatarMember": 3,
+        "PlayerCombatAvatarMember": 2,
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 81082,
+      "path": [
+        "gclient/gameplay/logic_moba/avatarmembers/cimp_input_controller.py"
+      ],
+      "hash": "6dbcdd729f290408cf1d59d307b1b712d83d5d30e639f6f7a2917326a0f975c7",
+      "hits": {
+        "CombatAvatarMember": 37,
+        "PlayerCombatAvatarMember": 37
+      }
+    },
+    {
+      "index": 81243,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_default.py"
+      ],
+      "hash": "dfb242de67484f1be5d7a1b8e68cc46888a4c6780c009e960ca848a0db956f7a",
+      "hits": {
+        "CombatAvatarMember": 4,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 81576,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_gyroscope.py"
+      ],
+      "hash": "34156f2e551299955f113d85589ac28f5343cde6c9d49f29c11159db592ef1da",
+      "hits": {
+        "CombatAvatarMember": 27,
+        "PlayerCombatAvatarMember": 26
+      }
+    },
+    {
+      "index": 81613,
+      "path": [
+        "gclient/gameplay/logic_free_for_all/combat_avatar_free_for_all.py"
+      ],
+      "hash": "591085dcb670b41fec1714291a8949607b0ad8436364c1152fd313b32ae68d9e",
+      "hits": {
+        "CombatAvatarMember": 1,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 81908,
+      "path": [
+        "gclient/gameplay/logic_moba/avatarmembers/cimp_rain_curtain_check.py"
+      ],
+      "hash": "3e255357b381edade1d32ab58721e9bc99bdc1ccbce0a23cfcf0a8a45d276937",
+      "hits": {
+        "CombatAvatarMember": 8,
+        "PlayerCombatAvatarMember": 8
+      }
+    },
+    {
+      "index": 81954,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_buff.py"
+      ],
+      "hash": "35f28519dc681924ec07898dd7bed5da9601a59ee4ac2da69c681e8f1391ceae",
+      "hits": {
+        "CombatAvatarMember": 125,
+        "PlayerCombatAvatarMember": 43
+      }
+    },
+    {
+      "index": 83049,
+      "path": [
+        "gclient/gameplay/logic_base/models/avatar_model_cue.py"
+      ],
+      "hash": "7514c9148daa07495008a8fdab649f3f0f81fa2d1fc7c054e7fc1b1e216111e2",
+      "hits": {
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 83324,
+      "path": [
+        "gclient/gameplay/logic_rivals/combat_avatar_rivals.py"
+      ],
+      "hash": "a8eee9ebc0f3c66379f372f1068ef6fd61fc52a68b0aa97aff9dfe9d02626aba",
+      "hits": {
+        "CombatAvatarMember": 3,
+        "PlayerCombatAvatarMember": 1,
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 83367,
+      "path": [
+        "gclient/gameplay/logic_moba_zombie/avatarmembers/cimp_zombie_combat_item.py"
+      ],
+      "hash": "5100217f35f6ab88207a58252438e2534a0248eb769703925f6c74458cc9cb78",
+      "hits": {
+        "CombatAvatarMember": 4,
+        "PlayerCombatAvatarMember": 4
+      }
+    },
+    {
+      "index": 83513,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_shutter_island.py"
+      ],
+      "hash": "7e1e8247050fd5ea2eb28ec0f1ad18d0905be0d1c0232f800fe0ee76514e87d4",
+      "hits": {
+        "CombatAvatarMember": 16,
+        "PlayerCombatAvatarMember": 4
+      }
+    },
+    {
+      "index": 85215,
+      "path": [
+        "gclient/gameplay/logic_hotspot/avatarmembers/cimp_hotspot.py"
+      ],
+      "hash": "60318be850a24ccf720e18d9b3a4d1cc00e89988ebdea8a10d2bfdf8ccfcb5aa",
+      "hits": {
+        "CombatAvatarMember": 11,
+        "PlayerCombatAvatarMember": 5
+      }
+    },
+    {
+      "index": 85710,
+      "path": [
+        "gclient/gameplay/logic_shootingrange/shootingrange_robot_model.py"
+      ],
+      "hash": "1202baab36bca6f8e8a7942f23e30cf2e89bed3e8af248b2f3a6cb871e1b05ef",
+      "hits": {
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 86590,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_assist_aim.py"
+      ],
+      "hash": "d0fe9e911b355def749f5ecb6ff3ea1f9872002fb0ad00f854ba9c3efba99b11",
+      "hits": {
+        "CombatAvatarMember": 76,
+        "PlayerCombatAvatarMember": 75
+      }
+    },
+    {
+      "index": 87893,
+      "path": [
+        "gclient/gameplay/logic_base/equips/samurai_sword_case.py"
+      ],
+      "hash": "d1635259d8a95066a0d1f6e15c716fafae346e156de07ec6d2c452c0fb25fa35",
+      "hits": {
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 88656,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_crystal.py"
+      ],
+      "hash": "1d846a10bd75a66acd9b6324977e09e46ec2642f522bddbc09dd2c0281e8f9d5",
+      "hits": {
+        "CombatAvatarMember": 35,
+        "PlayerCombatAvatarMember": 4
+      }
+    },
+    {
+      "index": 89364,
+      "path": [
+        "gclient/gameplay/logic_moba_zombie/avatarmembers/cimp_zombie_crystal.py"
+      ],
+      "hash": "8c6c8d2560df8af1a7343dbc36915df47fc1951139c0933a448efc8c6381948b",
+      "hits": {
+        "CombatAvatarMember": 9,
+        "PlayerCombatAvatarMember": 5
+      }
+    },
+    {
+      "index": 91444,
+      "path": [
+        "gclient/gameplay/logic_base/models/als_avatar_model.py"
+      ],
+      "hash": "0d06919d120943865edc49dbd9ff6e3b1ca5230d99f6cf2a2a9a7341bd8d9bba",
+      "hits": {
+        "avatar_model": 3
+      }
+    },
+    {
+      "index": 91541,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_formation_robot.py"
+      ],
+      "hash": "12dad41dbf07a36e8793c628c9cf8033a458c25118d931d25b77e244e04d0ffc",
+      "hits": {
+        "CombatAvatarMember": 5,
+        "PlayerCombatAvatarMember": 3
+      }
+    },
+    {
+      "index": 92218,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_profile.py"
+      ],
+      "hash": "61cab9e448baafd3da2c723ae585c55a4b6015418776486f713e75438e3e3c3e",
+      "hits": {
+        "CombatAvatarMember": 3,
+        "PlayerCombatAvatarMember": 3
+      }
+    },
+    {
+      "index": 92760,
+      "path": [
+        "gclient/gamesystem/models/nova_skin_transform_model_component.py"
+      ],
+      "hash": "a173f8fcc282c9295ebaef0a838a0ca722b0455804fe9225ecf0b9a85b3d6378",
+      "hits": {
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 93563,
+      "path": [
+        "gclient/gameplay/logic_moba_ultra_mega/avatarmember/cimp_time_spear.py"
+      ],
+      "hash": "96576bff0958b43bb079bb8ca2c3debb86eccf64de882fce479f9d1dcce2d312",
+      "hits": {
+        "CombatAvatarMember": 4,
+        "PlayerCombatAvatarMember": 2
+      }
+    },
+    {
+      "index": 94048,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_space.py"
+      ],
+      "hash": "43f2c0b7b45e52378b45920f44473b28d6b7219dbb64f1e7ab0c83ad0256fcae",
+      "hits": {
+        "CombatAvatarMember": 10,
+        "PlayerCombatAvatarMember": 7
+      }
+    },
+    {
+      "index": 94332,
+      "path": [
+        "gclient/gameplay/logic_free_for_all/avatarmember/cimp_input_controller.py"
+      ],
+      "hash": "bc66e5bc5678e2e794bd646d95b2112a7f39b541efc716df51983a1fc7d7f7c5",
+      "hits": {
+        "CombatAvatarMember": 2,
+        "PlayerCombatAvatarMember": 2
+      }
+    },
+    {
+      "index": 95010,
+      "path": [
+        "gclient/gameplay/logic_moba_ultra_mega/avatarmember/cimp_time_back.py"
+      ],
+      "hash": "aa76d32c923127dab127d78e0de74bad7ee46f25743e694a2fc16b11374622e3",
+      "hits": {
+        "CombatAvatarMember": 47,
+        "PlayerCombatAvatarMember": 2
+      }
+    },
+    {
+      "index": 95058,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_portal_base.py"
+      ],
+      "hash": "eaf3d68178317fa0253a9a7915bf6e610cb239184c17b38eb4cccd5f918a00e8",
+      "hits": {
+        "CombatAvatarMember": 19,
+        "PlayerCombatAvatarMember": 12
+      }
+    },
+    {
+      "index": 95479,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_input_controller.py"
+      ],
+      "hash": "b4284b031a30a7771db2d17536a47f4f579ab3615d30f99ad82240209135d3bd",
+      "hits": {
+        "CombatAvatarMember": 228,
+        "PlayerCombatAvatarMember": 228
+      }
+    },
+    {
+      "index": 95834,
+      "path": [
+        "gclient/gameplay/logic_moba_lockdown/models/lock_down_avatar_model.py"
+      ],
+      "hash": "7c8ffc9fbab1ffb23f34e3959103806a4a5d120d45d2eea9a4af7cb65b5b1584",
+      "hits": {
+        "avatar_model": 3
+      }
+    },
+    {
+      "index": 99175,
+      "path": [
+        "gclient/gameplay/logic_moba_ultra_mega/avatarmember/cimp_transform.py"
+      ],
+      "hash": "17b6f33f04d0a738c3fb5d17c89b60fd7e4428212c9a6f1033d1480bed116878",
+      "hits": {
+        "CombatAvatarMember": 102,
+        "PlayerCombatAvatarMember": 68,
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 99455,
+      "path": [
+        "gclient/gameplay/logic_moba_zombie/avatarmembers/cimp_zombie_combat_unit.py"
+      ],
+      "hash": "8fc3e4274763ebf8c54f36d72693f6b5acf52286b1cf3eb8953a9b63ce2588cc",
+      "hits": {
+        "CombatAvatarMember": 4,
+        "PlayerCombatAvatarMember": 2
+      }
+    },
+    {
+      "index": 100800,
+      "path": [
+        "gclient/gamesystem/models/hall_twin_dissolve_model_component.py"
+      ],
+      "hash": "e8fdf1d91fbef16047871c9bebee2181dec2bea8edcd146b8a136c8ca09e72ca",
+      "hits": {
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 100808,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_state_relationship.py"
+      ],
+      "hash": "b45b6c595d6cb262397d19d412425da5805974fb16c2c7127ad378a6880b989a",
+      "hits": {
+        "CombatAvatarMember": 76,
+        "PlayerCombatAvatarMember": 73
+      }
+    },
+    {
+      "index": 102151,
+      "path": [
+        "gclient/gameplay/logic_desperado_trifecta/combat_avatar_desperado_trifecta.py"
+      ],
+      "hash": "0357981f44aa3a954413fe3c6236222bb09d17cdf4f0d6c604337f2143953a5f",
+      "hits": {
+        "CombatAvatarMember": 3,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 102354,
+      "path": [
+        "gclient/gameplay/logic_hotspot/avatarmembers/cimp_input_controller.py"
+      ],
+      "hash": "3f871206a900f52be17b7a31cf4ad4672b54e58be2dd8096a333457b3318a617",
+      "hits": {
+        "CombatAvatarMember": 19,
+        "PlayerCombatAvatarMember": 19
+      }
+    },
+    {
+      "index": 103456,
+      "path": [
+        "gclient/gameplay/util/warmingup_util.py"
+      ],
+      "hash": "68f5c83014e2973740fd4d1d089e40c311f4e6c500d1475df70856efae436e12",
+      "hits": {
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 103848,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_occupy_air_drop.py"
+      ],
+      "hash": "734898320726ae7dc3cb196bdb7c65a7cc0f2a7e70a3ff9f1a93b8f243c1fae6",
+      "hits": {
+        "CombatAvatarMember": 3,
+        "PlayerCombatAvatarMember": 3
+      }
+    },
+    {
+      "index": 104487,
+      "path": [
+        "gclient/gameplay/logic_moba/models/moba_robot_avatar_model.py"
+      ],
+      "hash": "3ba811aa116e1a50359ade5715330ff6439823d3a5ede464d231ae1bbb6a0d75",
+      "hits": {
+        "avatar_model": 2
+      }
+    },
+    {
+      "index": 104525,
+      "path": [
+        "gclient/gameplay/logic_base/models/robot_avatar_model.py"
+      ],
+      "hash": "5a33fe7d60ac98cd66f77882b219cd6852a9596c029b0626b3287e2a32374c37",
+      "hits": {
+        "avatar_model": 3
+      }
+    },
+    {
+      "index": 104677,
+      "path": [
+        "gclient/gameplay/logic_grand_theft/models/grand_theft_avatar_model.py"
+      ],
+      "hash": "41b06cce594bc09f632c6a2405e2689045044ead6b84df224183026eddfb7c4a",
+      "hits": {
+        "avatar_model": 3
+      }
+    },
+    {
+      "index": 106784,
+      "path": [
+        "gclient/gamesystem/uihall/uimall/gacha_model_comp.py"
+      ],
+      "hash": "776b43a686a0039be6bcda89ecdec81f6019a9e14317f2073b7cd40324f2c6d7",
+      "hits": {
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 107042,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_robot_combat_log.py"
+      ],
+      "hash": "fbfaaf13456417e95dd829fd3b00d23232c1a8941b5bf93c328bff1c928971d3",
+      "hits": {
+        "CombatAvatarMember": 17,
+        "PlayerCombatAvatarMember": 17
+      }
+    },
+    {
+      "index": 107175,
+      "path": [
+        "gclient/gameplay/logic_rookieguide/rookieguide_robot_avatar_model.py"
+      ],
+      "hash": "66fefdd4b97f8069e0a7f13e89c7dbc07718e8102f7f39acc26266edb9b280af",
+      "hits": {
+        "avatar_model": 2
+      }
+    },
+    {
+      "index": 107853,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combat_avatar.py"
+      ],
+      "hash": "11babd1e40f2036808527dc7589df652ae108cc51e3c37f0259c951a6b09dd0d",
+      "hits": {
+        "CombatAvatarMember": 5,
+        "PlayerCombatAvatarMember": 3
+      }
+    },
+    {
+      "index": 108197,
+      "path": [
+        "gclient/gameplay/logic_moba_halloween/avatarmembers/cimp_input_controller.py"
+      ],
+      "hash": "c462ddb6efe8f40d4497849194489f21392d09281c2783e28c3f9de58d26cffb",
+      "hits": {
+        "CombatAvatarMember": 1,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 108403,
+      "path": [
+        "gclient/gameplay/logic_moba_titan_2/avatarmember/cimp_weapon_lock.py"
+      ],
+      "hash": "fa09ff49e54e2e49fc5a01b45a22235a2aa529d18ab8e78b1babb60bab84643a",
+      "hits": {
+        "CombatAvatarMember": 32,
+        "PlayerCombatAvatarMember": 32
+      }
+    },
+    {
+      "index": 108986,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_thruster_pack.py"
+      ],
+      "hash": "39f75ad9b1c2f6f0ff5757b507fad46018826bf7463f12dac3f0d62d26375395",
+      "hits": {
+        "CombatAvatarMember": 60,
+        "PlayerCombatAvatarMember": 33
+      }
+    },
+    {
+      "index": 109241,
+      "path": [
+        "gclient/gameplay/logic_block_strike/comps/comp_portal.py"
+      ],
+      "hash": "19aaf7d996affaca3f059da278602dd8cad3ac11760f2cbb849288eea178218d",
+      "hits": {
+        "CombatAvatarMember": 5,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 109835,
+      "path": [
+        "gclient/gameplay/logic_moba_halloween/avatarmembers/cimp_swim.py"
+      ],
+      "hash": "3dd93bae7707d501f6cdab2cfba4131572478f35f228381358bd952a93137aff",
+      "hits": {
+        "CombatAvatarMember": 1,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 109836,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_talent.py"
+      ],
+      "hash": "da8f71f45e1ee049045ec8a862da7bcedec993bedd202fcca91fef9dfb0051e2",
+      "hits": {
+        "CombatAvatarMember": 11,
+        "PlayerCombatAvatarMember": 7
+      }
+    },
+    {
+      "index": 110296,
+      "path": [
+        "gclient/gameplay/logic_moba_seven_sins/models/seven_sins_avatar_model.py"
+      ],
+      "hash": "2c71b2c377b88aacbed819c1a885bb61b45fa6901f86016d5aec66fe1baa1b8a",
+      "hits": {
+        "avatar_model": 5
+      }
+    },
+    {
+      "index": 110947,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_combat.py"
+      ],
+      "hash": "b841b7859917281b24c202884b10caaa951f01ed77ed69a4db2501e74744d58d",
+      "hits": {
+        "CombatAvatarMember": 4,
+        "PlayerCombatAvatarMember": 2
+      }
+    },
+    {
+      "index": 110980,
+      "path": [
+        "gclient/gameplay/logic_desperado_trifecta/avatarmembers/cimp_input_controller.py"
+      ],
+      "hash": "459030901b62b44351831afaf37f760b89f950e0fadc165dd62814a212d7b1a5",
+      "hits": {
+        "CombatAvatarMember": 10,
+        "PlayerCombatAvatarMember": 10
+      }
+    },
+    {
+      "index": 111218,
+      "path": [
+        "gclient/gameplay/logic_base/equips/equip_attach_model_comp.py"
+      ],
+      "hash": "401dd6a4a778a7238101fedb59d59f02abb08b5bfa1c683a972bc027433a99b1",
+      "hits": {
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 111426,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_anti_plugin.py"
+      ],
+      "hash": "e09d425d3bbab4ce109f621b22642285b4ff3d3596522c85df26814bc9362e99",
+      "hits": {
+        "CombatAvatarMember": 6,
+        "PlayerCombatAvatarMember": 5
+      }
+    },
+    {
+      "index": 112733,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_dancing_cure.py"
+      ],
+      "hash": "c1ebc0baaa6885447c44c664dca6b8833ca14b701f0174717cfbae247eec0f0c",
+      "hits": {
+        "CombatAvatarMember": 13,
+        "PlayerCombatAvatarMember": 13
+      }
+    },
+    {
+      "index": 113534,
+      "path": [
+        "gclient/gameplay/logic_moba_halloween/avatarmembers/comp_strop.py"
+      ],
+      "hash": "481f6cfcd9b10f8863eeec3ff2cf52285373eeb5402fb5b754e8b052c8dab24e",
+      "hits": {
+        "CombatAvatarMember": 1,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 113733,
+      "path": [
+        "gclient/gameplay/logic_rookieguide/combat_avatar_rookieguide.py"
+      ],
+      "hash": "164d5c8d8039e25e58903f20400db9825b0b31a259c1361218b74b2e5e041a42",
+      "hits": {
+        "CombatAvatarMember": 3,
+        "PlayerCombatAvatarMember": 1,
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 113975,
+      "path": [
+        "gclient/gameplay/logic_big_head/models/big_head_avatar_model.py"
+      ],
+      "hash": "51c14d0dbc6fe129e194483110cab25282c74a938eac93055717315dd6048633",
+      "hits": {
+        "avatar_model": 3
+      }
+    },
+    {
+      "index": 115942,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_world_field.py"
+      ],
+      "hash": "e3acfce2d8cf523b872fa6c99965a182bbe8929dae373bda9adbf26f1db1fa40",
+      "hits": {
+        "CombatAvatarMember": 12,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 116215,
+      "path": [
+        "gclient/gamesystem/uihall/activity/grand_theft/rank_window.py"
+      ],
+      "hash": "34451c2576ef8e4826503dd5484a98cc51111f44d4f739b7429bb82a13ba089f",
+      "hits": {
+        "avatar_model": 2
+      }
+    },
+    {
+      "index": 116223,
+      "path": [
+        "gclient/gameplay/logic_moba_lightning/lightning_capybara_client.py"
+      ],
+      "hash": "a8153649b2048a108ace7548d6c6b321782dcdca8dcee71a263e72ce98fc3496",
+      "hits": {
+        "CombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 116282,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_performance_share.py"
+      ],
+      "hash": "0f3d5b41fa3e27c7b7c1971a3febb9bbc497363ac5b2b0615feed209f5c8f03c",
+      "hits": {
+        "CombatAvatarMember": 4,
+        "PlayerCombatAvatarMember": 4
+      }
+    },
+    {
+      "index": 117883,
+      "path": [
+        "gclient/gameplay/logic_moba_seven_sins/avatarmember/cimp_envy_sin.py"
+      ],
+      "hash": "f5632cfa3b266a80d4a6919237a3afd0bb672de965b1baeb004c60aac1321f74",
+      "hits": {
+        "CombatAvatarMember": 6,
+        "PlayerCombatAvatarMember": 3
+      }
+    },
+    {
+      "index": 117948,
+      "path": [
+        "gclient/gameplay/logic_gun_fight/combat_avatar_gun_fight.py"
+      ],
+      "hash": "d7827751f366634eb6e1b5dd4f86943ce588fb25bd4474d02dca81a5eaf53e08",
+      "hits": {
+        "CombatAvatarMember": 3,
+        "PlayerCombatAvatarMember": 1,
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 118204,
+      "path": [
+        "gclient/gameplay/logic_nowhere/models/nowhere_avatar_model.py"
+      ],
+      "hash": "06ffcc858cb036aad30380ca1e9789bad9ac3b49a5cc4cef34562f0426d224b9",
+      "hits": {
+        "avatar_model": 2
+      }
+    },
+    {
+      "index": 118625,
+      "path": [
+        "gclient/gameplay/logic_client_offline/combat_avatar_client_offline.py"
+      ],
+      "hash": "f9f86f2cb48ef8bb010218a5debac34c752db0832faa0ea3b6193b78aa089619",
+      "hits": {
+        "CombatAvatarMember": 2,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 123809,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_spell_juren.py"
+      ],
+      "hash": "da3df22f2c13a3c1cffbfba887b345c983f95e0f2d8d9f3a5c11d1325f5ca8a0",
+      "hits": {
+        "CombatAvatarMember": 99,
+        "PlayerCombatAvatarMember": 54
+      }
+    },
+    {
+      "index": 124796,
+      "path": [
+        "gclient/gameplay/logic_moba_ultra_mega/avatarmember/cimp_black_hole_pull.py"
+      ],
+      "hash": "e06889501002b37abd1660e3d46a442687200594be94fd467d9d1c901a206a15",
+      "hits": {
+        "CombatAvatarMember": 24,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 124847,
+      "path": [
+        "gclient/gameplay/logic_shootingrange/avatarmembers/cimp_input_controller.py"
+      ],
+      "hash": "963a3d17ecdf845c6f5343aff13d05a1ce1e21dc4f9dffa555bfab3e7653a42c",
+      "hits": {
+        "CombatAvatarMember": 16,
+        "PlayerCombatAvatarMember": 16
+      }
+    },
+    {
+      "index": 125076,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_talent.py"
+      ],
+      "hash": "21ea2858f91dcb5c5daa0823127a8532b9c588d7237b8ea352c9ab476f7a4168",
+      "hits": {
+        "CombatAvatarMember": 127,
+        "PlayerCombatAvatarMember": 43
+      }
+    },
+    {
+      "index": 125522,
+      "path": [
+        "gclient/util/routine/collect_hero_skin_performance.py"
+      ],
+      "hash": "70fb369f060101cde50bc95cc443f85aa5fa3f118ff52e7e519b4280bf5dfd02",
+      "hits": {
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 125654,
+      "path": [
+        "gclient/gameplay/logic_base/entities/replay_combat_avatar.py"
+      ],
+      "hash": "18cc8ef8831b453f945f6874f7271d805cbfdaff01221c500c4f14d99ebba555",
+      "hits": {
+        "CombatAvatarMember": 15
+      }
+    },
+    {
+      "index": 126144,
+      "path": [
+        "gclient/gameplay/logic_moba_ultra_mega/combat_avatar_moba_ultra_mega.py"
+      ],
+      "hash": "edfa0433e3d2400a0d7b2802e830c724e5471a3a49d8fc5197cae9bac222ceb1",
+      "hits": {
+        "CombatAvatarMember": 3,
+        "PlayerCombatAvatarMember": 1,
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 126956,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/medikit_spell.py"
+      ],
+      "hash": "03be520ff34eb21302ddf0048d04e1a15617b9ff8eb1a9cc8e8c4407e850e39a",
+      "hits": {
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 126990,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_replay.py"
+      ],
+      "hash": "ca8bd740a70e55468d87e2e521b890aaec07842df266a8ae4052523f38dbc5bc",
+      "hits": {
+        "CombatAvatarMember": 52,
+        "PlayerCombatAvatarMember": 24
+      }
+    },
+    {
+      "index": 127699,
+      "path": [
+        "gclient/gameplay/logic_dmz/avatarmembers/cimp_stamina.py"
+      ],
+      "hash": "884f3deb7ea2e93df3c790e532a94cbe7c629b83b149663686f48a740d67fefd",
+      "hits": {
+        "CombatAvatarMember": 14,
+        "PlayerCombatAvatarMember": 14
+      }
+    },
+    {
+      "index": 128152,
+      "path": [
+        "gclient/gameplay/logic_hotspot/combat_avatar_hotspot.py"
+      ],
+      "hash": "21de4c7a42813d265d4b92816f6d2146e489fecc5d5d938ebdce38fdae583d4c",
+      "hits": {
+        "CombatAvatarMember": 3,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 129354,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_left_hand_special_weapon.py"
+      ],
+      "hash": "2110c1ea60d08f09dc201d46f2b97d06c74789634833afb6173d87d283badba0",
+      "hits": {
+        "CombatAvatarMember": 25,
+        "PlayerCombatAvatarMember": 3
+      }
+    },
+    {
+      "index": 129561,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_input_controller_handle.py"
+      ],
+      "hash": "d93c9de3b2a13bbc867e1480e8a16e05d0c3492c4f976bac598f563b1d8d3555",
+      "hits": {
+        "CombatAvatarMember": 58,
+        "PlayerCombatAvatarMember": 58
+      }
+    },
+    {
+      "index": 130096,
+      "path": [
+        "gclient/gameplay/logic_moba_titan_2/avatarmember/cimp_input_controller.py"
+      ],
+      "hash": "ea06dee8c1f613fbde3cc84afce24896b39da439670c7ae7c224497a85885c0d",
+      "hits": {
+        "CombatAvatarMember": 9,
+        "PlayerCombatAvatarMember": 9
+      }
+    },
+    {
+      "index": 130168,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_combat_item.py"
+      ],
+      "hash": "d287b790eeaf829e610dcf9cc93854668d9ff68e69fc1f7cb21d64a2eed1dfe0",
+      "hits": {
+        "CombatAvatarMember": 86,
+        "PlayerCombatAvatarMember": 76
+      }
+    },
+    {
+      "index": 131911,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_beard.py"
+      ],
+      "hash": "c291d12135e950137462b8801a4714faabd257a674a881bba103f714739a0d6a",
+      "hits": {
+        "CombatAvatarMember": 7,
+        "PlayerCombatAvatarMember": 4
+      }
+    },
+    {
+      "index": 132447,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_control_target.py"
+      ],
+      "hash": "c5af5e4c85d4b08e2545ea1fff3b8b7e3e1860daa5e466809aebf3e04293d0f0",
+      "hits": {
+        "CombatAvatarMember": 10,
+        "PlayerCombatAvatarMember": 6
+      }
+    },
+    {
+      "index": 133370,
+      "path": [
+        "gclient/gameplay/logic_moba_lightning/models/lightning_capybara_model.py"
+      ],
+      "hash": "621f60dff9c939cd6bd72cbd9709b48330dfdc14d4c872b7bad6333b5cea26d9",
+      "hits": {
+        "avatar_model": 5
+      }
+    },
+    {
+      "index": 133593,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_jersey_diy.py"
+      ],
+      "hash": "5249c5ec630e370281c96da9b641c19886cb4ff58ed0b91cc54ee692f75d7d2f",
+      "hits": {
+        "CombatAvatarMember": 4
+      }
+    },
+    {
+      "index": 133778,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_store.py"
+      ],
+      "hash": "6b85dcac19ef29dc79d2ff3680db8385b56853439b3af4ac44ab19c1a06d3f26",
+      "hits": {
+        "CombatAvatarMember": 23,
+        "PlayerCombatAvatarMember": 21
+      }
+    },
+    {
+      "index": 133898,
+      "path": [
+        "gclient/gameplay/logic_moba_lockdown/avatarmember/cimp_lock_down_combat_item.py"
+      ],
+      "hash": "7dd51531d4b6a803d8f3d93c8744059212223911145967c7287523acbfb51da0",
+      "hits": {
+        "CombatAvatarMember": 2,
+        "PlayerCombatAvatarMember": 2
+      }
+    },
+    {
+      "index": 134056,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_building.py"
+      ],
+      "hash": "69aa5adde038bb6db906fcda2857b1a6253e864027c728a9bbf47a2b93a2dd09",
+      "hits": {
+        "CombatAvatarMember": 5,
+        "PlayerCombatAvatarMember": 3
+      }
+    },
+    {
+      "index": 135109,
+      "path": [
+        "gclient/gameplay/logic_rookieguide_new/combat_avatar_rookieguide.py"
+      ],
+      "hash": "c7fe341e6ae076f51f5452eef3b12cf6b72cb6a6b35311a45239a7658b0f6da4",
+      "hits": {
+        "CombatAvatarMember": 3,
+        "PlayerCombatAvatarMember": 1,
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 135369,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_motion.py"
+      ],
+      "hash": "a1c2d1590da5e51076abfe1b33eb0d01b11b2d877c81bff44372f0f568dbf0e8",
+      "hits": {
+        "CombatAvatarMember": 114,
+        "PlayerCombatAvatarMember": 91
+      }
+    },
+    {
+      "index": 135527,
+      "path": [
+        "gclient/gamesystem/uiwarehouse/heirloom/heirloom_model_mgr.py"
+      ],
+      "hash": "10c3fd2c2cc388a28fe20b0584e516bfdc22e1437610652608c3e87f69b42b55",
+      "hits": {
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 135845,
+      "path": [
+        "gclient/gameplay/logic_squad_fight/avatarmembers/cimp_squad_fight.py"
+      ],
+      "hash": "949a77aff6f9f43455cdb35f326573f86e95e375d8accf8c1aab038df9f2abb3",
+      "hits": {
+        "CombatAvatarMember": 15,
+        "PlayerCombatAvatarMember": 6
+      }
+    },
+    {
+      "index": 136332,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_client_buff.py"
+      ],
+      "hash": "3d6450246d766e5e1eb8d61fe4433e2c9a33e0bff757e7589178c744e245d693",
+      "hits": {
+        "CombatAvatarMember": 29,
+        "PlayerCombatAvatarMember": 13
+      }
+    },
+    {
+      "index": 136442,
+      "path": [
+        "gclient/gameplay/logic_shootingrange/avatarmembers/cimp_input_controller_handle.py"
+      ],
+      "hash": "8b0c9acf62a38a5e06e1bd3b58e4747093d3917ace34bd312462c9012fc6572f",
+      "hits": {
+        "CombatAvatarMember": 2,
+        "PlayerCombatAvatarMember": 2
+      }
+    },
+    {
+      "index": 136777,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_exchange_hero.py"
+      ],
+      "hash": "dd4fed8195609aae5a9e9b4233b7716b9cf3a3788ae58008725d38f00c5c43a1",
+      "hits": {
+        "CombatAvatarMember": 4,
+        "PlayerCombatAvatarMember": 4
+      }
+    },
+    {
+      "index": 137121,
+      "path": [
+        "gclient/gamesystem/uihall/gunupgrade/hall_avatar_model.py"
+      ],
+      "hash": "3bbbfc65688ec185de799892b85970b6e3f7f39df59f4d42fe7b0658a787802d",
+      "hits": {
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 137819,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_attach_model.py"
+      ],
+      "hash": "bc5844a9d2a00da98bcdf66ade42773b6189864151c902442205064646e31f4a",
+      "hits": {
+        "CombatAvatarMember": 25,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 137971,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_env.py"
+      ],
+      "hash": "a590e411640409ea8c8f947699e7c2fbe6cdfdeea700f9860f412429994f338c",
+      "hits": {
+        "CombatAvatarMember": 10,
+        "PlayerCombatAvatarMember": 9
+      }
+    },
+    {
+      "index": 138227,
+      "path": [
+        "gclient/gameplay/logic_blasting/avatarmembers/cimp_input_controller.py"
+      ],
+      "hash": "572d23c9c829cf2c4da6ee56192df0733d6d41baaa919a081b656b1287f93ea8",
+      "hits": {
+        "CombatAvatarMember": 16,
+        "PlayerCombatAvatarMember": 16
+      }
+    },
+    {
+      "index": 138967,
+      "path": [
+        "gclient/gameplay/logic_moba_titan_2/combat_avatar_moba_titan_2.py"
+      ],
+      "hash": "f1281156289acaad1dbd59aa8ea07078649281487fc31f0aecfd1b3f602db493",
+      "hits": {
+        "CombatAvatarMember": 2,
+        "PlayerCombatAvatarMember": 1,
+        "avatar_model": 1
+      }
+    },
+    {
+      "index": 139318,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_auto_fire.py"
+      ],
+      "hash": "f1f6889ad2cf06c58d20d6b007a8da852d064368653b6c0ff65c05b68454bda1",
+      "hits": {
+        "CombatAvatarMember": 16,
+        "PlayerCombatAvatarMember": 15
+      }
+    },
+    {
+      "index": 139933,
+      "path": [
+        "gclient/gameplay/logic_gun_fight/avatarmembers/cimp_input_controller.py"
+      ],
+      "hash": "30d67865bf34523bfc8634e719deb9b36106c830427d0e0e7fb2ece59286c3ca",
+      "hits": {
+        "CombatAvatarMember": 11,
+        "PlayerCombatAvatarMember": 11
+      }
+    },
+    {
+      "index": 141406,
+      "path": [
+        "gclient/gameplay/logic_moba_halloween/avatarmembers/cimp_motion.py"
+      ],
+      "hash": "244eb73ceccd29f46cb23cf45f9b769ebb973ee809d992d845363506c4d199c0",
+      "hits": {
+        "CombatAvatarMember": 1,
+        "PlayerCombatAvatarMember": 1
+      }
+    },
+    {
+      "index": 141633,
+      "path": [
+        "gclient/gameplay/logic_base/entities/cbomb.py"
+      ],
+      "hash": "a6fc7b38fb4ea831376a8b2827f86ffccbbb4beb392e72a23759c000e99a562c",
+      "hits": {
+        "avatar_model": 2
+      }
+    },
+    {
+      "index": 141715,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_item.py"
+      ],
+      "hash": "c4950071ab5724f67345bd898dacfd7892737acc5e93db62d7e04e304b017d70",
+      "hits": {
+        "CombatAvatarMember": 163,
+        "PlayerCombatAvatarMember": 151
+      }
+    },
+    {
+      "index": 141870,
+      "path": [
+        "gclient/gameplay/logic_football/avatarmembers/cimp_football_outline.py"
+      ],
+      "hash": "76053b82fedc28300036025e24546f553d1124d689235b7bea8bac32da4df065",
+      "hits": {
+        "CombatAvatarMember": 5
+      }
+    },
+    {
+      "index": 142391,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_swim.py"
+      ],
+      "hash": "03c677bc8197a0556b36b8b91d11ce8cb0c9ea83c315eac7a26eaebf96ff3ae2",
+      "hits": {
+        "CombatAvatarMember": 16,
+        "PlayerCombatAvatarMember": 16
+      }
+    },
+    {
+      "index": 142506,
+      "path": [
+        "gclient/gameplay/logic_moba_titan_2/avatarmember/cimp_juren_hook_target.py"
+      ],
+      "hash": "1cf479a186e715a8eb60cb6bc0660e7dde6608c574263c973d16bfe1aa1f41bb",
+      "hits": {
+        "CombatAvatarMember": 22,
+        "PlayerCombatAvatarMember": 22
+      }
+    },
+    {
+      "index": 142722,
+      "path": [
+        "gclient/gameplay/logic_peekaboo/models/peekaboo_avatar_model.py"
+      ],
+      "hash": "3eb495c6e82343026c39e0efc60ac10ed4f533cccad68ede99ca8a2e92d99abc",
+      "hits": {
+        "avatar_model": 3
+      }
+    },
+    {
+      "index": 143510,
+      "path": [
+        "gclient/gameplay/logic_base/models/avatar_model.py"
+      ],
+      "hash": "0a4a57f34d1c8e14e38c08f510f1787f46659e4b2928663cf526797eac8b0ed3",
+      "hits": {
+        "avatar_model": 3
+      }
+    },
+    {
+      "index": 144926,
+      "path": [
+        "gclient/gameplay/logic_moba_ultra_mega/avatarmember/cimp_weapon_lock.py"
+      ],
+      "hash": "4b497b6c3397ac7295121e79d3e5ebec9e028f64a029814538d45ed702762266",
+      "hits": {
+        "CombatAvatarMember": 15,
+        "PlayerCombatAvatarMember": 15
+      }
+    }
+  ],
+  "bytecode_executed": false
+}

@@ -1,0 +1,294 @@
+[
+  {
+    "rva": "0x4ee7950",
+    "string": "asiocore.get_msg_cache_limit()"
+  },
+  {
+    "rva": "0x4ee79d8",
+    "string": "asiocore.set_max_frame_us(max_frame_us, max_frame_behind)"
+  },
+  {
+    "rva": "0x4ee7a28",
+    "string": "asiocore.get_debug_rpc()"
+  },
+  {
+    "rva": "0x4ee7c28",
+    "string": "asiocore.get_thread_num()"
+  },
+  {
+    "rva": "0x4ee7eb8",
+    "string": "asiocore.b64encode(str)"
+  },
+  {
+    "rva": "0x4ee7ee0",
+    "string": "asiocore.b64decode(str)"
+  },
+  {
+    "rva": "0x4ee7f10",
+    "string": "asiocore.get_tcp_keepidle()"
+  },
+  {
+    "rva": "0x4ee7fc0",
+    "string": "asiocore.get_tcp_keepintvl()"
+  },
+  {
+    "rva": "0x4ee8070",
+    "string": "asiocore.get_tcp_keepcnt()"
+  },
+  {
+    "rva": "0x4ee80f8",
+    "string": "asiocore.get_send_bytes()"
+  },
+  {
+    "rva": "0x4ee8160",
+    "string": "asiocore.get_recv_bytes()"
+  },
+  {
+    "rva": "0x4ee8190",
+    "string": "asiocore.set_recv_bytes(bytes)"
+  },
+  {
+    "rva": "0x4ee81c8",
+    "string": "asiocore.get_insight_stats()"
+  },
+  {
+    "rva": "0x4ee8200",
+    "string": "asiocore.pop_insight_stats()"
+  },
+  {
+    "rva": "0x4ee8248",
+    "string": "asiocore.set_enable_insight_stat(enable)"
+  },
+  {
+    "rva": "0x4ee8290",
+    "string": "asiocore.get_enable_insight_stat()"
+  },
+  {
+    "rva": "0x4ee82b8",
+    "string": "asiocore.start_stutter(interval, threshold)"
+  },
+  {
+    "rva": "0x4ee8300",
+    "string": "asiocore.get_stutter_count()"
+  },
+  {
+    "rva": "0x4ee8330",
+    "string": "asiocore.get_stutter()"
+  },
+  {
+    "rva": "0x4ee8360",
+    "string": "asiocore.get_default_win_bits()"
+  },
+  {
+    "rva": "0x4ee8400",
+    "string": "asiocore.get_default_mem_level()"
+  },
+  {
+    "rva": "0x4ee84a0",
+    "string": "asiocore.get_process_name()"
+  },
+  {
+    "rva": "0x4ee8520",
+    "string": "asiocore.get_process_id()"
+  },
+  {
+    "rva": "0x4ee85f0",
+    "string": "asiocore.get_prop_index()"
+  },
+  {
+    "rva": "0x4ee8628",
+    "string": "asiocore.clear_prop_index()"
+  },
+  {
+    "rva": "0x4ee8690",
+    "string": "asiocore.clear_class()"
+  },
+  {
+    "rva": "0x4ee86b8",
+    "string": "asiocore.remove_class(name)"
+  },
+  {
+    "rva": "0x4ee86e8",
+    "string": "asiocore.get_class(name)"
+  },
+  {
+    "rva": "0x4ee87c0",
+    "string": "asiocore.get_props_profile()"
+  },
+  {
+    "rva": "0x4ee8868",
+    "string": "asiocore.get_props_profile_period()"
+  },
+  {
+    "rva": "0x4ee89d0",
+    "string": "asiocore.get_enable_py_callback_stat()"
+  },
+  {
+    "rva": "0x4ee8a18",
+    "string": "asiocore.set_enable_py_callback_stat(enable)"
+  },
+  {
+    "rva": "0x4ee8a70",
+    "string": "asiocore.get_py_callback_total_execute_limit()"
+  },
+  {
+    "rva": "0x4ee8ac8",
+    "string": "asiocore.set_py_callback_total_execute_limit(limit)"
+  },
+  {
+    "rva": "0x4ee8b20",
+    "string": "asiocore.get_py_callback_execute_limit()"
+  },
+  {
+    "rva": "0x4ee8b70",
+    "string": "asiocore.set_py_callback_execute_limit(limit)"
+  },
+  {
+    "rva": "0x4ee8bc8",
+    "string": "asiocore.get_py_callback_total_execute_stats()"
+  },
+  {
+    "rva": "0x4ee8c18",
+    "string": "asiocore.get_py_callback_execute_stats()"
+  },
+  {
+    "rva": "0x4ee8c60",
+    "string": "asiocore.get_py_callback_stats()"
+  },
+  {
+    "rva": "0x4ee90c8",
+    "string": "asiocore.enable_pos_unreliable(enable)"
+  },
+  {
+    "rva": "0x4ee9108",
+    "string": "asiocore.enabled_pos_unreliable()"
+  },
+  {
+    "rva": "0x4ee91a8",
+    "string": "asiocore.get_kcp_mh_handshake()"
+  },
+  {
+    "rva": "0x4ee92c8",
+    "string": "asiocore.get_snd_share_count()"
+  },
+  {
+    "rva": "0x4ee95e0",
+    "string": "asiocore.set_kcp_vginfo((ip, port, reserve1, reserve2, reserve3)) / set_kcp_vginfo(bytes)"
+  },
+  {
+    "rva": "0x4ee9650",
+    "string": "asiocore.get_kcp_vginfo()"
+  },
+  {
+    "rva": "0x4ee97b8",
+    "string": "asiocore.get_smart_rto()"
+  },
+  {
+    "rva": "0x4ee97e8",
+    "string": "asiocore.set_smart_rto(smart_rto)"
+  },
+  {
+    "rva": "0x4ee9820",
+    "string": "asiocore.get_fec_switch()"
+  },
+  {
+    "rva": "0x4ee9840",
+    "string": "asiocore.set_fec_switch(rtt, num)"
+  },
+  {
+    "rva": "0x4ee9880",
+    "string": "asiocore.get_fec_rto_switch()"
+  },
+  {
+    "rva": "0x4ee98a0",
+    "string": "asiocore.set_fec_rto_switch(interval, rto, duration)"
+  },
+  {
+    "rva": "0x4ee98f0",
+    "string": "asiocore.get_fec_xmit_switch()"
+  },
+  {
+    "rva": "0x4ee9910",
+    "string": "asiocore.set_fec_xmit_switch(interval, xmit, ratio, duration)"
+  },
+  {
+    "rva": "0x4ee9950",
+    "string": "asiocore.set_fec_switch_enable(rtt, num)"
+  },
+  {
+    "rva": "0x4ee9980",
+    "string": "asiocore.set_fec_switch_disable(rtt, num)"
+  },
+  {
+    "rva": "0x4ee99c0",
+    "string": "asiocore.get_fec_codec()"
+  },
+  {
+    "rva": "0x4ee9a90",
+    "string": "asiocore.get_fec_rate()"
+  },
+  {
+    "rva": "0x4ee9ac0",
+    "string": "asiocore.get_fec_max_level()"
+  },
+  {
+    "rva": "0x4ee9b88",
+    "string": "asiocore.get_fec_grade()"
+  },
+  {
+    "rva": "0x4ee9c48",
+    "string": "asiocore.get_fec_grade_symbol_len(grade)"
+  },
+  {
+    "rva": "0x4ee9e40",
+    "string": "asiocore.zlib_compress_async(string, level, callback)"
+  },
+  {
+    "rva": "0x4ee9e90",
+    "string": "asiocore.zlib_decompress_async(string, callback)"
+  },
+  {
+    "rva": "0x4ee9ed8",
+    "string": "asiocore.write_async(filename, data, callback)"
+  },
+  {
+    "rva": "0x4ee9f28",
+    "string": "asiocore.set_caller_setter(setter)"
+  },
+  {
+    "rva": "0x4ee9f60",
+    "string": "asiocore.set_tp_flags"
+  },
+  {
+    "rva": "0x4ee9f88",
+    "string": "asiocore.get_tp_flags"
+  },
+  {
+    "rva": "0x4ee9fc0",
+    "string": "asiocore.set_as_area_map_subclass"
+  },
+  {
+    "rva": "0x4eea000",
+    "string": "asiocore.is_area_map_subclass"
+  },
+  {
+    "rva": "0x4eea040",
+    "string": "asiocore.set_as_area_list_subclass"
+  },
+  {
+    "rva": "0x4eea080",
+    "string": "asiocore.is_area_list_subclass"
+  },
+  {
+    "rva": "0x4eea0b0",
+    "string": "asiocore.call_next_frame(callable)"
+  },
+  {
+    "rva": "0x4eea5d8",
+    "string": "regist_class"
+  },
+  {
+    "rva": "0x5bc1890",
+    "string": "getProperty"
+  }
+]

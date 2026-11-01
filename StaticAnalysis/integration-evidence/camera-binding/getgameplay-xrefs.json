@@ -1,0 +1,19 @@
+[
+  {
+    "kind": "rip",
+    "target": "GetGameplay",
+    "target_rva": "0x5bb9e18",
+    "function_begin_rva": "0x3268a60",
+    "function_end_rva": "0x326a058",
+    "instruction": {
+      "rva": "0x3269453",
+      "preferred_va": "0x143269453",
+      "file_offset": "0x3268a53",
+      "bytes": "48 8d 0d be 09 95 02",
+      "text": "lea rcx,[145BB9E18h]",
+      "length": 7,
+      "rip_target_rva": "0x5bb9e18",
+      "rip_target_string": "GetGameplay"
+    }
+  }
+]

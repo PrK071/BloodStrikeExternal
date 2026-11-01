@@ -1,0 +1,243 @@
+[
+  {
+    "name": "area_map",
+    "string_rva": "0x4eeac58",
+    "refs": []
+  },
+  {
+    "name": "area",
+    "string_rva": "0x4eeb060",
+    "refs": [
+      [
+        {
+          "rva": "0x5250f58",
+          "value": "0x95fb9fe800000005",
+          "string": null
+        },
+        {
+          "rva": "0x5250f60",
+          "value": "0x144eeb060",
+          "string": "area"
+        },
+        {
+          "rva": "0x5250f68",
+          "value": "0xb7960f6400000004",
+          "string": null
+        },
+        {
+          "rva": "0x5250f70",
+          "value": "0x14524eea8",
+          "string": "BlastBondInfo.area"
+        },
+        {
+          "rva": "0x5250f78",
+          "value": "0xa6ddc9d800000012",
+          "string": null
+        },
+        {
+          "rva": "0x5250f80",
+          "value": "0x3000400030000",
+          "string": null
+        }
+      ],
+      [
+        {
+          "rva": "0x5252978",
+          "value": "0x474959fc00000006",
+          "string": null
+        },
+        {
+          "rva": "0x5252980",
+          "value": "0x144eeb060",
+          "string": "area"
+        },
+        {
+          "rva": "0x5252988",
+          "value": "0xb7960f6400000004",
+          "string": null
+        },
+        {
+          "rva": "0x5252990",
+          "value": "0x145247060",
+          "string": "centroid"
+        },
+        {
+          "rva": "0x5252998",
+          "value": "0xb381054f00000008",
+          "string": null
+        },
+        {
+          "rva": "0x52529a0",
+          "value": "0x140550aa0",
+          "string": null
+        }
+      ],
+      [
+        {
+          "rva": "0x56fb018",
+          "value": "0x613e969500000006",
+          "string": null
+        },
+        {
+          "rva": "0x56fb020",
+          "value": "0x144eeb060",
+          "string": "area"
+        },
+        {
+          "rva": "0x56fb028",
+          "value": "0xb7960f6400000004",
+          "string": null
+        },
+        {
+          "rva": "0x56fb030",
+          "value": "0x1456facd8",
+          "string": "PointDetail.area"
+        },
+        {
+          "rva": "0x56fb038",
+          "value": "0x5ed35f5900000010",
+          "string": null
+        },
+        {
+          "rva": "0x56fb040",
+          "value": "0x2000400030000",
+          "string": null
+        }
+      ],
+      [
+        {
+          "rva": "0x56fb6d8",
+          "value": "0xdec588c00000004",
+          "string": null
+        },
+        {
+          "rva": "0x56fb6e0",
+          "value": "0x144eeb060",
+          "string": "area"
+        },
+        {
+          "rva": "0x56fb6e8",
+          "value": "0xb7960f6400000004",
+          "string": null
+        },
+        {
+          "rva": "0x56fb6f0",
+          "value": "0x14058b1e0",
+          "string": null
+        },
+        {
+          "rva": "0x56fb6f8",
+          "value": "0x141f3f870",
+          "string": null
+        },
+        {
+          "rva": "0x56fb700",
+          "value": "0x14014f640",
+          "string": null
+        }
+      ],
+      [
+        {
+          "rva": "0x796f310",
+          "value": "0x0",
+          "string": null
+        },
+        {
+          "rva": "0x796f318",
+          "value": "0x144eeb060",
+          "string": "area"
+        },
+        {
+          "rva": "0x796f320",
+          "value": "0x141439230",
+          "string": null
+        },
+        {
+          "rva": "0x796f328",
+          "value": "0x141439290",
+          "string": null
+        },
+        {
+          "rva": "0x796f330",
+          "value": "0x144eeb060",
+          "string": "area"
+        },
+        {
+          "rva": "0x796f338",
+          "value": "0x0",
+          "string": null
+        }
+      ],
+      [
+        {
+          "rva": "0x796f328",
+          "value": "0x141439290",
+          "string": null
+        },
+        {
+          "rva": "0x796f330",
+          "value": "0x144eeb060",
+          "string": "area"
+        },
+        {
+          "rva": "0x796f338",
+          "value": "0x0",
+          "string": null
+        },
+        {
+          "rva": "0x796f340",
+          "value": "0x0",
+          "string": null
+        },
+        {
+          "rva": "0x796f348",
+          "value": "0x0",
+          "string": null
+        },
+        {
+          "rva": "0x796f350",
+          "value": "0x0",
+          "string": null
+        }
+      ]
+    ]
+  },
+  {
+    "name": "prop",
+    "string_rva": "0x54836d8",
+    "refs": [
+      [
+        {
+          "rva": "0x796ba68",
+          "value": "0x1454836c8",
+          "string": "entities in aoi"
+        },
+        {
+          "rva": "0x796ba70",
+          "value": "0x1454836d8",
+          "string": "prop"
+        },
+        {
+          "rva": "0x796ba78",
+          "value": "0x14130a140",
+          "string": null
+        },
+        {
+          "rva": "0x796ba80",
+          "value": "0x4",
+          "string": null
+        },
+        {
+          "rva": "0x796ba88",
+          "value": "0x1454836e0",
+          "string": "get prop"
+        },
+        {
+          "rva": "0x796ba90",
+          "value": "0x144eeae10",
+          "string": "dict"
+        }
+      ]
+    ]
+  }
+]

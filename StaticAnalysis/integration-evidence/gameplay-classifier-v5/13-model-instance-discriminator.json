@@ -1,0 +1,2491 @@
+{
+  "target_sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "scope": "Only previously identified MPK indices 61925, 25281, 68957, 94890, 143510; each compressed and decoded hash verified, static marshal parse to EOF, no Python payload execution.",
+  "store_attr_resolution": "CPython 3.14 STORE_ATTR uses direct co_names index; LOAD_ATTR/LOAD_METHOD/LOAD_GLOBAL use arg>>1.",
+  "class_build_windows": [
+    {
+      "module_index": 25281,
+      "decoded_sha256": "e30ac8f6d7bd03898dc171bcc6f6c36a7cf97530f358c64579844690a7f5458a",
+      "candidate_class_names": [
+        "RegisterModelClass",
+        "WeaponModel",
+        "WeaponModel",
+        "SimpleModel"
+      ],
+      "instructions": [
+        {
+          "offset": 222,
+          "op": "CALL",
+          "arg": 2
+        },
+        {
+          "offset": 230,
+          "op": "LOAD_NAME",
+          "arg": 12
+        },
+        {
+          "offset": 232,
+          "op": "LOAD_BUILD_CLASS",
+          "arg": 0
+        },
+        {
+          "offset": 234,
+          "op": "PUSH_NULL",
+          "arg": 0
+        },
+        {
+          "offset": 236,
+          "op": "LOAD_CONST",
+          "arg": 17
+        },
+        {
+          "offset": 238,
+          "op": "MAKE_FUNCTION",
+          "arg": 0
+        },
+        {
+          "offset": 240,
+          "op": "LOAD_CONST",
+          "arg": 18
+        },
+        {
+          "offset": 242,
+          "op": "LOAD_NAME",
+          "arg": 11
+        },
+        {
+          "offset": 244,
+          "op": "CALL",
+          "arg": 3
+        },
+        {
+          "offset": 252,
+          "op": "CALL",
+          "arg": 0
+        },
+        {
+          "offset": 260,
+          "op": "CALL",
+          "arg": 0
+        },
+        {
+          "offset": 268,
+          "op": "STORE_NAME",
+          "arg": 33
+        },
+        {
+          "offset": 270,
+          "op": "LOAD_CONST",
+          "arg": 1
+        },
+        {
+          "offset": 272,
+          "op": "RETURN_VALUE",
+          "arg": 0
+        }
+      ]
+    },
+    {
+      "module_index": 94890,
+      "decoded_sha256": "9dfd8aa5a6de063a3a7c93122d7ba81ccd067490a7e4044213604c39523515b0",
+      "candidate_class_names": [
+        "RegisterModelClass",
+        "PoseSenderModel",
+        "PoseSenderModel",
+        "SimpleModel"
+      ],
+      "instructions": [
+        {
+          "offset": 68,
+          "op": "POP_TOP",
+          "arg": 0
+        },
+        {
+          "offset": 70,
+          "op": "LOAD_NAME",
+          "arg": 4
+        },
+        {
+          "offset": 72,
+          "op": "LOAD_BUILD_CLASS",
+          "arg": 0
+        },
+        {
+          "offset": 74,
+          "op": "PUSH_NULL",
+          "arg": 0
+        },
+        {
+          "offset": 76,
+          "op": "LOAD_CONST",
+          "arg": 6
+        },
+        {
+          "offset": 78,
+          "op": "MAKE_FUNCTION",
+          "arg": 0
+        },
+        {
+          "offset": 80,
+          "op": "LOAD_CONST",
+          "arg": 7
+        },
+        {
+          "offset": 82,
+          "op": "LOAD_NAME",
+          "arg": 3
+        },
+        {
+          "offset": 84,
+          "op": "CALL",
+          "arg": 3
+        },
+        {
+          "offset": 92,
+          "op": "CALL",
+          "arg": 0
+        },
+        {
+          "offset": 100,
+          "op": "STORE_NAME",
+          "arg": 11
+        },
+        {
+          "offset": 102,
+          "op": "LOAD_CONST",
+          "arg": 4
+        },
+        {
+          "offset": 104,
+          "op": "RETURN_VALUE",
+          "arg": 0
+        }
+      ]
+    },
+    {
+      "module_index": 143510,
+      "decoded_sha256": "0a4a57f34d1c8e14e38c08f510f1787f46659e4b2928663cf526797eac8b0ed3",
+      "candidate_class_names": [
+        "RegisterModelClass",
+        "AvatarModel",
+        "AvatarModel",
+        "PoseSenderModel",
+        "Components",
+        "PlayerAvatarModelCue",
+        "PlayerHeroSkinCueComponent"
+      ],
+      "instructions": [
+        {
+          "offset": 1020,
+          "op": "CALL",
+          "arg": 22
+        },
+        {
+          "offset": 1028,
+          "op": "LOAD_NAME",
+          "arg": 76
+        },
+        {
+          "offset": 1030,
+          "op": "LOAD_BUILD_CLASS",
+          "arg": 0
+        },
+        {
+          "offset": 1032,
+          "op": "PUSH_NULL",
+          "arg": 0
+        },
+        {
+          "offset": 1034,
+          "op": "LOAD_CONST",
+          "arg": 64
+        },
+        {
+          "offset": 1036,
+          "op": "MAKE_FUNCTION",
+          "arg": 0
+        },
+        {
+          "offset": 1038,
+          "op": "LOAD_CONST",
+          "arg": 65
+        },
+        {
+          "offset": 1040,
+          "op": "LOAD_NAME",
+          "arg": 85
+        },
+        {
+          "offset": 1042,
+          "op": "CALL",
+          "arg": 3
+        },
+        {
+          "offset": 1050,
+          "op": "CALL",
+          "arg": 0
+        },
+        {
+          "offset": 1058,
+          "op": "CALL",
+          "arg": 0
+        },
+        {
+          "offset": 1066,
+          "op": "STORE_NAME",
+          "arg": 154
+        },
+        {
+          "offset": 1068,
+          "op": "LOAD_NAME",
+          "arg": 26
+        },
+        {
+          "offset": 1070,
+          "op": "PUSH_NULL",
+          "arg": 0
+        },
+        {
+          "offset": 1072,
+          "op": "LOAD_NAME",
+          "arg": 68
+        },
+        {
+          "offset": 1074,
+          "op": "LOAD_NAME",
+          "arg": 72
+        }
+      ]
+    },
+    {
+      "module_index": 143510,
+      "decoded_sha256": "0a4a57f34d1c8e14e38c08f510f1787f46659e4b2928663cf526797eac8b0ed3",
+      "candidate_class_names": [
+        "RegisterModelClass",
+        "PlayerAvatarModel",
+        "PlayerAvatarModel",
+        "AvatarModel"
+      ],
+      "instructions": [
+        {
+          "offset": 1170,
+          "op": "CALL",
+          "arg": 16
+        },
+        {
+          "offset": 1178,
+          "op": "LOAD_NAME",
+          "arg": 76
+        },
+        {
+          "offset": 1180,
+          "op": "LOAD_BUILD_CLASS",
+          "arg": 0
+        },
+        {
+          "offset": 1182,
+          "op": "PUSH_NULL",
+          "arg": 0
+        },
+        {
+          "offset": 1184,
+          "op": "LOAD_CONST",
+          "arg": 66
+        },
+        {
+          "offset": 1186,
+          "op": "MAKE_FUNCTION",
+          "arg": 0
+        },
+        {
+          "offset": 1188,
+          "op": "LOAD_CONST",
+          "arg": 67
+        },
+        {
+          "offset": 1190,
+          "op": "LOAD_NAME",
+          "arg": 154
+        },
+        {
+          "offset": 1192,
+          "op": "CALL",
+          "arg": 3
+        },
+        {
+          "offset": 1200,
+          "op": "CALL",
+          "arg": 0
+        },
+        {
+          "offset": 1208,
+          "op": "CALL",
+          "arg": 0
+        },
+        {
+          "offset": 1216,
+          "op": "STORE_NAME",
+          "arg": 158
+        },
+        {
+          "offset": 1218,
+          "op": "LOAD_CONST",
+          "arg": 1
+        },
+        {
+          "offset": 1220,
+          "op": "RETURN_VALUE",
+          "arg": 0
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "index": 61925,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_model.py"
+      ],
+      "decoded_sha256": "04bde99e6e2715d32cacce94496d4aba3f89919aae650d513a5468da1e790f4c",
+      "selected_code": [
+        {
+          "qualname": "CombatAvatarMember.InitAvatarModel",
+          "localsplusnames": [
+            "self"
+          ],
+          "names": [
+            "model",
+            "AvatarModel",
+            "area",
+            "position",
+            "yaw",
+            "is_replay_avatar",
+            "ReplayHandModel",
+            "hand_model"
+          ],
+          "instructions": [
+            {
+              "offset": 0,
+              "op": "RESUME",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 2,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 4,
+              "op": "LOAD_ATTR",
+              "arg": 0,
+              "resolved": "model"
+            },
+            {
+              "offset": 24,
+              "op": "TO_BOOL",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 32,
+              "op": "POP_JUMP_IF_TRUE",
+              "arg": 58,
+              "resolved": null
+            },
+            {
+              "offset": 36,
+              "op": "NOT_TAKEN",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 38,
+              "op": "LOAD_GLOBAL",
+              "arg": 3,
+              "resolved": "AvatarModel"
+            },
+            {
+              "offset": 48,
+              "op": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": [
+                "self",
+                "self"
+              ]
+            },
+            {
+              "offset": 50,
+              "op": "LOAD_ATTR",
+              "arg": 4,
+              "resolved": "area"
+            },
+            {
+              "offset": 70,
+              "op": "LOAD_ATTR",
+              "arg": 6,
+              "resolved": "position"
+            },
+            {
+              "offset": 90,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 92,
+              "op": "LOAD_ATTR",
+              "arg": 4,
+              "resolved": "area"
+            },
+            {
+              "offset": 112,
+              "op": "LOAD_ATTR",
+              "arg": 8,
+              "resolved": "yaw"
+            },
+            {
+              "offset": 132,
+              "op": "CALL",
+              "arg": 3,
+              "resolved": null
+            },
+            {
+              "offset": 140,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 142,
+              "op": "STORE_ATTR",
+              "arg": 0,
+              "resolved": "model"
+            },
+            {
+              "offset": 152,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 154,
+              "op": "LOAD_ATTR",
+              "arg": 10,
+              "resolved": "is_replay_avatar"
+            },
+            {
+              "offset": 174,
+              "op": "TO_BOOL",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 182,
+              "op": "POP_JUMP_IF_FALSE",
+              "arg": 19,
+              "resolved": null
+            },
+            {
+              "offset": 186,
+              "op": "NOT_TAKEN",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 188,
+              "op": "LOAD_GLOBAL",
+              "arg": 13,
+              "resolved": "ReplayHandModel"
+            },
+            {
+              "offset": 198,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 200,
+              "op": "CALL",
+              "arg": 1,
+              "resolved": null
+            },
+            {
+              "offset": 208,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 210,
+              "op": "STORE_ATTR",
+              "arg": 7,
+              "resolved": "hand_model"
+            },
+            {
+              "offset": 220,
+              "op": "LOAD_CONST",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 222,
+              "op": "RETURN_VALUE",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 224,
+              "op": "LOAD_CONST",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 226,
+              "op": "RETURN_VALUE",
+              "arg": 0,
+              "resolved": null
+            }
+          ]
+        }
+      ],
+      "parsed_to_eof": true
+    },
+    {
+      "index": 25281,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/models/weapon_model.py"
+      ],
+      "decoded_sha256": "e30ac8f6d7bd03898dc171bcc6f6c36a7cf97530f358c64579844690a7f5458a",
+      "selected_code": [
+        {
+          "qualname": "WeaponModel.__init__",
+          "argcount": 10,
+          "localsplusnames": [
+            "self",
+            "owner",
+            "position",
+            "yaw",
+            "weapon_case",
+            "weapon_id",
+            "is_fps",
+            "skin_id",
+            "guise_id",
+            "use_highlevel",
+            "__class__"
+          ],
+          "names": [
+            "super",
+            "WeaponModel",
+            "__init__",
+            "loaded_callback",
+            "owner",
+            "IsCombatAvatar",
+            "IsATMGuardAI",
+            "is_in_combat",
+            "hand_model",
+            "model",
+            "avatar_model",
+            "weapon_case",
+            "weapon_id",
+            "is_fps_model",
+            "skin_id",
+            "guise_id",
+            "genv",
+            "highlevel_tps_weapon",
+            "is_low_quality",
+            "use_highlevel",
+            "consts",
+            "WeaponPartType_Recevier",
+            "part_type",
+            "InitTachPoint",
+            "ads_flash_effect_id",
+            "extra",
+            "get",
+            "gpl",
+            "performance_level",
+            "disablemip",
+            "effect_color",
+            "cconst",
+            "CHARACTER_ATTACHMENT_FOCUS_DISTANCE",
+            "load_resource_extend",
+            "gui",
+            "is_pc"
+          ],
+          "instructions": [
+            {
+              "offset": 0,
+              "op": "COPY_FREE_VARS",
+              "arg": 1,
+              "resolved": null
+            },
+            {
+              "offset": 2,
+              "op": "RESUME",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 4,
+              "op": "LOAD_GLOBAL",
+              "arg": 0,
+              "resolved": "super"
+            },
+            {
+              "offset": 14,
+              "op": "LOAD_GLOBAL",
+              "arg": 2,
+              "resolved": "WeaponModel"
+            },
+            {
+              "offset": 24,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 26,
+              "op": "LOAD_SUPER_ATTR",
+              "arg": 11,
+              "resolved": "__init__"
+            },
+            {
+              "offset": 30,
+              "op": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 18,
+              "resolved": [
+                "owner",
+                "position"
+              ]
+            },
+            {
+              "offset": 32,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 3,
+              "resolved": null
+            },
+            {
+              "offset": 34,
+              "op": "CALL",
+              "arg": 3,
+              "resolved": null
+            },
+            {
+              "offset": 42,
+              "op": "POP_TOP",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 44,
+              "op": "LOAD_CONST",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 46,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 48,
+              "op": "STORE_ATTR",
+              "arg": 3,
+              "resolved": "loaded_callback"
+            },
+            {
+              "offset": 58,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 60,
+              "op": "LOAD_ATTR",
+              "arg": 8,
+              "resolved": "owner"
+            },
+            {
+              "offset": 80,
+              "op": "LOAD_ATTR",
+              "arg": 10,
+              "resolved": "IsCombatAvatar"
+            },
+            {
+              "offset": 100,
+              "op": "COPY",
+              "arg": 1,
+              "resolved": null
+            },
+            {
+              "offset": 102,
+              "op": "TO_BOOL",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 110,
+              "op": "POP_JUMP_IF_TRUE",
+              "arg": 23,
+              "resolved": null
+            },
+            {
+              "offset": 114,
+              "op": "NOT_TAKEN",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 116,
+              "op": "POP_TOP",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 118,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 120,
+              "op": "LOAD_ATTR",
+              "arg": 8,
+              "resolved": "owner"
+            },
+            {
+              "offset": 140,
+              "op": "LOAD_ATTR",
+              "arg": 12,
+              "resolved": "IsATMGuardAI"
+            },
+            {
+              "offset": 160,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 162,
+              "op": "STORE_ATTR",
+              "arg": 7,
+              "resolved": "is_in_combat"
+            },
+            {
+              "offset": 172,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 6,
+              "resolved": null
+            },
+            {
+              "offset": 174,
+              "op": "TO_BOOL",
+              "arg": 0,
+              "resolved": null
+            }
+          ]
+        },
+        {
+          "qualname": "WeaponModel.Load",
+          "localsplusnames": [
+            "self",
+            "data",
+            "done",
+            "create_kwargs",
+            "model",
+            "list_data",
+            "__class__"
+          ],
+          "names": [
+            "loaded_callback",
+            "weapon_case",
+            "load_for_warmingup",
+            "copy",
+            "gpl",
+            "performance_level",
+            "endswith",
+            "tuple",
+            "super",
+            "WeaponModel",
+            "Load",
+            "OnWeaponModelLoad",
+            "AddWarmingUpHiddenReason",
+            "part_type",
+            "MHelper",
+            "StoryboardAutoFrameLimit",
+            "model",
+            "is_in_combat",
+            "is_fps_model",
+            "AttachWeaponToHandBack",
+            "AttachWeaponToAvatarBack",
+            "StopStoryboardWhenSkeletonOnly",
+            "DisableNormalMap",
+            "SetAsCSMRole",
+            "owner",
+            "is_fps_avatar",
+            "SetWeaponModelShadingParam",
+            "base_graph_id",
+            "SetVariableI",
+            "extra",
+            "get",
+            "cconst",
+            "HallWeaponType",
+            "Default",
+            "is_tps_weapon"
+          ],
+          "instructions": [
+            {
+              "offset": 306,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 5,
+              "resolved": null
+            },
+            {
+              "offset": 308,
+              "op": "CALL",
+              "arg": 1,
+              "resolved": null
+            },
+            {
+              "offset": 316,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 1,
+              "resolved": null
+            },
+            {
+              "offset": 318,
+              "op": "LOAD_CONST",
+              "arg": 1,
+              "resolved": "models"
+            },
+            {
+              "offset": 320,
+              "op": "STORE_SUBSCR",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 324,
+              "op": "LOAD_GLOBAL",
+              "arg": 16,
+              "resolved": "super"
+            },
+            {
+              "offset": 334,
+              "op": "LOAD_GLOBAL",
+              "arg": 18,
+              "resolved": "WeaponModel"
+            },
+            {
+              "offset": 344,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 346,
+              "op": "LOAD_SUPER_ATTR",
+              "arg": 42,
+              "resolved": "Load"
+            },
+            {
+              "offset": 350,
+              "op": "PUSH_NULL",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 352,
+              "op": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 16,
+              "resolved": [
+                "data",
+                "self"
+              ]
+            },
+            {
+              "offset": 354,
+              "op": "LOAD_ATTR",
+              "arg": 22,
+              "resolved": "OnWeaponModelLoad"
+            },
+            {
+              "offset": 374,
+              "op": "BUILD_TUPLE",
+              "arg": 2,
+              "resolved": null
+            },
+            {
+              "offset": 376,
+              "op": "BUILD_MAP",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 378,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 3,
+              "resolved": null
+            },
+            {
+              "offset": 380,
+              "op": "DICT_MERGE",
+              "arg": 1,
+              "resolved": null
+            },
+            {
+              "offset": 382,
+              "op": "CALL_FUNCTION_EX",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 384,
+              "op": "POP_TOP",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 386,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 388,
+              "op": "LOAD_ATTR",
+              "arg": 2,
+              "resolved": "weapon_case"
+            },
+            {
+              "offset": 408,
+              "op": "LOAD_ATTR",
+              "arg": 25,
+              "resolved": "AddWarmingUpHiddenReason"
+            },
+            {
+              "offset": 428,
+              "op": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": [
+                "self",
+                "self"
+              ]
+            },
+            {
+              "offset": 430,
+              "op": "LOAD_ATTR",
+              "arg": 26,
+              "resolved": "part_type"
+            },
+            {
+              "offset": 450,
+              "op": "CALL",
+              "arg": 2,
+              "resolved": null
+            },
+            {
+              "offset": 458,
+              "op": "POP_TOP",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 460,
+              "op": "LOAD_GLOBAL",
+              "arg": 28,
+              "resolved": "MHelper"
+            },
+            {
+              "offset": 470,
+              "op": "LOAD_ATTR",
+              "arg": 30,
+              "resolved": "StoryboardAutoFrameLimit"
+            }
+          ]
+        },
+        {
+          "qualname": "WeaponModel.AttachWeaponToAvatarHand",
+          "localsplusnames": [
+            "self"
+          ],
+          "names": [
+            "model",
+            "avatar_model",
+            "Skeleton",
+            "AddTargetSlot",
+            "AddChild",
+            "SetVariableI",
+            "tachpoint_default_hard_tps",
+            "tachpoint_default_base_tps",
+            "AnimArmWeapon",
+            "Attach",
+            "TPS_TACH_POINT_BASE",
+            "Tach",
+            "Basepoint",
+            "TPS_TACH_POINT_HARD",
+            "Hardpoint",
+            "RemoveHiddenReason",
+            "cconst",
+            "HIDDEN_REASON_BACK",
+            "owner",
+            "IsPlayerCombatAvatar",
+            "EnableHandIKToWeapon"
+          ],
+          "instructions": [
+            {
+              "offset": 0,
+              "op": "RESUME",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 2,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 4,
+              "op": "LOAD_ATTR",
+              "arg": 0,
+              "resolved": "model"
+            },
+            {
+              "offset": 24,
+              "op": "TO_BOOL",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 32,
+              "op": "POP_JUMP_IF_TRUE",
+              "arg": 3,
+              "resolved": null
+            },
+            {
+              "offset": 36,
+              "op": "NOT_TAKEN",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 38,
+              "op": "LOAD_CONST",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 40,
+              "op": "RETURN_VALUE",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 42,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 44,
+              "op": "LOAD_ATTR",
+              "arg": 2,
+              "resolved": "avatar_model"
+            },
+            {
+              "offset": 64,
+              "op": "LOAD_ATTR",
+              "arg": 0,
+              "resolved": "model"
+            },
+            {
+              "offset": 84,
+              "op": "LOAD_ATTR",
+              "arg": 4,
+              "resolved": "Skeleton"
+            },
+            {
+              "offset": 104,
+              "op": "LOAD_ATTR",
+              "arg": 7,
+              "resolved": "AddTargetSlot"
+            },
+            {
+              "offset": 124,
+              "op": "LOAD_CONST",
+              "arg": 1,
+              "resolved": "weapon"
+            },
+            {
+              "offset": 126,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 128,
+              "op": "LOAD_ATTR",
+              "arg": 0,
+              "resolved": "model"
+            },
+            {
+              "offset": 148,
+              "op": "LOAD_ATTR",
+              "arg": 4,
+              "resolved": "Skeleton"
+            },
+            {
+              "offset": 168,
+              "op": "CALL",
+              "arg": 2,
+              "resolved": null
+            },
+            {
+              "offset": 176,
+              "op": "POP_TOP",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 178,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 180,
+              "op": "LOAD_ATTR",
+              "arg": 2,
+              "resolved": "avatar_model"
+            },
+            {
+              "offset": 200,
+              "op": "LOAD_ATTR",
+              "arg": 0,
+              "resolved": "model"
+            },
+            {
+              "offset": 220,
+              "op": "LOAD_ATTR",
+              "arg": 4,
+              "resolved": "Skeleton"
+            }
+          ]
+        },
+        {
+          "qualname": "WeaponModel.AttachWeaponToAvatarLeftHand",
+          "localsplusnames": [
+            "self"
+          ],
+          "names": [
+            "model",
+            "avatar_model",
+            "Skeleton",
+            "AddTargetSlot",
+            "AddChild",
+            "SetVariableI",
+            "tachpoint_default_sub_hard_tps",
+            "tachpoint_default_hard_tps",
+            "tachpoint_default_sub_base_tps",
+            "tachpoint_default_base_tps",
+            "AnimArmWeapon",
+            "Attach",
+            "TPS_TACH_POINT_BASE",
+            "Tach",
+            "Basepoint",
+            "Hardpoint",
+            "RemoveHiddenReason",
+            "cconst",
+            "HIDDEN_REASON_BACK",
+            "owner",
+            "IsPlayerCombatAvatar",
+            "EnableHandIKToWeapon"
+          ],
+          "instructions": [
+            {
+              "offset": 0,
+              "op": "RESUME",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 2,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 4,
+              "op": "LOAD_ATTR",
+              "arg": 0,
+              "resolved": "model"
+            },
+            {
+              "offset": 24,
+              "op": "TO_BOOL",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 32,
+              "op": "POP_JUMP_IF_TRUE",
+              "arg": 3,
+              "resolved": null
+            },
+            {
+              "offset": 36,
+              "op": "NOT_TAKEN",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 38,
+              "op": "LOAD_CONST",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 40,
+              "op": "RETURN_VALUE",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 42,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 44,
+              "op": "LOAD_ATTR",
+              "arg": 2,
+              "resolved": "avatar_model"
+            },
+            {
+              "offset": 64,
+              "op": "LOAD_ATTR",
+              "arg": 0,
+              "resolved": "model"
+            },
+            {
+              "offset": 84,
+              "op": "LOAD_ATTR",
+              "arg": 4,
+              "resolved": "Skeleton"
+            },
+            {
+              "offset": 104,
+              "op": "LOAD_ATTR",
+              "arg": 7,
+              "resolved": "AddTargetSlot"
+            },
+            {
+              "offset": 124,
+              "op": "LOAD_CONST",
+              "arg": 1,
+              "resolved": "weapon_left"
+            },
+            {
+              "offset": 126,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 128,
+              "op": "LOAD_ATTR",
+              "arg": 0,
+              "resolved": "model"
+            },
+            {
+              "offset": 148,
+              "op": "LOAD_ATTR",
+              "arg": 4,
+              "resolved": "Skeleton"
+            },
+            {
+              "offset": 168,
+              "op": "CALL",
+              "arg": 2,
+              "resolved": null
+            },
+            {
+              "offset": 176,
+              "op": "POP_TOP",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 178,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 180,
+              "op": "LOAD_ATTR",
+              "arg": 2,
+              "resolved": "avatar_model"
+            },
+            {
+              "offset": 200,
+              "op": "LOAD_ATTR",
+              "arg": 0,
+              "resolved": "model"
+            },
+            {
+              "offset": 220,
+              "op": "LOAD_ATTR",
+              "arg": 4,
+              "resolved": "Skeleton"
+            },
+            {
+              "offset": 240,
+              "op": "LOAD_ATTR",
+              "arg": 9,
+              "resolved": "AddChild"
+            },
+            {
+              "offset": 260,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 262,
+              "op": "LOAD_ATTR",
+              "arg": 0,
+              "resolved": "model"
+            },
+            {
+              "offset": 282,
+              "op": "LOAD_ATTR",
+              "arg": 4,
+              "resolved": "Skeleton"
+            },
+            {
+              "offset": 302,
+              "op": "CALL",
+              "arg": 1,
+              "resolved": null
+            },
+            {
+              "offset": 310,
+              "op": "POP_TOP",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 312,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 314,
+              "op": "LOAD_ATTR",
+              "arg": 2,
+              "resolved": "avatar_model"
+            },
+            {
+              "offset": 334,
+              "op": "LOAD_ATTR",
+              "arg": 11,
+              "resolved": "SetVariableI"
+            },
+            {
+              "offset": 354,
+              "op": "LOAD_CONST",
+              "arg": 2,
+              "resolved": "ACTOR_TPS_CatchTargetSelfNode"
+            },
+            {
+              "offset": 356,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 358,
+              "op": "LOAD_ATTR",
+              "arg": 12,
+              "resolved": "tachpoint_default_sub_hard_tps"
+            },
+            {
+              "offset": 378,
+              "op": "COPY",
+              "arg": 1,
+              "resolved": null
+            },
+            {
+              "offset": 380,
+              "op": "TO_BOOL",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 388,
+              "op": "POP_JUMP_IF_TRUE",
+              "arg": 13,
+              "resolved": null
+            },
+            {
+              "offset": 392,
+              "op": "NOT_TAKEN",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 394,
+              "op": "POP_TOP",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 396,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 398,
+              "op": "LOAD_ATTR",
+              "arg": 14,
+              "resolved": "tachpoint_default_hard_tps"
+            },
+            {
+              "offset": 418,
+              "op": "LOAD_SMALL_INT",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 420,
+              "op": "CALL",
+              "arg": 3,
+              "resolved": null
+            },
+            {
+              "offset": 428,
+              "op": "POP_TOP",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 430,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            }
+          ]
+        },
+        {
+          "qualname": "WeaponModel.AttachWeaponToAvatarBack",
+          "localsplusnames": [
+            "self",
+            "is_sub_weapon",
+            "basepoint",
+            "hardpoint",
+            "hide_weapon"
+          ],
+          "names": [
+            "model",
+            "avatar_model",
+            "Skeleton",
+            "DelTarget",
+            "DelChild",
+            "Attach",
+            "tachpoint_avatar_back_sub_base",
+            "tachpoint_avatar_back_base",
+            "tachpoint_avatar_back_sub_hard",
+            "tachpoint_avatar_back_hard",
+            "Tach",
+            "Basepoint",
+            "Hardpoint",
+            "owner",
+            "backpack",
+            "GetLegendaryWeapon",
+            "weapon_case",
+            "equip_proto",
+            "get",
+            "consts",
+            "EquipmentType",
+            "SP_GUN",
+            "AddHiddenReason",
+            "cconst",
+            "HIDDEN_REASON_BACK",
+            "IsPlayerCombatAvatar",
+            "EnableHandIKToWeapon",
+            "OnVisibleChanged",
+            "IsVisible"
+          ],
+          "instructions": [
+            {
+              "offset": 848,
+              "op": "STORE_ATTR",
+              "arg": 12,
+              "resolved": "Hardpoint"
+            },
+            {
+              "offset": 858,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 860,
+              "op": "LOAD_ATTR",
+              "arg": 26,
+              "resolved": "owner"
+            },
+            {
+              "offset": 880,
+              "op": "TO_BOOL",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 888,
+              "op": "POP_JUMP_IF_FALSE",
+              "arg": 112,
+              "resolved": null
+            },
+            {
+              "offset": 892,
+              "op": "NOT_TAKEN",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 894,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 896,
+              "op": "LOAD_ATTR",
+              "arg": 26,
+              "resolved": "owner"
+            },
+            {
+              "offset": 916,
+              "op": "LOAD_ATTR",
+              "arg": 28,
+              "resolved": "backpack"
+            },
+            {
+              "offset": 936,
+              "op": "LOAD_ATTR",
+              "arg": 31,
+              "resolved": "GetLegendaryWeapon"
+            },
+            {
+              "offset": 956,
+              "op": "CALL",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 964,
+              "op": "TO_BOOL",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 972,
+              "op": "POP_JUMP_IF_FALSE",
+              "arg": 70,
+              "resolved": null
+            },
+            {
+              "offset": 976,
+              "op": "NOT_TAKEN",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 978,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 980,
+              "op": "LOAD_ATTR",
+              "arg": 32,
+              "resolved": "weapon_case"
+            },
+            {
+              "offset": 1216,
+              "op": "LOAD_ATTR",
+              "arg": 26,
+              "resolved": "owner"
+            },
+            {
+              "offset": 1236,
+              "op": "LOAD_ATTR",
+              "arg": 50,
+              "resolved": "IsPlayerCombatAvatar"
+            },
+            {
+              "offset": 1256,
+              "op": "TO_BOOL",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1264,
+              "op": "POP_JUMP_IF_FALSE",
+              "arg": 28,
+              "resolved": null
+            },
+            {
+              "offset": 1268,
+              "op": "NOT_TAKEN",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1270,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1272,
+              "op": "LOAD_ATTR",
+              "arg": 2,
+              "resolved": "avatar_model"
+            },
+            {
+              "offset": 1292,
+              "op": "LOAD_ATTR",
+              "arg": 53,
+              "resolved": "EnableHandIKToWeapon"
+            },
+            {
+              "offset": 1312,
+              "op": "LOAD_CONST",
+              "arg": 2,
+              "resolved": null
+            },
+            {
+              "offset": 1314,
+              "op": "CALL",
+              "arg": 1,
+              "resolved": null
+            },
+            {
+              "offset": 1322,
+              "op": "POP_TOP",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1324,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            }
+          ]
+        }
+      ],
+      "parsed_to_eof": true
+    },
+    {
+      "index": 68957,
+      "filename_candidates": [
+        "gclient/framework/models/simple_model.py"
+      ],
+      "decoded_sha256": "6e6adda8eba6dfe1153301a517282472be152fe16ed16cdfc9c61bd79499f92c",
+      "selected_code": [
+        {
+          "qualname": "SimpleModel.Load",
+          "localsplusnames": [
+            "self",
+            "data",
+            "done",
+            "create_kwargs",
+            "dlc_id",
+            "sys",
+            "models_low",
+            "models",
+            "use_ready_to_appear",
+            "graph",
+            "transform",
+            "skeleton",
+            "__class__"
+          ],
+          "names": [
+            "super",
+            "SimpleModel",
+            "Load",
+            "model",
+            "DestroyCppModel",
+            "AddLoadTask",
+            "_GetAvailableModelInfo",
+            "model_id",
+            "get",
+            "cconst",
+            "EnableDLCCheck",
+            "genv",
+            "dlc_manager",
+            "CheckDlcExists",
+            "sys",
+            "excepthook",
+            "exc_info",
+            "is_low_quality",
+            "resource_names",
+            "pop",
+            "load_for_warmingup",
+            "force_no_graph",
+            "MHelper",
+            "CreateModel",
+            "GetMotionSkeletonFile",
+            "disablemip",
+            "try_use_cache",
+            "is_animated",
+            "load_resource_extend",
+            "is_in_hall",
+            "gpl",
+            "performance_level",
+            "MarkPrincipleRole",
+            "_modelIsValid",
+            "SetExpireCallback",
+            "ModelExpireCallback",
+            "hidden_reason",
+            "_SetVisible",
+            "skeleton_effect_hidden_reasons",
+            "SetSkeletonEffectVisible",
+            "owner",
+            "instance",
+            "base_graph_id",
+            "born_position",
+            "Transform",
+            "MType",
+            "Vector3",
+            "translation",
+            "born_yaw",
+            "yaw",
+            "Skeleton",
+            "_skeletonIsValid",
+            "__class__",
+            "__name__",
+            "BindEventSignalNotify",
+            "PlayUnitModelEffects"
+          ],
+          "instructions": [
+            {
+              "offset": 1118,
+              "op": "BUILD_MAP",
+              "arg": 7,
+              "resolved": null
+            },
+            {
+              "offset": 1120,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 3,
+              "resolved": null
+            },
+            {
+              "offset": 1122,
+              "op": "DICT_MERGE",
+              "arg": 1,
+              "resolved": null
+            },
+            {
+              "offset": 1124,
+              "op": "CALL_FUNCTION_EX",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1126,
+              "op": "LOAD_DEREF",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1128,
+              "op": "STORE_ATTR",
+              "arg": 3,
+              "resolved": "model"
+            },
+            {
+              "offset": 1138,
+              "op": "LOAD_GLOBAL",
+              "arg": 22,
+              "resolved": "genv"
+            },
+            {
+              "offset": 1148,
+              "op": "LOAD_ATTR",
+              "arg": 58,
+              "resolved": "is_in_hall"
+            },
+            {
+              "offset": 1168,
+              "op": "TO_BOOL",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1176,
+              "op": "POP_JUMP_IF_FALSE",
+              "arg": 38,
+              "resolved": null
+            },
+            {
+              "offset": 1180,
+              "op": "NOT_TAKEN",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1182,
+              "op": "LOAD_GLOBAL",
+              "arg": 60,
+              "resolved": "gpl"
+            },
+            {
+              "offset": 1192,
+              "op": "LOAD_ATTR",
+              "arg": 62,
+              "resolved": "performance_level"
+            },
+            {
+              "offset": 1212,
+              "op": "LOAD_SMALL_INT",
+              "arg": 1,
+              "resolved": null
+            },
+            {
+              "offset": 1214,
+              "op": "COMPARE_OP",
+              "arg": 148,
+              "resolved": null
+            },
+            {
+              "offset": 1218,
+              "op": "POP_JUMP_IF_FALSE",
+              "arg": 17,
+              "resolved": null
+            },
+            {
+              "offset": 1222,
+              "op": "NOT_TAKEN",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1224,
+              "op": "LOAD_DEREF",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1226,
+              "op": "LOAD_ATTR",
+              "arg": 65,
+              "resolved": "MarkPrincipleRole"
+            },
+            {
+              "offset": 1246,
+              "op": "CALL",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1254,
+              "op": "POP_TOP",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1256,
+              "op": "LOAD_CONST",
+              "arg": 15,
+              "resolved": null
+            },
+            {
+              "offset": 1258,
+              "op": "LOAD_DEREF",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1260,
+              "op": "STORE_ATTR",
+              "arg": 33,
+              "resolved": "_modelIsValid"
+            },
+            {
+              "offset": 1270,
+              "op": "LOAD_DEREF",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1272,
+              "op": "LOAD_ATTR",
+              "arg": 6,
+              "resolved": "model"
+            },
+            {
+              "offset": 1292,
+              "op": "LOAD_ATTR",
+              "arg": 69,
+              "resolved": "SetExpireCallback"
+            },
+            {
+              "offset": 1312,
+              "op": "LOAD_DEREF",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1314,
+              "op": "LOAD_ATTR",
+              "arg": 70,
+              "resolved": "ModelExpireCallback"
+            },
+            {
+              "offset": 1334,
+              "op": "CALL",
+              "arg": 1,
+              "resolved": null
+            },
+            {
+              "offset": 1342,
+              "op": "POP_TOP",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1344,
+              "op": "LOAD_DEREF",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1346,
+              "op": "LOAD_ATTR",
+              "arg": 72,
+              "resolved": "hidden_reason"
+            },
+            {
+              "offset": 1366,
+              "op": "TO_BOOL",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1374,
+              "op": "POP_JUMP_IF_FALSE",
+              "arg": 18,
+              "resolved": null
+            },
+            {
+              "offset": 1378,
+              "op": "NOT_TAKEN",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1380,
+              "op": "LOAD_DEREF",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1382,
+              "op": "LOAD_ATTR",
+              "arg": 75,
+              "resolved": "_SetVisible"
+            },
+            {
+              "offset": 1402,
+              "op": "LOAD_CONST",
+              "arg": 6,
+              "resolved": null
+            },
+            {
+              "offset": 1404,
+              "op": "CALL",
+              "arg": 1,
+              "resolved": null
+            },
+            {
+              "offset": 1412,
+              "op": "POP_TOP",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1414,
+              "op": "LOAD_DEREF",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1416,
+              "op": "LOAD_ATTR",
+              "arg": 76,
+              "resolved": "skeleton_effect_hidden_reasons"
+            },
+            {
+              "offset": 1436,
+              "op": "TO_BOOL",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1444,
+              "op": "POP_JUMP_IF_FALSE",
+              "arg": 18,
+              "resolved": null
+            },
+            {
+              "offset": 1448,
+              "op": "NOT_TAKEN",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1450,
+              "op": "LOAD_DEREF",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1452,
+              "op": "LOAD_ATTR",
+              "arg": 79,
+              "resolved": "SetSkeletonEffectVisible"
+            },
+            {
+              "offset": 1472,
+              "op": "LOAD_CONST",
+              "arg": 6,
+              "resolved": null
+            },
+            {
+              "offset": 1474,
+              "op": "CALL",
+              "arg": 1,
+              "resolved": null
+            },
+            {
+              "offset": 1482,
+              "op": "POP_TOP",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1484,
+              "op": "LOAD_DEREF",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1486,
+              "op": "LOAD_ATTR",
+              "arg": 80,
+              "resolved": "owner"
+            },
+            {
+              "offset": 1506,
+              "op": "LOAD_DEREF",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1508,
+              "op": "LOAD_ATTR",
+              "arg": 6,
+              "resolved": "model"
+            },
+            {
+              "offset": 1528,
+              "op": "STORE_ATTR",
+              "arg": 40,
+              "resolved": "owner"
+            },
+            {
+              "offset": 1538,
+              "op": "LOAD_DEREF",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1540,
+              "op": "LOAD_DEREF",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1542,
+              "op": "LOAD_ATTR",
+              "arg": 6,
+              "resolved": "model"
+            },
+            {
+              "offset": 1562,
+              "op": "STORE_ATTR",
+              "arg": 41,
+              "resolved": "instance"
+            }
+          ]
+        }
+      ],
+      "parsed_to_eof": true
+    },
+    {
+      "index": 94890,
+      "filename_candidates": [
+        "gclient/framework/models/posesender_model.py"
+      ],
+      "decoded_sha256": "9dfd8aa5a6de063a3a7c93122d7ba81ccd067490a7e4044213604c39523515b0",
+      "selected_code": [],
+      "parsed_to_eof": true
+    },
+    {
+      "index": 143510,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/models/avatar_model.py"
+      ],
+      "decoded_sha256": "0a4a57f34d1c8e14e38c08f510f1787f46659e4b2928663cf526797eac8b0ed3",
+      "selected_code": [
+        {
+          "qualname": "AvatarModel.__init__",
+          "argcount": 4,
+          "localsplusnames": [
+            "self",
+            "owner",
+            "position",
+            "yaw",
+            "__class__"
+          ],
+          "names": [
+            "super",
+            "AvatarModel",
+            "__init__",
+            "is_graph_moving",
+            "_slide_trace_cue_active",
+            "_slide_trace_active",
+            "_slide_trace_position",
+            "charctrl",
+            "charctrl_reason",
+            "normal_speed",
+            "cconst",
+            "UNIT_STATE_IDLE",
+            "motion_state",
+            "upper_motion_state",
+            "locomotion_graph_id",
+            "upper_graph_id",
+            "hit_graph_id",
+            "die_graph_id",
+            "weapon_dict",
+            "cur_client_weapon_guid",
+            "cur_client_lefthand_weapon_guid",
+            "old_cur_client_weapon_guid",
+            "lower_model_ids",
+            "charctrl_gravity_disable_reason",
+            "charctrl_resize_height_reason",
+            "vehicle_graph_id",
+            "need_graph_yaw_control_ids",
+            "enabled_auto_frame_limit",
+            "enabled_invisible_frame_limit",
+            "kick_up_graph_id",
+            "ModelHipDirection",
+            "F",
+            "hip_direction",
+            "hidden_timer",
+            "execute_graph_id",
+            "graph_yaw",
+            "pull_graph_id",
+            "samurai_hit_graph_id",
+            "weapon_list",
+            "hand_left_ik_tps",
+            "graph_list",
+            "graph_sync_slave_unable_reason",
+            "all_effect_model_dict",
+            "has_play_dead_effect",
+            "kill_mat_dissolve_timer",
+            "kill_mat_dissolve_start_time",
+            "kill_mat_dissolve_play_time",
+            "hide_model_time",
+            "meow_dance_graph_id",
+            "kill_other_models",
+            "_execute_skin_switch_serial",
+            "_execute_skin_switch_state",
+            "ClearMoveDirection"
+          ],
+          "instructions": [
+            {
+              "offset": 0,
+              "op": "COPY_FREE_VARS",
+              "arg": 1,
+              "resolved": null
+            },
+            {
+              "offset": 2,
+              "op": "RESUME",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 4,
+              "op": "LOAD_GLOBAL",
+              "arg": 0,
+              "resolved": "super"
+            },
+            {
+              "offset": 14,
+              "op": "LOAD_GLOBAL",
+              "arg": 2,
+              "resolved": "AvatarModel"
+            },
+            {
+              "offset": 24,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 26,
+              "op": "LOAD_SUPER_ATTR",
+              "arg": 11,
+              "resolved": "__init__"
+            },
+            {
+              "offset": 30,
+              "op": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 18,
+              "resolved": [
+                "owner",
+                "position"
+              ]
+            },
+            {
+              "offset": 32,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 3,
+              "resolved": null
+            },
+            {
+              "offset": 34,
+              "op": "CALL",
+              "arg": 3,
+              "resolved": null
+            },
+            {
+              "offset": 42,
+              "op": "POP_TOP",
+              "arg": 0,
+              "resolved": null
+            }
+          ]
+        },
+        {
+          "qualname": "AvatarModel.Load",
+          "localsplusnames": [
+            "self",
+            "data",
+            "done",
+            "create_kwargs",
+            "model",
+            "skeleton",
+            "__class__"
+          ],
+          "names": [
+            "super",
+            "SimpleModel",
+            "Load",
+            "model",
+            "DestroyCppModel",
+            "lower_model_ids",
+            "AddLoadTask",
+            "_GetAvailableModelInfo",
+            "model_id",
+            "AvatarModelCache",
+            "instance",
+            "Enqueue",
+            "_modelIsValid",
+            "SetExpireCallback",
+            "ModelExpireCallback",
+            "base_graph_id",
+            "owner",
+            "Skeleton",
+            "_skeletonIsValid",
+            "HideTPose",
+            "SkeletonExpireCallback",
+            "__class__",
+            "MObject",
+            "ActorComponent",
+            "BindEventSignalNotify",
+            "SetEnableBottomGraphSync",
+            "SetGraphSyncActorVariables",
+            "ACTOR_VARIABLES_NEED_SYNC",
+            "IsCombatAvatar",
+            "IsATMGuardAI",
+            "moving_platform_guid",
+            "area",
+            "position",
+            "yaw",
+            "IsPlayerCombatAvatar",
+            "is_replay_avatar",
+            "genv",
+            "messenger",
+            "Broadcast",
+            "events",
+            "ON_PLAYER_MODEL_CREATED",
+            "SetShaderGraphParameter",
+            "EnableDockingDetector",
+            "gpl",
+            "performance_level",
+            "DisableNormalMap"
+          ],
+          "instructions": [
+            {
+              "offset": 0,
+              "op": "COPY_FREE_VARS",
+              "arg": 1,
+              "resolved": null
+            },
+            {
+              "offset": 2,
+              "op": "MAKE_CELL",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 4,
+              "op": "RESUME",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 6,
+              "op": "LOAD_GLOBAL",
+              "arg": 0,
+              "resolved": "super"
+            },
+            {
+              "offset": 16,
+              "op": "LOAD_GLOBAL",
+              "arg": 2,
+              "resolved": "SimpleModel"
+            },
+            {
+              "offset": 26,
+              "op": "LOAD_DEREF",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 28,
+              "op": "LOAD_SUPER_ATTR",
+              "arg": 10,
+              "resolved": "Load"
+            },
+            {
+              "offset": 32,
+              "op": "PUSH_NULL",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 34,
+              "op": "LOAD_FAST_BORROW_LOAD_FAST_BORROW",
+              "arg": 18,
+              "resolved": [
+                "data",
+                "done"
+              ]
+            },
+            {
+              "offset": 36,
+              "op": "BUILD_TUPLE",
+              "arg": 2,
+              "resolved": null
+            },
+            {
+              "offset": 38,
+              "op": "BUILD_MAP",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 40,
+              "op": "LOAD_FAST_BORROW",
+              "arg": 3,
+              "resolved": null
+            },
+            {
+              "offset": 42,
+              "op": "DICT_MERGE",
+              "arg": 1,
+              "resolved": null
+            },
+            {
+              "offset": 44,
+              "op": "CALL_FUNCTION_EX",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 46,
+              "op": "POP_TOP",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 48,
+              "op": "LOAD_DEREF",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 50,
+              "op": "LOAD_ATTR",
+              "arg": 6,
+              "resolved": "model"
+            },
+            {
+              "offset": 1124,
+              "op": "LOAD_DEREF",
+              "arg": 0,
+              "resolved": null
+            },
+            {
+              "offset": 1126,
+              "op": "LOAD_ATTR",
+              "arg": 32,
+              "resolved": "owner"
+            },
+            {
+              "offset": 1146,
+              "op": "LOAD_ATTR",
+              "arg": 68,
+              "resolved": "IsPlayerCombatAvatar"
+            },
+            {
+              "offset": 1166,
+              "op": "TO_BOOL",
+              "arg": 0,
+              "resolved": null
+            }
+          ]
+        }
+      ],
+      "parsed_to_eof": true
+    }
+  ],
+  "classification_consequence": "IEntity.owner alone is insufficient: a WeaponModel can forward its owner through SimpleModel and its IEntity wrapper stores .owner. The .instance object is the discriminating Python model object: AvatarModel is on the body path; WeaponModel is a distinct SimpleModel branch. This does not by itself exclude AvatarModel previews or prove an external reader can recover the wrapper attributes."
+}

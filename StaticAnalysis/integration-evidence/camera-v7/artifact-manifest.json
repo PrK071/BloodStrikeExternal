@@ -1,0 +1,207 @@
+{
+  "target_sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "artifacts": [
+    {
+      "path": "01-seeds.py",
+      "bytes": 1602,
+      "sha256": "e63ff521bb7b20a9cf1a00400675110d8e4373534098e0337bebefab5426a8e1"
+    },
+    {
+      "path": "02-follow.py",
+      "bytes": 1511,
+      "sha256": "875711d5b8d43b1cf48c9521009ae86a072e9c04acf956536e832d81b6a3edab"
+    },
+    {
+      "path": "03-selected-functions.py",
+      "bytes": 485,
+      "sha256": "990ba8f533e868c53f84d30999f70ae8a215a30c40c8f742d7b47a0e48ba7a47"
+    },
+    {
+      "path": "04-render-functions.py",
+      "bytes": 576,
+      "sha256": "8cabe3bb2d883a04e5408f9ca6d54c3d8170ab85f0b137840c7a9b07d09f7051"
+    },
+    {
+      "path": "05-callers.py",
+      "bytes": 1357,
+      "sha256": "052ee3ae8cbc6281c8ec043bf6647f3dcb8e7b419b86cae01ccd2a0a547c3bdd"
+    },
+    {
+      "path": "06-viewport-types.py",
+      "bytes": 1824,
+      "sha256": "ac608c590bc9ac0e111efbb83f7d7fed5b61ea3602fc1e8246d72804835b08a6"
+    },
+    {
+      "path": "07-main-viewport.py",
+      "bytes": 533,
+      "sha256": "e350cd17cfac6ffd0106a1007108af379ebf645e921ea1450876bbb8cb06a356"
+    },
+    {
+      "path": "08-main-provider.py",
+      "bytes": 803,
+      "sha256": "b7685f3083c28a47106e87aa5916239c096374171218f0cd3b5d56180d58eecc"
+    },
+    {
+      "path": "09-client-selector.py",
+      "bytes": 627,
+      "sha256": "8578004a15ec93a33962f004ad867ef8aaad7a7d7cb6d72b04e582982302a87b"
+    },
+    {
+      "path": "10-render-camera-link.py",
+      "bytes": 612,
+      "sha256": "61e6009b618ea03c1d65d9c9bac1283b1a51990ce160f0e49dfef063e7521781"
+    },
+    {
+      "path": "11-pipeline-consumer.py",
+      "bytes": 619,
+      "sha256": "82e5bb865773610c4fbb32e83476ccc78ec1bb0513acd6c0f9a64c80a4fe2aa4"
+    },
+    {
+      "path": "12-unwind-regions.py",
+      "bytes": 882,
+      "sha256": "9e3f95d3274f430eaac4d4866eca31bb92fc0079f7f7136e62076e69944509a8"
+    },
+    {
+      "path": "13-camera-getter.py",
+      "bytes": 491,
+      "sha256": "689ba036e21e39185f3a75075af23250908741ed818f9a919814eec65833b048"
+    },
+    {
+      "path": "14-camera-types.py",
+      "bytes": 969,
+      "sha256": "eb44eb7750c8421ecbd6162e7f7c2e6fb6f08237ed725e8603778e66b5529a96"
+    },
+    {
+      "path": "15-projection-storage.py",
+      "bytes": 611,
+      "sha256": "a1fe6ab69f6c5bd8d83bd0bbe80d8277d841fa2a9f8432ee0268d6a7f5836a06"
+    },
+    {
+      "path": "16-pipeline-camera-uses.py",
+      "bytes": 674,
+      "sha256": "c6429f1d090a4e497140b23c94311e12f9ead9a8524e615cf2361caa7fe3ee2d"
+    },
+    {
+      "path": "18-final-contract.py",
+      "bytes": 5934,
+      "sha256": "dedf353a4a6ae4da993607defcfdd6c19133e3ef729fccc5534e52757ad5c7c7"
+    },
+    {
+      "path": "19-reference-check.py",
+      "bytes": 2127,
+      "sha256": "3998dab73214641a3de52d8971bdc83df48ddac2cff3b18b159816a2faf71239"
+    },
+    {
+      "path": "camera-accessors.json",
+      "bytes": 24287,
+      "sha256": "fe0f1889dfbc0053b527ba2cc4364ae0ea67313c7aa929583967b4db4e5a05d7"
+    },
+    {
+      "path": "CAMERA-V7.md",
+      "bytes": 6825,
+      "sha256": "c381dcb0bfe49c9a67de273f7a6dd87a77126168f262657901029cb5355466d7"
+    },
+    {
+      "path": "direct-callers.json",
+      "bytes": 2696586,
+      "sha256": "3e7158b0a61298f656e752cd65ea853b5b32451d496d4d5f183fc8def338546d"
+    },
+    {
+      "path": "discriminating-native-evidence.json",
+      "bytes": 131013,
+      "sha256": "d4db26c1841d6a0fde64e4aec9693eb1b91e3289852da3f5390c231a496cee62"
+    },
+    {
+      "path": "effective-camera-contract.json",
+      "bytes": 7234,
+      "sha256": "c24879959c1764055c4e7f79e703898ddc5438ea5f02244f3111a661f7d34db1"
+    },
+    {
+      "path": "effective-camera-types.json",
+      "bytes": 95202,
+      "sha256": "e14964b5fbdd2b052a78c3062a42e75abd8bf5ca6b144741ff38697a52812c24"
+    },
+    {
+      "path": "main-provider-root.json",
+      "bytes": 24370795,
+      "sha256": "b14acede8a028578fdd2729f2423acddd64c9cbab97b607d1e2bdb163ece7f6c"
+    },
+    {
+      "path": "main-viewport-functions.json",
+      "bytes": 148998,
+      "sha256": "c7708104bf698559445e0a9f83437140507e9f0106f537e86040d13b9960c806"
+    },
+    {
+      "path": "pipeline-camera-uses.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "pipeline-consumer.json",
+      "bytes": 47971,
+      "sha256": "5d824a1adacd91e268dfb9392132c9d8a203ab5731518202a6f81999f88a433c"
+    },
+    {
+      "path": "projection-storage.json",
+      "bytes": 111774,
+      "sha256": "266dfc2593cfc239bb1cf2a3c95e56de3a9ba25843dc8f1116382ed1d47f9516"
+    },
+    {
+      "path": "read_effective_camera.py",
+      "bytes": 2959,
+      "sha256": "77a15c499f90a62942682aa2925e35bb5d322fd977610b43794d87dce41aa4fc"
+    },
+    {
+      "path": "reference-checks.json",
+      "bytes": 335,
+      "sha256": "88a48f826dbfda2e66e1d71a4c8b35f7c9fe1a7f988ea755b1b8f0363a661c40"
+    },
+    {
+      "path": "render-camera-link.json",
+      "bytes": 124333,
+      "sha256": "d7f354443d5ff2c7de12a23c825744d49266deb30cc9c1060209fc168c3366c0"
+    },
+    {
+      "path": "render-candidate-functions.json",
+      "bytes": 429314,
+      "sha256": "ef41fcb33d68e454d750175d88afad89dd0687f66673b041d8bce1404af69fb9"
+    },
+    {
+      "path": "render-functions.json",
+      "bytes": 463710,
+      "sha256": "6fe3fdaf91f9d42ac1aec8b960d3843fc2783e0885ed24560832d79cc68bf5d6"
+    },
+    {
+      "path": "seeds.json",
+      "bytes": 45484938,
+      "sha256": "8e7cb4b8d4bd73d6c79270e379e05bfd804438cfbd00ab4837af7316125a4e1e"
+    },
+    {
+      "path": "selected-functions.json",
+      "bytes": 49550,
+      "sha256": "dad6a88920479eab34392ba53a3f74e1a0c417dd052b164cb44417601d765bca"
+    },
+    {
+      "path": "selector-follow.json",
+      "bytes": 1604032,
+      "sha256": "53c770dd4cd6f66e0795e9256e4ad5eea62459fddbf304f1a798ccf4df2251fd"
+    },
+    {
+      "path": "unwind-groups.json",
+      "bytes": 631875,
+      "sha256": "67782d3642b566f7bd0eb485c1dcf1f11395ac97eb4663d2fe5d86ded8427ada"
+    },
+    {
+      "path": "viewport-client-selector.json",
+      "bytes": 110114,
+      "sha256": "21ca3ca7528fecbb6f04f0c8882e884f83852e16c12bb0dc21a795ccf0b9b3c3"
+    },
+    {
+      "path": "viewport-types.json",
+      "bytes": 408807,
+      "sha256": "bd96fc0594bd2224bd30faf03c792ebb7eb82f2a27633a60fd569221ebbe7983"
+    }
+  ],
+  "target_executed": false,
+  "process_opened": false
+}

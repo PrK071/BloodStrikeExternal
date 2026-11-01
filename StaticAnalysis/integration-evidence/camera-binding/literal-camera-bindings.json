@@ -1,0 +1,72 @@
+{
+  "entries": 9705,
+  "bytes": 188383211,
+  "results": [
+    {
+      "index": 7375,
+      "filenames": [
+        "gclient/util/cinematics/cinematics_mgr.py"
+      ],
+      "hits": {
+        "ControlledCamera": 1
+      }
+    },
+    {
+      "index": 28715,
+      "filenames": [
+        "gclient/framework/commoncomps/space_weather_comp.py"
+      ],
+      "hits": {
+        "CameraController": 1
+      }
+    },
+    {
+      "index": 40877,
+      "filenames": [
+        "gclient/client_env.py"
+      ],
+      "hits": {
+        "AffiliatedCamera": 2
+      }
+    },
+    {
+      "index": 43866,
+      "filenames": [
+        "gclient/gameplay/logic_base/bot/camera_controller.py"
+      ],
+      "hits": {
+        "CameraController": 12
+      }
+    },
+    {
+      "index": 65147,
+      "filenames": [
+        "gclient/gameplay/logic_base/entities/robot_combat_avatar.py"
+      ],
+      "hits": {
+        "CameraController": 1
+      }
+    },
+    {
+      "index": 87163,
+      "filenames": [
+        "gclient/framework/entities/camera.py"
+      ],
+      "hits": {
+        "CameraController": 1,
+        "ControlledCamera": 1,
+        "AffiliatedCamera": 1
+      }
+    },
+    {
+      "index": 113753,
+      "filenames": [
+        "gclient/framework/camera/fps_placer.py"
+      ],
+      "hits": {
+        "AffiliatedCamera": 1
+      }
+    }
+  ],
+  "bytecode_executed": false
+}

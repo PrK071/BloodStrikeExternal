@@ -1,0 +1,140 @@
+{
+  "0x7a135a0": {
+    "name": "function",
+    "fields": {
+      "0x8": "0x147a15170",
+      "0x18": "0x14555d188",
+      "0x20": "0x98",
+      "0x28": "0x0",
+      "0x60": "0x0",
+      "0x68": "0x0",
+      "0x70": "0x0",
+      "0x90": "0x0",
+      "0x98": "0x0",
+      "0x110": "0x142a1a830",
+      "0x118": "0x0"
+    }
+  },
+  "0x7a21e50": {
+    "name": "wrapper_descriptor",
+    "fields": {
+      "0x8": "0x147a15170",
+      "0x18": "0x145883bc8",
+      "0x20": "0x38",
+      "0x28": "0x0",
+      "0x60": "0x0",
+      "0x68": "0x0",
+      "0x70": "0x0",
+      "0x90": "0x142a094d0",
+      "0x98": "0x0",
+      "0x110": "0x142aff3d0",
+      "0x118": "0x0"
+    }
+  },
+  "0x796f3c0": {
+    "name": null,
+    "fields": {
+      "0x8": "0x147a15170",
+      "0x18": "0x0",
+      "0x20": "0x0",
+      "0x28": "0x0",
+      "0x60": "0x0",
+      "0x68": "0x0",
+      "0x70": "0x0",
+      "0x90": "0x0",
+      "0x98": "0x0",
+      "0x110": "0x0",
+      "0x118": "0x0"
+    }
+  },
+  "0x796a420": {
+    "name": null,
+    "fields": {
+      "0x8": "0x147a15170",
+      "0x18": "0x0",
+      "0x20": "0x0",
+      "0x28": "0x0",
+      "0x60": "0x0",
+      "0x68": "0x0",
+      "0x70": "0x0",
+      "0x90": "0x0",
+      "0x98": "0x0",
+      "0x110": "0x0",
+      "0x118": "0x0"
+    }
+  },
+  "0x796c240": {
+    "name": null,
+    "fields": {
+      "0x8": "0x147a15170",
+      "0x18": "0x0",
+      "0x20": "0x0",
+      "0x28": "0x0",
+      "0x60": "0x0",
+      "0x68": "0x0",
+      "0x70": "0x0",
+      "0x90": "0x0",
+      "0x98": "0x0",
+      "0x110": "0x0",
+      "0x118": "0x0"
+    }
+  },
+  "candidates": [
+    {
+      "name": "method",
+      "type_rva": "0x7a273d0",
+      "name_rva": "0x547f710",
+      "basicsize": "0x30",
+      "get": "0x2b1dc30",
+      "set": "0x0"
+    },
+    {
+      "name": "staticmethod",
+      "type_rva": "0x7a138e0",
+      "name_rva": "0x58120a8",
+      "basicsize": "0x20",
+      "get": "0x2a1aed0",
+      "set": "0x0"
+    },
+    {
+      "name": "classmethod",
+      "type_rva": "0x7a13740",
+      "name_rva": "0x5811d78",
+      "basicsize": "0x20",
+      "get": "0x2a1a9d0",
+      "set": "0x0"
+    },
+    {
+      "name": "property",
+      "type_rva": "0x7a22190",
+      "name_rva": "0x58844b0",
+      "basicsize": "0x40",
+      "get": "0x2b00da0",
+      "set": "0x2b00eb0"
+    },
+    {
+      "name": "method_descriptor",
+      "type_rva": "0x7a21cb0",
+      "name_rva": "0x5883b68",
+      "basicsize": "0x38",
+      "get": "0x2aff1b0",
+      "set": "0x0"
+    },
+    {
+      "name": "getset_descriptor",
+      "type_rva": "0x7a21970",
+      "name_rva": "0x5883bb0",
+      "basicsize": "0x30",
+      "get": "0x2aff320",
+      "set": "0x2aff510"
+    },
+    {
+      "name": "member_descriptor",
+      "type_rva": "0x7a21b10",
+      "name_rva": "0x5883b98",
+      "basicsize": "0x30",
+      "get": "0x2aff290",
+      "set": "0x2aff4b0"
+    }
+  ]
+}

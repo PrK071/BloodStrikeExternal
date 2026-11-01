@@ -1,0 +1,1431 @@
+{
+  "index_sha256": "bb3782da03b95d66451a598add8fe0923405be0dde53a8844b2f8bc107a6ced3",
+  "target_sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "stream_count": 9705,
+  "counts": {
+    "IsEnemy": 47,
+    "CanDamage": 34,
+    "IsTeammate": 9,
+    "IsFriend": 53,
+    "IGameLogicBase": 11,
+    "CGameLogicBase": 3,
+    "EnemyFilter": 0,
+    "modeCache": 0,
+    "mode_cache": 0,
+    "diagnostic": 2,
+    "Diagnostic": 0
+  },
+  "hits": [
+    {
+      "index": 466,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/sword_laser_spell.py"
+      ],
+      "terms": [
+        "CanDamage"
+      ],
+      "compressed_sha256": "c8244414a626155d38b79d137cd0d4e49165ed585b2eef57f484ab81236ab33e",
+      "decoded_sha256": "a24b46e0ed5322774f0fd4b8a48b2226f5c2cd95a35417cc5e90d9e983da2669"
+    },
+    {
+      "index": 1503,
+      "path": [
+        "gclient/gameplay/logic_big_head/bot/bighead_brain.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "8bfee932d6d512b6cacafd67faf09de0fee5e193a29a593bf581f941a8cd5a58",
+      "decoded_sha256": "b136039d8d679c0b3ae6e928ad60e79ed3179e61833c5676c3683364313d67eb"
+    },
+    {
+      "index": 1659,
+      "path": [
+        "gclient/gameplay/logic_base/entities/cmagic_field.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "9bcdcab7668dbdadb80c590abe1f4e0911fb252cfac8a2d9190574d1a4313195",
+      "decoded_sha256": "773639c17df180e3e16fb4a0eae8dc34cc3cefa6b84a43977626706ae78abf76"
+    },
+    {
+      "index": 2706,
+      "path": [
+        "gclient/gameplay/logic_dmz/game_logic_dmz.py"
+      ],
+      "terms": [
+        "CanDamage"
+      ],
+      "compressed_sha256": "87a1601799605b6f2e2c191eb64fe44525914ec4140a8f716db66540148849d2",
+      "decoded_sha256": "12bc9003c33646d8217d2b4d52c0100a676a9221e06c52f00b6444c42e8013d5"
+    },
+    {
+      "index": 6371,
+      "path": [
+        "gclient/gameplay/logic_base/entities/lightning_slipper_bomb.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "f6cc41d5e83bd561ccdb1ffe3fa23642317c834c5d2000a07dacdc4486f5e671",
+      "decoded_sha256": "a02b8845509d6cf81c1e408c151a79b4e6331b7cc84ee5d32c29c352f76d26f7"
+    },
+    {
+      "index": 8343,
+      "path": [
+        "gclient/gameplay/logic_base/entities/dummy.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "3cac4371282cd8a4d3a07394bced48357f86d23b17d9980c25326498520fbc78",
+      "decoded_sha256": "fab2d93d3f7c0d4185551a7c48a31897848e3e5a8b8c33b41cf8ffd27ecee223"
+    },
+    {
+      "index": 14066,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_combat_unit.py"
+      ],
+      "terms": [
+        "CanDamage",
+        "IsFriend"
+      ],
+      "compressed_sha256": "823855f89ae4600f6bfd21779f6a982e33aa8a2921f6a1a713625f9a3f4e5a27",
+      "decoded_sha256": "5a2ccf79f644a908e6475ed76c870312fb61526b260dfdc0dc90d0c772c9c648"
+    },
+    {
+      "index": 15763,
+      "path": [
+        "gclient/gameplay/logic_desperado_trifecta/avatarmembers/cimp_desperado_trifecta.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "5ce7fe5eecdf8a85ea417ecc5c97aa1b85452fcabd4e57db5a8f695f452539a9",
+      "decoded_sha256": "f2d647a4aa62185e846620c5c10ce935e64c826f70bda7669bcd76c62f1983ee"
+    },
+    {
+      "index": 17556,
+      "path": [
+        "gclient/gameplay/logic_base/entities/dj_sonic_grenade.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "IsFriend"
+      ],
+      "compressed_sha256": "b0994466fcad2c745c0c0e02204fdf1a2af9487ba96da35cca09789a10ae9793",
+      "decoded_sha256": "c4f497694b6055e89fce401c231d8dd5a89fcb5abbbbd9f848306a6ddfa75893"
+    },
+    {
+      "index": 17930,
+      "path": [
+        "gclient/gameplay/logic_moba_ultra_mega/game_logic_moba_ultra_mega.py"
+      ],
+      "terms": [
+        "CanDamage"
+      ],
+      "compressed_sha256": "df04e2df619eb20e4c19575d194b5255cf922987d453d67c821cdc1e843ec15a",
+      "decoded_sha256": "7a914f5f92297444369695dfddc40d7bf1fadf367d3239b270799f2130dcffc5"
+    },
+    {
+      "index": 18907,
+      "path": [
+        "gclient/gameplay/uicomponents/hud_frontsight_comp.py"
+      ],
+      "terms": [
+        "CanDamage"
+      ],
+      "compressed_sha256": "3bbd0b4872b38751d83841f4d6154b83a96e11507976786d5c2ee843f7c9962d",
+      "decoded_sha256": "104a938ff48e37a61ffc47d0aa02df540dc74a80ee3692c841b13b31933a8b0f"
+    },
+    {
+      "index": 21620,
+      "path": [
+        "gclient/gameplay/logic_base/entities/crow_patrol.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "18da5103fbc8014c0757343130491df600685ea6ea3f02b632e131e481af36f1",
+      "decoded_sha256": "fcbe0063c44e7d1bea7970adbb51013f622047d3451bc9a3b6894ea1d7e9be0c"
+    },
+    {
+      "index": 22229,
+      "path": [],
+      "terms": [
+        "CanDamage"
+      ],
+      "compressed_sha256": "db1648961380ffdaeb9966ad4d5b3f46f3e4f2db257d65aa67238c30c0f0a223",
+      "decoded_sha256": "9278a46f7b93551c866c9e64fef0a0d9a8db3c05dde9504a3b3759ec7731598f"
+    },
+    {
+      "index": 22538,
+      "path": [
+        "gclient/gameplay/logic_hotspot/bot/hotspot_evaluators.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "9f1a88de9731b419844b9d00df24972b048b243f342f7a74c4554b6f6529deca",
+      "decoded_sha256": "bba5dd192c9597cd6adca19afe95a7b25cb3ca44e598b17aec731fc84f297fd2"
+    },
+    {
+      "index": 24085,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_mark.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "62bdfea193c1222a6a05f55e6dffc3feed81a229fcd0624efdcb6a5df4a25599",
+      "decoded_sha256": "97aa75a8340bea52d818aa60e59eb027d43e029e83ae504b05ead9022829f1db"
+    },
+    {
+      "index": 24389,
+      "path": [
+        "gclient/gameplay/logic_peekaboo/ui/peekaboo_replay_status_comp.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "eb87cdbf2f0a363e33e5567a5e422d21ee4451f48ecbdff2d2975afd8d6aed2c",
+      "decoded_sha256": "4a071df8ea48b833c345bcc03e09bd037bc3eaa5f01e21a71322bbb22a5daef7"
+    },
+    {
+      "index": 29462,
+      "path": [
+        "gclient/gamesystem/uihall/friend/relationship/mentor_player_item_node.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "48a326dd8b69baf52c25259f3a69b4d04056108d6c0855bcb3e14bb10f7308dd",
+      "decoded_sha256": "aaa340c3269ea3ba285cfdd5acf30a036ec777f016070ce38f0aa1f6ddbf01b3"
+    },
+    {
+      "index": 29734,
+      "path": [
+        "gclient/gameplay/logic_base/entities/holographic_robot.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "b5fd041442f737485f2186946a2683bcdaff71da58f542164540bdb2868a86ee",
+      "decoded_sha256": "ec6aed1c27715fab75f0d357fc9291f38cdd4b503ca467b3b716b01a2e4d761a"
+    },
+    {
+      "index": 30296,
+      "path": [
+        "gclient/gameplay/logic_base/entities/vehiclecomponents/vehicle_sound_comp.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "d83b74453f6a59da5653eb61c92a81d486a8ec8828cd03bba6d64d9584525656",
+      "decoded_sha256": "6682125e4adb8e4b798c04e659c498f7f7dd0e20ce708af4ccf9fe1916d90ca5"
+    },
+    {
+      "index": 30485,
+      "path": [
+        "gclient/gameplay/logic_moba/combat_avatar_moba.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "9282ec025d5ec53e2e4381b68ca7366bac9e75e6fe47c6de3ba824b352f6600c",
+      "decoded_sha256": "90277f10f9983fb0d8ec91bb0372a8233f9b751fb5f2757458da07e49b6b15e2"
+    },
+    {
+      "index": 32074,
+      "path": [],
+      "terms": [
+        "IGameLogicBase"
+      ],
+      "compressed_sha256": "09c4fe24cbdc78320e134d23dec2d7ba7ba8afda22078f924956111e6282c75d",
+      "decoded_sha256": "af6a670f6ed6a47ed6a071d7f1e4710c26b257e0ea2f10445407d2a9015d48ed"
+    },
+    {
+      "index": 33033,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_spell.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "IsFriend"
+      ],
+      "compressed_sha256": "44a93d19feb51b68ec34ac012a1add15714a1234f6a283c5c853b6968eb80588",
+      "decoded_sha256": "cedf56187ae334f9f96a655e88838239ad1dcf536c7c818c7938c8ef0ff287d9"
+    },
+    {
+      "index": 37212,
+      "path": [],
+      "terms": [
+        "CanDamage"
+      ],
+      "compressed_sha256": "7ea7729f89836e5cc87740fd213c86d3de4a516f8bf1f941c5bc1487403b939e",
+      "decoded_sha256": "29b9824dd36f7eeac8f4548c6b04081fb4daae291c3b7201762b3a46669ffa10"
+    },
+    {
+      "index": 37477,
+      "path": [
+        "gclient/gameplay/logic_moba_lockdown/bot/evaluators.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "194c3a4d13e5e5fd3840d5e197e557189d309bdb8f306b96ba62021f560c5135",
+      "decoded_sha256": "121193ebc8453641ff3c31ca84f2db91eb3115e93a2bb4ba974afeb42d79a884"
+    },
+    {
+      "index": 38016,
+      "path": [
+        "gclient/gameplay/logic_big_head/avatarmembers/cimp_bighead.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "36b588940c23d2cbd9ddec18adc1b52a100df49a5354f62198e0924aabe8357a",
+      "decoded_sha256": "62be777e7d95aa9261ca6956f388420281059c6189d2aa1450a54012f9304e79"
+    },
+    {
+      "index": 38187,
+      "path": [
+        "gclient/gamesystem/entities/avatarmembers/cimp_friend.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "38a7ab356562991e790680d1254f4132dc1447e460a336b6c111ba6570aaf36c",
+      "decoded_sha256": "3dc0718dc661c7551950557a0cd39adff7ad7e32a29321f8951201889caa4641"
+    },
+    {
+      "index": 39232,
+      "path": [
+        "gclient/gameplay/logic_base/entities/blast_bomb.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "eace40ea5e3ebba227df10b864dcd1e67d1f63c9d2c7eaa4f8a8feed42fc4a02",
+      "decoded_sha256": "54bc35d5ae3b782b6dd700e16a7c72ec4f71b4acf46d463c1f247d6512e7d242"
+    },
+    {
+      "index": 39845,
+      "path": [
+        "gclient/gameplay/logic_moba_zombie/avatarmembers/cimp_zombie_xray.py"
+      ],
+      "terms": [
+        "IsTeammate"
+      ],
+      "compressed_sha256": "3ae2f2ad777554a1682fb307859844bbf4c829faab2d73f517404be97b82771e",
+      "decoded_sha256": "16b4fec840818003e5de9c7298f2c91918cec93308d266f03940431391b1fb4b"
+    },
+    {
+      "index": 39908,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/giant_attack_circle_spell.py"
+      ],
+      "terms": [
+        "CanDamage"
+      ],
+      "compressed_sha256": "10d8517f2a049e6576e642a3ce04c9c016e48ee53b5793718c66378710580e64",
+      "decoded_sha256": "931a4ba13d52ab90d0ddd4c38f90738ba6fdb7185405e14e3406b99e88b4d4f5"
+    },
+    {
+      "index": 41949,
+      "path": [
+        "gclient/gamesystem/uihall/activity/homie_bp/homie_invite_window.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "e041aacef927f71b9bc2bfc8e16c36da3d589c9af091df7852acc5b9e8cd0b56",
+      "decoded_sha256": "859dc7f7e650f2eff0a5df1c08e43a8dae4898bbfbb2d146f100b85926198082"
+    },
+    {
+      "index": 42912,
+      "path": [],
+      "terms": [
+        "IGameLogicBase"
+      ],
+      "compressed_sha256": "02948855d164a5714b0ddfb407ee53f5a8eed77e089a06282f4b498d63c4ffd6",
+      "decoded_sha256": "963d277e9364ca8512891a67e6f361a0aeda26e1c937a2405aed8cbbc04d4152"
+    },
+    {
+      "index": 43000,
+      "path": [
+        "gclient/gameplay/logic_base/entities/sword_spirit.py"
+      ],
+      "terms": [
+        "CanDamage"
+      ],
+      "compressed_sha256": "84ab621d1bbc1b956ccd52028a89f8be8777a19b3760355509b557d0ccfcb3b5",
+      "decoded_sha256": "a888f22530127e9480d8e8bdb3104fea676121234336b137755a238906fd8d89"
+    },
+    {
+      "index": 44196,
+      "path": [
+        "gclient/gameplay/logic_squad_fight/bot/squad_fight_evaluator.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "c877ef8a89d7817b4c99f6b647ee2b744e1caa13bfb4155c221aa1006a978be0",
+      "decoded_sha256": "b58787856ec575e8f8e4fbd57096d58ab3b0185b3d7a745461d7fd243c5cbe42"
+    },
+    {
+      "index": 44852,
+      "path": [],
+      "terms": [
+        "IGameLogicBase"
+      ],
+      "compressed_sha256": "908cfa13d074f8c8b7b13cbbe0a28e1d9944b17cc60d990faa373e0fc80fcf18",
+      "decoded_sha256": "62cfe5ed64871668839274697d35111a7f3107e1fc1f6acbb51d18c9535440b5"
+    },
+    {
+      "index": 45098,
+      "path": [],
+      "terms": [
+        "IGameLogicBase"
+      ],
+      "compressed_sha256": "af94fe9101916448bc5876ee187cfc3b3a26f1c367905178f82c6b50039955b1",
+      "decoded_sha256": "d075b39db74dfb8356761449fbaa7da7482b26b634d2e9e587ce35e674fc893b"
+    },
+    {
+      "index": 46575,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_sound.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "IsFriend"
+      ],
+      "compressed_sha256": "d7c6deb19445be1378840b7e11198e53f95ebf1589ee991b9f4d8940011022d5",
+      "decoded_sha256": "935b1c8443e4a9b6c417425f91653d1b04666ab6b4cb0b5e175dcf7b06b88ff2"
+    },
+    {
+      "index": 48446,
+      "path": [
+        "gclient/gameplay/logic_arms_race_mode/game_logic_arms_race_mode.py"
+      ],
+      "terms": [
+        "CGameLogicBase"
+      ],
+      "compressed_sha256": "988b7345e345888a8456c76a5f710264aecee1f9d16ef5cf7e56b43c55ed8a1c",
+      "decoded_sha256": "eb309802e856f6b12fea22d1acfd83845ec74722422c5e8a42f2824520275732"
+    },
+    {
+      "index": 50186,
+      "path": [
+        "gclient/gameplay/logic_moba_zombie/ui/moba_zombie_hud_bottom_arms_comp.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "3db5909ab1dbf5d9a0de8cb8a603fd30ba78395632b72c1c1bb372a674ba1c58",
+      "decoded_sha256": "2d1f55eafb5e67fe18628c830d7527903898712e00be713d8c34f567e71bd57c"
+    },
+    {
+      "index": 51449,
+      "path": [
+        "gclient/gameplay/logic_desperado_trifecta/bot/desperado_trifecta_evaluators.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "2fbd54f88124c20eb2371e3315ca7737e3ca77b30b21c022d05c9ec21e1db11b",
+      "decoded_sha256": "6c8faf05a21175598528bfdca17f15d7341365d3fa0f1b595f1cb9db16923278"
+    },
+    {
+      "index": 51507,
+      "path": [
+        "gclient/gameplay/logic_rivals/avatarmembers/cimp_rivals.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "4de4ab7229d25396cede714b89f18983a3492d8e4b82b20de31a6625a150c511",
+      "decoded_sha256": "0b8948fa1e3f09ffc63670f9c698af10f54cd86e001580b32d3aea39d4cbc493"
+    },
+    {
+      "index": 52066,
+      "path": [],
+      "terms": [
+        "IGameLogicBase"
+      ],
+      "compressed_sha256": "c0fdd0f508e2a9e3a7070bb2c82c362c93429237acb5d8c99ebf88b4881594e9",
+      "decoded_sha256": "d1aed78fcf0e96825b8ff7cb2d0a252833dda8e991920321590b20bff20e6965"
+    },
+    {
+      "index": 52138,
+      "path": [],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "3d92215965a32912e6d1df4616cc921a054351a34ee814a61e6fe340eb093985",
+      "decoded_sha256": "2cff1b81f5fa956abb59380643bcce324a05e66d33697ff56fe11341f8b9a02e"
+    },
+    {
+      "index": 53128,
+      "path": [
+        "gclient/gameplay/logic_base/entities/cstrop_uav.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "6fd7d594c4251b9c1115fed3f2d86603c27099c5670740f56a6299dcccd874cf",
+      "decoded_sha256": "df8a97b0b851eb3bcf36e9cf02f5757184577729207f9a1d0395fed3f108f68f"
+    },
+    {
+      "index": 54237,
+      "path": [
+        "gclient/gameplay/logic_blasting/combat_avatar_blasting.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "090a298d05d1afc9cae6215465c01c6fb564f9d14bff5182a29f88bf98d88e35",
+      "decoded_sha256": "1c9d78ca425f571689048d7d1102f1f503d52d62dfe5ad790e388943d495f8d8"
+    },
+    {
+      "index": 54462,
+      "path": [
+        "gclient/util/techstate_component.py"
+      ],
+      "terms": [
+        "IsTeammate"
+      ],
+      "compressed_sha256": "7dcc00887bd1ab4f6079370abe1ffd26c483205435423bd118697fd3b9d010c2",
+      "decoded_sha256": "ef39ee7218582a9f9be6ac26411c7e3745551a45753bc4be884a3d05eae199c9"
+    },
+    {
+      "index": 54564,
+      "path": [],
+      "terms": [
+        "IsEnemy",
+        "IsFriend"
+      ],
+      "compressed_sha256": "d43b6f78473d60d5be780e6483a08feb1bd32246f1f761b4b9b00983aa35ff3a",
+      "decoded_sha256": "165bcad08fd740bce2aa3a34e807c286d138122baecd47414c0bc40183a0bfef"
+    },
+    {
+      "index": 55178,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_space_black_hole.py"
+      ],
+      "terms": [
+        "CanDamage"
+      ],
+      "compressed_sha256": "9093f49386940f2776277769a07a43467964fab1a8e682e7d5861f9502230141",
+      "decoded_sha256": "2218a08a3252176d1a0837aa9d68c6bcc408451fc018e212f2c73c01faad4d41"
+    },
+    {
+      "index": 55679,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_execute.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "cae52f22127abec600dfafebf9c397099495f72535a4a59d99c672596317cf8a",
+      "decoded_sha256": "523157eb2f8e894cfa4bdbd210c15c2aee2315de016e56d4f6f034a3eab86e4f"
+    },
+    {
+      "index": 58838,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_bomb.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "707009fe1e978f7636df7b5845009f1462fbcfba6a188e67e9ca34b4b222d9cc",
+      "decoded_sha256": "f5cf76867e46c1fa805485f88e028a08690a2cf9972b76b9cb9973458d5f3703"
+    },
+    {
+      "index": 61379,
+      "path": [
+        "gclient/gameplay/logic_blasting/avatarmembers/cimp_blasting.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "e53141c0d55cb9552bbe9ba8445a4306e7afe41dbe33e6f620f064f53b684cd1",
+      "decoded_sha256": "4320867fa349eb99e9be5c7783791e9b99e931916bca4ba2a65d4707a8a759de"
+    },
+    {
+      "index": 61925,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_model.py"
+      ],
+      "terms": [
+        "IsTeammate",
+        "IsFriend"
+      ],
+      "compressed_sha256": "739c6fca121b75c6b3edcd2e3887e223724ee6510ebb1d872dd81f2823df4c98",
+      "decoded_sha256": "04bde99e6e2715d32cacce94496d4aba3f89919aae650d513a5468da1e790f4c"
+    },
+    {
+      "index": 64281,
+      "path": [],
+      "terms": [
+        "IGameLogicBase"
+      ],
+      "compressed_sha256": "58a1e620396618fee1241e49a79d4fe75d236b9b78ae8eea1c601cdadfe88f28",
+      "decoded_sha256": "abd5df15d1082fa4b1e3d227a8c3e55c4047d8bb184dd2d690204ae6ef99111a"
+    },
+    {
+      "index": 64882,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_emote.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "fc527a8ea8f0746ee349022dd62a3b0e3ae31802fd2631a09511b82031668a5e",
+      "decoded_sha256": "1e08973c017e7e8599be720d7eb530a2a18f5b11e3506b3a3ba6e8fc47a191f4"
+    },
+    {
+      "index": 65166,
+      "path": [
+        "gclient/gameplay/logic_big_head/bot/bighead_evaluators.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "aee45d08b35cab6ff7704915e7875f406731355e3d71d0b77055497558469a59",
+      "decoded_sha256": "864640ecb9f8219b19b0813c3c7cd26f9d353b92538da7a6bfafd5f889d5bef5"
+    },
+    {
+      "index": 65716,
+      "path": [
+        "gclient/gameplay/logic_base/entities/blast_bomb_2025.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "bdfb265009384a99f4f55fdd18d5b2d91c9bce4815c769a155d30a1f66f734b2",
+      "decoded_sha256": "233843deb6235c237c2c23062f18cb755167e6d0a8eeb557909f1b941aef09be"
+    },
+    {
+      "index": 65789,
+      "path": [
+        "gclient/gameplay/logic_base/entities/cure_uav.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "6ef20654e6e8d69149bd9488b435c7abe8e0a4594dbd63be3dcf97e28f01cc23",
+      "decoded_sha256": "70af902e18227e1516d686326e50ce4d60ba96e5ec9cfaf8a6592046493c9826"
+    },
+    {
+      "index": 65958,
+      "path": [
+        "gclient/gameplay/logic_overload/bot/overload_evaluators.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "e63bdf30b2e1cac3ed7d6c2b91a86e62d9679ec48cd12ed0637eb47a7bc71317",
+      "decoded_sha256": "f17920c577b1cf347d91eecdbfc6b846b99f39c559e4e4b62899bd104e04c750"
+    },
+    {
+      "index": 66002,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/juren_fly_spell.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "10ec3270360603fa6c0cb001851c10574ec8e534dab33872e68f49e0bd55bd36",
+      "decoded_sha256": "8b30dd5ccab78d8daacee8fbf9e8b05c26e49e7b028783b71f75b513843a8cd9"
+    },
+    {
+      "index": 68262,
+      "path": [
+        "gclient/framework/util/assist_aim_util.py"
+      ],
+      "terms": [
+        "CanDamage",
+        "IsFriend"
+      ],
+      "compressed_sha256": "216ac1e4309dba0cc38db6a3e53d24388f87895454d189b3cd386c1444910a13",
+      "decoded_sha256": "8163bc535975fd931d2df900fc04bf0d0402e1e5555aa6c2c3d2ffd53168f3de"
+    },
+    {
+      "index": 74633,
+      "path": [],
+      "terms": [
+        "diagnostic"
+      ],
+      "compressed_sha256": "05400fb61c30c2de88843843cd0de5d13de33becf174636deb59819858d96fe6",
+      "decoded_sha256": "6ddb0815b30b0925273d799c30758908a12b7df5c661b96c0ec05e6311bf6313"
+    },
+    {
+      "index": 76499,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_enemy_show_distance.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "5c52984e76c05372b553686804e25cb6349505c95158827e7dcaf0457c56c4c3",
+      "decoded_sha256": "5271ce5ca423acbd00d0205f7c7a48dc751f3516bf4f4679d4244928c93071df"
+    },
+    {
+      "index": 78092,
+      "path": [
+        "gclient/gamesystem/uihall/activity/homie_bp_new/homie_invite_window.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "cc77c0b3fc678ba5ff2b6866c4d4be5428c6f16bb3c0442acd349f00f0248425",
+      "decoded_sha256": "4f88c30563b30a5c258faf5b33400ade1afc0441b9f2e6a81e2db381d45d15a2"
+    },
+    {
+      "index": 78274,
+      "path": [
+        "gclient/gameplay/logic_squad_fight/combat_avatar_squad_fight.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "IsFriend"
+      ],
+      "compressed_sha256": "62836bd9e1455c6ade92455c2edd5d3d55455d80255795840870802225f71b0d",
+      "decoded_sha256": "b9fdd4a7712f27fbc349da5a218ba2001c22511cc252ddb0d9e882e9a823f87e"
+    },
+    {
+      "index": 78286,
+      "path": [
+        "gclient/gameplay/uicomponents/battle_sound_alert_comp.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "37240960c375adb0bcb9f39794b70fcc7d31bac454795614a65cfb3c1d21f39e",
+      "decoded_sha256": "bef3410cde7315c355e2a8ee9f2943c6a53c9880eae2bc25e87ff8c3994faf4f"
+    },
+    {
+      "index": 78838,
+      "path": [
+        "gclient/gameplay/uicomponents/hud_topright_comp.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "IsFriend"
+      ],
+      "compressed_sha256": "3a8b7fe812897dc1584bb623491b74b59fd0fb85dc8b913a4141cfdfec6b44a3",
+      "decoded_sha256": "8114d0358771347b3f69262e2ea77f2887d6d8f3d227b4d39fe4a61f24a3edd5"
+    },
+    {
+      "index": 80751,
+      "path": [
+        "gclient/gameplay/logic_moba_zombie/comps/comp_zombie_battle.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "CanDamage",
+        "IGameLogicBase"
+      ],
+      "compressed_sha256": "05eb3935ba6f5eb06783d15787ad40fd32fd21009867a04c60fbb393b0ca94ae",
+      "decoded_sha256": "b053b4e33e54741dde72987ded4d22d8a4d586329a9d0ee61746a39adeb26380"
+    },
+    {
+      "index": 80873,
+      "path": [
+        "gclient/gameplay/logic_dmz/combat_avatar_dmz.py"
+      ],
+      "terms": [
+        "CanDamage",
+        "IsFriend"
+      ],
+      "compressed_sha256": "f3a9895b4113ab18d1b27557b416bd91e748f5c1a25d60ea711fa2c6be03d204",
+      "decoded_sha256": "8ec3d3d3d3abb7b75ce13511cb3d17b39a31161be4a4907977c4c553c7c14413"
+    },
+    {
+      "index": 80920,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/melee_spell.py"
+      ],
+      "terms": [
+        "CanDamage",
+        "IsFriend"
+      ],
+      "compressed_sha256": "591eee91608b3540ce6e02b99ac3c2756d4cde695ab906f36eb0c89e8fb3af4c",
+      "decoded_sha256": "2c9ca7292f26b2ca69c27abde71fecf3ee2e0e0f89e88f7984e2a37c0afd3994"
+    },
+    {
+      "index": 81245,
+      "path": [
+        "gclient/gameplay/logic_base/entities/cchaos_uav.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "a65229f9b59dc7d57b6bd59ca3557de1ee1bdccdbdcdb65503bb8df1ffc66f44",
+      "decoded_sha256": "382f136ae2bc9eaebce63e2ed846227172c6a3ec808379455d8defdb46a32158"
+    },
+    {
+      "index": 81954,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_buff.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "5a3f0e6b1cca2da4563a53f921578b676384f7e4f67e798884e6e9569965c99f",
+      "decoded_sha256": "35f28519dc681924ec07898dd7bed5da9601a59ee4ac2da69c681e8f1391ceae"
+    },
+    {
+      "index": 82038,
+      "path": [
+        "gclient/gameplay/logic_snipe/bot/brain.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "3506e6af5b6c2e28b36594e936caf9def52d1c9839653b8739f8ab899440cb95",
+      "decoded_sha256": "a8e5c33ae903b7ffe3d991b26c9adf12f2c0a4c6084fa5a751706d8728942fea"
+    },
+    {
+      "index": 83015,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/giant_attack_fan_spell.py"
+      ],
+      "terms": [
+        "CanDamage"
+      ],
+      "compressed_sha256": "499f8a861002c555bec762a081ea11f04c80d0feaa4b7ac50caee08c8d91dc77",
+      "decoded_sha256": "8e1d0bcf20fdc63273a1f48fde06035c14be8d98728134fc38bd766f5aa31495"
+    },
+    {
+      "index": 83324,
+      "path": [
+        "gclient/gameplay/logic_rivals/combat_avatar_rivals.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "79f842d618113fe506ddcf8591fb98cedf566c219f2e8c02d2f5b3b0515a7e1a",
+      "decoded_sha256": "a8eee9ebc0f3c66379f372f1068ef6fd61fc52a68b0aa97aff9dfe9d02626aba"
+    },
+    {
+      "index": 84874,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/eva_laser_circle_spell.py"
+      ],
+      "terms": [
+        "CanDamage"
+      ],
+      "compressed_sha256": "6b83a014ddca8a5dc9ca0129fd2e7346c9d01cb4cbbb4fad442a155640bed4bf",
+      "decoded_sha256": "748f0e170e128a4eba916ef1ed412f0ff814387733181125482a8d8237ed4dc1"
+    },
+    {
+      "index": 85021,
+      "path": [
+        "gclient/gameplay/logic_moba/game_logic_moba.py"
+      ],
+      "terms": [
+        "CanDamage"
+      ],
+      "compressed_sha256": "96fd90a3bfea7fb13a4a4cf23a3c030124560718f51eeb11d7cb4fc21bca61d2",
+      "decoded_sha256": "a1e5beb0c1d178e3d2c4992b7176f20d961bb2c10edeb3ad6ce74f91e21f1a55"
+    },
+    {
+      "index": 85215,
+      "path": [
+        "gclient/gameplay/logic_hotspot/avatarmembers/cimp_hotspot.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "89ae98b12996acdcefdaa830aab81861266f4e84bc78bc55db3a809eb4b0022c",
+      "decoded_sha256": "60318be850a24ccf720e18d9b3a4d1cc00e89988ebdea8a10d2bfdf8ccfcb5aa"
+    },
+    {
+      "index": 86897,
+      "path": [
+        "gclient/framework/util/replay_util.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "bc30a51514a6e4710ab84b48dfec1e23d7a64a65cb2e2fa22ff5fac1b92d7886",
+      "decoded_sha256": "f30c18e2fb4955e94ac1837fa65756b6b40cee0cacdfa7df6a1b785bf37d7c20"
+    },
+    {
+      "index": 89034,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/eva_laser_charged_spell.py"
+      ],
+      "terms": [
+        "CanDamage"
+      ],
+      "compressed_sha256": "818fe5cc24b88288c1c41beb1cfa9990e2a19da09550f75dbd2993426275ab75",
+      "decoded_sha256": "a34218ee05e69a6b90063e45a084dcfd7b2f93614e261550e6148fc8c7bfea06"
+    },
+    {
+      "index": 89296,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/armor_titan_charge_spell.py"
+      ],
+      "terms": [
+        "CanDamage"
+      ],
+      "compressed_sha256": "143e694b06653c2324023bb6bdb8d072c95faab9d5fe934c42d1dc3b6883fd18",
+      "decoded_sha256": "0da8dddc7df1d3a33d53ffea6c8932e7d1d073c9f498dc096a3f0517846409ba"
+    },
+    {
+      "index": 89917,
+      "path": [
+        "gclient/gameplay/logic_base/bot/sensor.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "53d7aaff1cf64f928dac879cdc768d45b734c4bcad7ee2f2c3c62cde83949fcd",
+      "decoded_sha256": "8461aac59089fada75e5675dd1b38b604592a4c0c327c6666cb22c00b7abb624"
+    },
+    {
+      "index": 92227,
+      "path": [
+        "gclient/gameplay/logic_moba_faction/game_logic_moba_faction.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "IsTeammate",
+        "IsFriend"
+      ],
+      "compressed_sha256": "fc56c77d0adddf10aeea9cc42e9e4d46b32d83d249229cf5419e02389930faf6",
+      "decoded_sha256": "0aa075d290f14b0da643885faad1c91ce41ee45a1b8ad4c7e76c19d92fef8ed7"
+    },
+    {
+      "index": 92598,
+      "path": [
+        "gclient/gamesystem/entities/avatarmembers/activity_data_cls/cact_homie_bp.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "87f9fa9bc2cf015b87c7b76812b0e47d89be46066ed8b129805c4321766f8866",
+      "decoded_sha256": "52748a931b5c2c35198d53afdad501f1e09a8fe6398f6c4c46ae76378c0c3702"
+    },
+    {
+      "index": 92965,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/eva_laser_spell.py"
+      ],
+      "terms": [
+        "CanDamage"
+      ],
+      "compressed_sha256": "b2da2a94b1f7e814433f0f74a41729420b48bff38d7c6b17f3cdc30b0ef95125",
+      "decoded_sha256": "ce8d4064197db0e9b9164c0df72bf18293605caca753b5d0a75ecaf76cda3930"
+    },
+    {
+      "index": 93804,
+      "path": [
+        "gclient/gameplay/logic_base/ui/hud_bottom_arms_base_comp.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "0ccf7b1c96b17064a2ec5fd135e7ba586450e089ee153249b32d3c1ff80c7f69",
+      "decoded_sha256": "849978a088a3998f483140471e3abad94ef226e85fd93257e26b88727c601666"
+    },
+    {
+      "index": 94242,
+      "path": [
+        "gclient/gamesystem/entities/avatarmembers/cimp_chat.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "480a69b27a7620a754268becfe6fced9507a1b4c8098c9e6fced4495815e97b6",
+      "decoded_sha256": "3fa448d072e4a2525b2af64217f2eacd68820d8dbb85f5e1982c89ee826eaca4"
+    },
+    {
+      "index": 97667,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/flame_gun_spell.py"
+      ],
+      "terms": [
+        "CanDamage"
+      ],
+      "compressed_sha256": "184822d4c114d37ef8460ccdc9c4c6a19933125161b9aa5bdf32bb3618a29745",
+      "decoded_sha256": "a35d7ee417949be5536fc957581e4421640cfbfe9161a36b49645412726df480"
+    },
+    {
+      "index": 97930,
+      "path": [],
+      "terms": [
+        "IGameLogicBase"
+      ],
+      "compressed_sha256": "7759c6d05d3c99fb6db1a63c3bf27b0e0437eecb0511af8820dabc88c4160a95",
+      "decoded_sha256": "c1f10a34c24e4a0bbaf4e92fb919247c5de05bcb305a92125a6f80be6d45cd2d"
+    },
+    {
+      "index": 98654,
+      "path": [
+        "gclient/gamesystem/entities/avatarmembers/activity_data_cls/cact_homie_bp_new.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "b553efecdbb60d1d2e0a25ca572e2e88effeac69e6d54dd4ad50ce536738e137",
+      "decoded_sha256": "9fec8d908067c617be0a02fd7afa6bfb8c3369a4bcbf843f5d7a6298278773b5"
+    },
+    {
+      "index": 104626,
+      "path": [
+        "gclient/gameplay/logic_base/entities/skull_bomb.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "211d92e1998e5c20f4cd942b56295a33102dd321031fb596bd801c5dfbb04cb2",
+      "decoded_sha256": "2f39de51e50ac1e160cf4263f3c6eda21aa2034a8e8cf271bf3555a53226f028"
+    },
+    {
+      "index": 105128,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/eva_multi_laser_spell.py"
+      ],
+      "terms": [
+        "CanDamage"
+      ],
+      "compressed_sha256": "e9e50c966655697880914c120a63ef6f09307fbd4f8342a87bfff124d181fee4",
+      "decoded_sha256": "090305435ec7224276611b40c866f0ac2cd4db3ed197e749de450774e8c7b8e0"
+    },
+    {
+      "index": 107853,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combat_avatar.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "85c8bfb1312f168283bd40befb7e47de222f40d7ae251a52d5069b79fb9b3c31",
+      "decoded_sha256": "11babd1e40f2036808527dc7589df652ae108cc51e3c37f0259c951a6b09dd0d"
+    },
+    {
+      "index": 108190,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/samurai_sprint_spell.py"
+      ],
+      "terms": [
+        "CanDamage"
+      ],
+      "compressed_sha256": "ecb615c44e5ef9dd6c6afe534fbb74496d5c84e86050efc54cc2d3f950a8a9bc",
+      "decoded_sha256": "521f2b831cb369150dacb3b429d6858d53307b85ce7dbd7081e4a84e19adc9b2"
+    },
+    {
+      "index": 108818,
+      "path": [],
+      "terms": [
+        "IsEnemy",
+        "CanDamage",
+        "IsFriend",
+        "IGameLogicBase"
+      ],
+      "compressed_sha256": "010c2581ad2a089b78e51b258026efa27577e5d63b1a14dd855c6e3080aaf867",
+      "decoded_sha256": "c69a1b41935d7a6f56bc7c43be13665325816d9ff5191624f963ee12a5c98af9"
+    },
+    {
+      "index": 109190,
+      "path": [
+        "gclient/gameplay/logic_base/entities/sticky_objects.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "IsFriend"
+      ],
+      "compressed_sha256": "99b34a053cecf9ac2d8ecef0cfc01e0a5aba5b5ff74e3f1cdf6dbc26fbf264fa",
+      "decoded_sha256": "5204e1259e776989d44750b8b23c1991049364a4be4f009c7a2916a71adb232c"
+    },
+    {
+      "index": 113733,
+      "path": [
+        "gclient/gameplay/logic_rookieguide/combat_avatar_rookieguide.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "0d54e4f4c068d2648e8933da4d8d9a93e785a3bc1cf1704ba2b4c4960deda834",
+      "decoded_sha256": "164d5c8d8039e25e58903f20400db9825b0b31a259c1361218b74b2e5e041a42"
+    },
+    {
+      "index": 114832,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/beast_titan_normal_attack_spell.py"
+      ],
+      "terms": [
+        "CanDamage"
+      ],
+      "compressed_sha256": "5e9b0fe182b3e5a011a212722bb9505efcc5bb14a0d38c7cc5c6e57fb4d86dba",
+      "decoded_sha256": "5bd85d26a75d246ceef5c5106ecc81ec4945bea4c4d0fb7b3017e20f5778c11e"
+    },
+    {
+      "index": 115612,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/heartbeat_spell.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "7af57cb00225f550c274f01d0a3427507925934e60977a122046f653b553830c",
+      "decoded_sha256": "a7f49d0fdb150bded443c9a3daf243289c2d0b2aa90f1057f2f1ef4284e30d4a"
+    },
+    {
+      "index": 116891,
+      "path": [
+        "gclient/gameplay/logic_moba_lightning/game_logic_moba_lightning.py"
+      ],
+      "terms": [
+        "CanDamage"
+      ],
+      "compressed_sha256": "eaaa96719e6aee8a699c5ceed2e3dacd0b3f03f90e022140e70be2b3dd536362",
+      "decoded_sha256": "3a01ebd6934b39982f75fd36dfe6ff5e8feb62b6a563948b95bfd94a5571d3fa"
+    },
+    {
+      "index": 123463,
+      "path": [
+        "gclient/gameplay/logic_base/entities/occupy_contract_item_new.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "bc0e8a3f053fcd95176644e66655cd862ac93fbf94688bdb4b7bfbdf4d737eb8",
+      "decoded_sha256": "d183a325948bb157b5db3719e54c1fe2a79af741a8e45fa1ecc4f0c7c9352042"
+    },
+    {
+      "index": 123795,
+      "path": [
+        "gclient/gameplay/logic_base/entities/cbiological_ray.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "bb2b42ca40ed61a716fc209001e2667b2e3136036961b58e8b85f270c36fc946",
+      "decoded_sha256": "a35e37a9663635aa4f2d806458ac5b3ab3f81e5f74ccbeab8f15d6013ee9f315"
+    },
+    {
+      "index": 123809,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_spell_juren.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "5c673c030a8c3396b05eff3b34e08f403421f3bef4c017defa9f2098f9e469ec",
+      "decoded_sha256": "da3df22f2c13a3c1cffbfba887b345c983f95e0f2d8d9f3a5c11d1325f5ca8a0"
+    },
+    {
+      "index": 123823,
+      "path": [
+        "gclient/gameplay/util/ads_mark_manager.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "2464d58402c69534a559acbfbe634ae77af605a10f6b55b26b9a0a4ecfa7fc68",
+      "decoded_sha256": "63a2f963b00f43b623dd6598d8731b9c6f4892506cea46be4b4bf59e89c37845"
+    },
+    {
+      "index": 124300,
+      "path": [
+        "gclient/gameplay/logic_base/comps/avatar_scene_node.py"
+      ],
+      "terms": [
+        "CanDamage",
+        "IsTeammate",
+        "IsFriend"
+      ],
+      "compressed_sha256": "f108377680e33f49415da72e2d176595f4d1f4534450726d810668175bc0c2c8",
+      "decoded_sha256": "133a726b2b4c47b88a7f03b163a6c21609ed3ee766ef2525ada1781c96013959"
+    },
+    {
+      "index": 124949,
+      "path": [
+        "gclient/gameplay/logic_base/entities/occupy_contract_item.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "006d2ae8d7fe86b6af3393cd6e6a655389432dca410238da26b1c231d3402298",
+      "decoded_sha256": "9d07d6901e8b85a9b50989e2159da5c49f6faf7ef7dc556d8c964cea35dc77c7"
+    },
+    {
+      "index": 125076,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_talent.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "IsFriend"
+      ],
+      "compressed_sha256": "a8e2db5e08ecdc35246fa9d1b5dd09bfd126ed0bb9f8970b6e55fd4026db1298",
+      "decoded_sha256": "21ea2858f91dcb5c5daa0823127a8532b9c588d7237b8ea352c9ab476f7a4168"
+    },
+    {
+      "index": 126243,
+      "path": [
+        "gclient/util/routine/vd_2_mp4.py"
+      ],
+      "terms": [
+        "diagnostic"
+      ],
+      "compressed_sha256": "0556c0dfcb6a776179bb6a0cd62157b1c6bb6377ddf3c2a4f17b395206b394bc",
+      "decoded_sha256": "46a7a894deffa3fb0d048e31794ff29e1567698417a1f66043618f0e242def8f"
+    },
+    {
+      "index": 126399,
+      "path": [
+        "gclient/gameplay/logic_base/bot/evaluators.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "ab6a0c38e65c54ea80d4149fd9f8dbad1e70024ab60ebd25f2e65fc80628297d",
+      "decoded_sha256": "08b5fcd59569e3102ea6426791fe7a42a5fad024374b8012562875fe86ced225"
+    },
+    {
+      "index": 126465,
+      "path": [
+        "gclient/gameplay/logic_base/entities/barrie_cannon.py"
+      ],
+      "terms": [
+        "IsTeammate",
+        "IsFriend"
+      ],
+      "compressed_sha256": "3ae7c1265c96e89ffcbece19d6be2a1e1c6508ee528e29e5223f9355839aab40",
+      "decoded_sha256": "26ed24436b6e85316d5cbbebe83b8030461f460e204b0314eead2b49a3090701"
+    },
+    {
+      "index": 129395,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_toplogo.py"
+      ],
+      "terms": [
+        "CanDamage",
+        "IsFriend"
+      ],
+      "compressed_sha256": "8fa1a99d9cda995282c2eafaf7175b842fba989cdfd3ff483e24256365f431d5",
+      "decoded_sha256": "ba6822600fdd2587069a39ec968c072387beb4690490ec70a86bcdcb36cd8f56"
+    },
+    {
+      "index": 129895,
+      "path": [],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "436fafd32e21c25eb9e616febce0f9406186d58c18204fc8b0ed254733fa2aa1",
+      "decoded_sha256": "230eef4a5fd5e43b0b612603ea5001472b4c52a24660635f30c60600e07eb9f5"
+    },
+    {
+      "index": 132180,
+      "path": [
+        "gclient/gameplay/logic_peekaboo/game_logic_peekaboo.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "CanDamage",
+        "IsTeammate",
+        "IGameLogicBase"
+      ],
+      "compressed_sha256": "1112626cfa48c200ee27647998b12bb15271976a8d8791cec3b0c3eabe93367a",
+      "decoded_sha256": "0ffe6ae378af23c4f6f63847128a6562ec1bad78100965952a1d2bbcaed1d5a1"
+    },
+    {
+      "index": 133136,
+      "path": [
+        "gclient/gameplay/logic_desperado_trifecta/bot/desperado_trifecta_brain.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "7a8a6f8b13f759883bf463101f778a41a8cbf0bcca856b6bfc87295b465d572b",
+      "decoded_sha256": "b0da3a7bfb511162cb2d0f54dfaaa6958bfd2bd4b0855c7614b8af4886d99aa8"
+    },
+    {
+      "index": 133370,
+      "path": [
+        "gclient/gameplay/logic_moba_lightning/models/lightning_capybara_model.py"
+      ],
+      "terms": [
+        "CanDamage"
+      ],
+      "compressed_sha256": "c4da344a537c2eaf11530d54977c1f9c0e32ebfe0729660e9dea62a510091005",
+      "decoded_sha256": "621f60dff9c939cd6bd72cbd9709b48330dfdc14d4c872b7bad6333b5cea26d9"
+    },
+    {
+      "index": 134078,
+      "path": [
+        "gclient/gamesystem/uihall/friend/relationship/mentor_apprentice_window.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "e45d27cb36f265c259703dde3e4af608b7dcb5401204ebd99e7bcdc9bd2708a2",
+      "decoded_sha256": "5bd7b63a3b1fe36378be19ec7b178e42d2612f192b3fc913483b9953f3bf5fa6"
+    },
+    {
+      "index": 134852,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_cannon_toplogo.py"
+      ],
+      "terms": [
+        "IsTeammate"
+      ],
+      "compressed_sha256": "a0b13e68b725d08968e9ac0909dbe060892ac08d0c89c2aa1ff47dda5398eefc",
+      "decoded_sha256": "dada7b7f660ae4159f8c3b31d78d317e485c17386e8fa8069cd48ee3beb68ee8"
+    },
+    {
+      "index": 135319,
+      "path": [
+        "gclient/gameplay/logic_snipe/game_logic_snipe_battle.py"
+      ],
+      "terms": [
+        "CGameLogicBase"
+      ],
+      "compressed_sha256": "a17af0ccc4b84aea4ca844ff3ba3472b3726f5f7d3de384acc8f1c2423326260",
+      "decoded_sha256": "ddeeb6ee632845a52f25c14d115b0c71343f7e3845bdff626a67b31fe87f1558"
+    },
+    {
+      "index": 135845,
+      "path": [
+        "gclient/gameplay/logic_squad_fight/avatarmembers/cimp_squad_fight.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "2013211aed3a2a36862fcfd81e72de18a8e37311e82b842f69088fcc7443e117",
+      "decoded_sha256": "949a77aff6f9f43455cdb35f326573f86e95e375d8accf8c1aab038df9f2abb3"
+    },
+    {
+      "index": 136897,
+      "path": [
+        "gclient/gameplay/uicomponents/mapbase_mark_comp.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "57b3ca77ac8f83d8489af18f96ef2ccc5db0ec19c9ea916ce463d2694cd0c4bd",
+      "decoded_sha256": "0ad43f12baa7f8ad4b2d0fbc545925348725fe1bed31f24b133cd0dfc3f9152e"
+    },
+    {
+      "index": 137996,
+      "path": [
+        "gclient/gameplay/logic_moba_lightning/combat_avatar_moba_lightning.py"
+      ],
+      "terms": [
+        "CanDamage"
+      ],
+      "compressed_sha256": "665cad884e535ecd821dacf96b684f205e2bfcc6be4520e59a1b00fdc2fa07f0",
+      "decoded_sha256": "3e4d51377955066f84b4a4f903f9e610204c96111b0fa6dfb7320095d65b4c25"
+    },
+    {
+      "index": 141633,
+      "path": [
+        "gclient/gameplay/logic_base/entities/cbomb.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "87c77f8c385d61e8d197feddf9fb6f6151992b248056048095f1a3c9af430273",
+      "decoded_sha256": "a6fc7b38fb4ea831376a8b2827f86ffccbbb4beb392e72a23759c000e99a562c"
+    },
+    {
+      "index": 141870,
+      "path": [
+        "gclient/gameplay/logic_football/avatarmembers/cimp_football_outline.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "104748a91bc85e3b5a70a28f48224585ab5f604a5798f2212b6adecbb0c0f747",
+      "decoded_sha256": "76053b82fedc28300036025e24546f553d1124d689235b7bea8bac32da4df065"
+    },
+    {
+      "index": 141935,
+      "path": [
+        "gclient/gameplay/logic_nowhere/game_logic_nowhere.py"
+      ],
+      "terms": [
+        "CanDamage"
+      ],
+      "compressed_sha256": "d31638f11d0395e751969fd8502ed82074e7dfb6453d505ff0caa636dbb1ccad",
+      "decoded_sha256": "be74a7ebda29fd72142f832a46c3116468821329613f54691cc4786b760a7710"
+    },
+    {
+      "index": 142558,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/ghost_spur_spell.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "359b30fa9d9be47d08f991ceb77b73d00adf994446d7da419ec6039b4dff2c80",
+      "decoded_sha256": "8eca482ced71cc7a819beec6fb0bdf867bc7a62700d29d9200cece92ac84fbd9"
+    },
+    {
+      "index": 143066,
+      "path": [
+        "gclient/util/friend_chat_storage.py"
+      ],
+      "terms": [
+        "IsFriend"
+      ],
+      "compressed_sha256": "8c1bb6d82a53d5a37a3866d6e5d88358d65470d9133d10e15d03ea19385d90ca",
+      "decoded_sha256": "b2971e347b3736c16f572ea4064801b6124bec6d5a4a16653b333598db65dced"
+    },
+    {
+      "index": 143382,
+      "path": [
+        "gclient/gameplay/logic_base/entities/ai_entity_members/cimp_ai_skill.py"
+      ],
+      "terms": [
+        "CanDamage"
+      ],
+      "compressed_sha256": "ec039d1946d230109315cfc36b50bb9e15abb214c3747dc96066def891226a3b",
+      "decoded_sha256": "a569f386dea520e730299a3cde5283768994786ab71f77e28314e8f413363b3b"
+    },
+    {
+      "index": 143510,
+      "path": [
+        "gclient/gameplay/logic_base/models/avatar_model.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "52126c6073b2bbd96f7e62f843086c75b1966dd713fd1290061c9f09209f9a16",
+      "decoded_sha256": "0a4a57f34d1c8e14e38c08f510f1787f46659e4b2928663cf526797eac8b0ed3"
+    },
+    {
+      "index": 144143,
+      "path": [
+        "gclient/gameplay/logic_arms_race_mode/bot/brain.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "4a4f1b19b32eb90038c012110d8610870b1e0e8bcc35cf82d3aa3093780cf13a",
+      "decoded_sha256": "240bd423e2578df0a9f817b067cf39c9072958c0f31a142a79ea8e9d87ab1827"
+    },
+    {
+      "index": 145546,
+      "path": [
+        "gclient/gameplay/game_logic_base.py"
+      ],
+      "terms": [
+        "CanDamage",
+        "IsTeammate",
+        "IsFriend",
+        "IGameLogicBase",
+        "CGameLogicBase"
+      ],
+      "compressed_sha256": "095c60e38eb4c75d1fbd053f22b4aef1f6de7e538ecd2981636eed3214f7cefe",
+      "decoded_sha256": "a3c7b11aa4a2d9ea8b52a6ee279859ef6e268e26aab3a5433aacc48078c5318c"
+    }
+  ]
+}

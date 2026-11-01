@@ -1,0 +1,1306 @@
+[
+  {
+    "name": "regist_class",
+    "string_rva": "0x4eea5d8",
+    "refs": [
+      [
+        {
+          "rva": "0x763a398",
+          "value": "0x144ee8628",
+          "string": "asiocore.clear_prop_index()"
+        },
+        {
+          "rva": "0x763a3a0",
+          "value": "0x144eea5d8",
+          "string": "regist_class"
+        },
+        {
+          "rva": "0x763a3a8",
+          "value": "0x1405a0f10",
+          "string": null
+        },
+        {
+          "rva": "0x763a3b0",
+          "value": "0x1",
+          "string": null
+        },
+        {
+          "rva": "0x763a3b8",
+          "value": "0x144ee8648",
+          "string": null
+        },
+        {
+          "rva": "0x763a3c0",
+          "value": "0x144ee8680",
+          "string": "clear_class"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "prop",
+    "string_rva": "0x54836d8",
+    "refs": [
+      [
+        {
+          "rva": "0x796ba68",
+          "value": "0x1454836c8",
+          "string": "entities in aoi"
+        },
+        {
+          "rva": "0x796ba70",
+          "value": "0x1454836d8",
+          "string": "prop"
+        },
+        {
+          "rva": "0x796ba78",
+          "value": "0x14130a140",
+          "string": null
+        },
+        {
+          "rva": "0x796ba80",
+          "value": "0x4",
+          "string": null
+        },
+        {
+          "rva": "0x796ba88",
+          "value": "0x1454836e0",
+          "string": "get prop"
+        },
+        {
+          "rva": "0x796ba90",
+          "value": "0x144eeae10",
+          "string": "dict"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Property",
+    "string_rva": "0x4ebeaf8",
+    "refs": [
+      [
+        {
+          "rva": "0x4e835c8",
+          "value": "0x40731f",
+          "string": null
+        },
+        {
+          "rva": "0x4e835d0",
+          "value": "0x144ebeaf8",
+          "string": "Property"
+        },
+        {
+          "rva": "0x4e835d8",
+          "value": "0x800000c36",
+          "string": null
+        },
+        {
+          "rva": "0x4e835e0",
+          "value": "0xd4f3688b",
+          "string": null
+        },
+        {
+          "rva": "0x4e835e8",
+          "value": "0x144ebeb08",
+          "string": "PropertyChanged"
+        },
+        {
+          "rva": "0x4e835f0",
+          "value": "0xf00000c37",
+          "string": null
+        }
+      ],
+      [
+        {
+          "rva": "0x4eb6838",
+          "value": "0x40731f00000008",
+          "string": null
+        },
+        {
+          "rva": "0x4eb6840",
+          "value": "0x144ebeaf8",
+          "string": "Property"
+        },
+        {
+          "rva": "0x4eb6848",
+          "value": "0xd4f3688b00000008",
+          "string": null
+        },
+        {
+          "rva": "0x4eb6850",
+          "value": "0x144ebeb08",
+          "string": "PropertyChanged"
+        },
+        {
+          "rva": "0x4eb6858",
+          "value": "0xb950413c0000000f",
+          "string": null
+        },
+        {
+          "rva": "0x4eb6860",
+          "value": "0x144ebeb18",
+          "string": "PropertyDataType"
+        }
+      ],
+      [
+        {
+          "rva": "0x5426d78",
+          "value": "0x591bf53300000008",
+          "string": null
+        },
+        {
+          "rva": "0x5426d80",
+          "value": "0x144ebeaf8",
+          "string": "Property"
+        },
+        {
+          "rva": "0x5426d88",
+          "value": "0xd4f3688b00000008",
+          "string": null
+        },
+        {
+          "rva": "0x5426d90",
+          "value": "0x4d7265646e655253",
+          "string": null
+        },
+        {
+          "rva": "0x5426d98",
+          "value": "0x2e61746144687365",
+          "string": null
+        },
+        {
+          "rva": "0x5426da0",
+          "value": "0x6e696d6165727453",
+          "string": null
+        }
+      ],
+      [
+        {
+          "rva": "0x542abd8",
+          "value": "0x522ac91e00000016",
+          "string": null
+        },
+        {
+          "rva": "0x542abe0",
+          "value": "0x144ebeaf8",
+          "string": "Property"
+        },
+        {
+          "rva": "0x542abe8",
+          "value": "0xd4f3688b00000008",
+          "string": null
+        },
+        {
+          "rva": "0x542abf0",
+          "value": "0x14542a7b8",
+          "string": "ParticleSystem.Property"
+        },
+        {
+          "rva": "0x542abf8",
+          "value": "0xb572797600000017",
+          "string": null
+        },
+        {
+          "rva": "0x542ac00",
+          "value": "0x6005800030000",
+          "string": null
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Entity",
+    "string_rva": "0x4e5b168",
+    "refs": [
+      [
+        {
+          "rva": "0x4e79b90",
+          "value": "0x101047a9",
+          "string": null
+        },
+        {
+          "rva": "0x4e79b98",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x4e79ba0",
+          "value": "0x6000005c9",
+          "string": null
+        },
+        {
+          "rva": "0x4e79ba8",
+          "value": "0x9ee12db4",
+          "string": null
+        },
+        {
+          "rva": "0x4e79bb0",
+          "value": "0x144ea39f0",
+          "string": "EntityNames"
+        },
+        {
+          "rva": "0x4e79bb8",
+          "value": "0xb000005ca",
+          "string": null
+        }
+      ],
+      [
+        {
+          "rva": "0x4eb0168",
+          "value": "0x101047a90000000e",
+          "string": null
+        },
+        {
+          "rva": "0x4eb0170",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x4eb0178",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x4eb0180",
+          "value": "0x144ea39f0",
+          "string": "EntityNames"
+        },
+        {
+          "rva": "0x4eb0188",
+          "value": "0x9c9acd500000000b",
+          "string": null
+        },
+        {
+          "rva": "0x4eb0190",
+          "value": "0x144ea3a00",
+          "string": "EntityParameter"
+        }
+      ],
+      [
+        {
+          "rva": "0x52295c8",
+          "value": "0x34e585c700000005",
+          "string": null
+        },
+        {
+          "rva": "0x52295d0",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x52295d8",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x52295e0",
+          "value": "0x144ea6820",
+          "string": "IsInSpace"
+        },
+        {
+          "rva": "0x52295e8",
+          "value": "0x6a3c6b6f00000009",
+          "string": null
+        },
+        {
+          "rva": "0x52295f0",
+          "value": "0x144e9daa0",
+          "string": "EnterSpace"
+        }
+      ],
+      [
+        {
+          "rva": "0x5244500",
+          "value": "0x34e585c700000005",
+          "string": null
+        },
+        {
+          "rva": "0x5244508",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x5244510",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x5244518",
+          "value": "0x144ea6820",
+          "string": "IsInSpace"
+        },
+        {
+          "rva": "0x5244520",
+          "value": "0x6a3c6b6f00000009",
+          "string": null
+        },
+        {
+          "rva": "0x5244528",
+          "value": "0x144e9daa0",
+          "string": "EnterSpace"
+        }
+      ],
+      [
+        {
+          "rva": "0x5251a10",
+          "value": "0x34e585c700000005",
+          "string": null
+        },
+        {
+          "rva": "0x5251a18",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x5251a20",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x5251a28",
+          "value": "0x144ea6820",
+          "string": "IsInSpace"
+        },
+        {
+          "rva": "0x5251a30",
+          "value": "0x6a3c6b6f00000009",
+          "string": null
+        },
+        {
+          "rva": "0x5251a38",
+          "value": "0x144e9daa0",
+          "string": "EnterSpace"
+        }
+      ],
+      [
+        {
+          "rva": "0x52552d8",
+          "value": "0x34e585c700000005",
+          "string": null
+        },
+        {
+          "rva": "0x52552e0",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x52552e8",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x52552f0",
+          "value": "0x144ea6820",
+          "string": "IsInSpace"
+        },
+        {
+          "rva": "0x52552f8",
+          "value": "0x6a3c6b6f00000009",
+          "string": null
+        },
+        {
+          "rva": "0x5255300",
+          "value": "0x144e9daa0",
+          "string": "EnterSpace"
+        }
+      ],
+      [
+        {
+          "rva": "0x5258688",
+          "value": "0x8a23c6ee00000007",
+          "string": null
+        },
+        {
+          "rva": "0x5258690",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x5258698",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x52586a0",
+          "value": "0x14525cb20",
+          "string": "IPhysicsSpaceBody.Entity"
+        },
+        {
+          "rva": "0x52586a8",
+          "value": "0xc4cb91c200000018",
+          "string": null
+        },
+        {
+          "rva": "0x52586b0",
+          "value": "0xc000800010002",
+          "string": null
+        }
+      ],
+      [
+        {
+          "rva": "0x52a7428",
+          "value": "0x34e585c700000005",
+          "string": null
+        },
+        {
+          "rva": "0x52a7430",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x52a7438",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x52a7440",
+          "value": "0x144ea6820",
+          "string": "IsInSpace"
+        },
+        {
+          "rva": "0x52a7448",
+          "value": "0x6a3c6b6f00000009",
+          "string": null
+        },
+        {
+          "rva": "0x52a7450",
+          "value": "0x144e9daa0",
+          "string": "EnterSpace"
+        }
+      ],
+      [
+        {
+          "rva": "0x52a8f00",
+          "value": "0x34e585c700000005",
+          "string": null
+        },
+        {
+          "rva": "0x52a8f08",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x52a8f10",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x52a8f18",
+          "value": "0x144ea6820",
+          "string": "IsInSpace"
+        },
+        {
+          "rva": "0x52a8f20",
+          "value": "0x6a3c6b6f00000009",
+          "string": null
+        },
+        {
+          "rva": "0x52a8f28",
+          "value": "0x144e9daa0",
+          "string": "EnterSpace"
+        }
+      ],
+      [
+        {
+          "rva": "0x52abbb0",
+          "value": "0x34e585c700000005",
+          "string": null
+        },
+        {
+          "rva": "0x52abbb8",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x52abbc0",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x52abbc8",
+          "value": "0x144ea6820",
+          "string": "IsInSpace"
+        },
+        {
+          "rva": "0x52abbd0",
+          "value": "0x6a3c6b6f00000009",
+          "string": null
+        },
+        {
+          "rva": "0x52abbd8",
+          "value": "0x144e9daa0",
+          "string": "EnterSpace"
+        }
+      ],
+      [
+        {
+          "rva": "0x53cf548",
+          "value": "0x34e585c700000005",
+          "string": null
+        },
+        {
+          "rva": "0x53cf550",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x53cf558",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x53cf560",
+          "value": "0x144ea6820",
+          "string": "IsInSpace"
+        },
+        {
+          "rva": "0x53cf568",
+          "value": "0x6a3c6b6f00000009",
+          "string": null
+        },
+        {
+          "rva": "0x53cf570",
+          "value": "0x144e9daa0",
+          "string": "EnterSpace"
+        }
+      ],
+      [
+        {
+          "rva": "0x53d0e68",
+          "value": "0x34e585c700000005",
+          "string": null
+        },
+        {
+          "rva": "0x53d0e70",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x53d0e78",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x53d0e80",
+          "value": "0x144ea6820",
+          "string": "IsInSpace"
+        },
+        {
+          "rva": "0x53d0e88",
+          "value": "0x6a3c6b6f00000009",
+          "string": null
+        },
+        {
+          "rva": "0x53d0e90",
+          "value": "0x144e9daa0",
+          "string": "EnterSpace"
+        }
+      ],
+      [
+        {
+          "rva": "0x53dc970",
+          "value": "0x34e585c700000005",
+          "string": null
+        },
+        {
+          "rva": "0x53dc978",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x53dc980",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x53dc988",
+          "value": "0x144ea6820",
+          "string": "IsInSpace"
+        },
+        {
+          "rva": "0x53dc990",
+          "value": "0x6a3c6b6f00000009",
+          "string": null
+        },
+        {
+          "rva": "0x53dc998",
+          "value": "0x144e9daa0",
+          "string": "EnterSpace"
+        }
+      ],
+      [
+        {
+          "rva": "0x53df088",
+          "value": "0x34e585c700000005",
+          "string": null
+        },
+        {
+          "rva": "0x53df090",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x53df098",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x53df0a0",
+          "value": "0x144ea6820",
+          "string": "IsInSpace"
+        },
+        {
+          "rva": "0x53df0a8",
+          "value": "0x6a3c6b6f00000009",
+          "string": null
+        },
+        {
+          "rva": "0x53df0b0",
+          "value": "0x144e9daa0",
+          "string": "EnterSpace"
+        }
+      ],
+      [
+        {
+          "rva": "0x53e2750",
+          "value": "0x34e585c700000005",
+          "string": null
+        },
+        {
+          "rva": "0x53e2758",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x53e2760",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x53e2768",
+          "value": "0x144ea6820",
+          "string": "IsInSpace"
+        },
+        {
+          "rva": "0x53e2770",
+          "value": "0x6a3c6b6f00000009",
+          "string": null
+        },
+        {
+          "rva": "0x53e2778",
+          "value": "0x144e9daa0",
+          "string": "EnterSpace"
+        }
+      ],
+      [
+        {
+          "rva": "0x53e56a0",
+          "value": "0x34e585c700000005",
+          "string": null
+        },
+        {
+          "rva": "0x53e56a8",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x53e56b0",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x53e56b8",
+          "value": "0x144ea6820",
+          "string": "IsInSpace"
+        },
+        {
+          "rva": "0x53e56c0",
+          "value": "0x6a3c6b6f00000009",
+          "string": null
+        },
+        {
+          "rva": "0x53e56c8",
+          "value": "0x144e9daa0",
+          "string": "EnterSpace"
+        }
+      ],
+      [
+        {
+          "rva": "0x53fe570",
+          "value": "0x34e585c700000005",
+          "string": null
+        },
+        {
+          "rva": "0x53fe578",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x53fe580",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x53fe588",
+          "value": "0x144ea6820",
+          "string": "IsInSpace"
+        },
+        {
+          "rva": "0x53fe590",
+          "value": "0x6a3c6b6f00000009",
+          "string": null
+        },
+        {
+          "rva": "0x53fe598",
+          "value": "0x144e9daa0",
+          "string": "EnterSpace"
+        }
+      ],
+      [
+        {
+          "rva": "0x5401c08",
+          "value": "0x34e585c700000005",
+          "string": null
+        },
+        {
+          "rva": "0x5401c10",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x5401c18",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x5401c20",
+          "value": "0x144ea6820",
+          "string": "IsInSpace"
+        },
+        {
+          "rva": "0x5401c28",
+          "value": "0x6a3c6b6f00000009",
+          "string": null
+        },
+        {
+          "rva": "0x5401c30",
+          "value": "0x144e9daa0",
+          "string": "EnterSpace"
+        }
+      ],
+      [
+        {
+          "rva": "0x5426578",
+          "value": "0x8a23c6ee00000007",
+          "string": null
+        },
+        {
+          "rva": "0x5426580",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x5426588",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x5426590",
+          "value": "0x145426250",
+          "string": "ParticleParameterNodeTransform.Entity"
+        },
+        {
+          "rva": "0x5426598",
+          "value": "0x8a08d5b200000025",
+          "string": null
+        },
+        {
+          "rva": "0x54265a0",
+          "value": "0x4000800010002",
+          "string": null
+        }
+      ],
+      [
+        {
+          "rva": "0x5428258",
+          "value": "0xe0bc928300000005",
+          "string": null
+        },
+        {
+          "rva": "0x5428260",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x5428268",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x5428270",
+          "value": "0x144ea8db0",
+          "string": "Node"
+        },
+        {
+          "rva": "0x5428278",
+          "value": "0x3d198caa00000004",
+          "string": null
+        },
+        {
+          "rva": "0x5428280",
+          "value": "0x146f27820",
+          "string": null
+        }
+      ],
+      [
+        {
+          "rva": "0x54b6e68",
+          "value": "0x3",
+          "string": null
+        },
+        {
+          "rva": "0x54b6e70",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x54b6e78",
+          "value": "0x6",
+          "string": null
+        },
+        {
+          "rva": "0x54b6e80",
+          "value": "0x0",
+          "string": null
+        },
+        {
+          "rva": "0x54b6e88",
+          "value": "0x4",
+          "string": null
+        },
+        {
+          "rva": "0x54b6e90",
+          "value": "0x1",
+          "string": null
+        }
+      ],
+      [
+        {
+          "rva": "0x54b8748",
+          "value": "0xb025030300000017",
+          "string": null
+        },
+        {
+          "rva": "0x54b8750",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x54b8758",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x54b8760",
+          "value": "0x144e46d90",
+          "string": ""
+        },
+        {
+          "rva": "0x54b8768",
+          "value": "0x0",
+          "string": null
+        },
+        {
+          "rva": "0x54b8770",
+          "value": "0x4000100000107",
+          "string": null
+        }
+      ],
+      [
+        {
+          "rva": "0x54b88f8",
+          "value": "0x36ec0c4600000008",
+          "string": null
+        },
+        {
+          "rva": "0x54b8900",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x54b8908",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x54b8910",
+          "value": "0x141100490",
+          "string": null
+        },
+        {
+          "rva": "0x54b8918",
+          "value": "0x0",
+          "string": null
+        },
+        {
+          "rva": "0x54b8920",
+          "value": "0x6f72506572616c46",
+          "string": null
+        }
+      ],
+      [
+        {
+          "rva": "0x54c5c98",
+          "value": "0x1",
+          "string": null
+        },
+        {
+          "rva": "0x54c5ca0",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x54c5ca8",
+          "value": "0x6",
+          "string": null
+        },
+        {
+          "rva": "0x54c5cb0",
+          "value": "0x0",
+          "string": null
+        },
+        {
+          "rva": "0x54c5cb8",
+          "value": "0x2",
+          "string": null
+        },
+        {
+          "rva": "0x54c5cc0",
+          "value": "0x144e49c08",
+          "string": "Messiah"
+        }
+      ],
+      [
+        {
+          "rva": "0x54c63e8",
+          "value": "0x2c2bffa400000012",
+          "string": null
+        },
+        {
+          "rva": "0x54c63f0",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x54c63f8",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x54c6400",
+          "value": "0x144e46d90",
+          "string": ""
+        },
+        {
+          "rva": "0x54c6408",
+          "value": "0x0",
+          "string": null
+        },
+        {
+          "rva": "0x54c6410",
+          "value": "0x2000100000107",
+          "string": null
+        }
+      ],
+      [
+        {
+          "rva": "0x54c6500",
+          "value": "0x36ec0c4600000008",
+          "string": null
+        },
+        {
+          "rva": "0x54c6508",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x54c6510",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x54c6518",
+          "value": "0x7469727053555047",
+          "string": null
+        },
+        {
+          "rva": "0x54c6520",
+          "value": "0x6372756f73655265",
+          "string": null
+        },
+        {
+          "rva": "0x54c6528",
+          "value": "0x724f2e6174614465",
+          "string": null
+        }
+      ],
+      [
+        {
+          "rva": "0x5501468",
+          "value": "0x5",
+          "string": null
+        },
+        {
+          "rva": "0x5501470",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x5501478",
+          "value": "0x6",
+          "string": null
+        },
+        {
+          "rva": "0x5501480",
+          "value": "0x0",
+          "string": null
+        },
+        {
+          "rva": "0x5501488",
+          "value": "0x6",
+          "string": null
+        },
+        {
+          "rva": "0x5501490",
+          "value": "0x1455027c0",
+          "string": "VectorUnitRand"
+        }
+      ],
+      [
+        {
+          "rva": "0x5502138",
+          "value": "0x41c473dc00000016",
+          "string": null
+        },
+        {
+          "rva": "0x5502140",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x5502148",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x5502150",
+          "value": "0x144e46d90",
+          "string": ""
+        },
+        {
+          "rva": "0x5502158",
+          "value": "0x0",
+          "string": null
+        },
+        {
+          "rva": "0x5502160",
+          "value": "0x6000100000107",
+          "string": null
+        }
+      ],
+      [
+        {
+          "rva": "0x5502620",
+          "value": "0xcc59d22700000005",
+          "string": null
+        },
+        {
+          "rva": "0x5502628",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x5502630",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x5502638",
+          "value": "0x1455027c0",
+          "string": "VectorUnitRand"
+        },
+        {
+          "rva": "0x5502640",
+          "value": "0x11fbcd030000000e",
+          "string": null
+        },
+        {
+          "rva": "0x5502648",
+          "value": "0x144e4ac60",
+          "string": "String"
+        }
+      ],
+      [
+        {
+          "rva": "0x5728968",
+          "value": "0x34e585c700000005",
+          "string": null
+        },
+        {
+          "rva": "0x5728970",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x5728978",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x5728980",
+          "value": "0x144ea6820",
+          "string": "IsInSpace"
+        },
+        {
+          "rva": "0x5728988",
+          "value": "0x6a3c6b6f00000009",
+          "string": null
+        },
+        {
+          "rva": "0x5728990",
+          "value": "0x144e9daa0",
+          "string": "EnterSpace"
+        }
+      ],
+      [
+        {
+          "rva": "0x5729f20",
+          "value": "0x34e585c700000005",
+          "string": null
+        },
+        {
+          "rva": "0x5729f28",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x5729f30",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x5729f38",
+          "value": "0x144ea6820",
+          "string": "IsInSpace"
+        },
+        {
+          "rva": "0x5729f40",
+          "value": "0x6a3c6b6f00000009",
+          "string": null
+        },
+        {
+          "rva": "0x5729f48",
+          "value": "0x144e9daa0",
+          "string": "EnterSpace"
+        }
+      ],
+      [
+        {
+          "rva": "0x57460a0",
+          "value": "0x34e585c700000005",
+          "string": null
+        },
+        {
+          "rva": "0x57460a8",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x57460b0",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x57460b8",
+          "value": "0x144ea6820",
+          "string": "IsInSpace"
+        },
+        {
+          "rva": "0x57460c0",
+          "value": "0x6a3c6b6f00000009",
+          "string": null
+        },
+        {
+          "rva": "0x57460c8",
+          "value": "0x144e9daa0",
+          "string": "EnterSpace"
+        }
+      ],
+      [
+        {
+          "rva": "0x576dad8",
+          "value": "0x34e585c700000005",
+          "string": null
+        },
+        {
+          "rva": "0x576dae0",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x576dae8",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x576daf0",
+          "value": "0x144ea6820",
+          "string": "IsInSpace"
+        },
+        {
+          "rva": "0x576daf8",
+          "value": "0x6a3c6b6f00000009",
+          "string": null
+        },
+        {
+          "rva": "0x576db00",
+          "value": "0x144e9daa0",
+          "string": "EnterSpace"
+        }
+      ],
+      [
+        {
+          "rva": "0x57dc5f8",
+          "value": "0x34e585c700000005",
+          "string": null
+        },
+        {
+          "rva": "0x57dc600",
+          "value": "0x144e5b168",
+          "string": "Entity"
+        },
+        {
+          "rva": "0x57dc608",
+          "value": "0x9ee12db400000006",
+          "string": null
+        },
+        {
+          "rva": "0x57dc610",
+          "value": "0x144ea6820",
+          "string": "IsInSpace"
+        },
+        {
+          "rva": "0x57dc618",
+          "value": "0x6a3c6b6f00000009",
+          "string": null
+        },
+        {
+          "rva": "0x57dc620",
+          "value": "0x144e9daa0",
+          "string": "EnterSpace"
+        }
+      ]
+    ]
+  }
+]

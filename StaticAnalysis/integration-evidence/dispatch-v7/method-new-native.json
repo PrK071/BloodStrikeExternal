@@ -1,0 +1,128 @@
+{
+  "0x2b1d050": [
+    {
+      "rva": "0x2b1d050",
+      "preferred_va": "0x142b1d050",
+      "file_offset": "0x2b1c650",
+      "bytes": "48 89 5c 24 10",
+      "text": "mov [rsp+10h],rbx",
+      "length": 5
+    },
+    {
+      "rva": "0x2b1d055",
+      "preferred_va": "0x142b1d055",
+      "file_offset": "0x2b1c655",
+      "bytes": "56",
+      "text": "push rsi",
+      "length": 1
+    },
+    {
+      "rva": "0x2b1d056",
+      "preferred_va": "0x142b1d056",
+      "file_offset": "0x2b1c656",
+      "bytes": "48 83 ec 20",
+      "text": "sub rsp,20h",
+      "length": 4
+    },
+    {
+      "rva": "0x2b1d05a",
+      "preferred_va": "0x142b1d05a",
+      "file_offset": "0x2b1c65a",
+      "bytes": "48 8b da",
+      "text": "mov rbx,rdx",
+      "length": 3
+    },
+    {
+      "rva": "0x2b1d05d",
+      "preferred_va": "0x142b1d05d",
+      "file_offset": "0x2b1c65d",
+      "bytes": "48 8b f1",
+      "text": "mov rsi,rcx",
+      "length": 3
+    },
+    {
+      "rva": "0x2b1d060",
+      "preferred_va": "0x142b1d060",
+      "file_offset": "0x2b1c660",
+      "bytes": "48 85 d2",
+      "text": "test rdx,rdx",
+      "length": 3
+    },
+    {
+      "rva": "0x2b1d063",
+      "preferred_va": "0x142b1d063",
+      "file_offset": "0x2b1c663",
+      "bytes": "75 1e",
+      "text": "jne short 0000000142B1D083h",
+      "length": 2,
+      "branch_target_rva": "0x2b1d083"
+    },
+    {
+      "rva": "0x2b1d065",
+      "preferred_va": "0x142b1d065",
+      "file_offset": "0x2b1c665",
+      "bytes": "ba 72 00 00 00",
+      "text": "mov edx,72h",
+      "length": 5
+    },
+    {
+      "rva": "0x2b1d06a",
+      "preferred_va": "0x142b1d06a",
+      "file_offset": "0x2b1c66a",
+      "bytes": "48 8d 0d 8f f6 d6 02",
+      "text": "lea rcx,[14588C700h]",
+      "length": 7,
+      "rip_target_rva": "0x588c700",
+      "rip_target_string": "G:\\NewSpike\\src_dev_2024\\Engine\\Sources\\External\\PythonCore3\\Python-3.14.0\\Objects\\classobject.c"
+    },
+    {
+      "rva": "0x2b1d071",
+      "preferred_va": "0x142b1d071",
+      "file_offset": "0x2b1c671",
+      "bytes": "e8 ea 4c f5 ff",
+      "text": "call 0000000142A71D60h",
+      "length": 5,
+      "branch_target_rva": "0x2a71d60"
+    },
+    {
+      "rva": "0x2b1d076",
+      "preferred_va": "0x142b1d076",
+      "file_offset": "0x2b1c676",
+      "bytes": "33 c0",
+      "text": "xor eax,eax",
+      "length": 2
+    },
+    {
+      "rva": "0x2b1d078",
+      "preferred_va": "0x142b1d078",
+      "file_offset": "0x2b1c678",
+      "bytes": "48 8b 5c 24 38",
+      "text": "mov rbx,[rsp+38h]",
+      "length": 5
+    },
+    {
+      "rva": "0x2b1d07d",
+      "preferred_va": "0x142b1d07d",
+      "file_offset": "0x2b1c67d",
+      "bytes": "48 83 c4 20",
+      "text": "add rsp,20h",
+      "length": 4
+    },
+    {
+      "rva": "0x2b1d081",
+      "preferred_va": "0x142b1d081",
+      "file_offset": "0x2b1c681",
+      "bytes": "5e",
+      "text": "pop rsi",
+      "length": 1
+    },
+    {
+      "rva": "0x2b1d082",
+      "preferred_va": "0x142b1d082",
+      "file_offset": "0x2b1c682",
+      "bytes": "c3",
+      "text": "ret",
+      "length": 1
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "status": "PASS",
+  "timestamp_utc": "2026-10-26T23:51:01.960895+00:00",
+  "python": "3.12.14",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "tests_run": 40,
+  "failures": 0,
+  "errors": 0,
+  "junit_cases": 40,
+  "unexpected_successes": 0,
+  "skipped": 0,
+  "seconds": 1.349988600006327,
+  "native_integration": "owned_child_process_only",
+  "protected_game_access": false,
+  "bloodstrike_gameplay_validated": false,
+  "publisher_certification": false,
+  "source_sha256": {
+    "ExternalCore/__init__.py": "2a566963177634280a11cca6420ad38563d391dcf7ec9b624ac9f14d64ba08b6",
+    "ExternalCore/__main__.py": "b5a94c4c80ddc911971231b98ee0ebb54266ce9ec0ea49f84b6a1b8037a795ae",
+    "ExternalCore/build.py": "6f963d085260cbcc69fb9b7eac4896808f757bfd9c0cf10e864d9cf1bbe0dfea",
+    "ExternalCore/entity_position.py": "307a56c5dff047000e8cd2601398b8f869b0ff2b12231b258c274ca9695a1451",
+    "ExternalCore/memory.py": "66dec9bd513fedfa07a30536171b33ab60beb5c57d60c8925aa216ab0f4306bf",
+    "ExternalCore/registry.py": "84e231c18732bb8f0b7c98859e9bf8281a6038ef7cf2e9d5d5ec5b15be35f891",
+    "ExternalCore/rtti.py": "69120d52b0a42b9714098e0705095c16852e551f1b7e68296f93c1c36c364b5a",
+    "ExternalCore/screenpoint.py": "d3ee0c9b6a538913b61cf84dee51f508c9bdfd71b00a4128535fbf0217216f86",
+    "ExternalCore/snapshot.py": "f1fbfd5a5c06e0965bef04abe99751b2203ee8895935ef7fbfe97d3ad02d2bae",
+    "ExternalCore/win32_memory.py": "2297ab40b78621177d5ee30d7750207f10c8747e4974098d27abba97a4e9dfb3",
+    "tests/native_fixture.py": "b411f9bf40392beb07ed8010d7a99e7d8322bf9ede4e4b6474b4b70b1ec2fdc2",
+    "tests/registry_fixture.py": "36e058fad7ca8bb9b20338e88993fa69d84bd92c6f455970736ecb5f6c868837",
+    "tests/test_cli.py": "799dc0849bfd1343f05cab7f126b2fb9af82c72b7f905dd8b12dfd4a64c855ec",
+    "tests/test_entity_position.py": "81b7b918ee886d68d9f693626103d7fb3ea4348d50770e5898eb476210859d8d",
+    "tests/test_memory_registry.py": "02507803df9fecfaa2aeef73cecf09782378364d5db48326b6460e3464efae7f",
+    "tests/test_screenpoint.py": "29b8ca65619d40d10e9edd488c0bd08a7e0f8f52468545634a076034948240c1",
+    "tests/test_test_runner.py": "bb34b36924f1f2a120b5ea6e927f94cc4884c51a8fe59eed074d3e7c31e8446a",
+    "tests/test_win32_integration.py": "802d24b04b00e98809516780c4c44b45891dd2d7d7e1306623000d83295e6c8e",
+    "tools/run_tests.py": "a3334c9b5fa33e820b7b42fe18f88ce9cbdeb6cbc20b68d713a2768bc4fb6198"
+  },
+  "tests": [
+    {
+      "id": "test_cli.CliTests.test_capture_rejects_wrong_sample_before_any_process_access",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.18055970000568777
+    },
+    {
+      "id": "test_cli.CliTests.test_failure_replaces_a_previous_success_output",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.17253310000523925
+    },
+    {
+      "id": "test_cli.CliTests.test_nonfinite_numbers_have_explicit_portable_json_spelling",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.00103270000545308
+    },
+    {
+      "id": "test_cli.CliTests.test_overlapping_segments_and_missing_provenance_are_rejected",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.022525199980009347
+    },
+    {
+      "id": "test_cli.CliTests.test_snapshot_cli_runs_whole_pipeline_and_preserves_provenance",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.1799100000062026
+    },
+    {
+      "id": "test_entity_position.EntityPositionTests.test_all_sentinels_select_zero_origin_and_widen_transform",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.00013810000382363796
+    },
+    {
+      "id": "test_entity_position.EntityPositionTests.test_exact_size_and_nonzero_entity_offset",
+      "status": "passed",
+      "detail": "",
+      "seconds": 8.569998317398131e-05
+    },
+    {
+      "id": "test_entity_position.EntityPositionTests.test_float32_rounding_happens_before_widening",
+      "status": "passed",
+      "detail": "",
+      "seconds": 5.679999594576657e-05
+    },
+    {
+      "id": "test_entity_position.EntityPositionTests.test_insufficient_buffer_has_clear_bounds",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0005763999943155795
+    },
+    {
+      "id": "test_entity_position.EntityPositionTests.test_mixed_sentinels_apply_entire_anchor_triple",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.00020829998538829386
+    },
+    {
+      "id": "test_entity_position.EntityPositionTests.test_mutable_input_is_not_retained_and_nonfinite_values_are_preserved",
+      "status": "passed",
+      "detail": "",
+      "seconds": 7.219999679364264e-05
+    },
+    {
+      "id": "test_entity_position.EntityPositionTests.test_negative_anchors_are_signed_and_added_in_double",
+      "status": "passed",
+      "detail": "",
+      "seconds": 5.640002200379968e-05
+    },
+    {
+      "id": "test_entity_position.EntityPositionTests.test_offset_and_buffer_contract",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0005354000022634864
+    },
+    {
+      "id": "test_memory_registry.MemoryTests.test_adjacent_segments_and_input_immutability",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.00019820002489723265
+    },
+    {
+      "id": "test_memory_registry.MemoryTests.test_gaps_overlaps_bounds_and_short_reads",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.00022459999308921397
+    },
+    {
+      "id": "test_memory_registry.MemoryTests.test_wrong_build_is_rejected_before_reading",
+      "status": "passed",
+      "detail": "",
+      "seconds": 5.520001286640763e-05
+    },
+    {
+      "id": "test_memory_registry.RegistryTests.test_cycle_serial_mismatch_null_payload_and_read_failure_never_return_partial_frame",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.001359499990940094
+    },
+    {
+      "id": "test_memory_registry.RegistryTests.test_full_registry_to_adjusted_entity_to_double_position",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.00036449998151510954
+    },
+    {
+      "id": "test_memory_registry.RegistryTests.test_key_zero_is_not_rejected_as_a_null_pointer",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0007711000216659158
+    },
+    {
+      "id": "test_memory_registry.RegistryTests.test_mutation_between_passes_retries_then_observes_new_position",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0019142000237479806
+    },
+    {
+      "id": "test_memory_registry.RegistryTests.test_no_parent_or_out_of_world_does_not_decode_position",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.00044170001638121903
+    },
+    {
+      "id": "test_memory_registry.RegistryTests.test_node_budget_and_duplicate_key_are_bounded",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0008106000022962689
+    },
+    {
+      "id": "test_memory_registry.RegistryTests.test_null_root_and_empty_initialized_registry_are_distinct",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0003664999967440963
+    },
+    {
+      "id": "test_memory_registry.RegistryTests.test_persistent_mutation_has_a_bounded_failure",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0034174999746028334
+    },
+    {
+      "id": "test_memory_registry.RegistryTests.test_unknown_rtti_is_a_record_without_invented_position",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0003254000039305538
+    },
+    {
+      "id": "test_memory_registry.RttiTests.test_nonzero_complete_object_and_base_offsets_are_applied",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.00045779999345541
+    },
+    {
+      "id": "test_memory_registry.RttiTests.test_virtual_ambiguous_private_and_construction_cases_are_rejected",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0009088999941013753
+    },
+    {
+      "id": "test_screenpoint.ScreenPointTests.test_basis_orientation_and_world_origin_are_not_transposed",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0007026999955996871
+    },
+    {
+      "id": "test_screenpoint.ScreenPointTests.test_behind_and_zero_depth_do_not_become_targets",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.00015300000086426735
+    },
+    {
+      "id": "test_screenpoint.ScreenPointTests.test_camera_fields_and_center_projection",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.00010869998368434608
+    },
+    {
+      "id": "test_screenpoint.ScreenPointTests.test_invalid_camera_and_nonfinite_inputs_fail_explicitly",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.00029219998396001756
+    },
+    {
+      "id": "test_screenpoint.ScreenPointTests.test_quantization_is_half_away_and_float32_output",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0002474000211805105
+    },
+    {
+      "id": "test_screenpoint.ScreenPointTests.test_vertical_fov_and_non_square_viewport",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0002570000069681555
+    },
+    {
+      "id": "test_test_runner.RunnerTests.test_multiple_failing_subtests_produce_consistent_junit_counts",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.011587399989366531
+    },
+    {
+      "id": "test_test_runner.RunnerTests.test_run_start_invalidates_both_old_success_reports",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0053740000003017485
+    },
+    {
+      "id": "test_test_runner.RunnerTests.test_subtest_errors_and_class_setup_errors_are_reported_as_errors",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0015464999887626618
+    },
+    {
+      "id": "test_win32_integration.Win32IntegrationTests.test_close_waits_for_an_inflight_native_read",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.246281400002772
+    },
+    {
+      "id": "test_win32_integration.Win32IntegrationTests.test_full_path_module_selection_for_the_owned_interpreter",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.15710750001017004
+    },
+    {
+      "id": "test_win32_integration.Win32IntegrationTests.test_real_registry_reads_and_changes_from_owned_child",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.16855940001551062
+    },
+    {
+      "id": "test_win32_integration.Win32IntegrationTests.test_uncommitted_invalid_and_closed_reads_fail",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.18576819999725558
+    }
+  ]
+}

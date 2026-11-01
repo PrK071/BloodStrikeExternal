@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "date": "2026-10-26",
+  "sample": {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\BloodStrike.exe",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "image_size": 156143616
+  },
+  "test_status": "PASS",
+  "tests_run": 40,
+  "native_owned_child_tests": 4,
+  "game_process_access": false,
+  "gameplay_validated": false,
+  "publisher_certification": false,
+  "tested_source_hashes_match": 19,
+  "v4_sealed_files_unchanged": 98,
+  "camera_manifest_files_match": 60,
+  "camera_byte_records_checked": 3927,
+  "unique_instruction_rvas": 3683,
+  "data_records_checked": 0,
+  "scope": "byte correspondence and test results; not complete semantic CFG or live-game proof"
+}

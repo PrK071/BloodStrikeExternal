@@ -1,6 +1,14 @@
-# BloodStrikeExternal — estado real da investigação
+# BloodStrikeExternal — implementação e investigação
 
-Este repositório reúne o diagnóstico reproduzível e as análises estáticas da build examinada. **Ainda não contém ESP, aimbot, radar ou outro cheat funcional.** Os offsets incluídos foram fornecidos sem versão e continuam sem validação para esta build. Os executáveis do jogo, os diretórios de instalação e os bancos binários do Ghidra não fazem parte do repositório.
+Atualização V7, 01/11/2026: resolução passiva do `IsEnemy` selecionado, esquema `CombatState` demonstrado e câmera de entrada do `MainRenderViewport` integrados. **133 testes passaram**, com nove integrações nativas próprias. Comparação e reprodução em [INTEGRACAO-V7.md](INTEGRACAO-V7.md). O funcionamento em partida e a equivalência com pixels finais continuam sem validação; o processo protegido não foi acessado nesta etapa. Os parágrafos seguintes preservam os marcos anteriores.
+
+Atualização de 01/11/2026, V6: o pipeline conecta câmera tipada, registro, projeção, overlay GDI e planejamento de mira. A leitura de dados agora percorre o owner area → host, confere links primários armazenados, suporta managed/split dicts e lê contexto local/propriedades numéricas. Há verificador passivo do corpo base `IsEnemy`. **108 testes passaram localmente no Windows/Python 3.12.14, incluindo nove testes nativos próprios.** Detalhes, correção da V5 e comparação em [INTEGRACAO-V6.md](INTEGRACAO-V6.md). A CI está configurada, sem execução remota afirmada.
+
+**O ESP/aimbot completo ainda não está validado ou pronto no jogo.** O leitor preserva valores de HP/facção/estado quando sustentados pelos metadados; o método ativo de classificação, os getters e a codificação do estado de vida ainda não estão fechados. Câmera/viewport finais, previews e anchors diferentes permanecem abertos. Nenhum evento de mouse foi enviado nem o processo protegido foi acessado nesta integração. [INTEGRACAO-V5.md](INTEGRACAO-V5.md) e [IMPLEMENTACAO-E-TESTES.md](IMPLEMENTACAO-E-TESTES.md) preservam os marcos anteriores.
+
+Os layouts novos estão vinculados à amostra SHA-256 `ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747`, reconferida em disco. Os offsets de terceiros sem versão descritos no histórico abaixo continuam sem validação. Executáveis do jogo, instalações de ferramentas e bancos Ghidra não são distribuídos.
+
+Os registros abaixo preservam os resultados e limites das etapas anteriores; suas descrições de implementação referem-se às datas indicadas.
 
 ## Auditoria estática V2 — 21/10/2026
 

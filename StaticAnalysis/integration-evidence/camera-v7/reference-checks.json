@@ -1,0 +1,13 @@
+{
+  "checks": [
+    "positive_typed_aurora_recording",
+    "wrong_client_vptr_rejected",
+    "broken_camera_alias_rejected",
+    "broken_client_alias_rejected",
+    "unsupported_orthographic_storage_rejected",
+    "changed_projection_rejected"
+  ],
+  "passed": true,
+  "process_access": false,
+  "target_execution": false
+}

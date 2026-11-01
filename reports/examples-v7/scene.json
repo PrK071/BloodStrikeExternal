@@ -1,0 +1,269 @@
+{
+  "format": "bloodstrike-pipeline-frame-v1",
+  "source": "recorded_memory",
+  "provenance": "synthetic_V7_semantic_ABI_fixture_not_game_capture",
+  "module": {
+    "base": 6442450944,
+    "size": 156143616,
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747"
+  },
+  "frame": {
+    "capture": {
+      "registry": {
+        "root": 8589934592,
+        "sentinel": 8589934848,
+        "records": [
+          {
+            "node": 8589935104,
+            "key": 305419896,
+            "component": 8589938688,
+            "actor": 8589942784,
+            "parent": 8589947008,
+            "in_world": true,
+            "entity": 8589947008,
+            "position": {
+              "position": [
+                101.25,
+                -202.5,
+                303.75
+              ],
+              "local_translation": [
+                1.25,
+                -2.5,
+                3.75
+              ],
+              "anchor_raw": [
+                100,
+                -200,
+                300
+              ],
+              "anchor_used": [
+                100,
+                -200,
+                300
+              ],
+              "anchor_applied": true,
+              "transform": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                101.25,
+                -202.5,
+                303.75
+              ]
+            },
+            "position_status": "decoded_unclassified",
+            "dynamic_descriptor_rva": 132013432
+          }
+        ],
+        "started_ns": 345104964443300,
+        "finished_ns": 345104964643800,
+        "attempts": 1,
+        "consistency": "two_equal_passes_no_atomicity_or_lifetime_guarantee",
+        "gameplay_classification": "unclassified"
+      },
+      "camera": {
+        "engine_root": 8589935616,
+        "gameplay": 8589936128,
+        "player": 8589950976,
+        "camera_address": 8589955072,
+        "camera": {
+          "origin": [
+            0.0,
+            0.0,
+            13.75
+          ],
+          "basis": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "width": 1920,
+          "height": 1080,
+          "field_of_view": 90.0
+        },
+        "position": {
+          "position": [
+            100.0,
+            -200.0,
+            313.75
+          ],
+          "local_translation": [
+            0.0,
+            0.0,
+            13.75
+          ],
+          "anchor_raw": [
+            100,
+            -200,
+            300
+          ],
+          "anchor_used": [
+            100,
+            -200,
+            300
+          ],
+          "anchor_applied": true,
+          "transform": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            100.0,
+            -200.0,
+            313.75
+          ]
+        },
+        "selection": "rtti_checked_Player.Camera_candidate_not_final_viewport_observation"
+      },
+      "started_ns": 345104964100900,
+      "finished_ns": 345104964866700,
+      "attempts": 1,
+      "consistency": "equal_camera_reads_around_two_registry_passes_no_atomicity_or_ABA_guarantee",
+      "render_camera": {
+        "state": 8590027776,
+        "client": 8590022056,
+        "viewport": 8590025912,
+        "camera": 8590022184,
+        "kind": "aurora",
+        "width": 1920,
+        "height": 1080,
+        "projection": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "source_copy_matched": true,
+        "projection_convention": "unresolved_native_projection_only",
+        "presented_pixels_validated": false
+      },
+      "render_camera_error": null
+    },
+    "scene": {
+      "width": 1920,
+      "height": 1080,
+      "captured_ns": 345104964100900,
+      "actors": [
+        {
+          "observation": {
+            "node": 8589935104,
+            "key": 305419896,
+            "component": 8589938688,
+            "actor": 8589942784,
+            "parent": 8589947008
+          },
+          "point": {
+            "x": 1027.5,
+            "y": 675.0,
+            "depth": 10.0,
+            "camera_z": -10.0,
+            "in_front": true,
+            "inside_viewport": true
+          },
+          "classification": {
+            "category": "opponent",
+            "alive": true,
+            "visible": null,
+            "local": false,
+            "evidence": "verified_base_IsEnemy_dispatch_and_integer_operands; effective_CombatState_verified",
+            "facts": {
+              "area": 8590001688,
+              "host": 8590001152,
+              "values": [],
+              "interpreter_id": 0,
+              "local_source": "genv.player_with_reverse_area_identity",
+              "diagnostics": [
+                "numeric properties: invalid Python metadata pointer: 0x0"
+              ],
+              "relation": true,
+              "relation_rule": "verified_base_faction_comparison",
+              "predicate_function": 8590008200,
+              "life_state_name": "ALIVE",
+              "life_state_source": "instance"
+            }
+          }
+        }
+      ],
+      "rejected": [],
+      "coordinate_contract": "conditional_same_observed_anchor_origin",
+      "final_viewport_validated": false
+    },
+    "commands": [
+      {
+        "kind": "circle",
+        "x": 960,
+        "y": 540,
+        "radius": 180,
+        "color": [
+          90,
+          90,
+          90
+        ],
+        "width": 1
+      },
+      {
+        "kind": "circle",
+        "x": 1028,
+        "y": 675,
+        "radius": 4,
+        "color": [
+          255,
+          70,
+          70
+        ],
+        "width": 1
+      },
+      {
+        "kind": "text",
+        "x": 1035,
+        "y": 678,
+        "color": [
+          255,
+          70,
+          70
+        ],
+        "text": "opponent #12345678"
+      }
+    ],
+    "aim": {
+      "target": null,
+      "dx": 0,
+      "dy": 0,
+      "captured_ns": 345104964100900,
+      "reason": "inactive"
+    },
+    "render_status": "fresh"
+  },
+  "gameplay_validated": false,
+  "input_dispatched": false
+}

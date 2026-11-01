@@ -1,0 +1,107 @@
+{
+  "target_sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "artifacts": [
+    {
+      "path": "01-runtime-seeds.py",
+      "bytes": 1842,
+      "sha256": "3d237cb987b4c7beb6cdf7e240be21364a9546ef0ab0b95f7c288e988fafa95d"
+    },
+    {
+      "path": "02-follow.py",
+      "bytes": 390,
+      "sha256": "f4675b3492535c1f9c73990eb5d5de7726cb4c75d5dca7bede3e5e5d80052bf7"
+    },
+    {
+      "path": "03-runtime-root.py",
+      "bytes": 1057,
+      "sha256": "c7225107f686825b1fcac9e310a14f9332f51e50f7862026984caef3c704dc0b"
+    },
+    {
+      "path": "04-head-and-module.py",
+      "bytes": 1844,
+      "sha256": "8189dcad3527d92bf21d1cdb4c9830755969391160df98e6944af02d7e600806"
+    },
+    {
+      "path": "05-contract.py",
+      "bytes": 3793,
+      "sha256": "77022defa5df6471845e4e8e90f953c53a691c83484f3a8b9495c8418f437887"
+    },
+    {
+      "path": "head-and-module.json",
+      "bytes": 1229954,
+      "sha256": "d160322a3a8e36ad805f2862314ad9a77e756b21ab75290ea645463e96d7a1fa"
+    },
+    {
+      "path": "Include_internal_pycore_debug_offsets.h",
+      "bytes": 12616,
+      "sha256": "7c8f6c4f053bcb0fd725c490d47e453a3551c2805b9c728ce360a194ec0d0dfa"
+    },
+    {
+      "path": "Include_internal_pycore_interp_structs.h",
+      "bytes": 31970,
+      "sha256": "4ad10da0b90cc63311b287408d9be4f395ad7263ca6cbc8afad5ac798d64efe1"
+    },
+    {
+      "path": "Include_internal_pycore_moduleobject.h",
+      "bytes": 1747,
+      "sha256": "f6636f8466bf702919bf8ff19dc69872ddc727348fbd79736100512b010b70cb"
+    },
+    {
+      "path": "Include_internal_pycore_runtime_structs.h",
+      "bytes": 10027,
+      "sha256": "7cf4d18fa01d969882d6a56a6f312b9add439c924226e650797bfb8fdc156d35"
+    },
+    {
+      "path": "LICENSE-CPYTHON-3.14.txt",
+      "bytes": 13805,
+      "sha256": "b160500215c566001a9e5f91fff779ea75cd01cc0b5518c31aadd1c18403fdd5"
+    },
+    {
+      "path": "local-player-route.json",
+      "bytes": 3677,
+      "sha256": "829c5123c168e6f74ce70bd3d0a97e71dd56fefe5ef18928e863c042dac7e134"
+    },
+    {
+      "path": "LOCAL-PLAYER.md",
+      "bytes": 5447,
+      "sha256": "3b8ed51f3d13996c610e4baa93b23761e3f061ad9041523b4772480e47123fbf"
+    },
+    {
+      "path": "Objects_moduleobject.c",
+      "bytes": 42576,
+      "sha256": "4761392749b09e5b86ba34b4cf3e099d779e6f571aa527225b27581b3009b29d"
+    },
+    {
+      "path": "Python_import.c",
+      "bytes": 147463,
+      "sha256": "e3e7437a8a058e8740936bd6151906862e95a9bbb943b8a61872e4369e3ec4db"
+    },
+    {
+      "path": "Python_pystate.c",
+      "bytes": 95319,
+      "sha256": "11bbde436e51b7a403a8e347a1d57ecd5d604f99bb7a3311bcab9e7a03057f10"
+    },
+    {
+      "path": "runtime-follow.json",
+      "bytes": 58660,
+      "sha256": "5679531745432e9ff7350451c52640f5dbfe41fb4fb62566c7c7b3a386145f5c"
+    },
+    {
+      "path": "runtime-root.json",
+      "bytes": 159891,
+      "sha256": "73208c51541ac11019a4e9acc4f1a9f85ef9931938bb996a3926f2b9eb45df38"
+    },
+    {
+      "path": "runtime-seeds.json",
+      "bytes": 271508,
+      "sha256": "abc416113beada0135509e53a89b93c870d440c95541e8ba29021c3949e489aa"
+    },
+    {
+      "path": "source-manifest.json",
+      "bytes": 1706,
+      "sha256": "8c39dddb624c9144f28b13f9f5c2d15c5839dd0d8695d316ed3d8583bea62a46"
+    }
+  ],
+  "target_executed": false,
+  "process_opened": false
+}

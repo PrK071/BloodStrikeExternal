@@ -1,0 +1,559 @@
+{
+  "index_sha256": "bb3782da03b95d66451a598add8fe0923405be0dde53a8844b2f8bc107a6ced3",
+  "target_sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "scope": "bounded static string scan only among candidate filenames containing combat_avatar, combatavatarmembers, or assist_aim; decompressed stream hashes checked; no marshal parse or execution",
+  "candidate_count": 118,
+  "terms": [
+    "StartAssistAimMelee",
+    "combat_states",
+    "CombatState",
+    "KNOCKED"
+  ],
+  "hits": [
+    {
+      "index": 9715,
+      "paths": [
+        "gclient/gameplay/logic_snipe/combat_avatar_snipe.py"
+      ],
+      "compressed_sha256": "30c8d7aa66cf4a7210f989fc2008d655df5f9b7c08ad9b24cf58d06328ebe0e2",
+      "decoded_sha256": "943fbc9131603f1bb59e2dfc6a8daa094c3c8cb5b413feabc4b08518cde8ee59",
+      "terms": [
+        "StartAssistAimMelee"
+      ]
+    },
+    {
+      "index": 10842,
+      "paths": [
+        "gclient/gameplay/logic_arms_race_mode/combat_avatar_arms_race_mode.py"
+      ],
+      "compressed_sha256": "eaeeaf30f88c12de08828c9953f34dc6d3f5903d677fcbb3c68ea5fc337453c4",
+      "decoded_sha256": "a7155c97c7ee97ad8dd411d6fc7093564a6d1c9fffd4c35192395b776ddfbc8e",
+      "terms": [
+        "StartAssistAimMelee"
+      ]
+    },
+    {
+      "index": 14066,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_combat_unit.py"
+      ],
+      "compressed_sha256": "823855f89ae4600f6bfd21779f6a982e33aa8a2921f6a1a713625f9a3f4e5a27",
+      "decoded_sha256": "5a2ccf79f644a908e6475ed76c870312fb61526b260dfdc0dc90d0c772c9c648",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 20564,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_help.py"
+      ],
+      "compressed_sha256": "ce10bbdb6570536f7b46a963d14463397f66c0fb6e84776f0820eae8b431123f",
+      "decoded_sha256": "94b6198c7b0290922413db7e41efe362a2a301736b97ba50b4f25356b52204e4",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 30485,
+      "paths": [
+        "gclient/gameplay/logic_moba/combat_avatar_moba.py"
+      ],
+      "compressed_sha256": "9282ec025d5ec53e2e4381b68ca7366bac9e75e6fe47c6de3ba824b352f6600c",
+      "decoded_sha256": "90277f10f9983fb0d8ec91bb0372a8233f9b751fb5f2757458da07e49b6b15e2",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 33033,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_spell.py"
+      ],
+      "compressed_sha256": "44a93d19feb51b68ec34ac012a1add15714a1234f6a283c5c853b6968eb80588",
+      "decoded_sha256": "cedf56187ae334f9f96a655e88838239ad1dcf536c7c818c7938c8ef0ff287d9",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 39973,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_vehicle.py"
+      ],
+      "compressed_sha256": "1d347a947be868bcc338a0172c540b2029134959571763f84b55fb0edaed942b",
+      "decoded_sha256": "99a625b26bcd26c6d73796fce6c00f1bd06e72a8da466cc05adc0a0fc63455ed",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 41266,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_wall_weapon_raise.py"
+      ],
+      "compressed_sha256": "b2b582b6b2349f1c83ae73d6d393170b9babf7651c26952222df500d71bfa01c",
+      "decoded_sha256": "ae25cffc24843163710321aeeabbe30ef0bfa97cb8013ae0609eb08045fcbb48",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 42241,
+      "paths": [
+        "gclient/gameplay/logic_peekaboo/combat_avatar_peekaboo.py"
+      ],
+      "compressed_sha256": "e4f7878ba1be8ac08d9b536a87ac2fb29969383ca2c1beb2b2e1e70bf9033830",
+      "decoded_sha256": "b46b0fc20bb345ff1cd5ffac082b4666962cea5f634b0f01120218c2b7a49414",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 42830,
+      "paths": [
+        "gclient/gameplay/logic_big_head/combat_avatar_bighead.py"
+      ],
+      "compressed_sha256": "0cb499ca7f402eb656aab557834a2a1227ac836859bfe49c77b3753266a46404",
+      "decoded_sha256": "a161a24041e4d8a93f87c0496a82aadd55cd74c48f8511ab2ea6bbabb216e400",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 46575,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_sound.py"
+      ],
+      "compressed_sha256": "d7c6deb19445be1378840b7e11198e53f95ebf1589ee991b9f4d8940011022d5",
+      "decoded_sha256": "935b1c8443e4a9b6c417425f91653d1b04666ab6b4cb0b5e175dcf7b06b88ff2",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 47505,
+      "paths": [
+        "gclient/gameplay/logic_moba_halloween/combat_avatar_moba_halloween.py"
+      ],
+      "compressed_sha256": "cf2fb70a3396a5aa47a7cd6a88ec72d613dcf7038d1b2e5ace75c6d276c48f9a",
+      "decoded_sha256": "8e06611dd5ccaf1293d170864e4a0703ef489a150097a39b5520ab0fb242d237",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 48033,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_combat_antiplugin.py"
+      ],
+      "compressed_sha256": "378a72a80ee20b3716ed72f19e0cf3d82a1d54909f3876234ab4b9a7e5fe62cd",
+      "decoded_sha256": "cdf95eb7ee7c24743e0e9e319ae622307cd60071dd459ff65dcab10016d4bf1b",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 50459,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_moving_platform.py"
+      ],
+      "compressed_sha256": "89f848dc7507f240fe6693c7f2c80d1c0585446d1825e20b5e708b363101962c",
+      "decoded_sha256": "4dc2cde48019d0320a5750590a909d734cc90f1b8f8f6b7539a297057c0a215b",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 54237,
+      "paths": [
+        "gclient/gameplay/logic_blasting/combat_avatar_blasting.py"
+      ],
+      "compressed_sha256": "090a298d05d1afc9cae6215465c01c6fb564f9d14bff5182a29f88bf98d88e35",
+      "decoded_sha256": "1c9d78ca425f571689048d7d1102f1f503d52d62dfe5ad790e388943d495f8d8",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 55178,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_space_black_hole.py"
+      ],
+      "compressed_sha256": "9093f49386940f2776277769a07a43467964fab1a8e682e7d5861f9502230141",
+      "decoded_sha256": "2218a08a3252176d1a0837aa9d68c6bcc408451fc018e212f2c73c01faad4d41",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 55373,
+      "paths": [
+        "gclient/gameplay/logic_moba_zombie/combat_avatar_moba_zombie.py"
+      ],
+      "compressed_sha256": "b4b9c2268e46b45af11442d76873c411aea455418cdea82844f1d83e4739948f",
+      "decoded_sha256": "04bea55a5b1286e1ddbfd5a8623457fe0b83b80628e6f9b3413f9da8e41f55b7",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 55455,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_dj_battle_rhythm.py"
+      ],
+      "compressed_sha256": "e5a8a90ff2317abf2f007397ca6f8e62b70d0963c48beda363a0961f56eadc66",
+      "decoded_sha256": "af52b3edb9d7ed2c99f471e6f11308b46a443665fcfc064e7798d50d5f0d90f9",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 55679,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_execute.py"
+      ],
+      "compressed_sha256": "cae52f22127abec600dfafebf9c397099495f72535a4a59d99c672596317cf8a",
+      "decoded_sha256": "523157eb2f8e894cfa4bdbd210c15c2aee2315de016e56d4f6f034a3eab86e4f",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 57482,
+      "paths": [
+        "gclient/gameplay/logic_moba_lockdown/combat_avatar_lock_down.py"
+      ],
+      "compressed_sha256": "50f790fd0bda39c3431c44925c3cbc1977139cf1ca9754b7f4abb387dce2f55e",
+      "decoded_sha256": "abdc2a147fc5bb7ee0bd00ff1fd6cfe52a0fa6213f943eb6e4728c336d579a65",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 58838,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_bomb.py"
+      ],
+      "compressed_sha256": "707009fe1e978f7636df7b5845009f1462fbcfba6a188e67e9ca34b4b222d9cc",
+      "decoded_sha256": "f5cf76867e46c1fa805485f88e028a08690a2cf9972b76b9cb9973458d5f3703",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 61251,
+      "paths": [
+        "gclient/gameplay/logic_shootingrange/combat_avatar_shootingrange.py"
+      ],
+      "compressed_sha256": "3b6e9b1f1ddcceb489849659b2088122bc8ed93a291299f6e73d12bed324ff69",
+      "decoded_sha256": "5b365a827b487318c6848bc443ebd451f3df0f91bdbdb52b2aae0c57bf838b93",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 61925,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_model.py"
+      ],
+      "compressed_sha256": "739c6fca121b75c6b3edcd2e3887e223724ee6510ebb1d872dd81f2823df4c98",
+      "decoded_sha256": "04bde99e6e2715d32cacce94496d4aba3f89919aae650d513a5468da1e790f4c",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 61980,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_house_detector.py"
+      ],
+      "compressed_sha256": "51b2022d5579a638333ae6960db6b7be065d3623163e419e0f64d109581cd9be",
+      "decoded_sha256": "fad3c16125ef17d1e19c73b04faba98c4940622c24c66665b20f855d36ffc5da",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 64882,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_emote.py"
+      ],
+      "compressed_sha256": "fc527a8ea8f0746ee349022dd62a3b0e3ae31802fd2631a09511b82031668a5e",
+      "decoded_sha256": "1e08973c017e7e8599be720d7eb530a2a18f5b11e3506b3a3ba6e8fc47a191f4",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 65147,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/robot_combat_avatar.py"
+      ],
+      "compressed_sha256": "2754cc437d77b6e26a19f6a2406cc8d55c89099fd50b3fe38a878137ac8e36c0",
+      "decoded_sha256": "94a653c8909c7dfda197a2a59971467c8aace43df45b7fb5c01f9dc15ecc18ab",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 68262,
+      "paths": [
+        "gclient/framework/util/assist_aim_util.py"
+      ],
+      "compressed_sha256": "216ac1e4309dba0cc38db6a3e53d24388f87895454d189b3cd386c1444910a13",
+      "decoded_sha256": "8163bc535975fd931d2df900fc04bf0d0402e1e5555aa6c2c3d2ffd53168f3de",
+      "terms": [
+        "combat_states",
+        "CombatState"
+      ]
+    },
+    {
+      "index": 75327,
+      "paths": [
+        "gclient/gameplay/logic_grand_theft/combat_avatar_grand_theft.py"
+      ],
+      "compressed_sha256": "aeaa63952a1e2d4be230e5358d294fc04cee2f830c47125ebcaa9cc9e5ece406",
+      "decoded_sha256": "67cd17216d76718e2fc3f272373a03295428dcf3c4e18cbeca3324a5c00709c9",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 78274,
+      "paths": [
+        "gclient/gameplay/logic_squad_fight/combat_avatar_squad_fight.py"
+      ],
+      "compressed_sha256": "62836bd9e1455c6ade92455c2edd5d3d55455d80255795840870802225f71b0d",
+      "decoded_sha256": "b9fdd4a7712f27fbc349da5a218ba2001c22511cc252ddb0d9e882e9a823f87e",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 80873,
+      "paths": [
+        "gclient/gameplay/logic_dmz/combat_avatar_dmz.py"
+      ],
+      "compressed_sha256": "f3a9895b4113ab18d1b27557b416bd91e748f5c1a25d60ea711fa2c6be03d204",
+      "decoded_sha256": "8ec3d3d3d3abb7b75ce13511cb3d17b39a31161be4a4907977c4c553c7c14413",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 81954,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_buff.py"
+      ],
+      "compressed_sha256": "5a3f0e6b1cca2da4563a53f921578b676384f7e4f67e798884e6e9569965c99f",
+      "decoded_sha256": "35f28519dc681924ec07898dd7bed5da9601a59ee4ac2da69c681e8f1391ceae",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 82537,
+      "paths": [
+        "gclient/gameplay/logic_moba_faction/combat_avatar_moba_faction.py"
+      ],
+      "compressed_sha256": "6d740294c4acaedf9e53f9fef16b4f565215aa645d8f7bb201200cab14801500",
+      "decoded_sha256": "41563cf1fee485d09084259cc1fd1e701fbc634f1fdfc3212c64d73e23931cc6",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 83324,
+      "paths": [
+        "gclient/gameplay/logic_rivals/combat_avatar_rivals.py"
+      ],
+      "compressed_sha256": "79f842d618113fe506ddcf8591fb98cedf566c219f2e8c02d2f5b3b0515a7e1a",
+      "decoded_sha256": "a8eee9ebc0f3c66379f372f1068ef6fd61fc52a68b0aa97aff9dfe9d02626aba",
+      "terms": [
+        "StartAssistAimMelee",
+        "CombatState"
+      ]
+    },
+    {
+      "index": 86590,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_assist_aim.py"
+      ],
+      "compressed_sha256": "31f9b7e081a7e8bd64de7dd23d3f4d9d81e155d8f9a2b438cbe6dce76e97135c",
+      "decoded_sha256": "d0fe9e911b355def749f5ecb6ff3ea1f9872002fb0ad00f854ba9c3efba99b11",
+      "terms": [
+        "StartAssistAimMelee",
+        "combat_states",
+        "CombatState"
+      ]
+    },
+    {
+      "index": 95479,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_input_controller.py"
+      ],
+      "compressed_sha256": "0e3fe147bbb6fb70be263a2d295cbcb5297011a68e2aa0d05139aa0414de40e1",
+      "decoded_sha256": "b4284b031a30a7771db2d17536a47f4f579ab3615d30f99ad82240209135d3bd",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 102151,
+      "paths": [
+        "gclient/gameplay/logic_desperado_trifecta/combat_avatar_desperado_trifecta.py"
+      ],
+      "compressed_sha256": "69e782f6716fcd1c55df7afc962a80d4d89f998f8e2e0ed9ec496bf73cc504a2",
+      "decoded_sha256": "0357981f44aa3a954413fe3c6236222bb09d17cdf4f0d6c604337f2143953a5f",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 112733,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_dancing_cure.py"
+      ],
+      "compressed_sha256": "c6e8f5a68d44c91caebea1d4f5440d105165ab6ba8ab939533c1c0a194fcbbb6",
+      "decoded_sha256": "c1ebc0baaa6885447c44c664dca6b8833ca14b701f0174717cfbae247eec0f0c",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 113733,
+      "paths": [
+        "gclient/gameplay/logic_rookieguide/combat_avatar_rookieguide.py"
+      ],
+      "compressed_sha256": "0d54e4f4c068d2648e8933da4d8d9a93e785a3bc1cf1704ba2b4c4960deda834",
+      "decoded_sha256": "164d5c8d8039e25e58903f20400db9825b0b31a259c1361218b74b2e5e041a42",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 117948,
+      "paths": [
+        "gclient/gameplay/logic_gun_fight/combat_avatar_gun_fight.py"
+      ],
+      "compressed_sha256": "42d2b806b47d2b61853e9ab8f03b5fbf7ef2e6d12f798184ff330a881057bc7d",
+      "decoded_sha256": "d7827751f366634eb6e1b5dd4f86943ce588fb25bd4474d02dca81a5eaf53e08",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 123809,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_spell_juren.py"
+      ],
+      "compressed_sha256": "5c673c030a8c3396b05eff3b34e08f403421f3bef4c017defa9f2098f9e469ec",
+      "decoded_sha256": "da3df22f2c13a3c1cffbfba887b345c983f95e0f2d8d9f3a5c11d1325f5ca8a0",
+      "terms": [
+        "StartAssistAimMelee",
+        "combat_states",
+        "CombatState"
+      ]
+    },
+    {
+      "index": 126990,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_replay.py"
+      ],
+      "compressed_sha256": "e1f0f253a630b13dacfd18240a44bd5f39b364c346dbb8402267726f1bb5a627",
+      "decoded_sha256": "ca8bd740a70e55468d87e2e521b890aaec07842df266a8ae4052523f38dbc5bc",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 128152,
+      "paths": [
+        "gclient/gameplay/logic_hotspot/combat_avatar_hotspot.py"
+      ],
+      "compressed_sha256": "e34c9d918005323db416713f9d301ee89419c5fdbdb9e52911552cf6714aa53f",
+      "decoded_sha256": "21de4c7a42813d265d4b92816f6d2146e489fecc5d5d938ebdce38fdae583d4c",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 130168,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_combat_item.py"
+      ],
+      "compressed_sha256": "3b73558206f3c882626b2d50ca8eac5d3c467753a7f59273e12349985a171267",
+      "decoded_sha256": "d287b790eeaf829e610dcf9cc93854668d9ff68e69fc1f7cb21d64a2eed1dfe0",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 132447,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_control_target.py"
+      ],
+      "compressed_sha256": "636557e2b42ece36f4b05cb02a4ddc0876f44476cde5020cbb522d61a01ed974",
+      "decoded_sha256": "c5af5e4c85d4b08e2545ea1fff3b8b7e3e1860daa5e466809aebf3e04293d0f0",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 135369,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_motion.py"
+      ],
+      "compressed_sha256": "787adf958a7abb591883d6c4e5f851c889b8292da263406d02ade171e28c83b7",
+      "decoded_sha256": "a1c2d1590da5e51076abfe1b33eb0d01b11b2d877c81bff44372f0f568dbf0e8",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 137996,
+      "paths": [
+        "gclient/gameplay/logic_moba_lightning/combat_avatar_moba_lightning.py"
+      ],
+      "compressed_sha256": "665cad884e535ecd821dacf96b684f205e2bfcc6be4520e59a1b00fdc2fa07f0",
+      "decoded_sha256": "3e4d51377955066f84b4a4f903f9e610204c96111b0fa6dfb7320095d65b4c25",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 138967,
+      "paths": [
+        "gclient/gameplay/logic_moba_titan_2/combat_avatar_moba_titan_2.py"
+      ],
+      "compressed_sha256": "14d27e016520130ef98ed5576ab297427d61d3cd09929e99497093c6e9d1f451",
+      "decoded_sha256": "f1281156289acaad1dbd59aa8ea07078649281487fc31f0aecfd1b3f602db493",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 141715,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_item.py"
+      ],
+      "compressed_sha256": "565a0e3810073170295617abf8dbec9d8a2b3c922b1bc022c7436985c7167ee0",
+      "decoded_sha256": "c4950071ab5724f67345bd898dacfd7892737acc5e93db62d7e04e304b017d70",
+      "terms": [
+        "CombatState"
+      ]
+    },
+    {
+      "index": 142391,
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_swim.py"
+      ],
+      "compressed_sha256": "126e3b1973186112b8cbc72e68def48371201c5e80a02269fbeb094f124e46e6",
+      "decoded_sha256": "03c677bc8197a0556b36b8b91d11ce8cb0c9ea83c315eac7a26eaebf96ff3ae2",
+      "terms": [
+        "CombatState"
+      ]
+    }
+  ]
+}

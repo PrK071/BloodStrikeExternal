@@ -1,0 +1,21 @@
+{
+  "format": "bloodstrike-predicate-body-v1",
+  "source": "recorded_memory",
+  "provenance": "synthetic_V6_ABI_fixture_not_game_capture",
+  "module": {
+    "base": 6442450944,
+    "size": 156143616,
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747"
+  },
+  "body": {
+    "function": 8590008200,
+    "code": 8590007816,
+    "canonical_sha256": "b632457e07b643ddb05ff3b4de958097174ce648941cd15075b3b9f6831f20c5",
+    "filename": "gshare/game_logic/igame_logic_base.py",
+    "qualname": "IGameLogicBase.IsEnemy",
+    "active_dispatch_verified": false,
+    "operand_semantics_verified": false
+  },
+  "gameplay_validated": false,
+  "target_code_executed": false
+}

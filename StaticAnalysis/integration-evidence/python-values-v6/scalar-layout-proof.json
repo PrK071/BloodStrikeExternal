@@ -1,0 +1,78 @@
+{
+  "sample": {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\BloodStrike.exe",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "image_size": 156143616
+  },
+  "method": "int via Bool_Type.tp_base; unique float type with pinned metatype/name/layout",
+  "integer": {
+    "rva": "0x7a18530",
+    "file_offset": "0x7a16b30",
+    "bytes": "00 00 00 c0 00 00 05 00 70 51 a1 47 01 00 00 00 00 00 00 00 00 00 00 00 f0 27 e9 44 01 00 00 00 18 00 00 00 00 00 00 00 04 00 00 00 00 00 00 00 f0 9f a7 42 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 b0 9e a7 42 01 00 00 00 c0 89 a1 47 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 80 a0 a7 42 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 d0 94 a0 42 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 40 01 00 00 00 00",
+    "name": "int",
+    "name_rva": "0x4e927f0",
+    "metatype": "0x7a15170",
+    "basicsize": 24,
+    "itemsize": 4,
+    "flags": "0x1400400"
+  },
+  "float": {
+    "rva": "0x7a12e10",
+    "file_offset": "0x7a11410",
+    "bytes": "00 00 00 c0 00 00 05 00 70 51 a1 47 01 00 00 00 00 00 00 00 00 00 00 00 58 aa e4 44 01 00 00 00 18 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 c0 61 a1 42 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 30 62 a1 42 01 00 00 00 f0 2c a1 47 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 66 a1 42 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 d0 94 a0 42 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 40 00 00 00 00 00",
+    "name": "float",
+    "name_rva": "0x4e4aa58",
+    "metatype": "0x7a15170",
+    "basicsize": 24,
+    "itemsize": 0,
+    "flags": "0x400400"
+  },
+  "bytes_type": {
+    "rva": "0x7a16100",
+    "file_offset": "0x7a14700",
+    "bytes": "00 00 00 c0 00 00 05 00 70 51 a1 47 01 00 00 00 00 00 00 00 00 00 00 00 c0 b7 55 45 01 00 00 00 21 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 c0 57 a3 42 01 00 00 00 b0 6a a1 47 01 00 00 00 90 64 a1 47 01 00 00 00 e0 64 a1 47 01 00 00 00 90 5f a3 42 01 00 00 00 00 00 00 00 00 00 00 00 d0 57 a3 42 01 00 00 00 d0 94 a0 42 01 00 00 00 00 00 00 00 00 00 00 00 f8 64 a1 47 01 00 00 00 00 04 40 08 00 00 00 00",
+    "name": "bytes",
+    "name_rva": "0x555b7c0",
+    "metatype": "0x7a15170",
+    "basicsize": 33,
+    "itemsize": 1,
+    "flags": "0x8400400"
+  },
+  "none_type": {
+    "rva": "0x7a09df0",
+    "file_offset": "0x7a083f0",
+    "bytes": "00 00 00 c0 00 00 05 00 70 51 a1 47 01 00 00 00 00 00 00 00 00 00 00 00 98 d0 18 45 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 c0 c0 a0 42 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 a0 c0 a0 42 01 00 00 00 70 a1 a0 47 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 30 c1 a0 42 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+    "name": "NoneType",
+    "name_rva": "0x518d098",
+    "metatype": "0x7a15170",
+    "basicsize": 0,
+    "itemsize": 0,
+    "flags": "0x0"
+  },
+  "none_singleton_rva": "0x7a0a150",
+  "headers_sha256": {
+    "floatobject.h": "019ed99be32f36f68101378659f3bb62f8bd4b8a7affbfde98c330eac0d5fc92",
+    "longintrepr.h": "270050af446bed77d482082c0ea6733973317c7ed610ef6e9a0dd4c009361a07",
+    "pycore_long.h": "8283aa00e3294c31421aa16e4cadca9cc0102a5bf0c00af8cc1d16cf4a21b409",
+    "bytesobject.h": "ccd6991fd6d930143d98ed91c20867328fb5b258555670eb3c4d91b188d4009a",
+    "long-type-initializer.c.txt": "2f61e1a08a00474665ae3dfe47fcd28efcfc6b16f6a7f105b29a01c6e67ab5ad"
+  },
+  "layout": {
+    "PyLong": {
+      "tag_offset": 16,
+      "digits_offset": 24,
+      "digit_bytes": 4,
+      "digit_bits": 30,
+      "sign_mask": 3,
+      "count_shift": 3,
+      "small_int_flag": 4
+    },
+    "PyFloat": {
+      "value_offset": 16,
+      "sizeof": 24
+    }
+  },
+  "digit_bits_proof": "PyLong_Type.tp_itemsize=sizeof(digit), native value4; pinned header has digit4 only in 30-bit branch",
+  "target_executed": false,
+  "protected_process_access": false
+}

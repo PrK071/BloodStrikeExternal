@@ -1,0 +1,877 @@
+[
+  {
+    "string": "ICamera.ViewMatrix",
+    "rva": "0x4f45038",
+    "blocks": [
+      {
+        "pointer_rva": "0x4f43b30",
+        "qwords": [
+          {
+            "rva": "0x4f43b00",
+            "value": "0x144f427f0",
+            "string": "ICamera"
+          },
+          {
+            "rva": "0x4f43b08",
+            "value": "0x538b34db00000007",
+            "string": null
+          },
+          {
+            "rva": "0x4f43b10",
+            "value": "0x144e479c0",
+            "string": "Matrix4x3"
+          },
+          {
+            "rva": "0x4f43b18",
+            "value": "0x805c737400000009",
+            "string": null
+          },
+          {
+            "rva": "0x4f43b20",
+            "value": "0x144e90260",
+            "string": "ViewMatrix"
+          },
+          {
+            "rva": "0x4f43b28",
+            "value": "0x16e9c1590000000a",
+            "string": null
+          },
+          {
+            "rva": "0x4f43b30",
+            "value": "0x144f45038",
+            "string": "ICamera.ViewMatrix"
+          },
+          {
+            "rva": "0x4f43b38",
+            "value": "0xb9aac94e00000012",
+            "string": null
+          },
+          {
+            "rva": "0x4f43b40",
+            "value": "0x99000000010200",
+            "string": null
+          },
+          {
+            "rva": "0x4f43b48",
+            "value": "0x102",
+            "string": null
+          },
+          {
+            "rva": "0x4f43b50",
+            "value": "0x14093f1a0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43b58",
+            "value": "0x140940a20",
+            "string": null
+          },
+          {
+            "rva": "0x4f43b60",
+            "value": "0x14058a9d0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43b68",
+            "value": "0x14058d970",
+            "string": null
+          },
+          {
+            "rva": "0x4f43b70",
+            "value": "0x140940ac0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43b78",
+            "value": "0x14093a9e0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43b80",
+            "value": "0x140939c00",
+            "string": null
+          },
+          {
+            "rva": "0x4f43b88",
+            "value": "0x140940ba0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43b90",
+            "value": "0x140940b80",
+            "string": null
+          },
+          {
+            "rva": "0x4f43b98",
+            "value": "0x140940ae0",
+            "string": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "string": "ICamera.FieldOfView",
+    "rva": "0x4f4b278",
+    "blocks": [
+      {
+        "pointer_rva": "0x4f43e60",
+        "qwords": [
+          {
+            "rva": "0x4f43e30",
+            "value": "0x144f427f0",
+            "string": "ICamera"
+          },
+          {
+            "rva": "0x4f43e38",
+            "value": "0x538b34db00000007",
+            "string": null
+          },
+          {
+            "rva": "0x4f43e40",
+            "value": "0x144e4aa58",
+            "string": "float"
+          },
+          {
+            "rva": "0x4f43e48",
+            "value": "0x95fb9fe800000005",
+            "string": null
+          },
+          {
+            "rva": "0x4f43e50",
+            "value": "0x144ea3fc8",
+            "string": "FieldOfView"
+          },
+          {
+            "rva": "0x4f43e58",
+            "value": "0xde6fd7080000000b",
+            "string": null
+          },
+          {
+            "rva": "0x4f43e60",
+            "value": "0x144f4b278",
+            "string": "ICamera.FieldOfView"
+          },
+          {
+            "rva": "0x4f43e68",
+            "value": "0x54842d1100000013",
+            "string": null
+          },
+          {
+            "rva": "0x4f43e70",
+            "value": "0x9c000000010200",
+            "string": null
+          },
+          {
+            "rva": "0x4f43e78",
+            "value": "0x800120",
+            "string": null
+          },
+          {
+            "rva": "0x4f43e80",
+            "value": "0x140943d40",
+            "string": null
+          },
+          {
+            "rva": "0x4f43e88",
+            "value": "0x140940a20",
+            "string": null
+          },
+          {
+            "rva": "0x4f43e90",
+            "value": "0x14058a9d0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43e98",
+            "value": "0x14058d970",
+            "string": null
+          },
+          {
+            "rva": "0x4f43ea0",
+            "value": "0x140940ac0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43ea8",
+            "value": "0x14093a9e0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43eb0",
+            "value": "0x14058f6f0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43eb8",
+            "value": "0x140940ba0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43ec0",
+            "value": "0x140940b80",
+            "string": null
+          },
+          {
+            "rva": "0x4f43ec8",
+            "value": "0x140940ae0",
+            "string": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "string": "IPlayer",
+    "rva": "0x4f4d928",
+    "blocks": [
+      {
+        "pointer_rva": "0x4f5fee8",
+        "qwords": [
+          {
+            "rva": "0x4f5feb8",
+            "value": "0x144ed82a0",
+            "string": "IComponent"
+          },
+          {
+            "rva": "0x4f5fec0",
+            "value": "0xa6d8816a0000000a",
+            "string": null
+          },
+          {
+            "rva": "0x4f5fec8",
+            "value": "0x2",
+            "string": null
+          },
+          {
+            "rva": "0x4f5fed0",
+            "value": "0x144e9dbe8",
+            "string": "IStoryboard"
+          },
+          {
+            "rva": "0x4f5fed8",
+            "value": "0x64c941040000000b",
+            "string": null
+          },
+          {
+            "rva": "0x4f5fee0",
+            "value": "0x3",
+            "string": null
+          },
+          {
+            "rva": "0x4f5fee8",
+            "value": "0x144f4d928",
+            "string": "IPlayer"
+          },
+          {
+            "rva": "0x4f5fef0",
+            "value": "0x60349c6500000007",
+            "string": null
+          },
+          {
+            "rva": "0x4f5fef8",
+            "value": "0x4",
+            "string": null
+          },
+          {
+            "rva": "0x4f5ff00",
+            "value": "0x2e797469746e4549",
+            "string": null
+          },
+          {
+            "rva": "0x4f5ff08",
+            "value": "0x546f747541657355",
+            "string": null
+          },
+          {
+            "rva": "0x4f5ff10",
+            "value": "0x7373656e6b636968",
+            "string": null
+          },
+          {
+            "rva": "0x4f5ff18",
+            "value": "0x696c74754f726f46",
+            "string": null
+          },
+          {
+            "rva": "0x4f5ff20",
+            "value": "0x656e",
+            "string": null
+          },
+          {
+            "rva": "0x4f5ff28",
+            "value": "0x74532e6165724149",
+            "string": null
+          },
+          {
+            "rva": "0x4f5ff30",
+            "value": "0x6472616f6279726f",
+            "string": null
+          },
+          {
+            "rva": "0x4f5ff38",
+            "value": "0x0",
+            "string": null
+          },
+          {
+            "rva": "0x4f5ff40",
+            "value": "0x1409408a0",
+            "string": null
+          },
+          {
+            "rva": "0x4f5ff48",
+            "value": "0x1409408b0",
+            "string": null
+          },
+          {
+            "rva": "0x4f5ff50",
+            "value": "0x140940750",
+            "string": null
+          }
+        ]
+      },
+      {
+        "pointer_rva": "0x4f6c970",
+        "qwords": [
+          {
+            "rva": "0x4f6c940",
+            "value": "0x2e797469746e4549",
+            "string": null
+          },
+          {
+            "rva": "0x4f6c948",
+            "value": "0x646c726f57746547",
+            "string": null
+          },
+          {
+            "rva": "0x4f6c950",
+            "value": "0x646e756f42",
+            "string": null
+          },
+          {
+            "rva": "0x4f6c958",
+            "value": "0x0",
+            "string": null
+          },
+          {
+            "rva": "0x4f6c960",
+            "value": "0x144e49c08",
+            "string": "Messiah"
+          },
+          {
+            "rva": "0x4f6c968",
+            "value": "0xf4e2259c00000007",
+            "string": null
+          },
+          {
+            "rva": "0x4f6c970",
+            "value": "0x144f4d928",
+            "string": "IPlayer"
+          },
+          {
+            "rva": "0x4f6c978",
+            "value": "0x60349c6500000007",
+            "string": null
+          },
+          {
+            "rva": "0x4f6c980",
+            "value": "0x400080d60",
+            "string": null
+          },
+          {
+            "rva": "0x4f6c988",
+            "value": "0x1b001b",
+            "string": null
+          },
+          {
+            "rva": "0x4f6c990",
+            "value": "0x800021000",
+            "string": null
+          },
+          {
+            "rva": "0x4f6c998",
+            "value": "0x144f6aee0",
+            "string": null
+          },
+          {
+            "rva": "0x4f6c9a0",
+            "value": "0x140941380",
+            "string": null
+          },
+          {
+            "rva": "0x4f6c9a8",
+            "value": "0x1409408f0",
+            "string": null
+          },
+          {
+            "rva": "0x4f6c9b0",
+            "value": "0x140940930",
+            "string": null
+          },
+          {
+            "rva": "0x4f6c9b8",
+            "value": "0x140104120",
+            "string": null
+          },
+          {
+            "rva": "0x4f6c9c0",
+            "value": "0x14058d6d0",
+            "string": null
+          },
+          {
+            "rva": "0x4f6c9c8",
+            "value": "0x140940910",
+            "string": null
+          },
+          {
+            "rva": "0x4f6c9d0",
+            "value": "0x140940960",
+            "string": null
+          },
+          {
+            "rva": "0x4f6c9d8",
+            "value": "0x140958ad0",
+            "string": null
+          }
+        ]
+      },
+      {
+        "pointer_rva": "0x51cdc68",
+        "qwords": [
+          {
+            "rva": "0x51cdc38",
+            "value": "0x144ed82a0",
+            "string": "IComponent"
+          },
+          {
+            "rva": "0x51cdc40",
+            "value": "0xa6d8816a0000000a",
+            "string": null
+          },
+          {
+            "rva": "0x51cdc48",
+            "value": "0x2",
+            "string": null
+          },
+          {
+            "rva": "0x51cdc50",
+            "value": "0x144e9dbe8",
+            "string": "IStoryboard"
+          },
+          {
+            "rva": "0x51cdc58",
+            "value": "0x64c941040000000b",
+            "string": null
+          },
+          {
+            "rva": "0x51cdc60",
+            "value": "0x3",
+            "string": null
+          },
+          {
+            "rva": "0x51cdc68",
+            "value": "0x144f4d928",
+            "string": "IPlayer"
+          },
+          {
+            "rva": "0x51cdc70",
+            "value": "0x60349c6500000007",
+            "string": null
+          },
+          {
+            "rva": "0x51cdc78",
+            "value": "0x4",
+            "string": null
+          },
+          {
+            "rva": "0x51cdc80",
+            "value": "0x145212820",
+            "string": "ClientPlayer"
+          },
+          {
+            "rva": "0x51cdc88",
+            "value": "0x995418080000000c",
+            "string": null
+          },
+          {
+            "rva": "0x51cdc90",
+            "value": "0x5",
+            "string": null
+          },
+          {
+            "rva": "0x51cdc98",
+            "value": "0x6574656d61726150",
+            "string": null
+          },
+          {
+            "rva": "0x51cdca0",
+            "value": "0x345f72",
+            "string": null
+          },
+          {
+            "rva": "0x51cdca8",
+            "value": "0x0",
+            "string": null
+          },
+          {
+            "rva": "0x51cdcb0",
+            "value": "0x140cef230",
+            "string": null
+          },
+          {
+            "rva": "0x51cdcb8",
+            "value": "0x140cef240",
+            "string": null
+          },
+          {
+            "rva": "0x51cdcc0",
+            "value": "0x140cef0e0",
+            "string": null
+          },
+          {
+            "rva": "0x51cdcc8",
+            "value": "0x140cef0f0",
+            "string": null
+          },
+          {
+            "rva": "0x51cdcd0",
+            "value": "0x140cef100",
+            "string": null
+          }
+        ]
+      },
+      {
+        "pointer_rva": "0x7642580",
+        "qwords": [
+          {
+            "rva": "0x7642550",
+            "value": "0x0",
+            "string": null
+          },
+          {
+            "rva": "0x7642558",
+            "value": "0x0",
+            "string": null
+          },
+          {
+            "rva": "0x7642560",
+            "value": "0x0",
+            "string": null
+          },
+          {
+            "rva": "0x7642568",
+            "value": "0x0",
+            "string": null
+          },
+          {
+            "rva": "0x7642570",
+            "value": "0x0",
+            "string": null
+          },
+          {
+            "rva": "0x7642578",
+            "value": "0x0",
+            "string": null
+          },
+          {
+            "rva": "0x7642580",
+            "value": "0x144f4d928",
+            "string": "IPlayer"
+          },
+          {
+            "rva": "0x7642588",
+            "value": "0x60349c6500000007",
+            "string": null
+          },
+          {
+            "rva": "0x7642590",
+            "value": "0x148132010",
+            "string": null
+          },
+          {
+            "rva": "0x7642598",
+            "value": "0x140959f50",
+            "string": null
+          },
+          {
+            "rva": "0x76425a0",
+            "value": "0x0",
+            "string": null
+          },
+          {
+            "rva": "0x76425a8",
+            "value": "0x147e04868",
+            "string": null
+          },
+          {
+            "rva": "0x76425b0",
+            "value": "0x0",
+            "string": null
+          },
+          {
+            "rva": "0x76425b8",
+            "value": "0x0",
+            "string": null
+          },
+          {
+            "rva": "0x76425c0",
+            "value": "0x144e902e8",
+            "string": "VirtualCamera"
+          },
+          {
+            "rva": "0x76425c8",
+            "value": "0x5c6566530000000d",
+            "string": null
+          },
+          {
+            "rva": "0x76425d0",
+            "value": "0x148131fc0",
+            "string": null
+          },
+          {
+            "rva": "0x76425d8",
+            "value": "0x14093dc60",
+            "string": null
+          },
+          {
+            "rva": "0x76425e0",
+            "value": "0x0",
+            "string": null
+          },
+          {
+            "rva": "0x76425e8",
+            "value": "0x147de6228",
+            "string": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "string": "IGameplay.Player",
+    "rva": "0x4f501e0",
+    "blocks": [
+      {
+        "pointer_rva": "0x4f6e1c0",
+        "qwords": [
+          {
+            "rva": "0x4f6e190",
+            "value": "0x144f53a30",
+            "string": "IGameplay"
+          },
+          {
+            "rva": "0x4f6e198",
+            "value": "0x323a490600000009",
+            "string": null
+          },
+          {
+            "rva": "0x4f6e1a0",
+            "value": "0x144ed82a0",
+            "string": "IComponent"
+          },
+          {
+            "rva": "0x4f6e1a8",
+            "value": "0xa6d8816a0000000a",
+            "string": null
+          },
+          {
+            "rva": "0x4f6e1b0",
+            "value": "0x144eaa15c",
+            "string": "Player"
+          },
+          {
+            "rva": "0x4f6e1b8",
+            "value": "0x8b3769100000006",
+            "string": null
+          },
+          {
+            "rva": "0x4f6e1c0",
+            "value": "0x144f501e0",
+            "string": "IGameplay.Player"
+          },
+          {
+            "rva": "0x4f6e1c8",
+            "value": "0xd41b2b7600000010",
+            "string": null
+          },
+          {
+            "rva": "0x4f6e1d0",
+            "value": "0x7000800010002",
+            "string": null
+          },
+          {
+            "rva": "0x4f6e1d8",
+            "value": "0x52",
+            "string": null
+          },
+          {
+            "rva": "0x4f6e1e0",
+            "value": "0x14058b020",
+            "string": null
+          },
+          {
+            "rva": "0x4f6e1e8",
+            "value": "0x140940a20",
+            "string": null
+          },
+          {
+            "rva": "0x4f6e1f0",
+            "value": "0x14092bec0",
+            "string": null
+          },
+          {
+            "rva": "0x4f6e1f8",
+            "value": "0x140948bd0",
+            "string": null
+          },
+          {
+            "rva": "0x4f6e200",
+            "value": "0x140948b90",
+            "string": null
+          },
+          {
+            "rva": "0x4f6e208",
+            "value": "0x1409463f0",
+            "string": null
+          },
+          {
+            "rva": "0x4f6e210",
+            "value": "0x14058b100",
+            "string": null
+          },
+          {
+            "rva": "0x4f6e218",
+            "value": "0x140940ba0",
+            "string": null
+          },
+          {
+            "rva": "0x4f6e220",
+            "value": "0x140940b80",
+            "string": null
+          },
+          {
+            "rva": "0x4f6e228",
+            "value": "0x140940ae0",
+            "string": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "string": "ClientPlayer.Camera",
+    "rva": "0x51f64d0",
+    "blocks": [
+      {
+        "pointer_rva": "0x51f8440",
+        "qwords": [
+          {
+            "rva": "0x51f8410",
+            "value": "0x145212820",
+            "string": "ClientPlayer"
+          },
+          {
+            "rva": "0x51f8418",
+            "value": "0x995418080000000c",
+            "string": null
+          },
+          {
+            "rva": "0x51f8420",
+            "value": "0x144f427f0",
+            "string": "ICamera"
+          },
+          {
+            "rva": "0x51f8428",
+            "value": "0x538b34db00000007",
+            "string": null
+          },
+          {
+            "rva": "0x51f8430",
+            "value": "0x144e9d91c",
+            "string": "Camera"
+          },
+          {
+            "rva": "0x51f8438",
+            "value": "0x6c42abf00000006",
+            "string": null
+          },
+          {
+            "rva": "0x51f8440",
+            "value": "0x1451f64d0",
+            "string": "ClientPlayer.Camera"
+          },
+          {
+            "rva": "0x51f8448",
+            "value": "0xa23f2caa00000013",
+            "string": null
+          },
+          {
+            "rva": "0x51f8450",
+            "value": "0x1b000800010002",
+            "string": null
+          },
+          {
+            "rva": "0x51f8458",
+            "value": "0x12",
+            "string": null
+          },
+          {
+            "rva": "0x51f8460",
+            "value": "0x140d09ec0",
+            "string": null
+          },
+          {
+            "rva": "0x51f8468",
+            "value": "0x140cef3b0",
+            "string": null
+          },
+          {
+            "rva": "0x51f8470",
+            "value": "0x140d09ed0",
+            "string": null
+          },
+          {
+            "rva": "0x51f8478",
+            "value": "0x140d09ef0",
+            "string": null
+          },
+          {
+            "rva": "0x51f8480",
+            "value": "0x140d09e50",
+            "string": null
+          },
+          {
+            "rva": "0x51f8488",
+            "value": "0x140ce4340",
+            "string": null
+          },
+          {
+            "rva": "0x51f8490",
+            "value": "0x14093a9e0",
+            "string": null
+          },
+          {
+            "rva": "0x51f8498",
+            "value": "0x140cef530",
+            "string": null
+          },
+          {
+            "rva": "0x51f84a0",
+            "value": "0x140cef510",
+            "string": null
+          },
+          {
+            "rva": "0x51f84a8",
+            "value": "0x140cef470",
+            "string": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "string": "GetGameplay",
+    "rva": "0x5bb9e18",
+    "blocks": []
+  }
+]

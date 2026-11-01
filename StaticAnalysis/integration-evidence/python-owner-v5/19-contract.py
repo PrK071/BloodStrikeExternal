@@ -1,0 +1,13 @@
+exec((__import__('pathlib').Path(__file__).parent/'01-factory.py').read_text().split('O=')[0])
+from iced_x86 import Decoder
+import hashlib
+O=Path(__file__).parent
+r=0x1cd57c0;n=0x70;off=pe.offset(r,n);rows=[pe.row(i) for i in Decoder(64,pe.d[off:off+n],ip=pe.base+r)]
+(O/'dict-setter-contiguous.json').write_text(json.dumps({'name_at_547acd0':pe.string(0x547acd0),'rows':rows},indent=2));print('getset name',pe.string(0x547acd0))
+files={'object.h':'Include/object.h','cpython-object.h':'Include/cpython/object.h','dictobject.h':'Include/cpython/dictobject.h','pycore_dict.h':'Include/internal/pycore_dict.h','unicodeobject.h':'Include/cpython/unicodeobject.h','pycore_object.h':'Include/internal/pycore_object.h','tupleobject.h':'Include/cpython/tupleobject.h'}
+sources=[dict(file=n,url='https://raw.githubusercontent.com/python/cpython/v3.14.0/'+p,sha256=hashlib.sha256((O/n).read_bytes()).hexdigest()) for n,p in files.items()]
+(O/'header-sources.json').write_text(json.dumps(sources,indent=2))
+manifest=dict(abi='CPython v3.14.0 GIL build, Windows AMD64 LLP64; little endian; source-derived offsets below, separately corroborated against sample where stated',sample_sha256=pe.sha,header_sources=sources,PyObject={'ob_refcnt':0,'ob_type':8,'sizeof':16},PyTypeObject={'tp_name':24,'tp_basicsize':32,'tp_itemsize':40,'tp_getattro':144,'tp_setattro':152,'tp_flags':168,'tp_base':256,'tp_dict':264,'tp_dictoffset':288,'tp_mro':344},PyDictObject={'ma_used':16,'_ma_watcher_tag':24,'ma_keys':32,'ma_values':40,'sizeof':48},PyDictKeysObject={'dk_refcnt':0,'dk_log2_size':8,'dk_log2_index_bytes':9,'dk_kind':10,'dk_version':12,'dk_usable':16,'dk_nentries':24,'dk_indices':32},PyDictKeyEntry={'sizeof':24,'me_hash':0,'me_key':8,'me_value':16},PyDictUnicodeEntry={'sizeof':16,'me_key':0,'me_value':8},PyASCIIObject={'length':16,'hash':24,'state':32,'sizeof_and_compact_ASCII_data':40,'kind_mask':28,'kind_shift':2,'compact_mask':32,'ascii_mask':64},PyTupleObject={'ob_size':16,'ob_hash':24,'ob_item':32},flags={'INLINE_VALUES':4,'MANAGED_WEAKREF':8,'MANAGED_DICT':16,'HEAPTYPE':512,'DICT_SUBCLASS':536870912,'UNICODE_SUBCLASS':268435456,'STATIC_BUILTIN':2},sample_rvas={'dict_type':0x7a19900,'unicode_type':0x7a16e10,'bool_type':0x7a127f0,'false_singleton':0x7a12990,'true_singleton':0x7a129b0,'IEntity_type_storage':0x79a0060},remaining='Effective custom tp_getattro/tp_setattro and runtime-ready type identity not observed; these are data layout facts and guarded compatibility requirements, not runtime success.')
+(O/'layout-contract.json').write_text(json.dumps(manifest,indent=2))
+print('headers',len(sources),'saved; exportdir',pe.dirs[0])
+

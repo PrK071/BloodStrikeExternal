@@ -1,0 +1,122 @@
+{
+  "target_sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "artifacts": [
+    {
+      "path": "01-types.py",
+      "bytes": 1318,
+      "sha256": "092e85c5a2803c9e523edd5edb4b9c39d209db3dad3e0603e6a1050900f7373d"
+    },
+    {
+      "path": "02-native-getters.py",
+      "bytes": 885,
+      "sha256": "7c1b3dc1940e917d4b333fbce3ea961733997437f8849e70f233fef600853a2d"
+    },
+    {
+      "path": "03-opcode-tables.py",
+      "bytes": 958,
+      "sha256": "e47ca818b877b94af32d09f74a5cc7ed5ee4e0bdbde7698e4bfc4c965868c654"
+    },
+    {
+      "path": "04-code-native.py",
+      "bytes": 449,
+      "sha256": "6fbe46769b5c7291e31572c83ebfc8d1a7b2d2e00500f249eeda8f3dce5be315"
+    },
+    {
+      "path": "05-baseline-fingerprint.py",
+      "bytes": 4286,
+      "sha256": "0faaa308e7945f2113731dc318ac3696b0e528e160858771028ca38a8631ba6a"
+    },
+    {
+      "path": "06-contract.py",
+      "bytes": 3180,
+      "sha256": "f62650b292c65b7a2b53fc0874cfc4ed596220b727b166395e525fd7d09e9fe4"
+    },
+    {
+      "path": "baseline-is-enemy.json",
+      "bytes": 5036,
+      "sha256": "0fcffa4319d9226c2baa50294f1f7e330e507ef6432c4813397ae6de354e34cd"
+    },
+    {
+      "path": "Include_cpython_code.h",
+      "bytes": 14368,
+      "sha256": "e9af6e01e17152bbf64092da727b9a481a25864b1ad3e7073ab355430da4e068"
+    },
+    {
+      "path": "Include_cpython_funcobject.h",
+      "bytes": 7131,
+      "sha256": "9374dc088384a672cbd9455953ce52c76c81939814a2c0f6ead5fe4e6eaf7e4b"
+    },
+    {
+      "path": "Include_internal_pycore_code.h",
+      "bytes": 20737,
+      "sha256": "c08bfe43653f68b243dd97ad1a9ddbcb11bd995186679abab081ec8b08b296b3"
+    },
+    {
+      "path": "Include_internal_pycore_opcode_metadata.h",
+      "bytes": 99887,
+      "sha256": "64aed4de765520b903ee9f0639d004573d542f2ba4b372efbd24295805c3b2d6"
+    },
+    {
+      "path": "Include_opcode_ids.h",
+      "bytes": 12610,
+      "sha256": "7a1aea65679d8ffef3a98e07a9f56fbc70ee49084bc606237fde910d760a09ee"
+    },
+    {
+      "path": "LICENSE-CPYTHON-3.14.txt",
+      "bytes": 13805,
+      "sha256": "b160500215c566001a9e5f91fff779ea75cd01cc0b5518c31aadd1c18403fdd5"
+    },
+    {
+      "path": "native-code-bytes.json",
+      "bytes": 27136,
+      "sha256": "bea045b3d88b49a218bfe148c4c2340a75756d7b2b0e0baaa08d6fc3e134d412"
+    },
+    {
+      "path": "native-getters.json",
+      "bytes": 20798,
+      "sha256": "a1d7f43c051dbccb7f5a59c2afb81b78ffba3fabb9bc6d1821d667bf52b9eb8c"
+    },
+    {
+      "path": "native-types-and-members.json",
+      "bytes": 28575,
+      "sha256": "b1e0ef5cb9e630e4b3c83eba64af8636dbed5b709000e62afde7c56fc1309340"
+    },
+    {
+      "path": "Objects_codeobject.c",
+      "bytes": 111726,
+      "sha256": "0438a6f7dc8cc41b6ce43919ae87be8c7ee507d55fda05fb8fe160211d18c158"
+    },
+    {
+      "path": "Objects_funcobject.c",
+      "bytes": 58924,
+      "sha256": "c116abb7238ad0cfa62107110514b68406f42cd6ca988ac7b174cb99a71b7c88"
+    },
+    {
+      "path": "opcode-tables.json",
+      "bytes": 14562,
+      "sha256": "e0ca6c05a59871c0e6befeab6e07ed9d899bd9288df4797691793a17b7e4e81a"
+    },
+    {
+      "path": "predicate-code-contract.json",
+      "bytes": 3644,
+      "sha256": "1da9a85cd572a061b82ecbd3bce93e321f8a8fd76dbaa9e51e8649b15af97190"
+    },
+    {
+      "path": "PREDICATE-CODE.md",
+      "bytes": 7427,
+      "sha256": "98be2d171f0d3d9648b9997add4176ed23c8ce7ef8b44f65d7ba5abec45d8f0b"
+    },
+    {
+      "path": "Python_bytecodes.c",
+      "bytes": 225781,
+      "sha256": "c8e802f4a997833d14ff1b87dcc907c7d8012aa318072ef528850756e15a2012"
+    },
+    {
+      "path": "source-manifest.json",
+      "bytes": 1865,
+      "sha256": "4ff8e86816ec276731a12c89ccf803e9dc09c95d3a484326ad1d1cb25b261950"
+    }
+  ],
+  "target_executed": false,
+  "process_opened": false
+}

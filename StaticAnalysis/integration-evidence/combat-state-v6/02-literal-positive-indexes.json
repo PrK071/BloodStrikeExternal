@@ -1,0 +1,3058 @@
+{
+  "index_sha256": "bb3782da03b95d66451a598add8fe0923405be0dde53a8844b2f8bc107a6ced3",
+  "scanned_streams": 9705,
+  "target_sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "term_counts": {
+    "IsEnemy": 47,
+    "IsTeammate": 9,
+    "IsSameTeam": 0,
+    "combat_team_id": 105,
+    "IsFreeForAll": 0,
+    "FreeForAll": 28,
+    "FFA": 17,
+    "game_mode": 2,
+    "match_mode": 126,
+    "server_hp": 18,
+    "maxhp": 62,
+    "is_alive": 185,
+    "IsAlive": 8,
+    "GetPlayer": 281,
+    "main_player": 12
+  },
+  "matches": [
+    {
+      "index": 116,
+      "filename_candidates": [
+        "gclient/gameplay/logic_squad_fight/ui/squad_fight_1v1_round_comp.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "2fd48fc85f108dc68404f5f2f004a5e2f8733d408573969504d9c4e6597305b9",
+      "decoded_sha256": "98152d37fdc6c1730825bd1a081110a8f486470b651e2a4751af62bbd7dc9883"
+    },
+    {
+      "index": 132,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba/ui/moba_map_base.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "a81677a526e1f5d8072f425ad10c6301f27f81fadc3035768364f60f377453a3",
+      "decoded_sha256": "fa26bdcca9518ef126f306820217e6bef30920dbcd7af5661fd1f97c8dff64d8"
+    },
+    {
+      "index": 856,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_halloween/avatarmembers/model_spirit_comp.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "39b5195e884a8956a02a99e3979692a89114cfdb87e97eccdc79b4cf8f99447f",
+      "decoded_sha256": "fd6ac08c7d05717625e369bffaa8f6ca9729bcce5a72b7e0d53cde41fc30a365"
+    },
+    {
+      "index": 1503,
+      "filename_candidates": [
+        "gclient/gameplay/logic_big_head/bot/bighead_brain.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "combat_team_id"
+      ],
+      "compressed_sha256": "8bfee932d6d512b6cacafd67faf09de0fee5e193a29a593bf581f941a8cd5a58",
+      "decoded_sha256": "b136039d8d679c0b3ae6e928ad60e79ed3179e61833c5676c3683364313d67eb"
+    },
+    {
+      "index": 2597,
+      "filename_candidates": [
+        "gclient/gameplay/uicomponents/hud_team_info_comp.py"
+      ],
+      "terms": [
+        "maxhp",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "24f5dc913255f6c7c77de4549b339bf9fbd6b4334ca5927bf647c05eb59b53f6",
+      "decoded_sha256": "ee50466d0f7b6c4babfb63a2a473b06dc423d18e8c889c1af0e35f82ff175c45"
+    },
+    {
+      "index": 3779,
+      "filename_candidates": [],
+      "terms": [
+        "FreeForAll",
+        "is_alive"
+      ],
+      "compressed_sha256": "aaea372d814b7dfafdb67cc63b18c42ba65dda592ce7fd7b545bcaf9eccd48e3",
+      "decoded_sha256": "4029011a8b75517e31a81c85cbefac653c83d90235fab1e2e7ba7497430393d5"
+    },
+    {
+      "index": 3803,
+      "filename_candidates": [
+        "gclient/gameplay/logic_football/ui/football_teaminfo_comp.py"
+      ],
+      "terms": [
+        "combat_team_id"
+      ],
+      "compressed_sha256": "70988604e21973a6f184325c0ef99afa45dca4f7a07c50a64513a82663502f8c",
+      "decoded_sha256": "ce02d5299501c40cc08c398311c80d5f14b787fbe1800e548dcc48c7e2e9e72f"
+    },
+    {
+      "index": 4043,
+      "filename_candidates": [
+        "gclient/gameplay/logic_rivals/game_logic_rivals.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "41bc7f6fc1e85484f6691c45984c03f245c1ef35d2e5e5d698af524935d27ac7",
+      "decoded_sha256": "adbce3c74ea7025f695c94423f5fc5529316f21f9df4a53468d44567b3e401b1"
+    },
+    {
+      "index": 5499,
+      "filename_candidates": [
+        "gclient/gameplay/logic_blasting/ui/blasting_state_comp.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "7793818d572e29df5d59d3d43f347032c045a885f389755cdf93601f5b5dfc69",
+      "decoded_sha256": "cf3f8d057d131e36fda06d7260e0508a1677098405179f969d638c3f81b466af"
+    },
+    {
+      "index": 5535,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_titan_2/ui/titan_2_hud_bottom_arms_comp.py"
+      ],
+      "terms": [
+        "maxhp"
+      ],
+      "compressed_sha256": "5c0fe3604be99a60d531e750c85fad7a5ab4d6083f950542042e81eae4622149",
+      "decoded_sha256": "69acb865d010655457eafa7ee03520dc649cf734fea41de62040fab5d1e16e30"
+    },
+    {
+      "index": 5783,
+      "filename_candidates": [
+        "gclient/gameplay/logic_gun_fight/game_logic_gun_fight.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "is_alive"
+      ],
+      "compressed_sha256": "95d4a23f3eb346a5b12fd4a105092b0fda7ec3d67fa75e9abb3331b62a298d90",
+      "decoded_sha256": "94beb02de2967aa16adc47b4be2d7b600481965e58130ff0a44ec4a9b6fd1e29"
+    },
+    {
+      "index": 6371,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/lightning_slipper_bomb.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "f6cc41d5e83bd561ccdb1ffe3fa23642317c834c5d2000a07dacdc4486f5e671",
+      "decoded_sha256": "a02b8845509d6cf81c1e408c151a79b4e6331b7cc84ee5d32c29c352f76d26f7"
+    },
+    {
+      "index": 8331,
+      "filename_candidates": [
+        "gclient/data_lang/data_bn/title_data.py"
+      ],
+      "terms": [
+        "FFA"
+      ],
+      "compressed_sha256": "4b5613471f58b70cfaf35980b278515c43891444b14d5d03a570f1121c6be895",
+      "decoded_sha256": "fb635a88e7c392ee6dfba3d17ee98cc7278623226bd864a84c2c8d3abc61e7c6"
+    },
+    {
+      "index": 8984,
+      "filename_candidates": [
+        "gclient/gameplay/logic_arms_race_mode/ui/arms_race_top_right_map_comp.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "91f21bbe0c8213e16f2a22b03a97d9226dbf06a79a59456536105c864c54fb55",
+      "decoded_sha256": "7b9867b7517bd6a371d481aa6348997e23f09b95653a5e1a80eed9c88f311bb9"
+    },
+    {
+      "index": 9761,
+      "filename_candidates": [
+        "gclient/data_lang/data_ms/match_data.py"
+      ],
+      "terms": [
+        "FreeForAll",
+        "match_mode"
+      ],
+      "compressed_sha256": "10e36aa4fd1e580144cf16f82e0271cf5ae1ababe0ac6639924c50ae5836c4df",
+      "decoded_sha256": "e1d1eb7536c8ba96312545ad67170dcddfa39d018eda037a1f8341ad3b9669fe"
+    },
+    {
+      "index": 10842,
+      "filename_candidates": [
+        "gclient/gameplay/logic_arms_race_mode/combat_avatar_arms_race_mode.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "eaeeaf30f88c12de08828c9953f34dc6d3f5903d677fcbb3c68ea5fc337453c4",
+      "decoded_sha256": "a7155c97c7ee97ad8dd411d6fc7093564a6d1c9fffd4c35192395b776ddfbc8e"
+    },
+    {
+      "index": 12060,
+      "filename_candidates": [
+        "gclient/gameplay/logic_free_for_all/ui/main_uistage.py"
+      ],
+      "terms": [
+        "FreeForAll"
+      ],
+      "compressed_sha256": "e96dedb481d2457fe4a183078e86e9866c855422dd55f65f25daa80fabbd8d5f",
+      "decoded_sha256": "ae88ca0d01724acbe52da9f25debcd3f9e103f5e31f831214f2488b1dea0989b"
+    },
+    {
+      "index": 12674,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/spell/spell_core/gun_spell.py"
+      ],
+      "terms": [
+        "is_alive",
+        "main_player"
+      ],
+      "compressed_sha256": "7fab6c1bcf94e81ccb8be40b0790cb90a61d0fbfa4657cfe43fd991423ec1b85",
+      "decoded_sha256": "502c0509c56171c6a8a6e05f1c4a3c2d9e22601eafe54cae9ada243b750253f1"
+    },
+    {
+      "index": 13263,
+      "filename_candidates": [
+        "gclient/gamesystem/uihall/ui_personal_space/space_football_calculation_comp.py"
+      ],
+      "terms": [
+        "combat_team_id"
+      ],
+      "compressed_sha256": "4ac8f24f17caef678be11cbb5c66aa20995faed61ea6d08daf040118e0278f3c",
+      "decoded_sha256": "4fc90d2c605f71dc4f2c4ddd760592240348c37266773fd427db2573c0ab8275"
+    },
+    {
+      "index": 13866,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/cdrone.py"
+      ],
+      "terms": [
+        "maxhp"
+      ],
+      "compressed_sha256": "aaab01ef2a73f5a7ea8d378bc3134d74ae24be6c4293ec40104c0c081406f46f",
+      "decoded_sha256": "02901ad2a509c237295a3f1d1faaa40fd0c7ee2e5ff63cb0dc9e5c8a8921011e"
+    },
+    {
+      "index": 14066,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_combat_unit.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "server_hp",
+        "maxhp",
+        "is_alive"
+      ],
+      "compressed_sha256": "823855f89ae4600f6bfd21779f6a982e33aa8a2921f6a1a713625f9a3f4e5a27",
+      "decoded_sha256": "5a2ccf79f644a908e6475ed76c870312fb61526b260dfdc0dc90d0c772c9c648"
+    },
+    {
+      "index": 14147,
+      "filename_candidates": [
+        "gclient/data_lang/data_es/match_data.py"
+      ],
+      "terms": [
+        "FreeForAll",
+        "match_mode"
+      ],
+      "compressed_sha256": "63edec596a25e2e80a87ac3ba66deaf567d5e6494222c7bc1b4cd66797b612eb",
+      "decoded_sha256": "49fd28d457714bb242ced1d43c2d4cd79427b82fb3bc3f575159d1346bf155a2"
+    },
+    {
+      "index": 14620,
+      "filename_candidates": [
+        "gclient/gamesystem/entities/avatarmembers/cimp_replay.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "is_alive"
+      ],
+      "compressed_sha256": "4f1c2caff7d0efd8ce32b52aa8e8e5aebe11334c75834292a7210de70d26ca20",
+      "decoded_sha256": "dd1930b73df4fa2cdc3ef30f99c1aa123c187bb22b6e8303c23db9df222c6eb3"
+    },
+    {
+      "index": 15215,
+      "filename_candidates": [
+        "gclient/gameplay/uicomponents/hud_outstanding_show_comp.py"
+      ],
+      "terms": [
+        "maxhp",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "69b4b729bf8c00c911f19f3134b98e85d81c77896bbce21e8a0f0354a49dd1af",
+      "decoded_sha256": "88e7ddaf1336ea91ac05297b13f0fecee47a48558fa2015503e1c53b86c8d489"
+    },
+    {
+      "index": 15763,
+      "filename_candidates": [
+        "gclient/gameplay/logic_desperado_trifecta/avatarmembers/cimp_desperado_trifecta.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "5ce7fe5eecdf8a85ea417ecc5c97aa1b85452fcabd4e57db5a8f695f452539a9",
+      "decoded_sha256": "f2d647a4aa62185e846620c5c10ce935e64c826f70bda7669bcd76c62f1983ee"
+    },
+    {
+      "index": 16510,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/cfootball.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "112df96c012b3ab51e37b9222d1024d454fdff86bfdc9e945019369301bf61ce",
+      "decoded_sha256": "5e411b1e948f2c5835d70126327b8691a535150d5c3c07bba40856ee64496c74"
+    },
+    {
+      "index": 17556,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/dj_sonic_grenade.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "b0994466fcad2c745c0c0e02204fdf1a2af9487ba96da35cca09789a10ae9793",
+      "decoded_sha256": "c4f497694b6055e89fce401c231d8dd5a89fcb5abbbbd9f848306a6ddfa75893"
+    },
+    {
+      "index": 17763,
+      "filename_candidates": [
+        "gclient/data/match_data.py"
+      ],
+      "terms": [
+        "FreeForAll",
+        "match_mode"
+      ],
+      "compressed_sha256": "995aa9541e30f501513364ec4d62e6c1c54ff3614b2b5b2079bcf6dfdb91987f",
+      "decoded_sha256": "7b454381cc3a9674838d5b56d63bca9df28d22455f16ebeb2326f51bf9e6872b"
+    },
+    {
+      "index": 18907,
+      "filename_candidates": [
+        "gclient/gameplay/uicomponents/hud_frontsight_comp.py"
+      ],
+      "terms": [
+        "maxhp",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "3bbd0b4872b38751d83841f4d6154b83a96e11507976786d5c2ee843f7c9962d",
+      "decoded_sha256": "104a938ff48e37a61ffc47d0aa02df540dc74a80ee3692c841b13b31933a8b0f"
+    },
+    {
+      "index": 22538,
+      "filename_candidates": [
+        "gclient/gameplay/logic_hotspot/bot/hotspot_evaluators.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "is_alive"
+      ],
+      "compressed_sha256": "9f1a88de9731b419844b9d00df24972b048b243f342f7a74c4554b6f6529deca",
+      "decoded_sha256": "bba5dd192c9597cd6adca19afe95a7b25cb3ca44e598b17aec731fc84f297fd2"
+    },
+    {
+      "index": 22969,
+      "filename_candidates": [
+        "gclient/gameplay/logic_dmz/ui/dmz_hud_team_info_comp.py"
+      ],
+      "terms": [
+        "maxhp"
+      ],
+      "compressed_sha256": "1a8f07ab3f22b50b47679116a98907c5f5c299adffb20c44005efdc0878b6db3",
+      "decoded_sha256": "e929db10929dd4324551d8297e982d99452ae0bf799a445d7f7d155b1a993eb8"
+    },
+    {
+      "index": 23319,
+      "filename_candidates": [
+        "gclient/gameplay/logic_squad_fight/game_logic_squad_fight.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "is_alive"
+      ],
+      "compressed_sha256": "9b2c1b2369b41c3b3a7d5e2d53e60be4729bb1ace8a4eeab1d82319a2598d472",
+      "decoded_sha256": "f394f0391e63babbf99856dcd1b4ebbbaccde7070c8b287c9fd44484ae7e9f99"
+    },
+    {
+      "index": 23808,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_zombie/ui/zombie_replay_spectator_status_comp.py"
+      ],
+      "terms": [
+        "maxhp",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "56fccc90fa3058ccbab579142d0578e410783059c3a8b658cd66b2faba33b404",
+      "decoded_sha256": "9dc51795b36434778c1a10dcf34fe8b0c832aea449f9890bd4bb1d372daee1f7"
+    },
+    {
+      "index": 24118,
+      "filename_candidates": [
+        "gclient/data_lang/data_vi/match_data.py"
+      ],
+      "terms": [
+        "FreeForAll",
+        "match_mode"
+      ],
+      "compressed_sha256": "7b8ad3840be42ad829164aacf3bcd0ecf1f362f635e890c51ad6dcb3c52adfe8",
+      "decoded_sha256": "ec9dc28431366e3e435d6160100155319108890317b7cf15a1c7142818fd0abc"
+    },
+    {
+      "index": 24498,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/ui/replay_death_comp.py"
+      ],
+      "terms": [
+        "maxhp",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "3fefe40bd09ec8ec3df6a80d49a546c00f798d02bff49fa581b4d8fe56747f36",
+      "decoded_sha256": "e913ce6309a834fbe6f0de321f47f7a8a8aacb980e7d9e775bfa9689bf79f908"
+    },
+    {
+      "index": 25232,
+      "filename_candidates": [
+        "gclient/gameplay/logic_dmz/entities/combat_team.py"
+      ],
+      "terms": [
+        "maxhp"
+      ],
+      "compressed_sha256": "bcae92f9ca59acc984e20c171ae89522ae857db17a274d40212b818dbf1bfdfc",
+      "decoded_sha256": "22853b70189958fd01913d9b5ddafeb099aa86cb8dd8f354b282c5565c85f910"
+    },
+    {
+      "index": 26552,
+      "filename_candidates": [
+        "gclient/data_lang/data_bn/match_data.py"
+      ],
+      "terms": [
+        "FreeForAll",
+        "match_mode"
+      ],
+      "compressed_sha256": "649e3d0f61fa5fbeddeac1487326b77132f5cd2e832fb5d24d454d5a88d76cc7",
+      "decoded_sha256": "a45b7f69d4fba89be58971c37938410c8672694467edf7389447657cbad64e72"
+    },
+    {
+      "index": 27426,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_titan_2/ui/titan_2_replay_spectator_comp.py"
+      ],
+      "terms": [
+        "maxhp"
+      ],
+      "compressed_sha256": "8c89b4025de6827f60c4556611ab4d0b73287f0666830a2f41681d1ad13b1060",
+      "decoded_sha256": "1dcc06c8a7b29a611e2f5af30367edd0ca909eb5a92802db5ec6122d51ec1266"
+    },
+    {
+      "index": 27656,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/cflag_sf.py"
+      ],
+      "terms": [
+        "combat_team_id"
+      ],
+      "compressed_sha256": "c013b6a679ea20416b28539590ebf9644dace0b734ed9908a2dd036ae1d8dbfc",
+      "decoded_sha256": "8f9cde860a420af3c6e1782fea77d78fdc8d6eae06ac335095b59e9288b045e6"
+    },
+    {
+      "index": 28509,
+      "filename_candidates": [
+        "gclient/gameplay/uicomponents/hud_on_vehicle_comp.py"
+      ],
+      "terms": [
+        "maxhp",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "ac5af8184e54272153349e7ac6f8d633b19ac58392648b1f1a1570e2f47c3d95",
+      "decoded_sha256": "e97d98d9ec6140c726e62a1da0e8838aac2fab083da547b81a8139aba4b07411"
+    },
+    {
+      "index": 29129,
+      "filename_candidates": [
+        "gclient/data_lang/data_ar/match_data.py"
+      ],
+      "terms": [
+        "FreeForAll",
+        "match_mode"
+      ],
+      "compressed_sha256": "5ea60e8e0a8f20ac6237db8e45539e86031c984e96efce928cf311613b5d722a",
+      "decoded_sha256": "c1cdb0a0d4176980387a342ebe3f74583d3fcffbf942b992559e53397bd5967f"
+    },
+    {
+      "index": 29679,
+      "filename_candidates": [
+        "gclient/util/decorators.py"
+      ],
+      "terms": [
+        "main_player"
+      ],
+      "compressed_sha256": "aaaadd98d70e494128cc06187506d047df3705cc26ba3608e27eee3a087ebe48",
+      "decoded_sha256": "912f3440ccf4cf9a5fd9cdd3b90074ba0dc012cb465db2939e06b05500921515"
+    },
+    {
+      "index": 29734,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/holographic_robot.py"
+      ],
+      "terms": [
+        "server_hp",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "b5fd041442f737485f2186946a2683bcdaff71da58f542164540bdb2868a86ee",
+      "decoded_sha256": "ec6aed1c27715fab75f0d357fc9291f38cdd4b503ca467b3b716b01a2e4d761a"
+    },
+    {
+      "index": 29779,
+      "filename_candidates": [
+        "gclient/framework/entities/space.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "6712cc0da7a1c9601ea482ffdbcf4379043799b655ac02265e1d586a503f3999",
+      "decoded_sha256": "0965992fef0dd6c69f1c4e17bd4d0c7152a2a43d8a6a631aef9b42291a06400e"
+    },
+    {
+      "index": 30058,
+      "filename_candidates": [
+        "gclient/gameplay/uicomponents/hud_vehicle_cannon_drive_comp.py"
+      ],
+      "terms": [
+        "maxhp"
+      ],
+      "compressed_sha256": "8dc3f69e213379ae9f920c9ab282c772502cb34aa878817018bd590f0bb5676c",
+      "decoded_sha256": "184fa7bccbc03a044e6a1d453b391e633edc15e8323f0cbb6f34cc751b78d13c"
+    },
+    {
+      "index": 30485,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba/combat_avatar_moba.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "server_hp",
+        "maxhp",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "9282ec025d5ec53e2e4381b68ca7366bac9e75e6fe47c6de3ba824b352f6600c",
+      "decoded_sha256": "90277f10f9983fb0d8ec91bb0372a8233f9b751fb5f2757458da07e49b6b15e2"
+    },
+    {
+      "index": 30594,
+      "filename_candidates": [
+        "gclient/gameplay/logic_hotspot/ui/hotspot_stronghold_state_comp.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "3c29523ad9a7310dd85dee56f6d6dcb830b935ed693a32fd743f077b98803ad0",
+      "decoded_sha256": "10eb7cc4d2ceeebdda1160b417be02017434c547731e28f1b22c776c82fbd95c"
+    },
+    {
+      "index": 32313,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/attack_drone.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "e10acd7170d71213af80c1ec5d6e08b43160be0ea5e473ff78e9d29b97113335",
+      "decoded_sha256": "aa7e813222efb0beb625efc4546dc1455415fc7a8c2c6168b84944b0dbffdc51"
+    },
+    {
+      "index": 32516,
+      "filename_candidates": [
+        "gclient/data_lang/data_vi/title_data.py"
+      ],
+      "terms": [
+        "FFA"
+      ],
+      "compressed_sha256": "358a2f92a613efe37ea62cbf66975ac7a83d38f4f9a0f0371dbad8b03f08ea8c",
+      "decoded_sha256": "130a4db3bfe18bdd26f75aa0600f05377217722479336614f4dcfd492b57384f"
+    },
+    {
+      "index": 32561,
+      "filename_candidates": [
+        "gclient/gameplay/logic_football/ui/football_goal_broadcast_comp.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "e5a3bf902467d05ff2d0380c3c4048125690c59cf3b555784c3340b8b4e91778",
+      "decoded_sha256": "cbfe430a2d6a3cb042ecf49a08366d0cbffb2b7046caa780f01beb1c9b492d70"
+    },
+    {
+      "index": 33033,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_spell.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "maxhp",
+        "is_alive",
+        "GetPlayer",
+        "main_player"
+      ],
+      "compressed_sha256": "44a93d19feb51b68ec34ac012a1add15714a1234f6a283c5c853b6968eb80588",
+      "decoded_sha256": "cedf56187ae334f9f96a655e88838239ad1dcf536c7c818c7938c8ef0ff287d9"
+    },
+    {
+      "index": 33242,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_zombie/ui/team/zombie_team_node.py"
+      ],
+      "terms": [
+        "maxhp"
+      ],
+      "compressed_sha256": "7ad48e2ac35a7058efd249b56b9c4cd0c4b0aa92ab5ae575b3c7c71a9cd03eda",
+      "decoded_sha256": "1d61da69ca9b1d61411a9ecf32fe09049f5d16ac87893e7f761660c529d76f57"
+    },
+    {
+      "index": 33965,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/cenergy_stronghold.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "is_alive"
+      ],
+      "compressed_sha256": "440082e1eb9e7c84c0c2e9e54cc56ed9ac9e5e6e164b75be7d094f4321abcde4",
+      "decoded_sha256": "83bf7c73bff766592ff2e9f668ad4fd00188250670d85ad63753170e8ab7961f"
+    },
+    {
+      "index": 35626,
+      "filename_candidates": [
+        "gclient/data_lang/data_zh/title_data.py"
+      ],
+      "terms": [
+        "FFA"
+      ],
+      "compressed_sha256": "bcdaf5a9071018a5ac97d0495804f314057b8524ac6206e3d3c57422c38120b5",
+      "decoded_sha256": "8a73849c92067e15bea661f9a568a672c3160ea7bfb8982f18c7777211a9bd87"
+    },
+    {
+      "index": 36492,
+      "filename_candidates": [
+        "gclient/gameplay/logic_big_head/ui/bighead_stronghold_state_comp.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "83ba4a7d311409f4754d9601a9468f21d9b2556116bd4cf9d8383e12ceed7b39",
+      "decoded_sha256": "1f5eac01761317ca7c8b7b36e4467716ba7945f59257dce741666a7d3df87857"
+    },
+    {
+      "index": 37212,
+      "filename_candidates": [],
+      "terms": [
+        "maxhp",
+        "is_alive"
+      ],
+      "compressed_sha256": "7ea7729f89836e5cc87740fd213c86d3de4a516f8bf1f941c5bc1487403b939e",
+      "decoded_sha256": "29b9824dd36f7eeac8f4548c6b04081fb4daae291c3b7201762b3a46669ffa10"
+    },
+    {
+      "index": 37451,
+      "filename_candidates": [
+        "gclient/data/act_purchase_data.py"
+      ],
+      "terms": [
+        "FFA"
+      ],
+      "compressed_sha256": "9db9cc55e6c2e4faf19d3a39f1ecd53e7762ca75447a939fcba8344ab9ea57af",
+      "decoded_sha256": "cfc04c99e82fb69ef0c2418ef797d572d9108771acc17e43c458e439e6653c58"
+    },
+    {
+      "index": 37477,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_lockdown/bot/evaluators.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "194c3a4d13e5e5fd3840d5e197e557189d309bdb8f306b96ba62021f560c5135",
+      "decoded_sha256": "121193ebc8453641ff3c31ca84f2db91eb3115e93a2bb4ba974afeb42d79a884"
+    },
+    {
+      "index": 37694,
+      "filename_candidates": [
+        "gclient/gameplay/logic_football/combat_avatar_football.py"
+      ],
+      "terms": [
+        "combat_team_id"
+      ],
+      "compressed_sha256": "b06cd34a49526acd54ff92c874d77227b5f57cb1a20af38a148669800d496933",
+      "decoded_sha256": "fcf5efaff85ae75cd038c263badf467147b5937c2dd9948181256d8751636da5"
+    },
+    {
+      "index": 37762,
+      "filename_candidates": [
+        "gclient/data_lang/data_ms/title_data.py"
+      ],
+      "terms": [
+        "FFA"
+      ],
+      "compressed_sha256": "cab9ed92c41611a00adc823c727795bbced0d5afe544c552a75aa7c5992bb298",
+      "decoded_sha256": "9e3c783308210342efdd89d20f3a7270730283bbeac76207d4f14110bddc5bf0"
+    },
+    {
+      "index": 38016,
+      "filename_candidates": [
+        "gclient/gameplay/logic_big_head/avatarmembers/cimp_bighead.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "36b588940c23d2cbd9ddec18adc1b52a100df49a5354f62198e0924aabe8357a",
+      "decoded_sha256": "62be777e7d95aa9261ca6956f388420281059c6189d2aa1450a54012f9304e79"
+    },
+    {
+      "index": 39029,
+      "filename_candidates": [
+        "gclient/data_lang/data_zh/match_data.py"
+      ],
+      "terms": [
+        "FreeForAll",
+        "match_mode"
+      ],
+      "compressed_sha256": "03d490e47c994eefe5febb070c242c54d6bbbcedf20b4bb5209bd3d920264111",
+      "decoded_sha256": "9f64d833017bdf20fe8f2ae4a00e5de6580f3cff6ca6a55fccfb2f51bd9b7375"
+    },
+    {
+      "index": 39232,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/blast_bomb.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "is_alive"
+      ],
+      "compressed_sha256": "eace40ea5e3ebba227df10b864dcd1e67d1f63c9d2c7eaa4f8a8feed42fc4a02",
+      "decoded_sha256": "54bc35d5ae3b782b6dd700e16a7c72ec4f71b4acf46d463c1f247d6512e7d242"
+    },
+    {
+      "index": 39580,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_lockdown/game_logic_lock_down.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "cef8e2d017a08556e47e9964be206d66bc03e7a1034fa3ac070efb52ebed1f77",
+      "decoded_sha256": "016011d80422f13f5e33c1b12c99bb73f957e9cdab384216d9d7c7e74da96588"
+    },
+    {
+      "index": 39845,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_zombie/avatarmembers/cimp_zombie_xray.py"
+      ],
+      "terms": [
+        "IsTeammate",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "3ae2f2ad777554a1682fb307859844bbf4c829faab2d73f517404be97b82771e",
+      "decoded_sha256": "16b4fec840818003e5de9c7298f2c91918cec93308d266f03940431391b1fb4b"
+    },
+    {
+      "index": 40521,
+      "filename_candidates": [
+        "gclient/data_lang/data_ar/title_data.py"
+      ],
+      "terms": [
+        "FFA"
+      ],
+      "compressed_sha256": "d813bd5831ea64e63ca73dbc8b3aa6bb09fa259e8993ed5d55f9f5ea61e8655b",
+      "decoded_sha256": "806cf28a19f0845f0e339c9ca9818c71e72c51749c61a25c4ab7d3713d8b7632"
+    },
+    {
+      "index": 40877,
+      "filename_candidates": [
+        "gclient/client_env.py"
+      ],
+      "terms": [
+        "GetPlayer",
+        "main_player"
+      ],
+      "compressed_sha256": "8563eb90fbf96d7180404ada2be0a1cb8027f6f98f8f33c94e48355ff497c0dc",
+      "decoded_sha256": "622bb544f69cd21f38b81f8d6585de6ffc07bb5556f4ec41e6f3925ca5964ea8"
+    },
+    {
+      "index": 41152,
+      "filename_candidates": [
+        "gclient/gameplay/logic_dlc/ui/squad_fight_teaminfo_base.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "maxhp"
+      ],
+      "compressed_sha256": "0ebd597d1d7a6964aad71f45ea15bf3a773603204cf4ad00e6f448bfca26da8f",
+      "decoded_sha256": "94dfcbf109fdffceb1a49093578db25a49238d9e1b279fa608e2886e6460a5b5"
+    },
+    {
+      "index": 42241,
+      "filename_candidates": [
+        "gclient/gameplay/logic_peekaboo/combat_avatar_peekaboo.py"
+      ],
+      "terms": [
+        "server_hp",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "e4f7878ba1be8ac08d9b536a87ac2fb29969383ca2c1beb2b2e1e70bf9033830",
+      "decoded_sha256": "b46b0fc20bb345ff1cd5ffac082b4666962cea5f634b0f01120218c2b7a49414"
+    },
+    {
+      "index": 42243,
+      "filename_candidates": [
+        "engine/Lib/Crypto/SelfTest/PublicKey/test_ElGamal.py"
+      ],
+      "terms": [
+        "FFA"
+      ],
+      "compressed_sha256": "551398fe2d66fdbd918f96cc228b9f3d278c48f8de0c3d274be45f3ce0690973",
+      "decoded_sha256": "6b6b3f41f7c90895da1a887e91120e5199ff31165a3badceee79409f538e3495"
+    },
+    {
+      "index": 42574,
+      "filename_candidates": [],
+      "terms": [
+        "combat_team_id"
+      ],
+      "compressed_sha256": "baede7bf04f68701962de046c8a386586926a6334e63300cd6fb12dbb311edda",
+      "decoded_sha256": "87565cc05c0cfd63b3f2de23063d68a7d617c3f9542b11e8da619f4813cd3624"
+    },
+    {
+      "index": 42599,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba/ui/single_revive_tips_node.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "e13f77052ff77ae2a14f42c63c9c46368fa92c6674397568dbb411664d4c7aac",
+      "decoded_sha256": "4f0126677638d1ef1392c87d2b3adf5d304fdd102143b8144c4764e83ceeab29"
+    },
+    {
+      "index": 42830,
+      "filename_candidates": [
+        "gclient/gameplay/logic_big_head/combat_avatar_bighead.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "server_hp",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "0cb499ca7f402eb656aab557834a2a1227ac836859bfe49c77b3753266a46404",
+      "decoded_sha256": "a161a24041e4d8a93f87c0496a82aadd55cd74c48f8511ab2ea6bbabb216e400"
+    },
+    {
+      "index": 44196,
+      "filename_candidates": [
+        "gclient/gameplay/logic_squad_fight/bot/squad_fight_evaluator.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "is_alive"
+      ],
+      "compressed_sha256": "c877ef8a89d7817b4c99f6b647ee2b744e1caa13bfb4155c221aa1006a978be0",
+      "decoded_sha256": "b58787856ec575e8f8e4fbd57096d58ab3b0185b3d7a745461d7fd243c5cbe42"
+    },
+    {
+      "index": 44730,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/cairdrop.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "db21dc6bf524df9522b2eb584b10b15867fd0230b9b2b00adf83543e8719da83",
+      "decoded_sha256": "073e09ba6539ab12fb95c23b33c531fac7c285e2e3992b3cba9664f2549b478c"
+    },
+    {
+      "index": 46251,
+      "filename_candidates": [],
+      "terms": [
+        "maxhp",
+        "is_alive"
+      ],
+      "compressed_sha256": "cd643e6d1bc505b221fd5402a788315b6dc98c430c01e033127487e0af4d4ce1",
+      "decoded_sha256": "2ff590773339c81794ae4f9157c1817945a1eb551dcf8564e123ac1a25f59f9e"
+    },
+    {
+      "index": 46261,
+      "filename_candidates": [
+        "gclient/data_lang/data_ru/title_data.py"
+      ],
+      "terms": [
+        "FFA"
+      ],
+      "compressed_sha256": "44a49698f64b1cb098e90ed93f170e771dd4623af4efc2049335e49c6ae809f4",
+      "decoded_sha256": "d68722f8e6e16474820d2b11d2c41be770535dcb86ba2e2a38c7b716ef146db2"
+    },
+    {
+      "index": 46485,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/cpinata_entity.py"
+      ],
+      "terms": [
+        "maxhp",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "b41093b86ebbae80e1406a76d1886f16ca145a09105a3e0dc60240ea0b68f74a",
+      "decoded_sha256": "fa465b770de3f35c6ea178064a7e2873423868d415af29fac4da5e57446382ac"
+    },
+    {
+      "index": 46575,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_sound.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "maxhp",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "d7c6deb19445be1378840b7e11198e53f95ebf1589ee991b9f4d8940011022d5",
+      "decoded_sha256": "935b1c8443e4a9b6c417425f91653d1b04666ab6b4cb0b5e175dcf7b06b88ff2"
+    },
+    {
+      "index": 47504,
+      "filename_candidates": [],
+      "terms": [
+        "maxhp",
+        "is_alive"
+      ],
+      "compressed_sha256": "6151b3c08a0549ef2198bfd88d3696f959cc4605be40c1883e5f5038606472db",
+      "decoded_sha256": "136a467729133fac86a744f0e6dd2bf9834d2184ea04100344f99bfa35c995ee"
+    },
+    {
+      "index": 48352,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/spell/spell_core/zombie_acid_mist_spell.py"
+      ],
+      "terms": [
+        "main_player"
+      ],
+      "compressed_sha256": "c8d4bb80aaf02297f301afb4bdb639e6151ca093109deabc5c7c90cc738e83a2",
+      "decoded_sha256": "d5d7e443a446c7767ad9c40a5d0dd05ea67bb1e05b4775110e02124994579121"
+    },
+    {
+      "index": 48893,
+      "filename_candidates": [
+        "gclient/data_lang/data_en/match_data.py"
+      ],
+      "terms": [
+        "FreeForAll",
+        "match_mode"
+      ],
+      "compressed_sha256": "f881e8643849517a7fbf5a910d81b5289e0a4ded2f61e0468c45856313765afc",
+      "decoded_sha256": "31474c50d53109d1e46539cfe0dcfd2b03d8055f40766bde1debb8a3880fe401"
+    },
+    {
+      "index": 49476,
+      "filename_candidates": [
+        "gclient/util/telnet_client_agent/runtime_recorder.py"
+      ],
+      "terms": [
+        "main_player"
+      ],
+      "compressed_sha256": "8374f85551801b5427781f3986a6b15de222f1051d097e8ca01d19572a372952",
+      "decoded_sha256": "73a1637176f9856fbf4d5b10af04dce1e870dddf415a151bf1f3e24f24dbf383"
+    },
+    {
+      "index": 49800,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_faction/ui/hud_moba_faction_spectator_comp.py"
+      ],
+      "terms": [
+        "combat_team_id"
+      ],
+      "compressed_sha256": "1ec3d05a706a0aec50d3133026df415bbb4d06dba988bf3bf7bbcfae36f28feb",
+      "decoded_sha256": "2245291f35c9338fc90d64b8d6b0e9f36695ba6746b5d3e3b45b7465925e6f72"
+    },
+    {
+      "index": 49870,
+      "filename_candidates": [
+        "gclient/data_lang/data_in/match_data.py"
+      ],
+      "terms": [
+        "FreeForAll",
+        "match_mode"
+      ],
+      "compressed_sha256": "a5dc1d2be4082bff6b37cc0b7df5e42f995a92b84581c57e773aa1b8cb61d54f",
+      "decoded_sha256": "0f198d8b21e40c82d6bb35f61f6d33126ea83b33a624d89303d8b3d00958b277"
+    },
+    {
+      "index": 50037,
+      "filename_candidates": [
+        "gclient/data_lang/data_th/title_data.py"
+      ],
+      "terms": [
+        "FFA"
+      ],
+      "compressed_sha256": "7c40354752a302fdce7fe759b7540af4906fda0f23811d10dbe2840c493d302f",
+      "decoded_sha256": "fa22a0a8d1c11aa604d3b5394f76b1efef10549050122c3019cf6a367869cd38"
+    },
+    {
+      "index": 50186,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_zombie/ui/moba_zombie_hud_bottom_arms_comp.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "maxhp",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "3db5909ab1dbf5d9a0de8cb8a603fd30ba78395632b72c1c1bb372a674ba1c58",
+      "decoded_sha256": "2d1f55eafb5e67fe18628c830d7527903898712e00be713d8c34f567e71bd57c"
+    },
+    {
+      "index": 50497,
+      "filename_candidates": [
+        "gclient/gameplay/uicomponents/battle_injured_comp.py"
+      ],
+      "terms": [
+        "maxhp"
+      ],
+      "compressed_sha256": "fc589bdf00fd2e392ea6bff4ac29a80dcc95febde9fb824de8af5bec82d555fa",
+      "decoded_sha256": "33ac7dc1c46fc0f03cee4f3d2ad5ce5e97ce23854d2cd996fc7517e45adb2d8d"
+    },
+    {
+      "index": 51449,
+      "filename_candidates": [
+        "gclient/gameplay/logic_desperado_trifecta/bot/desperado_trifecta_evaluators.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "is_alive"
+      ],
+      "compressed_sha256": "2fbd54f88124c20eb2371e3315ca7737e3ca77b30b21c022d05c9ec21e1db11b",
+      "decoded_sha256": "6c8faf05a21175598528bfdca17f15d7341365d3fa0f1b595f1cb9db16923278"
+    },
+    {
+      "index": 52138,
+      "filename_candidates": [],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "3d92215965a32912e6d1df4616cc921a054351a34ee814a61e6fe340eb093985",
+      "decoded_sha256": "2cff1b81f5fa956abb59380643bcce324a05e66d33697ff56fe11341f8b9a02e"
+    },
+    {
+      "index": 54237,
+      "filename_candidates": [
+        "gclient/gameplay/logic_blasting/combat_avatar_blasting.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "server_hp",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "090a298d05d1afc9cae6215465c01c6fb564f9d14bff5182a29f88bf98d88e35",
+      "decoded_sha256": "1c9d78ca425f571689048d7d1102f1f503d52d62dfe5ad790e388943d495f8d8"
+    },
+    {
+      "index": 54462,
+      "filename_candidates": [
+        "gclient/util/techstate_component.py"
+      ],
+      "terms": [
+        "IsTeammate"
+      ],
+      "compressed_sha256": "7dcc00887bd1ab4f6079370abe1ffd26c483205435423bd118697fd3b9d010c2",
+      "decoded_sha256": "ef39ee7218582a9f9be6ac26411c7e3745551a45753bc4be884a3d05eae199c9"
+    },
+    {
+      "index": 54564,
+      "filename_candidates": [],
+      "terms": [
+        "IsEnemy",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "d43b6f78473d60d5be780e6483a08feb1bd32246f1f761b4b9b00983aa35ff3a",
+      "decoded_sha256": "165bcad08fd740bce2aa3a34e807c286d138122baecd47414c0bc40183a0bfef"
+    },
+    {
+      "index": 55455,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_dj_battle_rhythm.py"
+      ],
+      "terms": [
+        "maxhp"
+      ],
+      "compressed_sha256": "e5a8a90ff2317abf2f007397ca6f8e62b70d0963c48beda363a0961f56eadc66",
+      "decoded_sha256": "af52b3edb9d7ed2c99f471e6f11308b46a443665fcfc064e7798d50d5f0d90f9"
+    },
+    {
+      "index": 55657,
+      "filename_candidates": [
+        "gclient/gameplay/logic_dlc/ui/squad_fight_state_base.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "aca852edf0dcf323434bb75977834041b4a2d13bda579c1a642783e9b7c13c76",
+      "decoded_sha256": "5923989698d2d27cea5de96ce383641a9629275cd0339fc4ab36bd8db8264d86"
+    },
+    {
+      "index": 55679,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_execute.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "main_player"
+      ],
+      "compressed_sha256": "cae52f22127abec600dfafebf9c397099495f72535a4a59d99c672596317cf8a",
+      "decoded_sha256": "523157eb2f8e894cfa4bdbd210c15c2aee2315de016e56d4f6f034a3eab86e4f"
+    },
+    {
+      "index": 55769,
+      "filename_candidates": [],
+      "terms": [
+        "maxhp"
+      ],
+      "compressed_sha256": "01b6b8cb0d6211012016f998f94c16122b3778360cf8499164d96c2b5c0d4f00",
+      "decoded_sha256": "a80c53174d4af6c177fcebeaab49d9b2b69ddf25e12e3faf58ba8ce2685210b4"
+    },
+    {
+      "index": 55910,
+      "filename_candidates": [
+        "gclient/gameplay/logic_free_for_all/ui/free_for_all_top_right_map_comp.py"
+      ],
+      "terms": [
+        "FreeForAll",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "7b9609a8bf423a24ec3e8b3c942c21cc4eff4ea7f75df17ae91ad0a6258f6910",
+      "decoded_sha256": "7e213cba0a7d356f173ce8dbf1698157f7234d1b70d8eceab213346f7a381194"
+    },
+    {
+      "index": 56846,
+      "filename_candidates": [],
+      "terms": [
+        "maxhp",
+        "is_alive"
+      ],
+      "compressed_sha256": "3f1dd6f97b25bdffd61d24d343b9ce3f7d9e4cabe5192e77ce4f8c6662097ebf",
+      "decoded_sha256": "701d25ebd23516dcd9585fb0b6394156574a0fcc5af6db6d055d5f9596f345c3"
+    },
+    {
+      "index": 56889,
+      "filename_candidates": [
+        "gclient/gameplay/uicomponents/hud_brokenarmor_comp.py"
+      ],
+      "terms": [
+        "maxhp"
+      ],
+      "compressed_sha256": "a41adf3f12af81fe068771d848ed361f419eaba9b37680b785673343db88cd47",
+      "decoded_sha256": "06452b56fbf3c3a3aa55d0aee9b124a197d5dadcbadbd1367d1d340929ce8e7b"
+    },
+    {
+      "index": 58838,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_bomb.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "707009fe1e978f7636df7b5845009f1462fbcfba6a188e67e9ca34b4b222d9cc",
+      "decoded_sha256": "f5cf76867e46c1fa805485f88e028a08690a2cf9972b76b9cb9973458d5f3703"
+    },
+    {
+      "index": 59391,
+      "filename_candidates": [
+        "gclient/gameplay/logic_blasting/blasting_input.py"
+      ],
+      "terms": [
+        "combat_team_id"
+      ],
+      "compressed_sha256": "139cc14362dea45efcb9f1034423fcfce9531f86d630eb013aab1742ff79fc11",
+      "decoded_sha256": "3a9f9836262e702df38b1bc733c268665a222e03e5723c4c0eae7ec1b4f04daa"
+    },
+    {
+      "index": 59931,
+      "filename_candidates": [
+        "gclient/gameplay/uicomponents/hud_top_survivor_comp.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "569134863abe1fb2386650a27c0002afbdcd8109051b3792b2e2fb0c036c200f",
+      "decoded_sha256": "7e27496f46f39a109c10d0181c5275d55ce78f58028766816969a464acd690af"
+    },
+    {
+      "index": 60799,
+      "filename_candidates": [
+        "gclient/gameplay/logic_snipe/ui/snipe_score_comp.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "6bc3e86c56941a2e880ca17de03cf0379383a4f324a5f34f708d6812f24c54cd",
+      "decoded_sha256": "f3a94d6345034cccb5fdbec103e0854c1fda4cbb46f9f8e41abe9bbddb220bbb"
+    },
+    {
+      "index": 61251,
+      "filename_candidates": [
+        "gclient/gameplay/logic_shootingrange/combat_avatar_shootingrange.py"
+      ],
+      "terms": [
+        "server_hp",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "3b6e9b1f1ddcceb489849659b2088122bc8ed93a291299f6e73d12bed324ff69",
+      "decoded_sha256": "5b365a827b487318c6848bc443ebd451f3df0f91bdbdb52b2aae0c57bf838b93"
+    },
+    {
+      "index": 61508,
+      "filename_candidates": [
+        "gclient/gameplay/logic_arms_race_mode/ui/arms_race_score_comp.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "63ac53a7f3879f20dd66bbc7f57436df99bcbcf43e7ee21880a953c2d6302ee5",
+      "decoded_sha256": "20b21867a7b56a8f81bdd21ddda2e61344b6648f7af23b4d0cc5aa1becf3a071"
+    },
+    {
+      "index": 61925,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_model.py"
+      ],
+      "terms": [
+        "IsTeammate",
+        "combat_team_id",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "739c6fca121b75c6b3edcd2e3887e223724ee6510ebb1d872dd81f2823df4c98",
+      "decoded_sha256": "04bde99e6e2715d32cacce94496d4aba3f89919aae650d513a5468da1e790f4c"
+    },
+    {
+      "index": 62983,
+      "filename_candidates": [
+        "gclient/gameplay/logic_rivals/ui/rivals_round_comp.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "match_mode"
+      ],
+      "compressed_sha256": "f5a0f902a3b6e7ece55bf18bfb3e5a9b3a3f1696399abd903b602e870fa3a2a3",
+      "decoded_sha256": "8f8f42364c38a0dabb3273ce5188ddca77e40f099fde7267598e41288742bbef"
+    },
+    {
+      "index": 62991,
+      "filename_candidates": [
+        "gclient/gameplay/uicomponents/common_like_comp.py"
+      ],
+      "terms": [
+        "combat_team_id"
+      ],
+      "compressed_sha256": "8bef94e0d97127156a57aefe15f0f03bbfddf392da10f3663d5f4488e4610cec",
+      "decoded_sha256": "676d2164b3bbc566d299bd77e0f353e095b0099236dd851ef99749a17ac6681e"
+    },
+    {
+      "index": 63234,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_faction/ui/moba_faction_map_base.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "04cef770d9f81d379d9080669baac635951d1f10af5f18f5b483580920b8332f",
+      "decoded_sha256": "c7d57ae150711a5b5968638678addaa38bd0d2608bc12729226e82a670512d54"
+    },
+    {
+      "index": 63313,
+      "filename_candidates": [
+        "gclient/gameplay/uicomponents/shutter_energy_gather_comp.py"
+      ],
+      "terms": [
+        "combat_team_id"
+      ],
+      "compressed_sha256": "0f6af1d0c0086d68d79d1c8339567177f160f63184797f0a2089f30c8e9191ea",
+      "decoded_sha256": "5093ee9b1ad58a10eed7098cd657a147908338a2ec0ad897f2e060e437b78250"
+    },
+    {
+      "index": 63734,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_titan_2/game_logic_moba_titan_2.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "fde2e4a666522c0d432d0e86ed77a88c9db314a99eae4fa3b3c154aa1972c398",
+      "decoded_sha256": "a5a6a63416d8acee4c2c8d7fbe066c3b252dfd0699db84ce95dbe79ccb6187fc"
+    },
+    {
+      "index": 64805,
+      "filename_candidates": [
+        "gclient/gamesystem/uihall/ui_personal_space/space_personal_deathmatch_calculation_comp.py"
+      ],
+      "terms": [
+        "FreeForAll"
+      ],
+      "compressed_sha256": "453792c10683b3da7081a24739ddad67f20a7ea0416ca2ae237222a71d043531",
+      "decoded_sha256": "855f32e3a1173e09b0c895d286d6361a2eb93f1e49f4614d92825c6b0a425357"
+    },
+    {
+      "index": 64924,
+      "filename_candidates": [
+        "gclient/gameplay/logic_desperado_trifecta/ui/desperado_trifecta_calculation.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "b28857354b693964a90c3861c07e81236e34c1e797f053027bbaa364572dc245",
+      "decoded_sha256": "230e67f23d052469de73ef45ec073ba7f17bf0fda2652614fafb807dfc4fe8b3"
+    },
+    {
+      "index": 65166,
+      "filename_candidates": [
+        "gclient/gameplay/logic_big_head/bot/bighead_evaluators.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "is_alive"
+      ],
+      "compressed_sha256": "aee45d08b35cab6ff7704915e7875f406731355e3d71d0b77055497558469a59",
+      "decoded_sha256": "864640ecb9f8219b19b0813c3c7cd26f9d353b92538da7a6bfafd5f889d5bef5"
+    },
+    {
+      "index": 65716,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/blast_bomb_2025.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "is_alive"
+      ],
+      "compressed_sha256": "bdfb265009384a99f4f55fdd18d5b2d91c9bce4815c769a155d30a1f66f734b2",
+      "decoded_sha256": "233843deb6235c237c2c23062f18cb755167e6d0a8eeb557909f1b941aef09be"
+    },
+    {
+      "index": 65958,
+      "filename_candidates": [
+        "gclient/gameplay/logic_overload/bot/overload_evaluators.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "is_alive"
+      ],
+      "compressed_sha256": "e63bdf30b2e1cac3ed7d6c2b91a86e62d9679ec48cd12ed0637eb47a7bc71317",
+      "decoded_sha256": "f17920c577b1cf347d91eecdbfc6b846b99f39c559e4e4b62899bd104e04c750"
+    },
+    {
+      "index": 65978,
+      "filename_candidates": [
+        "gclient/gameplay/logic_rivals/ui/rivals_calculation_manager.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "b367d7f2afe55cd534d0acc573039da961fdce6a86e55625fb69985c6fc0f2fa",
+      "decoded_sha256": "168e118f0ae7b75ace37d6dd47be6dbc9b9fc20bd7c18e641b5e829a5407565a"
+    },
+    {
+      "index": 66002,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/spell/spell_core/juren_fly_spell.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "is_alive"
+      ],
+      "compressed_sha256": "10ec3270360603fa6c0cb001851c10574ec8e534dab33872e68f49e0bd55bd36",
+      "decoded_sha256": "8b30dd5ccab78d8daacee8fbf9e8b05c26e49e7b028783b71f75b513843a8cd9"
+    },
+    {
+      "index": 66023,
+      "filename_candidates": [
+        "gclient/data_lang/data_in/title_data.py"
+      ],
+      "terms": [
+        "FFA"
+      ],
+      "compressed_sha256": "e8a8cc0d714d799f76c17127344df8d97c5fca78c5ede15b84f4475776c9aff5",
+      "decoded_sha256": "455e03145ecd100ec03294174dbb82df10e8e2c920b61876e65e2359d354b553"
+    },
+    {
+      "index": 66409,
+      "filename_candidates": [
+        "gclient/gameplay/logic_dmz/entities/dmz_monster.py"
+      ],
+      "terms": [
+        "server_hp",
+        "is_alive"
+      ],
+      "compressed_sha256": "ed3c4871fe9b93ca14feb8e71761a38eb966e628dc630f94033e8b49003c5e83",
+      "decoded_sha256": "f5e45eba8ea533d7f6b1bacc12832d3a14d3e2202faea5b813d6f7f7187ad2ad"
+    },
+    {
+      "index": 68662,
+      "filename_candidates": [
+        "gclient/gameplay/logic_blasting/ui/blasting_scoreboard_comp.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "is_alive",
+        "IsAlive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "b042b3443086ba3c5e5c00d8682de542d9eaa6b49d6e23c0eaca27fa477667e3",
+      "decoded_sha256": "2217b0a54a708fdc509a7111e7e48ffb488193f87b33b2a4530e9772483dc736"
+    },
+    {
+      "index": 69720,
+      "filename_candidates": [
+        "gclient/gameplay/logic_free_for_all/ui/free_for_all_calculation_mgr.py"
+      ],
+      "terms": [
+        "FreeForAll"
+      ],
+      "compressed_sha256": "fd4b17b7d53a728bc7109ffe511a657a4be3e14454fa25e5f35ce0deed5f1ff2",
+      "decoded_sha256": "aa79438851247369d37bef862176748e4e67f224512310963f2cc2fcb362e1e9"
+    },
+    {
+      "index": 70535,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/cmonster.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "server_hp",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "205f96bdd1c7b4a9d7116897c6f65c8de2946d620832f60665732aaf88737297",
+      "decoded_sha256": "4b70b637ca4fdc22a79b5ccb27521fcd9cda6796b5190bbaa874e80b1c480053"
+    },
+    {
+      "index": 72901,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/cmonster_eva.py"
+      ],
+      "terms": [
+        "server_hp",
+        "is_alive"
+      ],
+      "compressed_sha256": "e74a5d474d75386184c08fcea40a2c5fceff8147f98d3ff63dcbc6f85b03319f",
+      "decoded_sha256": "f676fbe5f38e9d94049f9ef57c07348b9e90183a50111ea5c57b0e333e3bb73f"
+    },
+    {
+      "index": 73279,
+      "filename_candidates": [
+        "gclient/gameplay/logic_squad_fight/ui/squad_fight_order_choice_comp.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "ec16678b2d46e9cf0389e5fa7d397ab7f32a57e1b02f8fb24c484e2fe6eb475e",
+      "decoded_sha256": "cacfbc516c31e923c6701310ddacc673df55680f86daddc112c625c00f2ddef7"
+    },
+    {
+      "index": 73597,
+      "filename_candidates": [
+        "gclient/data_lang/data_ru/match_data.py"
+      ],
+      "terms": [
+        "FreeForAll",
+        "match_mode"
+      ],
+      "compressed_sha256": "8e21c478ecf0eeaa0045918e92aad614e4a92df9ad751198d1b0700cc922b10f",
+      "decoded_sha256": "8c342d32f207daa1c6f1e8f4dbddb677b2ea970a2452fff6c2e587f9f3bae605"
+    },
+    {
+      "index": 73655,
+      "filename_candidates": [
+        "gclient/data_lang/data_th/match_data.py"
+      ],
+      "terms": [
+        "FreeForAll",
+        "match_mode"
+      ],
+      "compressed_sha256": "ca5a599af948bc1560932c4f046598264b3f0881faee7efafd440570282b1527",
+      "decoded_sha256": "cfb00774fad3eda3e4f10d47313d391e904aa8383bc29133fc9231621af267a0"
+    },
+    {
+      "index": 73746,
+      "filename_candidates": [
+        "gclient/gameplay/uicomponents/hud_drone_controller_comp.py"
+      ],
+      "terms": [
+        "maxhp"
+      ],
+      "compressed_sha256": "7b34bf9534309a207fe4e32bf64b471650bb70f1ecc6fa23e92297807860e017",
+      "decoded_sha256": "037b1b54f1f61ab506d01e5800e27b2e8ffe2cfae703d118a12005e25be7e6bb"
+    },
+    {
+      "index": 74117,
+      "filename_candidates": [
+        "gclient/data_lang/data_pt/match_data.py"
+      ],
+      "terms": [
+        "FreeForAll",
+        "match_mode"
+      ],
+      "compressed_sha256": "f90a876fc34a3dc957731d7823d6bce71fb5520f2f5a5c1bb27d398dc90927f4",
+      "decoded_sha256": "a767a0dc15739bb1dcd326f9ffba1cba927806e4621c1cae165e9292a7c85cf9"
+    },
+    {
+      "index": 75038,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/comps/comp_grand_theft.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "cc0ca0a20fdb3d31f2572ff73b71a37aef930ec027013187899d31aa16545d85",
+      "decoded_sha256": "6bd877e852a2c5571e9ac92e8d654f2d404a236ed33a6ecc960655af76fb0994"
+    },
+    {
+      "index": 76048,
+      "filename_candidates": [
+        "gclient/gameplay/logic_blasting/ui/blasting_calculation_result_window.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "17a85fe2bb9388851c9470ccaf6005aa61a159a3ce38702547474b21b2622619",
+      "decoded_sha256": "b165e7288b561b564d8f345abd2fe472345a08dcc0abac6b3322da37f024425d"
+    },
+    {
+      "index": 76499,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/comps/comp_enemy_show_distance.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "5c52984e76c05372b553686804e25cb6349505c95158827e7dcaf0457c56c4c3",
+      "decoded_sha256": "5271ce5ca423acbd00d0205f7c7a48dc751f3516bf4f4679d4244928c93071df"
+    },
+    {
+      "index": 76876,
+      "filename_candidates": [
+        "gclient/gameplay/logic_big_head/ui/bighead_calculation.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "54020957bfe658926f7a58c45ab613bb56fbb82931db53d7bfd018d030e5c1bd",
+      "decoded_sha256": "f46a48b78360b89c601d0c2b15f7fbcd57edd9bca7837763ce931f550b573d95"
+    },
+    {
+      "index": 77113,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_combat_cc.py"
+      ],
+      "terms": [
+        "combat_team_id"
+      ],
+      "compressed_sha256": "e4ad33d799c0c4b45387129e4891ed847f322e9a543be7e48c708913caf70b15",
+      "decoded_sha256": "df95f000b49fd2ffed4f773fce98a25f0c46dcfdfc4b856e3f997cb0073ee357"
+    },
+    {
+      "index": 77498,
+      "filename_candidates": [
+        "gclient/gameplay/logic_football/ui/football_round_comp.py"
+      ],
+      "terms": [
+        "combat_team_id"
+      ],
+      "compressed_sha256": "a0a897ab752fb0d66a6771cada6d5677fb8a3247c38b2239e1540f1cedae6121",
+      "decoded_sha256": "829c028ecd9afe5ed6be078636ce25e4b53ddd938cf573a9cfc19c71f66e98f5"
+    },
+    {
+      "index": 78274,
+      "filename_candidates": [
+        "gclient/gameplay/logic_squad_fight/combat_avatar_squad_fight.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "combat_team_id",
+        "server_hp",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "62836bd9e1455c6ade92455c2edd5d3d55455d80255795840870802225f71b0d",
+      "decoded_sha256": "b9fdd4a7712f27fbc349da5a218ba2001c22511cc252ddb0d9e882e9a823f87e"
+    },
+    {
+      "index": 78286,
+      "filename_candidates": [
+        "gclient/gameplay/uicomponents/battle_sound_alert_comp.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "37240960c375adb0bcb9f39794b70fcc7d31bac454795614a65cfb3c1d21f39e",
+      "decoded_sha256": "bef3410cde7315c355e2a8ee9f2943c6a53c9880eae2bc25e87ff8c3994faf4f"
+    },
+    {
+      "index": 78838,
+      "filename_candidates": [
+        "gclient/gameplay/uicomponents/hud_topright_comp.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "3a8b7fe812897dc1584bb623491b74b59fd0fb85dc8b913a4141cfdfec6b44a3",
+      "decoded_sha256": "8114d0358771347b3f69262e2ea77f2887d6d8f3d227b4d39fe4a61f24a3edd5"
+    },
+    {
+      "index": 78964,
+      "filename_candidates": [
+        "gclient/gameplay/uicomponents/hud_teaminfo_node.py"
+      ],
+      "terms": [
+        "maxhp"
+      ],
+      "compressed_sha256": "d768eab2716c7c3a598ed67e893317c79ae5264e2794002478a7cec497fbb8f8",
+      "decoded_sha256": "86ae53ba9502a8969b2e387c61db97db7421f54a249827259e916cbf16b6ff6b"
+    },
+    {
+      "index": 80751,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_zombie/comps/comp_zombie_battle.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "05eb3935ba6f5eb06783d15787ad40fd32fd21009867a04c60fbb393b0ca94ae",
+      "decoded_sha256": "b053b4e33e54741dde72987ded4d22d8a4d586329a9d0ee61746a39adeb26380"
+    },
+    {
+      "index": 80873,
+      "filename_candidates": [
+        "gclient/gameplay/logic_dmz/combat_avatar_dmz.py"
+      ],
+      "terms": [
+        "server_hp",
+        "is_alive"
+      ],
+      "compressed_sha256": "f3a9895b4113ab18d1b27557b416bd91e748f5c1a25d60ea711fa2c6be03d204",
+      "decoded_sha256": "8ec3d3d3d3abb7b75ce13511cb3d17b39a31161be4a4907977c4c553c7c14413"
+    },
+    {
+      "index": 81304,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_ultra_mega/ui/moba_ultra_mega_hud_bottom_arms_comp.py"
+      ],
+      "terms": [
+        "maxhp",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "4a74fe05ed360f64ff91e25f30cc04e4e21b1dea6fe9b2f668dffa36e3695f37",
+      "decoded_sha256": "04ae127fac8cdd23de2724ac4400eda1e75defff2a85d12a37a594e11a4300dd"
+    },
+    {
+      "index": 81613,
+      "filename_candidates": [
+        "gclient/gameplay/logic_free_for_all/combat_avatar_free_for_all.py"
+      ],
+      "terms": [
+        "FreeForAll",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "59344c4e63fce29f5dc4b75e040c13f1e250379acc57ae7d52830d58f836d4fa",
+      "decoded_sha256": "591085dcb670b41fec1714291a8949607b0ad8436364c1152fd313b32ae68d9e"
+    },
+    {
+      "index": 81954,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_buff.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "combat_team_id",
+        "maxhp",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "5a3f0e6b1cca2da4563a53f921578b676384f7e4f67e798884e6e9569965c99f",
+      "decoded_sha256": "35f28519dc681924ec07898dd7bed5da9601a59ee4ac2da69c681e8f1391ceae"
+    },
+    {
+      "index": 82038,
+      "filename_candidates": [
+        "gclient/gameplay/logic_snipe/bot/brain.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "is_alive"
+      ],
+      "compressed_sha256": "3506e6af5b6c2e28b36594e936caf9def52d1c9839653b8739f8ab899440cb95",
+      "decoded_sha256": "a8e5c33ae903b7ffe3d991b26c9adf12f2c0a4c6084fa5a751706d8728942fea"
+    },
+    {
+      "index": 82537,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_faction/combat_avatar_moba_faction.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "6d740294c4acaedf9e53f9fef16b4f565215aa645d8f7bb201200cab14801500",
+      "decoded_sha256": "41563cf1fee485d09084259cc1fd1e701fbc634f1fdfc3212c64d73e23931cc6"
+    },
+    {
+      "index": 82907,
+      "filename_candidates": [
+        "gclient/gameplay/logic_football/ui/main_uistage.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "ae70060f95dd99e1bac1b3817bb7f6d6cf3ed06d18d2a344b89b3335e9281c76",
+      "decoded_sha256": "a3c10e823113e6c717e8d6de3731495327235c29673d6fa30498fa0c65611fb6"
+    },
+    {
+      "index": 83161,
+      "filename_candidates": [
+        "gclient/data_lang/data_pt/title_data.py"
+      ],
+      "terms": [
+        "FFA"
+      ],
+      "compressed_sha256": "ffe20534ff073e9ca1299772e8d352ca19336f68e0a95880e504f6040108b660",
+      "decoded_sha256": "a5ff7d618b3f0b0479cb8a79baf958d948cbd17c034e8f897e8840a49ad0d773"
+    },
+    {
+      "index": 83324,
+      "filename_candidates": [
+        "gclient/gameplay/logic_rivals/combat_avatar_rivals.py"
+      ],
+      "terms": [
+        "server_hp",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "79f842d618113fe506ddcf8591fb98cedf566c219f2e8c02d2f5b3b0515a7e1a",
+      "decoded_sha256": "a8eee9ebc0f3c66379f372f1068ef6fd61fc52a68b0aa97aff9dfe9d02626aba"
+    },
+    {
+      "index": 83513,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/comps/comp_shutter_island.py"
+      ],
+      "terms": [
+        "combat_team_id"
+      ],
+      "compressed_sha256": "e25e9b5d87cfc832b7f52dbb184076d3cc80769ccc4a3f56e709d693d40d8227",
+      "decoded_sha256": "7e1e8247050fd5ea2eb28ec0f1ad18d0905be0d1c0232f800fe0ee76514e87d4"
+    },
+    {
+      "index": 83719,
+      "filename_candidates": [
+        "gclient/gameplay/logic_free_for_all/ui/free_for_all_calculation_info_window.py"
+      ],
+      "terms": [
+        "FreeForAll",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "ec25aa026eaccac81ce82961ed0e93495d7f523cca4a3d30bf9c2feabdbedd6b",
+      "decoded_sha256": "e56809abff9b7d33468ba7bf34676f97c8200b678f27fdb6b1b955b13c239c88"
+    },
+    {
+      "index": 84148,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/comps/comp_map_tag.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "e0ce6290558f1f50384d5c22e3c71c5c905119d1febaa4a1eb67f716ede1c32a",
+      "decoded_sha256": "460a9197bc8163aa41f6bfe24bc3e0202f3e803c1b142c1858a2469c07ab3e3f"
+    },
+    {
+      "index": 84854,
+      "filename_candidates": [
+        "gclient/data_lang/data_tr/title_data.py"
+      ],
+      "terms": [
+        "FFA"
+      ],
+      "compressed_sha256": "fcf8d21b776e65c93e798e39354beeb52ad5af8392bb6cbfa7fec883cef9b73c",
+      "decoded_sha256": "120946f49725534f26f993bf9b5d2b9b313eec62c4c34aaf7fe0acfde10818b8"
+    },
+    {
+      "index": 84991,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/atm_entity.py"
+      ],
+      "terms": [
+        "maxhp"
+      ],
+      "compressed_sha256": "6b937a345198ccd3ba092485db8134c7f383ea8662c7535820802e6b55d1727a",
+      "decoded_sha256": "d9de3ab3ccb96cde1f20bc26f0c5ed739e33bfd63558fdeb2fcad7538eee82d1"
+    },
+    {
+      "index": 85021,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba/game_logic_moba.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "maxhp",
+        "is_alive"
+      ],
+      "compressed_sha256": "96fd90a3bfea7fb13a4a4cf23a3c030124560718f51eeb11d7cb4fc21bca61d2",
+      "decoded_sha256": "a1e5beb0c1d178e3d2c4992b7176f20d961bb2c10edeb3ad6ce74f91e21f1a55"
+    },
+    {
+      "index": 85556,
+      "filename_candidates": [
+        "gclient/gameplay/uicomponents/hud_spectator_comp.py"
+      ],
+      "terms": [
+        "maxhp",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "7893d7a934ac8f504512f4bfc3b34efa8cf9347e160a478a9b92780c22cbf705",
+      "decoded_sha256": "d9f05b8791081057a4d34dfdf473951393f8c9a30a5d42c939012abf0ba23535"
+    },
+    {
+      "index": 86092,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_lockdown/ui/lock_down_socreboard_comp.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "b2aceae88568d67dce5cb9c0fefba9ec1211ebba140a72ec8b1e25cde95f788a",
+      "decoded_sha256": "f14ea9b903938405de49226c4bdaad20d5057cc81acf0f4eea659bffb6b1fdc1"
+    },
+    {
+      "index": 86564,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_lockdown/ui/lock_down_map_base.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "ba4ec78598554f5e0675e3d59a4a897a9755f01e866474cfdbd54e903c9e3f42",
+      "decoded_sha256": "f70eb2da011d199ea1294d5859099d42735c2f45986fa5765d89a82c92673c87"
+    },
+    {
+      "index": 86784,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/ui/hotspot_calculation_result_comp.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "f97fb7b8a46ed88135de72af59ac642a34ec93d10ce801bda9236de47dc6f70f",
+      "decoded_sha256": "751babfbad30455ffa0eae598d7feb4184a71fd0387478b1abf66bc0a3178f02"
+    },
+    {
+      "index": 86897,
+      "filename_candidates": [
+        "gclient/framework/util/replay_util.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "combat_team_id",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "bc30a51514a6e4710ab84b48dfec1e23d7a64a65cb2e2fa22ff5fac1b92d7886",
+      "decoded_sha256": "f30c18e2fb4955e94ac1837fa65756b6b40cee0cacdfa7df6a1b785bf37d7c20"
+    },
+    {
+      "index": 88101,
+      "filename_candidates": [
+        "gclient/gameplay/logic_free_for_all/ui/free_for_all_scoreboard_comp.py"
+      ],
+      "terms": [
+        "FreeForAll",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "0723b466fc9fb97eb6c75f51e3c8a061accb435a44e0977058a1978aa03c185e",
+      "decoded_sha256": "6989ee78398ca45cf56d3b7fd981337bc20f83aeb509e8b15e171394f7c7cfbe"
+    },
+    {
+      "index": 88905,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/bot/goal_spec.py"
+      ],
+      "terms": [
+        "maxhp"
+      ],
+      "compressed_sha256": "bd92a0b49d13b56a8ba6b7d190f207289f0ccd24ff52bfdd8ba7e25672f06907",
+      "decoded_sha256": "b99375c068d73ce6144245f74ae531dddac2fd929f02fe14858f964f45fc89e4"
+    },
+    {
+      "index": 89335,
+      "filename_candidates": [
+        "gclient/gamesystem/entities/avatarmembers/cimp_gp_achievement.py"
+      ],
+      "terms": [
+        "combat_team_id"
+      ],
+      "compressed_sha256": "b3bbfe0d69eb0e60ca9e0e4ccd10c7a233962a31d31485f5edc78bfcd182ba55",
+      "decoded_sha256": "9da40319322c42d35374d27dde287b52b446ba3b4efd0900bad40a263f5d9ca2"
+    },
+    {
+      "index": 89462,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_eva/ui/eva_monster_combat_info_display_window.py"
+      ],
+      "terms": [
+        "maxhp"
+      ],
+      "compressed_sha256": "bb65705610ee27756fccbd19dc75592b0bf72ef382f2056aa3c12db0d5aecfe7",
+      "decoded_sha256": "83f2879fb4fbf584207424d7f118fc6d6332f3e5389889bec0e2b60bb7fdcabe"
+    },
+    {
+      "index": 89628,
+      "filename_candidates": [
+        "gclient/gameplay/logic_dlc/ui/replay_room_squadfight_calculation_result_comp.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "70431677d968a14fa565629c5e93bd2ff2fdb37c662519975820f5f527649afe",
+      "decoded_sha256": "2367e759bc8a0da233c33d8f2d81cb0ac118955f848056ac210f0441d8120bee"
+    },
+    {
+      "index": 89917,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/bot/sensor.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "53d7aaff1cf64f928dac879cdc768d45b734c4bcad7ee2f2c3c62cde83949fcd",
+      "decoded_sha256": "8461aac59089fada75e5675dd1b38b604592a4c0c327c6666cb22c00b7abb624"
+    },
+    {
+      "index": 90074,
+      "filename_candidates": [
+        "gclient/data_lang/data_es/title_data.py"
+      ],
+      "terms": [
+        "FFA"
+      ],
+      "compressed_sha256": "354f89e090d9b4490bfce57782755d51e690edad811949d1ae1c81b5a53bc80d",
+      "decoded_sha256": "6c7aa749e9b6c546d44a8ce3c916880e1931882bda58cf33cb34d47e8fc84d89"
+    },
+    {
+      "index": 90662,
+      "filename_candidates": [
+        "gclient/ui/common/base_scoreboard_comp.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "5b92904c4c95c6a46c3ac11200928c643b6303e14ef376182364b816601715fb",
+      "decoded_sha256": "e391a36e509eab80884db8af1696b0bad4d38a4d34d1c5184407e5aa3c8bfcdc"
+    },
+    {
+      "index": 92227,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_faction/game_logic_moba_faction.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "IsTeammate",
+        "combat_team_id",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "fc56c77d0adddf10aeea9cc42e9e4d46b32d83d249229cf5419e02389930faf6",
+      "decoded_sha256": "0aa075d290f14b0da643885faad1c91ce41ee45a1b8ad4c7e76c19d92fef8ed7"
+    },
+    {
+      "index": 92233,
+      "filename_candidates": [
+        "gclient/entitylist.py"
+      ],
+      "terms": [
+        "FreeForAll"
+      ],
+      "compressed_sha256": "9c3320142ec121166b48cb46d98153c1e5bdb46b002d7aed084e92bfbce150e5",
+      "decoded_sha256": "de1fd179b6a3848f6313dbb401a283bd54aa6decf5adde1bc5ade810d7fe69ec"
+    },
+    {
+      "index": 92850,
+      "filename_candidates": [
+        "gclient/gameplay/logic_free_for_all/ui/free_for_all_score_comp.py"
+      ],
+      "terms": [
+        "FreeForAll",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "9596d62516ce16df803260100db1dc40dc1e696adab58cc931cddabc5bf4428c",
+      "decoded_sha256": "4eaab322e14486139fd2c8671e79ac86cd06578373a1c9981e6e859624b41d19"
+    },
+    {
+      "index": 93804,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/ui/hud_bottom_arms_base_comp.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "maxhp",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "0ccf7b1c96b17064a2ec5fd135e7ba586450e089ee153249b32d3c1ff80c7f69",
+      "decoded_sha256": "849978a088a3998f483140471e3abad94ef226e85fd93257e26b88727c601666"
+    },
+    {
+      "index": 94332,
+      "filename_candidates": [
+        "gclient/gameplay/logic_free_for_all/avatarmember/cimp_input_controller.py"
+      ],
+      "terms": [
+        "FreeForAll"
+      ],
+      "compressed_sha256": "239f07aca88ef5ef6ad8ed3308fef605fd2e14b02e2a504a2aa09efeb87d4c10",
+      "decoded_sha256": "bc66e5bc5678e2e794bd646d95b2112a7f39b541efc716df51983a1fc7d7f7c5"
+    },
+    {
+      "index": 94937,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/cmonster_giant.py"
+      ],
+      "terms": [
+        "server_hp"
+      ],
+      "compressed_sha256": "ab1b96f85cfccb15fc1847bea04499f201433f344b6be7993ae56c53157bafd2",
+      "decoded_sha256": "906e009e4ca9fce0ace6f4589804f37823ec43b8d79917d06bf09e2b055abfdb"
+    },
+    {
+      "index": 95834,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_lockdown/models/lock_down_avatar_model.py"
+      ],
+      "terms": [
+        "combat_team_id"
+      ],
+      "compressed_sha256": "1817b8ab208b84b5b448a91fb6d8dd7f98dc63c626c78f0a578272aca1cae535",
+      "decoded_sha256": "7c8ffc9fbab1ffb23f34e3959103806a4a5d120d45d2eea9a4af7cb65b5b1584"
+    },
+    {
+      "index": 96364,
+      "filename_candidates": [
+        "gclient/gameplay/uicomponents/replay_room_spectator_comp.py"
+      ],
+      "terms": [
+        "maxhp"
+      ],
+      "compressed_sha256": "e0b91022e02a0be4119463e21f82d6ae934c77582a1694618ace3c9c3493b43a",
+      "decoded_sha256": "19b54d78da322e06d626bc2d16cba8005d8d5d215f68deb1bb78e3422b21d573"
+    },
+    {
+      "index": 97093,
+      "filename_candidates": [
+        "gclient/gameplay/logic_free_for_all/game_logic_free_for_all.py"
+      ],
+      "terms": [
+        "FreeForAll"
+      ],
+      "compressed_sha256": "8695ab0a014fb29eb2e6a70e9c048c83b7958c4c03cbaca364fbc818f1801e64",
+      "decoded_sha256": "43fe74a6a4f779c3b4bbb23bf698ef09d74852c7ffc5a62fbac25cb2ac11558d"
+    },
+    {
+      "index": 97667,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/spell/spell_core/flame_gun_spell.py"
+      ],
+      "terms": [
+        "is_alive",
+        "main_player"
+      ],
+      "compressed_sha256": "184822d4c114d37ef8460ccdc9c4c6a19933125161b9aa5bdf32bb3618a29745",
+      "decoded_sha256": "a35d7ee417949be5536fc957581e4421640cfbfe9161a36b49645412726df480"
+    },
+    {
+      "index": 97892,
+      "filename_candidates": [
+        "gclient/data_lang/data_ja/match_data.py"
+      ],
+      "terms": [
+        "FreeForAll",
+        "match_mode"
+      ],
+      "compressed_sha256": "9502d05e253afa0925dd407db6d3260d1ddcb316040bbf3b1e3ea3579f3fb7ff",
+      "decoded_sha256": "f4f309bd62aeb030695965c4768a9c0fb1c3133ea7d75e33d830a65b652e29b6"
+    },
+    {
+      "index": 99216,
+      "filename_candidates": [
+        "gclient/data_lang/data_tw/title_data.py"
+      ],
+      "terms": [
+        "FFA"
+      ],
+      "compressed_sha256": "beea2bca99c6ba6d606f5a5a3453d54e0f1540cc8d3b8616f583a70bc7800d6b",
+      "decoded_sha256": "cb19a3f0a243fc541ed1a4f7b2a7d8801f86887191272e998f309c9f275988e4"
+    },
+    {
+      "index": 99319,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/spell/spell_core/armor_spell.py"
+      ],
+      "terms": [
+        "maxhp"
+      ],
+      "compressed_sha256": "7347bc3c06176a7b4f32cac74e3a057e8db78a1b7260e167eb81413fe5c8ea79",
+      "decoded_sha256": "6f8a4373d7c7505911f29dae8ce8b4c4a439cc775849356f5a7f36eaf98d1a6f"
+    },
+    {
+      "index": 102031,
+      "filename_candidates": [],
+      "terms": [
+        "maxhp",
+        "is_alive"
+      ],
+      "compressed_sha256": "943463a57a41b76b339909ab520f24e2c8c6f7521ef679e90b5560e41cccbb2f",
+      "decoded_sha256": "b736c4d565ce00afc8c04de8dc10b33d21dfe4a716eea83a9565d053cba3185d"
+    },
+    {
+      "index": 102151,
+      "filename_candidates": [
+        "gclient/gameplay/logic_desperado_trifecta/combat_avatar_desperado_trifecta.py"
+      ],
+      "terms": [
+        "server_hp",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "69e782f6716fcd1c55df7afc962a80d4d89f998f8e2e0ed9ec496bf73cc504a2",
+      "decoded_sha256": "0357981f44aa3a954413fe3c6236222bb09d17cdf4f0d6c604337f2143953a5f"
+    },
+    {
+      "index": 103493,
+      "filename_candidates": [
+        "gclient/gameplay/logic_blasting/blasting_shop_util.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "b6961098c4cdd8427a1780a2a62ab23010c4f880ad25db227b0d1d7dd514fcb0",
+      "decoded_sha256": "6be74488d5c027195c1ef8e19534e5146cd70badda168e6aeed2757c205ba8a8"
+    },
+    {
+      "index": 103848,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/comps/comp_occupy_air_drop.py"
+      ],
+      "terms": [
+        "combat_team_id"
+      ],
+      "compressed_sha256": "a8de49cb76b4dd633dd97eb0c6d35830c2597acc2f4b27cf1592aa25f87dee0f",
+      "decoded_sha256": "734898320726ae7dc3cb196bdb7c65a7cc0f2a7e70a3ff9f1a93b8f243c1fae6"
+    },
+    {
+      "index": 104112,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_lockdown/ui/lock_down_top_survivor_comp.py"
+      ],
+      "terms": [
+        "combat_team_id"
+      ],
+      "compressed_sha256": "2153779377446ab6b6d8c3a342619d007a5598975f7326f42089479bdcb5c3e0",
+      "decoded_sha256": "23d67e7095ad38a8177683bbfe5c28beb2eedcb59837497864788f79b27d83c9"
+    },
+    {
+      "index": 104626,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/skull_bomb.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "211d92e1998e5c20f4cd942b56295a33102dd321031fb596bd801c5dfbb04cb2",
+      "decoded_sha256": "2f39de51e50ac1e160cf4263f3c6eda21aa2034a8e8cf271bf3555a53226f028"
+    },
+    {
+      "index": 104924,
+      "filename_candidates": [
+        "gclient/gameplay/logic_football/ui/football_calculation_manager.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "caa806bd57e31b07ff04fb1b11be8ce5fce58bdb2bb2f78f8f4b49de0e845e9b",
+      "decoded_sha256": "0e77f2a56ff2ef2369820aa4a17cc2ee9dd4f099fb525eb1fff8b021eb941e43"
+    },
+    {
+      "index": 107729,
+      "filename_candidates": [
+        "gclient/gameplay/logic_blasting/entities/blasting_c4_entity.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "043060b86e51753fe4e41f2c9610921d0c492b69b47539ce7b34f36d98db4181",
+      "decoded_sha256": "90f0bafb063ad0ad740187b6a65faec239e3d451ed409847fa9543cc1895829f"
+    },
+    {
+      "index": 107853,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/combat_avatar.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "main_player"
+      ],
+      "compressed_sha256": "85c8bfb1312f168283bd40befb7e47de222f40d7ae251a52d5069b79fb9b3c31",
+      "decoded_sha256": "11babd1e40f2036808527dc7589df652ae108cc51e3c37f0259c951a6b09dd0d"
+    },
+    {
+      "index": 107885,
+      "filename_candidates": [
+        "gclient/gameplay/logic_free_for_all/free_for_all_input.py"
+      ],
+      "terms": [
+        "FreeForAll"
+      ],
+      "compressed_sha256": "61a12e2f529859144b46ba74acf5ce6db9bfbb7732730b77c63e87c58ca9daa5",
+      "decoded_sha256": "34cbd74336d546b7dfbbd4f8b5210e34281e09ae6acbdd7d0799943bb6482aea"
+    },
+    {
+      "index": 108697,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/hider_clone.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "maxhp"
+      ],
+      "compressed_sha256": "1642152f58a372e98e5db9ed6c7feef87701eafa5a9c6150499e56d7f7c41205",
+      "decoded_sha256": "1b1aa589c1800f334325e750aba7584791ee55eb240e8d9faa60f216aefdf476"
+    },
+    {
+      "index": 108818,
+      "filename_candidates": [],
+      "terms": [
+        "IsEnemy",
+        "match_mode",
+        "maxhp"
+      ],
+      "compressed_sha256": "010c2581ad2a089b78e51b258026efa27577e5d63b1a14dd855c6e3080aaf867",
+      "decoded_sha256": "c69a1b41935d7a6f56bc7c43be13665325816d9ff5191624f963ee12a5c98af9"
+    },
+    {
+      "index": 108940,
+      "filename_candidates": [
+        "gclient/gameplay/uicomponents/bottom_head_bar_node.py"
+      ],
+      "terms": [
+        "maxhp",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "38fae297186833d803526231b1fadd067a5fb069c30ecca264544f69bdd34509",
+      "decoded_sha256": "0b6861cbcc7217d92a194f07621718d2782d24d1dd5a437c67e5d734fc12b533"
+    },
+    {
+      "index": 109047,
+      "filename_candidates": [
+        "gclient/gameplay/logic_big_head/game_logic_bighead.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "32f81cdc63e71a2019c88e8f0effc0a6f7a57bfb73b8a692decd413bf59e48c1",
+      "decoded_sha256": "41f4a76d142b0b2d369bee6d1381fa6b46ed1b20cb50e5ef7b19d1ca3cb3d0e2"
+    },
+    {
+      "index": 109190,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/sticky_objects.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "99b34a053cecf9ac2d8ecef0cfc01e0a5aba5b5ff74e3f1cdf6dbc26fbf264fa",
+      "decoded_sha256": "5204e1259e776989d44750b8b23c1991049364a4be4f009c7a2916a71adb232c"
+    },
+    {
+      "index": 109528,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/bot/throwable/combat_throwable.py"
+      ],
+      "terms": [
+        "maxhp",
+        "is_alive"
+      ],
+      "compressed_sha256": "76ae5b21b81bc49758f7b29d90068f7774f6052dd5ca4497d3c6292fe3dc6585",
+      "decoded_sha256": "9baeae2659d65dc23e75148b0394224ad645e0827da0f4cb4152de92204c1831"
+    },
+    {
+      "index": 109773,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/ui/dj_battle_rhythm_ui.py"
+      ],
+      "terms": [
+        "maxhp"
+      ],
+      "compressed_sha256": "18005bea141e11ed4fb8827a27e9ae818aa638ca78a4cf5809733d0f73ac8137",
+      "decoded_sha256": "0168ee7d2e082c8e8a24ed809ff173cd14a31bb193db44aa7b63f63298ab85a6"
+    },
+    {
+      "index": 110145,
+      "filename_candidates": [],
+      "terms": [
+        "combat_team_id",
+        "maxhp"
+      ],
+      "compressed_sha256": "3542b363bd4ac5ee78d52e69a92a79354c194000e239756b5ba7f0cc64e10172",
+      "decoded_sha256": "5b0a5936376fc483d9f2364353c1d38e09a2ce34770d7381414ef27f16c1e85f"
+    },
+    {
+      "index": 111732,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_first/bot/brain.py"
+      ],
+      "terms": [
+        "maxhp",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "9b46b84ba2625315c6ee74f557eeab0b9802b168563825c8c9bf2af8d1b1289a",
+      "decoded_sha256": "c2aae2fc9bd3a22f900c5a9ae7556aff4253938c4e3ed48236cd1ce41cd948ed"
+    },
+    {
+      "index": 112928,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/stronghold.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "9684daac6d9ee4b7e47962f8555a01f614f9a8b2e9ac7bb3994321880100cc4c",
+      "decoded_sha256": "bf4daa689c542ada8a55a2fb4740ab2dc801b4284ae63418580bcc0950988787"
+    },
+    {
+      "index": 113667,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_titan_2/ui/titan_2_giant_healthbar_window.py"
+      ],
+      "terms": [
+        "maxhp"
+      ],
+      "compressed_sha256": "03ebfecb273fd8e540a0a59cf2756a423422da3b080d6ff59d66f31b8be1c1e3",
+      "decoded_sha256": "91bfe92c6c70d0bfce2735c65f2bdc05af4a1a979c5ae9efc89511ba88ca7ef6"
+    },
+    {
+      "index": 113733,
+      "filename_candidates": [
+        "gclient/gameplay/logic_rookieguide/combat_avatar_rookieguide.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "0d54e4f4c068d2648e8933da4d8d9a93e785a3bc1cf1704ba2b4c4960deda834",
+      "decoded_sha256": "164d5c8d8039e25e58903f20400db9825b0b31a259c1361218b74b2e5e041a42"
+    },
+    {
+      "index": 114995,
+      "filename_candidates": [
+        "gclient/gameplay/logic_football/ui/football_scoreboard_comp.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "efe8a1dd20fd3638190bc4ddd3aa639e6332ecd05ba80d10e6cbe4c770e394e1",
+      "decoded_sha256": "1b0febc7b6c33f244760c7f19e2536917209f87746d73d1832453aa00fb4d43b"
+    },
+    {
+      "index": 115904,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_lightning/ui/lightning_hud_bottom_arms_comp.py"
+      ],
+      "terms": [
+        "maxhp",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "ab2139cf736a0e0fe59154f7dc6849ba7e402027565ddf24d0d8f6309741efb7",
+      "decoded_sha256": "e818084e9b7d52ce9bf188d31911cdcbf24207dc160bd642b644f5dc2dea0a96"
+    },
+    {
+      "index": 116834,
+      "filename_candidates": [
+        "gclient/gameplay/uicomponents/hud_room_spectator_comp.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "maxhp",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "63af1c50e6702fde5f84bc7f29bfc757f9480b39fb75ea2cf771759c3a392cf1",
+      "decoded_sha256": "77e8658e4a507ce71dfe743ef83af2c9b658fe47842aeaa52f4fb9e0ae138d48"
+    },
+    {
+      "index": 117948,
+      "filename_candidates": [
+        "gclient/gameplay/logic_gun_fight/combat_avatar_gun_fight.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "server_hp",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "42d2b806b47d2b61853e9ab8f03b5fbf7ef2e6d12f798184ff330a881057bc7d",
+      "decoded_sha256": "d7827751f366634eb6e1b5dd4f86943ce588fb25bd4474d02dca81a5eaf53e08"
+    },
+    {
+      "index": 119181,
+      "filename_candidates": [
+        "gclient/data_lang/data_ja/title_data.py"
+      ],
+      "terms": [
+        "FFA"
+      ],
+      "compressed_sha256": "e0fc959da274859ddeb77ea1bdff7aadc7d6674a5b9413571ef71a78eb8573e6",
+      "decoded_sha256": "fe51a7947c8b7ae26f701e2f3ce394175d950b720201d0889d11533d4f453fb3"
+    },
+    {
+      "index": 119575,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/cevo_platform.py"
+      ],
+      "terms": [
+        "combat_team_id"
+      ],
+      "compressed_sha256": "e56208fc66bfdff4b41cf2c75c9b7478a30c6d8dff456d091db8cb02222eef13",
+      "decoded_sha256": "58ce7e2038f07bf7a8913c6b4d689e489aa906a5902f17d28005e6b56c4b0bce"
+    },
+    {
+      "index": 120553,
+      "filename_candidates": [
+        "gclient/gameplay/logic_squad_fight/ui/squad_fight_state_comp.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "c445ec646139348a683e4fc7f133f88c3f4767674a042aa7b48a3efca2011445",
+      "decoded_sha256": "7daa0cb91f8c15744cdc3ff569427415097cb6411f81f7cb8cf7b36ab026c0de"
+    },
+    {
+      "index": 122031,
+      "filename_candidates": [
+        "gclient/gamesystem/uihall/ui_personal_space/space_blasting_calculation_comp.py"
+      ],
+      "terms": [
+        "combat_team_id"
+      ],
+      "compressed_sha256": "e620982c3e47c93837d93617bb1e0059ac71c81e614034677043aec6c79e4468",
+      "decoded_sha256": "46a21bef5832c085a8ee7cbd364285b7672cf368376f649e8cd67e7c6b3bc4ab"
+    },
+    {
+      "index": 123158,
+      "filename_candidates": [
+        "gclient/gameplay/logic_blasting/game_logic_blasting.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "a5909025aecb7425b75a19837432850feb566abd20f43fe485af5550092f0061",
+      "decoded_sha256": "b6f78e255381f4edf9766397effece27145d2834c933f51b6ab6b89ae99b409e"
+    },
+    {
+      "index": 123193,
+      "filename_candidates": [
+        "gclient/gameplay/logic_football/ui/football_state_comp.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "0089dab9e34dddf4515a75cbe17e4ad9d3dc386512371b018375597a049ec238",
+      "decoded_sha256": "67209ae48c42d11f394decbc3172fbb81bf70643e24fec47abad24eb204f491d"
+    },
+    {
+      "index": 123279,
+      "filename_candidates": [
+        "gclient/gameplay/logic_grand_theft/bot/grand_theft_evaluators.py"
+      ],
+      "terms": [
+        "maxhp"
+      ],
+      "compressed_sha256": "d5e6106e417f48b63423c55055d305942057c580cc21782f023ae476f42397a9",
+      "decoded_sha256": "8ffb6f64bc2dbb9aa0e45c717ca63a734277727a4438d86c2a9e6c4c552a2bdb"
+    },
+    {
+      "index": 123463,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/occupy_contract_item_new.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "bc0e8a3f053fcd95176644e66655cd862ac93fbf94688bdb4b7bfbdf4d737eb8",
+      "decoded_sha256": "d183a325948bb157b5db3719e54c1fe2a79af741a8e45fa1ecc4f0c7c9352042"
+    },
+    {
+      "index": 123809,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_spell_juren.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "is_alive"
+      ],
+      "compressed_sha256": "5c673c030a8c3396b05eff3b34e08f403421f3bef4c017defa9f2098f9e469ec",
+      "decoded_sha256": "da3df22f2c13a3c1cffbfba887b345c983f95e0f2d8d9f3a5c11d1325f5ca8a0"
+    },
+    {
+      "index": 123823,
+      "filename_candidates": [
+        "gclient/gameplay/util/ads_mark_manager.py"
+      ],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "2464d58402c69534a559acbfbe634ae77af605a10f6b55b26b9a0a4ecfa7fc68",
+      "decoded_sha256": "63a2f963b00f43b623dd6598d8731b9c6f4892506cea46be4b4bf59e89c37845"
+    },
+    {
+      "index": 124141,
+      "filename_candidates": [
+        "gclient/gameplay/logic_gun_fight/ui/gun_fight_state_comp.py"
+      ],
+      "terms": [
+        "combat_team_id"
+      ],
+      "compressed_sha256": "25da584c8ab53aa2a36c5c4a73a3084e903e674d41f0d0fb7ec8ac2c5a9c0c72",
+      "decoded_sha256": "f1e77b3cdf165a2fd0b0581f0a9e664a13aa60b7c9997a729c9eaa86b1a6e111"
+    },
+    {
+      "index": 124300,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/comps/avatar_scene_node.py"
+      ],
+      "terms": [
+        "IsTeammate",
+        "combat_team_id",
+        "maxhp",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "f108377680e33f49415da72e2d176595f4d1f4534450726d810668175bc0c2c8",
+      "decoded_sha256": "133a726b2b4c47b88a7f03b163a6c21609ed3ee766ef2525ada1781c96013959"
+    },
+    {
+      "index": 124949,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/occupy_contract_item.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "006d2ae8d7fe86b6af3393cd6e6a655389432dca410238da26b1c231d3402298",
+      "decoded_sha256": "9d07d6901e8b85a9b50989e2159da5c49f6faf7ef7dc556d8c964cea35dc77c7"
+    },
+    {
+      "index": 125020,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/spell/spell_core/spell_core_main.py"
+      ],
+      "terms": [
+        "main_player"
+      ],
+      "compressed_sha256": "b8841a3e6cafdaa111a6d5034c4933dcce05a1ebd77cd415c45a39c028684e27",
+      "decoded_sha256": "e4810e3cc6032ef92290460794124b53fa3c1893216db424dbe8b0e13e0a8fe7"
+    },
+    {
+      "index": 125076,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/comps/comp_talent.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "maxhp",
+        "is_alive",
+        "GetPlayer",
+        "main_player"
+      ],
+      "compressed_sha256": "a8e2db5e08ecdc35246fa9d1b5dd09bfd126ed0bb9f8970b6e55fd4026db1298",
+      "decoded_sha256": "21ea2858f91dcb5c5daa0823127a8532b9c588d7237b8ea352c9ab476f7a4168"
+    },
+    {
+      "index": 125654,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/replay_combat_avatar.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "is_alive"
+      ],
+      "compressed_sha256": "a85ea5d1dad4c2e718d965c36af0800c0c3517d6fdb559b0676d94e1c6268d53",
+      "decoded_sha256": "18cc8ef8831b453f945f6874f7271d805cbfdaff01221c500c4f14d99ebba555"
+    },
+    {
+      "index": 126399,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/bot/evaluators.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "maxhp",
+        "is_alive"
+      ],
+      "compressed_sha256": "ab6a0c38e65c54ea80d4149fd9f8dbad1e70024ab60ebd25f2e65fc80628297d",
+      "decoded_sha256": "08b5fcd59569e3102ea6426791fe7a42a5fad024374b8012562875fe86ced225"
+    },
+    {
+      "index": 126465,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/barrie_cannon.py"
+      ],
+      "terms": [
+        "IsTeammate",
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "3ae7c1265c96e89ffcbece19d6be2a1e1c6508ee528e29e5223f9355839aab40",
+      "decoded_sha256": "26ed24436b6e85316d5cbbebe83b8030461f460e204b0314eead2b49a3090701"
+    },
+    {
+      "index": 126990,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_replay.py"
+      ],
+      "terms": [
+        "combat_team_id"
+      ],
+      "compressed_sha256": "e1f0f253a630b13dacfd18240a44bd5f39b364c346dbb8402267726f1bb5a627",
+      "decoded_sha256": "ca8bd740a70e55468d87e2e521b890aaec07842df266a8ae4052523f38dbc5bc"
+    },
+    {
+      "index": 127226,
+      "filename_candidates": [
+        "gclient/data_lang/data_tw/match_data.py"
+      ],
+      "terms": [
+        "FreeForAll",
+        "match_mode"
+      ],
+      "compressed_sha256": "60cd94d4ea6b9b919c8ecf99f41e136a17438de139040bf5d261bb4a9baae4bd",
+      "decoded_sha256": "f72794c0b6029d96785e29648cea88514daec9e6022d61b2b04b8e9e4e70ccd8"
+    },
+    {
+      "index": 128152,
+      "filename_candidates": [
+        "gclient/gameplay/logic_hotspot/combat_avatar_hotspot.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "server_hp",
+        "maxhp",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "e34c9d918005323db416713f9d301ee89419c5fdbdb9e52911552cf6714aa53f",
+      "decoded_sha256": "21de4c7a42813d265d4b92816f6d2146e489fecc5d5d938ebdce38fdae583d4c"
+    },
+    {
+      "index": 129007,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/comps/comp_rookieguide.py"
+      ],
+      "terms": [
+        "maxhp"
+      ],
+      "compressed_sha256": "bd38c6cca6c1041247ae360d771e6df7de81ad2dd3e8d3dfe75d19b39bd7f88a",
+      "decoded_sha256": "23502a954c44313cc6dfa5991c13d3081c231339cb2a318381cc02c9c56848bd"
+    },
+    {
+      "index": 129513,
+      "filename_candidates": [
+        "gclient/gamesystem/uihall/ui_personal_space/space_squadfight_calculation_comp.py"
+      ],
+      "terms": [
+        "combat_team_id"
+      ],
+      "compressed_sha256": "243912f80bdb746e4fe1a1d968d919b490e4925d067bec4020a281e8bd4fb6af",
+      "decoded_sha256": "c2a921a204059e9b3f455445ec59a0bd4bcf546b4608e51842e732c2217003fc"
+    },
+    {
+      "index": 129700,
+      "filename_candidates": [
+        "gclient/data_lang/data_tr/match_data.py"
+      ],
+      "terms": [
+        "FreeForAll",
+        "match_mode"
+      ],
+      "compressed_sha256": "703c226e9162e45896131ccfcd4c1dc95a8ec47004b69e457c357226e288d3fe",
+      "decoded_sha256": "dd28f679792394e352f2f0d867dc1a5f74d3064d75f449f39014fd1c1fa9ef1f"
+    },
+    {
+      "index": 129895,
+      "filename_candidates": [],
+      "terms": [
+        "IsEnemy"
+      ],
+      "compressed_sha256": "436fafd32e21c25eb9e616febce0f9406186d58c18204fc8b0ed254733fa2aa1",
+      "decoded_sha256": "230eef4a5fd5e43b0b612603ea5001472b4c52a24660635f30c60600e07eb9f5"
+    },
+    {
+      "index": 130018,
+      "filename_candidates": [
+        "gclient/data_lang/data_en/title_data.py"
+      ],
+      "terms": [
+        "FFA"
+      ],
+      "compressed_sha256": "c03ce764bf503ee97b5959050dcf77ac329b0906fe1da104ed782ff0d5435512",
+      "decoded_sha256": "f3954bd38f8b00ce47992731b282111c82dfc9bf25a97850ced3c6eb72f3645a"
+    },
+    {
+      "index": 130168,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_combat_item.py"
+      ],
+      "terms": [
+        "maxhp",
+        "is_alive"
+      ],
+      "compressed_sha256": "3b73558206f3c882626b2d50ca8eac5d3c467753a7f59273e12349985a171267",
+      "decoded_sha256": "d287b790eeaf829e610dcf9cc93854668d9ff68e69fc1f7cb21d64a2eed1dfe0"
+    },
+    {
+      "index": 131200,
+      "filename_candidates": [
+        "gclient/gameplay/logic_desperado_trifecta/game_logic_desperado_trifecta.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "d68a73849d08be137bc7999aa356c4ca6b06f29816ea3f8d61f7502fe70fe05e",
+      "decoded_sha256": "389af68077af9388df92c5af7ba753dd924ccea3ffa5986beba6d324feba7962"
+    },
+    {
+      "index": 131445,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_lockdown/ui/lock_down_stronghold_state_comp.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "095ac5f09e5b1d03579895f91341985b77d64164ac868d606f6ff1082b3f639b",
+      "decoded_sha256": "14c07ee52f175be331ca3ab340b088ed85ceee37409a99a1fd3b81a0557a3699"
+    },
+    {
+      "index": 131916,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/oilbox.py"
+      ],
+      "terms": [
+        "maxhp"
+      ],
+      "compressed_sha256": "026517235a79f60167aa1f1b4dcaa825db5836d667b6f1a335f7613ecb161b4f",
+      "decoded_sha256": "12b26413e3ce9698dd738481c22fd8d5896227b93d9096da330c24bf9357482d"
+    },
+    {
+      "index": 132180,
+      "filename_candidates": [
+        "gclient/gameplay/logic_peekaboo/game_logic_peekaboo.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "IsTeammate",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "1112626cfa48c200ee27647998b12bb15271976a8d8791cec3b0c3eabe93367a",
+      "decoded_sha256": "0ffe6ae378af23c4f6f63847128a6562ec1bad78100965952a1d2bbcaed1d5a1"
+    },
+    {
+      "index": 132689,
+      "filename_candidates": [
+        "gclient/gameplay/logic_dlc/ui/squad_fight_scoreboard_comp.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "is_alive",
+        "IsAlive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "09f581bc189f1d418e54acb2a7a1bd330eb628add982bab830017338e1531faa",
+      "decoded_sha256": "ae93814570d0b7abd389afa1450c5de335a1a670dc559845c4b851e3f91aa9f4"
+    },
+    {
+      "index": 133136,
+      "filename_candidates": [
+        "gclient/gameplay/logic_desperado_trifecta/bot/desperado_trifecta_brain.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "combat_team_id",
+        "is_alive"
+      ],
+      "compressed_sha256": "7a8a6f8b13f759883bf463101f778a41a8cbf0bcca856b6bfc87295b465d572b",
+      "decoded_sha256": "b0da3a7bfb511162cb2d0f54dfaaa6958bfd2bd4b0855c7614b8af4886d99aa8"
+    },
+    {
+      "index": 133656,
+      "filename_candidates": [
+        "gclient/gameplay/uicomponents/mapbase_comp.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "06b56403eb2f444b01921aca10800b9496fd17b106390112e2d997e507691578",
+      "decoded_sha256": "1e0219f0653a43095534f06713975d5d5b700f469407ada90fcb641708801ca0"
+    },
+    {
+      "index": 134852,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/comps/comp_cannon_toplogo.py"
+      ],
+      "terms": [
+        "IsTeammate",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "a0b13e68b725d08968e9ac0909dbe060892ac08d0c89c2aa1ff47dda5398eefc",
+      "decoded_sha256": "dada7b7f660ae4159f8c3b31d78d317e485c17386e8fa8069cd48ee3beb68ee8"
+    },
+    {
+      "index": 135190,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba/ui/moba_reborn_countdown_comp.py"
+      ],
+      "terms": [
+        "combat_team_id"
+      ],
+      "compressed_sha256": "feaf7c16f5cc6ec3342a92249440696c93d80654e7d1e15b1d767d92d37ac218",
+      "decoded_sha256": "4dd47096fdcb481dd42459d1195549885f5963705ee72d1699e4f3035e559946"
+    },
+    {
+      "index": 136391,
+      "filename_candidates": [
+        "gclient/gamesystem/uihall/ui_personal_space/space_hotspot_calculation_comp.py"
+      ],
+      "terms": [
+        "combat_team_id"
+      ],
+      "compressed_sha256": "dda3353e47061d3fb855e0e34ff33489b282e28d4337aa9943d11a2163d2ddf1",
+      "decoded_sha256": "1386bcf72b8c731f2059740fa90c564e27116185f36dd9f906d8abde9c00e9ae"
+    },
+    {
+      "index": 136897,
+      "filename_candidates": [
+        "gclient/gameplay/uicomponents/mapbase_mark_comp.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "57b3ca77ac8f83d8489af18f96ef2ccc5db0ec19c9ea916ce463d2694cd0c4bd",
+      "decoded_sha256": "0ad43f12baa7f8ad4b2d0fbc545925348725fe1bed31f24b133cd0dfc3f9152e"
+    },
+    {
+      "index": 137415,
+      "filename_candidates": [],
+      "terms": [
+        "maxhp"
+      ],
+      "compressed_sha256": "875932a845cdfc1c109229ec070e2e1ec5f9a3c6477e429ce6399977cae0ea84",
+      "decoded_sha256": "d47887b56b1c958cdf1ab9e21bb0d0a0991949c65aa8d92150f0b4095b7c9d48"
+    },
+    {
+      "index": 137993,
+      "filename_candidates": [
+        "gclient/data/title_data.py"
+      ],
+      "terms": [
+        "FFA"
+      ],
+      "compressed_sha256": "2c6ee6b8a54e48d59f931cb65c4bf507742cb3e6b06f08939b2675dcebc3e444",
+      "decoded_sha256": "bfc4c5edc3c006ff221979539f1d066f725068668879de99b607d2bdcf05b969"
+    },
+    {
+      "index": 138227,
+      "filename_candidates": [
+        "gclient/gameplay/logic_blasting/avatarmembers/cimp_input_controller.py"
+      ],
+      "terms": [
+        "combat_team_id"
+      ],
+      "compressed_sha256": "4709ac7c6a2000c6497a23ce82b9a88978ea3050d96143076909021c3e0a4472",
+      "decoded_sha256": "572d23c9c829cf2c4da6ee56192df0733d6d41baaa919a081b656b1287f93ea8"
+    },
+    {
+      "index": 138967,
+      "filename_candidates": [
+        "gclient/gameplay/logic_moba_titan_2/combat_avatar_moba_titan_2.py"
+      ],
+      "terms": [
+        "server_hp"
+      ],
+      "compressed_sha256": "14d27e016520130ef98ed5576ab297427d61d3cd09929e99497093c6e9d1f451",
+      "decoded_sha256": "f1281156289acaad1dbd59aa8ea07078649281487fc31f0aecfd1b3f602db493"
+    },
+    {
+      "index": 139741,
+      "filename_candidates": [],
+      "terms": [
+        "maxhp"
+      ],
+      "compressed_sha256": "97acb03ef6c048747628d0b2e6cbc180966abcf72b4579da7f8fb9f620e2c0b8",
+      "decoded_sha256": "50f0e8914e8c636969b643c4167e2dfe436fe65676e3faeb07a505818cd00cc3"
+    },
+    {
+      "index": 142860,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/search_box.py"
+      ],
+      "terms": [
+        "combat_team_id",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "7c724484f7c55543ddc7b75ff4981eccc0ec1e0bc61816201c4f4685e34a67ee",
+      "decoded_sha256": "be6751378d6357d939217d970b612b7a7fe5238cc2ca40dd3cc4c512738f7e4d"
+    },
+    {
+      "index": 143510,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/models/avatar_model.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "is_alive"
+      ],
+      "compressed_sha256": "52126c6073b2bbd96f7e62f843086c75b1966dd713fd1290061c9f09209f9a16",
+      "decoded_sha256": "0a4a57f34d1c8e14e38c08f510f1787f46659e4b2928663cf526797eac8b0ed3"
+    },
+    {
+      "index": 144143,
+      "filename_candidates": [
+        "gclient/gameplay/logic_arms_race_mode/bot/brain.py"
+      ],
+      "terms": [
+        "IsEnemy",
+        "is_alive"
+      ],
+      "compressed_sha256": "4a4f1b19b32eb90038c012110d8610870b1e0e8bcc35cf82d3aa3093780cf13a",
+      "decoded_sha256": "240bd423e2578df0a9f817b067cf39c9072958c0f31a142a79ea8e9d87ab1827"
+    },
+    {
+      "index": 144440,
+      "filename_candidates": [],
+      "terms": [
+        "maxhp",
+        "is_alive"
+      ],
+      "compressed_sha256": "5a81fbab5d6189c7a035e2717db38652590358be5f2123cdb75d5048ee28b2e1",
+      "decoded_sha256": "0b025a27b8a4fa0b181a73968a269f27cad5e1e2ddeee88d67eab5bf0ee08eb4"
+    },
+    {
+      "index": 144820,
+      "filename_candidates": [
+        "gclient/gamesystem/uihall/activity_team_recharge_photo_manager.py"
+      ],
+      "terms": [
+        "main_player"
+      ],
+      "compressed_sha256": "6a3f6bd5779149c8d96757dbfe7bc4a7a7180a32ca95eac77b0b03ccc8c066e7",
+      "decoded_sha256": "0c44de1af038c04b9ca4015b02c5718d1116fc7737b07119a77fe9e4177d96b5"
+    },
+    {
+      "index": 145546,
+      "filename_candidates": [
+        "gclient/gameplay/game_logic_base.py"
+      ],
+      "terms": [
+        "IsTeammate",
+        "is_alive",
+        "GetPlayer"
+      ],
+      "compressed_sha256": "095c60e38eb4c75d1fbd053f22b4aef1f6de7e538ecd2981636eed3214f7cefe",
+      "decoded_sha256": "a3c7b11aa4a2d9ea8b52a6ee279859ef6e268e26aab3a5433aacc48078c5318c"
+    }
+  ]
+}

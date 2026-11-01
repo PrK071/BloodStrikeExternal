@@ -1,0 +1,120 @@
+{
+  "sample_sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "all_offsets_hex_strings": true,
+  "rvas": {
+    "area_type": "0x796c240",
+    "entity_type": "0x796f3c0",
+    "area_map_type": "0x796a420",
+    "prop_method_record": "0x796ba70",
+    "prop_callback": "0x130a140",
+    "owner_method_record": "0x796bab0",
+    "owner_callback": "0x130a220",
+    "entity_area_getset_record": "0x796f318",
+    "entity_area_getter": "0x1439230",
+    "storage_int_vtable": "0x555ba60",
+    "storage_float_vtable": "0x555bb58",
+    "storage_mixed_vtable": "0x555bd48"
+  },
+  "owner_bridge": {
+    "area_py_to_bridge": "read_ptr(AreaPy+0x20)",
+    "bridge_to_native_area": "read_ptr(AreaBridge+0)",
+    "native_area_to_host_bridge": "read_ptr(NativeArea+0x38)",
+    "host_bridge_to_host_py": "read_ptr(HostBridge+0)",
+    "reverse_entity_area_getter": "read_ptr(read_ptr(HostPy+0x20)+0x10)",
+    "observation_guard": "HostPy MRO includes entity_type; AreaPy MRO includes area_type; HostPy+20==HostBridge and HostBridge+10==AreaPy are extra coherence guards, not assumptions that all raw pointers satisfy them"
+  },
+  "prop_bridge": {
+    "area_to_prop": "read_ptr(read_ptr(read_ptr(AreaPy+0x20))+0x1d8)",
+    "map_python_to_native_backing": "read_ptr(MapPy+0x20)",
+    "backing_to_state": "read_ptr(MapBacking+0x10)",
+    "state_to_class_metadata": "read_ptr(State+0)",
+    "class_metadata_to_name_index": "read_ptr(ClassMeta+0x20)",
+    "class_metadata_to_numeric_schema": "read_ptr(ClassMeta+0x28)",
+    "state_to_storage": "read_ptr(State+0x18)"
+  },
+  "name_index": {
+    "sentinel": "0x18",
+    "bucket_array": "0x28",
+    "mask": "0x40",
+    "bucket_stride": "0x10",
+    "bucket_first_node": "0",
+    "bucket_last_node": "8",
+    "node_previous": "8",
+    "node_key_pyobject": "0x10",
+    "node_descriptor": "0x18",
+    "traversal": "For each bounded bucket: start last; skip sentinel; compare node key; stop at first inclusive; otherwise previous. This reproduces native12f9d30 range traversal without calling hash or Python compare."
+  },
+  "descriptor": {
+    "signed_int32_index": "0",
+    "type_config_pointer_opaque": "0x30",
+    "integer_default_qword": "0x48",
+    "float_default_double": "0x50",
+    "string_default_cpp_string": "0x58",
+    "opaque_tagged_name_handle": "0x78",
+    "do_not_infer": "Offsets30/78 are not proven arbitrary getters or Python dicts. Match property names via name-index node keys, not descriptor+10 speculation.",
+    "type_config_lowbyte": "uint8(read_ptr(Descriptor+0x30)+8), consumed by1540440; opaque outside recovered native dispatch, not a CPython PyTypeObject by assumption."
+  },
+  "numeric_schema": {
+    "allocated_slot_count": "0x10",
+    "definition_pairs_begin": "0x40",
+    "definition_pairs_end": "0x48",
+    "definition_pair_stride": "0x10",
+    "definition_pair_descriptor": "8",
+    "allocated_slot_count_width": "64 bits; constructors load full QWORD; unsigned overflow comparisons. Exact original C++ signedness not independently named; bounded observer should readu64 and reject excessive values.",
+    "definition_membership_guard": "A matching descriptor may conservatively be required to occur at pair+8 in this Schema pair vector. Native constructors prove the pair layout, but do not prove number of pairs equals allocated slot count or exclude aliases."
+  },
+  "storage": {
+    "vtable": "0",
+    "state_backlink": "8",
+    "numeric_schema_backlink": "0x10",
+    "values_begin": "0x18",
+    "values_end": "0x20",
+    "values_capacity_end": "0x28",
+    "bounds": "Index signed32 must be nonnegative, less than schema.allocated_slot_count and (end-begin)/stride; aligned begin<=end<=capacity; (end-begin)/stride equals schema count in observed constructor branches; resource caps and overflow rejection are reader policy."
+  },
+  "numeric_cases": {
+    "int": {
+      "vtable": "0x555ba60",
+      "stride": "8",
+      "payload": "signed int64 at begin+8*index",
+      "getter": "0x15539c0"
+    },
+    "float": {
+      "vtable": "0x555bb58",
+      "stride": "8",
+      "payload": "IEEE754 double at begin+8*index",
+      "getter": "0x15539a0"
+    },
+    "mixed": {
+      "vtable": "0x555bd48",
+      "stride": "0x10",
+      "cell": "begin+16*index",
+      "tag": "uint8(cell+8)",
+      "tag0": "signed int64(cell)",
+      "tag1": "double(cell)",
+      "other_tags": "unsupported for numeric reads; may allocate/delegate in real getter",
+      "getter": "0x1554880",
+      "native_value_dispatch_table": "0x155496c"
+    }
+  },
+  "limits": [
+    "No live memory observations",
+    "No specific server_hp/team index is statically fixed",
+    "No local-player root derived in this folder",
+    "Effective ClassMap construction/runtime rebasing and lifetime must be guarded",
+    "Unsupported storage RTTI/types/tags remain unknown, never default to zero"
+  ],
+  "native_python_base_sizes": {
+    "area": "0x28",
+    "entity": "0x28",
+    "area_map": "0x28",
+    "itemsize": "0",
+    "source_constant_rva": "0x547b240",
+    "proof_stores": [
+      "0x9aca7",
+      "0x9beb8",
+      "0x9e466"
+    ],
+    "contrast": "PyIEntity79a0060 has separate0x30 layout; do not assume its+28 flags for these Asio objects."
+  }
+}

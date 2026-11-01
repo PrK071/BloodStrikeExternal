@@ -1,0 +1,135 @@
+{
+  "abi": "CPython v3.14.0 GIL build, Windows AMD64 LLP64; little endian; source-derived offsets below, separately corroborated against sample where stated",
+  "sample_sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "header_sources": [
+    {
+      "file": "object.h",
+      "url": "https://raw.githubusercontent.com/python/cpython/v3.14.0/Include/object.h",
+      "sha256": "a5c8f054899db3bde7c6b53808fab3aa097a10347bb597d335c2e03572a99712"
+    },
+    {
+      "file": "cpython-object.h",
+      "url": "https://raw.githubusercontent.com/python/cpython/v3.14.0/Include/cpython/object.h",
+      "sha256": "b19fa965f8a81febee354da251be8b6f67bfc716d71ed1d0c5f7928f54426c08"
+    },
+    {
+      "file": "dictobject.h",
+      "url": "https://raw.githubusercontent.com/python/cpython/v3.14.0/Include/cpython/dictobject.h",
+      "sha256": "5828bfda624b5bf7e5c1d96c96495b38dcfa20e59960d336caa2399f22175603"
+    },
+    {
+      "file": "pycore_dict.h",
+      "url": "https://raw.githubusercontent.com/python/cpython/v3.14.0/Include/internal/pycore_dict.h",
+      "sha256": "d3b8aadc3a7b5be0975387144b44f3cf904df62a73ab9839764aad239fca10e3"
+    },
+    {
+      "file": "unicodeobject.h",
+      "url": "https://raw.githubusercontent.com/python/cpython/v3.14.0/Include/cpython/unicodeobject.h",
+      "sha256": "a3f5e7c3f6795fb1f0794fd4e41df2fc823c1a7844e82fe96ccc42c94f63146b"
+    },
+    {
+      "file": "pycore_object.h",
+      "url": "https://raw.githubusercontent.com/python/cpython/v3.14.0/Include/internal/pycore_object.h",
+      "sha256": "223532d0a60e70a88d2507ecf10276af268f7e05290309a65889166081ae59c4"
+    },
+    {
+      "file": "tupleobject.h",
+      "url": "https://raw.githubusercontent.com/python/cpython/v3.14.0/Include/cpython/tupleobject.h",
+      "sha256": "c9a31821c64c183f265f99a7454769f9ad9731614bd0515a334a136501ba93fe"
+    },
+    {
+      "file": "boolobject.c",
+      "url": "https://raw.githubusercontent.com/python/cpython/v3.14.0/Objects/boolobject.c",
+      "sha256": "a196af1a127a27fd28f645713e3b3ee3a54c247f64238f578bcb14d4e9cf14e5"
+    }
+  ],
+  "PyObject": {
+    "ob_refcnt": 0,
+    "ob_type": 8,
+    "sizeof": 16
+  },
+  "PyTypeObject": {
+    "tp_name": 24,
+    "tp_basicsize": 32,
+    "tp_itemsize": 40,
+    "tp_getattro": 144,
+    "tp_setattro": 152,
+    "tp_flags": 168,
+    "tp_base": 256,
+    "tp_dict": 264,
+    "tp_dictoffset": 288,
+    "tp_mro": 344
+  },
+  "PyDictObject": {
+    "ma_used": 16,
+    "_ma_watcher_tag": 24,
+    "ma_keys": 32,
+    "ma_values": 40,
+    "sizeof": 48
+  },
+  "PyDictKeysObject": {
+    "dk_refcnt": 0,
+    "dk_log2_size": 8,
+    "dk_log2_index_bytes": 9,
+    "dk_kind": 10,
+    "dk_version": 12,
+    "dk_usable": 16,
+    "dk_nentries": 24,
+    "dk_indices": 32
+  },
+  "PyDictKeyEntry": {
+    "sizeof": 24,
+    "me_hash": 0,
+    "me_key": 8,
+    "me_value": 16
+  },
+  "PyDictUnicodeEntry": {
+    "sizeof": 16,
+    "me_key": 0,
+    "me_value": 8
+  },
+  "PyASCIIObject": {
+    "length": 16,
+    "hash": 24,
+    "state": 32,
+    "sizeof_and_compact_ASCII_data": 40,
+    "kind_mask": 28,
+    "kind_shift": 2,
+    "compact_mask": 32,
+    "ascii_mask": 64
+  },
+  "PyTupleObject": {
+    "ob_size": 16,
+    "ob_hash": 24,
+    "ob_item": 32
+  },
+  "flags": {
+    "INLINE_VALUES": 4,
+    "MANAGED_WEAKREF": 8,
+    "MANAGED_DICT": 16,
+    "HEAPTYPE": 512,
+    "DICT_SUBCLASS": 536870912,
+    "UNICODE_SUBCLASS": 268435456,
+    "STATIC_BUILTIN": 2
+  },
+  "sample_rvas": {
+    "dict_type": 128030976,
+    "unicode_type": 128019984,
+    "bool_type": 128002032,
+    "false_singleton": 128002448,
+    "true_singleton": 128002480,
+    "IEntity_type_storage": 127533152,
+    "tuple_type": 128027872,
+    "type_type": 128012656
+  },
+  "remaining": "Effective custom tp_getattro/tp_setattro and runtime-ready type identity not observed; these are data layout facts and guarded compatibility requirements, not runtime success.",
+  "sample_confirmation": {
+    "PyObject.ob_type": "2a1cbef stores type into allocation+8;2039326 reads P+8",
+    "IEntity.tp_dictoffset": "20525ab stores 0x10 at79a0180=type79a0060+120",
+    "P.dict": "__dict__ getter1ccfa30 direct P+10",
+    "PyDictObject": "allocator2a93930 writes+10,+18,+20,+28",
+    "dict_entry_addressing": "lookup2a8bf80 reads kind+a,exponent+9, selects general/unicode entry strides",
+    "Unicode_masks_and_mro_tuple": "Unicode masks header-derived; tuple ob_size+10 and ob_item+20 corroborated by tuple type slot sq_item2a823b0",
+    "singletons": "bool typename+tp_new2a14310+official bool_new source pattern; no matching selected PE export"
+  }
+}

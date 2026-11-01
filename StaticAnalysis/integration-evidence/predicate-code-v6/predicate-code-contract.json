@@ -1,0 +1,91 @@
+{
+  "target_sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "abi": "CPython3.14.0 GIL Windows AMD64 little-endian; no target execution",
+  "types": {
+    "function": {
+      "rva": "0x7a135a0",
+      "name": "function",
+      "tp_basicsize": 152,
+      "tp_itemsize": 0
+    },
+    "code": {
+      "rva": "0x7a28410",
+      "name": "code",
+      "tp_basicsize": 208,
+      "tp_itemsize": 2
+    }
+  },
+  "PyFunctionObject": {
+    "ob_type": 8,
+    "func_globals": 16,
+    "func_builtins": 24,
+    "func_name": 32,
+    "func_qualname": 40,
+    "func_code": 48,
+    "func_defaults": 56,
+    "func_kwdefaults": 64,
+    "func_closure": 72,
+    "func_module": 104,
+    "sizeof": 152
+  },
+  "PyCodeObject": {
+    "ob_type": 8,
+    "ob_size": 16,
+    "co_consts": 24,
+    "co_names": 32,
+    "co_exceptiontable": 40,
+    "co_flags": 48,
+    "co_argcount": 52,
+    "co_posonlyargcount": 56,
+    "co_kwonlyargcount": 60,
+    "co_stacksize": 64,
+    "co_firstlineno": 68,
+    "co_nlocalsplus": 72,
+    "co_nlocals": 80,
+    "co_ncellvars": 84,
+    "co_nfreevars": 88,
+    "co_localsplusnames": 96,
+    "co_localspluskinds": 104,
+    "co_filename": 112,
+    "co_name": 120,
+    "co_qualname": 128,
+    "co_executors": 152,
+    "_co_cached": 160,
+    "_co_monitoring": 176,
+    "co_code_adaptive": 208,
+    "sizeof_with_one_char_rounded": 216
+  },
+  "bytecode": {
+    "length": "signed int64 at code+0x10 multiplied by2, bounded before reading",
+    "start": "code+0xd0",
+    "unit": "little-endian [opcode_byte,arg_byte]",
+    "code_getter": "0x2b23240 -> 0x2b20c30",
+    "base_code_unit_getter": "0x2babf10",
+    "caches_rva": "0x59bde60",
+    "deopt_rva": "0x59bdf60",
+    "map_size": 256,
+    "rule": "map opcode through Deopt, preserve argument byte, assemble EXTENDED_ARG, skip Caches[base] words; cache payload bytes are mutable and excluded",
+    "reject": [
+      "opcode CACHE outside skipped cache payload",
+      "unknown opcode",
+      "opcode>=234 (MIN_INSTRUMENTED_OPCODE), including ENTER_EXECUTOR255",
+      "cache overrun or odd byte length",
+      "trailing EXTENDED_ARG or more than3 extensions",
+      "changed code pointer, length, signature/names/constants/closure/defaults during bracketed observation"
+    ]
+  },
+  "corroboration": {
+    "function_fields": "native-getters.json + __module__ member atRVA0x7a13028",
+    "code_fields": "member descriptors atRVA0x7a28080/0x7a280a8/0x7a280f8/0x7a28120; native debug offsets in native-getters.json",
+    "adaptive_length": "native-code-bytes.json:2b20c81/2b20c85/2b20c8c",
+    "opcode_tables": "opcode-tables.json: whole256-byte source maps exactly match native PE data; native-code-bytes.json code references both",
+    "source_only_fields": "remaining function/common and code layout fields are source-derived for corroborated GIL3.14 AMD64 ABI; not individually confirmed by getter"
+  },
+  "identity_limits": [
+    "function name/qualname/module are mutable labels, not identity",
+    "canonical opcode fingerprint must be combined with exact co_names/constants/signature/locals/freevars/defaults/closure checks",
+    "known code does not prove it is the active resolved method: validate actual instance/type/MRO/dictionary/descriptor precedence, and reject unsupported custom dispatch",
+    "known IsEnemy body still invokes argument truthiness, attribute access and comparisons, whose behavior can depend on descriptors and operand types",
+    "read-only repeated reads cannot establish lifetime, atomicity, absence of ABA or simultaneous module mutation"
+  ]
+}

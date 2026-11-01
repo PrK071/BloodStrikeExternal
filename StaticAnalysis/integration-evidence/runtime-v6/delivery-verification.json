@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "date": "2026-11-01",
+  "sample": {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\BloodStrike.exe",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "image_size": 156143616
+  },
+  "checked_byte_records": 30484,
+  "distinct_byte_ranges": 19548,
+  "records_by_folder": {
+    "coordinate-bridge-v5": 77,
+    "python-owner-v5": 6595,
+    "gameplay-classifier-v5": 4,
+    "combat-state-v6": 0,
+    "local-player-v6": 6802,
+    "native-properties-v6": 16787,
+    "predicate-code-v6": 215,
+    "python-values-v6": 4
+  },
+  "artifact_manifests": {
+    "StaticAnalysis/integration-evidence/python-owner-v5/artifact-manifest.json": 60,
+    "StaticAnalysis/integration-evidence/local-player-v6/artifact-manifest.json": 20,
+    "StaticAnalysis/integration-evidence/native-properties-v6/artifact-manifest.json": 59,
+    "StaticAnalysis/integration-evidence/native-properties-v6/attribute-dispatch/artifact-manifest.json": 21,
+    "StaticAnalysis/integration-evidence/native-properties-v6/managed-models/artifact-manifest.json": 28,
+    "StaticAnalysis/integration-evidence/predicate-code-v6/artifact-manifest.json": 23
+  },
+  "tested_sources_unchanged": 47,
+  "tests_run": 108,
+  "native_tests": 9,
+  "v4_manifest_files_unchanged": 98,
+  "generated_predicate_spec": "MATCH",
+  "mpk_payloads_rechecked": 346,
+  "mpk_decoded_bytes": 9732373,
+  "protected_game_access": false,
+  "target_code_executed": false,
+  "system_input_events_sent": false,
+  "gameplay_validated": false,
+  "publisher_certification": false,
+  "scope": "selected on-disk bytes, manifests, and current test/source binding; not live type/dispatch/lifetime proof"
+}

@@ -1,0 +1,7 @@
+from pathlib import Path
+import json,hashlib
+O=Path(__file__).parent
+p=O/'layout-contract.json';c=json.loads(p.read_text());c['PyTupleObject']={'ob_size':16,'ob_hash':24,'ob_item':32};c['sample_rvas']['tuple_type']=0x7a18ce0;c['sample_rvas']['type_type']=0x7a15170;c['sample_confirmation']['Unicode_masks_and_mro_tuple']='Unicode masks header-derived; tuple ob_size+10 and ob_item+20 corroborated by tuple type slot sq_item2a823b0';p.write_text(json.dumps(c,indent=2))
+p=O/'PYTHON-OWNER.md';s=p.read_text();s=s.replace('| Tuple/MRO | count signed64+10; item pointers+18 |','| Tuple/MRO | count signed64+10; cached hash+18; item pointers+20 |');s=s.replace('Fields nentries/usable and Unicode state masks are header-derived, not independently demonstrated by this native function.','Fields nentries/usable and Unicode state masks are header-derived, not independently demonstrated by this native function. Tuple type7a18ce0 has name tuple, basicsize20 and itemsize8; its sequence sq_item slot resolves to2a823b0, which bounds against count+10 and reads item at+20+8*i (2a823bf). This confirms the new3.14 cached-hash layout; old tuple item offset18 is incorrect. Type type7a15170 has name type and its own ob_type points back to itself. See tuple-type-and-item.json.');p.write_text(s)
+manifest={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in O.iterdir() if p.is_file() and p.name!='artifact-manifest.json'}
+(O/'artifact-manifest.json').write_text(json.dumps(manifest,indent=2));print('corrected tuple items+0x20; native slot verified; artifact files',len(manifest))

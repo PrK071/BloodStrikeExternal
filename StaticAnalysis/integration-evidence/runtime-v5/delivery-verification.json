@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "date": "2026-11-01",
+  "sample": {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\BloodStrike.exe",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "image_size": 156143616
+  },
+  "types": [
+    {
+      "name": "Messiah::ICamera",
+      "col_rva": "0x6e1e1b8",
+      "type_descriptor_rva": "0x7de5d50",
+      "raw_name": ".?AVICamera@Messiah@@",
+      "file_offset": "0x6e1d3b8",
+      "bytes": "010000000000000000000000505dde07e0e1e106b8e1e106"
+    },
+    {
+      "name": "Messiah::IGameplay",
+      "col_rva": "0x6e7a3a0",
+      "type_descriptor_rva": "0x7e35098",
+      "raw_name": ".?AVIGameplay@Messiah@@",
+      "file_offset": "0x6e795a0",
+      "bytes": "0100000000000000000000009850e307c8a3e706a0a3e706"
+    },
+    {
+      "name": "Messiah::ClientPlayer",
+      "col_rva": "0x6ea2828",
+      "type_descriptor_rva": "0x7e57120",
+      "raw_name": ".?AVClientPlayer@Messiah@@",
+      "file_offset": "0x6ea1a28",
+      "bytes": "0100000000000000000000002071e5075028ea062828ea06"
+    },
+    {
+      "name": "dict",
+      "type_rva": "0x7a19900",
+      "name_rva": "0x4eeae10"
+    },
+    {
+      "name": "str",
+      "type_rva": "0x7a16e10",
+      "name_rva": "0x4eead30"
+    },
+    {
+      "name": "tuple",
+      "type_rva": "0x7a18ce0",
+      "name_rva": "0x4eeada0"
+    },
+    {
+      "name": "type",
+      "type_rva": "0x7a15170",
+      "name_rva": "0x4ec7a40"
+    },
+    {
+      "name": "bool",
+      "type_rva": "0x7a127f0",
+      "name_rva": "0x4e49c00"
+    }
+  ],
+  "checked_byte_records": 6676,
+  "distinct_byte_ranges": 4433,
+  "records_by_folder": {
+    "coordinate-bridge-v5": 77,
+    "python-owner-v5": 6595,
+    "gameplay-classifier-v5": 4
+  },
+  "tested_sources_unchanged": 35,
+  "tests_run": 73,
+  "v4_manifest_files_unchanged": 98,
+  "protected_game_access": false,
+  "system_input_events_sent": false,
+  "scope": "on-disk bytes and source/test hashes; not live gameplay, universal semantic or full CFG proof"
+}

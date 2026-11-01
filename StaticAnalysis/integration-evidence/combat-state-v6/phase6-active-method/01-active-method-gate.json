@@ -1,0 +1,314 @@
+{
+  "target_sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "index_sha256": "bb3782da03b95d66451a598add8fe0923405be0dde53a8844b2f8bc107a6ced3",
+  "scope": "static MPK reports only; no bytecode execution, process inspection, or game launch",
+  "active_reference": {
+    "producer_index": 29779,
+    "path": [
+      "gclient/framework/entities/space.py"
+    ],
+    "decoded_sha256": "0965992fef0dd6c69f1c4e17bd4d0c7152a2a43d8a6a631aef9b42291a06400e",
+    "Space_init_code_sha256": "08c0a18a274ff28a274b8d45885a10b5bbbef5fb24302feb73c1435ff327cd28",
+    "Space_enter_code_sha256": "ce6c80c133ac6c75f7e444c2948849df312f3a6fb17781f971a9fbab69c473d2",
+    "producer_observation": "Space.init assigns self.game_logic=None and publishes genv.space=self; Space.enter assigns self.game_logic=entity only when entity.IsGameLogic is truthy. Player ADS code in index 107853 reads genv.space.game_logic and invokes .IsEnemy; AssistAim code uses owner.game_logic.CanDamage."
+  },
+  "general_implementation": {
+    "index": 108818,
+    "path": "gshare/game_logic/igame_logic_base.py",
+    "decoded_sha256": "c69a1b41935d7a6f56bc7c43be13665325816d9ff5191624f963ee12a5c98af9",
+    "qualname": "IGameLogicBase.IsEnemy",
+    "code_sha256": "9cfb18d4557dce7c882bfc8df9a3ce7368b1e8a97abf786a0c15d59bf0b30219",
+    "argcount": 3,
+    "localsplusnames": [
+      "self",
+      "a",
+      "b"
+    ],
+    "base_class_body_sha256": "135a69aa4a7d26f17accf2fa8e25d0c112a42b77c51cdf2504a5bcee7491328a",
+    "finding": "canonical general body is defined in IGameLogicBase; CGameLogicBase class body has no IsEnemy method and is built as a subclass of IGameLogicBase at module offsets 616-636."
+  },
+  "component_composition": {
+    "module_index": 145546,
+    "module_sha256": "965a16a8e57aa13f8d1f0d57d5cd6afad37ef62386af1df80198a295f3b0d48b",
+    "CGameLogicBase_class_sha256": "8a1c7f42dff5f791760eb9b6998c69fc5d8a983381892062a92944aa1ece656f",
+    "class_build_instructions": [
+      {
+        "offset": 616,
+        "op": "LOAD_BUILD_CLASS",
+        "arg": 0
+      },
+      {
+        "offset": 618,
+        "op": "PUSH_NULL",
+        "arg": 0
+      },
+      {
+        "offset": 620,
+        "op": "LOAD_CONST",
+        "arg": 42,
+        "value": "CGameLogicBase"
+      },
+      {
+        "offset": 622,
+        "op": "MAKE_FUNCTION",
+        "arg": 0
+      },
+      {
+        "offset": 624,
+        "op": "LOAD_CONST",
+        "arg": 43,
+        "value": "CGameLogicBase"
+      },
+      {
+        "offset": 626,
+        "op": "LOAD_NAME",
+        "arg": 84,
+        "value": "IGameLogicBase"
+      },
+      {
+        "offset": 628,
+        "op": "CALL",
+        "arg": 3
+      },
+      {
+        "offset": 636,
+        "op": "STORE_NAME",
+        "arg": 98,
+        "value": "CGameLogicBase"
+      },
+      {
+        "offset": 638,
+        "op": "LOAD_NAME",
+        "arg": 82,
+        "value": "with_tag"
+      },
+      {
+        "offset": 640,
+        "op": "PUSH_NULL",
+        "arg": 0
+      },
+      {
+        "offset": 642,
+        "op": "LOAD_CONST",
+        "arg": 44,
+        "value": "IsGameLogic"
+      },
+      {
+        "offset": 644,
+        "op": "CALL",
+        "arg": 1
+      },
+      {
+        "offset": 652,
+        "op": "LOAD_NAME",
+        "arg": 24,
+        "value": "Components"
+      },
+      {
+        "offset": 654,
+        "op": "PUSH_NULL",
+        "arg": 0
+      },
+      {
+        "offset": 656,
+        "op": "LOAD_NAME",
+        "arg": 98,
+        "value": "CGameLogicBase"
+      },
+      {
+        "offset": 658,
+        "op": "LOAD_NAME",
+        "arg": 90,
+        "value": "StoryTickComponent"
+      },
+      {
+        "offset": 660,
+        "op": "LOAD_NAME",
+        "arg": 91,
+        "value": "comp_gamelogic_vehicle_media"
+      },
+      {
+        "offset": 662,
+        "op": "LOAD_ATTR",
+        "arg": 198,
+        "value": "GameLogicVehicleMediaComp"
+      },
+      {
+        "offset": 682,
+        "op": "LOAD_NAME",
+        "arg": 47,
+        "value": "comp_talent"
+      },
+      {
+        "offset": 684,
+        "op": "LOAD_ATTR",
+        "arg": 200,
+        "value": "GameLogicTalentComp"
+      },
+      {
+        "offset": 704,
+        "op": "CALL",
+        "arg": 4
+      }
+    ],
+    "note": "The module applies Components(...) around the general CGameLogicBase entity. Components-based class composition and mode-specific components mean a class name or IsGameLogic marker alone does not identify the resolved IsEnemy function."
+  },
+  "known_overrides": [
+    {
+      "index": 92227,
+      "path": [
+        "gclient/gameplay/logic_moba_faction/game_logic_moba_faction.py"
+      ],
+      "decoded_sha256": "0aa075d290f14b0da643885faad1c91ce41ee45a1b8ad4c7e76c19d92fef8ed7",
+      "qualname": "MobaFactionMapInfoMixin.IsEnemy",
+      "code_sha256": "c3cd9518e161567d17b7fa72914ebffe6e5cf9b45e65e1c0f97590f8d21db33f",
+      "argcount": 3,
+      "names": [
+        "GetEntityFaction",
+        "super",
+        "MobaFactionMapInfoMixin",
+        "IsEnemy"
+      ]
+    },
+    {
+      "index": 132180,
+      "path": [
+        "gclient/gameplay/logic_peekaboo/game_logic_peekaboo.py"
+      ],
+      "decoded_sha256": "0ffe6ae378af23c4f6f63847128a6562ec1bad78100965952a1d2bbcaed1d5a1",
+      "qualname": "CGameLogicPeekaboo.IsEnemy",
+      "code_sha256": "23ba15b51dca4b6f9e4999199aa5822e82b7eead2944d94a6961e8ee34473b5a",
+      "argcount": 3,
+      "names": [
+        "getattr"
+      ]
+    },
+    {
+      "index": 80751,
+      "path": [
+        "gclient/gameplay/logic_moba_zombie/comps/comp_zombie_battle.py"
+      ],
+      "decoded_sha256": "b053b4e33e54741dde72987ded4d22d8a4d586329a9d0ee61746a39adeb26380",
+      "qualname": "GameLogicZombieComp.IsEnemy",
+      "code_sha256": "fdc0e8d0a2f4ddc46d8356d666dc5d02915597f7ba8c5b12d479809fa589bbde",
+      "argcount": 3,
+      "names": [
+        "getattr",
+        "faction"
+      ]
+    }
+  ],
+  "attribute_resolution_audit": {
+    "selected_python_hooks": {
+      "108818": {
+        "path": [],
+        "decoded_sha256": "c69a1b41935d7a6f56bc7c43be13665325816d9ff5191624f963ee12a5c98af9",
+        "selected_hooks": [],
+        "class": {
+          "IGameLogicBase": {
+            "code_sha256": "135a69aa4a7d26f17accf2fa8e25d0c112a42b77c51cdf2504a5bcee7491328a",
+            "has_IsEnemy_name": true
+          }
+        }
+      },
+      "145546": {
+        "path": [
+          "gclient/gameplay/game_logic_base.py"
+        ],
+        "decoded_sha256": "a3c7b11aa4a2d9ea8b52a6ee279859ef6e268e26aab3a5433aacc48078c5318c",
+        "selected_hooks": [],
+        "class": {
+          "CGameLogicBase": {
+            "code_sha256": "8a1c7f42dff5f791760eb9b6998c69fc5d8a983381892062a92944aa1ece656f",
+            "has_IsEnemy_name": false
+          }
+        }
+      },
+      "118280": {
+        "path": [
+          "engine/client/ClientSpace.py"
+        ],
+        "decoded_sha256": "212c2c27d0286d92ac7e8179b997f1f2f3d15267002053642c074aaa2f572f0d",
+        "selected_hooks": [],
+        "class": {
+          "ClientSpace": {
+            "code_sha256": "0a4db2e04a103f0f8cab714958ce08f41559aa50936f176e2305c9248f688741",
+            "has_IsEnemy_name": false
+          }
+        }
+      },
+      "29779": {
+        "path": [
+          "gclient/framework/entities/space.py"
+        ],
+        "decoded_sha256": "0965992fef0dd6c69f1c4e17bd4d0c7152a2a43d8a6a631aef9b42291a06400e",
+        "selected_hooks": [],
+        "class": {
+          "Space": {
+            "code_sha256": "f68a8c998d811b19bb3c51ceee372a5b0f8a8fcc57017c6186eca0faa0266385",
+            "has_IsEnemy_name": false
+          }
+        }
+      }
+    },
+    "limitations": [
+      "No selected Python __getattr__ or __getattribute__ body was found in the bounded IGameLogicBase, CGameLogicBase, ClientSpace, or Space reports. This does not rule out hooks on native bases/decorators or outside the selected module scope.",
+      "Space inherits a native-facing ClientSpace/Entity/SpaceClass path; no proof here excludes native descriptors or proves the external storage slot for Space.game_logic.",
+      "Components and mixins alter class dictionaries; an active runtime type/MRO must be inspected. An instance attribute could also shadow a non-data Python function descriptor. No selected artifacts establish absence of an instance-level IsEnemy override."
+    ]
+  },
+  "conservative_gate": {
+    "needed_runtime_evidence": [
+      "Read the actual active object reached through genv.space.game_logic (or the same object used by the consumer).",
+      "Resolve the actual IsEnemy attribute following instance and type/MRO lookup, including component-injected class dictionary entries.",
+      "Accept only if the resolved function/code object matches a mode-approved code fingerprint; for base general behavior, IsEnemy code_sha256 must equal the IGameLogicBase.IsEnemy fingerprint above.",
+      "Reject unknown wrappers, instance overrides, unresolved/native descriptors, and any other fingerprint."
+    ],
+    "static_only_conclusion": "The original code defines a concrete fingerprintable base function and known mode overrides, but static producers do not identify which function wins for the live active instance. A conservative static-only reader cannot assign the base predicate from the IsGameLogic marker or class-name resemblance."
+  },
+  "assist_aim_state_anchor": {
+    "module_key": "gclient.framework.util.assist_aim_util",
+    "path": [
+      "gclient/framework/util/assist_aim_util.py"
+    ],
+    "decoded_sha256": "8163bc535975fd931d2df900fc04bf0d0402e1e5555aa6c2c3d2ffd53168f3de",
+    "SelectTarget_code_sha256": "a06f588dcb9ec7072759f71dd612025ffc65a6a8e6253ff2fbd9291890c457bf",
+    "argcount": 5,
+    "localsplusnames": [
+      "self",
+      "max_dist",
+      "detect_box",
+      "randomOne",
+      "combat_states",
+      "player",
+      "CanDamage",
+      "center",
+      "best_target",
+      "max_dot",
+      "box_trans",
+      "camera_dir",
+      "camera_pos",
+      "camera_dir_tuple",
+      "collisions",
+      "max_dist_square",
+      "collision",
+      "entity",
+      "cur_result",
+      "target_pos",
+      "distance",
+      "aim_pos",
+      "camera_to_aim_pos",
+      "aim_pos_distance",
+      "dot"
+    ],
+    "class_defaults_bytecode_offsets": [
+      130,
+      132,
+      152,
+      154,
+      160,
+      162
+    ],
+    "default_shape": "the method positional defaults contain a single default object: a one-element tuple built as (CombatState.ALIVE,). Runtime anchor: AssistAim.__dict__[\"SelectTarget\"].__defaults__[-1][0]. This retrieves the enum object, not an assumed integer. The source imports CombatState from gshare.consts; underlying numeric encoding and runtime type are not proven."
+  }
+}

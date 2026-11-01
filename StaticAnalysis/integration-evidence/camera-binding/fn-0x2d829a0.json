@@ -1,0 +1,27 @@
+[
+  {
+    "rva": "0x2d829a0",
+    "preferred_va": "0x142d829a0",
+    "file_offset": "0x2d81fa0",
+    "bytes": "48 83 ec 28",
+    "text": "sub rsp,28h",
+    "length": 4
+  },
+  {
+    "rva": "0x2d829a4",
+    "preferred_va": "0x142d829a4",
+    "file_offset": "0x2d81fa4",
+    "bytes": "48 85 d2",
+    "text": "test rdx,rdx",
+    "length": 3
+  },
+  {
+    "rva": "0x2d829a7",
+    "preferred_va": "0x142d829a7",
+    "file_offset": "0x2d81fa7",
+    "bytes": "74 40",
+    "text": "je short 0000000142D829E9h",
+    "length": 2,
+    "branch_target_rva": "0x2d829e9"
+  }
+]

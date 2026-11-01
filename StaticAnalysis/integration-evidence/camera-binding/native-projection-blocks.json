@@ -1,0 +1,1199 @@
+[
+  {
+    "string": "ICamera.IsOrthographic",
+    "rva": "0x4f41110",
+    "blocks": [
+      {
+        "pointer_rva": "0x4f43910",
+        "qwords": [
+          {
+            "rva": "0x4f438e0",
+            "value": "0x144f427f0",
+            "string": "ICamera"
+          },
+          {
+            "rva": "0x4f438e8",
+            "value": "0x538b34db00000007",
+            "string": null
+          },
+          {
+            "rva": "0x4f438f0",
+            "value": "0x144e49c00",
+            "string": "bool"
+          },
+          {
+            "rva": "0x4f438f8",
+            "value": "0x8fd0d24a00000004",
+            "string": null
+          },
+          {
+            "rva": "0x4f43900",
+            "value": "0x144ea6920",
+            "string": "IsOrthographic"
+          },
+          {
+            "rva": "0x4f43908",
+            "value": "0xbe4580b20000000e",
+            "string": null
+          },
+          {
+            "rva": "0x4f43910",
+            "value": "0x144f41110",
+            "string": "ICamera.IsOrthographic"
+          },
+          {
+            "rva": "0x4f43918",
+            "value": "0xab9a861c00000016",
+            "string": null
+          },
+          {
+            "rva": "0x4f43920",
+            "value": "0x97000100030000",
+            "string": null
+          },
+          {
+            "rva": "0x4f43928",
+            "value": "0x800200",
+            "string": null
+          },
+          {
+            "rva": "0x4f43930",
+            "value": "0x14093be00",
+            "string": null
+          },
+          {
+            "rva": "0x4f43938",
+            "value": "0x14093be00",
+            "string": null
+          },
+          {
+            "rva": "0x4f43940",
+            "value": "0x140940a80",
+            "string": null
+          },
+          {
+            "rva": "0x4f43948",
+            "value": "0x140940aa0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43950",
+            "value": "0x140940ac0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43958",
+            "value": "0x14093a9e0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43960",
+            "value": "0x14058a260",
+            "string": null
+          },
+          {
+            "rva": "0x4f43968",
+            "value": "0x140940ba0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43970",
+            "value": "0x140940b80",
+            "string": null
+          },
+          {
+            "rva": "0x4f43978",
+            "value": "0x140940ae0",
+            "string": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "string": "ICamera.OrthoScale",
+    "rva": "0x4f47940",
+    "blocks": [
+      {
+        "pointer_rva": "0x4f43c40",
+        "qwords": [
+          {
+            "rva": "0x4f43c10",
+            "value": "0x144f427f0",
+            "string": "ICamera"
+          },
+          {
+            "rva": "0x4f43c18",
+            "value": "0x538b34db00000007",
+            "string": null
+          },
+          {
+            "rva": "0x4f43c20",
+            "value": "0x144e4aa58",
+            "string": "float"
+          },
+          {
+            "rva": "0x4f43c28",
+            "value": "0x95fb9fe800000005",
+            "string": null
+          },
+          {
+            "rva": "0x4f43c30",
+            "value": "0x144ea9468",
+            "string": "OrthoScale"
+          },
+          {
+            "rva": "0x4f43c38",
+            "value": "0x1c0cc2a50000000a",
+            "string": null
+          },
+          {
+            "rva": "0x4f43c40",
+            "value": "0x144f47940",
+            "string": "ICamera.OrthoScale"
+          },
+          {
+            "rva": "0x4f43c48",
+            "value": "0x9eb0d23800000012",
+            "string": null
+          },
+          {
+            "rva": "0x4f43c50",
+            "value": "0x9a000400030000",
+            "string": null
+          },
+          {
+            "rva": "0x4f43c58",
+            "value": "0x200",
+            "string": null
+          },
+          {
+            "rva": "0x4f43c60",
+            "value": "0x140941240",
+            "string": null
+          },
+          {
+            "rva": "0x4f43c68",
+            "value": "0x140941240",
+            "string": null
+          },
+          {
+            "rva": "0x4f43c70",
+            "value": "0x140940a80",
+            "string": null
+          },
+          {
+            "rva": "0x4f43c78",
+            "value": "0x140940aa0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43c80",
+            "value": "0x140940ac0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43c88",
+            "value": "0x14093a9e0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43c90",
+            "value": "0x14058f6f0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43c98",
+            "value": "0x140940ba0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43ca0",
+            "value": "0x140940b80",
+            "string": null
+          },
+          {
+            "rva": "0x4f43ca8",
+            "value": "0x140940ae0",
+            "string": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "string": "ICamera.FieldOfView",
+    "rva": "0x4f4b278",
+    "blocks": [
+      {
+        "pointer_rva": "0x4f43e60",
+        "qwords": [
+          {
+            "rva": "0x4f43e30",
+            "value": "0x144f427f0",
+            "string": "ICamera"
+          },
+          {
+            "rva": "0x4f43e38",
+            "value": "0x538b34db00000007",
+            "string": null
+          },
+          {
+            "rva": "0x4f43e40",
+            "value": "0x144e4aa58",
+            "string": "float"
+          },
+          {
+            "rva": "0x4f43e48",
+            "value": "0x95fb9fe800000005",
+            "string": null
+          },
+          {
+            "rva": "0x4f43e50",
+            "value": "0x144ea3fc8",
+            "string": "FieldOfView"
+          },
+          {
+            "rva": "0x4f43e58",
+            "value": "0xde6fd7080000000b",
+            "string": null
+          },
+          {
+            "rva": "0x4f43e60",
+            "value": "0x144f4b278",
+            "string": "ICamera.FieldOfView"
+          },
+          {
+            "rva": "0x4f43e68",
+            "value": "0x54842d1100000013",
+            "string": null
+          },
+          {
+            "rva": "0x4f43e70",
+            "value": "0x9c000000010200",
+            "string": null
+          },
+          {
+            "rva": "0x4f43e78",
+            "value": "0x800120",
+            "string": null
+          },
+          {
+            "rva": "0x4f43e80",
+            "value": "0x140943d40",
+            "string": null
+          },
+          {
+            "rva": "0x4f43e88",
+            "value": "0x140940a20",
+            "string": null
+          },
+          {
+            "rva": "0x4f43e90",
+            "value": "0x14058a9d0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43e98",
+            "value": "0x14058d970",
+            "string": null
+          },
+          {
+            "rva": "0x4f43ea0",
+            "value": "0x140940ac0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43ea8",
+            "value": "0x14093a9e0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43eb0",
+            "value": "0x14058f6f0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43eb8",
+            "value": "0x140940ba0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43ec0",
+            "value": "0x140940b80",
+            "string": null
+          },
+          {
+            "rva": "0x4f43ec8",
+            "value": "0x140940ae0",
+            "string": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "string": "ICamera.Near",
+    "rva": "0x4f4c630",
+    "blocks": [
+      {
+        "pointer_rva": "0x4f43f70",
+        "qwords": [
+          {
+            "rva": "0x4f43f40",
+            "value": "0x144f427f0",
+            "string": "ICamera"
+          },
+          {
+            "rva": "0x4f43f48",
+            "value": "0x538b34db00000007",
+            "string": null
+          },
+          {
+            "rva": "0x4f43f50",
+            "value": "0x144e4aa58",
+            "string": "float"
+          },
+          {
+            "rva": "0x4f43f58",
+            "value": "0x95fb9fe800000005",
+            "string": null
+          },
+          {
+            "rva": "0x4f43f60",
+            "value": "0x144ea8bd8",
+            "string": "Near"
+          },
+          {
+            "rva": "0x4f43f68",
+            "value": "0xb415b84c00000004",
+            "string": null
+          },
+          {
+            "rva": "0x4f43f70",
+            "value": "0x144f4c630",
+            "string": "ICamera.Near"
+          },
+          {
+            "rva": "0x4f43f78",
+            "value": "0x2d3e57660000000c",
+            "string": null
+          },
+          {
+            "rva": "0x4f43f80",
+            "value": "0x9d000000010200",
+            "string": null
+          },
+          {
+            "rva": "0x4f43f88",
+            "value": "0x800120",
+            "string": null
+          },
+          {
+            "rva": "0x4f43f90",
+            "value": "0x140944a20",
+            "string": null
+          },
+          {
+            "rva": "0x4f43f98",
+            "value": "0x140940a20",
+            "string": null
+          },
+          {
+            "rva": "0x4f43fa0",
+            "value": "0x14058a9d0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43fa8",
+            "value": "0x14058d970",
+            "string": null
+          },
+          {
+            "rva": "0x4f43fb0",
+            "value": "0x140940ac0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43fb8",
+            "value": "0x14093a9e0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43fc0",
+            "value": "0x14058f6f0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43fc8",
+            "value": "0x140940ba0",
+            "string": null
+          },
+          {
+            "rva": "0x4f43fd0",
+            "value": "0x140940b80",
+            "string": null
+          },
+          {
+            "rva": "0x4f43fd8",
+            "value": "0x140940ae0",
+            "string": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "string": "ICamera.Far",
+    "rva": "0x4f4d6c0",
+    "blocks": [
+      {
+        "pointer_rva": "0x4f44080",
+        "qwords": [
+          {
+            "rva": "0x4f44050",
+            "value": "0x144f427f0",
+            "string": "ICamera"
+          },
+          {
+            "rva": "0x4f44058",
+            "value": "0x538b34db00000007",
+            "string": null
+          },
+          {
+            "rva": "0x4f44060",
+            "value": "0x144e4aa58",
+            "string": "float"
+          },
+          {
+            "rva": "0x4f44068",
+            "value": "0x95fb9fe800000005",
+            "string": null
+          },
+          {
+            "rva": "0x4f44070",
+            "value": "0x144ea3eb8",
+            "string": "Far"
+          },
+          {
+            "rva": "0x4f44078",
+            "value": "0x43d9db4400000003",
+            "string": null
+          },
+          {
+            "rva": "0x4f44080",
+            "value": "0x144f4d6c0",
+            "string": "ICamera.Far"
+          },
+          {
+            "rva": "0x4f44088",
+            "value": "0x809d83050000000b",
+            "string": null
+          },
+          {
+            "rva": "0x4f44090",
+            "value": "0x9e000000010200",
+            "string": null
+          },
+          {
+            "rva": "0x4f44098",
+            "value": "0x800120",
+            "string": null
+          },
+          {
+            "rva": "0x4f440a0",
+            "value": "0x140945e10",
+            "string": null
+          },
+          {
+            "rva": "0x4f440a8",
+            "value": "0x140940a20",
+            "string": null
+          },
+          {
+            "rva": "0x4f440b0",
+            "value": "0x14058a9d0",
+            "string": null
+          },
+          {
+            "rva": "0x4f440b8",
+            "value": "0x14058d970",
+            "string": null
+          },
+          {
+            "rva": "0x4f440c0",
+            "value": "0x140940ac0",
+            "string": null
+          },
+          {
+            "rva": "0x4f440c8",
+            "value": "0x14093a9e0",
+            "string": null
+          },
+          {
+            "rva": "0x4f440d0",
+            "value": "0x14058f6f0",
+            "string": null
+          },
+          {
+            "rva": "0x4f440d8",
+            "value": "0x140940ba0",
+            "string": null
+          },
+          {
+            "rva": "0x4f440e0",
+            "value": "0x140940b80",
+            "string": null
+          },
+          {
+            "rva": "0x4f440e8",
+            "value": "0x140940ae0",
+            "string": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "string": "Messiah.ICamera.GetRayDirectionFromScreenPoint",
+    "rva": "0x4f6f270",
+    "blocks": [
+      {
+        "pointer_rva": "0x4f44b00",
+        "qwords": [
+          {
+            "rva": "0x4f44ad0",
+            "value": "0x140940bf0",
+            "string": null
+          },
+          {
+            "rva": "0x4f44ad8",
+            "value": "0x140940bd0",
+            "string": null
+          },
+          {
+            "rva": "0x4f44ae0",
+            "value": "0x140940c10",
+            "string": null
+          },
+          {
+            "rva": "0x4f44ae8",
+            "value": "0x0",
+            "string": null
+          },
+          {
+            "rva": "0x4f44af0",
+            "value": "0x144f427f0",
+            "string": "ICamera"
+          },
+          {
+            "rva": "0x4f44af8",
+            "value": "0x538b34db00000007",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b00",
+            "value": "0x144f6f270",
+            "string": "Messiah.ICamera.GetRayDirectionFromScreenPoint"
+          },
+          {
+            "rva": "0x4f44b08",
+            "value": "0x56d5a6390000002e",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b10",
+            "value": "0x144f70c48",
+            "string": "GetRayDirectionFromScreenPoint"
+          },
+          {
+            "rva": "0x4f44b18",
+            "value": "0xf506cef00000001e",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b20",
+            "value": "0x144f6f270",
+            "string": "Messiah.ICamera.GetRayDirectionFromScreenPoint"
+          },
+          {
+            "rva": "0x4f44b28",
+            "value": "0x56d5a6390000002e",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b30",
+            "value": "0xa8000000200206",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b38",
+            "value": "0x10000002",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b40",
+            "value": "0x140940a00",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b48",
+            "value": "0x140940a20",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b50",
+            "value": "0x140940a80",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b58",
+            "value": "0x140940aa0",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b60",
+            "value": "0x140940ac0",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b68",
+            "value": "0x14093a9e0",
+            "string": null
+          }
+        ]
+      },
+      {
+        "pointer_rva": "0x4f44b20",
+        "qwords": [
+          {
+            "rva": "0x4f44af0",
+            "value": "0x144f427f0",
+            "string": "ICamera"
+          },
+          {
+            "rva": "0x4f44af8",
+            "value": "0x538b34db00000007",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b00",
+            "value": "0x144f6f270",
+            "string": "Messiah.ICamera.GetRayDirectionFromScreenPoint"
+          },
+          {
+            "rva": "0x4f44b08",
+            "value": "0x56d5a6390000002e",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b10",
+            "value": "0x144f70c48",
+            "string": "GetRayDirectionFromScreenPoint"
+          },
+          {
+            "rva": "0x4f44b18",
+            "value": "0xf506cef00000001e",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b20",
+            "value": "0x144f6f270",
+            "string": "Messiah.ICamera.GetRayDirectionFromScreenPoint"
+          },
+          {
+            "rva": "0x4f44b28",
+            "value": "0x56d5a6390000002e",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b30",
+            "value": "0xa8000000200206",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b38",
+            "value": "0x10000002",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b40",
+            "value": "0x140940a00",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b48",
+            "value": "0x140940a20",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b50",
+            "value": "0x140940a80",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b58",
+            "value": "0x140940aa0",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b60",
+            "value": "0x140940ac0",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b68",
+            "value": "0x14093a9e0",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b70",
+            "value": "0x1409644e0",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b78",
+            "value": "0x140964290",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b80",
+            "value": "0x140964190",
+            "string": null
+          },
+          {
+            "rva": "0x4f44b88",
+            "value": "0x140940ae0",
+            "string": null
+          }
+        ]
+      },
+      {
+        "pointer_rva": "0x4f522a0",
+        "qwords": [
+          {
+            "rva": "0x4f52270",
+            "value": "0x1401064f0",
+            "string": null
+          },
+          {
+            "rva": "0x4f52278",
+            "value": "0x1409407f0",
+            "string": null
+          },
+          {
+            "rva": "0x4f52280",
+            "value": "0x14058a820",
+            "string": null
+          },
+          {
+            "rva": "0x4f52288",
+            "value": "0x14058a8a0",
+            "string": null
+          },
+          {
+            "rva": "0x4f52290",
+            "value": "0x144e49c08",
+            "string": "Messiah"
+          },
+          {
+            "rva": "0x4f52298",
+            "value": "0xf4e2259c00000007",
+            "string": null
+          },
+          {
+            "rva": "0x4f522a0",
+            "value": "0x144f6f270",
+            "string": "Messiah.ICamera.GetRayDirectionFromScreenPoint"
+          },
+          {
+            "rva": "0x4f522a8",
+            "value": "0x56d5a6390000002e",
+            "string": null
+          },
+          {
+            "rva": "0x4f522b0",
+            "value": "0x700040010",
+            "string": null
+          },
+          {
+            "rva": "0x4f522b8",
+            "value": "0x3",
+            "string": null
+          },
+          {
+            "rva": "0x4f522c0",
+            "value": "0x2080000",
+            "string": null
+          },
+          {
+            "rva": "0x4f522c8",
+            "value": "0x144f76a50",
+            "string": null
+          },
+          {
+            "rva": "0x4f522d0",
+            "value": "0x1409408d0",
+            "string": null
+          },
+          {
+            "rva": "0x4f522d8",
+            "value": "0x140964190",
+            "string": null
+          },
+          {
+            "rva": "0x4f522e0",
+            "value": "0x140964290",
+            "string": null
+          },
+          {
+            "rva": "0x4f522e8",
+            "value": "0x14014eeb0",
+            "string": null
+          },
+          {
+            "rva": "0x4f522f0",
+            "value": "0x140104120",
+            "string": null
+          },
+          {
+            "rva": "0x4f522f8",
+            "value": "0x140940910",
+            "string": null
+          },
+          {
+            "rva": "0x4f52300",
+            "value": "0x140940960",
+            "string": null
+          },
+          {
+            "rva": "0x4f52308",
+            "value": "0x1409407d0",
+            "string": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "string": "Messiah.ICamera.GetScreenPointFromWorldPoint",
+    "rva": "0x4f776f0",
+    "blocks": [
+      {
+        "pointer_rva": "0x4f44c10",
+        "qwords": [
+          {
+            "rva": "0x4f44be0",
+            "value": "0x140940bf0",
+            "string": null
+          },
+          {
+            "rva": "0x4f44be8",
+            "value": "0x140940bd0",
+            "string": null
+          },
+          {
+            "rva": "0x4f44bf0",
+            "value": "0x140940c10",
+            "string": null
+          },
+          {
+            "rva": "0x4f44bf8",
+            "value": "0x0",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c00",
+            "value": "0x144f427f0",
+            "string": "ICamera"
+          },
+          {
+            "rva": "0x4f44c08",
+            "value": "0x538b34db00000007",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c10",
+            "value": "0x144f776f0",
+            "string": "Messiah.ICamera.GetScreenPointFromWorldPoint"
+          },
+          {
+            "rva": "0x4f44c18",
+            "value": "0x72b514500000002c",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c20",
+            "value": "0x144f70c28",
+            "string": "GetScreenPointFromWorldPoint"
+          },
+          {
+            "rva": "0x4f44c28",
+            "value": "0x980df2f0000001c",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c30",
+            "value": "0x144f776f0",
+            "string": "Messiah.ICamera.GetScreenPointFromWorldPoint"
+          },
+          {
+            "rva": "0x4f44c38",
+            "value": "0x72b514500000002c",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c40",
+            "value": "0xa9000000200206",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c48",
+            "value": "0x10000002",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c50",
+            "value": "0x140940a00",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c58",
+            "value": "0x140940a20",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c60",
+            "value": "0x140940a80",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c68",
+            "value": "0x140940aa0",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c70",
+            "value": "0x140940ac0",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c78",
+            "value": "0x14093a9e0",
+            "string": null
+          }
+        ]
+      },
+      {
+        "pointer_rva": "0x4f44c30",
+        "qwords": [
+          {
+            "rva": "0x4f44c00",
+            "value": "0x144f427f0",
+            "string": "ICamera"
+          },
+          {
+            "rva": "0x4f44c08",
+            "value": "0x538b34db00000007",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c10",
+            "value": "0x144f776f0",
+            "string": "Messiah.ICamera.GetScreenPointFromWorldPoint"
+          },
+          {
+            "rva": "0x4f44c18",
+            "value": "0x72b514500000002c",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c20",
+            "value": "0x144f70c28",
+            "string": "GetScreenPointFromWorldPoint"
+          },
+          {
+            "rva": "0x4f44c28",
+            "value": "0x980df2f0000001c",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c30",
+            "value": "0x144f776f0",
+            "string": "Messiah.ICamera.GetScreenPointFromWorldPoint"
+          },
+          {
+            "rva": "0x4f44c38",
+            "value": "0x72b514500000002c",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c40",
+            "value": "0xa9000000200206",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c48",
+            "value": "0x10000002",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c50",
+            "value": "0x140940a00",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c58",
+            "value": "0x140940a20",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c60",
+            "value": "0x140940a80",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c68",
+            "value": "0x140940aa0",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c70",
+            "value": "0x140940ac0",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c78",
+            "value": "0x14093a9e0",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c80",
+            "value": "0x14093df50",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c88",
+            "value": "0x14093dde0",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c90",
+            "value": "0x14093dd30",
+            "string": null
+          },
+          {
+            "rva": "0x4f44c98",
+            "value": "0x140940ae0",
+            "string": null
+          }
+        ]
+      },
+      {
+        "pointer_rva": "0x4f4f940",
+        "qwords": [
+          {
+            "rva": "0x4f4f910",
+            "value": "0x532e646c726f5749",
+            "string": null
+          },
+          {
+            "rva": "0x4f4f918",
+            "value": "0x61676976614e6275",
+            "string": null
+          },
+          {
+            "rva": "0x4f4f920",
+            "value": "0x7370614d6574",
+            "string": null
+          },
+          {
+            "rva": "0x4f4f928",
+            "value": "0x0",
+            "string": null
+          },
+          {
+            "rva": "0x4f4f930",
+            "value": "0x144e49c08",
+            "string": "Messiah"
+          },
+          {
+            "rva": "0x4f4f938",
+            "value": "0xf4e2259c00000007",
+            "string": null
+          },
+          {
+            "rva": "0x4f4f940",
+            "value": "0x144f776f0",
+            "string": "Messiah.ICamera.GetScreenPointFromWorldPoint"
+          },
+          {
+            "rva": "0x4f4f948",
+            "value": "0x72b514500000002c",
+            "string": null
+          },
+          {
+            "rva": "0x4f4f950",
+            "value": "0x700040018",
+            "string": null
+          },
+          {
+            "rva": "0x4f4f958",
+            "value": "0x2",
+            "string": null
+          },
+          {
+            "rva": "0x4f4f960",
+            "value": "0x2080000",
+            "string": null
+          },
+          {
+            "rva": "0x4f4f968",
+            "value": "0x144f42b70",
+            "string": null
+          },
+          {
+            "rva": "0x4f4f970",
+            "value": "0x1409408d0",
+            "string": null
+          },
+          {
+            "rva": "0x4f4f978",
+            "value": "0x14093dd30",
+            "string": null
+          },
+          {
+            "rva": "0x4f4f980",
+            "value": "0x14093dde0",
+            "string": null
+          },
+          {
+            "rva": "0x4f4f988",
+            "value": "0x140947740",
+            "string": null
+          },
+          {
+            "rva": "0x4f4f990",
+            "value": "0x140104120",
+            "string": null
+          },
+          {
+            "rva": "0x4f4f998",
+            "value": "0x140940910",
+            "string": null
+          },
+          {
+            "rva": "0x4f4f9a0",
+            "value": "0x140940960",
+            "string": null
+          },
+          {
+            "rva": "0x4f4f9a8",
+            "value": "0x1409407d0",
+            "string": null
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "name": "area_prop_index",
+    "string_rva": "0x4eeac18",
+    "refs": []
+  },
+  {
+    "name": "set_prop_index",
+    "string_rva": "0x4eea680",
+    "refs": [
+      [
+        {
+          "rva": "0x763a338",
+          "value": "0x144ee8550",
+          "string": null
+        },
+        {
+          "rva": "0x763a340",
+          "value": "0x144eea680",
+          "string": "set_prop_index"
+        },
+        {
+          "rva": "0x763a348",
+          "value": "0x1405a2790",
+          "string": null
+        },
+        {
+          "rva": "0x763a350",
+          "value": "0x1",
+          "string": null
+        },
+        {
+          "rva": "0x763a358",
+          "value": "0x144ee8590",
+          "string": null
+        },
+        {
+          "rva": "0x763a360",
+          "value": "0x144ee85e0",
+          "string": "get_prop_index"
+        }
+      ]
+    ]
+  }
+]

@@ -1,0 +1,307 @@
+{
+  "target_sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "target_executed": false,
+  "bytecode_executed": false,
+  "files": [
+    {
+      "name": "01-decode-binding.py",
+      "sha256": "c6372fc6bae4bcc6207c5c4bfb2c3b85d987cc0c417617b8dd67954ad06929f6",
+      "size": 3205
+    },
+    {
+      "name": "02-find-master.py",
+      "sha256": "43fc8e94a96141975cc91914403b2b53764226eddd6218c8be83a44ac0b64cbd",
+      "size": 1175
+    },
+    {
+      "name": "03-select.py",
+      "sha256": "6a99f7842bd88ae7da77a860885d7af3535b36f086f09671de8651519c76d4cc",
+      "size": 986
+    },
+    {
+      "name": "04-native-bindings.py",
+      "sha256": "466fa4d2d97be500be7010a2a53fd10da8f27805d97d78a1ddfebc061fc16a52",
+      "size": 1249
+    },
+    {
+      "name": "05-names.py",
+      "sha256": "438d00f29916750c82ba76e15106c700e1d4c3ed6eaeef92301b9f1c8dc3586f",
+      "size": 492
+    },
+    {
+      "name": "06-getgameplay-xrefs.py",
+      "sha256": "7b43d6d34359b1d76d783d19e68c83db49136f8cc751bcfe6b815f75852a6004",
+      "size": 514
+    },
+    {
+      "name": "07-functions.py",
+      "sha256": "d1246761ed6be922c4f5310499e9a6d643a7810d0e5fb1d2751f175491833ae6",
+      "size": 411
+    },
+    {
+      "name": "08-root.py",
+      "sha256": "57bf9279d85a781fab74e7e8c6e7c758baff4913df350a04df7e147cf3b412e5",
+      "size": 537
+    },
+    {
+      "name": "09-cells.py",
+      "sha256": "9ca527479ba8e7838d73a077a07b81c8b8b7e925b1538305e506ac5bea98c284",
+      "size": 610
+    },
+    {
+      "name": "10-thunk.py",
+      "sha256": "e9a90bf261cad7fad920456dbfc397921e895680f3ae5e96405a716af95b3e35",
+      "size": 359
+    },
+    {
+      "name": "11-method-names.py",
+      "sha256": "be7a328c7f2c400d5a4725203d2cf3be0a99408d5f37e6676056a7beb3f467ef",
+      "size": 532
+    },
+    {
+      "name": "12-projection-blocks.py",
+      "sha256": "09eb3ff26e5b4161d3a713cfbadd275732d55bcb2d55c56f93441223223a8b7d",
+      "size": 1289
+    },
+    {
+      "name": "13-projection-functions.py",
+      "sha256": "0b9cdb75f7c7147ce1d6cedfafc0c38968669566c770380881170ebee560df52",
+      "size": 434
+    },
+    {
+      "name": "14-method-cell.py",
+      "sha256": "f43ea4b6540af499c0514a6c02372f77fded47cf7bb0eecf2e9e01191b607856",
+      "size": 547
+    },
+    {
+      "name": "15-concrete.py",
+      "sha256": "027a173354492bc709fb075bea1cde2c6be21a6bc4d29b46d5f0b879424f1ca4",
+      "size": 426
+    },
+    {
+      "name": "16-screenpoint-cell.py",
+      "sha256": "b607784d1fd8f14da5135cdeea06ec993bf5e277cbd0ab72c5744c323ab41ad4",
+      "size": 509
+    },
+    {
+      "name": "17-screenpoint.py",
+      "sha256": "c52dddc83eb0575b0dbf281e55782e7861d15da726a2257927921daec14fa149",
+      "size": 363
+    },
+    {
+      "name": "18-screenpoint-helper.py",
+      "sha256": "ea792252bfe82b207c18ada3f9ca41e0176f0ac7b0d0a15338c3cb8abf438a9e",
+      "size": 361
+    },
+    {
+      "name": "19-math.py",
+      "sha256": "cb1e0a7ebc0972a3c11eef28878d648de55a4047c285e0aab722eb600f0d5bdc",
+      "size": 556
+    },
+    {
+      "name": "20-math-full.py",
+      "sha256": "719bce6a5a0c9ca9f771fd0242481c12ad2932d2d06f7b75017299ff2b39c2c5",
+      "size": 375
+    },
+    {
+      "name": "21-round-helper.py",
+      "sha256": "4eaf315ec0cd9bb0059f2488794de045eecae7a84e51834fb4611954e8d0bc24",
+      "size": 365
+    },
+    {
+      "name": "22-math-contiguous.py",
+      "sha256": "7ef4cb96183f4e2d7a8536565bcca2cf09f96c2af89121030d23414c2048edcc",
+      "size": 496
+    },
+    {
+      "name": "23-screenpoint-callers.py",
+      "sha256": "5e3e8e60cd7d2b5ca651cf9c7e536166793998dc45766877105344803526b5fc",
+      "size": 1137
+    },
+    {
+      "name": "24-decode-callers.py",
+      "sha256": "e6a535e0308e41704e71904e5b5bfc9fd307b6a99d9c4be870882a7db8c3ea2b",
+      "size": 3232
+    },
+    {
+      "name": "25-origin.py",
+      "sha256": "9ff9dab859b08e9d76eaa23cfc02c8d963e9828517f1f428a03cc5285a342a5c",
+      "size": 1122
+    },
+    {
+      "name": "26-select-manifest.py",
+      "sha256": "f71a01958caf3f58ee6d4aa2980a8cbb9290ed04c93ab0b2884afc4bcc1d6402",
+      "size": 1004
+    },
+    {
+      "name": "binding-disassembly.txt",
+      "sha256": "79d2d03d9480cdede570dceef47f55a2fa265d556f2abe745441c437f23b4fb7",
+      "size": 1058802
+    },
+    {
+      "name": "binding-modules-static.json",
+      "sha256": "1c24c338bfc7897dca9bbd387164cf0c422c961ac69e152ef08d0de0fa6f25c6",
+      "size": 3806960
+    },
+    {
+      "name": "binding-selected.json",
+      "sha256": "f117e187ee895ae45cab8c451a7068aa3dcf969f5a39be21e50ddd0a51486dee",
+      "size": 98351
+    },
+    {
+      "name": "binding-validation.json",
+      "sha256": "994be621efcbf67f4e7e44b6ab61f39765ff9108d6f8951a1bbd76e52f1b65d0",
+      "size": 223
+    },
+    {
+      "name": "CAMERA-BINDING.md",
+      "sha256": "366aea2f7f6bb9b0f59add8af3f1e7800505132e7885f8c0f7bedcdc6cc187e4",
+      "size": 11431
+    },
+    {
+      "name": "fn-0x2d829a0.json",
+      "sha256": "9cd01549c180dfe08523daafb8513b5dbb24d222b30a9de3848451a52178a37b",
+      "size": 586
+    },
+    {
+      "name": "fn-0x2d845b0.json",
+      "sha256": "b72d103c06682d084d70ec123cf52bda3edd95dad27a733108f91342c7e1c1aa",
+      "size": 4455
+    },
+    {
+      "name": "fn-0x3268a60.json",
+      "sha256": "8c5e1cf0db8ecd22c1bbbb0971d697d982aa40784a6b26a598aea02feb34b50e",
+      "size": 254090
+    },
+    {
+      "name": "getgameplay-xrefs.json",
+      "sha256": "731668dcd4e2e5b6439abc08f84af94186489cc3f18d83d6207e401699dc5127",
+      "size": 482
+    },
+    {
+      "name": "literal-camera-bindings.json",
+      "sha256": "9371bdc6b5b2c818a21690b3400443e91f6ae5d8a89851b692bdee7a9683f322",
+      "size": 1434
+    },
+    {
+      "name": "literal-screenpoint-callers.json",
+      "sha256": "36ea0ed0c0dfd5283e6f028a70eecfc2a897c3c008ddbde3ea3fb72423d8e05b",
+      "size": 1111
+    },
+    {
+      "name": "math-contiguous.json",
+      "sha256": "7b49a5bf62183569057dd39df7b9de095ec18a5d634b19b97a73b8e5cd73a1e5",
+      "size": 54676
+    },
+    {
+      "name": "native-binding-blocks.json",
+      "sha256": "ce3c4ab020633abaa82fa6df0db2cf3de8c287b5f92c9f7960f507e209edc560",
+      "size": 21547
+    },
+    {
+      "name": "native-binding-functions.json",
+      "sha256": "68ca7378ceca668e44732da2a9124bedf643a1ff56fc1dabb1f3185300cd7e26",
+      "size": 7709
+    },
+    {
+      "name": "native-camera-method-names.json",
+      "sha256": "ff948d489d4ca965969dc6508263cdde259d735eb999b3b26fc496f7d0807cd8",
+      "size": 1580
+    },
+    {
+      "name": "native-cells.json",
+      "sha256": "a5c51d5c92b7f731af388f2b08bf8ef9866be58fcd89861d796afe946f4df80a",
+      "size": 323
+    },
+    {
+      "name": "native-origin-blocks.json",
+      "sha256": "3a4b7354555912c4eb21bfabadb8acc1c5cf1579f7ab010036448d5e3208300e",
+      "size": 8106
+    },
+    {
+      "name": "native-player-camera-names.json",
+      "sha256": "c4edbebde563678a32b74e6c30c9586e67207e0709e86d445df300b66e2d87ea",
+      "size": 377
+    },
+    {
+      "name": "native-projection-blocks.json",
+      "sha256": "38c4693ed8ab9dca3c98085948b570df95d25d79de5aa2cf49b1af1c02f39bfb",
+      "size": 30163
+    },
+    {
+      "name": "native-root-xrefs.json",
+      "sha256": "b53248e5e5a506ae46169e94145115d7f178b283d67d9a62df367954c9ebb531",
+      "size": 812411
+    },
+    {
+      "name": "projection-concrete-functions.json",
+      "sha256": "5e3fda8674ebb5b5d4e38bcdb757fb6c75525d9f2aa2ac99caf5c8db601b9fb0",
+      "size": 15602
+    },
+    {
+      "name": "projection-member-cells.json",
+      "sha256": "08194c4d0c73da9abe47a08de3cb67ab5b394ccd392b813a5053b44e09413b4a",
+      "size": 13608
+    },
+    {
+      "name": "projection-wrapper-functions.json",
+      "sha256": "660c16c464079d4ef5ce8cdfdcb85c4e67a353c6678ad36f653464d82cdc9df2",
+      "size": 18179
+    },
+    {
+      "name": "round-classify-helper.json",
+      "sha256": "3ec0cf291ff1ef7fa763a6c89ad497dc5fbeea0e7613af44a60f47c7a971e0e0",
+      "size": 3496
+    },
+    {
+      "name": "screenpoint-callers-disassembly.txt",
+      "sha256": "9a29285bee9494bab3469780957f86e795a79c66d760b33414f4719b7575a8ba",
+      "size": 2050048
+    },
+    {
+      "name": "screenpoint-callers-selected.json",
+      "sha256": "dba8b3b20719c7865a86ba162f2b8ae37e42b5faf56762d7326341d640300d36",
+      "size": 88769
+    },
+    {
+      "name": "screenpoint-callers-static.json",
+      "sha256": "e2a00b5514befa72c37581d6685b51cd0d1af743f04e37c1fcbc44d167f46ac2",
+      "size": 7286125
+    },
+    {
+      "name": "screenpoint-concrete.json",
+      "sha256": "a83fece69d51063d6181c0a57c20c2ba8a7741c0d60fdc1624f9859dd2c9e966",
+      "size": 1578
+    },
+    {
+      "name": "SCREENPOINT-CONTRACT.md",
+      "sha256": "579880097ae069224e10dbf22911fbf42821a58528eb21e25ff4ecc70af625c1",
+      "size": 7824
+    },
+    {
+      "name": "screenpoint-helper.json",
+      "sha256": "feacb7db9a7e2a474dd14679d9efb7264ce492f39a89f58aa4f0764084ad0470",
+      "size": 21680
+    },
+    {
+      "name": "screenpoint-math-full.json",
+      "sha256": "5e9e35b10263566fefac1f397450abc1da740e7e724bf3b1f0e48776ce087e4d",
+      "size": 83726
+    },
+    {
+      "name": "screenpoint-math.json",
+      "sha256": "f652ce61e0249745f63d95e103d9a200d149ac919eb5e85d097105fbf776bb32",
+      "size": 6397
+    },
+    {
+      "name": "screenpoint-member-cell.json",
+      "sha256": "771a8dff1e19e7a69acecb1e35c4ec06cf5a9371089f4916003b481452a88f36",
+      "size": 2677
+    },
+    {
+      "name": "viewmatrix-thunk.json",
+      "sha256": "8cab860d252bc301cc6eac7691332b1632b19c0700923d55071618fb17d80dd3",
+      "size": 410
+    }
+  ]
+}

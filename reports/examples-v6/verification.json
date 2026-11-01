@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "scene_cli": "PASS",
+  "predicate_cli": "PASS",
+  "provenance": "synthetic_V6_ABI_fixture_not_game_capture",
+  "protected_game_access": false,
+  "target_code_executed": false,
+  "system_input_events_sent": false,
+  "gameplay_validated": false,
+  "commands": [
+    [
+      "scene",
+      "C:\\Users\\luiz\\Documents\\BloodStrikeExternal\\reports\\examples-v6\\state-memory.json",
+      "--output",
+      "C:\\Users\\luiz\\Documents\\BloodStrikeExternal\\reports\\examples-v6\\state-frame.json",
+      "--svg",
+      "C:\\Users\\luiz\\Documents\\BloodStrikeExternal\\reports\\examples-v6\\state-frame.svg"
+    ],
+    [
+      "predicate",
+      "C:\\Users\\luiz\\Documents\\BloodStrikeExternal\\reports\\examples-v6\\predicate-memory.json",
+      "--function",
+      "0x200011f88",
+      "--output",
+      "C:\\Users\\luiz\\Documents\\BloodStrikeExternal\\reports\\examples-v6\\predicate-body.json"
+    ]
+  ]
+}

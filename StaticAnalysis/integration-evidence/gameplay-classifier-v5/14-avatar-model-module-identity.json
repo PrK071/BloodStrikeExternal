@@ -1,0 +1,166 @@
+{
+  "target_sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "scope": "Only previously identified MPK streams 61925 and 143510; compressed/decoded hashes verified; static marshal parse to EOF; no imports or payload execution.",
+  "interpretation": "The consumer import operand is the evidence for the namespace bound to the imported AvatarModel class. co_filename is recorded only as source metadata, not treated as the import namespace. The AvatarModel class body seeds __module__ from the executing module __name__; the runtime importer binding itself is not executed.",
+  "modules": [
+    {
+      "index": 61925,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_model.py"
+      ],
+      "decoded_sha256": "04bde99e6e2715d32cacce94496d4aba3f89919aae650d513a5468da1e790f4c",
+      "parsed_to_eof": true,
+      "avatar_model_import_sequences": [
+        [
+          {
+            "offset": 198,
+            "op": "IMPORT_NAME",
+            "arg": 32,
+            "resolved": "gclient.gameplay.logic_base.models.avatar_model"
+          },
+          {
+            "offset": 200,
+            "op": "IMPORT_FROM",
+            "arg": 33,
+            "resolved": "PlayerAvatarModel"
+          },
+          {
+            "offset": 202,
+            "op": "STORE_NAME",
+            "arg": 33,
+            "resolved": "PlayerAvatarModel"
+          },
+          {
+            "offset": 204,
+            "op": "IMPORT_FROM",
+            "arg": 34,
+            "resolved": "AvatarModel"
+          },
+          {
+            "offset": 206,
+            "op": "STORE_NAME",
+            "arg": 34,
+            "resolved": "AvatarModel"
+          },
+          {
+            "offset": 208,
+            "op": "POP_TOP",
+            "arg": 0,
+            "resolved": null
+          }
+        ]
+      ]
+    },
+    {
+      "index": 143510,
+      "filename_candidates": [
+        "gclient/gameplay/logic_base/models/avatar_model.py"
+      ],
+      "decoded_sha256": "0a4a57f34d1c8e14e38c08f510f1787f46659e4b2928663cf526797eac8b0ed3",
+      "parsed_to_eof": true,
+      "avatar_model_class_body": {
+        "qualname": "AvatarModel",
+        "source_filename": "gclient/gameplay/logic_base/models/avatar_model.py",
+        "code_sha256": "55352256c21dc9abc7547b407fecdff8f4962652fb89247fc805f51d595999f7",
+        "module_code_ref": [
+          {
+            "module_bytecode_offset": 1034,
+            "opcode": "LOAD_CONST",
+            "co_consts_index": 64,
+            "constref": {
+              "marshal_offset": 2936,
+              "name": "AvatarModel"
+            }
+          }
+        ],
+        "initial_namespace_instructions": [
+          {
+            "offset": 0,
+            "op": "MAKE_CELL",
+            "arg": 0,
+            "resolved": null
+          },
+          {
+            "offset": 2,
+            "op": "MAKE_CELL",
+            "arg": 1,
+            "resolved": null
+          },
+          {
+            "offset": 4,
+            "op": "RESUME",
+            "arg": 0,
+            "resolved": null
+          },
+          {
+            "offset": 6,
+            "op": "LOAD_NAME",
+            "arg": 0,
+            "resolved": "__name__"
+          },
+          {
+            "offset": 8,
+            "op": "STORE_NAME",
+            "arg": 1,
+            "resolved": "__module__"
+          },
+          {
+            "offset": 10,
+            "op": "LOAD_CONST",
+            "arg": 0,
+            "resolved": "AvatarModel"
+          },
+          {
+            "offset": 12,
+            "op": "STORE_NAME",
+            "arg": 2,
+            "resolved": "__qualname__"
+          },
+          {
+            "offset": 14,
+            "op": "LOAD_SMALL_INT",
+            "arg": 127,
+            "resolved": null
+          },
+          {
+            "offset": 16,
+            "op": "STORE_NAME",
+            "arg": 3,
+            "resolved": "__firstlineno__"
+          },
+          {
+            "offset": 18,
+            "op": "LOAD_LOCALS",
+            "arg": 0,
+            "resolved": null
+          },
+          {
+            "offset": 20,
+            "op": "STORE_DEREF",
+            "arg": 1,
+            "resolved": null
+          },
+          {
+            "offset": 22,
+            "op": "LOAD_CONST",
+            "arg": 218,
+            "resolved": null
+          },
+          {
+            "offset": 24,
+            "op": "LOAD_FAST_BORROW",
+            "arg": 0,
+            "resolved": null
+          },
+          {
+            "offset": 26,
+            "op": "BUILD_TUPLE",
+            "arg": 1,
+            "resolved": null
+          }
+        ]
+      },
+      "module_name_references": []
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+exec((__import__('pathlib').Path(__file__).parent/'01-types.py').read_text().split('O=')[0])
+O=Path(__file__).parent;r=0x7a21630;name=pe.string(pe.unpack('<Q',r+0x18)[0]-pe.base);f=pe.unpack('<Q',r+0x80)[0]-pe.base;rows=[pe.row(i) for i in pe.decode(f)];out={'type_rva':hex(r),'name':name,'call_rva':hex(f),'rows':rows};(O/'method-wrapper-call.json').write_text(json.dumps(out,indent=2));print(name,hex(f));print('\n'.join(x['rva']+' '+x['text'] for x in rows[:100]))

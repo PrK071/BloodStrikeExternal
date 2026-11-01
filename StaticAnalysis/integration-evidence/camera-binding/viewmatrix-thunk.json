@@ -1,0 +1,20 @@
+{
+  "0x964090": [
+    {
+      "rva": "0x964090",
+      "preferred_va": "0x140964090",
+      "file_offset": "0x963690",
+      "bytes": "48 8d 81 1c 04 00 00",
+      "text": "lea rax,[rcx+41Ch]",
+      "length": 7
+    },
+    {
+      "rva": "0x964097",
+      "preferred_va": "0x140964097",
+      "file_offset": "0x963697",
+      "bytes": "c3",
+      "text": "ret",
+      "length": 1
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "target_sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "index_sha256": "bb3782da03b95d66451a598add8fe0923405be0dde53a8844b2f8bc107a6ced3",
+  "modules": {
+    "14066": {
+      "paths": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_combat_unit.py"
+      ],
+      "decoded_sha256": "5a2ccf79f644a908e6475ed76c870312fb61526b260dfdc0dc90d0c772c9c648",
+      "gshare_consts_import": [
+        {
+          "import_name_offset": 340,
+          "next_rows": [
+            {
+              "offset": 340,
+              "op": "IMPORT_NAME",
+              "arg": 56,
+              "value": "gshare.consts"
+            },
+            {
+              "offset": 342,
+              "op": "IMPORT_FROM",
+              "arg": 57
+            },
+            {
+              "offset": 344,
+              "op": "STORE_NAME",
+              "arg": 57,
+              "value": "CombatState"
+            },
+            {
+              "offset": 346,
+              "op": "IMPORT_FROM",
+              "arg": 58
+            },
+            {
+              "offset": 348,
+              "op": "STORE_NAME",
+              "arg": 58,
+              "value": "MagicFieldDestructionType"
+            },
+            {
+              "offset": 350,
+              "op": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 352,
+              "op": "LOAD_SMALL_INT",
+              "arg": 0
+            },
+            {
+              "offset": 354,
+              "op": "LOAD_CONST",
+              "arg": 19,
+              "value": "list"
+            }
+          ]
+        }
+      ]
+    },
+    "68262": {
+      "paths": [
+        "gclient/framework/util/assist_aim_util.py"
+      ],
+      "decoded_sha256": "8163bc535975fd931d2df900fc04bf0d0402e1e5555aa6c2c3d2ffd53168f3de",
+      "gshare_consts_import": [
+        {
+          "import_name_offset": 118,
+          "next_rows": [
+            {
+              "offset": 118,
+              "op": "IMPORT_NAME",
+              "arg": 16,
+              "value": "gshare.consts"
+            },
+            {
+              "offset": 120,
+              "op": "IMPORT_FROM",
+              "arg": 17
+            },
+            {
+              "offset": 122,
+              "op": "STORE_NAME",
+              "arg": 17,
+              "value": "CombatState"
+            },
+            {
+              "offset": 124,
+              "op": "POP_TOP",
+              "arg": 0
+            },
+            {
+              "offset": 126,
+              "op": "LOAD_SMALL_INT",
+              "arg": 0
+            },
+            {
+              "offset": 128,
+              "op": "LOAD_CONST",
+              "arg": 7,
+              "value": "list"
+            },
+            {
+              "offset": 130,
+              "op": "IMPORT_NAME",
+              "arg": 18,
+              "value": "gshare.formula"
+            },
+            {
+              "offset": 132,
+              "op": "IMPORT_FROM",
+              "arg": 19
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "AssistAimLocalRootModuleKey": {
+    "candidate_key": "gclient.framework.util.assist_aim_util",
+    "path_evidence_index": 86590,
+    "path_evidence_module": [
+      "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_assist_aim.py"
+    ],
+    "decoded_sha256": "d0fe9e911b355def749f5ecb6ff3ea1f9872002fb0ad00f854ba9c3efba99b11",
+    "import": [
+      {
+        "import_name_offset": 122,
+        "next_rows": [
+          {
+            "offset": 122,
+            "op": "IMPORT_NAME",
+            "arg": 20,
+            "value": "gclient.framework.util.assist_aim_util"
+          },
+          {
+            "offset": 124,
+            "op": "IMPORT_FROM",
+            "arg": 21
+          },
+          {
+            "offset": 126,
+            "op": "STORE_NAME",
+            "arg": 21,
+            "value": "AssistAimMelee"
+          },
+          {
+            "offset": 128,
+            "op": "IMPORT_FROM",
+            "arg": 22
+          },
+          {
+            "offset": 130,
+            "op": "STORE_NAME",
+            "arg": 22,
+            "value": "AssistAimTracingTargetNoSearching"
+          },
+          {
+            "offset": 132,
+            "op": "IMPORT_FROM",
+            "arg": 23
+          },
+          {
+            "offset": 134,
+            "op": "STORE_NAME",
+            "arg": 23,
+            "value": "AssistAimAndShootTracingNoSearching"
+          },
+          {
+            "offset": 136,
+            "op": "IMPORT_FROM",
+            "arg": 24
+          }
+        ]
+      }
+    ],
+    "note": "A consumer imports names from this exact path; this identifies the import key for the loaded AssistAim module namespace."
+  },
+  "AssistAim": {
+    "class_body_sha256": "a569128397749abfc4aa9f3cb7301f5c77234855bb42103a9acb5d506637c6d1",
+    "SelectTarget_code_sha256": "a06f588dcb9ec7072759f71dd612025ffc65a6a8e6253ff2fbd9291890c457bf",
+    "argcount": 5,
+    "localsplusnames": [
+      "self",
+      "max_dist",
+      "detect_box",
+      "randomOne",
+      "combat_states",
+      "player",
+      "CanDamage",
+      "center",
+      "best_target",
+      "max_dot",
+      "box_trans",
+      "camera_dir",
+      "camera_pos",
+      "camera_dir_tuple",
+      "collisions",
+      "max_dist_square",
+      "collision",
+      "entity",
+      "cur_result",
+      "target_pos",
+      "distance",
+      "aim_pos",
+      "camera_to_aim_pos",
+      "aim_pos_distance",
+      "dot"
+    ],
+    "default_construction_instructions": [
+      {
+        "offset": 130,
+        "op": "LOAD_NAME",
+        "arg": 21,
+        "value": "CombatState"
+      },
+      {
+        "offset": 132,
+        "op": "LOAD_ATTR",
+        "arg": 44,
+        "value": "ALIVE"
+      },
+      {
+        "offset": 152,
+        "op": "BUILD_TUPLE",
+        "arg": 1
+      },
+      {
+        "offset": 154,
+        "op": "BUILD_TUPLE",
+        "arg": 1
+      },
+      {
+        "offset": 160,
+        "op": "SET_FUNCTION_ATTRIBUTE",
+        "arg": 1
+      },
+      {
+        "offset": 162,
+        "op": "STORE_NAME",
+        "arg": 23,
+        "value": "SelectTarget"
+      }
+    ],
+    "func_defaults_shape_from_bytecode": "outer one-element defaults tuple whose member is the one-element tuple (CombatState.ALIVE,); argcount=5 and five positional arguments means this is the combat_states default. At runtime the class-dict function __defaults__[-1][0] is the enum member object."
+  },
+  "CombatAvatarMember": {
+    "class_body_sha256": "22646306f390de28ef037ffe220ddd117d6f16c0f0974c9ed8e27156212887ff",
+    "combat_state_in_class_co_names": false,
+    "combat_state_property_strings": [],
+    "finding": "the selected Python class body has no Property declaration named combat_state or default value for it; native-base descriptor initialization is outside this evidence."
+  },
+  "enum_numeric_encoding": "not present in these MPK code bodies; do not hardcode a numeric value or assume PyLong subclass from this source alone."
+}

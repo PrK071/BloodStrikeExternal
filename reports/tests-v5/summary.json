@@ -1,0 +1,500 @@
+{
+  "status": "PASS",
+  "timestamp_utc": "2026-11-01T06:50:31.972311+00:00",
+  "python": "3.12.14",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "tests_run": 73,
+  "failures": 0,
+  "errors": 0,
+  "junit_cases": 73,
+  "unexpected_successes": 0,
+  "skipped": 0,
+  "seconds": 2.1301935000228696,
+  "native_integration": "owned_child_process_and_owned_hidden_GDI_only",
+  "protected_game_access": false,
+  "native_required_groups": {
+    "test_win32_integration.": 4,
+    "test_overlay_native.": 4,
+    "test_pipeline_native.": 1
+  },
+  "system_input_events_sent": false,
+  "bloodstrike_gameplay_validated": false,
+  "publisher_certification": false,
+  "source_sha256": {
+    "ExternalCore/__init__.py": "2a566963177634280a11cca6420ad38563d391dcf7ec9b624ac9f14d64ba08b6",
+    "ExternalCore/__main__.py": "649d06572bbcfe55bd7900a56f0b333cc409193b3f57b49f26277e71359e275f",
+    "ExternalCore/aim.py": "001b15201c7ac97f62f0e29cb8d1c7b79f5b2b6f96ae88b8e998df2e450f996f",
+    "ExternalCore/build.py": "6f963d085260cbcc69fb9b7eac4896808f757bfd9c0cf10e864d9cf1bbe0dfea",
+    "ExternalCore/camera_capture.py": "008e99d8d7e676d964dbebbe88463a205b16417e7a0e06c164ad4ad6dcd6590b",
+    "ExternalCore/entity_position.py": "307a56c5dff047000e8cd2601398b8f869b0ff2b12231b258c274ca9695a1451",
+    "ExternalCore/live.py": "8a35723e35bbafb410bd8cf0a7eca70f6c455bc910af1dfa961d4c6f5779f79e",
+    "ExternalCore/memory.py": "66dec9bd513fedfa07a30536171b33ab60beb5c57d60c8925aa216ab0f4306bf",
+    "ExternalCore/pipeline.py": "bbc3280126dfdd620f95f85de79744107edd891fc42de2313b8b845d243883b2",
+    "ExternalCore/python_owner.py": "270d53857d646471fcc09194898a729999a8d584f3a3635c4ab53855c8a808ef",
+    "ExternalCore/registry.py": "84e231c18732bb8f0b7c98859e9bf8281a6038ef7cf2e9d5d5ec5b15be35f891",
+    "ExternalCore/render.py": "9ff554f91f8cc282e784ee18278af93c7784830f507d2ee1e08eab37c7e98fdb",
+    "ExternalCore/rtti.py": "239f0b7e595e0ef0c334fa93fad6fed725123a90481937269836524cb74630d9",
+    "ExternalCore/scene.py": "41d162978cf57220ad7e5696e50acc1f4135299aed0c2dd986d17638fb40bd2a",
+    "ExternalCore/screenpoint.py": "d3ee0c9b6a538913b61cf84dee51f508c9bdfd71b00a4128535fbf0217216f86",
+    "ExternalCore/snapshot.py": "f1fbfd5a5c06e0965bef04abe99751b2203ee8895935ef7fbfe97d3ad02d2bae",
+    "ExternalCore/win32_input.py": "9fe516af8d154a546f0a7d8186651fe2ad85219fd40cffa721b9a51a249866bb",
+    "ExternalCore/win32_memory.py": "2297ab40b78621177d5ee30d7750207f10c8747e4974098d27abba97a4e9dfb3",
+    "ExternalCore/win32_overlay.py": "997e8f05b6a518204dfd05f59a07a82ea13d942e0bacd30be425276456457207",
+    "tests/native_fixture.py": "b411f9bf40392beb07ed8010d7a99e7d8322bf9ede4e4b6474b4b70b1ec2fdc2",
+    "tests/owned_process.py": "e0efd553e8a5322a45071f0119cf78165428b6d42917aa5e81e6c37336fefecc",
+    "tests/python_owner_fixture.py": "39387c2abab8c94c1230f0bcf6c395935c0eab899f3cb70b76ddb60eb146f03b",
+    "tests/registry_fixture.py": "7ede5889d9b00472f33b7447adadb29d9683251f144d7a047b00768a07e44f2a",
+    "tests/test_cli.py": "ca1969945fb1737270cb8e20ab7c9e5e35320bc0dcf338e94d90f9f80f442c7a",
+    "tests/test_entity_position.py": "81b7b918ee886d68d9f693626103d7fb3ea4348d50770e5898eb476210859d8d",
+    "tests/test_input.py": "b5ba56199c0dbf59dec5352ab9c7da29a367414e5a91cfbcde67d3fbb3df5a2a",
+    "tests/test_memory_registry.py": "02507803df9fecfaa2aeef73cecf09782378364d5db48326b6460e3464efae7f",
+    "tests/test_overlay_native.py": "303b465a9e6560edd60a6f84b24c907f91465e165345409a0653735b56618fa4",
+    "tests/test_pipeline.py": "e6f7ca877c0678c55af8d7070cda98f8e72a1ebf92375a709bd50bd6d2113afb",
+    "tests/test_pipeline_native.py": "0127b2bb3400ab52ce5e33b78b7ef9c6762daaa8bfc1f0990eedbdb67eea8859",
+    "tests/test_python_owner.py": "3ad7195f1ff09f31e095c3afec124c44b03652943545c6f0afcb9695ba5d4d95",
+    "tests/test_screenpoint.py": "29b8ca65619d40d10e9edd488c0bd08a7e0f8f52468545634a076034948240c1",
+    "tests/test_test_runner.py": "bb34b36924f1f2a120b5ea6e927f94cc4884c51a8fe59eed074d3e7c31e8446a",
+    "tests/test_win32_integration.py": "802d24b04b00e98809516780c4c44b45891dd2d7d7e1306623000d83295e6c8e",
+    "tools/run_tests.py": "c99ffe41327aea33160ecf654f43520ba30b2f1c4a975b29f083501af68dd53e"
+  },
+  "tests": [
+    {
+      "id": "test_cli.CliTests.test_capture_rejects_wrong_sample_before_any_process_access",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.17342260002624243
+    },
+    {
+      "id": "test_cli.CliTests.test_failure_replaces_a_previous_success_output",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.17977679998148233
+    },
+    {
+      "id": "test_cli.CliTests.test_nonfinite_numbers_have_explicit_portable_json_spelling",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0009245999972335994
+    },
+    {
+      "id": "test_cli.CliTests.test_output_alias_cannot_overwrite_input_or_sample",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.33166070003062487
+    },
+    {
+      "id": "test_cli.CliTests.test_overlapping_segments_and_missing_provenance_are_rejected",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.03672639996511862
+    },
+    {
+      "id": "test_cli.CliTests.test_scene_cli_adds_camera_projection_and_svg_without_input_dispatch",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.22555689996806905
+    },
+    {
+      "id": "test_cli.CliTests.test_snapshot_cli_runs_whole_pipeline_and_preserves_provenance",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.19465069996658713
+    },
+    {
+      "id": "test_entity_position.EntityPositionTests.test_all_sentinels_select_zero_origin_and_widen_transform",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.00013340002624318004
+    },
+    {
+      "id": "test_entity_position.EntityPositionTests.test_exact_size_and_nonzero_entity_offset",
+      "status": "passed",
+      "detail": "",
+      "seconds": 8.339999476447701e-05
+    },
+    {
+      "id": "test_entity_position.EntityPositionTests.test_float32_rounding_happens_before_widening",
+      "status": "passed",
+      "detail": "",
+      "seconds": 5.879998207092285e-05
+    },
+    {
+      "id": "test_entity_position.EntityPositionTests.test_insufficient_buffer_has_clear_bounds",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0002964999875985086
+    },
+    {
+      "id": "test_entity_position.EntityPositionTests.test_mixed_sentinels_apply_entire_anchor_triple",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.00015649996930733323
+    },
+    {
+      "id": "test_entity_position.EntityPositionTests.test_mutable_input_is_not_retained_and_nonfinite_values_are_preserved",
+      "status": "passed",
+      "detail": "",
+      "seconds": 6.290001329034567e-05
+    },
+    {
+      "id": "test_entity_position.EntityPositionTests.test_negative_anchors_are_signed_and_added_in_double",
+      "status": "passed",
+      "detail": "",
+      "seconds": 5.129998316988349e-05
+    },
+    {
+      "id": "test_entity_position.EntityPositionTests.test_offset_and_buffer_contract",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.00026870000874623656
+    },
+    {
+      "id": "test_input.InputTests.test_dispatch_checks_age_focus_activation_and_return_count",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0003223000094294548
+    },
+    {
+      "id": "test_input.InputTests.test_x64_abi_and_relative_counts_packet",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.00010520004434511065
+    },
+    {
+      "id": "test_memory_registry.MemoryTests.test_adjacent_segments_and_input_immutability",
+      "status": "passed",
+      "detail": "",
+      "seconds": 9.839999256655574e-05
+    },
+    {
+      "id": "test_memory_registry.MemoryTests.test_gaps_overlaps_bounds_and_short_reads",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0001686000032350421
+    },
+    {
+      "id": "test_memory_registry.MemoryTests.test_wrong_build_is_rejected_before_reading",
+      "status": "passed",
+      "detail": "",
+      "seconds": 4.6399945858865976e-05
+    },
+    {
+      "id": "test_memory_registry.RegistryTests.test_cycle_serial_mismatch_null_payload_and_read_failure_never_return_partial_frame",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0009985999786294997
+    },
+    {
+      "id": "test_memory_registry.RegistryTests.test_full_registry_to_adjusted_entity_to_double_position",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0004238999681547284
+    },
+    {
+      "id": "test_memory_registry.RegistryTests.test_key_zero_is_not_rejected_as_a_null_pointer",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.000485299970023334
+    },
+    {
+      "id": "test_memory_registry.RegistryTests.test_mutation_between_passes_retries_then_observes_new_position",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0006967000081203878
+    },
+    {
+      "id": "test_memory_registry.RegistryTests.test_no_parent_or_out_of_world_does_not_decode_position",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0007399999885819852
+    },
+    {
+      "id": "test_memory_registry.RegistryTests.test_node_budget_and_duplicate_key_are_bounded",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0007031999994069338
+    },
+    {
+      "id": "test_memory_registry.RegistryTests.test_null_root_and_empty_initialized_registry_are_distinct",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0004953999887220562
+    },
+    {
+      "id": "test_memory_registry.RegistryTests.test_persistent_mutation_has_a_bounded_failure",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.006306199997197837
+    },
+    {
+      "id": "test_memory_registry.RegistryTests.test_unknown_rtti_is_a_record_without_invented_position",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0004260000423528254
+    },
+    {
+      "id": "test_memory_registry.RttiTests.test_nonzero_complete_object_and_base_offsets_are_applied",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0002447000006213784
+    },
+    {
+      "id": "test_memory_registry.RttiTests.test_virtual_ambiguous_private_and_construction_cases_are_rejected",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0010397000005468726
+    },
+    {
+      "id": "test_overlay_native.NativeOverlayTests.test_hidden_window_styles_and_cleanup",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0069151000352576375
+    },
+    {
+      "id": "test_overlay_native.NativeOverlayTests.test_pixels_clear_clipping_circle_and_text",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0031866999925114214
+    },
+    {
+      "id": "test_overlay_native.NativeOverlayTests.test_repeated_close_releases_gdi_objects",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.06588690000353381
+    },
+    {
+      "id": "test_overlay_native.NativeOverlayTests.test_validation_is_atomic_and_thread_affine",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.03231849998701364
+    },
+    {
+      "id": "test_pipeline.AimTests.test_configuration_rejects_nan_infinity_and_invalid_booleans",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.00023290002718567848
+    },
+    {
+      "id": "test_pipeline.AimTests.test_inactive_stale_future_deadzone_and_disappearance_stop_movement",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.00019689998589456081
+    },
+    {
+      "id": "test_pipeline.AimTests.test_nearest_opponent_in_radius_and_stable_tie_break",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.00011060002725571394
+    },
+    {
+      "id": "test_pipeline.AimTests.test_no_player_inference_from_unknown_or_other_categories",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0002367999986745417
+    },
+    {
+      "id": "test_pipeline.AimTests.test_smoothing_count_calibration_and_time_are_explicit",
+      "status": "passed",
+      "detail": "",
+      "seconds": 9.810004848986864e-05
+    },
+    {
+      "id": "test_pipeline.CameraPipelineTests.test_camera_change_during_capture_retries_the_complete_scene",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0014120999840088189
+    },
+    {
+      "id": "test_pipeline.CameraPipelineTests.test_capture_age_starts_at_acquisition_not_completion_or_classification",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0008077000384218991
+    },
+    {
+      "id": "test_pipeline.CameraPipelineTests.test_classification_from_an_absent_observation_is_rejected",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0007949999999254942
+    },
+    {
+      "id": "test_pipeline.CameraPipelineTests.test_degenerate_basis_and_oversized_scene_are_rejected",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0013129999861121178
+    },
+    {
+      "id": "test_pipeline.CameraPipelineTests.test_different_observed_anchor_is_rejected_instead_of_guessed",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0008118999539874494
+    },
+    {
+      "id": "test_pipeline.CameraPipelineTests.test_full_synthetic_pipeline_produces_bounded_aim_and_esp_primitives",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0008134000236168504
+    },
+    {
+      "id": "test_pipeline.CameraPipelineTests.test_inconsistent_complete_object_rtti_is_rejected",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.00040630000876262784
+    },
+    {
+      "id": "test_pipeline.CameraPipelineTests.test_perspective_pipeline_rejects_orthographic_or_invalid_viewport",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0006748999585397542
+    },
+    {
+      "id": "test_pipeline.CameraPipelineTests.test_rtti_rejects_a_generic_player_before_reading_clientplayer_fields",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0004482999793253839
+    },
+    {
+      "id": "test_pipeline.CameraPipelineTests.test_stale_frames_hide_esp_markers_as_well_as_stopping_aim",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0007960000075399876
+    },
+    {
+      "id": "test_pipeline.CameraPipelineTests.test_typed_chain_to_projection_and_unknown_category",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0009935999987646937
+    },
+    {
+      "id": "test_pipeline_native.NativePipelineTests.test_actual_native_reads_to_esp_pixels_and_aim_plan",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.14402250002603978
+    },
+    {
+      "id": "test_python_owner.PythonOwnerTests.test_avatar_subclass_is_supported_by_mro_but_weapon_owner_is_not_a_body",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0048053000355139375
+    },
+    {
+      "id": "test_python_owner.PythonOwnerTests.test_bidirectional_wrapper_dict_owner_tag_and_avatar_mro",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0025573999737389386
+    },
+    {
+      "id": "test_python_owner.PythonOwnerTests.test_false_class_tag_and_expired_wrapper_do_not_classify",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.003230700036510825
+    },
+    {
+      "id": "test_python_owner.PythonOwnerTests.test_general_key_entries_use_the_verified_24_byte_layout",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.002479200018569827
+    },
+    {
+      "id": "test_python_owner.PythonOwnerTests.test_inconsistent_dictionary_indices_and_read_budget_are_rejected",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0013342999736778438
+    },
+    {
+      "id": "test_python_owner.PythonOwnerTests.test_metadata_change_between_passes_removes_the_positive_result",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0025337999686598778
+    },
+    {
+      "id": "test_python_owner.PythonOwnerTests.test_refcount_changes_do_not_fake_an_attribute_or_identity_change",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.002621099993120879
+    },
+    {
+      "id": "test_python_owner.PythonOwnerTests.test_split_dictionary_and_managed_wrapper_are_explicitly_unsupported",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0029260999872349203
+    },
+    {
+      "id": "test_screenpoint.ScreenPointTests.test_basis_orientation_and_world_origin_are_not_transposed",
+      "status": "passed",
+      "detail": "",
+      "seconds": 9.539996972307563e-05
+    },
+    {
+      "id": "test_screenpoint.ScreenPointTests.test_behind_and_zero_depth_do_not_become_targets",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.00011670001549646258
+    },
+    {
+      "id": "test_screenpoint.ScreenPointTests.test_camera_fields_and_center_projection",
+      "status": "passed",
+      "detail": "",
+      "seconds": 8.589995559304953e-05
+    },
+    {
+      "id": "test_screenpoint.ScreenPointTests.test_invalid_camera_and_nonfinite_inputs_fail_explicitly",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.00020489998860284686
+    },
+    {
+      "id": "test_screenpoint.ScreenPointTests.test_quantization_is_half_away_and_float32_output",
+      "status": "passed",
+      "detail": "",
+      "seconds": 5.560001591220498e-05
+    },
+    {
+      "id": "test_screenpoint.ScreenPointTests.test_vertical_fov_and_non_square_viewport",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.00010060000931844115
+    },
+    {
+      "id": "test_test_runner.RunnerTests.test_multiple_failing_subtests_produce_consistent_junit_counts",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.010844499978702515
+    },
+    {
+      "id": "test_test_runner.RunnerTests.test_run_start_invalidates_both_old_success_reports",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.005088900041300803
+    },
+    {
+      "id": "test_test_runner.RunnerTests.test_subtest_errors_and_class_setup_errors_are_reported_as_errors",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.0010853999992832541
+    },
+    {
+      "id": "test_win32_integration.Win32IntegrationTests.test_close_waits_for_an_inflight_native_read",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.25874790002126247
+    },
+    {
+      "id": "test_win32_integration.Win32IntegrationTests.test_full_path_module_selection_for_the_owned_interpreter",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.13641769997775555
+    },
+    {
+      "id": "test_win32_integration.Win32IntegrationTests.test_real_registry_reads_and_changes_from_owned_child",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.13208460004534572
+    },
+    {
+      "id": "test_win32_integration.Win32IntegrationTests.test_uncommitted_invalid_and_closed_reads_fail",
+      "status": "passed",
+      "detail": "",
+      "seconds": 0.14108410000335425
+    }
+  ]
+}

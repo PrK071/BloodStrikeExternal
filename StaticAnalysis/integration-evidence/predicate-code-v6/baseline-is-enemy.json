@@ -1,0 +1,301 @@
+{
+  "index": 108818,
+  "compressed_sha256": "010c2581ad2a089b78e51b258026efa27577e5d63b1a14dd855c6e3080aaf867",
+  "decoded_sha256": "c69a1b41935d7a6f56bc7c43be13665325816d9ff5191624f963ee12a5c98af9",
+  "filename": "gshare/game_logic/igame_logic_base.py",
+  "qualname": "IGameLogicBase.IsEnemy",
+  "code_bytes": 174,
+  "code_units": 87,
+  "code_sha256": "9cfb18d4557dce7c882bfc8df9a3ce7368b1e8a97abf786a0c15d59bf0b30219",
+  "code_hex": "80 00 57 12 4a 00 64 03 00 00 1c 00 52 00 23 00 56 01 27 00 00 00 00 00 00 00 64 09 00 00 1c 00 56 02 27 00 00 00 00 00 00 00 67 03 00 00 1c 00 52 00 23 00 56 01 50 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 5e 00 38 12 00 00 67 12 00 00 1c 00 56 02 50 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 5e 00 38 12 00 00 64 03 00 00 1c 00 52 01 23 00 56 01 50 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 56 02 50 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 38 67 00 00 23 00",
+  "canonical_format": "UTF-8 JSON compact array [[byte_offset,base_opcode,combined_argument],...] with separators comma/colon and no final newline",
+  "canonical": [
+    [
+      0,
+      128,
+      0
+    ],
+    [
+      2,
+      87,
+      18
+    ],
+    [
+      4,
+      74,
+      0
+    ],
+    [
+      6,
+      100,
+      3
+    ],
+    [
+      10,
+      28,
+      0
+    ],
+    [
+      12,
+      82,
+      0
+    ],
+    [
+      14,
+      35,
+      0
+    ],
+    [
+      16,
+      86,
+      1
+    ],
+    [
+      18,
+      39,
+      0
+    ],
+    [
+      26,
+      100,
+      9
+    ],
+    [
+      30,
+      28,
+      0
+    ],
+    [
+      32,
+      86,
+      2
+    ],
+    [
+      34,
+      39,
+      0
+    ],
+    [
+      42,
+      103,
+      3
+    ],
+    [
+      46,
+      28,
+      0
+    ],
+    [
+      48,
+      82,
+      0
+    ],
+    [
+      50,
+      35,
+      0
+    ],
+    [
+      52,
+      86,
+      1
+    ],
+    [
+      54,
+      80,
+      0
+    ],
+    [
+      74,
+      94,
+      0
+    ],
+    [
+      76,
+      56,
+      18
+    ],
+    [
+      80,
+      103,
+      18
+    ],
+    [
+      84,
+      28,
+      0
+    ],
+    [
+      86,
+      86,
+      2
+    ],
+    [
+      88,
+      80,
+      0
+    ],
+    [
+      108,
+      94,
+      0
+    ],
+    [
+      110,
+      56,
+      18
+    ],
+    [
+      114,
+      100,
+      3
+    ],
+    [
+      118,
+      28,
+      0
+    ],
+    [
+      120,
+      82,
+      1
+    ],
+    [
+      122,
+      35,
+      0
+    ],
+    [
+      124,
+      86,
+      1
+    ],
+    [
+      126,
+      80,
+      0
+    ],
+    [
+      146,
+      86,
+      2
+    ],
+    [
+      148,
+      80,
+      0
+    ],
+    [
+      168,
+      56,
+      103
+    ],
+    [
+      172,
+      35,
+      0
+    ]
+  ],
+  "canonical_sha256": "b632457e07b643ddb05ff3b4de958097174ce648941cd15075b3b9f6831f20c5",
+  "required_semantic_fields": {
+    "argcount": 3,
+    "posonlyargcount": 0,
+    "kwonlyargcount": 0,
+    "stacksize": 2,
+    "flags": 134217731,
+    "names": [
+      "faction"
+    ],
+    "consts": [
+      false,
+      true
+    ],
+    "localsplusnames": [
+      "self",
+      "a",
+      "b"
+    ],
+    "localspluskinds": {
+      "hex": "26 26 26"
+    },
+    "exceptiontable": {
+      "hex": ""
+    }
+  },
+  "synthetic_checks": {
+    "all_available_specializations_and_nonzero_cache_payload_preserve_fingerprint": [
+      {
+        "offset": 0,
+        "base": 128,
+        "specialized": 196
+      },
+      {
+        "offset": 12,
+        "base": 82,
+        "specialized": 190
+      },
+      {
+        "offset": 18,
+        "base": 39,
+        "specialized": 203
+      },
+      {
+        "offset": 34,
+        "base": 39,
+        "specialized": 203
+      },
+      {
+        "offset": 48,
+        "base": 82,
+        "specialized": 190
+      },
+      {
+        "offset": 54,
+        "base": 80,
+        "specialized": 177
+      },
+      {
+        "offset": 76,
+        "base": 56,
+        "specialized": 166
+      },
+      {
+        "offset": 88,
+        "base": 80,
+        "specialized": 177
+      },
+      {
+        "offset": 110,
+        "base": 56,
+        "specialized": 166
+      },
+      {
+        "offset": 120,
+        "base": 82,
+        "specialized": 190
+      },
+      {
+        "offset": 126,
+        "base": 80,
+        "specialized": 177
+      },
+      {
+        "offset": 148,
+        "base": 80,
+        "specialized": 177
+      },
+      {
+        "offset": 168,
+        "base": 56,
+        "specialized": 166
+      }
+    ],
+    "unsupported_opcodes_rejected": [
+      255,
+      245,
+      0
+    ]
+  },
+  "execution": "target bytecode parsed as data only; no target code execution",
+  "warning": "canonical opcode hash alone is insufficient: compare names/constants/signature/closure/defaults and reject custom descriptor or unsupported dispatch resolution"
+}

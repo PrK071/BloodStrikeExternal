@@ -1,0 +1,2031 @@
+{
+  "source_index_sha256": "bb3782da03b95d66451a598add8fe0923405be0dde53a8844b2f8bc107a6ced3",
+  "literal_search_source": "01-literal-owner-search.json",
+  "literal_positive_count": 162,
+  "positive_streams": [
+    {
+      "index": 466,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/sword_laser_spell.py"
+      ],
+      "decoded_sha256": "a24b46e0ed5322774f0fd4b8a48b2226f5c2cd95a35417cc5e90d9e983da2669",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 935,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/zombie_summon_spell.py"
+      ],
+      "decoded_sha256": "545cc4230d2863cf7168059d7f7107df4d84e23ed8f629722de7ab306c7496bc",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 1659,
+      "path": [
+        "gclient/gameplay/logic_base/entities/cmagic_field.py"
+      ],
+      "decoded_sha256": "773639c17df180e3e16fb4a0eae8dc34cc3cefa6b84a43977626706ae78abf76",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "owner": 5,
+        "PlayerCombatAvatar": 3
+      }
+    },
+    {
+      "index": 2430,
+      "path": [
+        "gclient/gameplay/logic_moba_lightning/lightning_alpaca_client.py"
+      ],
+      "decoded_sha256": "a403bdd1bde863b87c126b8c2b313c7697394a744b53db61e5bd42b680f37a2c",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 2499,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/dual_gun_spell.py"
+      ],
+      "decoded_sha256": "80d4ab655ec22ffeabb9507ba3e94322a9f936e50caae5929556ea234a3b729d",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 2597,
+      "path": [
+        "gclient/gameplay/uicomponents/hud_team_info_comp.py"
+      ],
+      "decoded_sha256": "ee50466d0f7b6c4babfb63a2a473b06dc423d18e8c889c1af0e35f82ff175c45",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 3078,
+      "path": [
+        "gclient/gameplay/logic_base/models/model_attch_comp.py"
+      ],
+      "decoded_sha256": "e01a708407fc461342a474fc231043208292f08e1470b75ba6d8db0c7cf2b4e7",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 3230,
+      "path": [
+        "gclient/gameplay/logic_base/equips/panpan_case.py"
+      ],
+      "decoded_sha256": "fc2e7dea2e19ad07c82572e2b1c5dc832f507481d16c5d6276bcedf61bed434f",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 3803,
+      "path": [
+        "gclient/gameplay/logic_football/ui/football_teaminfo_comp.py"
+      ],
+      "decoded_sha256": "ce02d5299501c40cc08c398311c80d5f14b787fbe1800e548dcc48c7e2e9e72f",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 8332,
+      "path": [
+        "gclient/gameplay/logic_moba_halloween/models/halloween_avatar_model.py"
+      ],
+      "decoded_sha256": "3e497e4ab7df52465cf1675037309b6b611ee6fdfac2ae9f2bafb6ab25121092",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 9357,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/grenade_launcher_skill_spell.py"
+      ],
+      "decoded_sha256": "e6c24b0336c8a089c57b4453dd0b83c8319ce1c420df8a653750cb13e5f5c23b",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 10261,
+      "path": [
+        "gclient/gameplay/logic_base/entities/altar.py"
+      ],
+      "decoded_sha256": "acd5c297e754217198cf411d59a09a920b01fdbc6083024005fc284569764abc",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 11101,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/holographic_ghost_spell.py"
+      ],
+      "decoded_sha256": "1d51e0956816046c44e22a317fb16d1f64bec31d86c549a24b88fc0bc3962f92",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 11877,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/space_teleport_spell.py"
+      ],
+      "decoded_sha256": "20867190cdaca1a724d2011da8de33e46652243bff47a9d15079c0a321c52ace",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "owner": 3,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 12674,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/gun_spell.py"
+      ],
+      "decoded_sha256": "502c0509c56171c6a8a6e05f1c4a3c2d9e22601eafe54cae9ada243b750253f1",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "IsATMGuardAI": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 13019,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/envy_sin_spell.py"
+      ],
+      "decoded_sha256": "a71efe47902613e937a2b57b534b774444bb60b4faa0d4c78fdf9ce0777ae235",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 13714,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/space_black_hole_spell.py"
+      ],
+      "decoded_sha256": "b49bf67eb40db5209c5dd4c0219585451f6e2ca3adfb35dd18913ee1fd95e9b3",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 14066,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_combat_unit.py"
+      ],
+      "decoded_sha256": "5a2ccf79f644a908e6475ed76c870312fb61526b260dfdc0dc90d0c772c9c648",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "IsATMGuardAI": 1,
+        "owner": 4,
+        "PlayerCombatAvatar": 97
+      }
+    },
+    {
+      "index": 15963,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_backpack.py"
+      ],
+      "decoded_sha256": "6765bf1c779d785702c86d7e1b02995afd87e969c1459c1c50b7a6139a12d98b",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 105
+      }
+    },
+    {
+      "index": 16510,
+      "path": [
+        "gclient/gameplay/logic_base/entities/cfootball.py"
+      ],
+      "decoded_sha256": "5e411b1e948f2c5835d70126327b8691a535150d5c3c07bba40856ee64496c74",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 17257,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/holographic_spell.py"
+      ],
+      "decoded_sha256": "59e076ac2bbd6f6989fd52a3df528e7365a36e56bfa743fb2ae6f7822b3f8632",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 17640,
+      "path": [
+        "gclient/gameplay/logic_moba/models/moba_hand_model.py"
+      ],
+      "decoded_sha256": "47fab69ac9e14a2485c79c32c1a4826ddca6806203655f7637d2720e28ee4d36",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 18907,
+      "path": [
+        "gclient/gameplay/uicomponents/hud_frontsight_comp.py"
+      ],
+      "decoded_sha256": "104a938ff48e37a61ffc47d0aa02df540dc74a80ee3692c841b13b31933a8b0f",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 19073,
+      "path": [
+        "gclient/gameplay/logic_moba_titan_2/avatarmember/cimp_transform.py"
+      ],
+      "decoded_sha256": "4092c3dcdc427fe98f8a576c69bbb16d6de8ea9b6b5ee8108c1f18a257275abc",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 226
+      }
+    },
+    {
+      "index": 20248,
+      "path": [
+        "gclient/gameplay/logic_base/equips/replay_samurai_sword_case.py"
+      ],
+      "decoded_sha256": "9b28a03dec7334255f7e9a3e67651e29ca39c283c0c1c6b8071a9e1fb5472894",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 20880,
+      "path": [
+        "gclient/gameplay/logic_base/equips/common_skill_case.py"
+      ],
+      "decoded_sha256": "9ff479c8d1cede6b41355cdaae629d81a5c074c00c1269bd00fec2296a711078",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 23319,
+      "path": [
+        "gclient/gameplay/logic_squad_fight/game_logic_squad_fight.py"
+      ],
+      "decoded_sha256": "f394f0391e63babbf99856dcd1b4ebbbaccde7070c8b287c9fd44484ae7e9f99",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 23490,
+      "path": [
+        "gclient/gameplay/logic_base/equips/citem.py"
+      ],
+      "decoded_sha256": "e813d76219a2aab4e6d2054f1cf6a830a6a6f8571baffc8617c169f5a690c6f8",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "IsATMGuardAI": 1,
+        "owner": 4,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 24178,
+      "path": [
+        "gclient/gameplay/logic_base/models/melee_extra_weapon_model.py"
+      ],
+      "decoded_sha256": "32552b8e7fc66bbf16fd4cff280e890b88ede7723e92faa1aa7cf7ccfc6b68b2",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 24829,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_graph_cue.py"
+      ],
+      "decoded_sha256": "969eccc215620a1139d121e5e781065740e78d888c83591964b690e3ccfda932",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 7
+      }
+    },
+    {
+      "index": 25281,
+      "path": [
+        "gclient/gameplay/logic_base/models/weapon_model.py"
+      ],
+      "decoded_sha256": "e30ac8f6d7bd03898dc171bcc6f6c36a7cf97530f358c64579844690a7f5458a",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "IsATMGuardAI": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 25433,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_climb_wall.py"
+      ],
+      "decoded_sha256": "940c5fa053dc4b9ed4c74044f5f32e8be8735233af9399e719640a1b672d0bf0",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 6
+      }
+    },
+    {
+      "index": 27935,
+      "path": [
+        "gclient/gameplay/logic_base/models/para_model_comp.py"
+      ],
+      "decoded_sha256": "0fabebf16762dc633e719bcb9bd36f382e93b03d4667e2568d4b5dc16bb6fc71",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 3,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 28715,
+      "path": [
+        "gclient/framework/commoncomps/space_weather_comp.py"
+      ],
+      "decoded_sha256": "7fce17a629a525ef991878f064531332b66f88fd2e2ea6b212893c878287b58e",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 29679,
+      "path": [
+        "gclient/util/decorators.py"
+      ],
+      "decoded_sha256": "912f3440ccf4cf9a5fd9cdd3b90074ba0dc012cb465db2939e06b05500921515",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 31427,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_panpan.py"
+      ],
+      "decoded_sha256": "771d76918cda46774faed6d4e395638313c71befcac177819e3accb45022c746",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 32699,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/boxing_melee_spell.py"
+      ],
+      "decoded_sha256": "f78a13811f8603e128dce951aaf674b7d28dfc4d430418b2360b0b0b7643c8ae",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 33033,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_spell.py"
+      ],
+      "decoded_sha256": "cedf56187ae334f9f96a655e88838239ad1dcf536c7c818c7938c8ef0ff287d9",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "owner": 3,
+        "PlayerCombatAvatar": 175
+      }
+    },
+    {
+      "index": 33577,
+      "path": [
+        "gclient/gameplay/logic_base/entities/ammo_box.py"
+      ],
+      "decoded_sha256": "043c2cc04a9d325b35b5adf0aa26ca3dfb82ab3a88fb1cda7cdb0bd2e9bc112e",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 5,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 34930,
+      "path": [
+        "gclient/gameplay/logic_base/models/para_hand_model_comp.py"
+      ],
+      "decoded_sha256": "5b6bc6156fde730c991ba0750815872dca04094168c61440fd7f86b6b50d2129",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 35974,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/time_field_spell.py"
+      ],
+      "decoded_sha256": "75b754c27bfd3e133163bef3fb349577e0e2c3cb25c636f7ec91c17e0fb7a52c",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 39185,
+      "path": [
+        "gclient/gameplay/logic_moba/models/moba_avatar_model.py"
+      ],
+      "decoded_sha256": "39f2cb60d5698adda489b8d16ab275a8d479c44ec75ead2a11c52cc2372aea4f",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 39263,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combat_team.py"
+      ],
+      "decoded_sha256": "ee6c2304b260c9adaec8c73e7684df44c8e7af2afd102fc48d6e5d0fb6c5c9c9",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 39845,
+      "path": [
+        "gclient/gameplay/logic_moba_zombie/avatarmembers/cimp_zombie_xray.py"
+      ],
+      "decoded_sha256": "16b4fec840818003e5de9c7298f2c91918cec93308d266f03940431391b1fb4b",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 2
+      }
+    },
+    {
+      "index": 41009,
+      "path": [
+        "gclient/gameplay/logic_overload/combat_avatar_overload.py"
+      ],
+      "decoded_sha256": "306d6bdaeb37e5585050c834d760436b83fc8c548e6473c3dc5a1b5da9ba1134",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 12
+      }
+    },
+    {
+      "index": 41309,
+      "path": [
+        "gclient/gameplay/logic_moba_titan_2/models/avatar_model_moba_titan_2.py"
+      ],
+      "decoded_sha256": "c38af31b3588b2dc064d0ab36dc4417bcba026b464f13e3a51a18555d1514754",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 42599,
+      "path": [
+        "gclient/gameplay/logic_moba/ui/single_revive_tips_node.py"
+      ],
+      "decoded_sha256": "4f0126677638d1ef1392c87d2b3adf5d304fdd102143b8144c4764e83ceeab29",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 43198,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/beast_throw_stone_spell.py"
+      ],
+      "decoded_sha256": "0ced486fe5012d4144d518e5197ef85708ecd87e4d364d7b8201812b861bdb93",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 44206,
+      "path": [
+        "gclient/gameplay/logic_base/entities/cvehicle.py"
+      ],
+      "decoded_sha256": "6beefe54edafe039fefe1b02e3b71ec2475ee470ac3dc02ad65ad57c93685786",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 45244,
+      "path": [
+        "gclient/gameplay/logic_moba_first/combat_avatar_moba_first_new.py"
+      ],
+      "decoded_sha256": "0a47dee9814a630aa9cd9db66fb3fe3914605e419aab2bc05a22d3c2e02472aa",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 3
+      }
+    },
+    {
+      "index": 45719,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/ghost_spell.py"
+      ],
+      "decoded_sha256": "80cd659c8ff74176f50740ff5619efd7580009cd8680ed0e660e080d8de3ed80",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 46285,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/time_back_spell.py"
+      ],
+      "decoded_sha256": "aedc987d09054e7052a1e34d37b32c09756e92dc10f409916f01578f6dfe93f8",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 46575,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_sound.py"
+      ],
+      "decoded_sha256": "935b1c8443e4a9b6c417425f91653d1b04666ab6b4cb0b5e175dcf7b06b88ff2",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 11
+      }
+    },
+    {
+      "index": 47190,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_emote.py"
+      ],
+      "decoded_sha256": "a99c33881b8baab8886fd6d3e4675c857a1c3e78351043f21da4604b635f2aa6",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 47399,
+      "path": [
+        "gclient/framework/models/model_cue_base.py"
+      ],
+      "decoded_sha256": "b003ed0b4b535e89d9ccd84a0f2a014c1a4c4377ff9850afb6ae729993adb45d",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 48352,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/zombie_acid_mist_spell.py"
+      ],
+      "decoded_sha256": "d5d7e443a446c7767ad9c40a5d0dd05ea67bb1e05b4775110e02124994579121",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 49231,
+      "path": [
+        "gclient/gameplay/logic_base/comps/model_hero_attach_comp.py"
+      ],
+      "decoded_sha256": "c14b0002414997457ff143ec1a40f9db6e43b5f44d4293e928182ca7e408b36c",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 49588,
+      "path": [
+        "gclient/gameplay/logic_base/entities/emote_tree.py"
+      ],
+      "decoded_sha256": "02f41bab52bf889c097aa1ae7556734b64a6360a700d2c6a6e0c79e0291ed8e2",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 50285,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_parachute.py"
+      ],
+      "decoded_sha256": "ce920ebd9f89619f0f55a46d55f19007c83b481aefa7c095614f363ecc342e1d",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 135
+      }
+    },
+    {
+      "index": 50384,
+      "path": [
+        "gclient/gameplay/logic_moba_ultra_mega/models/avatar_model_moba_ultra_mega.py"
+      ],
+      "decoded_sha256": "4d87112f2907bd1a7b9bcb71ad800ff97fe5062dc60eaa5530eadf7f243213b0",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 52673,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/samurai_block_hit_back_spell.py"
+      ],
+      "decoded_sha256": "56aa58ddba64e763701d786471eb9c74249429016275aeff2a3648c7d83f1d11",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 52943,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/rage_spell.py"
+      ],
+      "decoded_sha256": "1cb64e9bd847aa1ac75f8c0de3df0aa98069649cbc383600fae88e479415f1f5",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 53128,
+      "path": [
+        "gclient/gameplay/logic_base/entities/cstrop_uav.py"
+      ],
+      "decoded_sha256": "df8a97b0b851eb3bcf36e9cf02f5757184577729207f9a1d0395fed3f108f68f",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 5,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 53283,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/assassinate_spell.py"
+      ],
+      "decoded_sha256": "f5044b2adcf8c601e8dff00decc49fd1a7c3a3d81c81df1237bdcad6c0655abb",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 54564,
+      "path": [],
+      "decoded_sha256": "165bcad08fd740bce2aa3a34e807c286d138122baecd47414c0bc40183a0bfef",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 55512,
+      "path": [
+        "gclient/gameplay/logic_base/entities/contract_desk.py"
+      ],
+      "decoded_sha256": "ae576597a7baf7feda2a3dfc38f4b8affc358e0b7a1ad77578e3e809ba252dfa",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 55679,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_execute.py"
+      ],
+      "decoded_sha256": "523157eb2f8e894cfa4bdbd210c15c2aee2315de016e56d4f6f034a3eab86e4f",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 10,
+        "PlayerCombatAvatar": 50
+      }
+    },
+    {
+      "index": 59258,
+      "path": [
+        "gclient/gameplay/logic_base/equips/lefthand_special_weapon_case.py"
+      ],
+      "decoded_sha256": "baf9e2fe0449cb3a6a0e7531ff809c6433b857d7ed90545632a393c559cdbe61",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 59998,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/cure_uav_spell.py"
+      ],
+      "decoded_sha256": "17e2824b7c870426b110be1d2d999086566c622cf0c92ceb6d65b9f86a71c971",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 60632,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_util.py"
+      ],
+      "decoded_sha256": "5f6181f6248de9878ad56837f64f7f0ca93d9261ebdf01af2e307446f08d4300",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsATMGuardAI": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 61507,
+      "path": [
+        "gclient/gameplay/logic_base/ui/ig_main_pc_window.py"
+      ],
+      "decoded_sha256": "a3d2fe91fa4f7fbb19ea628b3eba592c3be66ba23724098f2904ad7ab07f3723",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 61925,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_model.py"
+      ],
+      "decoded_sha256": "04bde99e6e2715d32cacce94496d4aba3f89919aae650d513a5468da1e790f4c",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "owner": 6,
+        "PlayerCombatAvatar": 65
+      }
+    },
+    {
+      "index": 61980,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_house_detector.py"
+      ],
+      "decoded_sha256": "fad3c16125ef17d1e19c73b04faba98c4940622c24c66665b20f855d36ffc5da",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 7
+      }
+    },
+    {
+      "index": 63318,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/samurai_block_spell.py"
+      ],
+      "decoded_sha256": "bf5bfe3386981c6d80f230b22ab98c80ec0cf60e2819ed345cc1abc0c4b7e6d1",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 64882,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_emote.py"
+      ],
+      "decoded_sha256": "1e08973c017e7e8599be720d7eb530a2a18f5b11e3506b3a3ba6e8fc47a191f4",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "owner": 4,
+        "PlayerCombatAvatar": 46
+      }
+    },
+    {
+      "index": 66002,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/juren_fly_spell.py"
+      ],
+      "decoded_sha256": "8b30dd5ccab78d8daacee8fbf9e8b05c26e49e7b028783b71f75b513843a8cd9",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 66309,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/pulse_arrow_spell.py"
+      ],
+      "decoded_sha256": "d2b2a379eac3a3872953e7a81f56b390879e2ae1237fefca838c38816a754d04",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 66939,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/dash_spell.py"
+      ],
+      "decoded_sha256": "ca1b2cce4cb1783027d3dee8b0d5447860b5becd5b60c7c9e50e4b188224a07d",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 68418,
+      "path": [
+        "gclient/framework/util/camera_simulator.py"
+      ],
+      "decoded_sha256": "0d6faf3d77ecf856698f53034e5265f02a1efd77a1980cdee8aa1605cd104c66",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 69457,
+      "path": [
+        "gclient/gameplay/logic_base/equips/weapon_case.py"
+      ],
+      "decoded_sha256": "0dea4f7a53c52f57f3a9e4b210ea6436d647047e4ee80309a1e2d90d0073ef14",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "IsATMGuardAI": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 71276,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/jump_high_spell.py"
+      ],
+      "decoded_sha256": "7f243175f4d4d09637f4acd75459b6609bd1d150cb85c0f61df3776149282f4f",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 73867,
+      "path": [
+        "gclient/gameplay/logic_overload/avatarmember/cimp_backpack.py"
+      ],
+      "decoded_sha256": "09832fa09dc68423628bf1ae6eea719d2be80bf7065792826ba4a7f233b25d8d",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 6
+      }
+    },
+    {
+      "index": 74111,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/auto_uav_spell.py"
+      ],
+      "decoded_sha256": "7bfabde693c8a2c1024504b3b48f0886bc3c6417691c816df3d86b73770a0d0a",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 74683,
+      "path": [
+        "gclient/gameplay/logic_moba_titan_2/models/hand_model_moba_titan_2.py"
+      ],
+      "decoded_sha256": "88c41f95b5af2997fc9a0b5586f46b8b4c11a90b5643892285ec87393ff5f6d3",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 76026,
+      "path": [
+        "gclient/gameplay/logic_base/entities/phyball.py"
+      ],
+      "decoded_sha256": "b80cea67768082a054cbb72b9c40d0c9d262dcdaf2542ca346d189e14353c224",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 76916,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/beast_range_stone_spell.py"
+      ],
+      "decoded_sha256": "3d0dda516496969cbe4034d7a9ff62b9611cf6aed48fe6696083aded424dbc46",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 78964,
+      "path": [
+        "gclient/gameplay/uicomponents/hud_teaminfo_node.py"
+      ],
+      "decoded_sha256": "86ae53ba9502a8969b2e387c61db97db7421f54a249827259e916cbf16b6ff6b",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 79616,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_ladder.py"
+      ],
+      "decoded_sha256": "53c060ee7ef7415f34e33ba24e00601fa3c552ba6b03a73e9b8ab4bd780d52c3",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 80920,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/melee_spell.py"
+      ],
+      "decoded_sha256": "2c9ca7292f26b2ca69c27abde71fecf3ee2e0e0f89e88f7984e2a37c0afd3994",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 81954,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_buff.py"
+      ],
+      "decoded_sha256": "35f28519dc681924ec07898dd7bed5da9601a59ee4ac2da69c681e8f1391ceae",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 45
+      }
+    },
+    {
+      "index": 82633,
+      "path": [
+        "gclient/gameplay/logic_base/equips/weapon_material_feature.py"
+      ],
+      "decoded_sha256": "78907d6640e49a987c8add6aa11c49e0ab217dcf2add0bb098f704b18dec2c2d",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 82987,
+      "path": [
+        "gclient/gameplay/logic_base/entities/through_bomb.py"
+      ],
+      "decoded_sha256": "02fd9c563728c6284c30f929324c3bf1c6841d1297bd0303312109bb0a0c006b",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 83049,
+      "path": [
+        "gclient/gameplay/logic_base/models/avatar_model_cue.py"
+      ],
+      "decoded_sha256": "7514c9148daa07495008a8fdab649f3f0f81fa2d1fc7c054e7fc1b1e216111e2",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 84293,
+      "path": [
+        "gclient/gameplay/logic_base/models/nova_twin_skin_model_component.py"
+      ],
+      "decoded_sha256": "5cf6b1c66f407d0011c3562047f4fa0aded579f42e693a513d0f227b93d81367",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 87893,
+      "path": [
+        "gclient/gameplay/logic_base/equips/samurai_sword_case.py"
+      ],
+      "decoded_sha256": "d1635259d8a95066a0d1f6e15c716fafae346e156de07ec6d2c452c0fb25fa35",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 88004,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/accumulate_power_fist_spell.py"
+      ],
+      "decoded_sha256": "0f96b2837ea7eebffb606ffcbdc752c3f89b6b4fa101d1ed80dab6e606df329d",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 88106,
+      "path": [
+        "gclient/gameplay/logic_base/models/replay_hand_model.py"
+      ],
+      "decoded_sha256": "e812aacfcd5b6b64dddd775591beacdc6840038a1137035487530acf06935e3b",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 3,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 88283,
+      "path": [
+        "gclient/gameplay/logic_base/equips/replay_common_skill_case.py"
+      ],
+      "decoded_sha256": "baff646a197bdddb9bec3d5f193595a0c99edbade23e1b4086672f82304072eb",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 88993,
+      "path": [
+        "gclient/gameplay/logic_base/entities/cspace_snare.py"
+      ],
+      "decoded_sha256": "34296fcda9523012bbc56c554e7c793e1b013aaa52fc83c259bfd9aad2074623",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 2
+      }
+    },
+    {
+      "index": 89296,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/armor_titan_charge_spell.py"
+      ],
+      "decoded_sha256": "0da8dddc7df1d3a33d53ffea6c8932e7d1d073c9f498dc096a3f0517846409ba",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 89364,
+      "path": [
+        "gclient/gameplay/logic_moba_zombie/avatarmembers/cimp_zombie_crystal.py"
+      ],
+      "decoded_sha256": "8c6c8d2560df8af1a7343dbc36915df47fc1951139c0933a448efc8c6381948b",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 6
+      }
+    },
+    {
+      "index": 89620,
+      "path": [
+        "gclient/gameplay/logic_base/entities/csave_machine_drone.py"
+      ],
+      "decoded_sha256": "8b46b269fd9a165a973b04f63a663150417d136c9a7fd84ce826efefaefcca91",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 4,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 90679,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/space_gem_beam_spell.py"
+      ],
+      "decoded_sha256": "129c625b3f2d9c8089993e8d99ab650602fcdb0a8db60e2bed0b60b35c14d03c",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 92661,
+      "path": [
+        "gclient/gameplay/logic_moba_first/combat_avatar_moba_first.py"
+      ],
+      "decoded_sha256": "25af863f3f1a49db03a0e68c408625176548d39b012d5b8e2f38247864f27b59",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 6
+      }
+    },
+    {
+      "index": 95834,
+      "path": [
+        "gclient/gameplay/logic_moba_lockdown/models/lock_down_avatar_model.py"
+      ],
+      "decoded_sha256": "7c8ffc9fbab1ffb23f34e3959103806a4a5d120d45d2eea9a4af7cb65b5b1584",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 95872,
+      "path": [
+        "gclient/gameplay/logic_base/equips/item_3p_case.py"
+      ],
+      "decoded_sha256": "cf92b9ba10a5b01971fad476e6b5785af81f7e63168632602ba67a198868ddb4",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 99175,
+      "path": [
+        "gclient/gameplay/logic_moba_ultra_mega/avatarmember/cimp_transform.py"
+      ],
+      "decoded_sha256": "17b6f33f04d0a738c3fb5d17c89b60fd7e4428212c9a6f1033d1480bed116878",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 69
+      }
+    },
+    {
+      "index": 102099,
+      "path": [],
+      "decoded_sha256": "133b3654f50458478ec9024a2f51dff1ff82141a73887005e562e4848e1dddf3",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 104178,
+      "path": [
+        "gclient/gameplay/logic_moba/ui/moba_main_uistage_comp.py"
+      ],
+      "decoded_sha256": "7e52d0ac4647168238c1594033631a8927ef4a001227c76d42365e0a54324b20",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 104525,
+      "path": [
+        "gclient/gameplay/logic_base/models/robot_avatar_model.py"
+      ],
+      "decoded_sha256": "5a33fe7d60ac98cd66f77882b219cd6852a9596c029b0626b3287e2a32374c37",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 104677,
+      "path": [
+        "gclient/gameplay/logic_grand_theft/models/grand_theft_avatar_model.py"
+      ],
+      "decoded_sha256": "41b06cce594bc09f632c6a2405e2689045044ead6b84df224183026eddfb7c4a",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 104936,
+      "path": [
+        "gclient/gameplay/uicomponents/nova_skin_transform_hud_comp.py"
+      ],
+      "decoded_sha256": "0fca357d5cf8b553b4acb5fc1490793ab6b764ec78f3d589e4f5a4c7e8e1b98f",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 106017,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/armor_titan_ground_smash_spell.py"
+      ],
+      "decoded_sha256": "8fd4745e90af0f52542c744d810e99177df27709cccc28add2cc26d4f9758ae8",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 106785,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_spike_transfer.py"
+      ],
+      "decoded_sha256": "83a8683079cbc7d48f970a5e0bdfe5b465777173594ffddaa2a10d70d3191222",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 107694,
+      "path": [
+        "gclient/gameplay/logic_base/entities/vehiclecomponents/vehicle_model_comp.py"
+      ],
+      "decoded_sha256": "35f1cb661d270833829c865134b20ccf17d2bde7712efb517c4713c49bff3816",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "owner": 3,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 107853,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combat_avatar.py"
+      ],
+      "decoded_sha256": "11babd1e40f2036808527dc7589df652ae108cc51e3c37f0259c951a6b09dd0d",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 36
+      }
+    },
+    {
+      "index": 108190,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/samurai_sprint_spell.py"
+      ],
+      "decoded_sha256": "521f2b831cb369150dacb3b429d6858d53307b85ce7dbd7081e4a84e19adc9b2",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 108697,
+      "path": [
+        "gclient/gameplay/logic_base/entities/hider_clone.py"
+      ],
+      "decoded_sha256": "1b1aa589c1800f334325e750aba7584791ee55eb240e8d9faa60f216aefdf476",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 3,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 110296,
+      "path": [
+        "gclient/gameplay/logic_moba_seven_sins/models/seven_sins_avatar_model.py"
+      ],
+      "decoded_sha256": "2c71b2c377b88aacbed819c1a885bb61b45fa6901f86016d5aec66fe1baa1b8a",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 111732,
+      "path": [
+        "gclient/gameplay/logic_moba_first/bot/brain.py"
+      ],
+      "decoded_sha256": "c2aae2fc9bd3a22f900c5a9ae7556aff4253938c4e3ed48236cd1ce41cd948ed",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 112858,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/grappling_hook_spell.py"
+      ],
+      "decoded_sha256": "23b8a722ad7a471b3f8d63499afd0ac5fd2b371a279a67b0691c57c4cb3f6483",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 113275,
+      "path": [
+        "gclient/gameplay/logic_base/entities/stone_pilar.py"
+      ],
+      "decoded_sha256": "43cd3b15f2437b9bcce24a50917aa199969979b76ba9305e4b1565c268e30b15",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 113352,
+      "path": [
+        "gclient/gameplay/logic_base/entities/space_airship.py"
+      ],
+      "decoded_sha256": "eef59ace55fe00386e56a9741fef64d80e4d837f8903a9a2af33be81367d162b",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 113753,
+      "path": [
+        "gclient/framework/camera/fps_placer.py"
+      ],
+      "decoded_sha256": "15a7fb4352a866c98ee9acfa0a7592912c4ec5803c47ce8f60301204b6f25279",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 113975,
+      "path": [
+        "gclient/gameplay/logic_big_head/models/big_head_avatar_model.py"
+      ],
+      "decoded_sha256": "51c14d0dbc6fe129e194483110cab25282c74a938eac93055717315dd6048633",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 114832,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/beast_titan_normal_attack_spell.py"
+      ],
+      "decoded_sha256": "5bd85d26a75d246ceef5c5106ecc81ec4945bea4c4d0fb7b3017e20f5778c11e",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 115612,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/heartbeat_spell.py"
+      ],
+      "decoded_sha256": "a7f49d0fdb150bded443c9a3daf243289c2d0b2aa90f1057f2f1ef4284e30d4a",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 116223,
+      "path": [
+        "gclient/gameplay/logic_moba_lightning/lightning_capybara_client.py"
+      ],
+      "decoded_sha256": "a8153649b2048a108ace7548d6c6b321782dcdca8dcee71a263e72ce98fc3496",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 116308,
+      "path": [
+        "gclient/gameplay/logic_base/entities/shop.py"
+      ],
+      "decoded_sha256": "47192cfd2ec2999d721d19feb06ada0144add6f2e6e720705c8d28db6524dae9",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 4,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 116568,
+      "path": [
+        "gclient/gameplay/logic_base/spell/cspell_mgr.py"
+      ],
+      "decoded_sha256": "f8c6a987e0451e6c032613a7a143299f6e2c5667390fa74df14f22878cabc3db",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 3,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 117883,
+      "path": [
+        "gclient/gameplay/logic_moba_seven_sins/avatarmember/cimp_envy_sin.py"
+      ],
+      "decoded_sha256": "f5632cfa3b266a80d4a6919237a3afd0bb672de965b1baeb004c60aac1321f74",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 4
+      }
+    },
+    {
+      "index": 120167,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/serious_punch_spell.py"
+      ],
+      "decoded_sha256": "6b82019add1e21fd199faef8f3a258327ef63df017afe9c1730ddb157b73ae8f",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 123158,
+      "path": [
+        "gclient/gameplay/logic_blasting/game_logic_blasting.py"
+      ],
+      "decoded_sha256": "b6f78e255381f4edf9766397effece27145d2834c933f51b6ab6b89ae99b409e",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 123463,
+      "path": [
+        "gclient/gameplay/logic_base/entities/occupy_contract_item_new.py"
+      ],
+      "decoded_sha256": "d183a325948bb157b5db3719e54c1fe2a79af741a8e45fa1ecc4f0c7c9352042",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 3,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 123795,
+      "path": [
+        "gclient/gameplay/logic_base/entities/cbiological_ray.py"
+      ],
+      "decoded_sha256": "a35e37a9663635aa4f2d806458ac5b3ab3f81e5f74ccbeab8f15d6013ee9f315",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 5,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 123809,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_spell_juren.py"
+      ],
+      "decoded_sha256": "da3df22f2c13a3c1cffbfba887b345c983f95e0f2d8d9f3a5c11d1325f5ca8a0",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 55
+      }
+    },
+    {
+      "index": 124796,
+      "path": [
+        "gclient/gameplay/logic_moba_ultra_mega/avatarmember/cimp_black_hole_pull.py"
+      ],
+      "decoded_sha256": "e06889501002b37abd1660e3d46a442687200594be94fd467d9d1c901a206a15",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 2
+      }
+    },
+    {
+      "index": 124949,
+      "path": [
+        "gclient/gameplay/logic_base/entities/occupy_contract_item.py"
+      ],
+      "decoded_sha256": "9d07d6901e8b85a9b50989e2159da5c49f6faf7ef7dc556d8c964cea35dc77c7",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 5,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 125020,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/spell_core_main.py"
+      ],
+      "decoded_sha256": "e4810e3cc6032ef92290460794124b53fa3c1893216db424dbe8b0e13e0a8fe7",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "IsATMGuardAI": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 125076,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_talent.py"
+      ],
+      "decoded_sha256": "21ea2858f91dcb5c5daa0823127a8532b9c588d7237b8ea352c9ab476f7a4168",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 44
+      }
+    },
+    {
+      "index": 125315,
+      "path": [
+        "gclient/gameplay/logic_base/ui/skill_node.py"
+      ],
+      "decoded_sha256": "db607f49f01f7739f7bb91c60889267d83230add839f1778c146bee847fd01b7",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 3,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 126399,
+      "path": [
+        "gclient/gameplay/logic_base/bot/evaluators.py"
+      ],
+      "decoded_sha256": "08b5fcd59569e3102ea6426791fe7a42a5fad024374b8012562875fe86ced225",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 126465,
+      "path": [
+        "gclient/gameplay/logic_base/entities/barrie_cannon.py"
+      ],
+      "decoded_sha256": "26ed24436b6e85316d5cbbebe83b8030461f460e204b0314eead2b49a3090701",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 3,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 126990,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_replay.py"
+      ],
+      "decoded_sha256": "ca8bd740a70e55468d87e2e521b890aaec07842df266a8ae4052523f38dbc5bc",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 25
+      }
+    },
+    {
+      "index": 127473,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/lightning_alpaca_charge_spell.py"
+      ],
+      "decoded_sha256": "86e47b77125488d481111362bfdacd2f8f213d9790978af6d0d3cda99cc7db3d",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 131911,
+      "path": [
+        "gclient/gameplay/logic_base/comps/comp_beard.py"
+      ],
+      "decoded_sha256": "c291d12135e950137462b8801a4714faabd257a674a881bba103f714739a0d6a",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 7
+      }
+    },
+    {
+      "index": 131959,
+      "path": [
+        "gclient/gameplay/logic_base/models/secondary_hand_model.py"
+      ],
+      "decoded_sha256": "35ea3e581736685702613b22030855f2dad06dd4e85c16e6cebade774122c4de",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 133370,
+      "path": [
+        "gclient/gameplay/logic_moba_lightning/models/lightning_capybara_model.py"
+      ],
+      "decoded_sha256": "621f60dff9c939cd6bd72cbd9709b48330dfdc14d4c872b7bad6333b5cea26d9",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "IsATMGuardAI": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 134201,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/mega_biological_ray_spell.py"
+      ],
+      "decoded_sha256": "f0f7a580c3b25ed043291139bdfd7942f82c639c0607739f2553c1107382dcfa",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 135001,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/moving_shield_spell.py"
+      ],
+      "decoded_sha256": "aa84f9a871d49f4c41b369cb30f392cef07b18f1bb7bcc895e587a775e4cb2f0",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 135369,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_motion.py"
+      ],
+      "decoded_sha256": "a1c2d1590da5e51076abfe1b33eb0d01b11b2d877c81bff44372f0f568dbf0e8",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 2,
+        "PlayerCombatAvatar": 93
+      }
+    },
+    {
+      "index": 135845,
+      "path": [
+        "gclient/gameplay/logic_squad_fight/avatarmembers/cimp_squad_fight.py"
+      ],
+      "decoded_sha256": "949a77aff6f9f43455cdb35f326573f86e95e375d8accf8c1aab038df9f2abb3",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 7
+      }
+    },
+    {
+      "index": 137819,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combatavatarmembers/cimp_attach_model.py"
+      ],
+      "decoded_sha256": "bc5844a9d2a00da98bcdf66ade42773b6189864151c902442205064646e31f4a",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 2
+      }
+    },
+    {
+      "index": 139485,
+      "path": [
+        "gclient/gameplay/logic_shootingrange/ui/challenge_main_window.py"
+      ],
+      "decoded_sha256": "21521f6265f156f86e690af30d643e5b6d0b27faaa35131ff187eed69226ca79",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 139978,
+      "path": [
+        "gclient/gameplay/logic_base/spell/spell_core/samurai_sprint_kick_up_spell.py"
+      ],
+      "decoded_sha256": "c4a3f807178caac300223b1af5fa3bbccb34a614b4cbe21202becd51b9ea0385",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 141076,
+      "path": [],
+      "decoded_sha256": "3ef7443167b4c9b6e4e5b63a79a1c2fcc83c6b9292cfd6617c9ce633eb5408ac",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 3,
+        "IsATMGuardAI": 1,
+        "owner": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 141633,
+      "path": [
+        "gclient/gameplay/logic_base/entities/cbomb.py"
+      ],
+      "decoded_sha256": "a6fc7b38fb4ea831376a8b2827f86ffccbbb4beb392e72a23759c000e99a562c",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "owner": 8,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 142506,
+      "path": [
+        "gclient/gameplay/logic_moba_titan_2/avatarmember/cimp_juren_hook_target.py"
+      ],
+      "decoded_sha256": "1cf479a186e715a8eb60cb6bc0660e7dde6608c574263c973d16bfe1aa1f41bb",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 23
+      }
+    },
+    {
+      "index": 142722,
+      "path": [
+        "gclient/gameplay/logic_peekaboo/models/peekaboo_avatar_model.py"
+      ],
+      "decoded_sha256": "3eb495c6e82343026c39e0efc60ac10ed4f533cccad68ede99ca8a2e92d99abc",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 1,
+        "IsATMGuardAI": 1,
+        "owner": 3,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 142860,
+      "path": [
+        "gclient/gameplay/logic_base/entities/search_box.py"
+      ],
+      "decoded_sha256": "be6751378d6357d939217d970b612b7a7fe5238cc2ca40dd3cc4c512738f7e4d",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "owner": 3,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 143425,
+      "path": [
+        "gclient/gameplay/logic_moba/ui/moba_ghost_bottom_arms_comp.py"
+      ],
+      "decoded_sha256": "063adede7440ab075c51762832106dec50d30084fa5885ad7d19c47448429168",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "PlayerCombatAvatar": 1
+      }
+    },
+    {
+      "index": 143510,
+      "path": [
+        "gclient/gameplay/logic_base/models/avatar_model.py"
+      ],
+      "decoded_sha256": "0a4a57f34d1c8e14e38c08f510f1787f46659e4b2928663cf526797eac8b0ed3",
+      "hits": {
+        "IsPlayerCombatAvatar": 1,
+        "IsCombatAvatar": 3,
+        "IsATMGuardAI": 1,
+        "owner": 3,
+        "PlayerCombatAvatar": 1
+      }
+    }
+  ],
+  "marshal_parse_count": 162,
+  "marshal_parse_status": "all selected streams parsed to EOF; no payload execution",
+  "function_or_method_definition_matches": [],
+  "class_body_co_names_matches": [],
+  "class_tag_string_constant_matches": [
+    {
+      "index": 107853,
+      "path": [
+        "gclient/gameplay/logic_base/entities/combat_avatar.py"
+      ],
+      "decoded_sha256": "11babd1e40f2036808527dc7589df652ae108cc51e3c37f0259c951a6b09dd0d",
+      "string_constant": "IsPlayerCombatAvatar",
+      "code_names": [
+        "sys",
+        "math",
+        "time",
+        "client.ClientEntity",
+        "ClientAreaEntity",
+        "common.RpcMethodArgs",
+        "Tuple",
+        "Float",
+        "Bool",
+        "common.classutils",
+        "Property",
+        "Components",
+        "common.rpcdecorator",
+        "rpc_method",
+        "CLIENT_STUB",
+        "GlobalData",
+        "gclient.gameplay.logic_base.entities.combatavatarmembers",
+        "gameplay",
+        "logic_base",
+        "entities",
+        "combatavatarmembers",
+        "gclient",
+        "cconst",
+        "gclient.framework.camera.tps_placer",
+        "TpsPlacer",
+        "gclient.framework.util",
+        "events",
+        "gshare",
+        "pubsub",
+        "consts",
+        "formula",
+        "gshare.decorators",
+        "with_tag",
+        "gshare.game_logic.igame_logic_parachute_comp",
+        "ParaAvatarReason",
+        "PARA_ON_SKY_STAGE",
+        "MType",
+        "gclient.gameplay.logic_base.comps",
+        "comp_parachute",
+        "comp_beard",
+        "comp_climb_wall",
+        "comp_thruster_pack",
+        "comp_left_hand_special_weapon",
+        "comp_fly",
+        "comp_meow_dance",
+        "gshare.ititle",
+        "NoPersistentTitles",
+        "MEngine",
+        "HighFrequencyProperties",
+        "ParaAvatarMemberBase",
+        "CombatAvatarMember",
+        "CombatAvatarMemberThrusterPack",
+        "importall",
+        "CombatAvatar",
+        "ParaPlayerCombatAvatarMemberBase",
+        "PlayerCombatAvatarMember",
+        "PlayerCombatAvatarMemberThrusterPack",
+        "PlayerCombatAvatar"
+      ]
+    }
+  ]
+}
