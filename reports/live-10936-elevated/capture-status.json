@@ -1,0 +1,65 @@
+{
+  "status": "CAPTURED",
+  "pid": 10936,
+  "timestamp_utc": "2026-11-01T23:46:14.528885+00:00",
+  "memory_write_performed": false,
+  "target_code_called": false,
+  "input_dispatched": false,
+  "gameplay_validated": false,
+  "sample": {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\BloodStrike.exe",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "image_size": 156143616
+  },
+  "module": {
+    "base": "0x7ff7a61d0000",
+    "size": 156143616,
+    "sha256_of_disk_sample": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747"
+  },
+  "memory_read_performed": true,
+  "roots": {
+    "actor_registry": {
+      "rva": "0x8b7cd90",
+      "address": "0x7ff7aed4cd90",
+      "pointer": "0x1a5ebfeabf0",
+      "raw_hex": "f0abfeeba5010000",
+      "meaning": "observed bytes at static RVA; pointee semantics require downstream validation"
+    },
+    "engine_root": {
+      "rva": "0x80d5980",
+      "address": "0x7ff7ae2a5980",
+      "pointer": "0x1a5e5b16f80",
+      "raw_hex": "806fb1e5a5010000",
+      "meaning": "observed bytes at static RVA; pointee semantics require downstream validation"
+    },
+    "render_state": {
+      "rva": "0x80f3840",
+      "address": "0x7ff7ae2c3840",
+      "pointer": "0x1a5e8298d40",
+      "raw_hex": "408d29e8a5010000",
+      "meaning": "observed bytes at static RVA; pointee semantics require downstream validation"
+    },
+    "interpreter_head": {
+      "rva": "0x925f328",
+      "address": "0x7ff7af42f328",
+      "pointer": "0x7ff7af444e90",
+      "raw_hex": "904e44aff77f0000",
+      "meaning": "observed bytes at static RVA; pointee semantics require downstream validation"
+    }
+  },
+  "mapped_image": {
+    "file": "BloodStrike.mapped-image.bin",
+    "sha256": "3c0727c320c66ae35ca5c61bef8f8b577be301f9f76077954d86c371181e0fec",
+    "complete": true,
+    "readable_bytes": 156143616,
+    "image_size": 156143616
+  },
+  "pipeline": {
+    "status": "CAPTURED",
+    "actors": 2,
+    "rejected": 0,
+    "aim_reason": "inactive",
+    "final_viewport_validated": false
+  },
+  "finished_utc": "2026-11-01T23:46:17.095286+00:00"
+}

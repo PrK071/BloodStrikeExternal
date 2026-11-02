@@ -1,0 +1,619 @@
+{
+  "format": "bloodstrike-static-layout-inventory-v1",
+  "timestamp_utc": "2026-11-01T23:31:04.831127+00:00",
+  "sample": {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\BloodStrike.exe",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "image_size": 156143616
+  },
+  "machine": "0x8664",
+  "pe_timestamp": 1791737786,
+  "preferred_image_base": "0x140000000",
+  "scope": "existing V7 static layouts rechecked against installed bytes; not newly derived live offsets",
+  "runtime_dump_created": false,
+  "gameplay_validated": false,
+  "observed_processes": [],
+  "address_rules": {
+    "rva": "actual loaded module base + RVA; preferred base is not a live base",
+    "field": "add field displacement to a validated instance/subobject",
+    "constants": "source constants also include masks, sizes, sentinels and limits; not all are offsets"
+  },
+  "sections": [
+    {
+      "name": ".text",
+      "rva": "0x1000",
+      "virtual_size": 81996527,
+      "raw_size": 81996800,
+      "file_offset": 1536,
+      "sha256": "b4fd541e3bd3d5ada7e9b732ae67b4a8b0b442636b5f35098ded1ed3943c0b62"
+    },
+    {
+      "name": ".rdata",
+      "rva": "0x4e34000",
+      "virtual_size": 41947670,
+      "raw_size": 41948160,
+      "file_offset": 81998336,
+      "sha256": "9aee9c7a792907f350ab5a0e3505a2873af1a53b1b80126d12d5e2b52b645c89"
+    },
+    {
+      "name": ".data",
+      "rva": "0x7636000",
+      "virtual_size": 25816612,
+      "raw_size": 11113472,
+      "file_offset": 123946496,
+      "sha256": "6bd5a074981bb1f2ed22d00ab11e584ba0525306914635b082f0309a9586f311"
+    },
+    {
+      "name": ".pdata",
+      "rva": "0x8ed5000",
+      "virtual_size": 3709836,
+      "raw_size": 3709952,
+      "file_offset": 135059968,
+      "sha256": "66897ef957e783394e75fddfa592dd97296bca9dc767ba8aac0ed104ff4ee151"
+    },
+    {
+      "name": "PyRuntim",
+      "rva": "0x925f000",
+      "virtual_size": 315360,
+      "raw_size": 315392,
+      "file_offset": 138769920,
+      "sha256": "50f00a6c6011537ebf50a03d3c098bfe842e4e5c271aef3af1cf454fc89415a8"
+    },
+    {
+      "name": "AsyncioD",
+      "rva": "0x92ac000",
+      "virtual_size": 104,
+      "raw_size": 512,
+      "file_offset": 139085312,
+      "sha256": "e890f14b8f88915d7b58d66ef6ae1181912b731ae00d9e9965e75087a1130d33"
+    },
+    {
+      "name": "_RDATA",
+      "rva": "0x92ad000",
+      "virtual_size": 131592,
+      "raw_size": 132096,
+      "file_offset": 139085824,
+      "sha256": "08483958e8639625d395c186a1f0405993c47b3c4cc013cd52dfa5a14bdc398b"
+    },
+    {
+      "name": ".rsrc",
+      "rva": "0x92ce000",
+      "virtual_size": 279152,
+      "raw_size": 279552,
+      "file_offset": 139217920,
+      "sha256": "675368602f3d17f9f32b0f37759fe248e34571196180a69e8bd079d2fdfe9f4f"
+    },
+    {
+      "name": ".reloc",
+      "rva": "0x9313000",
+      "virtual_size": 1922820,
+      "raw_size": 1923072,
+      "file_offset": 139497472,
+      "sha256": "85109dbfa4b2845187d23d9362b4b9f14293f634e22966b20e82fea89f318db5"
+    }
+  ],
+  "sources": {
+    "ExternalCore/registry.py": {
+      "sha256": "84e231c18732bb8f0b7c98859e9bf8281a6038ef7cf2e9d5d5ec5b15be35f891",
+      "constants": {
+        "ROOT_RVA": {
+          "value": 146263440,
+          "line": 16,
+          "hex": "0x8b7cd90"
+        },
+        "ROOT_SENTINEL": {
+          "value": 8,
+          "line": 17,
+          "hex": "0x8"
+        },
+        "NODE_SIZE": {
+          "value": 32,
+          "line": 18,
+          "hex": "0x20"
+        },
+        "NODE_KEY": {
+          "value": 16,
+          "line": 19,
+          "hex": "0x10"
+        },
+        "NODE_COMPONENT": {
+          "value": 24,
+          "line": 20,
+          "hex": "0x18"
+        },
+        "COMPONENT_PARENT": {
+          "value": 64,
+          "line": 21,
+          "hex": "0x40"
+        },
+        "COMPONENT_ACTOR": {
+          "value": 888,
+          "line": 22,
+          "hex": "0x378"
+        },
+        "ACTOR_SERIAL": {
+          "value": 12,
+          "line": 23,
+          "hex": "0xc"
+        },
+        "PARENT_STATE": {
+          "value": 304,
+          "line": 24,
+          "hex": "0x130"
+        },
+        "IN_WORLD": {
+          "value": 16,
+          "line": 25,
+          "hex": "0x10"
+        }
+      }
+    },
+    "ExternalCore/entity_position.py": {
+      "sha256": "307a56c5dff047000e8cd2601398b8f869b0ff2b12231b258c274ca9695a1451",
+      "constants": {
+        "SAMPLE_SHA256": {
+          "value": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+          "line": 13
+        },
+        "GET_ENTITY_POSITION_RVA": {
+          "value": 9009072,
+          "line": 14,
+          "hex": "0x8977b0"
+        },
+        "TRANSFORM_OFFSET": {
+          "value": 88,
+          "line": 15,
+          "hex": "0x58"
+        },
+        "TRANSLATION_OFFSET": {
+          "value": 124,
+          "line": 16,
+          "hex": "0x7c"
+        },
+        "ANCHOR_OFFSET": {
+          "value": 428,
+          "line": 17,
+          "hex": "0x1ac"
+        },
+        "ANCHOR_SENTINEL": {
+          "value": 2147483647,
+          "line": 18,
+          "hex": "0x7fffffff"
+        }
+      }
+    },
+    "ExternalCore/camera_capture.py": {
+      "sha256": "15689e450d1c810fb544c20a47351b0ffc37a111f6bd8327093ca7d84578ba51",
+      "constants": {
+        "ENGINE_ROOT_RVA": {
+          "value": 135092608,
+          "line": 21,
+          "hex": "0x80d5980"
+        },
+        "GAMEPLAY_OFFSET": {
+          "value": 88,
+          "line": 22,
+          "hex": "0x58"
+        },
+        "PLAYER_OFFSET": {
+          "value": 88,
+          "line": 23,
+          "hex": "0x58"
+        },
+        "PLAYER_CAMERA_OFFSET": {
+          "value": 3464,
+          "line": 24,
+          "hex": "0xd88"
+        },
+        "GAMEPLAY_TD": {
+          "value": 132337816,
+          "line": 25,
+          "hex": "0x7e35098"
+        },
+        "CLIENT_PLAYER_TD": {
+          "value": 132477216,
+          "line": 26,
+          "hex": "0x7e57120"
+        },
+        "ICAMERA_TD": {
+          "value": 132013392,
+          "line": 27,
+          "hex": "0x7de5d50"
+        }
+      }
+    },
+    "ExternalCore/render_camera.py": {
+      "sha256": "5910714f699ddf8e2512d159ae7ace903d58ca9fc0700c4895b9c04ea7c4571c",
+      "constants": {
+        "RENDER_STATE_RVA": {
+          "value": 135215168,
+          "line": 15,
+          "hex": "0x80f3840"
+        },
+        "SCENE_CLIENT_VPTR": {
+          "value": 82195184,
+          "line": 16,
+          "hex": "0x4e632f0"
+        },
+        "MAIN_VIEWPORT_VPTR": {
+          "value": 86967448,
+          "line": 17,
+          "hex": "0x52f0498"
+        },
+        "CAMERAS": {
+          "value": {
+            "82576984": [
+              "aurora",
+              1716
+            ],
+            "82573384": [
+              "perspective",
+              728
+            ],
+            "82573984": [
+              "orthographic",
+              null
+            ]
+          },
+          "line": 18
+        }
+      }
+    },
+    "ExternalCore/screenpoint.py": {
+      "sha256": "d3ee0c9b6a538913b61cf84dee51f508c9bdfd71b00a4128535fbf0217216f86",
+      "constants": {
+        "CAMERA_BYTES": {
+          "value": 1112,
+          "line": 14,
+          "hex": "0x458"
+        }
+      }
+    },
+    "ExternalCore/python_runtime.py": {
+      "sha256": "52dd4bf785f149a10161e009f6b84c749ddf7bb4d844c0aae7322f84fe9c6762",
+      "constants": {
+        "RUNTIME_RVA": {
+          "value": 153481216,
+          "line": 8,
+          "hex": "0x925f000"
+        },
+        "HEAD_RVA": {
+          "value": 153482024,
+          "line": 9,
+          "hex": "0x925f328"
+        },
+        "INTERP_NEXT": {
+          "value": 7272,
+          "line": 10,
+          "hex": "0x1c68"
+        },
+        "INTERP_ID": {
+          "value": 7280,
+          "line": 11,
+          "hex": "0x1c70"
+        },
+        "INTERP_MODULES": {
+          "value": 7656,
+          "line": 12,
+          "hex": "0x1de8"
+        },
+        "MODULE_TYPE": {
+          "value": 128037360,
+          "line": 13,
+          "hex": "0x7a1b1f0"
+        }
+      }
+    },
+    "ExternalCore/python_owner.py": {
+      "sha256": "b5b04337688d0f5b17d0e4bbcc71fd029ca0cdc19f4f34a94a3d5ea3fff03a31",
+      "constants": {
+        "DICT_TYPE": {
+          "value": 128030976,
+          "line": 17,
+          "hex": "0x7a19900"
+        },
+        "STR_TYPE": {
+          "value": 128019984,
+          "line": 18,
+          "hex": "0x7a16e10"
+        },
+        "TUPLE_TYPE": {
+          "value": 128027872,
+          "line": 19,
+          "hex": "0x7a18ce0"
+        },
+        "TYPE_TYPE": {
+          "value": 128012656,
+          "line": 20,
+          "hex": "0x7a15170"
+        },
+        "TRUE": {
+          "value": 128002480,
+          "line": 21,
+          "hex": "0x7a129b0"
+        },
+        "FALSE": {
+          "value": 128002448,
+          "line": 22,
+          "hex": "0x7a12990"
+        },
+        "IENTITY_PYTYPE": {
+          "value": 127533152,
+          "line": 23,
+          "hex": "0x79a0060"
+        },
+        "AREA_PYTYPE": {
+          "value": 127320640,
+          "line": 24,
+          "hex": "0x796c240"
+        },
+        "ENTITY_PYTYPE": {
+          "value": 127333312,
+          "line": 25,
+          "hex": "0x796f3c0"
+        },
+        "NONE": {
+          "value": 127967568,
+          "line": 26,
+          "hex": "0x7a0a150"
+        },
+        "TYPE_DICT": {
+          "value": 264,
+          "line": 27,
+          "hex": "0x108"
+        },
+        "TYPE_MRO": {
+          "value": 344,
+          "line": 28,
+          "hex": "0x158"
+        },
+        "TYPE_DICTOFFSET": {
+          "value": 288,
+          "line": 29,
+          "hex": "0x120"
+        },
+        "TYPE_FLAGS": {
+          "value": 168,
+          "line": 30,
+          "hex": "0xa8"
+        },
+        "STATIC_BUILTIN": {
+          "value": 2,
+          "line": 31,
+          "hex": "0x2"
+        },
+        "MANAGED_DICT": {
+          "value": 16,
+          "line": 32,
+          "hex": "0x10"
+        },
+        "MAX_DICT_ENTRIES": {
+          "value": 4096,
+          "line": 33,
+          "hex": "0x1000"
+        }
+      }
+    },
+    "ExternalCore/native_properties.py": {
+      "sha256": "ae6b5061d572ec8f00e146b52b743f7ebda4f09a4bb6f6e3a44868aa44e4d182",
+      "constants": {
+        "MAP_PYTYPE": {
+          "value": 127312928,
+          "line": 15,
+          "hex": "0x796a420"
+        },
+        "STORAGE_INT": {
+          "value": 89504352,
+          "line": 16,
+          "hex": "0x555ba60"
+        },
+        "STORAGE_FLOAT": {
+          "value": 89504600,
+          "line": 17,
+          "hex": "0x555bb58"
+        },
+        "STORAGE_MIXED": {
+          "value": 89505096,
+          "line": 18,
+          "hex": "0x555bd48"
+        }
+      }
+    },
+    "ExternalCore/life_state.py": {
+      "sha256": "b7a87c33a36ae5e3aceab270887eac29724ce7f07387b8468b14efa5ce9c5696",
+      "constants": {
+        "COMBAT_STATES": {
+          "value": {
+            "ALIVE": 0,
+            "DYING": 1,
+            "DEAD": 2,
+            "GHOST": 3,
+            "NONE": 4,
+            "SPIRIT": 5
+          },
+          "line": 14
+        }
+      }
+    }
+  },
+  "render_input_contract": {
+    "target_sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "scope": "disk-only native pointer-flow and RTTI; target never loaded/executed or attached",
+    "status": "typed native render-input camera route established; exact final presented-pixel projection convention remains unproven",
+    "runtime_root_rva": "0x80f3840",
+    "pointer_size": 8,
+    "endian": "little",
+    "route": [
+      {
+        "name": "render_state",
+        "read": "ptr(module_base + 0x80f3840)",
+        "evidence": "5fc385"
+      },
+      {
+        "name": "client",
+        "read": "ptr(render_state + 0x08)",
+        "require_type": "scene_client",
+        "evidence": "5fc393 passes this provider to MainRenderViewport construction"
+      },
+      {
+        "name": "viewport",
+        "read": "ptr(client + 0x18)",
+        "require_type": "main_viewport",
+        "evidence": "db8d15 calls provider slot0x80; SceneViewportClient slot0x80=293980 writes [client+0x18]=viewport"
+      },
+      {
+        "name": "effective_camera",
+        "read": "ptr(viewport + 0x50)",
+        "require_type": [
+          "aurora",
+          "perspective",
+          "orthographic"
+        ],
+        "evidence": "db8cb2 provider slot0x50 -> 3afcf0 returns client+0x80; db8cf6->db7870->db7110 writes camera atviewport+0x50"
+      }
+    ],
+    "mandatory_alias_gates": [
+      "ptr(viewport+0x740) == client",
+      "effective_camera == client+0x80",
+      "all exact vptrs and nonnull bounded canonical pointers match pinned image"
+    ],
+    "types": {
+      "scene_client": {
+        "vptr_rva": "0x4e632f0",
+        "col_rva": "0x6e2bc48",
+        "col_bytes": "01 00 00 00 00 00 00 00 00 00 00 00 60 14 df 07 70 bc e2 06 48 bc e2 06",
+        "type_descriptor_rva": "0x7df1460",
+        "name": ".?AVSceneViewportClient@Messiah@@",
+        "object_offset": 0,
+        "vptr_prefix": "b0 e9 3a 40 01 00 00 00 f0 a2 2d 40 01 00 00 00 60 36 29 40 01 00 00 00 e0 36 29 40 01 00 00 00"
+      },
+      "main_viewport": {
+        "vptr_rva": "0x52f0498",
+        "col_rva": "0x6ef31a0",
+        "col_bytes": "01 00 00 00 00 00 00 00 00 00 00 00 c0 65 ea 07 c8 31 ef 06 a0 31 ef 06",
+        "type_descriptor_rva": "0x7ea65c0",
+        "name": ".?AVMainRenderViewport@Messiah@@",
+        "object_offset": 0,
+        "vptr_prefix": "30 73 db 40 01 00 00 00 20 41 10 40 01 00 00 00 20 41 10 40 01 00 00 00 d0 47 3b 40 01 00 00 00"
+      },
+      "perspective": {
+        "vptr_rva": "0x4ebf848",
+        "col_rva": "0x6e389d0",
+        "col_bytes": "01 00 00 00 00 00 00 00 00 00 00 00 78 c6 ca 07 f8 89 e3 06 d0 89 e3 06",
+        "type_descriptor_rva": "0x7cac678",
+        "name": ".?AVPerspectiveCamera@Messiah@@",
+        "object_offset": 0,
+        "vptr_prefix": "00 fd 4a 40 01 00 00 00 00 01 4b 40 01 00 00 00 f0 4b 48 40 01 00 00 00 30 4c 48 40 01 00 00 00"
+      },
+      "orthographic": {
+        "vptr_rva": "0x4ebfaa0",
+        "col_rva": "0x6e38ad0",
+        "col_bytes": "01 00 00 00 00 00 00 00 00 00 00 00 a8 c6 ca 07 f8 8a e3 06 d0 8a e3 06",
+        "type_descriptor_rva": "0x7cac6a8",
+        "name": ".?AVOrthographic3dCamera@Messiah@@",
+        "object_offset": 0,
+        "vptr_prefix": "a0 fc 4a 40 01 00 00 00 a0 00 4b 40 01 00 00 00 e0 6f 48 40 01 00 00 00 20 70 48 40 01 00 00 00"
+      },
+      "aurora": {
+        "vptr_rva": "0x4ec0658",
+        "col_rva": "0x6e38d50",
+        "col_bytes": "01 00 00 00 00 00 00 00 00 00 00 00 48 c6 ca 07 78 8d e3 06 50 8d e3 06",
+        "type_descriptor_rva": "0x7cac648",
+        "name": ".?AVAuroraCamera@Messiah@@",
+        "object_offset": 0,
+        "vptr_prefix": "50 f9 4a 40 01 00 00 00 40 00 4b 40 01 00 00 00 30 32 49 40 01 00 00 00 70 32 49 40 01 00 00 00"
+      }
+    },
+    "viewport_dimensions": {
+      "width": {
+        "offset": "0x18",
+        "type": "uint16"
+      },
+      "height": {
+        "offset": "0x1a",
+        "type": "uint16"
+      },
+      "source": "db74f0 updates fields and camera via slot0x128; image/display-coordinate scaling not derived"
+    },
+    "projection_storage": {
+      "aurora": {
+        "offset": "0x6b4",
+        "bytes": 64,
+        "float_count": 16,
+        "getter_rva": "0x493c00",
+        "getter_slot": "0x70"
+      },
+      "perspective": {
+        "offset": "0x2d8",
+        "bytes": 64,
+        "float_count": 16,
+        "getter_rva": "0x485230",
+        "getter_slot": "0x70"
+      },
+      "orthographic": {
+        "read_supported": false,
+        "reason": "slot0x70 at4876a0 computes output; no equivalent fixed stored64-byte matrix established"
+      }
+    },
+    "projection_convention": {
+      "row_or_column_vectors": "unresolved",
+      "clip_depth_range": "unresolved",
+      "handedness": "unresolved",
+      "pixel_mapping": "unresolved",
+      "matrix_meaning": "projection output of concrete native camera virtualslot0x70; not a claimed combined view-projection",
+      "final_shader_alias": "the CameraProjection writer c47f8c consumes a virtualslot0x70 and stores64bytes at+0xfa0; its specific camera/context alias to this viewport is not yet proved"
+    },
+    "source_to_effective": {
+      "source": "existing typed GetGameplay/ClientPlayer.Camera acquisition",
+      "update_function_rva": "0x343ef0",
+      "update_class": "scene_client",
+      "update_vtable_slot": "0xb8",
+      "caller_rva": "0x343040",
+      "caller_vtable_slot": "0x90",
+      "source_fields": {
+        "view_matrix": "0x41c..0x44b",
+        "fov": "0x454",
+        "near": "0x458",
+        "far": "0x45c",
+        "is_orthographic": "0x418",
+        "use_aurora": "0x450",
+        "extra_projection_enable": "0x419"
+      },
+      "selection_precedence": [
+        "UseAuroraCamera !=0 -> AuroraCamera",
+        "otherwise IsOrthographic !=0 -> Orthographic3dCamera",
+        "otherwise -> PerspectiveCamera"
+      ],
+      "transforms": "SceneViewportClient update copies48bytes from ICamera+0x41c into client+0xee0 then calls effective camera slot0x68 with that copy",
+      "lifetime": "null gameplay or null source camera causes update to return without refreshing destination; previous native rendercamera values can remain",
+      "identity": "ICamera source and effective nativecamera are separate objects, connected by a copy/update path; require current observation comparisons, not pointer equality"
+    },
+    "acquisition_requirements": [
+      "Read only; no virtual calls or engine calls are necessary for Aurora/Perspective storedprojection capture",
+      "Bracket/recheck global/root/client/viewport/camera pointers, vptrs, required aliases, dimensions and64projectionbytes",
+      "Validate projection elements finite; reject unsupported orthographic storage rather than use a guessed offset",
+      "Keep source camera and effective camera snapshots distinct; compare gates/type/dimensions and copied fields only when validated",
+      "Record that equal reads cannot prove lifetime/atomicity or absence of ABA, and paused/teardown states can retain older effectivecamera data"
+    ],
+    "remaining_unknowns": [
+      "root creation/lifetime and actual live subtype availability not observed",
+      "current camera-to-mainviewport binding must satisfy all runtime alias/type gates",
+      "other writers/overrides after the shown update, scheduling, final shader alias, jitter, resolution scaling and finalpixel convention remain unresolved"
+    ]
+  },
+  "render_contract_sha256": "c24879959c1764055c4e7f79e703898ddc5438ea5f02244f3111a661f7d34db1",
+  "tests": {
+    "status": "PASS",
+    "run": 133,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "unresolved": [
+    "live entity/type/dispatch and object lifetime validation",
+    "final viewport projection, jitter, scaling and screen pixel equivalence",
+    "visibility and input calibration in the game",
+    "HP/faction/combat_state use effective attributes and dynamic metadata, not universal fixed field offsets",
+    "watch loop does not dispatch aim input"
+  ]
+}

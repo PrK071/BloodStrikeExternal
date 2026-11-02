@@ -15,3 +15,6 @@ venv/
 /StaticAnalysis/integration-evidence/rea/ghidra-project/
 *.gpr
 *.rep/
+
+# Runtime module images remain local; publish their manifests and reports only.
+/reports/**/BloodStrike.mapped-image.bin

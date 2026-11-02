@@ -1,0 +1,30 @@
+{
+  "actor_registry": {
+    "rva": "0x8b7cd90",
+    "address": "0x7ff7aed4cd90",
+    "pointer": "0x1a5ebfeabf0",
+    "raw_hex": "f0abfeeba5010000",
+    "meaning": "observed bytes at static RVA; pointee semantics require downstream validation"
+  },
+  "engine_root": {
+    "rva": "0x80d5980",
+    "address": "0x7ff7ae2a5980",
+    "pointer": "0x1a5e5b16f80",
+    "raw_hex": "806fb1e5a5010000",
+    "meaning": "observed bytes at static RVA; pointee semantics require downstream validation"
+  },
+  "render_state": {
+    "rva": "0x80f3840",
+    "address": "0x7ff7ae2c3840",
+    "pointer": "0x1a5e8298d40",
+    "raw_hex": "408d29e8a5010000",
+    "meaning": "observed bytes at static RVA; pointee semantics require downstream validation"
+  },
+  "interpreter_head": {
+    "rva": "0x925f328",
+    "address": "0x7ff7af42f328",
+    "pointer": "0x7ff7af444e90",
+    "raw_hex": "904e44aff77f0000",
+    "meaning": "observed bytes at static RVA; pointee semantics require downstream validation"
+  }
+}

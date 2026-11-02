@@ -1,0 +1,207 @@
+{
+  "format": "bloodstrike-live-offset-observation-v1",
+  "pid": 10936,
+  "module": {
+    "base": "0x7ff7a61d0000",
+    "size": 156143616,
+    "sha256_of_disk_sample": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747"
+  },
+  "disk_sample_sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+  "module_dump_sha256": "3c0727c320c66ae35ca5c61bef8f8b577be301f9f76077954d86c371181e0fec",
+  "root_rvas": [
+    {
+      "name": "actor_registry",
+      "rva": "0x8b7cd90",
+      "pointer_observed": "0x1a5ebfeabf0",
+      "pointer_in_module_dump": "0x1a5ebfeabf0",
+      "same_observation": true,
+      "validation": "readable root; downstream gates passed for registry/engine/render; interpreter only pointer observed"
+    },
+    {
+      "name": "engine_root",
+      "rva": "0x80d5980",
+      "pointer_observed": "0x1a5e5b16f80",
+      "pointer_in_module_dump": "0x1a5e5b16f80",
+      "same_observation": true,
+      "validation": "readable root; downstream gates passed for registry/engine/render; interpreter only pointer observed"
+    },
+    {
+      "name": "render_state",
+      "rva": "0x80f3840",
+      "pointer_observed": "0x1a5e8298d40",
+      "pointer_in_module_dump": "0x1a5e8298d40",
+      "same_observation": true,
+      "validation": "readable root; downstream gates passed for registry/engine/render; interpreter only pointer observed"
+    },
+    {
+      "name": "interpreter_head",
+      "rva": "0x925f328",
+      "pointer_observed": "0x7ff7af444e90",
+      "pointer_in_module_dump": "0x7ff7af444e90",
+      "same_observation": true,
+      "validation": "readable root; downstream gates passed for registry/engine/render; interpreter only pointer observed"
+    }
+  ],
+  "field_offsets": [
+    {
+      "name": "registry.root_sentinel",
+      "offset": "0x8",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "registry.node_key",
+      "offset": "0x10",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "registry.node_component",
+      "offset": "0x18",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "ActorComponent.parent",
+      "offset": "0x40",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "ActorComponent.actor",
+      "offset": "0x378",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "Actor.serial",
+      "offset": "0xc",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "IEntity.state",
+      "offset": "0x130",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "IEntity.transform",
+      "offset": "0x58",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "IEntity.translation",
+      "offset": "0x7c",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "IEntity.anchor",
+      "offset": "0x1ac",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "engine.gameplay",
+      "offset": "0x58",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "gameplay.player",
+      "offset": "0x58",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "ClientPlayer.camera",
+      "offset": "0xd88",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "ICamera.origin",
+      "offset": "0x7c",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "ICamera.view_basis",
+      "offset": "0x41c",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "ICamera.width",
+      "offset": "0x408",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "ICamera.height",
+      "offset": "0x40a",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "ICamera.field_of_view",
+      "offset": "0x454",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "render_state.client",
+      "offset": "0x8",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "SceneViewportClient.viewport",
+      "offset": "0x18",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "SceneViewportClient.embedded_camera",
+      "offset": "0x80",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "MainRenderViewport.camera",
+      "offset": "0x50",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "MainRenderViewport.provider",
+      "offset": "0x740",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "MainRenderViewport.width",
+      "offset": "0x18",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "MainRenderViewport.height",
+      "offset": "0x1a",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "SceneViewportClient.source_view_copy",
+      "offset": "0xee0",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    },
+    {
+      "name": "AuroraCamera.projection",
+      "offset": "0x6b4",
+      "scope": "used by checked acquisition in menu; no gameplay validation"
+    }
+  ],
+  "observation": {
+    "actors": 2,
+    "positions_decoded": 2,
+    "classifications": [
+      "unknown",
+      "unknown"
+    ],
+    "source_camera": "0x1a5eba4ab40",
+    "render_camera": "0x1a5e5b16040",
+    "render_kind": "aurora",
+    "width": 1334,
+    "height": 750,
+    "field_of_view": 40.0,
+    "source_view_copy_matched": true,
+    "render_status": "stale_or_future_capture"
+  },
+  "unresolved": [
+    "player/HP/faction/combat_state acquisition in training or match",
+    "final screen-pixel mapping and viewport calibration",
+    "visibility",
+    "input calibration and dispatch",
+    "freshness: captured frame exceeded pipeline age budget"
+  ],
+  "gameplay_validated": false,
+  "scope": "menu observation; existing offsets tested, no new fixed HP/team offsets derived"
+}

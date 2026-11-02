@@ -1,0 +1,304 @@
+{
+  "capture": {
+    "registry": {
+      "root": 1812140567536,
+      "sentinel": 1812131789840,
+      "records": [
+        {
+          "node": 1812323789520,
+          "key": 1,
+          "component": 1810534349568,
+          "actor": 1810526873680,
+          "parent": 1810533152496,
+          "in_world": true,
+          "entity": 1810533152496,
+          "position": {
+            "position": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "local_translation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "anchor_raw": [
+              0,
+              0,
+              0
+            ],
+            "anchor_used": [
+              0,
+              0,
+              0
+            ],
+            "anchor_applied": true,
+            "transform": [
+              -0.9999987483024597,
+              0.0,
+              -0.0015926529886201024,
+              0.0,
+              1.0,
+              0.0,
+              0.0015926529886201024,
+              0.0,
+              -0.9999987483024597,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "position_status": "decoded_unclassified",
+          "dynamic_descriptor_rva": 132013432
+        },
+        {
+          "node": 1812328350080,
+          "key": 2,
+          "component": 1810534353456,
+          "actor": 1810526847376,
+          "parent": 1810533175680,
+          "in_world": true,
+          "entity": 1810533175680,
+          "position": {
+            "position": [
+              0.12243927270174026,
+              1.251489281654358,
+              -0.1953119933605194
+            ],
+            "local_translation": [
+              0.12243927270174026,
+              1.251489281654358,
+              -0.1953119933605194
+            ],
+            "anchor_raw": [
+              0,
+              0,
+              0
+            ],
+            "anchor_used": [
+              0,
+              0,
+              0
+            ],
+            "anchor_applied": true,
+            "transform": [
+              -0.7312257885932922,
+              -0.009134232997894287,
+              0.6820813417434692,
+              -0.34264081716537476,
+              0.8695370554924011,
+              -0.35568326711654663,
+              -0.5898402333259583,
+              -0.4937911033630371,
+              -0.638953685760498,
+              0.12243927270174026,
+              1.251489281654358,
+              -0.1953119933605194
+            ]
+          },
+          "position_status": "decoded_unclassified",
+          "dynamic_descriptor_rva": 132013432
+        }
+      ],
+      "started_ns": 4133775463000,
+      "finished_ns": 4133776173800,
+      "attempts": 1,
+      "consistency": "two_equal_passes_no_atomicity_or_lifetime_guarantee",
+      "gameplay_classification": "unclassified"
+    },
+    "camera": {
+      "engine_root": 1812034842496,
+      "gameplay": 1812135845840,
+      "player": 1812145393712,
+      "camera_address": 1812134669120,
+      "camera": {
+        "origin": [
+          0.0,
+          1.1200000047683716,
+          -2.0999999046325684
+        ],
+        "basis": [
+          -1.0,
+          0.0,
+          -8.742277657347586e-08,
+          0.0,
+          1.0,
+          -0.0,
+          8.742277657347586e-08,
+          -0.0,
+          -1.0
+        ],
+        "width": 1334,
+        "height": 750,
+        "field_of_view": 40.0
+      },
+      "position": {
+        "position": [
+          0.0,
+          1.1200000047683716,
+          -2.0999999046325684
+        ],
+        "local_translation": [
+          0.0,
+          1.1200000047683716,
+          -2.0999999046325684
+        ],
+        "anchor_raw": [
+          0,
+          0,
+          0
+        ],
+        "anchor_used": [
+          0,
+          0,
+          0
+        ],
+        "anchor_applied": true,
+        "transform": [
+          -1.0,
+          0.0,
+          8.742277657347586e-08,
+          0.0,
+          1.0,
+          -0.0,
+          -8.742277657347586e-08,
+          -0.0,
+          -1.0,
+          0.0,
+          1.1200000047683716,
+          -2.0999999046325684
+        ]
+      },
+      "selection": "rtti_checked_Player.Camera_candidate_not_final_viewport_observation"
+    },
+    "started_ns": 4133774357300,
+    "finished_ns": 4133777435700,
+    "attempts": 1,
+    "consistency": "equal_camera_reads_around_two_registry_passes_no_atomicity_or_ABA_guarantee",
+    "render_camera": {
+      "state": 1812076268864,
+      "client": 1812034838464,
+      "viewport": 1812362369168,
+      "camera": 1812034838592,
+      "kind": "aurora",
+      "width": 1334,
+      "height": 750,
+      "projection": [
+        1.5446836948394775,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.7474772930145264,
+        0.0,
+        0.0,
+        -0.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0
+      ],
+      "source_copy_matched": true,
+      "projection_convention": "unresolved_native_projection_only",
+      "presented_pixels_validated": false
+    },
+    "render_camera_error": null
+  },
+  "scene": {
+    "width": 1334,
+    "height": 750,
+    "captured_ns": 4133774357300,
+    "actors": [
+      {
+        "observation": {
+          "node": 1812323789520,
+          "key": 1,
+          "component": 1810534349568,
+          "actor": 1810526873680,
+          "parent": 1810533152496
+        },
+        "point": {
+          "x": 667.0,
+          "y": 924.5,
+          "depth": 2.1000001430511475,
+          "camera_z": -2.0999999046325684,
+          "in_front": true,
+          "inside_viewport": false
+        },
+        "classification": {
+          "category": "unknown",
+          "alive": null,
+          "visible": null,
+          "local": null,
+          "evidence": "",
+          "facts": null
+        }
+      },
+      {
+        "observation": {
+          "node": 1812328350080,
+          "key": 2,
+          "component": 1810534353456,
+          "actor": 1810526847376,
+          "parent": 1810533175680
+        },
+        "point": {
+          "x": 600.7999877929688,
+          "y": 303.8999938964844,
+          "depth": 1.899999976158142,
+          "camera_z": -1.9046878814697266,
+          "in_front": true,
+          "inside_viewport": true
+        },
+        "classification": {
+          "category": "unknown",
+          "alive": null,
+          "visible": null,
+          "local": null,
+          "evidence": "",
+          "facts": null
+        }
+      }
+    ],
+    "rejected": [],
+    "coordinate_contract": "conditional_same_observed_anchor_origin",
+    "final_viewport_validated": false
+  },
+  "commands": [
+    {
+      "kind": "circle",
+      "x": 667,
+      "y": 375,
+      "radius": 180,
+      "color": [
+        90,
+        90,
+        90
+      ],
+      "width": 1
+    },
+    {
+      "kind": "text",
+      "x": 12,
+      "y": 12,
+      "text": "STALE FRAME",
+      "color": [
+        255,
+        90,
+        50
+      ]
+    }
+  ],
+  "aim": {
+    "target": null,
+    "dx": 0,
+    "dy": 0,
+    "captured_ns": 4133774357300,
+    "reason": "inactive"
+  },
+  "render_status": "stale_or_future_capture"
+}
