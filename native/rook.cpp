@@ -216,7 +216,7 @@ struct PyData{
   require(instanceItem(model,"owner")==host&&instanceItem(model,"model")==wrapper,"primary model reverse association");
   bool modelType=false;
   for(U cls:mro(model)){
-   U name=r.ptr(cls+0x18);std::string s;
+   U name=r.get<U>(cls+0x18);require(name>=0x10000&&name<=0x7ffffffffeff,"invalid type-name byte address");std::string s;
    for(size_t i=0;i<256;++i){char c=r.get<char>(name+i);if(!c)break;s+=c;}
    if(s=="AvatarModel"||s.ends_with(".AvatarModel")){modelType=true;break;}
   }
@@ -310,6 +310,38 @@ Camera camera(Reader& r){
 }
 struct Actor{U node=0,component=0,actor=0,entity=0,host=0;uint32_t key=0;double hp=0,faction=0;bool alive=false,enemy=false;};
 bool same(const Actor& a,const Actor& b){return a.key==b.key&&a.component==b.component&&a.actor==b.actor&&a.entity==b.entity&&a.host==b.host;}
+struct TargetSwitchGate{
+ Actor previous{};Clock::time_point nextAcquisition{};
+ void reset(){previous={};nextAcquisition={};}
+ bool allow(const Actor* candidate,Clock::time_point now){
+  if(previous.host&&(!candidate||!same(previous,*candidate))){
+   previous={};nextAcquisition=now+std::chrono::milliseconds(300);
+  }
+  if(now<nextAcquisition)return false;
+  if(candidate)previous=*candidate;
+  return candidate!=nullptr;
+ }
+};
+struct CameraFeedbackGate{
+ std::array<float,9> sentBasis{};bool pending=false;Clock::time_point issued{};
+ void reset(){pending=false;}
+ void sent(const Camera& c,LONG dx,LONG dy,Clock::time_point now=Clock::now()){if(dx||dy){std::copy_n(c.view.begin(),9,sentBasis.begin());pending=true;issued=now;}}
+ bool waiting(const Camera& c,Clock::time_point now=Clock::now()){
+  if(!pending)return false;
+  if(now-issued<std::chrono::milliseconds(35))return true;
+  double rotation=0;for(size_t i=0;i<9;++i)rotation=std::max(rotation,std::abs(double(c.view[i])-sentBasis[i]));
+  if(rotation>1e-5)pending=false;
+  return pending;
+ }
+};
+struct ZoomStability{
+ double previous=0;bool initialized=false;Clock::time_point changed{};
+ bool stable(double fov,Clock::time_point now){
+  if(!initialized||std::abs(fov-previous)>.05){initialized=true;changed=now;}
+  previous=fov;return now-changed>=std::chrono::milliseconds(80);
+ }
+};
+bool aimDeadzone(double error,bool& stopped){stopped=error<=(stopped?1.25:.65);return stopped;}
 bool identity(Reader& r,const Actor& a){return r.get<U>(a.node+0x18)==a.component&&r.get<uint32_t>(a.node+0x10)==a.key&&r.get<U>(a.component+0x40)==a.entity&&r.get<U>(a.component+0x378)==a.actor&&r.get<uint32_t>(a.actor+0xC)==a.key&&(r.get<uint8_t>(a.entity+0x130)&0x10);}
 std::vector<Actor> registry(Reader& r){
  U root=r.ptr(r.base+0x8B7CD90),sentinel=r.ptr(root+8),node=r.get<U>(sentinel);std::set<U> seen;std::set<uint32_t> keys;std::vector<Actor> result;
@@ -347,8 +379,10 @@ std::vector<Bone> skeleton(Reader& r,const Actor& a){
 
 struct Settings{
  std::atomic<bool> aim{true},esp{true},boxes{true},bones{true},tracers{true},labels{true},running{true};
- std::atomic<int> radius{500},speed{300};
+ std::atomic<int> radius{500},speed{300},smoothMs{0};
+ std::atomic<bool> head{true};
 } settings;
+double smoothingAlpha(double dtMs,int tauMs){return tauMs<=0?1.:-std::expm1(-std::clamp(dtMs,0.,100.)/tauMs);}
 fs::path appDir;
 void atomicFile(const fs::path& path,const std::string& data){
  auto tmp=path;tmp+=L".tmp";{std::ofstream f(tmp,std::ios::binary|std::ios::trunc);if(!f)return;f<<data;}
@@ -357,17 +391,33 @@ void atomicFile(const fs::path& path,const std::string& data){
 std::string loadFile(const fs::path& p){std::ifstream f(p,std::ios::binary);return {std::istreambuf_iterator<char>(f),{}};}
 void saveSettings(){
  std::ostringstream o;o<<"{\"aim\":"<<settings.aim<<",\"esp\":"<<settings.esp<<",\"boxes\":"<<settings.boxes<<",\"skeleton\":"<<settings.bones<<",\"tracers\":"<<settings.tracers<<",\"labels\":"<<settings.labels<<",\"radius\":"<<settings.radius<<",\"speed\":"<<settings.speed<<"}\n";
- atomicFile(appDir/L"settings.json",o.str());
+ std::string json=o.str();json.erase(json.find_last_of('}'));json+=",\"smooth_ms\":"+std::to_string(settings.smoothMs.load())+",\"head\":"+(settings.head.load()?std::string("true"):std::string("false"))+"}\n";atomicFile(appDir/L"settings.json",json);
 }
 bool readBool(const std::string& s,const char* k,bool fallback){auto p=s.find(std::string("\"")+k+"\"");if(p==s.npos)return fallback;p=s.find(':',p);if(p==s.npos)return fallback;p=s.find_first_not_of(" \t\r\n",p+1);if(s.compare(p,4,"true")==0||s.compare(p,1,"1")==0)return true;if(s.compare(p,5,"false")==0||s.compare(p,1,"0")==0)return false;return fallback;}
 void loadSettings(){
  auto s=loadFile(appDir/L"settings.json");settings.aim=readBool(s,"aim",true);settings.esp=readBool(s,"esp",true);settings.boxes=readBool(s,"boxes",true);settings.bones=readBool(s,"skeleton",true);settings.tracers=readBool(s,"tracers",true);settings.labels=readBool(s,"labels",true);
- auto readInt=[&](const char* k,int fallback,int maximum){try{auto p=s.find(std::string("\"")+k+"\"");if(p==s.npos)return fallback;p=s.find(':',p);int n=std::stoi(s.substr(p+1));return n>=1&&n<=maximum?n:fallback;}catch(...){return fallback;}};
+ auto readInt=[&](const char* k,int fallback,int maximum,int minimum=1){try{auto p=s.find(std::string("\"")+k+"\"");if(p==s.npos)return fallback;p=s.find(':',p);int n=std::stoi(s.substr(p+1));return n>=minimum&&n<=maximum?n:fallback;}catch(...){return fallback;}};
  settings.radius=readInt("radius",500,4096);settings.speed=readInt("speed",300,1000);
+ settings.smoothMs=readInt("smooth_ms",0,500,0);settings.head=readBool(s,"head",true);
 }
 struct Calibration{double gx=0,gy=0,fov=0;int width=0,height=0;bool valid=false;};
-Calibration calibration(){
- auto s=loadFile(appDir/L"calibration.json");Calibration c;
+std::array<double,2> angularMouseDelta(double ex,double ey,const Camera& camera,const Calibration& cal){
+ require(cal.valid&&cal.height>0&&cal.fov>0&&cal.fov<180&&camera.width>0&&camera.height>0&&camera.sx>0&&camera.sy>0,"invalid projection calibration");
+ double calibratedFocal=cal.height*.5/std::tan(cal.fov*3.14159265358979323846/360.);
+ double horizontalAngle=std::atan(ex/(camera.width*.5*camera.sx));
+ double verticalAngle=std::atan(ey/(camera.height*.5*camera.sy));
+ return {horizontalAngle*calibratedFocal*cal.gx,verticalAngle*calibratedFocal*cal.gy};
+}
+std::array<double,2> boundedCorrection(double ex,double ey,const Camera& c,const Calibration& cal,double dtMs,double alpha){
+ auto delta=angularMouseDelta(ex,ey,c,cal);delta[0]*=.6*alpha;delta[1]*=.6*alpha;
+ double focal=cal.height*.5/std::tan(cal.fov*3.14159265358979323846/360.);
+ double angle=std::hypot(delta[0]/(focal*cal.gx),delta[1]/(focal*cal.gy));
+ double budget=std::min(2.,100.*std::clamp(dtMs,0.,50.)/1000.)*3.14159265358979323846/180.;
+ if(angle>budget){delta[0]*=budget/angle;delta[1]*=budget/angle;}
+ return delta;
+}
+Calibration calibration(const fs::path& file={}){
+ auto s=loadFile(file.empty()?appDir/L"calibration.json":file);Calibration c;
  require(s.find("CALIBRATED")!=s.npos,"calibration status missing");
  auto number=[&](const char* name){auto p=s.find(std::string("\"")+name+"\"");require(p!=s.npos,"calibration field");p=s.find(':',p);return std::stod(s.substr(p+1));};
  auto p=s.find("\"counts_per_pixel\"");require(p!=s.npos,"calibration gains");p=s.find('[',p);size_t consumed=0;c.gx=std::stod(s.substr(p+1),&consumed);p=s.find(',',p+1+consumed);c.gy=std::stod(s.substr(p+1));
@@ -427,7 +477,7 @@ struct Projected{
 };
 Projected geometry(Reader& r,const Camera& c,const Actor& a){
  require(identity(r,a),"actor association expired");Pose p=pose(r,a.entity);require(p.anchor==c.anchor,"coordinate anchors differ");Projected out;out.actor=a;
- out.feet=c.project(p.world({0,0,0}));out.aim=c.project(p.world({0,1.55f,0}));
+ out.feet=c.project(p.world({0,0,0}));out.aim=c.project(p.world({0,settings.head?1.55f:1.f,0}));
  try{out.bones=skeleton(r,a);for(auto bone:out.bones)out.points.push_back(c.project(p.world(bone.model)));}catch(const std::exception&){out.bones.clear();out.points.clear();}
  std::vector<P2> good;
  for(size_t i=0;i<out.points.size();++i){auto pt=out.points[i];auto v=out.bones[i].model;
@@ -452,7 +502,7 @@ HWND menuWindow=nullptr,statusWindow=nullptr;std::atomic<bool> workerDone{false}
 void status(const std::string& s){std::lock_guard lock(statusMutex);statusText.assign(s.begin(),s.end());}
 struct Options{bool probe=false;int seconds=0;};
 void worker(Options options){
- U frames=0,inputPackets=0,errors=0;std::string lastError,aimReason="inactive";Game game;Clock::time_point started=Clock::now(),lastReport=started;Actor locked{};int validFrames=0;
+ U frames=0,inputPackets=0,errors=0;std::string lastError,aimReason="inactive";Game game;Clock::time_point started=Clock::now(),lastReport=started,previousFrame=started;Actor locked{},motionTarget{};TargetSwitchGate switchGate;CameraFeedbackGate feedback;ZoomStability zoomStability;bool stopped=false;int validFrames=0;double currentFov=0,carryX=0,carryY=0;
  auto report=[&](int candidates,int enemies,int primitives,int boneCount,double ms,double fps){
   std::ostringstream o;o<<"{\n\"runtime\":\"native-cpp\",\"pid\":"<<game.pid<<",\"frames\":"<<frames<<",\"valid_frames\":"<<validFrames<<",\"errors\":"<<errors<<",\"actors\":"<<candidates<<",\"opponents\":"<<enemies<<",\"draw_primitives\":"<<primitives<<",\"bone_count\":"<<boneCount<<",\"frame_ms\":"<<ms<<",\"fps\":"<<fps<<",\"input_packets\":"<<inputPackets<<",\"aim_reason\":\""<<escaped(aimReason)<<"\",\"last_error\":\""<<escaped(lastError)<<"\",\"aim\":"<<settings.aim<<",\"esp\":"<<settings.esp<<",\"boxes\":"<<settings.boxes<<",\"skeleton\":"<<settings.bones<<",\"tracers\":"<<settings.tracers<<",\"labels\":"<<settings.labels<<",\"finished\":"<<workerDone<<"\n}\n";
   atomicFile(appDir/(options.probe?L"native-probe.json":L"native-session.json"),o.str());
@@ -461,11 +511,14 @@ void worker(Options options){
   game=findGame();status("Verificando build...");require(hashFile(game.path)==SAMPLE,"unsupported game SHA256");
   Handle process(OpenProcess(PROCESS_VM_READ|PROCESS_QUERY_LIMITED_INFORMATION,FALSE,game.pid));require(process.h!=nullptr,"OpenProcess denied");
   Calibration cal;try{cal=calibration();}catch(const std::exception& e){lastError=e.what();}
+  std::vector<Calibration> profiles;if(cal.valid)profiles.push_back(cal);
+  if(fs::exists(appDir/L"calibrations"))for(auto& entry:fs::directory_iterator(appDir/L"calibrations")){if(entry.path().extension()!=L".json")continue;try{profiles.push_back(calibration(entry.path()));}catch(const std::exception& e){lastError=e.what();}}
   Surface overlay;if(!options.probe)overlay.init(GetModuleHandleW(nullptr));
   auto fpsStart=Clock::now();int fpsFrames=0;double fps=0;int candidates=0,enemies=0,primitives=0,boneCount=0;
   while(settings.running){
    MSG pending;while(PeekMessageW(&pending,nullptr,0,0,PM_REMOVE)){TranslateMessage(&pending);DispatchMessageW(&pending);}
-   auto frameStart=Clock::now();++frames;primitives=boneCount=0;std::string stage="process";
+   auto frameStart=Clock::now();double frameDt=std::chrono::duration<double,std::milli>(frameStart-previousFrame).count();previousFrame=frameStart;++frames;primitives=boneCount=0;std::string stage="process";
+   if(!locked.host){carryX=carryY=0;motionTarget={};stopped=false;}
    try{
     DWORD exitCode=0;require(GetExitCodeProcess(process.h,&exitCode)&&exitCode==STILL_ACTIVE,"game process exited");
     Reader metadata(process.h,game.base);PyData py(metadata);stage="local player";U local=py.local();stage="local numeric map";Numeric ln(py,local);double localFaction=ln.get("faction");stage="registry";auto actors=registry(metadata);candidates=int(actors.size());std::vector<Actor> classified;
@@ -478,7 +531,8 @@ void worker(Options options){
     enemies=int(classified.size());
     // Metadata reads finish before geometry. No page cache survives into the current camera/pose sample.
     Reader fresh(process.h,game.base);fresh.cache=false;
-    stage="current geometry";auto geometryStart=Clock::now();Camera c=camera(fresh);
+    stage="current geometry";auto geometryStart=Clock::now();Camera c=camera(fresh);currentFov=c.fov;bool zoomReady=zoomStability.stable(c.fov,geometryStart);bool responsePending=feedback.waiting(c);
+    Calibration active=cal;double closest=.6;for(const auto& profile:profiles){double distance=std::abs(profile.fov-c.fov);if(distance<closest){active=profile;closest=distance;}}
     std::vector<Projected> projected;for(auto a:classified){try{projected.push_back(geometry(fresh,c,a));}catch(const std::exception&) {}}
     RECT rect{};POINT origin{0,0};require(GetClientRect(game.window,&rect)&&ClientToScreen(game.window,&origin),"game client geometry");
     int clientWidth=rect.right-rect.left,clientHeight=rect.bottom-rect.top;
@@ -486,23 +540,28 @@ void worker(Options options){
     bool focused=GetForegroundWindow()==game.window&&!IsIconic(game.window);
     bool held=(GetAsyncKeyState(VK_RBUTTON)&0x8000)!=0;
     bool eligible=settings.aim&&!options.probe&&focused&&held;
-    if(!eligible){locked={};aimReason=options.probe?"probe_no_input":!settings.aim?"disabled":!focused?"game_not_focused":"hold_RMB";}
-    else if(!cal.valid){locked={};aimReason="calibration_missing";}
-    else if(std::abs(c.fov-cal.fov)>.6||c.width!=cal.width||c.height!=cal.height){locked={};aimReason="calibration_FOV_or_resolution_mismatch";}
+    if(!eligible){locked={};switchGate.reset();feedback.reset();stopped=false;aimReason=options.probe?"probe_no_input":!settings.aim?"disabled":!focused?"game_not_focused":"hold_RMB";}
+    else if(!active.valid){locked={};aimReason="calibration_missing";}
+    else if(!std::isfinite(c.fov)||c.fov<=1||c.fov>=179){locked={};aimReason="invalid_projection_FOV";}
+    else if(!zoomReady){carryX=carryY=0;stopped=false;aimReason="zoom_settling";}
+    else if(responsePending){aimReason="await_camera_response";}
     else if(std::chrono::duration<double,std::milli>(Clock::now()-frameStart).count()>100||std::chrono::duration<double,std::milli>(Clock::now()-geometryStart).count()>20){locked={};aimReason="stale_frame";}
     else{
      Projected* chosen=nullptr;double best=settings.radius.load()*settings.radius.load();
-     for(auto& p:projected){if(!p.aim.inside)continue;double d=std::hypot(p.aim.x-c.width*.5,p.aim.y-c.height*.5);if(d>settings.radius)continue;if(locked.host&&same(locked,p.actor)){chosen=&p;break;}if(d*d<best){best=d*d;chosen=&p;}}
+     for(auto& p:projected){if(!p.aim.inside)continue;if(locked.host&&same(locked,p.actor)){chosen=&p;break;}double d=std::hypot(p.aim.x-c.width*.5,p.aim.y-c.height*.5);if(d>settings.radius)continue;if(d*d<best){best=d*d;chosen=&p;}}
+     bool acquisitionAllowed=switchGate.allow(chosen?&chosen->actor:nullptr,Clock::now());
      if(!chosen){locked={};aimReason="no_target";}
+     else if(!acquisitionAllowed){locked={};aimReason="target_switch_delay";}
      else{
       locked=chosen->actor;double ex=chosen->aim.x-c.width*.5,ey=chosen->aim.y-c.height*.5;
-      if(std::hypot(ex,ey)<=.65)aimReason="inside_deadzone";
+      if(!same(motionTarget,chosen->actor)){carryX=carryY=0;stopped=false;motionTarget=chosen->actor;}
+      if(aimDeadzone(std::hypot(ex,ey),stopped)){carryX=carryY=0;aimReason="inside_deadzone";}
       else{
-       double dx=ex*cal.gx,dy=ey*cal.gy,length=std::hypot(dx,dy),limit=settings.speed.load();if(length>limit){dx*=limit/length;dy*=limit/length;}
+       auto delta=boundedCorrection(ex,ey,c,active,frameDt,smoothingAlpha(frameDt,settings.smoothMs));double dx=delta[0]+carryX,dy=delta[1]+carryY,length=std::hypot(dx,dy),limit=settings.speed.load();if(length>limit){dx*=limit/length;dy*=limit/length;}
        INPUT input{};input.type=INPUT_MOUSE;input.mi.dx=LONG(dx);input.mi.dy=LONG(dy);input.mi.dwFlags=MOUSEEVENTF_MOVE;
        // Check focus, activation, identity and age again immediately before sending input.
        if(GetForegroundWindow()==game.window&&(GetAsyncKeyState(VK_RBUTTON)&0x8000)&&settings.aim&&identity(fresh,chosen->actor)&&std::chrono::duration<double,std::milli>(Clock::now()-geometryStart).count()<20){
-        require(SendInput(1,&input,sizeof(input))==1,"SendInput failed");++inputPackets;aimReason="tracking";
+        if(input.mi.dx||input.mi.dy){require(SendInput(1,&input,sizeof(input))==1,"SendInput failed");feedback.sent(c,input.mi.dx,input.mi.dy);++inputPackets;}carryX=dx-input.mi.dx;carryY=dy-input.mi.dy;aimReason="tracking";
        }else aimReason="input_recheck_failed";
       }
      }
@@ -522,6 +581,7 @@ void worker(Options options){
     if(now-lastReport>=std::chrono::seconds(1)||options.probe){
      if(classified.empty()&&!classificationError.empty())lastError=classificationError;else lastError.clear();
      report(candidates,enemies,primitives,boneCount,ms,fps);
+     std::ostringstream zoom;zoom<<"{\"fov\":"<<c.fov<<",\"calibration_fov\":"<<active.fov<<",\"measured_zoom_match\":"<<(closest<.6)<<",\"sensitivity_model\":\""<<(closest<.6?"measured":"angular_fallback_unverified")<<"\"}\n";atomicFile(appDir/L"zoom-state.json",zoom.str());
      status("C++ | "+std::to_string(enemies)+" alvos | "+std::to_string(int(fps))+" FPS | "+aimReason);lastReport=now;
     }
    }catch(const std::exception& e){++errors;lastError=stage+": "+e.what();locked={};aimReason="read_failed";overlay.hide();status(lastError);if(Clock::now()-lastReport>=std::chrono::seconds(1)){report(candidates,enemies,0,0,0,fps);lastReport=Clock::now();}std::this_thread::sleep_for(std::chrono::milliseconds(40));}
@@ -544,8 +604,39 @@ void selfTest(){
  validateBones({{{0,0,0},-1},{{0,1,0},0}});bool rejected=false;try{validateBones({{{0,0,0},1},{{0,1,0},0}});}catch(...){rejected=true;}require(rejected,"bone cycle rejection");
  rejected=false;try{validateBones({{{0,0,0},3}});}catch(...){rejected=true;}require(rejected,"bone out of range rejection");
  Actor a;a.key=1;a.host=4;Actor b=a;require(same(a,b),"sticky identity");b.key=2;require(!same(a,b),"serial changed");
+ TargetSwitchGate gate;auto zero=Clock::time_point{};
+ require(gate.allow(&a,zero),"first acquisition immediate");
+ require(gate.allow(&a,zero+std::chrono::milliseconds(10)),"retained target has no delay");
+ require(!gate.allow(&b,zero+std::chrono::milliseconds(20)),"switch starts cooldown");
+ require(!gate.allow(&b,zero+std::chrono::milliseconds(319)),"switch blocked before deadline");
+ require(gate.allow(&b,zero+std::chrono::milliseconds(320)),"switch allowed at deadline");
+ require(!gate.allow(nullptr,zero+std::chrono::milliseconds(400)),"lost target starts cooldown");
+ require(!gate.allow(nullptr,zero+std::chrono::milliseconds(600)),"empty frames preserve cooldown");
+ require(gate.allow(&a,zero+std::chrono::milliseconds(700)),"empty frames do not restart cooldown");
+ gate.reset();require(gate.allow(&b,zero+std::chrono::milliseconds(701)),"manual activation reset");
+ CameraFeedbackGate acknowledgement;Camera observed;observed.view={1,0,0,0,1,0,0,0,1,0,0,0};
+ acknowledgement.sent(observed,0,0);require(!acknowledgement.waiting(observed),"zero movement does not require acknowledgement");
+ acknowledgement.sent(observed,2,0,zero);require(acknowledgement.waiting(observed,zero+std::chrono::milliseconds(50)),"identical view blocks duplicate correction");
+ observed.view[9]=1;require(acknowledgement.waiting(observed),"translation does not acknowledge rotation");
+ observed.view[1]=.001f;require(acknowledgement.waiting(observed,zero+std::chrono::milliseconds(34)),"partial early response cannot queue another movement");require(!acknowledgement.waiting(observed,zero+std::chrono::milliseconds(35)),"changed rotation acknowledges correction after minimum interval");
+ acknowledgement.sent(observed,2,0);acknowledgement.reset();require(!acknowledgement.waiting(observed),"manual reset clears pending feedback");
+ ZoomStability settling;require(!settling.stable(75,zero),"initial zoom needs settlement");
+ require(settling.stable(75,zero+std::chrono::milliseconds(80)),"stable zoom accepted after deadline");
+ require(!settling.stable(9.07,zero+std::chrono::milliseconds(90)),"zoom change resets settlement");
+ bool halted=false;require(aimDeadzone(.5,halted)&&aimDeadzone(1.,halted)&&!aimDeadzone(1.3,halted),"deadzone hysteresis");
  require(readBool("{\"aim\":false}","aim",true)==false&&readBool("{}","aim",true),"settings parser");
  require(escaped("a\"b\\c")=="a\\\"b\\\\c","JSON escaping");
+ require(smoothingAlpha(16,0)==1.,"zero smoothing is immediate");
+ require(smoothingAlpha(0,100)==0.,"zero elapsed time smoothing");
+ require(smoothingAlpha(16,50)>smoothingAlpha(16,100),"higher smoothing slows response");
+ require(std::abs(std::pow(1-smoothingAlpha(10,100),2)-(1-smoothingAlpha(20,100)))<1e-12,"smoothing frame-time invariance");
+ Calibration testCal;testCal.valid=true;testCal.gx=1.5;testCal.gy=1.6;testCal.fov=50;testCal.width=1920;testCal.height=1080;
+ std::array<double,2> reference{};
+ Camera correctionCamera;correctionCamera.width=1920;correctionCamera.height=1080;correctionCamera.sy=float(1/std::tan(50.*3.14159265358979323846/360.));correctionCamera.sx=correctionCamera.sy*1080/1920;
+ auto bounded=boundedCorrection(900,500,correctionCamera,testCal,100,1);double angularFocal=testCal.height*.5/std::tan(50.*3.14159265358979323846/360.);
+ require(std::hypot(bounded[0]/(angularFocal*testCal.gx),bounded[1]/(angularFocal*testCal.gy))<=2.*3.14159265358979323846/180.+1e-12,"large correction bounded in angular space");
+ auto idleCorrection=boundedCorrection(900,500,correctionCamera,testCal,0,1);require(idleCorrection[0]==0&&idleCorrection[1]==0,"zero elapsed time cannot rotate camera");
+ for(double fov:{9.07,50.,90.}){Camera projected;projected.width=1920;projected.height=1080;projected.sy=float(1/std::tan(fov*3.14159265358979323846/360));projected.sx=projected.sy*1080/1920;auto movement=angularMouseDelta(std::tan(.01)*960*projected.sx,std::tan(-.02)*540*projected.sy,projected,testCal);if(fov==9.07)reference=movement;else require(std::abs(movement[0]-reference[0])<1e-8&&std::abs(movement[1]-reference[1])<1e-8,"zoom angular invariance");}
  void* memory=VirtualAlloc(nullptr,65536,MEM_COMMIT|MEM_RESERVE,PAGE_READWRITE);require(memory!=nullptr,"fixture allocation");
  struct Free{void* p;~Free(){VirtualFree(p,0,MEM_RELEASE);}}freeMemory{memory};
  U base=reinterpret_cast<U>(memory);
@@ -568,7 +659,7 @@ void selfTest(){
  put(0x5030,uint8_t(2));put(0x5031,uint8_t(2));put(0x5032,uint8_t(1));put(0x5033,uint8_t(1));put(0x5038,U(0xAAAA0000));put(0x5040,U(0xBBBB0000));
  PyData managed(reader);auto md=managed.instance(base+0x5000);require(md.at("owner")==0xAAAA0000&&md.at("model")==0xBBBB0000,"native inline dictionary read");
  bool failedRead=false;try{reader.get<U>(8);}catch(...){failedRead=true;}require(failedRead,"invalid memory rejection");
- atomicFile(appDir/L"self-test.json","{\"status\":\"PASS\",\"checks\":19,\"runtime\":\"native-cpp\"}\n");
+ atomicFile(appDir/L"self-test.json","{\"status\":\"PASS\",\"checks\":46,\"runtime\":\"native-cpp\"}\n");
 }
 int WINAPI wWinMain(HINSTANCE instance,HINSTANCE,LPWSTR,int){
  wchar_t exe[32768]{};GetModuleFileNameW(nullptr,exe,32768);appDir=fs::path(exe).parent_path();

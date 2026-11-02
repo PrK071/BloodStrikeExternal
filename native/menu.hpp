@@ -7,7 +7,7 @@ constexpr auto button=rgb(0x1a151f),hover=rgb(0x2d2332),navHover=rgb(0x211a27),s
 constexpr auto plum=rgb(0x756079),focus=rgb(0xb7a1bd),text=rgb(0xe3dad4),secondary=rgb(0xada1ad),divider=rgb(0x302833),border=rgb(0x43394a),fieldBorder=rgb(0x39303f),rose=rgb(0xb86a68),sage=rgb(0xa4b39b);
 }
 std::array<HWND,6> checks{};std::array<HWND,3> navigation{};
-HWND radiusEdit=nullptr,speedEdit=nullptr;HFONT menuFont=nullptr,brandFont=nullptr,smallFont=nullptr;
+HWND radiusEdit=nullptr,speedEdit=nullptr,smoothEdit=nullptr;std::array<HWND,2> targetButtons{};HFONT menuFont=nullptr,brandFont=nullptr,smallFont=nullptr;
 int currentPage=0;HWND hoveredControl=nullptr;
 HBRUSH fieldBrush=nullptr;
 struct BrandTypeface {
@@ -24,6 +24,7 @@ void panel(HDC dc,RECT r,const wchar_t* title){fill(dc,r,theme::surface);stroke(
 void updatePage(HWND hwnd){
  for(size_t i=0;i<checks.size();++i)ShowWindow(checks[i],(i==0?currentPage==0:currentPage==1)?SW_SHOW:SW_HIDE);
  ShowWindow(radiusEdit,currentPage==2?SW_SHOW:SW_HIDE);ShowWindow(speedEdit,currentPage==2?SW_SHOW:SW_HIDE);
+ ShowWindow(smoothEdit,currentPage==0?SW_SHOW:SW_HIDE);for(HWND button:targetButtons)ShowWindow(button,currentPage==0?SW_SHOW:SW_HIDE);
  InvalidateRect(hwnd,nullptr,FALSE);for(auto button:navigation)InvalidateRect(button,nullptr,FALSE);
 }
 LRESULT CALLBACK hoverProc(HWND hwnd,UINT msg,WPARAM wp,LPARAM lp,UINT_PTR,DWORD_PTR){
@@ -42,9 +43,12 @@ void paintMenu(HDC dc){
  const wchar_t* tabs[]={L"mira",L"jogadores",L"geral"};copyText(dc,{198,20,352,46},tabs[currentPage],theme::text,menuFont);
  copyText(dc,{184,66,754,92},currentPage==0?L"combate":currentPage==1?L"visuais":L"ajustes",theme::focus,menuFont);
  if(currentPage==0){
-  panel(dc,{184,100,534,268},L"mira");
-  copyText(dc,{196,181,522,207},L"ativação: botão direito segurado",theme::secondary,menuFont);
-  copyText(dc,{196,212,522,245},L"configure raio e velocidade em ajustes",theme::secondary,smallFont);
+  panel(dc,{184,100,534,358},L"mira");
+  copyText(dc,{196,178,522,200},L"ponto de mira",theme::secondary,menuFont);
+  copyText(dc,{196,247,522,273},L"ativação: botão direito segurado",theme::secondary,menuFont);
+  copyText(dc,{196,286,425,312},L"suavidade (ms)",theme::text,menuFont);
+  fill(dc,{438,286,518,311},theme::field);stroke(dc,{438,286,518,311},theme::fieldBorder);copyText(dc,{438,286,518,311},std::to_wstring(settings.smoothMs.load()),theme::text,menuFont,DT_CENTER|DT_VCENTER|DT_SINGLELINE);
+  copyText(dc,{196,322,522,346},L"0 = direto / maior = mais suave",theme::secondary,smallFont);
   panel(dc,{546,100,754,268},L"estado");
   copyText(dc,{558,143,742,170},settings.aim?L"mira habilitada":L"mira desabilitada",settings.aim?theme::sage:theme::secondary,menuFont);
   copyText(dc,{558,180,742,246},L"a ativação exige foco no jogo e calibração válida.",theme::secondary,smallFont,DT_LEFT|DT_WORDBREAK);
@@ -87,21 +91,25 @@ LRESULT CALLBACK menuProc(HWND hwnd,UINT msg,WPARAM wp,LPARAM lp){
   make(400,L"minimizar",684,17,30,28);make(401,L"fechar",719,17,30,28);
   auto edit=[&](int id,int y,int value){HWND e=CreateWindowExW(0,L"EDIT",std::to_wstring(value).c_str(),WS_CHILD|WS_TABSTOP|ES_NUMBER|ES_CENTER|WS_BORDER,438,y,80,25,hwnd,reinterpret_cast<HMENU>(id),nullptr,nullptr);SendMessageW(e,WM_SETFONT,reinterpret_cast<WPARAM>(menuFont),TRUE);return e;};
   radiusEdit=edit(200,146,settings.radius);speedEdit=edit(201,190,settings.speed);
+  smoothEdit=edit(202,286,settings.smoothMs);
+  targetButtons[0]=make(500,L"cabeça (estim.)",196,208,156,28);targetButtons[1]=make(501,L"corpo",366,208,156,28);
   RegisterHotKey(hwnd,1,MOD_NOREPEAT,VK_INSERT);RegisterHotKey(hwnd,2,MOD_NOREPEAT,VK_F8);SetTimer(hwnd,1,500,nullptr);updatePage(hwnd);return 0;
  }
  case WM_DRAWITEM:{
   auto& d=*reinterpret_cast<DRAWITEMSTRUCT*>(lp);HDC dc=d.hDC;RECT r=d.rcItem;int id=int(d.CtlID);bool over=hoveredControl==d.hwndItem,focus=d.itemState&ODS_FOCUS;
   if(id>=300&&id<303){bool active=currentPage==id-300;fill(dc,r,active?theme::selected:over?theme::navHover:theme::rail);if(active)fill(dc,{r.left,r.top+7,r.left+2,r.bottom-7},theme::focus);wchar_t title[100]{};GetWindowTextW(d.hwndItem,title,100);copyText(dc,{r.left+16,r.top,r.right-8,r.bottom},title,theme::text,menuFont);}
   else if(id>=100&&id<106){fill(dc,r,over?theme::navHover:theme::surface);RECT box{r.left,r.top+7,r.left+15,r.top+22};bool on=toggles[id-100]->load();fill(dc,box,on?theme::plum:theme::field);stroke(dc,box,focus?theme::focus:theme::border,3);if(on){segment(dc,3,14,6,17,theme::text,2);segment(dc,6,17,12,10,theme::text,2);}wchar_t title[100]{};GetWindowTextW(d.hwndItem,title,100);copyText(dc,{r.left+25,r.top,r.right,r.bottom},title,theme::text,menuFont);}
+  else if(id==500||id==501){bool active=(id==500)==settings.head.load();fill(dc,r,active?theme::selected:over?theme::hover:theme::button);stroke(dc,r,active?theme::focus:theme::border,4);wchar_t title[100]{};GetWindowTextW(d.hwndItem,title,100);copyText(dc,r,title,theme::text,menuFont,DT_CENTER|DT_VCENTER|DT_SINGLELINE);}
   else{fill(dc,r,id==401?(over?theme::rgb(0x5b2e39):theme::rgb(0x35232d)):(over?theme::hover:theme::button));if(id==400)segment(dc,10,17,20,17,theme::text);else{segment(dc,10,9,20,19,theme::text);segment(dc,20,9,10,19,theme::text);}}
   if(focus)stroke(dc,{r.left+1,r.top+1,r.right-1,r.bottom-1},theme::focus,4);return TRUE;
  }
  case WM_COMMAND:{int id=LOWORD(wp);
   if(id>=100&&id<106&&HIWORD(wp)==BN_CLICKED){auto& flag=*toggles[id-100];flag=!flag.load();saveSettings();InvalidateRect(reinterpret_cast<HWND>(lp),nullptr,FALSE);InvalidateRect(hwnd,nullptr,FALSE);}
   if(id>=300&&id<303&&HIWORD(wp)==BN_CLICKED){currentPage=id-300;updatePage(hwnd);}
+  if((id==500||id==501)&&HIWORD(wp)==BN_CLICKED){settings.head=id==500;saveSettings();for(HWND button:targetButtons)InvalidateRect(button,nullptr,FALSE);}
   if(id==400)ShowWindow(hwnd,SW_MINIMIZE);if(id==401)PostMessageW(hwnd,WM_CLOSE,0,0);
-  if((id==200||id==201)&&HIWORD(wp)==EN_CHANGE){wchar_t b[32]{};GetWindowTextW(reinterpret_cast<HWND>(lp),b,32);int n=_wtoi(b),max=id==200?4096:1000;if(n>=1&&n<=max){if(id==200)settings.radius=n;else settings.speed=n;saveSettings();}}
-  if((id==200||id==201)&&HIWORD(wp)==EN_KILLFOCUS)SetWindowTextW(reinterpret_cast<HWND>(lp),std::to_wstring(id==200?settings.radius.load():settings.speed.load()).c_str());return 0;
+  if(id>=200&&id<=202&&HIWORD(wp)==EN_CHANGE){wchar_t b[32]{};GetWindowTextW(reinterpret_cast<HWND>(lp),b,32);int n=_wtoi(b),max=id==200?4096:id==201?1000:500;if(n>=(id==202?0:1)&&n<=max){if(id==200)settings.radius=n;else if(id==201)settings.speed=n;else settings.smoothMs=n;saveSettings();}}
+  if(id>=200&&id<=202&&HIWORD(wp)==EN_KILLFOCUS)SetWindowTextW(reinterpret_cast<HWND>(lp),std::to_wstring(id==200?settings.radius.load():id==201?settings.speed.load():settings.smoothMs.load()).c_str());return 0;
  }
  case WM_CTLCOLOREDIT:SetTextColor(reinterpret_cast<HDC>(wp),theme::text);SetBkColor(reinterpret_cast<HDC>(wp),theme::field);return reinterpret_cast<LRESULT>(fieldBrush);
  case WM_ERASEBKGND:return 1;
@@ -118,7 +126,7 @@ LRESULT CALLBACK menuProc(HWND hwnd,UINT msg,WPARAM wp,LPARAM lp){
 void renderDesignPreview(){
  BrandTypeface fonts;WNDCLASSW wc{};wc.lpfnWndProc=menuProc;wc.hInstance=GetModuleHandleW(nullptr);wc.lpszClassName=L"Aeon.DesignPreview";require(RegisterClassW(&wc)!=0,"preview class");
  HWND window=CreateWindowW(wc.lpszClassName,L"aeon",WS_POPUP,0,0,770,557,nullptr,nullptr,wc.hInstance,nullptr);require(window!=nullptr,"preview window");
- currentPage=1;updatePage(window);{std::lock_guard lock(statusMutex);statusText=L"prévia do design / sessão desconectada";}
+ currentPage=0;updatePage(window);{std::lock_guard lock(statusMutex);statusText=L"prévia do design / sessão desconectada";}
  HDC dc=CreateCompatibleDC(nullptr);BITMAPINFO info{};info.bmiHeader.biSize=40;info.bmiHeader.biWidth=770;info.bmiHeader.biHeight=-557;info.bmiHeader.biPlanes=1;info.bmiHeader.biBitCount=32;info.bmiHeader.biCompression=BI_RGB;void* pixels=nullptr;
  HBITMAP bitmap=CreateDIBSection(dc,&info,DIB_RGB_COLORS,&pixels,nullptr,0);require(bitmap!=nullptr,"preview bitmap");auto previous=SelectObject(dc,bitmap);
  SendMessageW(window,WM_PRINT,reinterpret_cast<WPARAM>(dc),PRF_CLIENT|PRF_CHILDREN|PRF_ERASEBKGND);

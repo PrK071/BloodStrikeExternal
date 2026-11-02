@@ -1,0 +1,64 @@
+{
+  "status": "CALIBRATED",
+  "pid": 10936,
+  "hwnd": 722308,
+  "events": [
+    {
+      "dx": 0,
+      "dy": 0,
+      "flags": 8
+    },
+    {
+      "dx": 16,
+      "dy": 0,
+      "flags": 1
+    },
+    {
+      "dx": -16,
+      "dy": 0,
+      "flags": 1
+    },
+    {
+      "dx": 0,
+      "dy": 16,
+      "flags": 1
+    },
+    {
+      "dx": 0,
+      "dy": -16,
+      "flags": 1
+    }
+  ],
+  "gameplay_validated": false,
+  "sample": {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\BLOODSTRIKE\\Engine\\Binaries\\Win64\\BloodStrike.exe",
+    "sha256": "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747",
+    "image_size": 156143616
+  },
+  "counts_per_pixel": [
+    1.1851851851851851,
+    1.2030086229446506
+  ],
+  "field_of_view": 9.069999694824219,
+  "width": 1920,
+  "height": 1080,
+  "measurements": [
+    {
+      "axis": 0,
+      "counts": 16,
+      "pixel_change": -13.5,
+      "cross_axis_change": 0.0
+    },
+    {
+      "axis": 1,
+      "counts": 16,
+      "pixel_change": -13.29998779296875,
+      "cross_axis_change": 0.0
+    }
+  ],
+  "restore_error_px": 0.0,
+  "calibration_mode": "ADS",
+  "input_dispatched": true,
+  "limitation": "Measured camera response; body target alignment and full aimbot remain unverified.",
+  "ads_released": true
+}
