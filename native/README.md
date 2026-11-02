@@ -2,7 +2,7 @@
 
 Execute `Aeon.exe`. Insert mostra ou oculta o menu; F8 encerra.
 
-O titulo aeon usa Mom's Typewriter, de Christoph Mueller. Os controles usam Poppins Medium, com a licenca OFL incluida na pasta fonts. As fontes sao carregadas somente neste processo, sem instalacao no Windows. Mantenha a pasta `fonts` junto ao executavel.
+A interface segue a captura de referencia fornecida: janela 900x606, barra lateral de 184 px, colunas abertas, divisorias finas, titulo sublinhado e rodape. O logo usa Trixie-Plain, a navegacao e os titulos usam Narrowband Prime ICG, os cabecalhos usam Love Letter Typewriter com fallback Trixie para diacriticos, e os textos serifados usam Georgia do Windows. Os arquivos de referencia sao carregados somente neste processo, sem instalacao no Windows. Mantenha a pasta fonts ao lado do executavel.
 
 Fonte original: https://www.dafont.com/moms-typewriter.font
 O arquivo original foi preservado. `fonts/MTReadme.txt` contem a permissao de redistribuicao e deve acompanhar a fonte.
@@ -11,7 +11,7 @@ O arquivo original foi preservado. `fonts/MTReadme.txt` contem a permissao de re
 
 O codigo C++20 esta em `rook.cpp`. Compilar com Zig 0.14.1: `./build.ps1 -Zig C:/caminho/zig.exe`. O arquivo de calibracao e as configuracoes ficam ao lado do executavel.
 
-O painel de 770x557 usa a paleta ameixa documentada no DESIGN.md do projeto de referencia: fundo #0d0c10, barra #111015, paineis #151219, selecao #342838, destaque #756079 e foco #b7a1bd. Navegacao, abas, grupos, bordas finas e controles compactos seguem o mesmo padrao visual, com as paginas combate, visuais e ajustes correspondendo aos recursos existentes. A previa do ESP e ilustrativa.
+O painel usa a paleta ameixa documentada no DESIGN.md do projeto de referencia: fundo #0d0c10, barra #111015, paineis #151219, selecao #342838, destaque #756079 e foco #b7a1bd. Navegacao, abas, grupos, bordas finas e controles compactos seguem o mesmo padrao visual, com as paginas combate, visuais e ajustes correspondendo aos recursos existentes. A previa do ESP e ilustrativa.
 
 `Aeon.exe --preview` renderiza uma imagem local design-preview.bmp da interface, sem leitura do jogo nem entrada automatizada. O alinhamento em movimento e a convergencia da mira C++ continuam sem confirmacao visual nesta rodada.
 
@@ -30,3 +30,7 @@ Estabilidade da correcao: depois de um pacote de movimento nao nulo, a proxima c
 A revisao motivada pelo video de 2026-11-02 usa ganho proporcional de 0.5 antes da suavizacao adicional e limita o movimento angular calculado a 90 graus/s, com teto de 2 graus por atualizacao. Estes sao limites no modelo de calibracao, nao garantias de giro fisico observado. Um pacote nao nulo agora exige tanto mudanca de rotacao quanto intervalo minimo de 35 ms antes de outra correcao. Recuo e movimento manual tambem podem mudar a rotacao, portanto a observacao nao identifica exclusivamente a resposta ao pacote. Suavidade zero remove apenas a suavizacao adicional; o amortecimento e os limites continuam ativos. Quarenta e seis verificacoes nativas incluem limite angular e rejeicao de resposta antecipada. O video mostrou saltos de camera durante ADS/disparo; a causa completa e a eliminacao visual do problema nao foram comprovadas pelos testes offline.
 
 Ajuste posterior solicitado apos o usuario confirmar que os saltos pararam: ganho proporcional atual 0.6 e taxa angular calculada atual 100 graus/s. O teto de 2 graus por atualizacao, a espera minima de 35 ms com resposta observada e a pausa de 300 ms entre alvos continuam ativos. O ajuste aumenta moderadamente o comando de aproximacao; nao representa garantia de uma porcentagem fixa de reducao no tempo de aquisicao. A suavidade escolhida pelo usuario permanece salva.
+
+As equacoes do controlador, da projecao de tela a realimentacao e aos limites por quadro, estao organizadas em [AIM-MATH.md](AIM-MATH.md). O documento tambem esclarece quais metodos preditivos nao fazem parte da mira de runtime.
+
+A revisao visual mais recente segue a imagem da interface aberta em colunas, substituindo a composicao compacta com abas e grade de pontos. Clique no logo para home. A navegação inclui aimbot, visuais, informacoes da build em offsets, calibracoes em perfis, atalhos em extras e ajustes. Silent aim fica desabilitado por nao existir nesta implementacao. Idioma oferece apenas Portugues (Brasil). O botao verde retorna ao jogo conectado; o painel usa a conexao automatica existente. Nao exibe conta, licenca ou versao ficticias do programa de referencia. Minimizar, maximizar/restaurar e fechar estao disponiveis no topo. As imagens --preview sao ilustracoes locais da interface e nao evidencias de uma sessao conectada.

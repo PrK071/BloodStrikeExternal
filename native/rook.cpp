@@ -497,6 +497,7 @@ int drawActor(Surface& s,const Projected& a){
  return primitives;
 }
 std::string escaped(const std::string& s){std::string out;for(unsigned char c:s){if(c=='"'||c=='\\'){out+='\\';out+=char(c);}else if(c>=32)out+=char(c);}return out;}
+std::atomic<bool> uiGameRunning{false},uiAttached{false};std::atomic<uintptr_t> uiGameWindow{0};
 std::mutex statusMutex;std::wstring statusText=L"Iniciando...";
 HWND menuWindow=nullptr,statusWindow=nullptr;std::atomic<bool> workerDone{false};
 void status(const std::string& s){std::lock_guard lock(statusMutex);statusText.assign(s.begin(),s.end());}
@@ -508,7 +509,7 @@ void worker(Options options){
   atomicFile(appDir/(options.probe?L"native-probe.json":L"native-session.json"),o.str());
  };
  try{
-  game=findGame();status("Verificando build...");require(hashFile(game.path)==SAMPLE,"unsupported game SHA256");
+  game=findGame();uiGameRunning=true;uiGameWindow=reinterpret_cast<uintptr_t>(game.window);status("Verificando build...");require(hashFile(game.path)==SAMPLE,"unsupported game SHA256");
   Handle process(OpenProcess(PROCESS_VM_READ|PROCESS_QUERY_LIMITED_INFORMATION,FALSE,game.pid));require(process.h!=nullptr,"OpenProcess denied");
   Calibration cal;try{cal=calibration();}catch(const std::exception& e){lastError=e.what();}
   std::vector<Calibration> profiles;if(cal.valid)profiles.push_back(cal);
@@ -520,7 +521,7 @@ void worker(Options options){
    auto frameStart=Clock::now();double frameDt=std::chrono::duration<double,std::milli>(frameStart-previousFrame).count();previousFrame=frameStart;++frames;primitives=boneCount=0;std::string stage="process";
    if(!locked.host){carryX=carryY=0;motionTarget={};stopped=false;}
    try{
-    DWORD exitCode=0;require(GetExitCodeProcess(process.h,&exitCode)&&exitCode==STILL_ACTIVE,"game process exited");
+    DWORD exitCode=0;uiGameRunning=GetExitCodeProcess(process.h,&exitCode)&&exitCode==STILL_ACTIVE;require(uiGameRunning,"game process exited");
     Reader metadata(process.h,game.base);PyData py(metadata);stage="local player";U local=py.local();stage="local numeric map";Numeric ln(py,local);double localFaction=ln.get("faction");stage="registry";auto actors=registry(metadata);candidates=int(actors.size());std::vector<Actor> classified;
     std::string classificationError;
     for(auto a:actors){try{
@@ -576,7 +577,7 @@ void worker(Options options){
      overlay.present(origin);
     }else overlay.hide();
     if(options.probe)for(auto& p:projected)boneCount=std::max(boneCount,int(p.bones.size()));
-    ++validFrames;++fpsFrames;auto now=Clock::now();double fpsElapsed=std::chrono::duration<double>(now-fpsStart).count();if(fpsElapsed>=1){fps=fpsFrames/fpsElapsed;fpsStart=now;fpsFrames=0;}
+    uiAttached=true;++validFrames;++fpsFrames;auto now=Clock::now();double fpsElapsed=std::chrono::duration<double>(now-fpsStart).count();if(fpsElapsed>=1){fps=fpsFrames/fpsElapsed;fpsStart=now;fpsFrames=0;}
     double ms=std::chrono::duration<double,std::milli>(now-frameStart).count();
     if(now-lastReport>=std::chrono::seconds(1)||options.probe){
      if(classified.empty()&&!classificationError.empty())lastError=classificationError;else lastError.clear();
@@ -584,12 +585,12 @@ void worker(Options options){
      std::ostringstream zoom;zoom<<"{\"fov\":"<<c.fov<<",\"calibration_fov\":"<<active.fov<<",\"measured_zoom_match\":"<<(closest<.6)<<",\"sensitivity_model\":\""<<(closest<.6?"measured":"angular_fallback_unverified")<<"\"}\n";atomicFile(appDir/L"zoom-state.json",zoom.str());
      status("C++ | "+std::to_string(enemies)+" alvos | "+std::to_string(int(fps))+" FPS | "+aimReason);lastReport=now;
     }
-   }catch(const std::exception& e){++errors;lastError=stage+": "+e.what();locked={};aimReason="read_failed";overlay.hide();status(lastError);if(Clock::now()-lastReport>=std::chrono::seconds(1)){report(candidates,enemies,0,0,0,fps);lastReport=Clock::now();}std::this_thread::sleep_for(std::chrono::milliseconds(40));}
+   }catch(const std::exception& e){uiAttached=false;++errors;lastError=stage+": "+e.what();locked={};aimReason="read_failed";overlay.hide();status(lastError);if(Clock::now()-lastReport>=std::chrono::seconds(1)){report(candidates,enemies,0,0,0,fps);lastReport=Clock::now();}std::this_thread::sleep_for(std::chrono::milliseconds(40));}
    if(options.seconds>0&&Clock::now()-started>=std::chrono::seconds(options.seconds))break;
    auto target=frameStart+std::chrono::microseconds(8333);if(Clock::now()<target)std::this_thread::sleep_until(target);
   }
   workerDone=true;report(candidates,enemies,primitives,boneCount,0,fps);
- }catch(const std::exception& e){++errors;lastError=e.what();status(lastError);workerDone=true;report(0,0,0,0,0,0);}
+ }catch(const std::exception& e){uiAttached=false;++errors;lastError=e.what();status(lastError);workerDone=true;report(0,0,0,0,0,0);}
  workerDone=true;
 }
 
@@ -679,7 +680,7 @@ int WINAPI wWinMain(HINSTANCE instance,HINSTANCE,LPWSTR,int){
   BrandTypeface typeface;
   Handle singleton(CreateMutexW(nullptr,TRUE,L"Local\\RookNativeBloodStrike"));require(GetLastError()!=ERROR_ALREADY_EXISTS,"aeon is already running");
   WNDCLASSW wc{};wc.lpfnWndProc=menuProc;wc.hInstance=instance;wc.hCursor=LoadCursorW(nullptr,IDC_ARROW);wc.hbrBackground=reinterpret_cast<HBRUSH>(COLOR_WINDOW+1);wc.lpszClassName=L"Rook.Native.Menu";require(RegisterClassW(&wc)!=0,"menu class");
-  HWND hwnd=CreateWindowExW(0,wc.lpszClassName,L"aeon",WS_POPUP|WS_MINIMIZEBOX|WS_CLIPCHILDREN,CW_USEDEFAULT,CW_USEDEFAULT,770,557,nullptr,nullptr,instance,nullptr);require(hwnd!=nullptr,"menu creation");
-  ShowWindow(hwnd,SW_SHOW);std::thread live(worker,options);MSG msg;while(GetMessageW(&msg,nullptr,0,0)>0){if(!IsDialogMessageW(hwnd,&msg)){TranslateMessage(&msg);DispatchMessageW(&msg);}}settings.running=false;live.join();if(menuFont)DeleteObject(menuFont);if(brandFont)DeleteObject(brandFont);if(smallFont)DeleteObject(smallFont);return 0;
+  HWND hwnd=CreateWindowExW(0,wc.lpszClassName,L"aeon",WS_POPUP|WS_MINIMIZEBOX|WS_MAXIMIZEBOX|WS_CLIPCHILDREN,CW_USEDEFAULT,CW_USEDEFAULT,900,606,nullptr,nullptr,instance,nullptr);require(hwnd!=nullptr,"menu creation");
+  ShowWindow(hwnd,SW_SHOW);std::thread live(worker,options);MSG msg;while(GetMessageW(&msg,nullptr,0,0)>0){if(!IsDialogMessageW(hwnd,&msg)){TranslateMessage(&msg);DispatchMessageW(&msg);}}settings.running=false;live.join();destroyMenuFonts();return 0;
  }catch(const std::exception& e){atomicFile(appDir/L"native-error.json","{\"error\":\""+escaped(e.what())+"\"}\n");if(!options.probe&&!test)MessageBoxA(nullptr,e.what(),"aeon",MB_OK|MB_ICONERROR);return 1;}
 }
