@@ -20,6 +20,16 @@ def opponent(capture):
 
 
 class CameraPipelineTests(unittest.TestCase):
+    def test_model_space_target_probe_is_transformed_before_projection(self):
+        reader,module,_=fixture_memory()
+        frame=process_frame(reader,module,classifier=opponent,target_local_y=1.0)
+        self.assertEqual(frame.scene.actors[0].point.x,1027.5)
+        self.assertEqual(frame.scene.actors[0].point.y,621.0)
+        upper=process_frame(reader,module,classifier=opponent,target_local_y=1.65)
+        self.assertAlmostEqual(upper.scene.actors[0].point.y,585.9,places=3)
+        with self.assertRaisesRegex(ValueError,'model units'):
+            process_frame(reader,module,classifier=opponent,target_local_y=3.1)
+
     def test_typed_chain_to_projection_and_unknown_category(self):
         reader, module, a = fixture_memory()
         frame = process_frame(reader, module, active=True)
@@ -86,6 +96,21 @@ class CameraPipelineTests(unittest.TestCase):
         self.assertEqual(result.attempts, 2)
         self.assertEqual(result.camera.camera.origin, (0, 0, 14.75))
 
+    def test_motion_mode_accepts_advancing_camera_pose_but_rejects_rebase(self):
+        segments,module,a=fixture_segments()
+        class Moving:
+            def __init__(self,rebase=False):self.count,self.rebase=0,rebase
+            def read(self,address,size):
+                if address==a['camera'] and size==0x458:self.count+=1
+                changed=patch(segments,a['camera']+0x84,'<f',13.75+self.count)
+                if self.rebase:changed=patch(changed,a['camera']+0x1AC,'<i',100+self.count)
+                return SnapshotMemory(changed).read(address,size)
+        frame=capture_world(Moving(),module,allow_motion=True,attempts=1)
+        self.assertEqual(frame.camera.camera.origin[2],15.75)
+        self.assertIn('sequential_pose',frame.consistency)
+        with self.assertRaises(RegistryReadError):
+            capture_world(Moving(rebase=True),module,allow_motion=True,attempts=1)
+
     def test_different_observed_anchor_is_rejected_instead_of_guessed(self):
         segments, module, a = fixture_segments()
         changed = patch(segments, a["entity"] + 0x1AC, "<i", 101)
@@ -128,6 +153,22 @@ def projected(key, x, y, *, category=Category.OPPONENT, alive=True, visible=True
 
 
 class AimTests(unittest.TestCase):
+    def test_direct_calibrated_profile_is_not_limited_to_old_slow_step(self):
+        scene=self.scene(projected(1,700,500))
+        decision=plan_aim(scene,AimProfile(radius_px=500,tau_ms=0,max_step_counts=300,
+            counts_per_pixel=(1.47,1.48)),now_ns=scene.captured_ns,dt_ms=16,active=True)
+        self.assertEqual((decision.dx,decision.dy),(294,0))
+
+    def test_lock_retains_eligible_target_and_drops_missing_or_dead_target(self):
+        near=projected(1,505,500)
+        previous=projected(2,540,500)
+        profile=AimProfile(radius_px=100)
+        self.assertEqual(select_target(self.scene(near,previous),profile,
+                         locked_target=previous.observation).observation,previous.observation)
+        dead=projected(2,540,500,alive=False)
+        self.assertEqual(select_target(self.scene(near,dead),profile,
+                         locked_target=previous.observation).observation,near.observation)
+
     def scene(self, *actors):
         return Scene(1000, 1000, 1_000_000_000, actors, ())
 

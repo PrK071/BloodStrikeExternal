@@ -93,7 +93,7 @@ def _attributes(data, keys, values, *, capacity, size, used=None):
     return result
 
 
-def _materialized(data, dictionary):
+def _materialized(data, dictionary, *, wanted=None):
     _ptr(dictionary, "managed dictionary")
     head = data.read(dictionary, 48, mask_ranges=((0, 8),))
     if struct.unpack_from("<Q", head, 8)[0] != data.module.address(DICT_TYPE):
@@ -101,14 +101,14 @@ def _materialized(data, dictionary):
     used, = struct.unpack_from("<q", head, 16)
     keys, values = struct.unpack_from("<2Q", head, 32)
     if not values:
-        return data.dictionary(dictionary)
+        return data.dictionary(dictionary,wanted=wanted)
     capacity, size = _values_header(data, values, inline=False)
     if not 0 <= used <= capacity:
         raise PythonLayoutError("invalid split dictionary live count")
     return _attributes(data, keys, values, capacity=capacity, size=size, used=used)
 
 
-def managed_instance_dict(data, obj, type_head) -> dict[str, int]:
+def managed_instance_dict(data, obj, type_head, *, wanted=None) -> dict[str, int]:
     """Return supported stored ASCII attributes from an already validated type."""
     _ptr(obj, "managed Python instance")
     if len(type_head) < 0xAC:
@@ -131,4 +131,4 @@ def managed_instance_dict(data, obj, type_head) -> dict[str, int]:
             return _attributes(data, keys, values, capacity=capacity, size=size)
     # A plain, untagged pointer; do not consult a negative tp_dictoffset here.
     dictionary = data.u64(obj - 0x18)
-    return _materialized(data, dictionary) if dictionary else {}
+    return _materialized(data, dictionary,wanted=wanted) if dictionary else {}

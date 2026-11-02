@@ -47,6 +47,8 @@ class WindowsProcessMemory:
         if not self._handle:
             raise ctypes.WinError(ctypes.get_last_error())
         self.pid = pid
+        # String hashes only: never retain frame values, object identities or pages.
+        self.dictionary_key_hashes = {}
 
     def _open_handle(self):
         if not self._handle:

@@ -1,0 +1,57 @@
+{
+  "status": "CALIBRATED",
+  "events": [
+    {
+      "dx": 0,
+      "dy": 0,
+      "flags": 8
+    },
+    {
+      "dx": 16,
+      "dy": 0,
+      "flags": 1
+    },
+    {
+      "dx": -16,
+      "dy": 0,
+      "flags": 1
+    },
+    {
+      "dx": 0,
+      "dy": 16,
+      "flags": 1
+    },
+    {
+      "dx": 0,
+      "dy": -16,
+      "flags": 1
+    }
+  ],
+  "gameplay_validated": false,
+  "counts_per_pixel": [
+    1.4678948399921605,
+    1.4814831559732575
+  ],
+  "field_of_view": 50.0,
+  "width": 1920,
+  "height": 1080,
+  "measurements": [
+    {
+      "axis": 0,
+      "counts": 16,
+      "pixel_change": -10.89996337890625,
+      "cross_axis_change": 0.0
+    },
+    {
+      "axis": 1,
+      "counts": 16,
+      "pixel_change": -10.79998779296875,
+      "cross_axis_change": 0.0
+    }
+  ],
+  "restore_error_px": 0.0,
+  "calibration_mode": "ADS",
+  "input_dispatched": true,
+  "limitation": "Measured camera response; body target alignment and full aimbot remain unverified.",
+  "ads_released": true
+}

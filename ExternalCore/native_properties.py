@@ -65,6 +65,9 @@ class NumericMap:
 
     def descriptors(self,names):
         data=self.data
+        if self.name_index in data.native_descriptor_cache:
+            return {name:descriptor for name,descriptor in data.native_descriptor_cache[self.name_index].items()
+                    if name in names}
         sentinel=data.pointer(self.name_index+0x18)
         buckets=data.pointer(self.name_index+0x28)
         mask=data.u64(self.name_index+0x40)
@@ -86,14 +89,15 @@ class NumericMap:
                 previous,key,descriptor=struct.unpack("<3Q",data.read(current+8,24))
                 try:name=data.ascii(key)
                 except PythonLayoutError:name=None
-                if name in names:
+                if name is not None:
                     if name in result:raise PythonLayoutError("duplicate property name")
                     result[name]=descriptor
                 if current==first:break
                 current=previous
-        return result
+        data.native_descriptor_cache[self.name_index]=dict(result)
+        return {name:descriptor for name,descriptor in result.items() if name in names}
 
-    def read(self,names):
+    def read(self,names,*,unsupported=None):
         result={}
         for name,descriptor in self.descriptors(frozenset(names)).items():
             if descriptor not in self.members:
@@ -106,7 +110,11 @@ class NumericMap:
             kind=self.kind
             if kind=="mixed":
                 tag=payload[8]
-                if tag not in (0,1):raise PythonLayoutError("unsupported mixed numeric tag")
+                if tag not in (0,1):
+                    error=f"unsupported mixed numeric tag {tag} for {name} at index {index}"
+                    if unsupported is None:raise PythonLayoutError(error)
+                    unsupported[name]=error
+                    continue
                 kind="int" if tag==0 else "float"
             value,=struct.unpack_from("<q" if kind=="int" else "<d",payload)
             if kind=="float" and not math.isfinite(value):

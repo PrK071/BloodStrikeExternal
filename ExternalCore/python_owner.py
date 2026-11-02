@@ -39,11 +39,19 @@ class PythonLayoutError(ValueError):
 
 class DataReader:
     """A bounded read cache scoped to one pass; a second pass is independent."""
-    def __init__(self, reader, module, *, max_bytes=8*1024*1024, max_reads=80000):
+    def __init__(self, reader, module, *, max_bytes=8*1024*1024, max_reads=80000,
+                 dictionary_hashes=None):
         self.reader = PageSnapshotReader(reader) if getattr(reader,"page_size",None)==4096 else reader
         self.module = module
         self.max_bytes, self.max_reads = max_bytes, max_reads
         self.bytes_read, self.cache = 0, {}
+        self.dictionary_cache = {}
+        self.native_descriptor_cache = {}
+        self.full_dictionary_scans=[]
+        self.lookup_hashes = dict(getattr(reader,'dictionary_key_hashes',{})
+                                  if dictionary_hashes is None else dictionary_hashes)
+        self.live_lookup = hasattr(reader,'dictionary_key_hashes')
+        self.discovered_hashes = {}
         self.trace = []
 
     def read(self, address, size, *, mask_ranges=()):
@@ -92,7 +100,11 @@ class DataReader:
         raw = self.read(obj + 40, length + 1)
         if raw[-1] or any(value > 127 for value in raw[:-1]):
             raise PythonLayoutError("invalid compact ASCII data")
-        return raw[:-1].decode("ascii")
+        name=raw[:-1].decode("ascii")
+        cached_hash=struct.unpack_from('<q',head,24)[0]
+        if cached_hash != -1:
+            self.discovered_hashes[name]=cached_hash
+        return name
 
     def dictionary(self, obj, *, wanted=None, max_entries=MAX_DICT_ENTRIES):
         if type(max_entries) is not int or not 1 <= max_entries <= 65536:
@@ -102,6 +114,9 @@ class DataReader:
             if any(not isinstance(k,str) or not k.isascii() or len(k)>512 for k in wanted):
                 raise ValueError("requested dictionary names must be bounded ASCII")
             wanted_lengths = {len(k) for k in wanted}
+        cache_key=(obj,wanted,max_entries)
+        if cache_key in self.dictionary_cache:
+            return dict(self.dictionary_cache[cache_key])
         _pointer(obj, "dict")
         head = self.read(obj, 48, mask_ranges=((0,8),))
         if struct.unpack_from("<Q", head, 8)[0] != self.module.address(DICT_TYPE):
@@ -123,7 +138,43 @@ class DataReader:
         index_width = (1 << log_bytes) // (1 << log_size)
         if index_width not in (1,2,4,8):
             raise PythonLayoutError("unsupported dict index width")
+        if wanted and all(name in self.lookup_hashes for name in wanted):
+            result={}
+            index_format={1:'b',2:'h',4:'i',8:'q'}[index_width]
+            entries_address=keys+32+(1<<log_bytes)
+            mask=(1<<log_size)-1
+            for name in sorted(wanted):
+                hashed=self.lookup_hashes[name]
+                perturb=hashed & 0xFFFFFFFFFFFFFFFF
+                bucket=perturb & mask
+                # Same bounded perturbation recurrence as pinned dictobject.c.
+                for probe in range((1<<log_size)+16):
+                    index=struct.unpack('<'+index_format,self.read(keys+32+bucket*index_width,index_width))[0]
+                    if index == -1:
+                        break
+                    if index >= 0:
+                        if index >= count:
+                            raise PythonLayoutError('dict index is outside its entry array')
+                        entry=self.read(entries_address+index*stride,stride)
+                        key=struct.unpack_from('<Q',entry,key_offset)[0]
+                        value=struct.unpack_from('<Q',entry,value_offset)[0]
+                        if key and value and self.u64(key+8)==self.module.address(STR_TYPE):
+                            key_hash=struct.unpack('<q',self.read(key+24,8))[0]
+                            if key_hash == hashed and self.ascii(key) == name:
+                                result[name]=value
+                                break
+                    elif index != -2:
+                        raise PythonLayoutError('invalid dict probe index')
+                    perturb >>= 5
+                    bucket=(bucket*5+perturb+1)&mask
+                else:
+                    raise PythonLayoutError('dictionary probe budget exhausted')
+            self.dictionary_cache[cache_key]=dict(result)
+            return result
         indices = self.read(keys+32, 1 << log_bytes)
+        self.full_dictionary_scans.append(dict(entries=count,
+            wanted=None if wanted is None else sorted(wanted),
+            missing_hashes=[] if wanted is None else sorted(set(wanted)-self.lookup_hashes.keys())))
         index_format = {1:"b",2:"h",4:"i",8:"q"}[index_width]
         referenced = []
         for (index,) in struct.iter_unpack("<"+index_format, indices):
@@ -134,7 +185,15 @@ class DataReader:
             referenced.append(index)
         if len(set(referenced)) != used or len(referenced) != used:
             raise PythonLayoutError("dict index/live count mismatch")
-        entries = self.read(keys + 32 + (1 << log_bytes), count * stride)
+        entry_address = keys + 32 + (1 << log_bytes)
+        entries = self.read(entry_address, count * stride,
+                            mask_ranges=((0,count*stride),) if wanted is not None else ())
+        compared_entries = bytearray(entries)
+        if wanted is not None:
+            for index in range(count):
+                offset=index*stride+value_offset
+                value=struct.unpack_from('<Q',entries,offset)[0]
+                struct.pack_into('<Q',compared_entries,offset,int(bool(value)))
         result, live = {}, set()
         for index in range(count):
             key, = struct.unpack_from("<Q", entries, index*stride+key_offset)
@@ -158,8 +217,13 @@ class DataReader:
             if name in result:
                 raise PythonLayoutError("duplicate named dict entry")
             result[name] = value
+            if wanted is not None:
+                struct.pack_into('<Q',compared_entries,index*stride+value_offset,value)
         if live != set(referenced):
             raise PythonLayoutError("dict live count changed or is inconsistent")
+        if wanted is not None:
+            self.trace.append((entry_address,bytes(compared_entries)))
+        self.dictionary_cache[cache_key]=dict(result)
         return result
 
     def tuple_items(self, obj):
@@ -197,15 +261,15 @@ class DataReader:
             raise PythonLayoutError("MRO does not start with the object's type")
         return items
 
-    def class_dict(self, cls):
+    def class_dict(self, cls, *, wanted=None):
         head = self.type_object(cls)
         flags, = struct.unpack_from("<I", head, TYPE_FLAGS)  # unsigned long is 32 bits on LLP64.
         if flags & STATIC_BUILTIN:
             return {}  # Attributes may live in an interpreter side table.
         dictionary, = struct.unpack_from("<Q", head, TYPE_DICT)
-        return self.dictionary(dictionary) if dictionary else {}
+        return self.dictionary(dictionary,wanted=wanted) if dictionary else {}
 
-    def instance_dict(self, obj):
+    def instance_dict(self, obj, *, wanted=None):
         cls = self.pointer(obj+8)
         head = self.type_object(cls)
         flags, = struct.unpack_from("<I", head, TYPE_FLAGS)
@@ -213,11 +277,11 @@ class DataReader:
         offset, = struct.unpack_from("<q", head, TYPE_DICTOFFSET)
         if flags & MANAGED_DICT:
             from .python_managed import managed_instance_dict
-            return managed_instance_dict(self,obj,head)
+            return managed_instance_dict(self,obj,head,wanted=wanted)
         if not 16 <= offset <= 4096 or offset%8 or not offset+8 <= size <= 8192:
             raise PythonLayoutError("unsupported negative/invalid instance dict offset")
         dictionary = self.u64(obj+offset)
-        return self.dictionary(dictionary) if dictionary else {}
+        return self.dictionary(dictionary,wanted=wanted) if dictionary else {}
 
     def area_host(self, area):
         """Native area.owner() storage with native entity.area reverse checks."""
@@ -229,7 +293,8 @@ class DataReader:
         host = self.pointer(host_bridge)
         if self.module.address(ENTITY_PYTYPE) not in self.mro(host):
             raise PythonLayoutError("area host is not an Asio entity")
-        if self.u64(host+0x20) != host_bridge or self.u64(host_bridge+0x10) != area:
+        entity_bridge = self.pointer(host+0x20)
+        if self.u64(entity_bridge+0x10) != area:
             raise PythonLayoutError("area/entity reverse association changed")
         return host
 
@@ -252,13 +317,28 @@ class DataReader:
 
     def player_avatar(self, native):
         python = self.wrapper(native)
-        attributes = self.instance_dict(python)
+        attributes = self.instance_dict(python,wanted={'owner','instance'})
         owner, instance = attributes.get("owner"), attributes.get("instance")
-        if not owner or not instance:
+        if not owner:
+            return False
+        direct_host = self.module.address(ENTITY_PYTYPE) in self.mro(owner)
+        if direct_host:
+            host = owner
+            area = self.pointer(self.pointer(host+0x20)+0x10)
+            if self.area_host(area) != host:
+                raise PythonLayoutError('direct owner/area reverse association disagrees')
+            primary = self.instance_dict(host,wanted={'model'}).get('model')
+            if not primary or (instance and instance != primary):
+                return False
+            instance = primary
+            stored = self.instance_dict(instance,wanted={'owner','model'})
+            if stored.get('owner') != host or stored.get('model') != python:
+                raise PythonLayoutError('direct owner primary association disagrees')
+        elif not instance:
             return False
         avatar_model = False
         for cls in self.mro(instance):
-            attrs = self.class_dict(cls)
+            attrs = self.class_dict(cls,wanted={'__module__'})
             module = attrs.get("__module__")
             if module and self.ascii(module) == "gclient.gameplay.logic_base.models.avatar_model":
                 # __name__/__qualname__ are type descriptors, not necessarily dict entries.
@@ -269,23 +349,30 @@ class DataReader:
         if not avatar_model:
             return False
         # STORE_ATTR owner receives self.area, not the Python host. See V6 errata.
-        host = self.area_host(owner)
-        if self.instance_dict(host).get("model") != instance or self.instance_dict(instance).get("model") != python:
+        if direct_host:
+            owner = area
+        else:
+            host = self.area_host(owner)
+        if self.instance_dict(host,wanted={'model'}).get("model") != instance or self.instance_dict(instance,wanted={'model'}).get("model") != python:
             raise PythonLayoutError("model/instance/host primary association disagrees")
+        markers = {}
         for cls in self.mro(host):
-            value = self.class_dict(cls).get("IsPlayerCombatAvatar")
-            if value is None:
-                continue
-            if value not in (self.module.address(TRUE), self.module.address(FALSE)):
-                raise PythonLayoutError("player class marker is not a boolean singleton")
-            return (owner,host,instance) if value == self.module.address(TRUE) else None
-        return False
+            attrs = self.class_dict(cls,wanted={'IsPlayerCombatAvatar','IsRobotCombatAvatar'})
+            for name in ('IsPlayerCombatAvatar','IsRobotCombatAvatar'):
+                if name in markers or name not in attrs:
+                    continue
+                value = attrs[name]
+                if value not in (self.module.address(TRUE), self.module.address(FALSE)):
+                    raise PythonLayoutError("player class marker is not a boolean singleton")
+                markers[name] = value
+        return (owner,host,instance) if self.module.address(TRUE) in markers.values() else False
 
 
-def classify_player_models(reader, module, capture):
+def classify_player_models(reader, module, capture, *, diagnostics=None):
     """Consecutive matching metadata reads; unknown is retained on any ambiguity."""
+    hash_hints=dict(getattr(reader,'dictionary_key_hashes',{}))
     def one_pass():
-        data, result = DataReader(reader, module), {}
+        data, result = DataReader(reader, module,dictionary_hashes=hash_hints), {}
         from .python_runtime import local_player
         from .native_properties import NumericMap
         from .python_dispatch import enemy_context,evaluate_base_enemy
@@ -293,17 +380,7 @@ def classify_player_models(reader, module, capture):
         local_host,context,context_error=None,None,None
         relation_context,relation_error=None,None
         life_context,life_error=None,None
-        try:
-            context,local_host,_=local_player(data)
-        except (PythonLayoutError,MemoryReadError,ValueError) as exc:
-            context_error=f"local context: {exc}"
-        if context is not None:
-            try:relation_context=enemy_context(data,context)
-            except (PythonLayoutError,MemoryReadError,ValueError) as exc:
-                relation_error=f"opponent context: {exc}"
-            try:life_context=state_context(data,context)
-            except (PythonLayoutError,MemoryReadError,ValueError) as exc:
-                life_error=f"life context: {exc}"
+        context_attempted=False
         for record in capture.registry.records:
             identity = observation_id(record)
             value = Classification()
@@ -321,11 +398,29 @@ def classify_player_models(reader, module, capture):
                 linked=data.player_avatar(record.parent)
                 if linked:
                     area,host,instance=linked
+                    # Module dictionaries are needed only for a verified player model.
+                    # Resolve once per independent pass; never reuse across frames.
+                    if not context_attempted:
+                        context_attempted=True
+                        try:
+                            context,local_host,_=local_player(data)
+                        except (PythonLayoutError,MemoryReadError,ValueError) as exc:
+                            context_error=f"local context: {exc}"
+                        if context is not None:
+                            try:relation_context=enemy_context(data,context)
+                            except (PythonLayoutError,MemoryReadError,ValueError) as exc:
+                                relation_error=f"opponent context: {exc}"
+                            try:life_context=state_context(data,context)
+                            except (PythonLayoutError,MemoryReadError,ValueError) as exc:
+                                life_error=f"life context: {exc}"
                     diagnostics=[context_error] if context_error else []
                     values={}
                     try:
-                        values=NumericMap(data,area).read({"server_hp","combat_state","faction","combat_team_id",
-                                                       "peek_role","is_finder"})
+                        unsupported={}
+                        values=NumericMap(data,area).read({'server_hp','combat_state','faction',
+                            'combat_team_id','peek_role','is_finder'},unsupported=unsupported)
+                        diagnostics.extend(f'numeric properties: {name}: {error}'
+                                           for name,error in sorted(unsupported.items()))
                     except (PythonLayoutError,MemoryReadError,ValueError) as exc:
                         diagnostics.append(f"numeric properties: {exc}")
                     relation=None
@@ -357,9 +452,23 @@ def classify_player_models(reader, module, capture):
             except (PythonLayoutError, MemoryReadError, ValueError) as exc:
                 value = Classification(evidence=f"unresolved: {exc}"[:512])
             result[identity] = value
-        return result, data.trace
-    first, trace1 = one_pass()
-    second, trace2 = one_pass()
+        stats=dict(bytes_requested=data.bytes_read,
+            cached_pages=len(getattr(data.reader,'pages',{})),
+            unavailable_pages=len(getattr(data.reader,'unavailable',())),
+            full_scans=sorted(data.full_dictionary_scans,key=lambda item:item['entries'],reverse=True)[:12])
+        return result, data.trace, data.discovered_hashes, stats
+    first, trace1, hashes1, stats1 = one_pass()
+    second, trace2, hashes2, stats2 = one_pass()
+    if hasattr(reader,'dictionary_key_hashes'):
+        reader.dictionary_key_hashes.update({name:value for name,value in hashes1.items()
+                                           if hashes2.get(name)==value})
+    if diagnostics is not None:
+        diagnostics.update(first=list(first.values()),second=list(second.values()),
+            first_stats=stats1,second_stats=stats2,
+            first_reads=len(trace1),second_reads=len(trace2),
+            differences=[dict(first_address=hex(left[0]),second_address=hex(right[0]),
+                size=len(left[1]),changed_offsets=[hex(i) for i,(a,b) in enumerate(zip(left[1],right[1])) if a!=b])
+                for left,right in zip(trace1,trace2) if left!=right])
     if trace1 != trace2 or first != second:
         return {observation_id(record): Classification(evidence="Python metadata changed between reads")
                 for record in capture.registry.records}

@@ -58,6 +58,51 @@ class RuntimeStateTests(unittest.TestCase):
             self.assertEqual({name:entry.value for name,entry in read.items()},
                              {name:value for name,(value_kind,value) in values.items()})
 
+    def test_unsupported_optional_property_preserves_supported_health(self):
+        f=StateFixture().runtime().properties({'server_hp':('float',125.0),'combat_team_id':('int',3)})
+        f.set(f.a['values']+16+8,'<B',2)
+        frame=process_frame(f.memory(),f.module)
+        state=frame.scene.actors[0].classification
+        self.assertEqual({v.name:v.value for v in state.facts.values},{'server_hp':125.0})
+        self.assertIn('combat_team_id',state.facts.diagnostics[0])
+
+    def test_selected_dictionary_trace_ignores_unrequested_value_replacement(self):
+        f=StateFixture()
+        first_value=f.ascii('first')
+        second_value=f.ascii('second')
+        dictionary=f.dictionary({'model':f.a['instance'],'timer':first_value})
+        keys=int.from_bytes(f.memory().read(dictionary+32,8),'little')
+        before=DataReader(f.memory(),f.module)
+        before.dictionary(dictionary,wanted={'model'})
+        f.set(keys+40+16+8,'<Q',second_value)
+        after=DataReader(f.memory(),f.module)
+        after.dictionary(dictionary,wanted={'model'})
+        self.assertEqual(before.trace,after.trace)
+        f.set(keys+40+8,'<Q',f.a['owner'])
+        changed=DataReader(f.memory(),f.module)
+        changed.dictionary(dictionary,wanted={'model'})
+        self.assertNotEqual(before.trace,changed.trace)
+
+    def test_known_hash_lookup_handles_collisions_missing_keys_and_live_values(self):
+        f=StateFixture()
+        dictionary=f.dictionary({'model':f.a['instance'],'timer':f.a['owner']})
+        keys=int.from_bytes(f.memory().read(dictionary+32,8),'little')
+        first=int.from_bytes(f.memory().read(keys+40,8),'little')
+        second=int.from_bytes(f.memory().read(keys+56,8),'little')
+        f.set(first+24,'<q',3)
+        f.set(second+24,'<q',11)
+        f.set(keys+32,'<8b',1,-1,-1,0,-1,-1,-1,-1)
+        hints={'model':3,'timer':11,'absent':19}
+        data=DataReader(f.memory(),f.module,dictionary_hashes=hints)
+        self.assertEqual(data.dictionary(dictionary,wanted=set(hints)),
+                         {'model':f.a['instance'],'timer':f.a['owner']})
+        f.set(keys+48,'<Q',f.a['host'])
+        changed=DataReader(f.memory(),f.module,dictionary_hashes=hints)
+        self.assertEqual(changed.dictionary(dictionary,wanted={'model'})['model'],f.a['host'])
+        f.set(keys+35,'<b',7)
+        with self.assertRaisesRegex(PythonLayoutError,'index is outside'):
+            DataReader(f.memory(),f.module,dictionary_hashes=hints).dictionary(dictionary,wanted={'model'})
+
     def test_indices_backlinks_bounds_tags_and_membership_fail_without_defaults(self):
         for fault in ['index','backlink','length','tag','membership','cycle','mask']:
             f=StateFixture().properties()
@@ -73,12 +118,35 @@ class RuntimeStateTests(unittest.TestCase):
             with self.subTest(fault=fault),self.assertRaises((PythonLayoutError,ValueError)):
                 NumericMap(DataReader(f.memory(),f.module),f.a['owner']).read({'server_hp'})
 
-    def test_direct_python_host_as_model_owner_is_not_the_demonstrated_bridge(self):
+    def test_direct_python_host_rejects_missing_reverse_primary_link(self):
         f=StateFixture()
         f.set(f.a['wrapper_keys']+48,'<Q',f.a['host'])
         frame=process_frame(f.memory(),f.module)
         self.assertEqual(frame.scene.actors[0].classification.category,Category.UNKNOWN)
-        self.assertIn('area proxy',frame.scene.actors[0].classification.evidence)
+        self.assertIn('primary association',frame.scene.actors[0].classification.evidence)
+
+    def test_direct_host_and_distinct_area_owner_association(self):
+        f=StateFixture().runtime()
+        f.set(f.a['wrapper_keys']+48,'<Q',f.a['host'])
+        f.set(f.a['instance']+0x10,'<Q',f.dictionary({'model':f.a['python'],'owner':f.a['host']}))
+        association=f.alloc(8,[(0,'<Q',[f.a['host']])])
+        f.set(f.a['native_area']+0x38,'<Q',association)
+        frame=process_frame(f.memory(),f.module)
+        state=frame.scene.actors[0].classification
+        self.assertEqual(state.category,Category.PLAYER)
+        self.assertIs(state.local,True)
+
+    def test_local_context_from_builtin_client_environment(self):
+        f=StateFixture().runtime()
+        cls=f.type(0x200900000,'ClientEnv')
+        attrs=f.dictionary({'player':f.a['host'],'main_player':f.a['host'],
+                            'replay_player':f.module.base+0x7A0A150})
+        env=f.alloc(40,[(0,'<QQQ',[1,cls,attrs])])
+        globals_dict=f.dictionary({'__name__':f.ascii('builtins'),'genv':env})
+        builtins=f.alloc(56,[(0,'<QQQ',[1,f.module.base+0x7A1B1F0,globals_dict])])
+        f.set(f.interpreter+0x1DE8,'<Q',f.dictionary({'builtins':builtins}))
+        context,host,area=local_player(DataReader(f.memory(),f.module))
+        self.assertEqual((context.module,host,area),(env,f.a['host'],f.a['owner']))
 
     def test_primary_model_crosslinks_reject_old_or_secondary_instances(self):
         for side in ['host','instance']:

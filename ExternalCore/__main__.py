@@ -39,13 +39,25 @@ def main(argv=None):
     predicate.add_argument("input", type=Path)
     predicate.add_argument("--function", type=lambda text: int(text,0), required=True)
     predicate.add_argument("--output", type=Path, required=True)
-    watch = commands.add_parser("watch", help="explicit PID/window read-only observation loop; no input dispatch")
+    watch = commands.add_parser("watch", help="explicit PID/window overlay loop; calibrated aim dispatch is opt-in")
     watch.add_argument("--pid", type=int, required=True)
     watch.add_argument("--sample", type=Path, required=True)
     watch.add_argument("--hwnd", type=lambda text: int(text, 0), required=True)
     watch.add_argument("--seconds", type=float, default=10)
     watch.add_argument("--fps", type=float, default=30)
     watch.add_argument("--show-overlay", action="store_true")
+    watch.add_argument("--allow-motion",action="store_true")
+    watch.add_argument("--max-age-ms",type=float,default=100.0)
+    watch.add_argument('--aim',action='store_true')
+    watch.add_argument('--counts-per-pixel',type=float,nargs=2,metavar=('X','Y'))
+    watch.add_argument('--activation-key',type=lambda text:int(text,0),default=0x02)
+    watch.add_argument('--allow-unknown-visibility',action='store_true',
+                       help='allow aim selection when visibility has not been established')
+    watch.add_argument('--aim-radius',type=float,default=180.0)
+    watch.add_argument('--tau-ms',type=float,default=70.0)
+    watch.add_argument('--max-step-counts',type=float,default=25.0)
+    watch.add_argument('--target-local-y',type=float,default=1.55)
+    watch.add_argument('--calibration-fov',type=float)
     watch.add_argument("--output", type=Path, required=True)
     for command in (snapshot, capture, scene):
         command.add_argument("--output", type=Path, required=True)
@@ -70,7 +82,11 @@ def main(argv=None):
         if args.command == "watch":
             from .live import watch as observe
             count = observe(args.pid, args.sample, args.hwnd, args.output, seconds=args.seconds,
-                            fps=args.fps, show=args.show_overlay)
+                            fps=args.fps, show=args.show_overlay,allow_motion=args.allow_motion,
+                            max_age_ms=args.max_age_ms,aim=args.aim,counts_per_pixel=args.counts_per_pixel,
+                            activation_key=args.activation_key,require_visible=not args.allow_unknown_visibility,
+                            aim_radius=args.aim_radius,tau_ms=args.tau_ms,max_step_counts=args.max_step_counts,
+                            target_local_y=args.target_local_y,calibration_fov=args.calibration_fov)
             print(f"{count} observation frame(s); {args.output}")
             return 0
         if args.command == "scene":

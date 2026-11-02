@@ -46,7 +46,11 @@ def type_dictionary(data,cls,*,wanted=None):
         if data.u64(state)!=cls:
             raise PythonLayoutError('builtin side-table type identity disagrees')
         readying,ready=struct.unpack('<2i',data.read(state+0xC,8))
-        if readying or ready!=1:raise PythonLayoutError('builtin type dictionary is not ready')
+        # The live build leaves this per-interpreter ready field at zero even
+        # for initialized object/type dictionaries. Require the type READY flag,
+        # matching state identity, no in-progress readiness, and a valid PyDict.
+        if readying or ready not in (0,1) or not flags & 0x1000:
+            raise PythonLayoutError(f'builtin type dictionary is not ready (type={cls:#x}, state={state:#x}, readying={readying}, ready={ready})')
         dictionary=data.pointer(state+0x18)
     else:dictionary=struct.unpack_from('<Q',head,TYPE_DICT)[0]
     return data.dictionary(dictionary,wanted=wanted) if dictionary else {}
@@ -59,12 +63,12 @@ def class_attribute(data: DataReader,obj,name):
     return None,None
 
 
-def instance_attributes(data: DataReader,obj):
+def instance_attributes(data: DataReader,obj,*,wanted=None):
     head=data.type_object(data.pointer(obj+8))
     flags=struct.unpack_from('<I',head,TYPE_FLAGS)[0]
     if not flags & MANAGED_DICT and not struct.unpack_from('<q',head,TYPE_DICTOFFSET)[0]:
         return {}
-    return data.instance_dict(obj)
+    return data.instance_dict(obj,wanted=wanted)
 
 
 def _descriptor(data,value):
@@ -85,7 +89,7 @@ def _generic(data,obj,name):
     has_get,is_data,function=(False,False,False) if value is None else _descriptor(data,value)
     if has_get and is_data:
         raise PythonLayoutError(f'{name}: a data descriptor requires target execution')
-    stored=instance_attributes(data,obj)
+    stored=instance_attributes(data,obj,wanted={name})
     if name in stored:return Attribute(obj,name,stored[name],'instance')
     if value is not None:
         if has_get and not function:

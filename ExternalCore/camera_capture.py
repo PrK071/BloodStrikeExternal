@@ -89,14 +89,32 @@ def _camera_pass(reader: MemoryReader, module: ModuleIdentity):
 
 
 def capture_world(reader: MemoryReader, module: ModuleIdentity, *, max_nodes=10000, attempts=3,
-                  require_render_input=False) -> WorldCapture:
+                  require_render_input=False, allow_motion=False) -> WorldCapture:
     """Bracket the registry capture with matching typed camera observations."""
     if type(attempts) is not int or not 1 <= attempts <= 10:
         raise ValueError("attempts must be between 1 and 10")
     if type(require_render_input) is not bool:raise TypeError('require_render_input must be bool')
+    if type(allow_motion) is not bool:raise TypeError('allow_motion must be bool')
+    def camera_trace(trace,source):
+        if not allow_motion:return trace
+        result=[]
+        for address,raw in trace:
+            if address==source and len(raw)==CAMERA_BYTES:
+                compared=bytearray(raw)
+                compared[0x58:0x88]=bytes(0x30)
+                compared[0x41C:0x44C]=bytes(0x30)
+                raw=bytes(compared)
+            result.append((address,raw))
+        return tuple(result)
     def render_pass(source):
         try:
             value,trace=render_camera_pass(reader,module,source_camera=source)
+            if allow_motion:
+                # Each pass already checked that source and render view copies
+                # agree. Their pose may advance between independent passes.
+                trace=tuple((address,bytes(len(raw)) if address in
+                    (source+0x41C,value.client+0xEE0) and len(raw)==48 else raw)
+                    for address,raw in trace)
             return value,trace,None
         except (MemoryReadError,ValueError) as exc:
             return None,(),f'{type(exc).__name__}: {exc}'
@@ -106,16 +124,19 @@ def capture_world(reader: MemoryReader, module: ModuleIdentity, *, max_nodes=100
         try:
             first, before = _camera_pass(reader, module)
             render_first,render_before,error_before=render_pass(first.camera_address)
-            registry = collect_registry(reader, module, max_nodes=max_nodes, attempts=1)
+            registry = collect_registry(reader, module, max_nodes=max_nodes, attempts=1,
+                                        allow_motion=allow_motion)
             second, after = _camera_pass(reader, module)
             render_second,render_after,error_after=render_pass(second.camera_address)
-            if before != after:
+            if camera_trace(before,first.camera_address) != camera_trace(after,second.camera_address):
                 raise RegistryReadError("camera changed during registry acquisition")
             if render_before!=render_after or error_before!=error_after:
                 raise RegistryReadError('render camera changed during registry acquisition')
             if require_render_input and render_second is None:
                 raise RegistryReadError(f'required render input is unresolved: {error_after}')
             return WorldCapture(registry, second, start, time.perf_counter_ns(), attempt,
+                consistency=('matching_camera_registry_links_and_anchors_sequential_pose_samples'
+                             if allow_motion else 'equal_camera_reads_around_two_registry_passes_no_atomicity_or_ABA_guarantee'),
                 render_camera=render_second,render_camera_error=error_after)
         except (MemoryReadError, ValueError) as exc:
             last = exc

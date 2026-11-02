@@ -31,7 +31,7 @@ class LifeState:
 
 
 def state_context(data,context):
-    module=find_module(data,'gshare.consts',interpreter=context.interpreter)
+    module=find_module(data,'gshare.consts',interpreter=context.interpreter,wanted={'CombatState'})
     enum=module.globals.get('CombatState')
     if not enum:raise PythonLayoutError('CombatState is absent from the selected interpreter')
     metatype=data.pointer(enum+8)

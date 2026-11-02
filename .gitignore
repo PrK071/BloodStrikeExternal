@@ -18,3 +18,11 @@ venv/
 
 # Runtime module images remain local; publish their manifests and reports only.
 /reports/**/BloodStrike.mapped-image.bin
+
+# Generated native binaries and local session state.
+*.exe
+*.pdb
+/native/*.bmp
+/native/*.json
+/live-session.json
+/menu-session.json

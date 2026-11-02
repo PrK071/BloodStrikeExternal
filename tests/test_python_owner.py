@@ -1,6 +1,7 @@
 # Python | tests/test_python_owner.py | Python 3.12+ unittest | guarded, synthetic CPython 3.14 data reads.
 import unittest
 import struct
+from unittest.mock import patch as mock_patch
 
 from ExternalCore.aim import AimProfile
 from ExternalCore.memory import Segment, SnapshotMemory
@@ -12,6 +13,13 @@ from registry_fixture import patch
 
 
 class PythonOwnerTests(unittest.TestCase):
+    def test_nonplayer_frame_does_not_scan_interpreter_modules(self):
+        segments,module,_ = python_fixture(weapon=True)
+        with mock_patch('ExternalCore.python_runtime.local_player') as local:
+            frame = process_frame(SnapshotMemory(segments),module)
+        local.assert_not_called()
+        self.assertEqual(frame.scene.actors[0].classification.category,Category.UNKNOWN)
+
     def test_bidirectional_wrapper_dict_owner_tag_and_avatar_mro(self):
         segments,module,a = python_fixture()
         result = process_frame(SnapshotMemory(segments),module,active=True,profile=AimProfile(counts_per_pixel=(1,1)))

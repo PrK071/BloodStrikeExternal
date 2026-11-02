@@ -3,6 +3,8 @@
 
 Two identical passes are an observation window, NOT an atomic snapshot, lock,
 ABA detector or proof of object lifetime. The actor serial is not a player ID.
+Explicit motion mode compares links and anchors while retaining sequential
+transform samples; it does not assert equal positions or a simultaneous scene.
 """
 from dataclasses import dataclass
 import struct
@@ -74,7 +76,7 @@ def _pointer(value: int, label: str) -> int:
     return value
 
 
-def _read_pass(reader: MemoryReader, module: ModuleIdentity, max_nodes: int) -> _Pass:
+def _read_pass(reader: MemoryReader, module: ModuleIdentity, max_nodes: int, *, allow_motion=False) -> _Pass:
     observations = []
 
     class Observed:
@@ -137,7 +139,14 @@ def _read_pass(reader: MemoryReader, module: ModuleIdentity, max_nodes: int) -> 
                 else:
                     entity = _pointer(resolved.address, "IEntity")
                     descriptor = resolved.dynamic_descriptor_rva
-                    position = decode_entity_position(get(entity, SNAPSHOT_SIZE))
+                    raw_position = get(entity, SNAPSHOT_SIZE)
+                    position = decode_entity_position(raw_position)
+                    if allow_motion:
+                        # Compare identity, anchors and all other observed bytes.
+                        # Transform motion is expected; keep the second sample's value.
+                        compared = bytearray(raw_position)
+                        compared[0x58:0x88] = bytes(0x30)
+                        observations[-1] = (entity, bytes(compared))
                     status = "decoded_unclassified"
         records.append(ActorRecord(node, key, component, actor, parent, in_world,
                                    entity, position, status, descriptor))
@@ -146,27 +155,33 @@ def _read_pass(reader: MemoryReader, module: ModuleIdentity, max_nodes: int) -> 
 
 
 def collect_registry(reader: MemoryReader, module: ModuleIdentity, *, max_nodes: int = 10000,
-                     attempts: int = 3) -> RegistryFrame:
+                     attempts: int = 3, allow_motion=False) -> RegistryFrame:
     """Return matching consecutive observations or fail without a partial frame.
 
     Every used RTTI/position byte is read again. This can reject changes but
     cannot exclude A->B->A, address recycling or concurrent changes after return.
     Unsupported Parent RTTI remains an explicit record without a position.
+    With allow_motion=True, transform bytes 0x58..0x87 may differ; all other
+    observed bytes, including anchors and association identities, still match.
     """
     if type(max_nodes) is not int or not 1 <= max_nodes <= 100000:
         raise ValueError("max_nodes must be between 1 and 100000")
     if type(attempts) is not int or not 1 <= attempts <= 10:
         raise ValueError("attempts must be between 1 and 10")
+    if type(allow_motion) is not bool:
+        raise TypeError('allow_motion must be bool')
     started = time.perf_counter_ns()
     last_error = None
     for attempt in range(1, attempts + 1):
         try:
-            first = _read_pass(reader, module, max_nodes)
-            second = _read_pass(reader, module, max_nodes)
+            first = _read_pass(reader, module, max_nodes, allow_motion=allow_motion)
+            second = _read_pass(reader, module, max_nodes, allow_motion=allow_motion)
             if first.observations != second.observations:
                 raise InconsistentReadError("registry or object bytes changed between passes")
             return RegistryFrame(second.root, second.sentinel, second.records,
-                                 started, time.perf_counter_ns(), attempt)
+                                 started, time.perf_counter_ns(), attempt,
+                                 consistency=('matching_links_and_anchors_sequential_transform_samples_not_atomic'
+                                              if allow_motion else 'two_equal_passes_no_atomicity_or_lifetime_guarantee'))
         except (MemoryReadError, RegistryReadError) as exc:
             last_error = exc
     raise RegistryReadError(f"no consistent complete traversal in {attempts} attempt(s): {last_error}") from last_error

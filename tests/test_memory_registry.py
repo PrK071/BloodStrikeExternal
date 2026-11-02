@@ -127,6 +127,22 @@ class RegistryTests(unittest.TestCase):
             collect_registry(reader, module, attempts=2)
         self.assertEqual(reader.count, 4)
 
+    def test_motion_mode_accepts_transform_changes_but_rejects_anchor_changes(self):
+        segments, module, a = fixture_segments()
+        class Moving:
+            def __init__(self, anchor=False): self.count, self.anchor = 0, anchor
+            def read(self, address, size):
+                self.count += address == a['entity']
+                changed = patch(segments, a['position'], '<f', float(self.count))
+                if self.anchor:
+                    changed = patch(changed, a['entity']+0x1AC, '<i', self.count)
+                return SnapshotMemory(changed).read(address, size)
+        frame = collect_registry(Moving(), module, attempts=1, allow_motion=True)
+        self.assertEqual(frame.records[0].position.local_translation[0], 2.0)
+        self.assertIn('not_atomic', frame.consistency)
+        with self.assertRaises(RegistryReadError):
+            collect_registry(Moving(anchor=True), module, attempts=1, allow_motion=True)
+
     def test_node_budget_and_duplicate_key_are_bounded(self):
         segments, module, a = fixture_segments()
         extra_node = a["node"] + 0x100

@@ -1,8 +1,8 @@
 # Python | ExternalCore/aim.py | Python 3.12+ | stateless screen-error targeting and relative motion planning.
 """Classification and count/pixel calibration are inputs, never discovered guesses.
 
-No cached target identity or accumulated movement survives between frames. Native
-dispatch is a separate adapter. These functions perform no input or process I/O.
+The caller may request retention of a previous target; it is rechecked against
+this frame's eligibility. These functions retain no state and perform no I/O.
 """
 from dataclasses import dataclass
 import math
@@ -54,7 +54,7 @@ class AimDecision:
             raise ValueError("planned movement requires a selected observation")
 
 
-def select_target(scene: Scene, profile: AimProfile) -> ProjectedActor | None:
+def select_target(scene: Scene, profile: AimProfile, *, locked_target=None) -> ProjectedActor | None:
     cx, cy = scene.width / 2.0, scene.height / 2.0
     eligible = []
     for actor in scene.actors:
@@ -68,10 +68,14 @@ def select_target(scene: Scene, profile: AimProfile) -> ProjectedActor | None:
             token = actor.observation
             # Deterministic ties without treating this tuple as a lifetime ID.
             eligible.append((distance, token.key, token.component, token.actor, token.node, actor))
+    if locked_target is not None:
+        retained=next((item[-1] for item in eligible if item[-1].observation==locked_target),None)
+        if retained is not None:return retained
     return min(eligible, key=lambda item: item[:-1])[-1] if eligible else None
 
 
-def plan_aim(scene: Scene, profile: AimProfile, *, now_ns: int, dt_ms: float, active: bool) -> AimDecision:
+def plan_aim(scene: Scene, profile: AimProfile, *, now_ns: int, dt_ms: float, active: bool,
+             locked_target=None) -> AimDecision:
     def idle(reason, target=None):
         return AimDecision(target, 0, 0, scene.captured_ns, reason)
     if type(active) is not bool or type(now_ns) is not int or now_ns < 0:
@@ -85,7 +89,7 @@ def plan_aim(scene: Scene, profile: AimProfile, *, now_ns: int, dt_ms: float, ac
     age_ns = now_ns - scene.captured_ns
     if age_ns < 0 or age_ns > profile.max_age_ms * 1_000_000:
         return idle("stale_or_future_capture")
-    target = select_target(scene, profile)
+    target = select_target(scene, profile,locked_target=locked_target)
     if target is None:
         return idle("no_classified_target")
     if profile.counts_per_pixel is None:

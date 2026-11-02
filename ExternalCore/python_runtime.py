@@ -21,7 +21,7 @@ class ModuleContext:
     globals: dict[str,int]
 
 
-def find_module(data: DataReader, name: str, *, interpreter=None) -> ModuleContext:
+def find_module(data: DataReader, name: str, *, interpreter=None, wanted=None) -> ModuleContext:
     cookie,version,free = struct.unpack("<8sQQ",data.read(data.module.address(RUNTIME_RVA,24),24))
     if cookie != b"xdebugpy" or version != 0x030E00F0 or free:
         raise PythonLayoutError("runtime debug cookie/version/GIL layout mismatch")
@@ -40,7 +40,7 @@ def find_module(data: DataReader, name: str, *, interpreter=None) -> ModuleConte
             if module:
                 if data.u64(module+8) != data.module.address(MODULE_TYPE):
                     raise PythonLayoutError("module entry has an unsupported type")
-                values = data.dictionary(data.pointer(module+0x10))
+                values = data.dictionary(data.pointer(module+0x10),wanted=None if wanted is None else set(wanted)|{'__name__'})
                 module_name = values.get("__name__")
                 if not module_name or data.ascii(module_name) != name:
                     raise PythonLayoutError("module key/name mismatch")
@@ -52,7 +52,25 @@ def find_module(data: DataReader, name: str, *, interpreter=None) -> ModuleConte
 
 
 def local_player(data: DataReader):
-    context = find_module(data,"gclient.genv")
+    def builtin_context():
+        builtins = find_module(data,'builtins',wanted={'genv'})
+        environment = builtins.globals.get('genv')
+        if not environment:
+            raise PythonLayoutError('builtins.genv is absent')
+        name = data.c_string(struct.unpack_from('<Q',data.type_object(data.pointer(environment+8)),24)[0])
+        if name.rsplit('.',1)[-1] != 'ClientEnv':
+            raise PythonLayoutError('builtins.genv is not ClientEnv')
+        return ModuleContext(builtins.interpreter,builtins.interpreter_id,
+                             environment,data.instance_dict(environment,wanted={'player','main_player','replay_player','space'}))
+    def legacy_context():
+        return find_module(data,'gclient.genv',wanted={'player','main_player','replay_player','space'})
+    primary,secondary=(builtin_context,legacy_context) if data.live_lookup else (legacy_context,builtin_context)
+    try:
+        context=primary()
+    except PythonLayoutError as exc:
+        if str(exc) != 'expected one interpreter/module context, found 0':
+            raise
+        context=secondary()
     player = context.globals.get("player")
     if not player or player == data.module.address(NONE):
         raise PythonLayoutError("genv.player is absent or None")

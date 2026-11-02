@@ -22,6 +22,8 @@ def main():
     parser.add_argument("--pid", type=int, required=True)
     parser.add_argument("--sample", type=Path, required=True)
     parser.add_argument("--output-dir", type=Path, required=True)
+    parser.add_argument("--allow-motion", action="store_true",
+                        help="accept moving transforms while requiring matching links and anchors")
     args = parser.parse_args()
     out = args.output_dir.resolve()
     if out.exists():
@@ -98,7 +100,8 @@ def main():
                 ("file", "sha256", "complete", "readable_bytes", "image_size")}
             from ExternalCore.pipeline import process_frame
             try:
-                frame = process_frame(reader, module, require_render_input=True)
+                frame = process_frame(reader, module, require_render_input=True,
+                                      allow_motion=args.allow_motion)
                 write_json(out / "live-frame.json", frame)
                 result["pipeline"] = dict(status="CAPTURED", actors=len(frame.scene.actors),
                     rejected=len(frame.scene.rejected), aim_reason=frame.aim.reason,

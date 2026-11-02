@@ -158,6 +158,9 @@ class DispatchTests(unittest.TestCase):
             self.assertEqual(type_dictionary(data,cls)['faction'],
                              DataReader(f.memory(),f.module).dictionary(dictionary)['faction'])
             state=f.interpreter+(0x2E4C8 if secondary else 0x2BF38)
+            f.set(state+0x10,'<i',0)
+            data=f.data();data.interpreter=f.interpreter
+            self.assertIn('faction',type_dictionary(data,cls))
             f.set(state+0xC,'<i',1)
             data=f.data();data.interpreter=f.interpreter
             with self.assertRaisesRegex(PythonLayoutError,'not ready'):type_dictionary(data,cls)

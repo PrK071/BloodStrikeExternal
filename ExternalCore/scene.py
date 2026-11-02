@@ -104,7 +104,7 @@ def observation_id(record):
     return ObservationId(record.node, record.key, record.component, record.actor, record.parent)
 
 
-def build_scene(capture: WorldCapture, classifications=None) -> Scene:
+def build_scene(capture: WorldCapture, classifications=None, *, target_local_y=0.0) -> Scene:
     """Project eligible positions. Classification mapping must belong to this capture.
 
     ObservationId identifies bytes in this observation, not a lifetime generation.
@@ -112,6 +112,8 @@ def build_scene(capture: WorldCapture, classifications=None) -> Scene:
     """
     if not 1 <= capture.camera.camera.width <= 8192 or not 1 <= capture.camera.camera.height <= 8192:
         raise ValueError("viewport exceeds the supported overlay dimensions [1,8192]")
+    if not math.isfinite(target_local_y) or not 0<=target_local_y<=3:
+        raise ValueError('target_local_y must be finite and between 0 and 3 model units')
     classifications = {} if classifications is None else classifications
     actors, rejected = [], []
     current_ids = {observation_id(record) for record in capture.registry.records}
@@ -129,7 +131,11 @@ def build_scene(capture: WorldCapture, classifications=None) -> Scene:
         if not isinstance(classification, Classification):
             raise TypeError("classification values must be Classification objects")
         try:
-            point = project_screenpoint(capture.camera.camera, record.position.local_translation)
+            position=record.position.local_translation
+            if classification.category is Category.OPPONENT and target_local_y:
+                position=tuple(origin+target_local_y*axis for origin,axis in
+                               zip(position,record.position.transform[3:6]))
+            point = project_screenpoint(capture.camera.camera, position)
         except ValueError as exc:
             rejected.append(RejectedActor(identity, f"projection_invalid: {exc}"))
             continue
