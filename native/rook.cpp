@@ -27,6 +27,8 @@
 #include <unordered_map>
 #include <vector>
 
+#include "syscall_native.hpp"
+
 using U=uint64_t;
 using Clock=std::chrono::steady_clock;
 namespace fs=std::filesystem;
@@ -47,9 +49,9 @@ struct Reader{
  Reader(HANDLE h_,U b):h(h_),base(b){}
  void raw(U p,void* out,size_t n){
   require(p>=0x10000&&n<=16*1024*1024&&p+n>=p&&p+n<=0x800000000000,"invalid read range");
-  SIZE_T got=0;++reads;
-  if(!ReadProcessMemory(h,reinterpret_cast<void*>(p),out,n,&got)||got!=n)
-   throw std::runtime_error("ReadProcessMemory failed: "+std::to_string(GetLastError()));
+  ++reads;
+  if(sc::read_mem(h,p,out,(uint32_t)n)!=0)
+   throw std::runtime_error("syscall read failed: "+std::to_string(GetLastError()));
  }
  void read(U p,void* out,size_t n){
   if(!cache){raw(p,out,n);return;}
@@ -62,7 +64,7 @@ struct Reader{
     require(pages.size()<4096,"metadata page budget");
     std::array<unsigned char,4096> bytes{};
     SIZE_T got=0;++reads;
-    if(!ReadProcessMemory(h,reinterpret_cast<void*>(page),bytes.data(),4096,&got)||got!=4096){raw(p,dst,take);p+=take;dst+=take;n-=take;continue;}
+    if(sc::read_mem(h,page,bytes.data(),4096)!=0){raw(p,dst,take);p+=take;dst+=take;n-=take;continue;}
     it=pages.emplace(page,bytes).first;
    }
    std::memcpy(dst,it->second.data()+off,take);p+=take;dst+=take;n-=take;
@@ -510,7 +512,7 @@ void worker(Options options){
  };
  try{
   game=findGame();uiGameRunning=true;uiGameWindow=reinterpret_cast<uintptr_t>(game.window);status("Verificando build...");require(hashFile(game.path)==SAMPLE,"unsupported game SHA256");
-  Handle process(OpenProcess(PROCESS_VM_READ|PROCESS_QUERY_LIMITED_INFORMATION,FALSE,game.pid));require(process.h!=nullptr,"OpenProcess denied");
+  Handle process(sc::open_process(PROCESS_VM_READ|PROCESS_QUERY_LIMITED_INFORMATION,game.pid));require(process.h!=nullptr,"OpenProcess denied");
   Calibration cal;try{cal=calibration();}catch(const std::exception& e){lastError=e.what();}
   std::vector<Calibration> profiles;if(cal.valid)profiles.push_back(cal);
   if(fs::exists(appDir/L"calibrations"))for(auto& entry:fs::directory_iterator(appDir/L"calibrations")){if(entry.path().extension()!=L".json")continue;try{profiles.push_back(calibration(entry.path()));}catch(const std::exception& e){lastError=e.what();}}
