@@ -15,7 +15,7 @@ from .entity_position import SNAPSHOT_SIZE, EntityPositionSnapshot, decode_entit
 from .memory import MemoryReader, MemoryReadError, read_exact
 from .rtti import BaseResolution, RttiResolutionError, resolve_nonvirtual_base
 
-ROOT_RVA = 0x8B7CD90  # Getter 19d45e0; V2/V3/V4 identity.
+ROOT_RVA = 0x8b8d490  # Getter 19d45e0; V2/V3/V4 identity.
 ROOT_SENTINEL = 0x8
 NODE_SIZE = 0x20
 NODE_KEY = 0x10  # Insert stores 254497; payload at 25449e.

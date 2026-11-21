@@ -16,7 +16,7 @@ class RenderFixture(StateFixture):
             (0x18,'<2H',[1920,1080]),(0x50,'<Q',[self.client+0x80]),(0x740,'<Q',[self.client])])
         self.set(self.client+0x18,'<Q',self.viewport)
         self.render_state=self.alloc(16,[(8,'<Q',[self.client])])
-        self.segments.append(Segment(self.module.base+0x80F3840,self.render_state.to_bytes(8,'little')))
+        self.segments.append(Segment(self.module.base+0x8104100,self.render_state.to_bytes(8,'little')))
         vptr,offset={'aurora':(0x4EC0658,0x6B4),'perspective':(0x4EBF848,0x2D8),
                      'orthographic':(0x4EBFAA0,None)}[kind]
         self.set(self.client+0x80,'<Q',self.module.base+vptr)

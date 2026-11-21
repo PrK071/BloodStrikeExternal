@@ -2,7 +2,7 @@
 """Decode an IEntity byte snapshot using the audited BloodStrike build's arithmetic.
 
 Disk evidence: StaticAnalysis/integration-evidence/entity-position/.
-Sample SHA256: ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747.
+Sample SHA256: 24c1ba6e75e0028b74e3a34ebc2808b90ed014713dda874b5adc719b83ceead1.
 This module performs no process access, pointer discovery, type validation, camera
 selection, or unit conversion. The caller must supply a coherent IEntity snapshot
 for that build, after any necessary native pointer adjustment.
@@ -10,7 +10,7 @@ for that build, after any necessary native pointer adjustment.
 from dataclasses import dataclass
 import struct
 
-SAMPLE_SHA256 = "ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747"
+SAMPLE_SHA256 = "24c1ba6e75e0028b74e3a34ebc2808b90ed014713dda874b5adc719b83ceead1"
 GET_ENTITY_POSITION_RVA = 0x8977B0
 TRANSFORM_OFFSET = 0x58  # Float loads: RVAs 897828, 897835, 897839, 897866..897894.
 TRANSLATION_OFFSET = 0x7C  # Float loads: RVAs 897820, 89783D, 897848.

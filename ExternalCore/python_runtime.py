@@ -6,7 +6,7 @@ import struct
 from .python_owner import DataReader, PythonLayoutError, NONE, ENTITY_PYTYPE
 
 RUNTIME_RVA = 0x925F000
-HEAD_RVA = 0x925F328
+HEAD_RVA = 0x9270328
 INTERP_NEXT = 0x1C68
 INTERP_ID = 0x1C70
 INTERP_MODULES = 0x1DE8

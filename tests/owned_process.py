@@ -26,7 +26,7 @@ class OwnedProcess:
             self.metadata = json.loads(self.lines.get(timeout=15))
             if self.metadata["pid"] != self.child.pid or self.metadata["provenance"] != "owned_synthetic_child_not_bloodstrike":
                 raise ValueError("fixture child identity/provenance mismatch")
-            self.module = ModuleIdentity(self.metadata["base"], 0x94E9000, SAMPLE_SHA256)
+            self.module = ModuleIdentity(self.metadata["base"], 0x94fa000, SAMPLE_SHA256)
             self.reader = WindowsProcessMemory(self.child.pid)
         except BaseException:
             self.close()

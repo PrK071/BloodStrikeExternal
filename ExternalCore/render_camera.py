@@ -12,11 +12,11 @@ import struct
 from .memory import read_exact
 from .registry import _pointer
 
-RENDER_STATE_RVA=0x80F3840
-SCENE_CLIENT_VPTR=0x4E632F0
-MAIN_VIEWPORT_VPTR=0x52F0498
-CAMERAS={0x4EC0658:('aurora',0x6B4),0x4EBF848:('perspective',0x2D8),
-         0x4EBFAA0:('orthographic',None)}
+RENDER_STATE_RVA=0x8104100
+SCENE_CLIENT_VPTR=0x4E722F0
+MAIN_VIEWPORT_VPTR=0x52FFA58
+CAMERAS={0x4ECF668:('aurora',0x6B4),0x4ECE858:('perspective',0x2D8),
+         0x4ECEAB0:('orthographic',None)}
 
 
 @dataclass(frozen=True,slots=True)

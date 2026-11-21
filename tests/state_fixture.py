@@ -63,7 +63,7 @@ class StateFixture:
             head=self.alloc(0x1DF0,[(0x1C68,'<Q',[self.interpreter]),(0x1C70,'<q',[7]),
                                   (0x1DE8,'<Q',[self.dictionary({})])])
         self.segments.append(Segment(self.module.base+0x925F000,struct.pack('<8sQQ',b'xdebugpy',0x030E00F0,0)))
-        self.segments.append(Segment(self.module.base+0x925F328,struct.pack('<Q',head)))
+        self.segments.append(Segment(self.module.base+0x9270328,struct.pack('<Q',head)))
         return self
     def properties(self,values=None,*,kind='mixed'):
         values=values if values is not None else {'server_hp':('float',100.0),'faction':('int',1),

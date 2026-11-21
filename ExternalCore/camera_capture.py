@@ -18,13 +18,13 @@ from .rtti import resolve_nonvirtual_base
 from .screenpoint import CAMERA_BYTES, CameraSnapshot, decode_camera
 from .render_camera import RenderCamera,render_camera_pass
 
-ENGINE_ROOT_RVA = 0x80D5980  # Callback3271090: root, then root+58, call2d829a0.
+ENGINE_ROOT_RVA = 0x80e5d70  # Callback3271090: root, then root+58, call2d829a0.
 GAMEPLAY_OFFSET = 0x58
 PLAYER_OFFSET = 0x58        # IGameplay.Player: 58b020/92bec0/948bd0.
 PLAYER_CAMERA_OFFSET = 0xD88  # ClientPlayer.Camera: d09ed0/d09ef0.
-GAMEPLAY_TD = 0x7E35098     # COL6e7a3a0; baseline RTTI.
-CLIENT_PLAYER_TD = 0x7E57120  # COL6ea2828.
-ICAMERA_TD = 0x7DE5D50      # COL6e1e1b8; IEntity base displacement0.
+GAMEPLAY_TD = 0x7e45028     # COL6e7a3a0; baseline RTTI.
+CLIENT_PLAYER_TD = 0x7e670b0  # COL6ea2828.
+ICAMERA_TD = 0x7df5d90      # COL6e1e1b8; IEntity base displacement0.
 
 
 @dataclass(frozen=True, slots=True)

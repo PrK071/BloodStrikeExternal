@@ -51,8 +51,8 @@ def main():
                 raise ValueError("live module header is not MZ")
             result["memory_read_performed"] = True
             roots = {}
-            for name, rva in (("actor_registry", 0x8B7CD90), ("engine_root", 0x80D5980),
-                              ("render_state", 0x80F3840), ("interpreter_head", 0x925F328)):
+            for name, rva in (("actor_registry", 0x8b8d490), ("engine_root", 0x80e5d70),
+                              ("render_state", 0x8104100), ("interpreter_head", 0x9270328)):
                 try:
                     raw = reader.read(module.address(rva, 8), 8)
                     roots[name] = dict(rva=hex(rva), address=hex(module.base+rva),

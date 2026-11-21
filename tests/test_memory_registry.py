@@ -38,7 +38,7 @@ class MemoryTests(unittest.TestCase):
 
     def test_wrong_build_is_rejected_before_reading(self):
         with self.assertRaises(BuildMismatchError):
-            ModuleIdentity(0x180000000, 0x94E9000, "0" * 64)
+            ModuleIdentity(0x180000000, 0x94fa000, "0" * 64)
 
 
 class RegistryTests(unittest.TestCase):
@@ -58,7 +58,7 @@ class RegistryTests(unittest.TestCase):
 
     def test_null_root_and_empty_initialized_registry_are_distinct(self):
         segments, module, a = fixture_segments()
-        null = SnapshotMemory(patch(segments, module.base + 0x8B7CD90, "<Q", 0))
+        null = SnapshotMemory(patch(segments, module.base + 0x8b8d490, "<Q", 0))
         empty = SnapshotMemory(patch(segments, a["sentinel"], "<Q", a["sentinel"]))
         self.assertEqual(collect_registry(null, module).root, 0)
         self.assertEqual(collect_registry(empty, module).root, a["root"])

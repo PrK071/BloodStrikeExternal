@@ -10,7 +10,7 @@ from ExternalCore.python_owner import DataReader, PythonLayoutError, TRUE, FALSE
 from ExternalCore.python_values import read_scalar
 
 BASE, OBJECT = 0x180000000, 0x200000000
-MODULE = ModuleIdentity(BASE,0x94E9000,SAMPLE_SHA256)
+MODULE = ModuleIdentity(BASE,0x94fa000,SAMPLE_SHA256)
 
 
 def reader(raw):

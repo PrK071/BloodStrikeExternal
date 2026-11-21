@@ -17,7 +17,7 @@ def main():
     api.VirtualAlloc.restype = ctypes.c_void_p
     api.VirtualFree.argtypes = [ctypes.c_void_p, ctypes.c_size_t, wintypes.DWORD]
     api.VirtualFree.restype = wintypes.BOOL
-    base = api.VirtualAlloc(None, 0x94E9000, 0x2000, 0x01)  # Reserve, PAGE_NOACCESS.
+    base = api.VirtualAlloc(None, 0x94fa000, 0x2000, 0x01)  # Reserve, PAGE_NOACCESS.
     if not base:
         raise ctypes.WinError(ctypes.get_last_error())
     arena = ctypes.create_string_buffer(0x8000)

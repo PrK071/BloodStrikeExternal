@@ -1,4 +1,4 @@
-// C++ / native/rook.cpp / Windows x64 / BloodStrike ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747
+// C++ / native/rook.cpp / Windows x64 / BloodStrike 24c1ba6e75e0028b74e3a34ebc2808b90ed014713dda874b5adc719b83ceead1
 #define WIN32_LEAN_AND_MEAN
 #define NOMINMAX
 #include <windows.h>
@@ -32,8 +32,8 @@
 using U=uint64_t;
 using Clock=std::chrono::steady_clock;
 namespace fs=std::filesystem;
-constexpr U IMAGE_SIZE=0x94e9000;
-constexpr char SAMPLE[]="ff080393961ac709090824356621358ae4f63dbe1c62ff636d528589cd097747";
+constexpr U IMAGE_SIZE=0x94fa000;
+constexpr char SAMPLE[]="24c1ba6e75e0028b74e3a34ebc2808b90ed014713dda874b5adc719b83ceead1";
 void require(bool ok,const char* why){if(!ok)throw std::runtime_error(why);}
 bool pointer(U p){return p>=0x10000&&p<=0x7ffffffffff8&&!(p&7);}
 struct Handle{
@@ -75,7 +75,7 @@ struct Reader{
  template<class T>std::vector<T> vec(U p,size_t n){require(n<=1024*1024/sizeof(T),"vector byte budget");std::vector<T> v(n);if(n)read(p,v.data(),n*sizeof(T));return v;}
  U rva(U x,size_t n=8){require(x<IMAGE_SIZE&&n<=IMAGE_SIZE-x,"RVA outside build");return base+x;}
 };
-U castBase(Reader& r,U obj,U target=0x7DE5D78){
+U castBase(Reader& r,U obj,U target=0x7DF5DB8){
  U vt=r.ptr(obj);require(vt>=r.base+8&&vt<r.base+IMAGE_SIZE,"vtable outside module");
  U col=r.ptr(vt-8);require(col>=r.base&&col+24<r.base+IMAGE_SIZE,"COL outside module");
  auto c=r.get<std::array<uint32_t,6>>(col);
@@ -186,7 +186,7 @@ struct PyData{
  U local(){
   auto cookie=r.get<std::array<char,8>>(r.base+0x925F000);
   require(!std::memcmp(cookie.data(),"xdebugpy",8)&&r.get<U>(r.base+0x925F008)==0x030E00F0&&!r.get<U>(r.base+0x925F010),"runtime build");
-  U current=r.get<U>(r.base+0x925F328),found=0;std::set<U> seen;
+  U current=r.get<U>(r.base+0x9270328),found=0;std::set<U> seen;
   while(current){
    require(seen.size()<64&&seen.insert(current).second,"interpreter cycle");
    U modules=r.get<U>(current+0x1DE8);
@@ -293,10 +293,10 @@ struct Camera{
  }
 };
 Camera camera(Reader& r){
- U root=r.ptr(r.base+0x80D5980),gameplay=castBase(r,r.ptr(root+0x58),0x7E35098);
- U player=castBase(r,r.ptr(gameplay+0x58),0x7E57120),source=castBase(r,r.ptr(player+0xD88),0x7DE5D50);
+ U root=r.ptr(r.base+0x80e5d70),gameplay=castBase(r,r.ptr(root+0x58),0x7e45028);
+ U player=castBase(r,r.ptr(gameplay+0x58),0x7e670b0),source=castBase(r,r.ptr(player+0xD88),0x7df5d90);
  require(!r.get<uint8_t>(source+0x418),"orthographic camera");
- U state=r.ptr(r.base+0x80F3840),client=r.ptr(state+8),viewport=r.ptr(client+0x18);
+ U state=r.ptr(r.base+0x8104100),client=r.ptr(state+8),viewport=r.ptr(client+0x18);
  require(r.get<U>(client)==r.base+0x4E632F0&&r.get<U>(viewport)==r.base+0x52F0498&&r.get<U>(viewport+0x740)==client,"render viewport identity");
  U native=r.ptr(viewport+0x50),vt=r.get<U>(native);require(native==client+0x80,"render camera alias");
  U offset=vt==r.base+0x4EC0658?0x6B4:vt==r.base+0x4EBF848?0x2D8:0;require(offset!=0,"unsupported render camera");
@@ -346,7 +346,7 @@ struct ZoomStability{
 bool aimDeadzone(double error,bool& stopped){stopped=error<=(stopped?1.25:.65);return stopped;}
 bool identity(Reader& r,const Actor& a){return r.get<U>(a.node+0x18)==a.component&&r.get<uint32_t>(a.node+0x10)==a.key&&r.get<U>(a.component+0x40)==a.entity&&r.get<U>(a.component+0x378)==a.actor&&r.get<uint32_t>(a.actor+0xC)==a.key&&(r.get<uint8_t>(a.entity+0x130)&0x10);}
 std::vector<Actor> registry(Reader& r){
- U root=r.ptr(r.base+0x8B7CD90),sentinel=r.ptr(root+8),node=r.get<U>(sentinel);std::set<U> seen;std::set<uint32_t> keys;std::vector<Actor> result;
+ U root=r.ptr(r.base+0x8b8d490),sentinel=r.ptr(root+8),node=r.get<U>(sentinel);std::set<U> seen;std::set<uint32_t> keys;std::vector<Actor> result;
  while(node!=sentinel){
   require(pointer(node)&&seen.size()<10000&&seen.insert(node).second,"registry cycle/budget");
   auto raw=r.get<std::array<U,4>>(node);Actor a;a.node=node;a.key=uint32_t(raw[2]);a.component=raw[3];

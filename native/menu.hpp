@@ -74,7 +74,7 @@ void paintMenu(HDC dc){
   COLORREF state=uiGameRunning?theme::sage:theme::rose;fill(dc,{210,135,218,143},state);copyText(dc,{231,124,leftEnd,152},uiGameRunning?L"Blood Strike em execução":L"Blood Strike fechado",theme::text,menuFont);
   copyText(dc,{210,164,leftEnd,191},L"Painel",theme::secondary,menuFont);copyText(dc,{210,196,leftEnd,224},L"Aeon / Blood Strike",theme::text,menuFont);
   copyText(dc,{210,233,leftEnd,260},L"Estado da leitura",theme::secondary,menuFont);copyText(dc,{210,265,leftEnd,292},uiAttached?L"Ativa":L"Aguardando sessão",theme::text,menuFont);
-  copyText(dc,{210,296,leftEnd,323},L"Build suportada",theme::secondary,menuFont);copyText(dc,{210,328,leftEnd,351},L"ff080393961ac709",theme::text,menuFont);
+  copyText(dc,{210,296,leftEnd,323},L"Build suportada",theme::secondary,menuFont);copyText(dc,{210,328,leftEnd,351},L"24c1ba6e75e0028b",theme::text,menuFont);
   copyText(dc,{210,354,leftEnd,376},L"Windows x64 · leitura externa",theme::secondary,smallFont);
   copyText(dc,{rx,134,uiWidth-204,168},L"Idioma",theme::text,menuFont);
  }else if(currentPage==0){
@@ -96,8 +96,8 @@ void paintMenu(HDC dc){
  }else if(currentPage==3){
   section(dc,210,101,leftEnd,L"Build");section(dc,rx,101,right,L"Compatibilidade");
   copyText(dc,{210,133,leftEnd,163},L"SHA256 da imagem suportada",theme::secondary,menuFont);
-  copyText(dc,{210,177,leftEnd,252},L"ff080393961ac709\n090824356621358a\ne4f63dbe1c62ff636\nd528589cd097747",theme::text,smallFont,DT_LEFT|DT_WORDBREAK);
-  copyText(dc,{210,287,leftEnd,318},L"Tamanho da imagem: 0x94e9000",theme::text,menuFont);
+  copyText(dc,{210,177,leftEnd,252},L"24c1ba6e75e0028b\n74e3a34ebc2808b9\n0ed014713dda874b6\nd528589cd097747",theme::text,smallFont,DT_LEFT|DT_WORDBREAK);
+  copyText(dc,{210,287,leftEnd,318},L"Tamanho da imagem: 0x94fa000",theme::text,menuFont);
   copyText(dc,{rx,133,right,235},L"A leitura exige a build correspondente. Os endereços deste projeto são vinculados a essa imagem.",theme::text,menuFont,DT_LEFT|DT_WORDBREAK);
  }else if(currentPage==4){
   section(dc,210,101,leftEnd,L"Calibrações");section(dc,rx,101,right,L"Seleção por zoom");int y=135;

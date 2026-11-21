@@ -31,7 +31,7 @@ class Win32IntegrationTests(unittest.TestCase):
         self.thread.start()
         line = self.lines.get(timeout=15)
         self.metadata = json.loads(line)
-        self.module = ModuleIdentity(self.metadata["base"], 0x94E9000, SAMPLE_SHA256)
+        self.module = ModuleIdentity(self.metadata["base"], 0x94fa000, SAMPLE_SHA256)
         self.reader = WindowsProcessMemory(self.child.pid)
         self.addCleanup(self.reader.close)
 

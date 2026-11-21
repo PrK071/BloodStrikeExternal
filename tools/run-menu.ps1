@@ -1,5 +1,5 @@
 # PowerShell / tools/run-menu.ps1 / PowerShell 7 Windows x64 / live game menu
-param([string]$Python='C:/Users/luiz/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe')
+param([string]$Python='C:/Users/luiz/AppData/Local/Programs/Python/Python312/python.exe')
 $ErrorActionPreference='Stop'
 $runtimeRoot=Split-Path -Parent $PSScriptRoot
 $gameMatches=@(Get-Process -Name BloodStrike | Where-Object {$_.MainWindowHandle -ne 0})

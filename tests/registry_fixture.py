@@ -20,7 +20,7 @@ def fixture_segments(base=0x180000000, arena=0x200000000):
             struct.pack_into(fmt, buffer, offset, *values)
         segments.append(Segment(address, bytes(buffer)))
 
-    data(base + 0x8B7CD90, 8, [(0, "<Q", [root])])
+    data(base + 0x8b8d490, 8, [(0, "<Q", [root])])
     data(root, 0x40, [(8, "<Q", [sentinel])])
     data(sentinel, 0x20, [(0, "<Q", [node])])
     data(node, 0x20, [(0, "<Q", [sentinel]), (0x10, "<I", [0x12345678]),
@@ -49,10 +49,10 @@ def fixture_segments(base=0x180000000, arena=0x200000000):
         if entity_base:
             data(meta + 0xA0, 24, [(0, "<IIiiiI", [0x7DE5D78, 0, 0, -1, 0, 0x40])])
         return meta + 8
-    gameplay_vptr = rtti(base + 0x8000, 0x7E35098)
-    player_vptr = rtti(base + 0x8200, 0x7E57120)
-    camera_vptr = rtti(base + 0x8400, 0x7DE5D50, True)
-    data(base + 0x80D5980, 8, [(0, "<Q", [engine_root])])
+    gameplay_vptr = rtti(base + 0x8000, 0x7e45028)
+    player_vptr = rtti(base + 0x8200, 0x7e670b0)
+    camera_vptr = rtti(base + 0x8400, 0x7df5d90, True)
+    data(base + 0x80e5d70, 8, [(0, "<Q", [engine_root])])
     data(engine_root, 0x60, [(0x58, "<Q", [gameplay])])
     data(gameplay, 0x60, [(0, "<Q", [gameplay_vptr]), (0x58, "<Q", [player])])
     data(player, 0xD90, [(0, "<Q", [player_vptr]), (0xD88, "<Q", [camera])])
@@ -65,7 +65,7 @@ def fixture_segments(base=0x180000000, arena=0x200000000):
                      position=entity + 0x7C, engine_root=engine_root, gameplay=gameplay,
                      player=player, camera=camera, player_rtti_td=base + 0x8220 + 12,
                      player_rtti_base_td=base + 0x8280)
-    return segments, ModuleIdentity(base, 0x94E9000, SAMPLE_SHA256), addresses
+    return segments, ModuleIdentity(base, 0x94fa000, SAMPLE_SHA256), addresses
 
 
 def patch(segments, address, fmt, *values):

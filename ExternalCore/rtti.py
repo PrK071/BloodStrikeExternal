@@ -11,7 +11,7 @@ import struct
 from .build import ModuleIdentity
 from .memory import MemoryReader, read_exact
 
-IENTITY_DESCRIPTOR_RVA = 0x7DE5D78  # GetEntityPosition conversion: RVA 2d85342.
+IENTITY_DESCRIPTOR_RVA = 0x7DF5DB8  # GetEntityPosition conversion: RVA 2d85342.
 
 
 class RttiResolutionError(ValueError):
