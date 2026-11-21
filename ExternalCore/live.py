@@ -38,7 +38,7 @@ def watch(pid, sample_path, hwnd, output, *, seconds=10.0, fps=30.0, show=False,
         require_visible=require_visible,radius_px=aim_radius,tau_ms=tau_ms,
         max_step_counts=max_step_counts)
     from ctypes import wintypes as W
-    from .win32_memory import WindowsProcessMemory, find_module
+    from .syscall_memory import SyscallProcessMemory, find_module
     from .win32_overlay import OverlayWindow
     from .win32_input import WindowsInput
     input_source=WindowsInput(activation_key=activation_key,max_age_ms=max_age_ms) if aim else None
@@ -63,7 +63,7 @@ def watch(pid, sample_path, hwnd, output, *, seconds=10.0, fps=30.0, show=False,
     window = None
     geometry = None
     try:
-        with WindowsProcessMemory(pid) as reader:
+        with SyscallProcessMemory(pid) as reader:
             if os.path.normcase(os.path.realpath(reader.image_path)) != os.path.normcase(sample["path"]):
                 raise ValueError("selected PID executable path differs from the verified sample")
             module = find_module(pid, sample["path"])

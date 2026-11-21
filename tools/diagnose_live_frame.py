@@ -10,7 +10,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from ExternalCore.build import ModuleIdentity, verify_sample
 from ExternalCore.registry import _read_pass
 from ExternalCore.snapshot import write_json
-from ExternalCore.win32_memory import WindowsProcessMemory, find_module
+from ExternalCore.syscall_memory import SyscallProcessMemory, find_module
 from ExternalCore.python_owner import DataReader
 from ExternalCore.python_runtime import local_player
 from ExternalCore.python_runtime import HEAD_RVA, INTERP_MODULES, INTERP_NEXT
@@ -30,7 +30,7 @@ def main():
     write_json(args.output, report)
     try:
         sample = verify_sample(args.sample)
-        with WindowsProcessMemory(args.pid) as reader:
+        with SyscallProcessMemory(args.pid) as reader:
             if os.path.normcase(os.path.realpath(reader.image_path)) != os.path.normcase(sample['path']):
                 raise ValueError('process path mismatch')
             selected = find_module(args.pid, sample['path'])

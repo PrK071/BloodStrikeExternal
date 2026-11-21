@@ -13,7 +13,7 @@ from ExternalCore.build import ModuleIdentity,verify_sample
 from ExternalCore.camera_capture import _camera_pass
 from ExternalCore.screenpoint import project_screenpoint
 from ExternalCore.snapshot import write_json
-from ExternalCore.win32_memory import WindowsProcessMemory,find_module
+from ExternalCore.syscall_memory import SyscallProcessMemory,find_module
 from ExternalCore.win32_input import WindowsInput,INPUT,movement_packet
 
 
@@ -45,7 +45,7 @@ def main():
     try:
         sample=verify_sample(args.sample)
         report['sample']=sample
-        with WindowsProcessMemory(args.pid) as reader:
+        with SyscallProcessMemory(args.pid) as reader:
             if os.path.normcase(os.path.realpath(reader.image_path))!=os.path.normcase(sample['path']):
                 raise ValueError('selected process path mismatch')
             mapped=find_module(args.pid,sample['path'])

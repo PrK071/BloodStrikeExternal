@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from ExternalCore.build import ModuleIdentity, verify_sample
 from ExternalCore.snapshot import write_json
-from ExternalCore.win32_memory import WindowsProcessMemory, find_module
+from ExternalCore.syscall_memory import SyscallProcessMemory, find_module
 
 
 def main():
@@ -38,7 +38,7 @@ def main():
     try:
         sample = verify_sample(args.sample)
         result["sample"] = sample
-        with WindowsProcessMemory(args.pid) as reader:
+        with SyscallProcessMemory(args.pid) as reader:
             if os.path.normcase(os.path.realpath(reader.image_path)) != os.path.normcase(sample["path"]):
                 raise ValueError("selected process path does not match verified sample")
             selected = find_module(args.pid, sample["path"])

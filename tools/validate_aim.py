@@ -14,7 +14,7 @@ from ExternalCore.build import ModuleIdentity,verify_sample
 from ExternalCore.pipeline import process_frame
 from ExternalCore.snapshot import write_json
 from ExternalCore.win32_input import WindowsInput,movement_packet,INPUT
-from ExternalCore.win32_memory import WindowsProcessMemory,find_module
+from ExternalCore.syscall_memory import SyscallProcessMemory,find_module
 
 
 def main():
@@ -49,7 +49,7 @@ def main():
         profile=AimProfile(counts_per_pixel=tuple(calibration['counts_per_pixel']),require_visible=False,
                            radius_px=500,max_age_ms=250,tau_ms=a.tau_ms,max_step_counts=a.max_step_counts,deadzone_px=1)
         sample=verify_sample(a.sample)
-        with WindowsProcessMemory(a.pid) as reader:
+        with SyscallProcessMemory(a.pid) as reader:
             if os.path.normcase(os.path.realpath(reader.image_path))!=os.path.normcase(sample['path']):
                 raise ValueError('process path mismatch')
             mapped=find_module(a.pid,sample['path'])

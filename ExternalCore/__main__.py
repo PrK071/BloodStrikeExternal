@@ -109,9 +109,9 @@ def main(argv=None):
             source = {"kind": "recorded_memory", "provenance": provenance,
                       "identity_claim": "snapshot_declared_not_a_live_game_validation"}
         else:
-            from .win32_memory import WindowsProcessMemory, find_module
+            from .syscall_memory import SyscallProcessMemory, find_module
             sample = verify_sample(args.sample)  # Must run before opening a process.
-            with WindowsProcessMemory(args.pid) as reader:
+            with SyscallProcessMemory(args.pid) as reader:
                 if os.path.normcase(os.path.realpath(reader.image_path)) != os.path.normcase(sample["path"]):
                     raise ValueError("selected PID does not use the verified executable path")
                 module = find_module(args.pid, sample["path"])

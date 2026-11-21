@@ -9,14 +9,14 @@ from ExternalCore.build import ModuleIdentity,verify_sample
 from ExternalCore.pipeline import process_frame
 from ExternalCore.scene import Category
 from ExternalCore.snapshot import write_json
-from ExternalCore.win32_memory import WindowsProcessMemory,find_module
+from ExternalCore.syscall_memory import SyscallProcessMemory,find_module
 from ExternalCore.skeleton import read_pose
 
 pid=int(sys.argv[1]);sample=verify_sample(sys.argv[2]);output=Path(sys.argv[3])
 report=dict(status='RUNNING')
 write_json(output,report)
 try:
-    with WindowsProcessMemory(pid) as reader:
+    with SyscallProcessMemory(pid) as reader:
         mapped=find_module(pid,sample['path']);module=ModuleIdentity(mapped.base,mapped.size,sample['sha256'])
         frame=process_frame(reader,module,allow_motion=True)
         opponents={actor.observation.key for actor in frame.scene.actors if actor.classification.category is Category.OPPONENT}
