@@ -3,6 +3,11 @@
 Análise estática aprofundada. Nenhum carregamento, mapper, BYOVD ou alteração de
 binário/código foi executado. Apenas leitura (`dumpbin`, Event Viewer, fontes).
 
+> **Fase seguinte:** `DriverEntry` e gerenciamento de memória auditados em
+> [`KM-RW-DRIVERENTRY-REVIEW.md`](KM-RW-DRIVERENTRY-REVIEW.md) (causa raiz,
+> tabela de operações de memória e correção da semântica dos parâmetros do `0x1E`).
+> O item "causa provável" da §6 foi atualizado por causa daquela revisão.
+
 ## 0. Escopo e artefatos analisados (hashes SHA-256)
 
 | Arquivo | SHA-256 |
@@ -135,11 +140,19 @@ e possivelmente regressão.
 - Janela 13:40–14:02 de 21/11/2026: **5 ciclos** de `Kernel-Boot` seguidos de
   `Kernel-Power 41` (crítico) e `WER 1001` (erro).
 - Stop codes (WER 1001):
-  - **4× `0x0000001E`** com Arg1 `0xFFFFFFFFC0000005` (STATUS_ACCESS_VIOLATION);
-    Arg2 (endereço) variável entre `0xFFFF8E86F23DC950`, `0xFFFFD80FE3FE9950`,
-    `0xFFFFC70CF8DD31E0`, `0xFFFF9F8A30FD91E0`.
+  - **5× `0x0000001E`** com Arg1 `0xFFFFFFFFC0000005` (STATUS_ACCESS_VIOLATION).
+    Para `0x1E`, Arg2 é o **endereço da instrução** (não o endereço acessado),
+    Arg3 é `ExceptionInformation[0]` (**0 = leitura, 1 = escrita**) e Arg4 é o
+    **endereço virtual acessado**. Os cinco Arg4 são VAs **user-mode**, todos
+    múltiplos de 64 KB: `0x1F6F5FC0000`, `0x16DE55A0000`, `0x21E77730000`,
+    `0x17AF38E0000`, `0x1CA71FA0000` (3 leituras + 2 escritas).
   - **1× `0x0000001A`** (`0x3F`, `0xEA1DB`, `0x27F7AE28`, `0x1AABD40A`) —
-    MEMORY_MANAGEMENT.
+    MEMORY_MANAGEMENT, em **19/11** (dois dias antes, outro estágio do projeto).
+
+> **Correção:** a versão anterior deste documento chamou Arg2 de "endereço" do
+> acesso. Arg2 é a instrução; o endereço acessado é Arg4. A análise completa da
+> semântica, do alinhamento dos cinco endereços e da atribuição crash→build está em
+> [`KM-RW-DRIVERENTRY-REVIEW.md`](KM-RW-DRIVERENTRY-REVIEW.md) §6.
 - **Dumps ausentes:** `C:\Windows\Minidump` vazio e `C:\Windows\MEMORY.DMP` inexistente
   (embora citados nos eventos). **Sem stack trace disponível.** WinDbg não instalado.
 
@@ -188,15 +201,21 @@ Logo, **a compilação não é a causa provável.**
 
 | Hipótese | Confiança | Justificativa |
 |---|---|---|
-| Estrutura PE quebrada (`.reloc`) | **baixa** | imagem position-independent; `.reloc` ausente é válido |
-| Imports (incl. `PsProcessType`) | **baixa/média** | kdmapper resolve via export table (funções e dados); sem evidência de falha |
+| Estrutura PE quebrada (`.reloc`) | **descartada** | imagem position-independent; `.reloc` ausente é válido |
+| Imports (incl. `PsProcessType`) | **descartada** | 15/15 exports confirmados no `ntoskrnl` 19045; `PsProcessType` é dado em `ALMOSTRO`; kdmapper/KDU resolvem por export table |
 | Compilação | **baixa** | flags corretas para driver convencional |
-| **Runtime do driver × manual mapping (seção System + thread) ou shellcode do mapper** | **média** | `0x1E`+`0xC0000005` (ponteiro inválido em Ring 0) e `0x1A` (corrupção) são consistentes; ponto exato não provado |
+| **Acesso a VA user-mode de outro processo no contexto errado (`RtlZeroMemory`/thread)** | **alta** | Arg4 dos 5 `0x1E` são VAs user 64 KB-alinhados; as duas únicas referências a `view+0` produzem exatamente os padrões 3 leituras + 2 escritas observados |
 
-**Conclusão principal:** o problema **não está** isolado na estrutura PE, nos imports,
-nem na compilação. A causa mais provável é o **contexto de execução do mapeamento
-manual** ou o **desenho de runtime** do driver sob esse contexto. Isso é o que precisa
-ser separado no teste isolado.
+**Conclusão principal:** o problema **não está** na estrutura PE, nos imports nem na
+compilação. É o **modelo de memória** do driver: ele guarda e usa um VA **user-mode do
+processo System (PID 4)** e o desreferencia de um contexto cujo espaço de
+endereçamento não o contém (kdmapper executa `DriverEntry` na thread do processo do
+kdmapper). Análise completa, incluindo por que o KDU não sofre disso no entry:
+[`KM-RW-DRIVERENTRY-REVIEW.md`](KM-RW-DRIVERENTRY-REVIEW.md).
+
+> Ressalva temporal: o `.sys` analisado foi linkado às **14:05:03**, depois do último
+> crash (**14:02:03**). Ele nunca foi executado. A conclusão é *por construção*, não
+> laudo do binário que crashou.
 
 ---
 
@@ -205,18 +224,22 @@ ser separado no teste isolado.
 1. **Dump do crash** (`MEMORY.DMP`/`Minidump`) → `!analyze -v` no WinDbg: stop code,
    módulo, stack, instrução.
 2. **Carga convencional (test-signing) do MESMO `.sys`** numa VM: reproduz `0x1E`?
-   - Se **não** reproduz → confirma que era o caminho de mapeamento, não o driver.
+   - Se **não** reproduz → confirma que era o contexto do mapeamento, não o driver.
    - Se **reproduz** → é bug de runtime do driver (aí sim analisar seção/thread).
 3. **Mapeamento com um driver trivial known-good** (ex. DummyDrv do KDU) para validar
    o loader isoladamente.
+4. Se o mapa no PID 4 **sucede** nesta build (não testado) e se o DACL da seção
+   permite `NtOpenSection` por cliente não elevado.
 
 ---
 
 ## 8. Próximas etapas seguras (sem tocar o Windows principal, sem admin ainda)
 
-1. Sem instalar nada: revisar `DriverEntry` para o caso "view menor que 4 MB"
-   (`RtlZeroMemory` com `KM_SHARED_SIZE` fixo) — é o ponto de violação mais barato de
-   eliminar, mas **só com justificativa técnica**, não especulativamente.
+1. Revisão do `DriverEntry`/gerenciamento de memória: **feita** —
+   [`KM-RW-DRIVERENTRY-REVIEW.md`](KM-RW-DRIVERENTRY-REVIEW.md). O `RtlZeroMemory`
+   **não** estoura o tamanho da view; ele acessa um VA que não existe no contexto do
+   loader. Achados independentes: `Size` sem limite (overflow real de até 12 MB) e
+   corrida de protocolo.
 2. Preparar (quando autorizado) VM limpa + snapshot + WinDbg e repetir a carga
    **convencional** de um driver de exemplo **assinado** primeiro.
 3. Só então decidir sobre o `km_rw.sys` no ambiente isolado.
