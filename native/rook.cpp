@@ -101,7 +101,7 @@ struct PyData{
  explicit PyData(Reader& rr):r(rr){}
  bool exact(U o,U type){return pointer(o)&&r.get<U>(o+8)==r.base+type;}
  std::string ascii(U o){
-  require(exact(o,0x7A16E10),"not Unicode");
+  require(exact(o,0x7A26B50),"not Unicode");
   auto n=r.get<int64_t>(o+16);auto state=r.get<uint32_t>(o+32);
   require(n>=0&&n<=512&&(state&0x60)==0x60&&((state>>2)&7)==1,"unsupported Unicode");
   auto bytes=r.vec<char>(o+40,size_t(n)+1);require(bytes.back()==0,"Unicode terminator");
@@ -120,18 +120,18 @@ struct PyData{
   for(int64_t i=0;i<count;++i){
    U key=0,value=0;std::memcpy(&key,raw.data()+i*stride+(kind==0?8:0),8);
    if(values)value=r.get<U>(values+8+i*8);else std::memcpy(&value,raw.data()+i*stride+(kind==0?16:8),8);
-   if(!key||!value||!exact(key,0x7A16E10))continue;
+   if(!key||!value||!exact(key,0x7A26B50))continue;
    try{auto name=ascii(key);require(!result.contains(name),"duplicate dictionary key");result.emplace(std::move(name),value);}catch(const std::exception&){continue;}
   }
   return result;
  }
  const std::map<std::string,U>& dict(U obj){
   auto it=dictionaries.find(obj);if(it!=dictionaries.end())return it->second;
-  require(exact(obj,0x7A19900),"not dict");
+  require(exact(obj,0x7A29640),"not dict");
   return dictionaries.emplace(obj,table(r.ptr(obj+32),r.get<U>(obj+40))).first->second;
  }
  U dictItem(U obj,const std::string& name){
-  require(exact(obj,0x7A19900),"not dict");
+  require(exact(obj,0x7A29640),"not dict");
   auto found=dictionaryHashes.find(name);U values=r.get<U>(obj+40);
   if(values||found==dictionaryHashes.end())return item(dict(obj),name);
   U keys=r.ptr(obj+32);auto ls=r.get<uint8_t>(keys+8),lb=r.get<uint8_t>(keys+9),kind=r.get<uint8_t>(keys+10);auto count=r.get<int64_t>(keys+24);
@@ -140,14 +140,14 @@ struct PyData{
   for(U probe=0;probe<(U(1)<<ls)+16;++probe){
    U address=keys+32+bucket*width;int64_t index=width==1?r.get<int8_t>(address):width==2?r.get<int16_t>(address):width==4?r.get<int32_t>(address):r.get<int64_t>(address);
    if(index==-1)return 0;
-   if(index>=0){require(index<count,"dict probe index");U entry=entries+index*stride,key=r.get<U>(entry+(kind==0?8:0)),value=r.get<U>(entry+(kind==0?16:8));if(key&&value&&exact(key,0x7A16E10)&&r.get<U>(key+24)==hash&&ascii(key)==name)return value;}
+   if(index>=0){require(index<count,"dict probe index");U entry=entries+index*stride,key=r.get<U>(entry+(kind==0?8:0)),value=r.get<U>(entry+(kind==0?16:8));if(key&&value&&exact(key,0x7A26B50)&&r.get<U>(key+24)==hash&&ascii(key)==name)return value;}
    else require(index==-2,"dict probe sentinel");
    perturb>>=5;bucket=(bucket*5+perturb+1)&mask;
   }
   throw std::runtime_error("dict probe exhausted");
  }
  std::vector<U> mro(U obj){
-  U type=r.ptr(obj+8),tuple=r.ptr(type+0x158);require(exact(tuple,0x7A18CE0),"not MRO tuple");
+  U type=r.ptr(obj+8),tuple=r.ptr(type+0x158);require(exact(tuple,0x7A28A20),"not MRO tuple");
   auto count=r.get<int64_t>(tuple+16);require(count>=1&&count<=64,"MRO count");
   auto v=r.vec<U>(tuple+32,count);require(v.front()==type,"MRO first type");return v;
  }
@@ -179,20 +179,20 @@ struct PyData{
  }
  U classattr(U obj,const std::string& name){for(U cls:mro(obj)){U v=0;if(r.get<uint32_t>(cls+0xA8)&2)v=item(classdict(cls),name);else{U d=r.get<U>(cls+0x108);if(d)v=dictItem(d,name);}if(v)return v;}return 0;}
  U area(U host){
-  require(derived(host,0x796F3C0),"not entity host");U a=r.ptr(r.ptr(host+0x20)+0x10);
-  require(derived(a,0x796C240),"not area");U n=r.ptr(r.ptr(a+0x20));
+  require(derived(host,0x797F280),"not entity host");U a=r.ptr(r.ptr(host+0x20)+0x10);
+  require(derived(a,0x797C100),"not area");U n=r.ptr(r.ptr(a+0x20));
   require(r.get<U>(r.ptr(n+0x38))==host,"area reverse owner");return a;
  }
  U local(){
-  auto cookie=r.get<std::array<char,8>>(r.base+0x925F000);
-  require(!std::memcmp(cookie.data(),"xdebugpy",8)&&r.get<U>(r.base+0x925F008)==0x030E00F0&&!r.get<U>(r.base+0x925F010),"runtime build");
+  auto cookie=r.get<std::array<char,8>>(r.base+0x9270000);
+  require(!std::memcmp(cookie.data(),"xdebugpy",8)&&r.get<U>(r.base+0x9270008)==0x030E00F0&&!r.get<U>(r.base+0x9270010),"runtime build");
   U current=r.get<U>(r.base+0x9270328),found=0;std::set<U> seen;
   while(current){
    require(seen.size()<64&&seen.insert(current).second,"interpreter cycle");
    U modules=r.get<U>(current+0x1DE8);
    if(modules){
     U builtins=dictItem(modules,"builtins");
-    if(builtins&&exact(builtins,0x7A1B1F0)){
+    if(builtins&&exact(builtins,0x7A2AE18)){
      U env=dictItem(r.ptr(builtins+0x10),"genv");
      if(env){
       auto attrs=instance(env);U player=item(attrs,"player"),main=item(attrs,"main_player"),replay=item(attrs,"replay_player");
@@ -212,7 +212,7 @@ struct PyData{
   U control=r.ptr(native+0x18),association=r.ptr(control+0x10),bridge=r.ptr(association+8),wrapper=r.ptr(association+0x10);
   require(r.get<U>(control+8)==native&&r.get<U>(association)==control&&r.get<U>(bridge+8)==wrapper&&r.get<U>(bridge+0x18)==native&&r.get<U>(wrapper+0x20)==bridge,"wrapper identity");
   require(derived(wrapper,0x79A0060),"not PyIEntity");
-  auto attrs=instance(wrapper);U host=item(attrs,"owner");require(host&&derived(host,0x796F3C0),"no direct combat owner");
+  auto attrs=instance(wrapper);U host=item(attrs,"owner");require(host&&derived(host,0x797F280),"no direct combat owner");
   U a=area(host),model=instanceItem(host,"model");require(model!=0,"no primary model");
   U stored=item(attrs,"instance");require(!stored||stored==model,"secondary model");
   require(instanceItem(model,"owner")==host&&instanceItem(model,"model")==wrapper,"primary model reverse association");
@@ -644,10 +644,10 @@ void selfTest(){
  struct Free{void* p;~Free(){VirtualFree(p,0,MEM_RELEASE);}}freeMemory{memory};
  U base=reinterpret_cast<U>(memory);
  auto put=[&]<class T>(size_t offset,T value){std::memcpy(static_cast<char*>(memory)+offset,&value,sizeof(value));};
- auto text=[&](size_t offset,const char* value){put(offset+8,base+0x7A16E10);put(offset+16,int64_t(std::strlen(value)));put(offset+32,uint32_t(0x64));std::memcpy(static_cast<char*>(memory)+offset+40,value,std::strlen(value)+1);};
+ auto text=[&](size_t offset,const char* value){put(offset+8,base+0x7A26B50);put(offset+16,int64_t(std::strlen(value)));put(offset+32,uint32_t(0x64));std::memcpy(static_cast<char*>(memory)+offset+40,value,std::strlen(value)+1);};
  text(0x1000,"owner");text(0x1100,"model");
  put(0x1018,U(42));put(0x1118,U(77));
- put(0x2008,base+0x7A19900);put(0x2010,int64_t(2));put(0x2020,base+0x3000);put(0x2028,U(0));
+ put(0x2008,base+0x7A29640);put(0x2010,int64_t(2));put(0x2020,base+0x3000);put(0x2028,U(0));
  put(0x3008,uint8_t(3));put(0x3009,uint8_t(3));put(0x300A,uint8_t(1));put(0x3018,int64_t(2));
  std::memset(static_cast<char*>(memory)+0x3020,0xff,8);put(0x3022,int8_t(0));put(0x3025,int8_t(1));
  put(0x3028,base+0x1000);put(0x3030,U(0x12340000));put(0x3038,base+0x1100);put(0x3040,U(0x56780000));
