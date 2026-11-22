@@ -1,0 +1,374 @@
+diff --git a/km_core/km_core.c b/km_core/km_core.c
+new file mode 100644
+index 0000000..5c1b4bc
+--- /dev/null
++++ b/km_core/km_core.c
+@@ -0,0 +1,368 @@
++/*
++ * km_core.c - minimal conventional WDM driver: three read-only queries.
++ *
++ * Scope (deliberately small):
++ *
++ *   GET_VERSION   driver version + ABI version
++ *   GET_STATE     initialization/health state, uptime, request counter
++ *   GET_CAPS      capability mask, maximum request size
++ *
++ * Out of scope, on purpose: no process handles, no address spaces, no
++ * sections, no system threads, no global buffers, no mapper. The driver
++ * exposes three fixed-size answers and nothing else.
++ *
++ * Loaded by the Service Control Manager (sc create / sc start). Every API used
++ * here is declared in the WDK headers; see KM-CORE-PROPOSAL.md.
++ *
++ * Threading: each request is independent and carries no state from one IRP to
++ * the next. The only mutable data is per-device (device extension) and is
++ * described next to its use.
++ */
++
++#include <ntifs.h>
++#include <wdmsec.h>      /* IoCreateDeviceSecure */
++
++#define KM_DEVICE_NAME  L"\\Device\\KmCore"
++#define KM_SYMLINK_NAME L"\\DosDevices\\KmCore"
++
++/* SYSTEM and Built-in Administrators only; the DACL is protected (P), so no
++ * inherited ACEs are added. */
++#define KM_DEVICE_SDDL  L"D:P(A;;GA;;;SY)(A;;GA;;;BA)"
++
++#define KM_ABI_VERSION      1u
++#define KM_DRIVER_VERSION   0x00010000u   /* major 1, minor 0 */
++#define KM_DRIVER_BUILD     1u
++
++/* KM_STATE.State */
++#define KM_STATE_INITIALIZING 0u
++#define KM_STATE_READY        1u
++#define KM_STATE_DEGRADED     2u
++
++/* KM_CAPS.CapabilityMask */
++#define KM_CAP_GET_VERSION  0x00000001u
++#define KM_CAP_GET_STATE    0x00000002u
++#define KM_CAP_GET_CAPS     0x00000004u
++#define KM_CAP_MASK         (KM_CAP_GET_VERSION | KM_CAP_GET_STATE | KM_CAP_GET_CAPS)
++
++/*
++ * IOCTLs. FILE_READ_DATA matches what the client requests on the handle; the
++ * device is read-only by construction, so no write access bit appears here.
++ */
++#define IOCTL_KM_GET_VERSION CTL_CODE(FILE_DEVICE_UNKNOWN, 0x800, METHOD_BUFFERED, \
++                                      FILE_READ_DATA)
++#define IOCTL_KM_GET_STATE   CTL_CODE(FILE_DEVICE_UNKNOWN, 0x801, METHOD_BUFFERED, \
++                                      FILE_READ_DATA)
++#define IOCTL_KM_GET_CAPS    CTL_CODE(FILE_DEVICE_UNKNOWN, 0x802, METHOD_BUFFERED, \
++                                      FILE_READ_DATA)
++
++/*
++ * ABI (v1). Every structure is exactly 0x10 bytes and contains no pointer, so
++ * a request cannot describe a buffer, an address or a length chosen by the
++ * caller. The C_ASSERTs below turn any layout drift into a build error.
++ *
++ *   KM_QUERY    input of every IOCTL
++ *   KM_VERSION  output of GET_VERSION
++ *   KM_STATE    output of GET_STATE
++ *   KM_CAPS     output of GET_CAPS
++ */
++typedef struct _KM_QUERY {
++    ULONG32 AbiVersion;      /* must be KM_ABI_VERSION                    */
++    ULONG32 StructSize;      /* sizeof(KM_QUERY)                         */
++    ULONG32 Command;         /* echo of the IOCTL code (defense in depth) */
++    ULONG32 Reserved;        /* must be 0; ignored for forward compat    */
++} KM_QUERY, *PKM_QUERY;
++
++typedef struct _KM_VERSION {
++    ULONG32 AbiVersion;
++    ULONG32 StructSize;
++    ULONG32 DriverVersion;
++    ULONG32 BuildNumber;
++} KM_VERSION, *PKM_VERSION;
++
++typedef struct _KM_STATE {
++    ULONG32 State;
++    ULONG32 UptimeSeconds;   /* since DriverEntry, monotonic source      */
++    ULONG64 RequestsServed;  /* all requests that reached the dispatch   */
++} KM_STATE, *PKM_STATE;
++
++typedef struct _KM_CAPS {
++    ULONG32 StructSize;
++    ULONG32 CapabilityMask;
++    ULONG32 MaxRequest;      /* 0: this driver exposes no data channel   */
++    ULONG32 Reserved;
++} KM_CAPS, *PKM_CAPS;
++
++C_ASSERT(sizeof(KM_QUERY)   == 0x10);
++C_ASSERT(sizeof(KM_VERSION) == 0x10);
++C_ASSERT(sizeof(KM_STATE)   == 0x10);
++C_ASSERT(sizeof(KM_CAPS)    == 0x10);
++
++C_ASSERT(FIELD_OFFSET(KM_QUERY,   Command)        == 0x08);
++C_ASSERT(FIELD_OFFSET(KM_STATE,   UptimeSeconds)  == 0x04);
++C_ASSERT(FIELD_OFFSET(KM_STATE,   RequestsServed) == 0x08);
++C_ASSERT(FIELD_OFFSET(KM_CAPS,    CapabilityMask) == 0x04);
++
++/*
++ * Per-device state. There is exactly one device (Exclusive = TRUE), and:
++ *
++ *   StartInterruptTime, State   written once in DriverEntry, before the device
++ *                               can be opened (DO_DEVICE_INITIALIZING is
++ *                               cleared last), then read-only. No lock needed;
++ *                               the ordering is the initialization itself.
++ *
++ *   RequestsServed              incremented by every dispatch with
++ *                               InterlockedIncrement64 and read with an atomic
++ *                               compare-exchange; aligned 64-bit, no tearing.
++ */
++typedef struct _KM_DEVICE_EXTENSION {
++    ULONG64      StartInterruptTime;
++    ULONG32      State;
++    ULONG32      Reserved;
++    volatile LONG64 RequestsServed;
++} KM_DEVICE_EXTENSION, *PKM_DEVICE_EXTENSION;
++
++/* Private device setup class GUID: lets an administrator override the default
++ * security through the class registry key without touching the driver. */
++static const GUID KM_DEVICE_CLASS_GUID =
++    { 0x4b7c1a10, 0x2f3d, 0x4c8e, { 0x9a, 0x51, 0x6d, 0x7b, 0x2e, 0x18, 0xc0, 0x44 } };
++
++/* ------------------------------------------------------------------ */
++
++/*
++ * Validates the fixed-size query header.
++ *
++ * The copy into a local structure keeps the request out of the buffer that is
++ * about to be overwritten by the answer, and avoids any assumption about the
++ * alignment of Irp->AssociatedIrp.SystemBuffer.
++ */
++static NTSTATUS
++KmValidateQuery(PVOID buffer, ULONG inLen, ULONG outLen,
++                ULONG ioctlCode, ULONG responseSize)
++{
++    KM_QUERY query;
++
++    /* Length first: an empty request must fail the same way regardless of
++     * whether the I/O manager allocated any buffer for it. */
++    if (inLen < sizeof(KM_QUERY))
++        return STATUS_BUFFER_TOO_SMALL;
++
++    if (buffer == NULL)
++        return STATUS_INVALID_PARAMETER;
++
++    if (inLen != sizeof(KM_QUERY))          /* fixed ABI: exact match */
++        return STATUS_INVALID_PARAMETER;
++
++    if (outLen < responseSize)
++        return STATUS_BUFFER_TOO_SMALL;
++
++    RtlCopyMemory(&query, buffer, sizeof(query));
++
++    if (query.AbiVersion != KM_ABI_VERSION)
++        return STATUS_REVISION_MISMATCH;
++
++    if (query.StructSize != sizeof(KM_QUERY))
++        return STATUS_INVALID_PARAMETER;
++
++    if (query.Command != ioctlCode)
++        return STATUS_INVALID_PARAMETER;
++
++    return STATUS_SUCCESS;
++}
++
++/* ------------------------------------------------------------------ */
++
++static NTSTATUS
++KmCreate(PDEVICE_OBJECT DeviceObject, PIRP Irp)
++{
++    PIO_STACK_LOCATION stack = IoGetCurrentIrpStackLocation(Irp);
++    NTSTATUS status = STATUS_SUCCESS;
++
++    UNREFERENCED_PARAMETER(DeviceObject);
++
++    /*
++     * The handle must carry the access right required by the IOCTLs. A NULL
++     * SecurityContext only happens for a kernel-initiated open, which is
++     * already trusted.
++     */
++    if (stack->Parameters.Create.SecurityContext != NULL &&
++        (stack->Parameters.Create.SecurityContext->DesiredAccess & FILE_READ_DATA) == 0) {
++        status = STATUS_ACCESS_DENIED;
++    }
++
++    Irp->IoStatus.Status = status;
++    Irp->IoStatus.Information = 0;
++    IoCompleteRequest(Irp, IO_NO_INCREMENT);
++
++    return status;
++}
++
++static NTSTATUS
++KmClose(PDEVICE_OBJECT DeviceObject, PIRP Irp)
++{
++    UNREFERENCED_PARAMETER(DeviceObject);
++
++    Irp->IoStatus.Status = STATUS_SUCCESS;
++    Irp->IoStatus.Information = 0;
++    IoCompleteRequest(Irp, IO_NO_INCREMENT);
++
++    return STATUS_SUCCESS;
++}
++
++static NTSTATUS
++KmDeviceControl(PDEVICE_OBJECT DeviceObject, PIRP Irp)
++{
++    PIO_STACK_LOCATION    stack  = IoGetCurrentIrpStackLocation(Irp);
++    PKM_DEVICE_EXTENSION  ext    = (PKM_DEVICE_EXTENSION)DeviceObject->DeviceExtension;
++    PVOID                 buffer = Irp->AssociatedIrp.SystemBuffer;
++    ULONG                 inLen  = stack->Parameters.DeviceIoControl.InputBufferLength;
++    ULONG                 outLen = stack->Parameters.DeviceIoControl.OutputBufferLength;
++    ULONG                 code   = stack->Parameters.DeviceIoControl.IoControlCode;
++    ULONG                 responseSize = 0;
++    ULONG                 information  = 0;
++    NTSTATUS              status = STATUS_INVALID_DEVICE_REQUEST;
++
++    /*
++     * The counter is the only shared mutable value. It is informational: a
++     * request that races with the increment sees the value from just before
++     * or just after it, never a half-written 64-bit value (aligned, atomic,
++     * Interlocked).
++     */
++    InterlockedIncrement64(&ext->RequestsServed);
++
++    switch (code) {
++    case IOCTL_KM_GET_VERSION: responseSize = (ULONG)sizeof(KM_VERSION); break;
++    case IOCTL_KM_GET_STATE:   responseSize = (ULONG)sizeof(KM_STATE);   break;
++    case IOCTL_KM_GET_CAPS:    responseSize = (ULONG)sizeof(KM_CAPS);    break;
++    default:
++        goto complete;                 /* status already INVALID_DEVICE_REQUEST */
++    }
++
++    status = KmValidateQuery(buffer, inLen, outLen, code, responseSize);
++    if (!NT_SUCCESS(status))
++        goto complete;
++
++    switch (code) {
++    case IOCTL_KM_GET_VERSION: {
++        PKM_VERSION out = (PKM_VERSION)buffer;
++
++        out->AbiVersion    = KM_ABI_VERSION;
++        out->StructSize    = (ULONG32)sizeof(KM_VERSION);
++        out->DriverVersion = KM_DRIVER_VERSION;
++        out->BuildNumber   = KM_DRIVER_BUILD;
++        break;
++    }
++
++    case IOCTL_KM_GET_STATE: {
++        PKM_STATE out = (PKM_STATE)buffer;
++        ULONG64   now = KeQueryInterruptTime();
++        ULONG64   elapsed = (now >= ext->StartInterruptTime)
++                                ? (now - ext->StartInterruptTime)
++                                : 0;
++
++        out->State          = ext->State;
++        out->UptimeSeconds  = (ULONG32)(elapsed / 10000000ULL);   /* 100 ns units */
++        out->RequestsServed = (ULONG64)InterlockedCompareExchange64(&ext->RequestsServed, 0, 0);
++        break;
++    }
++
++    case IOCTL_KM_GET_CAPS: {
++        PKM_CAPS out = (PKM_CAPS)buffer;
++
++        out->StructSize     = (ULONG32)sizeof(KM_CAPS);
++        out->CapabilityMask = KM_CAP_MASK;
++        out->MaxRequest     = 0;        /* no data channel in ABI v1 */
++        out->Reserved       = 0;
++        break;
++    }
++    }
++
++    information = responseSize;
++    status = STATUS_SUCCESS;
++
++complete:
++    Irp->IoStatus.Status = status;
++    Irp->IoStatus.Information = information;
++    IoCompleteRequest(Irp, IO_NO_INCREMENT);
++
++    return status;
++}
++
++/* ------------------------------------------------------------------ */
++
++static VOID
++KmUnload(PDRIVER_OBJECT DriverObject)
++{
++    UNICODE_STRING linkName;
++
++    /*
++     * Remove the link first so no new open can find the device, then delete
++     * the device. The SCM only unloads when no handle is open, so there is no
++     * request in flight here.
++     */
++    RtlInitUnicodeString(&linkName, KM_SYMLINK_NAME);
++    IoDeleteSymbolicLink(&linkName);
++
++    if (DriverObject->DeviceObject != NULL)
++        IoDeleteDevice(DriverObject->DeviceObject);
++}
++
++/* ------------------------------------------------------------------ */
++
++NTSTATUS
++DriverEntry(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath)
++{
++    UNICODE_STRING      deviceName;
++    UNICODE_STRING      linkName;
++    UNICODE_STRING      sddl;
++    PDEVICE_OBJECT      deviceObject = NULL;
++    PKM_DEVICE_EXTENSION ext;
++    NTSTATUS            status;
++
++    UNREFERENCED_PARAMETER(RegistryPath);
++
++    RtlInitUnicodeString(&deviceName, KM_DEVICE_NAME);
++    RtlInitUnicodeString(&sddl, KM_DEVICE_SDDL);
++
++    /*
++     * IoCreateDeviceSecure is the documented way to create a legacy (non-PnP)
++     * device object with an explicit DACL. The device starts with
++     * DO_DEVICE_INITIALIZING set, so it cannot be opened until the flag is
++     * cleared at the very end of this routine.
++     */
++    status = IoCreateDeviceSecure(DriverObject,
++                                  sizeof(KM_DEVICE_EXTENSION),
++                                  &deviceName,
++                                  FILE_DEVICE_UNKNOWN,
++                                  FILE_DEVICE_SECURE_OPEN,
++                                  TRUE,                 /* Exclusive */
++                                  &sddl,
++                                  &KM_DEVICE_CLASS_GUID,
++                                  &deviceObject);
++    if (!NT_SUCCESS(status))
++        return status;
++
++    /* Write-once state, still unreachable from user mode (flag is set). */
++    ext = (PKM_DEVICE_EXTENSION)deviceObject->DeviceExtension;
++    ext->StartInterruptTime = KeQueryInterruptTime();
++    ext->State              = KM_STATE_READY;
++    ext->Reserved           = 0;
++    ext->RequestsServed     = 0;
++
++    RtlInitUnicodeString(&linkName, KM_SYMLINK_NAME);
++    status = IoCreateSymbolicLink(&linkName, &deviceName);
++    if (!NT_SUCCESS(status)) {
++        IoDeleteDevice(deviceObject);          /* releases the extension */
++        return status;
++    }
++
++    DriverObject->MajorFunction[IRP_MJ_CREATE]         = KmCreate;
++    DriverObject->MajorFunction[IRP_MJ_CLEANUP]        = KmClose;
++    DriverObject->MajorFunction[IRP_MJ_CLOSE]          = KmClose;
++    DriverObject->MajorFunction[IRP_MJ_DEVICE_CONTROL] = KmDeviceControl;
++    DriverObject->DriverUnload                         = KmUnload;
++
++    /* Last step: the device becomes openable only now. */
++    deviceObject->Flags &= ~DO_DEVICE_INITIALIZING;
++
++    return STATUS_SUCCESS;
++}

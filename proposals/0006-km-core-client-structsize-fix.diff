@@ -1,0 +1,13 @@
+diff --git a/tools/km_core_client.py b/tools/km_core_client.py
+index 355a264..4836cc0 100644
+--- a/tools/km_core_client.py
++++ b/tools/km_core_client.py
+@@ -158,7 +158,7 @@ class KmCore:
+         expected = ctypes.sizeof(response)
+         if returned.value != expected:
+             raise KmCoreError(f"short reply: {returned.value} of {expected} bytes")
+-        if response.StructSize != expected:
++        if hasattr(response, "StructSize") and response.StructSize != expected:
+             raise KmCoreError(f"reply reports struct size {response.StructSize:#x}, "
+                               f"expected {expected:#x}")
+         return response
