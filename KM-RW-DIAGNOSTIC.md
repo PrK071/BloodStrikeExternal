@@ -1,137 +1,224 @@
 # Diagnóstico — `km_rw.sys` e os BSODs
 
-Relatório de engenharia: análise estática do driver, causa provável dos 4 BSODs,
-e o que falta validar num ambiente isolado. Nada aqui foi executado na máquina
-principal além de **leitura** (dumpbin, event log).
+Análise estática aprofundada. Nenhum carregamento, mapper, BYOVD ou alteração de
+binário/código foi executado. Apenas leitura (`dumpbin`, Event Viewer, fontes).
+
+## 0. Escopo e artefatos analisados (hashes SHA-256)
+
+| Arquivo | SHA-256 |
+|---|---|
+| `km_rw.sys` | `83F53EA9B6F2B00F1D210D507022BFD35D6EDF9FF6481A95FD16E1DCDF438A5B` |
+| `km_rw.c`   | `651FC5106E1B7D3FB351CADAE4321C0343A6E224D93281C3BA0911DC727460A2` |
+| `km_rw.obj` | `4E2402FA9686164263186CD523A390DDF59396DF9FC0EA8190493CD3B49CDFB6` |
+| `build.bat` | `E66BA20AF321841126F0D587EA51CBF17F3F60E7EDB928F50FA5C01A46C86430` |
+
+Backup: `C:\Users\luiz\km_cheat_backup\20261122_172616\`.
+`.sys` compilado em `Sat Nov 21 14:05:03 2026` (time date stamp `0x6B01CF3F`).
 
 ---
 
-## 1. Inventário — o que foi compilado, instalado e validado
+## 1. Resumo executivo
 
-### Compilado
-| Artefato | Caminho | Estado |
-|---|---|---|
-| `km_rw.sys` (WDM, 6 KB) | `C:\Users\luiz\km_cheat\km_rw\km_rw.sys` | compila; **nunca carregou com sucesso** |
-| `syscall.dll` (leitor direct-syscall) | `C:\Users\luiz\km_cheat\syscall\syscall.dll` | compila; `export` ok; usado pelo cheat Python |
-| `kdu.exe` + `drv64.dll` (loader) | `C:\Users\luiz\km_cheat\kdu\Source\...\Release\` | **compila** (toolset v143, paths UCRT injetados) |
-
-Backup do estado: `C:\Users\luiz\km_cheat_backup\20261122_172616\` (km_rw, syscall, calibration.json, commit do repo, sha256 do `.sys`).
-
-### Instalado (toolchain)
-- VS Build Tools 2022 + MSVC 14.44.35207 (`E:\VSBuildTools`)
-- Windows SDK + WDK 10.0.22621 (`E:\Windows Kits\10`)
-- Python 3.12.10 (`AppData\Local\Programs\Python\Python312`) + `pefile` + `capstone`
-
-### Validado
-- **Cheat Python (user-mode/syscall): funciona** — `capture` leu 2 atores com
-  posição decodificada; `watch` fez 30 frames, câmera fresh, ESP (3 draw commands).
-- **Offsets da build nova (24c1ba6e): re-derivados e validados ao vivo** (globals,
-  type descriptors, vtables, IEntity).
-- **`km_rw.sys` NUNCA foi validado**: o caminho de manual mapping (kdmapper)
-  resultou em BSOD; o caminho convencional (test-signing) falhou no host com 577.
+- O `km_rw.sys` é um driver WDM x64, **imagem position-independent** (sem `.reloc`
+  necessário), com `DYNAMIC_BASE` ligado, 15 símbolos de `ntoskrnl.exe` — 14 funções
+  e **1 de dado** (`PsProcessType`). Compilado com MSVC 14.44 (v143) + WDK 10.0.22621.
+- Os BSODs foram **4× `0x0000001E` (KMODE_EXCEPTION_NOT_HANDLED) com `0xC0000005`
+  (access violation) + 1× `0x0000001A` (MEMORY_MANAGEMENT)** — crashes de kernel com
+  violação de acesso e corrupção de memória.
+- **A ausência de `.reloc` NÃO é, por si só, a causa.** A imagem é position-independent,
+  o que é válido tanto para carga convencional quanto para mapeamento. Trocar essa
+  conclusão pelo contrário seria erro de análise.
+- A causa provável mais consistente com a evidência é a **interação do runtime do
+  driver (mapeamento de seção no processo System + thread de sistema) com o caminho
+  de manual mapping** — não a estrutura PE, nem os imports, nem a compilação.
+  Confiança: **média** na classe; **baixa/média** no ponto exato (falta dump).
 
 ---
 
-## 2. Análise estática do `km_rw.sys`
+## 2. Estrutura PE (`dumpbin /headers`)
 
-### Imports (dumpbin /imports)
-```
-RtlInitUnicodeString      KeDelayExecutionThread     ExAllocatePoolWithTag
-ExFreePoolWithTag         PsCreateSystemThread       IoGetCurrentProcess
-ObfDereferenceObject      ZwClose                    ZwCreateSection
-ZwMapViewOfSection        PsLookupProcessByProcessId ObOpenObjectByPointer
-MmCopyVirtualMemory       PsGetProcessPeb            PsProcessType  <-- import de DADO
-```
-`PsProcessType` é um **import de dado** (não de função). Loaders de manual mapping
-resolvem a IAT inteira; se por qualquer motivo esse símbolo de dado não for
-resolvido, `*PsProcessType` vira lixo e o `ObOpenObjectByPointer` desreferencia
-ponteiro inválido.
+| Campo | Valor |
+|---|---|
+| Machine | `0x8664` (x64), 5 seções |
+| ImageBase | `0x140000000` |
+| AddressOfEntryPoint | `0x1000` (RVA) → `0x140001000` |
+| SizeOfImage | `0x6000` |
+| SectionAlignment / FileAlignment | `0x1000` / `0x200` |
+| Subsystem | `1` (Native) |
+| **DllCharacteristics** | `0x1E0` |
+| **Base Relocation Directory** | **RVA `0`, size `0`** (sem `.reloc`) |
+| Checksum | `0x0000C4E6` (válido, não-zero) |
 
-### Seções (dumpbin /headers)
-```
-.text .rdata .data .pdata INIT     — NENHUMA seção .reloc
-Base Relocation Directory: 0 [0]
-entry point: 0x140001000
-```
-**Não há `.reloc`**: o linker gerou imagem **posição-dependente** (`/FIXED`
-implícito do `/DRIVER`). Todo endereço absoluto (tabela de exceção `.pdata`,
-eventuais ponteiros em `.rdata`/`.data`) assume base `0x140000000`.
+`DllCharacteristics = 0x1E0` = `FORCE_INTEGRITY(0x80)` | `DYNAMIC_BASE(0x40)` |
+`NX_COMPAT(0x100)` | `HIGH_ENTROPY_VA(0x20)`.
 
-### Fluxo do `DriverEntry` (fonte `km_rw.c`)
-1. `ZwCreateSection` — cria a seção nomeada `\BaseNamedObjects\KmRwShared`.
-2. `PsLookupProcessByProcessId(4)` + `ObOpenObjectByPointer(*PsProcessType)` —
-   abre handle do processo System.
-3. `ZwMapViewOfSection(section, systemHandle, ...)` — mapeia a seção no espaço de kernel.
-4. `RtlZeroMemory(view, 4 MB)`.
-5. `PsCreateSystemThread(KmWorker)` — thread que faz polling de comandos.
-6. Retorna `STATUS_SUCCESS`.
+Seções:
 
----
-
-## 3. Os BSODs — evidência disponível
-
-Os **dumps foram apagados** (`C:\Windows\Minidump` vazio, `MEMORY.DMP` ausente) —
-não há como extrair stack trace. O que resta é o log de eventos:
-
-| # | BugCheck | Arg1 (código) | Arg2 (endereço) | Interpretação |
+| Seção | VA | Virtual size | Permissões | Observação |
 |---|---|---|---|---|
-| 1 | `0x0000001E` | `0xC0000005` | `0xFFFF8E86F23DC950` | KMODE_EXCEPTION_NOT_HANDLED — access violation |
-| 2 | `0x0000001E` | `0xC0000005` | `0xFFFFD80FE3FE9950` | access violation |
-| 3 | `0x0000001E` | `0xC0000005` | `0xFFFFC70CF8DD31E0` | access violation |
-| 4 | `0x0000001E` | `0xC0000005` | `0xFFFF9F8A30FD91E0` | access violation |
-| 5 | `0x0000001A` | `0x3F` | `0x0EA1DB` | MEMORY_MANAGEMENT |
+| `.text` | `0x1000` | `0xA00` | R-X | código |
+| `.rdata` | `0x2000` | `0x3C0` | R-- | IAT + strings |
+| `.data` | `0x3000` | `0x18` | RW- | globais `g_shared`, `g_data` |
+| `.pdata` | `0x4000` | `0x6C` | R-- | unwind (RVA-based) |
+| `INIT` | `0x5000` | `0x1FA` | RW- discardable | `DriverEntry` |
 
-### Causa provável (grau de confiança: alto para a classe, médio para o ponto exato)
-`0x1E + 0xC0000005` é **violação de acesso em Ring 0**. O driver foi carregado por
-**manual mapping** (kdmapper) num endereço **diferente de `0x140000000`**, e a
-imagem **não tem `.reloc`**. Isso deixa referências absolutas (sobretudo `.pdata`
-de unwinding, e possivelmente dados/`PsProcessType`) apontando para a base antiga.
-O `0x1A` (MEMORY_MANAGEMENT) reforça corrupção de memória (seção/`.data`).
+### 2.1 O que a ausência de `.reloc` significa (e o que NÃO significa)
 
-Em outras palavras: **a classe do crash é "ponteiro/endereço inválido em kernel",
-consistente com imagem posição-dependente mapeada fora da base + import de dado**.
-Não há evidência, nos dados disponíveis, de que seja bug de lógica do driver em
-carga normal — mas isso **precisa ser provado em carga convencional** (o que ainda
-não foi feito).
+**Significa:** o linker não encontrou **nenhuma** referência que precise de base
+relocation. O código x64 usa **RIP-relative** para globais/IAT; `.pdata` usa RVAs
+(não VAs absolutas); a IAT é preenchida pelo loader. Resultado: imagem
+**auto-suficiente em qualquer base** — por isso `DYNAMIC_BASE` está ligado e mesmo
+assim não há `.reloc` (se houvesse relocs, haveria seção). É um **estado válido**, não
+um defeito.
 
-### O que NÃO foi feito (de propósito)
-- **Não** alterei `PsProcessType → ZwOpenProcess`. A análise acima **não demonstra**
-  necessidade dessa troca; ela apenas levanta a hipótese. Alterar sem prova seria
-  chute.
-- **Não** executei kdu/mapping nesta máquina.
-- **Não** desativei nenhuma proteção.
+**Consequências reais para o carregamento:**
+- **Carga convencional:** o loader pode carregar na base preferida `0x140000000`.
+  Como não há `.reloc`, ele **não consegue realocar** — se `0x140000000` estiver
+  ocupada, a carga **falha** com `STATUS_CONFLICTING_ADDRESSES` (erro limpo, não BSOD).
+- **Manual mapping:** sem relocs a aplicar, o mapper pode mapear em qualquer base; as
+  referências RIP-relative continuam corretas.
 
----
-
-## 4. Hipótese testável (a validar na VM)
-
-Se o crash vem do **mapeamento manual** (`.reloc` ausente + base diferente +
-import de dado), então **carregar o mesmo `.sys` pelo caminho convencional**
-(test-signing, `sc start`, na base preferida `0x140000000`, com IAT resolvida pelo
-OS) **não deve reproduzir o `0x1E`**.
-
-Teste correto e não destrutivo (na VM, não no host):
-1. VM Windows limpa + snapshot.
-2. Ativar test-signing **na VM** (é descartável) e assinar o `.sys` com cert de teste.
-3. `sc create` + `sc start` do `km_rw.sys` **sem** mapeamento.
-4. Se subir sem BSOD → confirma que o problema era o mapeamento, não o driver.
-5. Se der BSOD mesmo assim → aí é bug do driver; investigar com WinDbg (dump já configurado).
+**O que NÃO pode ser concluído:**
+- ❌ "o BSOD foi porque faltou `.reloc`". A imagem é position-independent; a ausência
+  é coerente. Nada na evidência liga a ausência de `.reloc` ao `0x1E`/`0x1A`.
+- ❌ "o driver está quebrado por não ter `.reloc`". Não está; para a base preferida
+  (carga normal) ele é carregável.
+- ⚠️ A única ressalva legítima: sem `.reloc`, **carga convencional em base diferente
+  falha** (não corrompe). Isso é comportamento esperado, não bug.
 
 ---
 
-## 5. Bloqueio atual — precisa da tua autorização
+## 3. Inventário de imports (`dumpbin /imports`)
 
-O próximo passo exige **privilégio de administrador** (instalar VirtualBox; depois,
-rodar o driver dentro da VM). Minha sessão está **sem elevação** agora.
+Todos de **`ntoskrnl.exe`** (nenhuma outra dependência de DLL; sem libs de terceiros).
 
-Pelo teu critério ("se exigir alteração de segurança ou privilégio, pare e justifique"):
+**Funções (14):**
+`RtlInitUnicodeString`, `KeDelayExecutionThread`, `ExAllocatePoolWithTag`,
+`ExFreePoolWithTag`, `PsCreateSystemThread`, `IoGetCurrentProcess`,
+`ObfDereferenceObject`, `ZwClose`, `ZwCreateSection`, `ZwMapViewOfSection`,
+`PsLookupProcessByProcessId`, `ObOpenObjectByPointer`, `MmCopyVirtualMemory`,
+`PsGetProcessPeb`.
 
-- **Justificativa:** instalar o VirtualBox e criar a VM é o único jeito de testar o
-  driver **sem arriscar o Windows principal** (os 4 BSODs anteriores foram no host).
-  É uma mudança de software, não de política de segurança do Windows; não desativo
-  nada do host. O test-signing seria ativado **somente dentro da VM descartável**.
-- **O que preciso:** (a) relançar o OpenCode como administrador; (b) um **ISO do
-  Windows** (ou autorização pra eu baixar da Microsoft, ~5 GB).
+**Dado (1):** `PsProcessType`.
 
-Sem esses dois itens, paro aqui — e o relatório acima é o que dá pra afirmar com
-evidência hoje.
+**Resolvidos pelo kernel:** todos acima são exports do `ntoskrnl` (funções e o dado).
+
+**Dependências adicionais:** nenhuma. Sem CRT, sem `Wdf`, sem outro `.sys`.
+
+### 3.1 Análise de `PsProcessType`
+
+- É um **export de dado** (`POBJECT_TYPE`/`POBJECT_TYPE*`, conforme a versão do header),
+  consumido em `ObOpenObjectByPointer(..., *PsProcessType, ...)`.
+- O manual mapping do kdmapper resolve imports pelo **export table**
+  (`portable_executable.cpp` lê `IMAGE_DIRECTORY_ENTRY_IMPORT`;
+  `intel_driver.cpp:GetKernelModuleExport` percorre `AddressOfNames`/`AddressOfFunctions`).
+  O export table cobre funções **e** dados — logo `PsProcessType` **tende a ser
+  resolvido** nesse caminho. **Não há evidência, no código ou no log, de resolução
+  falha.**
+- **Como uma referência inválida explicaria um `0xC0000005`:** se o slot de IAT de
+  `PsProcessType` ficasse `0`/lixo (loader que só resolve *funções*, ex.
+  `MmGetSystemRoutineAddress`), `ObOpenObjectByPointer` desreferenciaria um
+  `ObjectType` inválido → violação de acesso em Ring 0 → `0x1E`/`0xC0000005`. É um
+  mecanismo **plausível**, porém **não confirmado** aqui (o kdmapper não usa esse
+  caminho, e não há dump para provar onde o acesso falhou).
+
+**Decisão:** **não** substituo `PsProcessType` por `ZwOpenProcess`. A análise não
+demonstra que essa troca seja necessária — além de `ObOpenObjectByPointer` **evitar**
+o access-check que o `ZwOpenProcess` faria no processo System. Trocar seria especulação
+e possivelmente regressão.
+
+---
+
+## 4. Investigação dos BSODs
+
+### 4.1 Fatos confirmados (do Event Log)
+- Janela 13:40–14:02 de 21/11/2026: **5 ciclos** de `Kernel-Boot` seguidos de
+  `Kernel-Power 41` (crítico) e `WER 1001` (erro).
+- Stop codes (WER 1001):
+  - **4× `0x0000001E`** com Arg1 `0xFFFFFFFFC0000005` (STATUS_ACCESS_VIOLATION);
+    Arg2 (endereço) variável entre `0xFFFF8E86F23DC950`, `0xFFFFD80FE3FE9950`,
+    `0xFFFFC70CF8DD31E0`, `0xFFFF9F8A30FD91E0`.
+  - **1× `0x0000001A`** (`0x3F`, `0xEA1DB`, `0x27F7AE28`, `0x1AABD40A`) —
+    MEMORY_MANAGEMENT.
+- **Dumps ausentes:** `C:\Windows\Minidump` vazio e `C:\Windows\MEMORY.DMP` inexistente
+  (embora citados nos eventos). **Sem stack trace disponível.** WinDbg não instalado.
+
+### 4.2 Hipóteses plausíveis (não confirmadas)
+1. **Interação runtime × mapper:** `DriverEntry` mapeia uma seção nomeada no processo
+   System e cria uma thread de sistema; sob o contexto do mapper isso pode produzir
+   corrupção/`0x1A`, e a thread pode tocar memória inválida (`0x1E`).
+2. **Bug no shellcode/mapeamento do kdmapper** (o `0x1A` — MEMORY_MANAGEMENT — sugere
+   corrupção que pode estar no mapeador, não no driver).
+3. **Import de dado não resolvido** (`PsProcessType`) → `0xC0000005` — mecanicamente
+   possível, sem evidência.
+4. **`RtlZeroMemory(view, 4 MB)`** se a view mapeada for menor que 4 MB → escrita além
+   da view → violação de acesso.
+
+### 4.3 Conclusões que dependem de dump (indisponível)
+- A instrução/endereço exato que falhou, o módulo responsável no frame, e a stack.
+- Se o crash ocorreu dentro do código do driver (`.text`) ou no shellcode do mapper.
+- A natureza exata da corrupção no `0x1A` (pool vs tabela de páginas).
+
+**Não atribuo responsabilidade definitiva ao driver nem ao mapper.** A evidência atual
+só permite afirmar a **classe** (violação de acesso em kernel + corrupção de memória),
+não o **ponto**.
+
+---
+
+## 5. Configuração de compilação
+
+| Item | Valor | Adequação |
+|---|---|---|
+| Toolset | MSVC 14.44.35207 → forçado `v143` (projeto original `v145`, Taigei `v142`) | para driver kernel, forçar v143 via `/p:PlatformToolset=v143` é aceitável; o WDK 22621 assina esse toolset |
+| WDK/SDK | 10.0.22621 (Include/Lib/km x64) | ok para WDM x64 |
+| Arquitetura | x64 (`machine 0x8664`) | ok |
+| Configuração | Release (`/O2 /GS-`) | ok |
+| Linker | `/SUBSYSTEM:NATIVE /DRIVER /INTEGRITYCHECK /DYNAMICBASE /ENTRY:DriverEntry` | **apropriado** para driver carregado pelo mecanismo convencional |
+| Relocations | `DYNAMICBASE` ligado, **sem `.reloc`** (zero relocs reais) | coerente (imagem position-independent); não é omissão |
+| Libs | `ntoskrnl.lib`, `ntstrsafe.lib` | ok |
+
+**Veredito da compilação:** a configuração é **adequada** para um driver de kernel
+carregado pelo loader convencional. O `DYNAMIC_BASE` + `INTEGRITYCHECK` + `NATIVE`
+estão corretos. Não há evidência de `Machine`/`Subsystem`/CRT/`/FIXED` conflitante.
+Logo, **a compilação não é a causa provável.**
+
+---
+
+## 6. Causa provável (com confiança)
+
+| Hipótese | Confiança | Justificativa |
+|---|---|---|
+| Estrutura PE quebrada (`.reloc`) | **baixa** | imagem position-independent; `.reloc` ausente é válido |
+| Imports (incl. `PsProcessType`) | **baixa/média** | kdmapper resolve via export table (funções e dados); sem evidência de falha |
+| Compilação | **baixa** | flags corretas para driver convencional |
+| **Runtime do driver × manual mapping (seção System + thread) ou shellcode do mapper** | **média** | `0x1E`+`0xC0000005` (ponteiro inválido em Ring 0) e `0x1A` (corrupção) são consistentes; ponto exato não provado |
+
+**Conclusão principal:** o problema **não está** isolado na estrutura PE, nos imports,
+nem na compilação. A causa mais provável é o **contexto de execução do mapeamento
+manual** ou o **desenho de runtime** do driver sob esse contexto. Isso é o que precisa
+ser separado no teste isolado.
+
+---
+
+## 7. Informações ainda necessárias para confirmar
+
+1. **Dump do crash** (`MEMORY.DMP`/`Minidump`) → `!analyze -v` no WinDbg: stop code,
+   módulo, stack, instrução.
+2. **Carga convencional (test-signing) do MESMO `.sys`** numa VM: reproduz `0x1E`?
+   - Se **não** reproduz → confirma que era o caminho de mapeamento, não o driver.
+   - Se **reproduz** → é bug de runtime do driver (aí sim analisar seção/thread).
+3. **Mapeamento com um driver trivial known-good** (ex. DummyDrv do KDU) para validar
+   o loader isoladamente.
+
+---
+
+## 8. Próximas etapas seguras (sem tocar o Windows principal, sem admin ainda)
+
+1. Sem instalar nada: revisar `DriverEntry` para o caso "view menor que 4 MB"
+   (`RtlZeroMemory` com `KM_SHARED_SIZE` fixo) — é o ponto de violação mais barato de
+   eliminar, mas **só com justificativa técnica**, não especulativamente.
+2. Preparar (quando autorizado) VM limpa + snapshot + WinDbg e repetir a carga
+   **convencional** de um driver de exemplo **assinado** primeiro.
+3. Só então decidir sobre o `km_rw.sys` no ambiente isolado.
+
+> Nada foi alterado em código/binário nesta fase; backup preservado; hashes acima.
