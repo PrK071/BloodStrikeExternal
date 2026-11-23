@@ -1,0 +1,163 @@
+diff --git a/ExternalCore/km_memory.py b/ExternalCore/km_memory.py
+index 8dec7a1..17d82a5 100644
+--- a/ExternalCore/km_memory.py
++++ b/ExternalCore/km_memory.py
+@@ -1,13 +1,19 @@
+ # Python | ExternalCore/km_memory.py | Python 3.12+ x64 / Windows
+-# Kernel read/write through the manually-mapped km_rw driver.
++# Kernel read/write through the km_rw driver (shared section transport).
+ #
+-# The driver is loaded by kdmapper (not the SCM), so there is no device and no
+-# IOCTL. Communication happens through a named shared section
+-# (\BaseNamedObjects\KmRwShared) that the driver created and a worker thread
+-# polls. Same public interface as win32_memory.WindowsProcessMemory:
++# The driver maps a named section into SYSTEM address space and polls it from a
++# system thread. There is no device and no IOCTL. Same public interface as
++# win32_memory.WindowsProcessMemory:
+ #
+ #   with KernelProcessMemory(pid) as reader:
+ #       reader.read(addr, size) / reader.write(addr, data) / reader.image_path
++#
++# Protocol (see km_rw.c): the client publishes Pid/Address/Size and then
++# Command; the kernel atomically latches Command, processes it, publishes
++# ErrorCode and bumps Completion. The client waits for Completion to move.
++# User mode never writes Completion, and never writes a "busy" status, so a
++# command cannot be lost between the kernel finishing one request and clearing
++# the latch.
+ import ctypes
+ from ctypes import wintypes
+ import os
+@@ -22,19 +28,23 @@ from .win32_memory import find_module, ProcessModule  # noqa: F401
+ SECTION_NAME = "\\BaseNamedObjects\\KmRwShared"
+ SHARED_SIZE = 0x400000          # 4 MB, matches the driver
+ DATA_OFFSET = 0x400             # data area begins 1 KB in, matches the driver
++DATA_CAPACITY = SHARED_SIZE - DATA_OFFSET   # largest single transfer
+ 
+ CMD_READ = 1
+ CMD_WRITE = 2
+ CMD_IMAGE_PATH = 3
+ 
+-STATUS_BUSY = 0
+-STATUS_DONE = 1
+-STATUS_ERROR = 2
++# Top of user space on x64 (47-bit). Must match KM_MAX_USER_ADDRESS in km_rw.c.
++MAX_USER_ADDRESS = 0x00007FFFFFFF0000
++
++# STATUS_INVALID_BUFFER_SIZE (0xC0000206), as a signed value (ntdll returns
++# NTSTATUS through a `long`). Note: 0xC0000023 is STATUS_BUFFER_TOO_SMALL.
++STATUS_INVALID_BUFFER_SIZE = 0xC0000206 - (1 << 32)
+ 
+ SECTION_MAP_READ = 0x0004
+ SECTION_MAP_WRITE = 0x0002
+ OBJ_CASE_INSENSITIVE = 0x40
+-VIEW_SHARE = 2
++VIEW_UNMAP = 2                  # a.k.a. ViewUnmap (this is NOT "ViewShare")
+ PAGE_READWRITE = 0x04
+ 
+ 
+@@ -55,13 +65,24 @@ class _OBJECT_ATTRIBUTES(ctypes.Structure):
+ 
+ class KM_SHARED(ctypes.Structure):
+     _fields_ = [("Command", ctypes.c_long),
+-                ("Status", ctypes.c_long),
++                ("Completion", ctypes.c_long),
+                 ("ErrorCode", ctypes.c_long),
++                ("Reserved", ctypes.c_long),
+                 ("Pid", ctypes.c_uint64),
+                 ("Address", ctypes.c_uint64),
+                 ("Size", ctypes.c_uint64)]
+ 
+ 
++# ABI lock, mirroring the C_ASSERTs in km_rw.c: a layout drift must fail here,
++# in user mode, instead of corrupting a request in kernel mode.
++assert ctypes.sizeof(KM_SHARED) == 0x28, "KM_SHARED must match km_rw.c"
++assert KM_SHARED.Completion.offset == 0x04
++assert KM_SHARED.ErrorCode.offset == 0x08
++assert KM_SHARED.Pid.offset == 0x10
++assert KM_SHARED.Address.offset == 0x18
++assert KM_SHARED.Size.offset == 0x20
++
++
+ def _ntdll():
+     ntdll = ctypes.WinDLL("ntdll", use_last_error=True)
+     ntdll.NtOpenSection.restype = ctypes.c_long
+@@ -115,17 +136,27 @@ class KernelProcessMemory:
+         st = self._ntdll.NtMapViewOfSection(self._section, self._current_process,
+                                             ctypes.byref(self._view), 0, SHARED_SIZE,
+                                             None, ctypes.byref(view_size),
+-                                            VIEW_SHARE, 0, PAGE_READWRITE)
++                                            VIEW_UNMAP, 0, PAGE_READWRITE)
+         if st != 0 or not self._view.value:
+             raise MemoryReadError(st, f"failed to map shared section (NtMapViewOfSection {st:#x})")
+ 
+         self._shared = ctypes.cast(self._view, ctypes.POINTER(KM_SHARED))
+         self._data = ctypes.cast(self._view.value + DATA_OFFSET, ctypes.c_void_p)
+         self.dictionary_key_hashes = {}
++        self.max_transfer = DATA_CAPACITY
+ 
+     # -- request plumbing -------------------------------------------------
+ 
+     def _run(self, command, address, data, size):
++        if command in (CMD_READ, CMD_WRITE):
++            if not 0 < size <= DATA_CAPACITY:
++                raise MemoryReadError(STATUS_INVALID_BUFFER_SIZE,
++                                      f"request of {size} bytes exceeds the driver "
++                                      f"buffer ({DATA_CAPACITY} bytes)")
++            if not 0 < address < MAX_USER_ADDRESS:
++                raise ValueError("address outside user space")
++            if address + size > MAX_USER_ADDRESS:
++                raise ValueError("range crosses the user/kernel boundary")
+         with self._lock:
+             sh = self._shared.contents
+             sh.Pid = self.pid
+@@ -133,15 +164,18 @@ class KernelProcessMemory:
+             sh.Size = size
+             if command == CMD_WRITE and data:
+                 ctypes.memmove(self._data, data, size)
+-            sh.Status = STATUS_BUSY
+-            sh.Command = command
++            # Completion is kernel-owned and monotonic. Read it before
++            # publishing so no answer from a previous request can be mistaken
++            # for this one, then wait for the kernel to move it.
++            seq = self._shared.contents.Completion
++            self._shared.contents.Command = command
+             deadline = time.perf_counter() + 5.0
+-            while self._shared.contents.Status == STATUS_BUSY:
++            while self._shared.contents.Completion == seq:
+                 if time.perf_counter() > deadline:
+                     raise MemoryReadError(0x102, "kernel command timed out")
+                 time.sleep(0.0005)
+-            if self._shared.contents.Status != STATUS_DONE:
+-                err = self._shared.contents.ErrorCode
++            err = self._shared.contents.ErrorCode
++            if err:
+                 raise MemoryReadError(err, f"kernel command failed (NTSTATUS {err:#x})")
+ 
+     # -- public interface --------------------------------------------------
+@@ -150,15 +184,23 @@ class KernelProcessMemory:
+         check_range(address, size)
+         if not size:
+             return b""
+-        self._run(CMD_READ, address, None, size)
+-        return ctypes.string_at(self._data, size)
++        out = bytearray()
++        while len(out) < size:
++            chunk = min(DATA_CAPACITY, size - len(out))
++            self._run(CMD_READ, address + len(out), None, chunk)
++            out += ctypes.string_at(self._data, chunk)
++        return bytes(out)
+ 
+     def write(self, address: int, data: bytes) -> None:
+         data = bytes(data)
+         check_range(address, len(data))
+         if not data:
+             return
+-        self._run(CMD_WRITE, address, data, len(data))
++        off = 0
++        while off < len(data):
++            chunk = min(DATA_CAPACITY, len(data) - off)
++            self._run(CMD_WRITE, address + off, data[off:off + chunk], chunk)
++            off += chunk
+ 
+     @property
+     def image_path(self) -> str:

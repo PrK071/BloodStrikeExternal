@@ -1,0 +1,150 @@
+diff --git a/ExternalCore/km_memory_ioctl.py b/ExternalCore/km_memory_ioctl.py
+new file mode 100644
+index 0000000..ef0dce7
+--- /dev/null
++++ b/ExternalCore/km_memory_ioctl.py
+@@ -0,0 +1,144 @@
++# Python | ExternalCore/km_memory_ioctl.py | Python 3.12+ x64 / Windows
++# Kernel read/write through the conventional km_rw driver (device + IOCTL).
++#
++# The driver is loaded by the SCM and exposes \\.\KmRw. There is no shared
++# section: every request is one DeviceIoControl call, so the I/O manager owns
++# the buffer, copies the request in, copies the answer out and frees it when
++# the IRP completes. Same public interface as the other readers:
++#
++#   with KernelProcessMemory(pid) as reader:
++#       reader.read(addr, size) / reader.write(addr, data) / reader.image_path
++import ctypes
++from ctypes import wintypes
++
++from .memory import MemoryReadError, check_range
++
++# Re-export the snapshot-based module lookup (no process handle required).
++from .win32_memory import find_module, ProcessModule  # noqa: F401
++
++DEVICE_PATH = "\\\\.\\KmRw"
++
++MAX_XFER = 0x100000             # must match KM_MAX_XFER in km_rw_ioctl.c
++MAX_USER_ADDRESS = 0x00007FFFFFFF0000
++MAX_PATH_CHARS = 0x8000         # must match KM_MAX_PATH_CHARS
++
++FILE_DEVICE_UNKNOWN = 0x00000022
++METHOD_BUFFERED = 0
++FILE_READ_DATA = 0x0001
++FILE_WRITE_DATA = 0x0002
++
++GENERIC_READ = 0x80000000
++GENERIC_WRITE = 0x40000000
++OPEN_EXISTING = 3
++INVALID_HANDLE_VALUE = wintypes.HANDLE(-1).value
++
++
++def _ctl(function, access):
++    """CTL_CODE(DeviceType, Function, Method, Access)."""
++    return ((FILE_DEVICE_UNKNOWN << 16) | (access << 14) |
++            (function << 2) | METHOD_BUFFERED)
++
++
++IOCTL_KM_READ = _ctl(0x800, FILE_READ_DATA | FILE_WRITE_DATA)
++IOCTL_KM_WRITE = _ctl(0x801, FILE_READ_DATA | FILE_WRITE_DATA)
++IOCTL_KM_IMAGE_PATH = _ctl(0x802, FILE_READ_DATA)
++
++
++class KM_REQUEST(ctypes.Structure):
++    _fields_ = [("Pid", ctypes.c_uint64),
++                ("Address", ctypes.c_uint64),
++                ("Size", ctypes.c_uint64)]
++
++
++assert ctypes.sizeof(KM_REQUEST) == 0x18, "KM_REQUEST must match the driver"
++
++
++class KernelProcessMemory:
++    """One device handle; every operation is a single, bounded IOCTL."""
++
++    def __init__(self, pid: int):
++        if type(pid) is not int or not 0 < pid <= 0xFFFFFFFF:
++            raise ValueError("pid must be a positive DWORD")
++        self.pid = pid
++        self.dictionary_key_hashes = {}
++        self.max_transfer = MAX_XFER
++
++        self._k32 = ctypes.WinDLL("kernel32", use_last_error=True)
++        self._k32.CreateFileW.restype = wintypes.HANDLE
++        self._k32.CreateFileW.argtypes = [wintypes.LPCWSTR, wintypes.DWORD,
++                                          wintypes.DWORD, wintypes.LPVOID,
++                                          wintypes.DWORD, wintypes.DWORD,
++                                          wintypes.HANDLE]
++        self._k32.DeviceIoControl.restype = wintypes.BOOL
++        self._k32.DeviceIoControl.argtypes = [wintypes.HANDLE, wintypes.DWORD,
++                                              wintypes.LPVOID, wintypes.DWORD,
++                                              wintypes.LPVOID, wintypes.DWORD,
++                                              ctypes.POINTER(wintypes.DWORD),
++                                              wintypes.LPVOID]
++        self._k32.CloseHandle.restype = wintypes.BOOL
++        self._k32.CloseHandle.argtypes = [wintypes.HANDLE]
++
++        handle = self._k32.CreateFileW(DEVICE_PATH, GENERIC_READ | GENERIC_WRITE,
++                                       0, None, OPEN_EXISTING, 0, None)
++        if not handle or handle == INVALID_HANDLE_VALUE:
++            raise MemoryReadError(ctypes.get_last_error(),
++                                  f"cannot open {DEVICE_PATH}; is the km_rw driver "
++                                  "running and is this process elevated?")
++        self._handle = handle
++
++    # -- request plumbing -------------------------------------------------
++
++    def _ioctl(self, code, request, payload=b"", out_len=0):
++        in_buf = bytes(request) + payload
++        # METHOD_BUFFERED: the same user buffer serves as input and output.
++        buf = ctypes.create_string_buffer(max(len(in_buf), out_len))
++        ctypes.memmove(buf, in_buf, len(in_buf))
++        returned = wintypes.DWORD(0)
++        ok = self._k32.DeviceIoControl(self._handle, code, buf, len(in_buf),
++                                       buf, out_len, ctypes.byref(returned), None)
++        if not ok:
++            raise MemoryReadError(ctypes.get_last_error(), "DeviceIoControl failed")
++        return buf.raw[:returned.value]
++
++    # -- public interface --------------------------------------------------
++
++    def read(self, address: int, size: int) -> bytes:
++        check_range(address, size)
++        out = bytearray()
++        while len(out) < size:
++            chunk = min(MAX_XFER, size - len(out))
++            req = KM_REQUEST(self.pid, address + len(out), chunk)
++            data = self._ioctl(IOCTL_KM_READ, bytes(req), out_len=chunk)
++            if len(data) != chunk:
++                raise MemoryReadError(0x102, "short read from the driver")
++            out += data
++        return bytes(out)
++
++    def write(self, address: int, data: bytes) -> None:
++        data = bytes(data)
++        check_range(address, len(data))
++        off = 0
++        while off < len(data):
++            chunk = min(MAX_XFER, len(data) - off)
++            req = KM_REQUEST(self.pid, address + off, chunk)
++            self._ioctl(IOCTL_KM_WRITE, bytes(req), data[off:off + chunk])
++            off += chunk
++
++    @property
++    def image_path(self) -> str:
++        req = KM_REQUEST(self.pid, 0, 0)
++        raw = self._ioctl(IOCTL_KM_IMAGE_PATH, bytes(req),
++                          out_len=MAX_PATH_CHARS * 2)
++        return raw.decode("utf-16-le", errors="ignore").split("\x00", 1)[0]
++
++    def close(self):
++        handle = getattr(self, "_handle", None)
++        if handle:
++            self._k32.CloseHandle(handle)
++            self._handle = None
++
++    def __enter__(self):
++        return self
++
++    def __exit__(self, *args):
++        self.close()
